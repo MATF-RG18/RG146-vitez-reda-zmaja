@@ -1,0 +1,192 @@
+\hypertarget{classterrain_1_1Terrain}{}\section{Dokumentacija klase terrain\+:\+:Terrain}
+\label{classterrain_1_1Terrain}\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+
+
+{\ttfamily \#include $<$Terrain.\+h$>$}
+
+
+
+Klasni dijagram za terrain\+:\+:Terrain\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classterrain_1_1Terrain__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classterrain_1_1Terrain_a3361d2b8405cb829d0b851a944bce94b}{Terrain} (float gridX, float gridZ, \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$vao\+Loader, \hyperlink{classtexture_1_1TerrainTexturePack}{Terrain\+Texture\+Pack} $\ast$\hyperlink{classterrain_1_1Terrain_a6f9e86bd4c98ec61c9588b9f2b57fb75}{texture\+Pack}, \hyperlink{classtexture_1_1TerrainTexture}{Terrain\+Texture} $\ast$\hyperlink{classterrain_1_1Terrain_a48d20417020f61e62bb5d3a497c62a57}{blend\+Map}, const char $\ast$height\+Map)
+\item 
+\hyperlink{classterrain_1_1Terrain_a6aa3821700c2010298c1ad9f83971670}{$\sim$\+Terrain} ()
+\item 
+\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classterrain_1_1Terrain_a336c5efe16ff0fd81c8b6b6f00b9ba08}{get\+Model} ()
+\item 
+\hyperlink{classtexture_1_1TerrainTexturePack}{Terrain\+Texture\+Pack} $\ast$ \hyperlink{classterrain_1_1Terrain_a6b6100654d9bb6f5f5ea004cc5bf95f4}{get\+Texture\+Pack} ()
+\item 
+\hyperlink{classtexture_1_1TerrainTexture}{Terrain\+Texture} $\ast$ \hyperlink{classterrain_1_1Terrain_ae4d64fa4f81168a02887127491572cef}{get\+Blend\+Map} ()
+\item 
+float \hyperlink{classterrain_1_1Terrain_a7498906e811d059461be143d7323a6f9}{getX} ()
+\item 
+float \hyperlink{classterrain_1_1Terrain_ab348a1c250df237f2a60f59bf8797dc0}{getZ} ()
+\item 
+float \hyperlink{classterrain_1_1Terrain_afd074b9a18254b81abb89d29406f90e5}{get\+Height\+Of\+Terrain} (int worldX, int worldZ)
+\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+vec3 \hyperlink{classterrain_1_1Terrain_a2864540ccf7224830c0bbf2961d207bb}{calculate\+Normal} (Image image, int \hyperlink{classterrain_1_1Terrain_aec56d6e8219539617090b8e99b89be29}{x}, int y)
+\item 
+float \hyperlink{classterrain_1_1Terrain_a0707a64c79d89cfc358670651855cba1}{get\+Height} (Image image, int \hyperlink{classterrain_1_1Terrain_aec56d6e8219539617090b8e99b89be29}{x}, int y)
+\item 
+\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classterrain_1_1Terrain_aadecc14ee7c1c340c54c6960d489f1da}{generate\+Terrain} (\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$vao\+Loader, Image image)
+\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classterrain_1_1Terrain_aec56d6e8219539617090b8e99b89be29}{x}
+\item 
+float \hyperlink{classterrain_1_1Terrain_aaa4c36ce01096f81a0ee174c36f19657}{z}
+\item 
+\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classterrain_1_1Terrain_a0811e4548a966a38b3ca6a4475666324}{model}
+\item 
+\hyperlink{classtexture_1_1TerrainTexturePack}{Terrain\+Texture\+Pack} $\ast$ \hyperlink{classterrain_1_1Terrain_a6f9e86bd4c98ec61c9588b9f2b57fb75}{texture\+Pack}
+\item 
+\hyperlink{classtexture_1_1TerrainTexture}{Terrain\+Texture} $\ast$ \hyperlink{classterrain_1_1Terrain_a48d20417020f61e62bb5d3a497c62a57}{blend\+Map}
+\item 
+float $\ast$$\ast$ \hyperlink{classterrain_1_1Terrain_a068874d68315a2dafb59630e6d9410f1}{heights}
+\item 
+int \hyperlink{classterrain_1_1Terrain_a797e69c6650b5870643574625f853718}{heights\+Length}
+\item 
+int \hyperlink{classterrain_1_1Terrain_a27ca93bfb1ba44b0ff2935d667614f71}{V\+E\+R\+T\+E\+X\+\_\+\+C\+O\+U\+NT}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classterrain_1_1Terrain_a3361d2b8405cb829d0b851a944bce94b}\label{classterrain_1_1Terrain_a3361d2b8405cb829d0b851a944bce94b}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!Terrain@{Terrain}}
+\index{Terrain@{Terrain}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{Terrain()}{Terrain()}}
+{\footnotesize\ttfamily terrain\+::\+Terrain\+::\+Terrain (\begin{DoxyParamCaption}\item[{float}]{gridX,  }\item[{float}]{gridZ,  }\item[{\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$}]{vao\+Loader,  }\item[{\hyperlink{classtexture_1_1TerrainTexturePack}{Terrain\+Texture\+Pack} $\ast$}]{texture\+Pack,  }\item[{\hyperlink{classtexture_1_1TerrainTexture}{Terrain\+Texture} $\ast$}]{blend\+Map,  }\item[{const char $\ast$}]{height\+Map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_a6aa3821700c2010298c1ad9f83971670}\label{classterrain_1_1Terrain_a6aa3821700c2010298c1ad9f83971670}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!````~Terrain@{$\sim$\+Terrain}}
+\index{````~Terrain@{$\sim$\+Terrain}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{$\sim$\+Terrain()}{~Terrain()}}
+{\footnotesize\ttfamily terrain\+::\+Terrain\+::$\sim$\+Terrain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classterrain_1_1Terrain_a2864540ccf7224830c0bbf2961d207bb}\label{classterrain_1_1Terrain_a2864540ccf7224830c0bbf2961d207bb}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!calculate\+Normal@{calculate\+Normal}}
+\index{calculate\+Normal@{calculate\+Normal}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{calculate\+Normal()}{calculateNormal()}}
+{\footnotesize\ttfamily vec3 terrain\+::\+Terrain\+::calculate\+Normal (\begin{DoxyParamCaption}\item[{Image}]{image,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_aadecc14ee7c1c340c54c6960d489f1da}\label{classterrain_1_1Terrain_aadecc14ee7c1c340c54c6960d489f1da}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!generate\+Terrain@{generate\+Terrain}}
+\index{generate\+Terrain@{generate\+Terrain}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{generate\+Terrain()}{generateTerrain()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ terrain\+::\+Terrain\+::generate\+Terrain (\begin{DoxyParamCaption}\item[{\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$}]{vao\+Loader,  }\item[{Image}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_ae4d64fa4f81168a02887127491572cef}\label{classterrain_1_1Terrain_ae4d64fa4f81168a02887127491572cef}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!get\+Blend\+Map@{get\+Blend\+Map}}
+\index{get\+Blend\+Map@{get\+Blend\+Map}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{get\+Blend\+Map()}{getBlendMap()}}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1TerrainTexture}{Terrain\+Texture} $\ast$ terrain\+::\+Terrain\+::get\+Blend\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_a0707a64c79d89cfc358670651855cba1}\label{classterrain_1_1Terrain_a0707a64c79d89cfc358670651855cba1}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily float terrain\+::\+Terrain\+::get\+Height (\begin{DoxyParamCaption}\item[{Image}]{image,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_afd074b9a18254b81abb89d29406f90e5}\label{classterrain_1_1Terrain_afd074b9a18254b81abb89d29406f90e5}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!get\+Height\+Of\+Terrain@{get\+Height\+Of\+Terrain}}
+\index{get\+Height\+Of\+Terrain@{get\+Height\+Of\+Terrain}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{get\+Height\+Of\+Terrain()}{getHeightOfTerrain()}}
+{\footnotesize\ttfamily float terrain\+::\+Terrain\+::get\+Height\+Of\+Terrain (\begin{DoxyParamCaption}\item[{int}]{worldX,  }\item[{int}]{worldZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_a336c5efe16ff0fd81c8b6b6f00b9ba08}\label{classterrain_1_1Terrain_a336c5efe16ff0fd81c8b6b6f00b9ba08}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!get\+Model@{get\+Model}}
+\index{get\+Model@{get\+Model}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{get\+Model()}{getModel()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ terrain\+::\+Terrain\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_a6b6100654d9bb6f5f5ea004cc5bf95f4}\label{classterrain_1_1Terrain_a6b6100654d9bb6f5f5ea004cc5bf95f4}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!get\+Texture\+Pack@{get\+Texture\+Pack}}
+\index{get\+Texture\+Pack@{get\+Texture\+Pack}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{get\+Texture\+Pack()}{getTexturePack()}}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1TerrainTexturePack}{Terrain\+Texture\+Pack} $\ast$ terrain\+::\+Terrain\+::get\+Texture\+Pack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_a7498906e811d059461be143d7323a6f9}\label{classterrain_1_1Terrain_a7498906e811d059461be143d7323a6f9}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!getX@{getX}}
+\index{getX@{getX}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily float terrain\+::\+Terrain\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_ab348a1c250df237f2a60f59bf8797dc0}\label{classterrain_1_1Terrain_ab348a1c250df237f2a60f59bf8797dc0}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!getZ@{getZ}}
+\index{getZ@{getZ}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{get\+Z()}{getZ()}}
+{\footnotesize\ttfamily float terrain\+::\+Terrain\+::getZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classterrain_1_1Terrain_a48d20417020f61e62bb5d3a497c62a57}\label{classterrain_1_1Terrain_a48d20417020f61e62bb5d3a497c62a57}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!blend\+Map@{blend\+Map}}
+\index{blend\+Map@{blend\+Map}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{blend\+Map}{blendMap}}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1TerrainTexture}{Terrain\+Texture}$\ast$ terrain\+::\+Terrain\+::blend\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_a068874d68315a2dafb59630e6d9410f1}\label{classterrain_1_1Terrain_a068874d68315a2dafb59630e6d9410f1}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!heights@{heights}}
+\index{heights@{heights}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{heights}{heights}}
+{\footnotesize\ttfamily float$\ast$$\ast$ terrain\+::\+Terrain\+::heights\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_a797e69c6650b5870643574625f853718}\label{classterrain_1_1Terrain_a797e69c6650b5870643574625f853718}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!heights\+Length@{heights\+Length}}
+\index{heights\+Length@{heights\+Length}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{heights\+Length}{heightsLength}}
+{\footnotesize\ttfamily int terrain\+::\+Terrain\+::heights\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_a0811e4548a966a38b3ca6a4475666324}\label{classterrain_1_1Terrain_a0811e4548a966a38b3ca6a4475666324}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!model@{model}}
+\index{model@{model}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model}$\ast$ terrain\+::\+Terrain\+::model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_a6f9e86bd4c98ec61c9588b9f2b57fb75}\label{classterrain_1_1Terrain_a6f9e86bd4c98ec61c9588b9f2b57fb75}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!texture\+Pack@{texture\+Pack}}
+\index{texture\+Pack@{texture\+Pack}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{texture\+Pack}{texturePack}}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1TerrainTexturePack}{Terrain\+Texture\+Pack}$\ast$ terrain\+::\+Terrain\+::texture\+Pack\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_a27ca93bfb1ba44b0ff2935d667614f71}\label{classterrain_1_1Terrain_a27ca93bfb1ba44b0ff2935d667614f71}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!V\+E\+R\+T\+E\+X\+\_\+\+C\+O\+U\+NT@{V\+E\+R\+T\+E\+X\+\_\+\+C\+O\+U\+NT}}
+\index{V\+E\+R\+T\+E\+X\+\_\+\+C\+O\+U\+NT@{V\+E\+R\+T\+E\+X\+\_\+\+C\+O\+U\+NT}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{V\+E\+R\+T\+E\+X\+\_\+\+C\+O\+U\+NT}{VERTEX\_COUNT}}
+{\footnotesize\ttfamily int terrain\+::\+Terrain\+::\+V\+E\+R\+T\+E\+X\+\_\+\+C\+O\+U\+NT\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_aec56d6e8219539617090b8e99b89be29}\label{classterrain_1_1Terrain_aec56d6e8219539617090b8e99b89be29}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!x@{x}}
+\index{x@{x}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float terrain\+::\+Terrain\+::x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classterrain_1_1Terrain_aaa4c36ce01096f81a0ee174c36f19657}\label{classterrain_1_1Terrain_aaa4c36ce01096f81a0ee174c36f19657}} 
+\index{terrain\+::\+Terrain@{terrain\+::\+Terrain}!z@{z}}
+\index{z@{z}!terrain\+::\+Terrain@{terrain\+::\+Terrain}}
+\subsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily float terrain\+::\+Terrain\+::z\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/terrain/\hyperlink{Terrain_8h}{Terrain.\+h}\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/terrain/\hyperlink{Terrain_8cpp}{Terrain.\+cpp}\end{DoxyCompactItemize}

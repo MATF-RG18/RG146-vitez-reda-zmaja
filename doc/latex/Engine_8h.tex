@@ -1,0 +1,71 @@
+\hypertarget{Engine_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Engine.h}
+\label{Engine_8h}\index{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Engine.\+h@{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Engine.\+h}}
+
+
+Deklaracija klase Engine i deklaracija callback funkcija.  
+
+
+{\ttfamily \#include \char`\"{}../model/\+Textured\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../model/\+Raw\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../core/\+Vao\+Loader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../core/\+Render.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../core/\+Main\+Renderer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../core/\+Obj\+Loader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../shader/\+Shader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../texture/\+Model\+Texture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../texture/\+Terrain\+Texture\+Pack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../entity/\+Entity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../entity/\+Player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../entity/\+Camera.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../utility/\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+Graf zavisnosti datoteka za Engine.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Engine_8h__incl}
+\end{center}
+\end{figure}
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{Engine_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Klase, strukture i unije}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcore_1_1Engine}{core\+::\+Engine}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1Engine}{Engine} je jezgro i kontroler programa. Sva bitnija podesavanja i inicijalizacije desavaju se u ovoj klasi. Klasa je zaduzena za inicijalizaciju G\+L\+U\+T-\/a , Open\+G\+L-\/a, i kontrolisanje i kreiranje ostalih korisnicki definisanih klasa i funkcija. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Prostori imena}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecore}{core}
+\begin{DoxyCompactList}\small\item\em Prostor imena core. Sadrzi sve klase, funkcije i promenljive koje su od sustinskog znacaja za funkcionisanje programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funkcije}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacecore_a1c3be366234e051e17b4b45f40c18960}{core\+::render\+Scene} (void)
+\begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Display\+Func(). Funkcija koja kontrolise sta ce biti iscrtano na ekranu. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecore_a179fad39a2b3f74cf7a0bffb578fce00}{core\+::on\+Keyboard} (unsigned char key, int x, int y)
+\begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Keyboard\+Func(). Funkcija koja proverava ulaz sa tastature. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecore_a581fd18fb14102b9234a113bc95341b4}{core\+::on\+Mouse} (int button, int state, int x, int y)
+\begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Mouse\+Func(). Funkcija koja proverava ulaz sa misa. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecore_a3ad12cad5f74289de4ad97762e453621}{core\+::on\+Special\+Down} (int key, int x, int y)
+\begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Special\+Func(). Funkcija koja proverava pritisnuti specijalni karakter. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecore_a590273d60aac2764ebf098f1b9aab3fe}{core\+::on\+Special\+Up} (int key, int x, int y)
+\begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Special\+Up\+Func(). Funkcija koja proverava otpusteni specijalni karakter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Deklaracija klase Engine i deklaracija callback funkcija. 
+
+\begin{DoxyAuthor}{Autor}
+Dusan Pantelic 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Datum}
+Decembar 2017 
+\end{DoxyDate}

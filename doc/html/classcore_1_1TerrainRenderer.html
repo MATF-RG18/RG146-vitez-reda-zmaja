@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Dokumentacija klase core::TerrainRenderer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecore.html">core</a></li><li class="navelem"><a class="el" href="classcore_1_1TerrainRenderer.html">TerrainRenderer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Javni članovi</a> &#124;
+<a href="#pri-methods">Privatni članovi</a> &#124;
+<a href="#pri-attribs">Privatni članovi</a> &#124;
+<a href="classcore_1_1TerrainRenderer-members.html">Spisak svih članova</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacija klase core::TerrainRenderer</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="classcore_1_1Render.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ...">Render</a> je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran.  
+ <a href="classcore_1_1TerrainRenderer.html#details">Još...</a></p>
+
+<p><code>#include &lt;<a class="el" href="TerrainRenderer_8h_source.html">TerrainRenderer.h</a>&gt;</code></p>
+<div class="dynheader">
+Klasni dijagram za core::TerrainRenderer:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcore_1_1TerrainRenderer__coll__graph.png" border="0" usemap="#core_1_1TerrainRenderer_coll__map" alt="Collaboration graph"/></div>
+<map name="core_1_1TerrainRenderer_coll__map" id="core_1_1TerrainRenderer_coll__map">
+<area shape="rect" id="node2" href="classshader_1_1TerrainShader.html" title="Klasa TerrainShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi..." alt="" coords="5,5,156,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Javni članovi</h2></td></tr>
+<tr class="memitem:aef52c32054bf2be3fc5ec160a2d7433b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#aef52c32054bf2be3fc5ec160a2d7433b">TerrainRenderer</a> (<a class="el" href="classshader_1_1TerrainShader.html">TerrainShader</a> *<a class="el" href="classcore_1_1TerrainRenderer.html#a6db721ffef6f7175977ad243b4ac2834">terrainShader</a>)</td></tr>
+<tr class="memdesc:aef52c32054bf2be3fc5ec160a2d7433b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klase.  <a href="#aef52c32054bf2be3fc5ec160a2d7433b">Još...</a><br /></td></tr>
+<tr class="separator:aef52c32054bf2be3fc5ec160a2d7433b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e79e2c14c4f2196d410bbde7b85060"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#a18e79e2c14c4f2196d410bbde7b85060">~TerrainRenderer</a> ()</td></tr>
+<tr class="memdesc:a18e79e2c14c4f2196d410bbde7b85060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klase.  <a href="#a18e79e2c14c4f2196d410bbde7b85060">Još...</a><br /></td></tr>
+<tr class="separator:a18e79e2c14c4f2196d410bbde7b85060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f2aaf851e780fc8f78aa5bb3cd1b512"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#a1f2aaf851e780fc8f78aa5bb3cd1b512">render</a> (list&lt; <a class="el" href="classterrain_1_1Terrain.html">Terrain</a> *&gt; terrains)</td></tr>
+<tr class="memdesc:a1f2aaf851e780fc8f78aa5bb3cd1b512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija iscrtava terene na ekran.  <a href="#a1f2aaf851e780fc8f78aa5bb3cd1b512">Još...</a><br /></td></tr>
+<tr class="separator:a1f2aaf851e780fc8f78aa5bb3cd1b512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e7d88767cdfc19ee07bf3558f6c1f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#ad4e7d88767cdfc19ee07bf3558f6c1f0">prepareTerrain</a> (<a class="el" href="classterrain_1_1Terrain.html">Terrain</a> *<a class="el" href="namespacecore.html#ac45da6f80dac9bead5c9310c27897f15">terrain</a>)</td></tr>
+<tr class="memdesc:ad4e7d88767cdfc19ee07bf3558f6c1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vrsi pripremu terena za ucitavanje.  <a href="#ad4e7d88767cdfc19ee07bf3558f6c1f0">Još...</a><br /></td></tr>
+<tr class="separator:ad4e7d88767cdfc19ee07bf3558f6c1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66bf45a30d7c1b443f8b77132112fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#ac66bf45a30d7c1b443f8b77132112fe0">bindTextures</a> (<a class="el" href="classterrain_1_1Terrain.html">Terrain</a> *<a class="el" href="namespacecore.html#ac45da6f80dac9bead5c9310c27897f15">terrain</a>)</td></tr>
+<tr class="memdesc:ac66bf45a30d7c1b443f8b77132112fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija povezuje teksture terena.  <a href="#ac66bf45a30d7c1b443f8b77132112fe0">Još...</a><br /></td></tr>
+<tr class="separator:ac66bf45a30d7c1b443f8b77132112fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac739a96169a8fef7bfad56bbe3367962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#ac739a96169a8fef7bfad56bbe3367962">unbindTerrain</a> ()</td></tr>
+<tr class="memdesc:ac739a96169a8fef7bfad56bbe3367962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija otkacinje vezu izmedju podataka terena i programa.  <a href="#ac739a96169a8fef7bfad56bbe3367962">Još...</a><br /></td></tr>
+<tr class="separator:ac739a96169a8fef7bfad56bbe3367962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1837566f4de6e49dbf19e203cc9563"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#a5e1837566f4de6e49dbf19e203cc9563">loadModelMatrix</a> (<a class="el" href="classterrain_1_1Terrain.html">Terrain</a> *<a class="el" href="namespacecore.html#ac45da6f80dac9bead5c9310c27897f15">terrain</a>)</td></tr>
+<tr class="memdesc:a5e1837566f4de6e49dbf19e203cc9563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija kreira matricu transformacije za teren i ucitava je u sejder program.  <a href="#a5e1837566f4de6e49dbf19e203cc9563">Još...</a><br /></td></tr>
+<tr class="separator:a5e1837566f4de6e49dbf19e203cc9563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:a06f89d76316964a8da14498ec43756f0"><td class="memItemLeft" align="right" valign="top">mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#a06f89d76316964a8da14498ec43756f0">createProjectionMatrix</a> ()</td></tr>
+<tr class="memdesc:a06f89d76316964a8da14498ec43756f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija kreira matricu projekcije.  <a href="#a06f89d76316964a8da14498ec43756f0">Još...</a><br /></td></tr>
+<tr class="separator:a06f89d76316964a8da14498ec43756f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:a912eab623ca8c7ca7d8473e30383f831"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#a912eab623ca8c7ca7d8473e30383f831">FOV</a> = 70</td></tr>
+<tr class="memdesc:a912eab623ca8c7ca7d8473e30383f831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polje vidika.  <a href="#a912eab623ca8c7ca7d8473e30383f831">Još...</a><br /></td></tr>
+<tr class="separator:a912eab623ca8c7ca7d8473e30383f831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68bdfd4b42381b4514991fe8c4d08c89"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#a68bdfd4b42381b4514991fe8c4d08c89">NEAR_PLANE</a> = 0.1</td></tr>
+<tr class="memdesc:a68bdfd4b42381b4514991fe8c4d08c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prednji deo vidljivosti.  <a href="#a68bdfd4b42381b4514991fe8c4d08c89">Još...</a><br /></td></tr>
+<tr class="separator:a68bdfd4b42381b4514991fe8c4d08c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc56752e01a0b9b0ebfd57b8daa6172c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#abc56752e01a0b9b0ebfd57b8daa6172c">FAR_PLANE</a> = 1000</td></tr>
+<tr class="memdesc:abc56752e01a0b9b0ebfd57b8daa6172c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zadnji deo vidljivosti.  <a href="#abc56752e01a0b9b0ebfd57b8daa6172c">Još...</a><br /></td></tr>
+<tr class="separator:abc56752e01a0b9b0ebfd57b8daa6172c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db721ffef6f7175977ad243b4ac2834"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classshader_1_1TerrainShader.html">TerrainShader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#a6db721ffef6f7175977ad243b4ac2834">terrainShader</a></td></tr>
+<tr class="memdesc:a6db721ffef6f7175977ad243b4ac2834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase TerrainShader.  <a href="#a6db721ffef6f7175977ad243b4ac2834">Još...</a><br /></td></tr>
+<tr class="separator:a6db721ffef6f7175977ad243b4ac2834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
+<div class="textblock"><p>Klasa <a class="el" href="classcore_1_1Render.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ...">Render</a> je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran. </p>
+</div><h2 class="groupheader">Dokumentacija konstruktora i destruktora</h2>
+<a id="aef52c32054bf2be3fc5ec160a2d7433b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef52c32054bf2be3fc5ec160a2d7433b">&#9670;&nbsp;</a></span>TerrainRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core::TerrainRenderer::TerrainRenderer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classshader_1_1TerrainShader.html">TerrainShader</a> *&#160;</td>
+          <td class="paramname"><em>terrainShader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">terrainShader</td><td>Pokazivac na instancu klase TerrainShader. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a18e79e2c14c4f2196d410bbde7b85060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e79e2c14c4f2196d410bbde7b85060">&#9670;&nbsp;</a></span>~TerrainRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core::TerrainRenderer::~TerrainRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija funkcija članica</h2>
+<a id="ac66bf45a30d7c1b443f8b77132112fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac66bf45a30d7c1b443f8b77132112fe0">&#9670;&nbsp;</a></span>bindTextures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::TerrainRenderer::bindTextures </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classterrain_1_1Terrain.html">Terrain</a> *&#160;</td>
+          <td class="paramname"><em>terrain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija povezuje teksture terena. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">terrain</td><td>Pokazivac na instancu klase Terrain. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a06f89d76316964a8da14498ec43756f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f89d76316964a8da14498ec43756f0">&#9670;&nbsp;</a></span>createProjectionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mat4 core::TerrainRenderer::createProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija kreira matricu projekcije. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>mat4 Matrica projekcije. </dd></dl>
+
+</div>
+</div>
+<a id="a5e1837566f4de6e49dbf19e203cc9563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1837566f4de6e49dbf19e203cc9563">&#9670;&nbsp;</a></span>loadModelMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::TerrainRenderer::loadModelMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classterrain_1_1Terrain.html">Terrain</a> *&#160;</td>
+          <td class="paramname"><em>terrain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija kreira matricu transformacije za teren i ucitava je u sejder program. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">terrain</td><td>Pokazivac na instancu klase Terrain. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ad4e7d88767cdfc19ee07bf3558f6c1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e7d88767cdfc19ee07bf3558f6c1f0">&#9670;&nbsp;</a></span>prepareTerrain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::TerrainRenderer::prepareTerrain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classterrain_1_1Terrain.html">Terrain</a> *&#160;</td>
+          <td class="paramname"><em>terrain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vrsi pripremu terena za ucitavanje. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">terrain</td><td>Pokazivac na instancu klase Terrain. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a1f2aaf851e780fc8f78aa5bb3cd1b512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f2aaf851e780fc8f78aa5bb3cd1b512">&#9670;&nbsp;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::TerrainRenderer::render </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; <a class="el" href="classterrain_1_1Terrain.html">Terrain</a> *&gt;&#160;</td>
+          <td class="paramname"><em>terrains</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija iscrtava terene na ekran. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">terrains</td><td>Lista terena. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ac739a96169a8fef7bfad56bbe3367962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac739a96169a8fef7bfad56bbe3367962">&#9670;&nbsp;</a></span>unbindTerrain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::TerrainRenderer::unbindTerrain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija otkacinje vezu izmedju podataka terena i programa. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija atributa</h2>
+<a id="abc56752e01a0b9b0ebfd57b8daa6172c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc56752e01a0b9b0ebfd57b8daa6172c">&#9670;&nbsp;</a></span>FAR_PLANE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float core::TerrainRenderer::FAR_PLANE = 1000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zadnji deo vidljivosti. </p>
+
+</div>
+</div>
+<a id="a912eab623ca8c7ca7d8473e30383f831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912eab623ca8c7ca7d8473e30383f831">&#9670;&nbsp;</a></span>FOV</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float core::TerrainRenderer::FOV = 70</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Polje vidika. </p>
+
+</div>
+</div>
+<a id="a68bdfd4b42381b4514991fe8c4d08c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68bdfd4b42381b4514991fe8c4d08c89">&#9670;&nbsp;</a></span>NEAR_PLANE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float core::TerrainRenderer::NEAR_PLANE = 0.1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prednji deo vidljivosti. </p>
+
+</div>
+</div>
+<a id="a6db721ffef6f7175977ad243b4ac2834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db721ffef6f7175977ad243b4ac2834">&#9670;&nbsp;</a></span>terrainShader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classshader_1_1TerrainShader.html">TerrainShader</a>* core::TerrainRenderer::terrainShader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase TerrainShader. </p>
+
+</div>
+</div>
+<hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
+<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/include/core/<a class="el" href="TerrainRenderer_8h_source.html">TerrainRenderer.h</a></li>
+<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/src/core/<a class="el" href="TerrainRenderer_8cpp.html">TerrainRenderer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

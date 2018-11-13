@@ -1,0 +1,4 @@
+<map id="model::TexturedModel" name="model::TexturedModel">
+<area shape="rect" id="node2" href="$classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node3" href="$classtexture_1_1ModelTexture.html" title="Klasa TexturedModel opisuje teksturu objekta. Model je opisan instancom klase RawModel i odgovarajuco..." alt="" coords="157,5,306,32"/>
+</map>

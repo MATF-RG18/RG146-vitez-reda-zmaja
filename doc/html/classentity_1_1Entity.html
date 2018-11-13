@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Dokumentacija klase entity::Entity</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentity.html">entity</a></li><li class="navelem"><a class="el" href="classentity_1_1Entity.html">Entity</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Javni članovi</a> &#124;
+<a href="#pri-attribs">Privatni članovi</a> &#124;
+<a href="classentity_1_1Entity-members.html">Spisak svih članova</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacija klase entity::Entity</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="classentity_1_1Entity.html" title="Klasa Entity odredjuje jedan entitet. Pomocu klase Entity odredjujemo entitet tako sto mu pridruzujem...">Entity</a> odredjuje jedan entitet. Pomocu klase <a class="el" href="classentity_1_1Entity.html" title="Klasa Entity odredjuje jedan entitet. Pomocu klase Entity odredjujemo entitet tako sto mu pridruzujem...">Entity</a> odredjujemo entitet tako sto mu pridruzujemo teksturisan model kao i poziciju u svetu i ostale transformacije.  
+ <a href="classentity_1_1Entity.html#details">Još...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Entity_8h_source.html">Entity.h</a>&gt;</code></p>
+<div class="dynheader">
+Dijagram nasleđivanja za klasu entity::Entity:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentity_1_1Entity__inherit__graph.png" border="0" usemap="#entity_1_1Entity_inherit__map" alt="Inheritance graph"/></div>
+<map name="entity_1_1Entity_inherit__map" id="entity_1_1Entity_inherit__map">
+<area shape="rect" id="node2" href="classentity_1_1Player.html" title="Klasa Player odredjuje igraca koji nadogradjuje entitet. Pomocu klase Player nadogradjujemo klasu Ent..." alt="" coords="5,80,104,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<div class="dynheader">
+Klasni dijagram za entity::Entity:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentity_1_1Entity__coll__graph.png" border="0" usemap="#entity_1_1Entity_coll__map" alt="Collaboration graph"/></div>
+<map name="entity_1_1Entity_coll__map" id="entity_1_1Entity_coll__map">
+<area shape="rect" id="node2" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo..." alt="" coords="75,95,225,121"/>
+<area shape="rect" id="node3" href="classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node4" href="classtexture_1_1ModelTexture.html" title="Klasa TexturedModel opisuje teksturu objekta. Model je opisan instancom klase RawModel i odgovarajuco..." alt="" coords="157,5,306,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Javni članovi</h2></td></tr>
+<tr class="memitem:a1668042c968a630c82bbbcec8520400e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#a1668042c968a630c82bbbcec8520400e">Entity</a> (<a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *<a class="el" href="classentity_1_1Entity.html#ac7848c5d47d4b2bf12c84ddbbc32052a">model</a>, vec3 <a class="el" href="classentity_1_1Entity.html#ad409c7f2085024479b276c2b6948bddb">position</a>, vec3 <a class="el" href="classentity_1_1Entity.html#aedb4c5dc1cfbc8cb3f6deb565ea920cb">rotation</a>, float <a class="el" href="classentity_1_1Entity.html#a59e5d5e3575df70cd5c74b5d739d84ca">scale</a>)</td></tr>
+<tr class="memdesc:a1668042c968a630c82bbbcec8520400e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klase.  <a href="#a1668042c968a630c82bbbcec8520400e">Još...</a><br /></td></tr>
+<tr class="separator:a1668042c968a630c82bbbcec8520400e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1aa154095b15e2dd6fa484ec00867e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#a2d1aa154095b15e2dd6fa484ec00867e">~Entity</a> ()</td></tr>
+<tr class="memdesc:a2d1aa154095b15e2dd6fa484ec00867e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klase.  <a href="#a2d1aa154095b15e2dd6fa484ec00867e">Još...</a><br /></td></tr>
+<tr class="separator:a2d1aa154095b15e2dd6fa484ec00867e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6481a8bab918cfb1309d3d342ccad1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#abc6481a8bab918cfb1309d3d342ccad1">getModel</a> ()</td></tr>
+<tr class="memdesc:abc6481a8bab918cfb1309d3d342ccad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca texturisan model.  <a href="#abc6481a8bab918cfb1309d3d342ccad1">Još...</a><br /></td></tr>
+<tr class="separator:abc6481a8bab918cfb1309d3d342ccad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68bdcd0dcae978514e87ee53c60367e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#a68bdcd0dcae978514e87ee53c60367e2">setModel</a> (<a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *<a class="el" href="classentity_1_1Entity.html#ac7848c5d47d4b2bf12c84ddbbc32052a">model</a>)</td></tr>
+<tr class="memdesc:a68bdcd0dcae978514e87ee53c60367e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija postavlja texturisan model.  <a href="#a68bdcd0dcae978514e87ee53c60367e2">Još...</a><br /></td></tr>
+<tr class="separator:a68bdcd0dcae978514e87ee53c60367e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad255abb1afcceceb6f2efea66086d8bd"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#ad255abb1afcceceb6f2efea66086d8bd">getPosition</a> ()</td></tr>
+<tr class="memdesc:ad255abb1afcceceb6f2efea66086d8bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca poziciju entiteta.  <a href="#ad255abb1afcceceb6f2efea66086d8bd">Još...</a><br /></td></tr>
+<tr class="separator:ad255abb1afcceceb6f2efea66086d8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5f477d3eac07d19f0545df10e3077c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#abb5f477d3eac07d19f0545df10e3077c">setPosition</a> (vec3 <a class="el" href="classentity_1_1Entity.html#ad409c7f2085024479b276c2b6948bddb">position</a>)</td></tr>
+<tr class="memdesc:abb5f477d3eac07d19f0545df10e3077c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija postavlja poziciju entiteta.  <a href="#abb5f477d3eac07d19f0545df10e3077c">Još...</a><br /></td></tr>
+<tr class="separator:abb5f477d3eac07d19f0545df10e3077c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58680b88c9179d9cab22e881b320f9f7"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#a58680b88c9179d9cab22e881b320f9f7">getRotation</a> ()</td></tr>
+<tr class="memdesc:a58680b88c9179d9cab22e881b320f9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca rotaciju entiteta.  <a href="#a58680b88c9179d9cab22e881b320f9f7">Još...</a><br /></td></tr>
+<tr class="separator:a58680b88c9179d9cab22e881b320f9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830cb1b8769d11322844a34f1e480e4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#a830cb1b8769d11322844a34f1e480e4b">setRotation</a> (vec3 <a class="el" href="classentity_1_1Entity.html#aedb4c5dc1cfbc8cb3f6deb565ea920cb">rotation</a>)</td></tr>
+<tr class="memdesc:a830cb1b8769d11322844a34f1e480e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija postavlja rotaciju entiteta.  <a href="#a830cb1b8769d11322844a34f1e480e4b">Još...</a><br /></td></tr>
+<tr class="separator:a830cb1b8769d11322844a34f1e480e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1923a9ecf9da2ec77d6e3eeadb4bd4d7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#a1923a9ecf9da2ec77d6e3eeadb4bd4d7">getScale</a> ()</td></tr>
+<tr class="memdesc:a1923a9ecf9da2ec77d6e3eeadb4bd4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca skaliranje entiteta.  <a href="#a1923a9ecf9da2ec77d6e3eeadb4bd4d7">Još...</a><br /></td></tr>
+<tr class="separator:a1923a9ecf9da2ec77d6e3eeadb4bd4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2d7bd6cd754ce566e2d4a9e4b991e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#a5d2d7bd6cd754ce566e2d4a9e4b991e0">setScale</a> (float <a class="el" href="classentity_1_1Entity.html#a59e5d5e3575df70cd5c74b5d739d84ca">scale</a>)</td></tr>
+<tr class="memdesc:a5d2d7bd6cd754ce566e2d4a9e4b991e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija postavlja skaliranje entiteta.  <a href="#a5d2d7bd6cd754ce566e2d4a9e4b991e0">Još...</a><br /></td></tr>
+<tr class="separator:a5d2d7bd6cd754ce566e2d4a9e4b991e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a22a1554a3a412cc2583bbf87fd77c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#a24a22a1554a3a412cc2583bbf87fd77c">increasePosition</a> (vec3 deltaPosition)</td></tr>
+<tr class="memdesc:a24a22a1554a3a412cc2583bbf87fd77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija povecava poziciju entiteta.  <a href="#a24a22a1554a3a412cc2583bbf87fd77c">Još...</a><br /></td></tr>
+<tr class="separator:a24a22a1554a3a412cc2583bbf87fd77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5bd766ea7810db89b8948160916768a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#ac5bd766ea7810db89b8948160916768a">increaseRotation</a> (vec3 deltaRotation)</td></tr>
+<tr class="memdesc:ac5bd766ea7810db89b8948160916768a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija povecava rotaciju entiteta.  <a href="#ac5bd766ea7810db89b8948160916768a">Još...</a><br /></td></tr>
+<tr class="separator:ac5bd766ea7810db89b8948160916768a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:ac7848c5d47d4b2bf12c84ddbbc32052a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#ac7848c5d47d4b2bf12c84ddbbc32052a">model</a></td></tr>
+<tr class="memdesc:ac7848c5d47d4b2bf12c84ddbbc32052a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase TexturedModel.  <a href="#ac7848c5d47d4b2bf12c84ddbbc32052a">Još...</a><br /></td></tr>
+<tr class="separator:ac7848c5d47d4b2bf12c84ddbbc32052a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad409c7f2085024479b276c2b6948bddb"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#ad409c7f2085024479b276c2b6948bddb">position</a></td></tr>
+<tr class="memdesc:ad409c7f2085024479b276c2b6948bddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pozicija entiteta.  <a href="#ad409c7f2085024479b276c2b6948bddb">Još...</a><br /></td></tr>
+<tr class="separator:ad409c7f2085024479b276c2b6948bddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb4c5dc1cfbc8cb3f6deb565ea920cb"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#aedb4c5dc1cfbc8cb3f6deb565ea920cb">rotation</a></td></tr>
+<tr class="memdesc:aedb4c5dc1cfbc8cb3f6deb565ea920cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotacija entiteta.  <a href="#aedb4c5dc1cfbc8cb3f6deb565ea920cb">Još...</a><br /></td></tr>
+<tr class="separator:aedb4c5dc1cfbc8cb3f6deb565ea920cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e5d5e3575df70cd5c74b5d739d84ca"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#a59e5d5e3575df70cd5c74b5d739d84ca">scale</a></td></tr>
+<tr class="memdesc:a59e5d5e3575df70cd5c74b5d739d84ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skaliranje entiteta.  <a href="#a59e5d5e3575df70cd5c74b5d739d84ca">Još...</a><br /></td></tr>
+<tr class="separator:a59e5d5e3575df70cd5c74b5d739d84ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
+<div class="textblock"><p>Klasa <a class="el" href="classentity_1_1Entity.html" title="Klasa Entity odredjuje jedan entitet. Pomocu klase Entity odredjujemo entitet tako sto mu pridruzujem...">Entity</a> odredjuje jedan entitet. Pomocu klase <a class="el" href="classentity_1_1Entity.html" title="Klasa Entity odredjuje jedan entitet. Pomocu klase Entity odredjujemo entitet tako sto mu pridruzujem...">Entity</a> odredjujemo entitet tako sto mu pridruzujemo teksturisan model kao i poziciju u svetu i ostale transformacije. </p>
+</div><h2 class="groupheader">Dokumentacija konstruktora i destruktora</h2>
+<a id="a1668042c968a630c82bbbcec8520400e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1668042c968a630c82bbbcec8520400e">&#9670;&nbsp;</a></span>Entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entity::Entity::Entity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>rotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>Pokazivac na instancu klase TexturedModel. </td></tr>
+    <tr><td class="paramname">position</td><td>Pozicija entiteta </td></tr>
+    <tr><td class="paramname">rotation</td><td>Rotacija entiteta </td></tr>
+    <tr><td class="paramname">scale</td><td>Skaliranje entiteta </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d1aa154095b15e2dd6fa484ec00867e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d1aa154095b15e2dd6fa484ec00867e">&#9670;&nbsp;</a></span>~Entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entity::Entity::~Entity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija funkcija članica</h2>
+<a id="abc6481a8bab918cfb1309d3d342ccad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6481a8bab918cfb1309d3d342ccad1">&#9670;&nbsp;</a></span>getModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> * entity::Entity::getModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca texturisan model. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>TexturedModel * Pokazivac na instancu klase TexturedModel </dd></dl>
+
+</div>
+</div>
+<a id="ad255abb1afcceceb6f2efea66086d8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad255abb1afcceceb6f2efea66086d8bd">&#9670;&nbsp;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 entity::Entity::getPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca poziciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>vec3 Pozicija entiteta </dd></dl>
+
+</div>
+</div>
+<a id="a58680b88c9179d9cab22e881b320f9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58680b88c9179d9cab22e881b320f9f7">&#9670;&nbsp;</a></span>getRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 entity::Entity::getRotation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca rotaciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>vec3 Rotacija entiteta </dd></dl>
+
+</div>
+</div>
+<a id="a1923a9ecf9da2ec77d6e3eeadb4bd4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1923a9ecf9da2ec77d6e3eeadb4bd4d7">&#9670;&nbsp;</a></span>getScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Entity::getScale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca skaliranje entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>float Skaliranje entiteta </dd></dl>
+
+</div>
+</div>
+<a id="a24a22a1554a3a412cc2583bbf87fd77c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a22a1554a3a412cc2583bbf87fd77c">&#9670;&nbsp;</a></span>increasePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Entity::increasePosition </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>deltaPosition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija povecava poziciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaPosition</td><td>Pozicija entiteta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ac5bd766ea7810db89b8948160916768a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5bd766ea7810db89b8948160916768a">&#9670;&nbsp;</a></span>increaseRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Entity::increaseRotation </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>deltaRotation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija povecava rotaciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaRotation</td><td>Rotacija entiteta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a68bdcd0dcae978514e87ee53c60367e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68bdcd0dcae978514e87ee53c60367e2">&#9670;&nbsp;</a></span>setModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Entity::setModel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija postavlja texturisan model. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>Pokazivac na instancu klase TexturedModel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="abb5f477d3eac07d19f0545df10e3077c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb5f477d3eac07d19f0545df10e3077c">&#9670;&nbsp;</a></span>setPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Entity::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija postavlja poziciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>Pozicija entiteta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a830cb1b8769d11322844a34f1e480e4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830cb1b8769d11322844a34f1e480e4b">&#9670;&nbsp;</a></span>setRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Entity::setRotation </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>rotation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija postavlja rotaciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotation</td><td>Rotacija entiteta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a5d2d7bd6cd754ce566e2d4a9e4b991e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d2d7bd6cd754ce566e2d4a9e4b991e0">&#9670;&nbsp;</a></span>setScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Entity::setScale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija postavlja skaliranje entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scale</td><td>Skaliranje entiteta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija atributa</h2>
+<a id="ac7848c5d47d4b2bf12c84ddbbc32052a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7848c5d47d4b2bf12c84ddbbc32052a">&#9670;&nbsp;</a></span>model</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a>* entity::Entity::model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase TexturedModel. </p>
+
+</div>
+</div>
+<a id="ad409c7f2085024479b276c2b6948bddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad409c7f2085024479b276c2b6948bddb">&#9670;&nbsp;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 entity::Entity::position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pozicija entiteta. </p>
+
+</div>
+</div>
+<a id="aedb4c5dc1cfbc8cb3f6deb565ea920cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb4c5dc1cfbc8cb3f6deb565ea920cb">&#9670;&nbsp;</a></span>rotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 entity::Entity::rotation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotacija entiteta. </p>
+
+</div>
+</div>
+<a id="a59e5d5e3575df70cd5c74b5d739d84ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59e5d5e3575df70cd5c74b5d739d84ca">&#9670;&nbsp;</a></span>scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Entity::scale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Skaliranje entiteta. </p>
+
+</div>
+</div>
+<hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
+<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/include/entity/<a class="el" href="Entity_8h_source.html">Entity.h</a></li>
+<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/src/entity/<a class="el" href="Entity_8cpp.html">Entity.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

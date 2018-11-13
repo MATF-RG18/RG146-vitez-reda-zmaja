@@ -1,0 +1,446 @@
+\hypertarget{classentity_1_1Camera}{}\section{Dokumentacija klase entity\+:\+:Camera}
+\label{classentity_1_1Camera}\index{entity\+::\+Camera@{entity\+::\+Camera}}
+
+
+Klasa \hyperlink{classentity_1_1Camera}{Camera} kontrolise pogled na igru. Pomocu klase \hyperlink{classentity_1_1Camera}{Camera} mozemo menjati pogled na entitete u igri kao sto je rotiranje oko objekta i uvelicavanje ili umanjivanje.  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+
+
+Klasni dijagram za entity\+:\+:Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentity_1_1Camera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classentity_1_1Camera_ae28b5312d87e147f8a6a6b3f76c1d0fa}{Camera} (\hyperlink{classentity_1_1Player}{Player} $\ast$\hyperlink{classentity_1_1Camera_ace429069cf20c1138038c00b10e2c608}{player})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classentity_1_1Camera_ae161d83061be4f328de222570c3ece95}{$\sim$\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classentity_1_1Camera_a2c6b67d27b4012631306c2c2c5a3691c}{get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca poziciju kamere. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Camera_a046d693a76fafe58822033c0b80bbc53}{move} ()
+\begin{DoxyCompactList}\small\item\em Funkcija pomera kameru. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Camera_aa9a3b78671fb7385198696733b4faca4}{handle\+Mouse\+Input} (int button, int state, int x, int y)
+\begin{DoxyCompactList}\small\item\em Funkcija obradjuje ulaz sa misa. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Camera_a04352a62ec2c4031cfde35192faf6e03}{handle\+Keyboard\+Input} (unsigned char key)
+\begin{DoxyCompactList}\small\item\em Funkcija obradjuje ulaz sa tastature. Funkcija koja proverava ulaz sa tastature. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Camera_a502da7b4da0782356f7bf75e99e4419c}{get\+Pich} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca rotaciju oko X ose. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Camera_a598fc170be541c2daf281f3b3a267808}{get\+Yaw} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca rotaciju oko Y ose. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Camera_a9d9288cb98d6bf73c2ac749274ae3f03}{get\+Roll} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca rotaciju oko Z ose. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classentity_1_1Camera_a7d7bed8b571309039bcfc6cbe2c829de}{calculate\+Zoom} (int button, int state)
+\begin{DoxyCompactList}\small\item\em Funkcija racuna uvelicavanje pogleda. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Camera_a65a338e64af13f3da99b46fbf5cf879a}{calculate\+Pich} (unsigned char key)
+\begin{DoxyCompactList}\small\item\em Funkcija racuna rotaciju kamere oko X ose. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Camera_a519f8f9f625c56a94d8860c55a134ef3}{calculate\+Angle\+Around\+Player} (unsigned char key)
+\begin{DoxyCompactList}\small\item\em Funkcija racuna ugao kamere oko igraca. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Camera_ad5ed7dcbe9aa939d82509c23a6298251}{calculate\+Horizontal\+Distance} ()
+\begin{DoxyCompactList}\small\item\em Funkcija racuna horizontalnu udaljenost od igraca. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Camera_a0662170fb43e41f529f4e2932a591858}{calculate\+Vertical\+Distance} ()
+\begin{DoxyCompactList}\small\item\em Funkcija racuna vertikalnu udaljenost od igraca. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Camera_a89f1d576fd701ea58b9509b243913952}{calculate\+Camera\+Position} (float horizontal\+Distance, float vertical\+Distance)
+\begin{DoxyCompactList}\small\item\em Funkcija racuna poziciju kamere. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+vec3 \hyperlink{classentity_1_1Camera_a3840344199c2da97dab4bce31d60f45e}{position}
+\begin{DoxyCompactList}\small\item\em Koordinate pozicije kamere. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Camera_a9b05e6208aafb082a8d78d3e01d7e544}{distance\+From\+Player}
+\begin{DoxyCompactList}\small\item\em Udaljenost kamere od igraca. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Camera_aa0d2e83177c5f3b587d030e5b8032fd2}{angle\+Around\+Player}
+\begin{DoxyCompactList}\small\item\em Ugao oko igraca. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Camera_a33f9b55c4b44d7200e7517000fc499b2}{pich}
+\begin{DoxyCompactList}\small\item\em Rotacija kamere po X osi. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Camera_a2ebfeecc4fe70c880813f7a4671d8b63}{yaw}
+\begin{DoxyCompactList}\small\item\em Rotacija kamere po Y osi. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Camera_aed638e415fd894c7e39eb9fecf65afbb}{roll}
+\begin{DoxyCompactList}\small\item\em Rotacija kamere po Z osi. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Camera_aae009950e0af66c4b5ed71f903b81513}{sensitivity}
+\begin{DoxyCompactList}\small\item\em Osetljivost kamere na promene polozaja i rotacije. \end{DoxyCompactList}\item 
+\hyperlink{classentity_1_1Player}{Player} $\ast$ \hyperlink{classentity_1_1Camera_ace429069cf20c1138038c00b10e2c608}{player}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase \hyperlink{classentity_1_1Player}{Player}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classentity_1_1Camera}{Camera} kontrolise pogled na igru. Pomocu klase \hyperlink{classentity_1_1Camera}{Camera} mozemo menjati pogled na entitete u igri kao sto je rotiranje oko objekta i uvelicavanje ili umanjivanje. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classentity_1_1Camera_ae28b5312d87e147f8a6a6b3f76c1d0fa}\label{classentity_1_1Camera_ae28b5312d87e147f8a6a6b3f76c1d0fa}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily entity\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{\hyperlink{classentity_1_1Player}{Player} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em player} & Pokazivac na instancu klase \hyperlink{classentity_1_1Player}{Player}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classentity_1_1Camera_ae161d83061be4f328de222570c3ece95}\label{classentity_1_1Camera_ae161d83061be4f328de222570c3ece95}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!````~Camera@{$\sim$\+Camera}}
+\index{````~Camera@{$\sim$\+Camera}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{$\sim$\+Camera()}{~Camera()}}
+{\footnotesize\ttfamily entity\+::\+Camera\+::$\sim$\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classentity_1_1Camera_a519f8f9f625c56a94d8860c55a134ef3}\label{classentity_1_1Camera_a519f8f9f625c56a94d8860c55a134ef3}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!calculate\+Angle\+Around\+Player@{calculate\+Angle\+Around\+Player}}
+\index{calculate\+Angle\+Around\+Player@{calculate\+Angle\+Around\+Player}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{calculate\+Angle\+Around\+Player()}{calculateAngleAroundPlayer()}}
+{\footnotesize\ttfamily void entity\+::\+Camera\+::calculate\+Angle\+Around\+Player (\begin{DoxyParamCaption}\item[{unsigned char}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija racuna ugao kamere oko igraca. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em key} & Karakter koji je pritisnut na tastaturi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_a89f1d576fd701ea58b9509b243913952}\label{classentity_1_1Camera_a89f1d576fd701ea58b9509b243913952}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!calculate\+Camera\+Position@{calculate\+Camera\+Position}}
+\index{calculate\+Camera\+Position@{calculate\+Camera\+Position}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{calculate\+Camera\+Position()}{calculateCameraPosition()}}
+{\footnotesize\ttfamily void entity\+::\+Camera\+::calculate\+Camera\+Position (\begin{DoxyParamCaption}\item[{float}]{horizontal\+Distance,  }\item[{float}]{vertical\+Distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija racuna poziciju kamere. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em horizontal\+Distance} & Horizontalna udaljenost od igraca \\
+\hline
+{\em vertical\+Distance} & Vertikalna udaljenost od igraca \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_ad5ed7dcbe9aa939d82509c23a6298251}\label{classentity_1_1Camera_ad5ed7dcbe9aa939d82509c23a6298251}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!calculate\+Horizontal\+Distance@{calculate\+Horizontal\+Distance}}
+\index{calculate\+Horizontal\+Distance@{calculate\+Horizontal\+Distance}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{calculate\+Horizontal\+Distance()}{calculateHorizontalDistance()}}
+{\footnotesize\ttfamily float entity\+::\+Camera\+::calculate\+Horizontal\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija racuna horizontalnu udaljenost od igraca. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_a65a338e64af13f3da99b46fbf5cf879a}\label{classentity_1_1Camera_a65a338e64af13f3da99b46fbf5cf879a}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!calculate\+Pich@{calculate\+Pich}}
+\index{calculate\+Pich@{calculate\+Pich}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{calculate\+Pich()}{calculatePich()}}
+{\footnotesize\ttfamily void entity\+::\+Camera\+::calculate\+Pich (\begin{DoxyParamCaption}\item[{unsigned char}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija racuna rotaciju kamere oko X ose. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em key} & Karakter koji je pritisnut na tastaturi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_a0662170fb43e41f529f4e2932a591858}\label{classentity_1_1Camera_a0662170fb43e41f529f4e2932a591858}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!calculate\+Vertical\+Distance@{calculate\+Vertical\+Distance}}
+\index{calculate\+Vertical\+Distance@{calculate\+Vertical\+Distance}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{calculate\+Vertical\+Distance()}{calculateVerticalDistance()}}
+{\footnotesize\ttfamily float entity\+::\+Camera\+::calculate\+Vertical\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija racuna vertikalnu udaljenost od igraca. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_a7d7bed8b571309039bcfc6cbe2c829de}\label{classentity_1_1Camera_a7d7bed8b571309039bcfc6cbe2c829de}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!calculate\+Zoom@{calculate\+Zoom}}
+\index{calculate\+Zoom@{calculate\+Zoom}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{calculate\+Zoom()}{calculateZoom()}}
+{\footnotesize\ttfamily void entity\+::\+Camera\+::calculate\+Zoom (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija racuna uvelicavanje pogleda. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_a502da7b4da0782356f7bf75e99e4419c}\label{classentity_1_1Camera_a502da7b4da0782356f7bf75e99e4419c}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!get\+Pich@{get\+Pich}}
+\index{get\+Pich@{get\+Pich}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{get\+Pich()}{getPich()}}
+{\footnotesize\ttfamily float entity\+::\+Camera\+::get\+Pich (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca rotaciju oko X ose. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Ugao u stepenima. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_a2c6b67d27b4012631306c2c2c5a3691c}\label{classentity_1_1Camera_a2c6b67d27b4012631306c2c2c5a3691c}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily vec3 entity\+::\+Camera\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca poziciju kamere. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vec3 Vektor koji sadrzi polozaj kamere. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_a9d9288cb98d6bf73c2ac749274ae3f03}\label{classentity_1_1Camera_a9d9288cb98d6bf73c2ac749274ae3f03}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!get\+Roll@{get\+Roll}}
+\index{get\+Roll@{get\+Roll}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{get\+Roll()}{getRoll()}}
+{\footnotesize\ttfamily float entity\+::\+Camera\+::get\+Roll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca rotaciju oko Z ose. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Ugao u stepenima. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_a598fc170be541c2daf281f3b3a267808}\label{classentity_1_1Camera_a598fc170be541c2daf281f3b3a267808}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!get\+Yaw@{get\+Yaw}}
+\index{get\+Yaw@{get\+Yaw}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{get\+Yaw()}{getYaw()}}
+{\footnotesize\ttfamily float entity\+::\+Camera\+::get\+Yaw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca rotaciju oko Y ose. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Ugao u stepenima. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_a04352a62ec2c4031cfde35192faf6e03}\label{classentity_1_1Camera_a04352a62ec2c4031cfde35192faf6e03}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!handle\+Keyboard\+Input@{handle\+Keyboard\+Input}}
+\index{handle\+Keyboard\+Input@{handle\+Keyboard\+Input}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{handle\+Keyboard\+Input()}{handleKeyboardInput()}}
+{\footnotesize\ttfamily void entity\+::\+Camera\+::handle\+Keyboard\+Input (\begin{DoxyParamCaption}\item[{unsigned char}]{key }\end{DoxyParamCaption})}
+
+
+
+Funkcija obradjuje ulaz sa tastature. Funkcija koja proverava ulaz sa tastature. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em key} & Karakter koji je pritisnut na tastaturi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_aa9a3b78671fb7385198696733b4faca4}\label{classentity_1_1Camera_aa9a3b78671fb7385198696733b4faca4}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!handle\+Mouse\+Input@{handle\+Mouse\+Input}}
+\index{handle\+Mouse\+Input@{handle\+Mouse\+Input}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{handle\+Mouse\+Input()}{handleMouseInput()}}
+{\footnotesize\ttfamily void entity\+::\+Camera\+::handle\+Mouse\+Input (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{state,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Funkcija obradjuje ulaz sa misa. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em button} & Taster koji je pritisnut na misu \\
+\hline
+{\em state} & Stanje tastera(pritisnut ili otpusten) \\
+\hline
+{\em x} & X koordinata pozicije kursora \\
+\hline
+{\em y} & Y koordinata pozicije kursora \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Camera_a046d693a76fafe58822033c0b80bbc53}\label{classentity_1_1Camera_a046d693a76fafe58822033c0b80bbc53}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!move@{move}}
+\index{move@{move}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void entity\+::\+Camera\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija pomera kameru. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void. 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classentity_1_1Camera_aa0d2e83177c5f3b587d030e5b8032fd2}\label{classentity_1_1Camera_aa0d2e83177c5f3b587d030e5b8032fd2}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!angle\+Around\+Player@{angle\+Around\+Player}}
+\index{angle\+Around\+Player@{angle\+Around\+Player}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{angle\+Around\+Player}{angleAroundPlayer}}
+{\footnotesize\ttfamily float entity\+::\+Camera\+::angle\+Around\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ugao oko igraca. 
+
+\mbox{\Hypertarget{classentity_1_1Camera_a9b05e6208aafb082a8d78d3e01d7e544}\label{classentity_1_1Camera_a9b05e6208aafb082a8d78d3e01d7e544}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!distance\+From\+Player@{distance\+From\+Player}}
+\index{distance\+From\+Player@{distance\+From\+Player}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{distance\+From\+Player}{distanceFromPlayer}}
+{\footnotesize\ttfamily float entity\+::\+Camera\+::distance\+From\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Udaljenost kamere od igraca. 
+
+\mbox{\Hypertarget{classentity_1_1Camera_a33f9b55c4b44d7200e7517000fc499b2}\label{classentity_1_1Camera_a33f9b55c4b44d7200e7517000fc499b2}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!pich@{pich}}
+\index{pich@{pich}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{pich}{pich}}
+{\footnotesize\ttfamily float entity\+::\+Camera\+::pich\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rotacija kamere po X osi. 
+
+\mbox{\Hypertarget{classentity_1_1Camera_ace429069cf20c1138038c00b10e2c608}\label{classentity_1_1Camera_ace429069cf20c1138038c00b10e2c608}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!player@{player}}
+\index{player@{player}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \hyperlink{classentity_1_1Player}{Player}$\ast$ entity\+::\+Camera\+::player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase \hyperlink{classentity_1_1Player}{Player}. 
+
+\mbox{\Hypertarget{classentity_1_1Camera_a3840344199c2da97dab4bce31d60f45e}\label{classentity_1_1Camera_a3840344199c2da97dab4bce31d60f45e}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!position@{position}}
+\index{position@{position}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily vec3 entity\+::\+Camera\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Koordinate pozicije kamere. 
+
+\mbox{\Hypertarget{classentity_1_1Camera_aed638e415fd894c7e39eb9fecf65afbb}\label{classentity_1_1Camera_aed638e415fd894c7e39eb9fecf65afbb}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!roll@{roll}}
+\index{roll@{roll}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{roll}{roll}}
+{\footnotesize\ttfamily float entity\+::\+Camera\+::roll\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rotacija kamere po Z osi. 
+
+\mbox{\Hypertarget{classentity_1_1Camera_aae009950e0af66c4b5ed71f903b81513}\label{classentity_1_1Camera_aae009950e0af66c4b5ed71f903b81513}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!sensitivity@{sensitivity}}
+\index{sensitivity@{sensitivity}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{sensitivity}{sensitivity}}
+{\footnotesize\ttfamily float entity\+::\+Camera\+::sensitivity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Osetljivost kamere na promene polozaja i rotacije. 
+
+\mbox{\Hypertarget{classentity_1_1Camera_a2ebfeecc4fe70c880813f7a4671d8b63}\label{classentity_1_1Camera_a2ebfeecc4fe70c880813f7a4671d8b63}} 
+\index{entity\+::\+Camera@{entity\+::\+Camera}!yaw@{yaw}}
+\index{yaw@{yaw}!entity\+::\+Camera@{entity\+::\+Camera}}
+\subsubsection{\texorpdfstring{yaw}{yaw}}
+{\footnotesize\ttfamily float entity\+::\+Camera\+::yaw\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rotacija kamere po Y osi. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/entity/\hyperlink{Camera_8h}{Camera.\+h}\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/entity/\hyperlink{Camera_8cpp}{Camera.\+cpp}\end{DoxyCompactItemize}

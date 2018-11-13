@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/include/core/VaoLoader.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_3d69f64eaf81436fe2b22361382717e5.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">VaoLoader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="VaoLoader_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _VAOLOADER_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _VAOLOADER_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Omogucuje korsicenje novijih verzija OpenGL-a</span></div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="VaoLoader_8h.html#a120fb070bddb21f0bd899f50252c4cb5">   12</a></span>&#160;<span class="preprocessor">#define GL_GLEXT_PROTOTYPES</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Ukljucivanje korsnicki defininisanih biblioteka.</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../model/RawModel.h&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// Ukljucivanje OpenGL biblioteke.</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;GL/glut.h&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Ukljucivanje biblioteka</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;png.h&gt;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;Magick++.h&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// Koriscenje prostora imena za jednostavniji i pregledniji kod.</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemodel.html">model</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceMagick.html">Magick</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacecore.html">core</a> {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classcore_1_1VaoLoader.html">   45</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classcore_1_1VaoLoader.html">VaoLoader</a> {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">// Privatne promenljive klase</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classcore_1_1VaoLoader.html#a09fec3fcaf674c66046a859e60c9c674">   51</a></span>&#160;    GLuint <a class="code" href="classcore_1_1VaoLoader.html#a09fec3fcaf674c66046a859e60c9c674">vaoID</a>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classcore_1_1VaoLoader.html#a4bc8031f15ad1b7c7eff491f926b93e4">   54</a></span>&#160;    GLuint <a class="code" href="classcore_1_1VaoLoader.html#a4bc8031f15ad1b7c7eff491f926b93e4">vboID</a>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classcore_1_1VaoLoader.html#ad37e6f10d175e35a6fce4b9f76b559e2">   57</a></span>&#160;    vector&lt;GLuint&gt; <a class="code" href="classcore_1_1VaoLoader.html#ad37e6f10d175e35a6fce4b9f76b559e2">vaos</a>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classcore_1_1VaoLoader.html#a8866245dbda8794e13956115557159a2">   60</a></span>&#160;    vector&lt;GLuint&gt; <a class="code" href="classcore_1_1VaoLoader.html#a8866245dbda8794e13956115557159a2">vbos</a>;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classcore_1_1VaoLoader.html#a6f2a03c0bca3b9c8211215014747cbaa">   63</a></span>&#160;    vector&lt;GLint&gt; <a class="code" href="classcore_1_1VaoLoader.html#a6f2a03c0bca3b9c8211215014747cbaa">textures</a>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">// Javne funkcije klase</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classcore_1_1VaoLoader.html">VaoLoader</a>();</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    ~<a class="code" href="classcore_1_1VaoLoader.html">VaoLoader</a>();</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="classmodel_1_1RawModel.html">RawModel</a> * loadToVao(GLfloat positions[], GLint positionsSize, GLint indices[], GLint indicesSize, GLfloat textureCoords[], GLint textureSize, GLfloat normals[], GLint normalsSize);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    GLint loadTexture(<span class="keyword">const</span> <span class="keywordtype">char</span> *fileName);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> cleanUp(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">// Privatne funkcije klase.</span></div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">int</span> createVao(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> storeDataInVertexBuffer(GLint attributeNumber, <span class="keywordtype">int</span> coordinateSize, GLfloat data[], GLint dataSize);</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> storeDataInIndicesBuffer(GLint data[], GLint dataSize);</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> unbindVao(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    vector&lt;float&gt; storeDataInFloatBuffer(GLfloat data[], GLint dataSize);</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    vector&lt;int&gt; storeDataInIntBuffer(GLint data[], GLint dataSize);</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  };</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;} <span class="comment">// core</span></div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classcore_1_1VaoLoader_html_ad37e6f10d175e35a6fce4b9f76b559e2"><div class="ttname"><a href="classcore_1_1VaoLoader.html#ad37e6f10d175e35a6fce4b9f76b559e2">core::VaoLoader::vaos</a></div><div class="ttdeci">vector&lt; GLuint &gt; vaos</div><div class="ttdoc">Niz svih identifikatora niza atributa. </div><div class="ttdef"><b>Definition:</b> VaoLoader.h:57</div></div>
+<div class="ttc" id="classcore_1_1VaoLoader_html_a09fec3fcaf674c66046a859e60c9c674"><div class="ttname"><a href="classcore_1_1VaoLoader.html#a09fec3fcaf674c66046a859e60c9c674">core::VaoLoader::vaoID</a></div><div class="ttdeci">GLuint vaoID</div><div class="ttdoc">Identifikator niza atributa. </div><div class="ttdef"><b>Definition:</b> VaoLoader.h:51</div></div>
+<div class="ttc" id="classcore_1_1VaoLoader_html_a4bc8031f15ad1b7c7eff491f926b93e4"><div class="ttname"><a href="classcore_1_1VaoLoader.html#a4bc8031f15ad1b7c7eff491f926b93e4">core::VaoLoader::vboID</a></div><div class="ttdeci">GLuint vboID</div><div class="ttdoc">Identifikator bafera koji postaje clan niza atributa. </div><div class="ttdef"><b>Definition:</b> VaoLoader.h:54</div></div>
+<div class="ttc" id="namespacecore_html"><div class="ttname"><a href="namespacecore.html">core</a></div><div class="ttdoc">Prostor imena core. Sadrzi sve klase, funkcije i promenljive koje su od sustinskog znacaja za funkcio...</div><div class="ttdef"><b>Definition:</b> Engine.cpp:4</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdoc">Prostor imena model. Sadrzi sve klase, funkcije i promenljive koje opisuju model objekta. </div><div class="ttdef"><b>Definition:</b> RawModel.cpp:4</div></div>
+<div class="ttc" id="classcore_1_1VaoLoader_html_a6f2a03c0bca3b9c8211215014747cbaa"><div class="ttname"><a href="classcore_1_1VaoLoader.html#a6f2a03c0bca3b9c8211215014747cbaa">core::VaoLoader::textures</a></div><div class="ttdeci">vector&lt; GLint &gt; textures</div><div class="ttdoc">Niz svih identifikatora tekstura. </div><div class="ttdef"><b>Definition:</b> VaoLoader.h:63</div></div>
+<div class="ttc" id="classmodel_1_1RawModel_html"><div class="ttname"><a href="classmodel_1_1RawModel.html">model::RawModel</a></div><div class="ttdoc">Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa...</div><div class="ttdef"><b>Definition:</b> RawModel.h:21</div></div>
+<div class="ttc" id="classcore_1_1VaoLoader_html_a8866245dbda8794e13956115557159a2"><div class="ttname"><a href="classcore_1_1VaoLoader.html#a8866245dbda8794e13956115557159a2">core::VaoLoader::vbos</a></div><div class="ttdeci">vector&lt; GLuint &gt; vbos</div><div class="ttdoc">Niz svih identifikatora bafera. </div><div class="ttdef"><b>Definition:</b> VaoLoader.h:60</div></div>
+<div class="ttc" id="classcore_1_1VaoLoader_html"><div class="ttname"><a href="classcore_1_1VaoLoader.html">core::VaoLoader</a></div><div class="ttdoc">Klasa VaoLoader je zaduzena za ucitavanje atributa u memoriju. Zadatak ove klase je ucitavanje i defi...</div><div class="ttdef"><b>Definition:</b> VaoLoader.h:45</div></div>
+<div class="ttc" id="namespaceMagick_html"><div class="ttname"><a href="namespaceMagick.html">Magick</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

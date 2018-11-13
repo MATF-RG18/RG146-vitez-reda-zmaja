@@ -1,0 +1,216 @@
+\hypertarget{classcore_1_1Engine}{}\section{Dokumentacija klase core\+:\+:Engine}
+\label{classcore_1_1Engine}\index{core\+::\+Engine@{core\+::\+Engine}}
+
+
+Klasa \hyperlink{classcore_1_1Engine}{Engine} je jezgro i kontroler programa. Sva bitnija podesavanja i inicijalizacije desavaju se u ovoj klasi. Klasa je zaduzena za inicijalizaciju G\+L\+U\+T-\/a , Open\+G\+L-\/a, i kontrolisanje i kreiranje ostalih korisnicki definisanih klasa i funkcija.  
+
+
+
+
+{\ttfamily \#include $<$Engine.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1Engine_a9ca4bcdbd363e861fea0e15fbdbf7016}{Engine} (const char $\ast$\hyperlink{classcore_1_1Engine_ad695d2314128b2500074282b10139804}{screen\+Title}, int \hyperlink{classcore_1_1Engine_a69e16377fb9f9420b7147e0465abd1f7}{screen\+Width}, int \hyperlink{classcore_1_1Engine_a40fe67e2a2dbbc34c1955fa2b28d87bc}{screen\+Height})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se vrednostima privatnih promenljivih klase pridruzuju vrednosti parametra konstruktora. \end{DoxyCompactList}\item 
+\hyperlink{classcore_1_1Engine_afadff2634c914c9f6c4ade95e78ff693}{$\sim$\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1Engine_ac0cb11890396ccdf5100bc73045c4d38}{start} (int $\ast$argcp, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Funkcija startuje bitne procese za funkcionisanje. U funkciji se pozivaju funkcije za inicijalizaciju G\+L\+U\+T-\/a, Opnen\+G\+L-\/a, funkcija za kreiranje prozora i registraciju callback funkcija. Takodje funkcija pokrece glavnu petlju programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcore_1_1Engine_a737de95b00aa5b62c466f2e3dc4edcdb}{init\+Glut} (int $\ast$argcp, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Funkcija inicijalizuje G\+L\+UT. U funkciji se postavljalju parametri osnovnih funkcija za inicijalizaciju G\+L\+U\+T-\/a. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1Engine_ad6d0e175eff6ec04d3e5af53a78443ef}{create\+Window} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija kreira prozor na racunaru. U funkciji se postavljalju parametri prozora kao sto su ime prozora, sirini i visina , i pozicija. Parametri su definisani kao lokalne promenljive klase. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1Engine_a6cfe680acf87f9882f92b1ffc134021f}{init\+Gl} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija inicijalizuje Open\+GL. U funkciji se postavjalju parametri osnovnih Open\+GL funkcija, takodje se unutar funkcije ucitavaju modeli i informacije koje je potrebno ucitati pre glavne petlje programa. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1Engine_a4a8c96ce1172195507d2233479837ad2}{register\+Callback\+Functions} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija registruje callback funkcije. U funkciji se pomocu G\+L\+UT funkcija prosledjuju pokazivaci callback funkcija. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{classcore_1_1Engine_ad695d2314128b2500074282b10139804}{screen\+Title}
+\begin{DoxyCompactList}\small\item\em Sadrzi ime koje ce biti prikazano kao naslov kreiranog prozora. \end{DoxyCompactList}\item 
+int \hyperlink{classcore_1_1Engine_a69e16377fb9f9420b7147e0465abd1f7}{screen\+Width}
+\begin{DoxyCompactList}\small\item\em Sadrzi sirinu prozora u pikselima. \end{DoxyCompactList}\item 
+int \hyperlink{classcore_1_1Engine_a40fe67e2a2dbbc34c1955fa2b28d87bc}{screen\+Height}
+\begin{DoxyCompactList}\small\item\em Sadrzi visinu prozora u pikselima. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classcore_1_1Engine}{Engine} je jezgro i kontroler programa. Sva bitnija podesavanja i inicijalizacije desavaju se u ovoj klasi. Klasa je zaduzena za inicijalizaciju G\+L\+U\+T-\/a , Open\+G\+L-\/a, i kontrolisanje i kreiranje ostalih korisnicki definisanih klasa i funkcija. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classcore_1_1Engine_a9ca4bcdbd363e861fea0e15fbdbf7016}\label{classcore_1_1Engine_a9ca4bcdbd363e861fea0e15fbdbf7016}} 
+\index{core\+::\+Engine@{core\+::\+Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!core\+::\+Engine@{core\+::\+Engine}}
+\subsubsection{\texorpdfstring{Engine()}{Engine()}}
+{\footnotesize\ttfamily core\+::\+Engine\+::\+Engine (\begin{DoxyParamCaption}\item[{const char $\ast$}]{screen\+Title,  }\item[{int}]{screen\+Width,  }\item[{int}]{screen\+Height }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. U konstruktoru se vrednostima privatnih promenljivih klase pridruzuju vrednosti parametra konstruktora. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em screen\+Title} & Niska karaktera koja odredjuje naslov prozora \\
+\hline
+{\em screen\+Width} & Ceo broj koji odredjuje sirinu prozora u pikselima \\
+\hline
+{\em screen\+Height} & Ceo broj koji odredjuje sirinu prozora u pikselima \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1Engine_afadff2634c914c9f6c4ade95e78ff693}\label{classcore_1_1Engine_afadff2634c914c9f6c4ade95e78ff693}} 
+\index{core\+::\+Engine@{core\+::\+Engine}!````~Engine@{$\sim$\+Engine}}
+\index{````~Engine@{$\sim$\+Engine}!core\+::\+Engine@{core\+::\+Engine}}
+\subsubsection{\texorpdfstring{$\sim$\+Engine()}{~Engine()}}
+{\footnotesize\ttfamily core\+::\+Engine\+::$\sim$\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classcore_1_1Engine_ad6d0e175eff6ec04d3e5af53a78443ef}\label{classcore_1_1Engine_ad6d0e175eff6ec04d3e5af53a78443ef}} 
+\index{core\+::\+Engine@{core\+::\+Engine}!create\+Window@{create\+Window}}
+\index{create\+Window@{create\+Window}!core\+::\+Engine@{core\+::\+Engine}}
+\subsubsection{\texorpdfstring{create\+Window()}{createWindow()}}
+{\footnotesize\ttfamily void core\+::\+Engine\+::create\+Window (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija kreira prozor na racunaru. U funkciji se postavljalju parametri prozora kao sto su ime prozora, sirini i visina , i pozicija. Parametri su definisani kao lokalne promenljive klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Engine_a6cfe680acf87f9882f92b1ffc134021f}\label{classcore_1_1Engine_a6cfe680acf87f9882f92b1ffc134021f}} 
+\index{core\+::\+Engine@{core\+::\+Engine}!init\+Gl@{init\+Gl}}
+\index{init\+Gl@{init\+Gl}!core\+::\+Engine@{core\+::\+Engine}}
+\subsubsection{\texorpdfstring{init\+Gl()}{initGl()}}
+{\footnotesize\ttfamily void core\+::\+Engine\+::init\+Gl (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija inicijalizuje Open\+GL. U funkciji se postavjalju parametri osnovnih Open\+GL funkcija, takodje se unutar funkcije ucitavaju modeli i informacije koje je potrebno ucitati pre glavne petlje programa. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Engine_a737de95b00aa5b62c466f2e3dc4edcdb}\label{classcore_1_1Engine_a737de95b00aa5b62c466f2e3dc4edcdb}} 
+\index{core\+::\+Engine@{core\+::\+Engine}!init\+Glut@{init\+Glut}}
+\index{init\+Glut@{init\+Glut}!core\+::\+Engine@{core\+::\+Engine}}
+\subsubsection{\texorpdfstring{init\+Glut()}{initGlut()}}
+{\footnotesize\ttfamily void core\+::\+Engine\+::init\+Glut (\begin{DoxyParamCaption}\item[{int $\ast$}]{argcp,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija inicijalizuje G\+L\+UT. U funkciji se postavljalju parametri osnovnih funkcija za inicijalizaciju G\+L\+U\+T-\/a. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em argcp} & Pokazivac na broj argumenata programa \\
+\hline
+{\em argv} & Niz niski koje su argumenti programa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Engine_a4a8c96ce1172195507d2233479837ad2}\label{classcore_1_1Engine_a4a8c96ce1172195507d2233479837ad2}} 
+\index{core\+::\+Engine@{core\+::\+Engine}!register\+Callback\+Functions@{register\+Callback\+Functions}}
+\index{register\+Callback\+Functions@{register\+Callback\+Functions}!core\+::\+Engine@{core\+::\+Engine}}
+\subsubsection{\texorpdfstring{register\+Callback\+Functions()}{registerCallbackFunctions()}}
+{\footnotesize\ttfamily void core\+::\+Engine\+::register\+Callback\+Functions (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija registruje callback funkcije. U funkciji se pomocu G\+L\+UT funkcija prosledjuju pokazivaci callback funkcija. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Engine_ac0cb11890396ccdf5100bc73045c4d38}\label{classcore_1_1Engine_ac0cb11890396ccdf5100bc73045c4d38}} 
+\index{core\+::\+Engine@{core\+::\+Engine}!start@{start}}
+\index{start@{start}!core\+::\+Engine@{core\+::\+Engine}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void core\+::\+Engine\+::start (\begin{DoxyParamCaption}\item[{int $\ast$}]{argcp,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Funkcija startuje bitne procese za funkcionisanje. U funkciji se pozivaju funkcije za inicijalizaciju G\+L\+U\+T-\/a, Opnen\+G\+L-\/a, funkcija za kreiranje prozora i registraciju callback funkcija. Takodje funkcija pokrece glavnu petlju programa. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em argcp} & Pokazivac na broj argumenata programa \\
+\hline
+{\em argv} & Niz niski koje su argumenti programa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classcore_1_1Engine_a40fe67e2a2dbbc34c1955fa2b28d87bc}\label{classcore_1_1Engine_a40fe67e2a2dbbc34c1955fa2b28d87bc}} 
+\index{core\+::\+Engine@{core\+::\+Engine}!screen\+Height@{screen\+Height}}
+\index{screen\+Height@{screen\+Height}!core\+::\+Engine@{core\+::\+Engine}}
+\subsubsection{\texorpdfstring{screen\+Height}{screenHeight}}
+{\footnotesize\ttfamily int core\+::\+Engine\+::screen\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sadrzi visinu prozora u pikselima. 
+
+\mbox{\Hypertarget{classcore_1_1Engine_ad695d2314128b2500074282b10139804}\label{classcore_1_1Engine_ad695d2314128b2500074282b10139804}} 
+\index{core\+::\+Engine@{core\+::\+Engine}!screen\+Title@{screen\+Title}}
+\index{screen\+Title@{screen\+Title}!core\+::\+Engine@{core\+::\+Engine}}
+\subsubsection{\texorpdfstring{screen\+Title}{screenTitle}}
+{\footnotesize\ttfamily const char$\ast$ core\+::\+Engine\+::screen\+Title\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sadrzi ime koje ce biti prikazano kao naslov kreiranog prozora. 
+
+\mbox{\Hypertarget{classcore_1_1Engine_a69e16377fb9f9420b7147e0465abd1f7}\label{classcore_1_1Engine_a69e16377fb9f9420b7147e0465abd1f7}} 
+\index{core\+::\+Engine@{core\+::\+Engine}!screen\+Width@{screen\+Width}}
+\index{screen\+Width@{screen\+Width}!core\+::\+Engine@{core\+::\+Engine}}
+\subsubsection{\texorpdfstring{screen\+Width}{screenWidth}}
+{\footnotesize\ttfamily int core\+::\+Engine\+::screen\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sadrzi sirinu prozora u pikselima. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\hyperlink{Engine_8h}{Engine.\+h}\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/core/\hyperlink{Engine_8cpp}{Engine.\+cpp}\end{DoxyCompactItemize}

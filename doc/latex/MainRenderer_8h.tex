@@ -1,0 +1,113 @@
+\hypertarget{MainRenderer_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Main\+Renderer.h}
+\label{MainRenderer_8h}\index{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Main\+Renderer.\+h@{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Main\+Renderer.\+h}}
+
+
+Deklaracija klase Render.  
+
+
+{\ttfamily \#include \char`\"{}../core/\+Render.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../shader/\+Shader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../core/\+Terrain\+Renderer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../shader/\+Terrain\+Shader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../entity/\+Entity.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+Graf zavisnosti datoteka za Main\+Renderer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MainRenderer_8h__incl}
+\end{center}
+\end{figure}
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MainRenderer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Klase, strukture i unije}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcore_1_1MainRenderer}{core\+::\+Main\+Renderer}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1MainRenderer}{Main\+Renderer} je zaduzena za iscrtavanje sadrzaja na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se iscrtavaju teren igrac i ostali entiteti. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Prostori imena}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecore}{core}
+\begin{DoxyCompactList}\small\item\em Prostor imena core. Sadrzi sve klase, funkcije i promenljive koje su od sustinskog znacaja za funkcionisanje programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Makro zamene}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{MainRenderer_8h_a180102dba1103db19570c71c6f25eb1c}{V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}~\char`\"{}src/shader/Vertex\+Shader.\+txt\char`\"{}
+\item 
+\#define \hyperlink{MainRenderer_8h_a30d830937cb33de7ec847474ed321d2d}{F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}~\char`\"{}src/shader/Fragment\+Shader.\+txt\char`\"{}
+\item 
+\#define \hyperlink{MainRenderer_8h_af318b4f457d085d5d0d437f7008f9416}{T\+E\+R\+R\+A\+I\+N\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}~\char`\"{}src/shader/Terrain\+Vertex\+Shader.\+txt\char`\"{}
+\item 
+\#define \hyperlink{MainRenderer_8h_ae0f5765ea8e4bfeea87a86374508e4fb}{T\+E\+R\+R\+A\+I\+N\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}~\char`\"{}src/shader/Terrain\+Fragment\+Shader.\+txt\char`\"{}
+\item 
+\#define \hyperlink{MainRenderer_8h_a5c71a5e59a53413cd6c270266d63b031}{R}~0.\+5
+\item 
+\#define \hyperlink{MainRenderer_8h_aed9ea78689ecce0b7264c02c7f8a9a54}{G}~0.\+5
+\item 
+\#define \hyperlink{MainRenderer_8h_a111da81ae5883147168bbb8366377b10}{B}~0.\+5
+\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Deklaracija klase Render. 
+
+\begin{DoxyAuthor}{Autor}
+Dusan Pantelic 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Datum}
+Avgvust 2018 
+\end{DoxyDate}
+
+
+\subsection{Dokumentacija makro zamene}
+\mbox{\Hypertarget{MainRenderer_8h_a111da81ae5883147168bbb8366377b10}\label{MainRenderer_8h_a111da81ae5883147168bbb8366377b10}} 
+\index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!B@{B}}
+\index{B@{B}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily \#define B~0.\+5}
+
+\mbox{\Hypertarget{MainRenderer_8h_a30d830937cb33de7ec847474ed321d2d}\label{MainRenderer_8h_a30d830937cb33de7ec847474ed321d2d}} 
+\index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE@{F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}}
+\index{F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE@{F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}{FRAGMENT\_FILE}}
+{\footnotesize\ttfamily \#define F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE~\char`\"{}src/shader/Fragment\+Shader.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{MainRenderer_8h_aed9ea78689ecce0b7264c02c7f8a9a54}\label{MainRenderer_8h_aed9ea78689ecce0b7264c02c7f8a9a54}} 
+\index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!G@{G}}
+\index{G@{G}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily \#define G~0.\+5}
+
+\mbox{\Hypertarget{MainRenderer_8h_a5c71a5e59a53413cd6c270266d63b031}\label{MainRenderer_8h_a5c71a5e59a53413cd6c270266d63b031}} 
+\index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!R@{R}}
+\index{R@{R}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{R}{R}}
+{\footnotesize\ttfamily \#define R~0.\+5}
+
+\mbox{\Hypertarget{MainRenderer_8h_ae0f5765ea8e4bfeea87a86374508e4fb}\label{MainRenderer_8h_ae0f5765ea8e4bfeea87a86374508e4fb}} 
+\index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!T\+E\+R\+R\+A\+I\+N\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE@{T\+E\+R\+R\+A\+I\+N\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}}
+\index{T\+E\+R\+R\+A\+I\+N\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE@{T\+E\+R\+R\+A\+I\+N\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{T\+E\+R\+R\+A\+I\+N\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}{TERRAIN\_FRAGMENT\_FILE}}
+{\footnotesize\ttfamily \#define T\+E\+R\+R\+A\+I\+N\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE~\char`\"{}src/shader/Terrain\+Fragment\+Shader.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{MainRenderer_8h_af318b4f457d085d5d0d437f7008f9416}\label{MainRenderer_8h_af318b4f457d085d5d0d437f7008f9416}} 
+\index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!T\+E\+R\+R\+A\+I\+N\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE@{T\+E\+R\+R\+A\+I\+N\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}}
+\index{T\+E\+R\+R\+A\+I\+N\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE@{T\+E\+R\+R\+A\+I\+N\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{T\+E\+R\+R\+A\+I\+N\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}{TERRAIN\_VERTEX\_FILE}}
+{\footnotesize\ttfamily \#define T\+E\+R\+R\+A\+I\+N\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE~\char`\"{}src/shader/Terrain\+Vertex\+Shader.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{MainRenderer_8h_a180102dba1103db19570c71c6f25eb1c}\label{MainRenderer_8h_a180102dba1103db19570c71c6f25eb1c}} 
+\index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE@{V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}}
+\index{V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE@{V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}{VERTEX\_FILE}}
+{\footnotesize\ttfamily \#define V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE~\char`\"{}src/shader/Vertex\+Shader.\+txt\char`\"{}}
+

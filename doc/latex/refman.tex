@@ -1,0 +1,241 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[serbian]{babel}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Napravio Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Napravio Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Vitez reda zmaja }\\
+\vspace*{1cm}
+{\large Napravio Doxygen 1.8.13}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{Indeks prostora imena}
+\input{namespaces}
+\chapter{Hijerarhijski sadržaj}
+\input{hierarchy}
+\chapter{Spisak klasa}
+\input{annotated}
+\chapter{Indeks datoteka}
+\input{files}
+\chapter{Dokumentacija prostora imena}
+\input{namespacecore}
+\input{namespaceentity}
+\input{namespacemodel}
+\input{namespaceshader}
+\input{namespaceterrain}
+\input{namespacetexture}
+\input{namespacetinyobj}
+\chapter{Dokumentacija klasa}
+\input{structtinyobj_1_1attrib__t}
+\input{structtinyobj_1_1callback__t__}
+\input{classentity_1_1Camera}
+\input{classcore_1_1Engine}
+\input{classentity_1_1Entity}
+\input{structtinyobj_1_1index__t}
+\input{classentity_1_1Light}
+\input{classcore_1_1MainRenderer}
+\input{structtinyobj_1_1material__t}
+\input{classtinyobj_1_1MaterialFileReader}
+\input{classtinyobj_1_1MaterialReader}
+\input{classtinyobj_1_1MaterialStreamReader}
+\input{structtinyobj_1_1mesh__t}
+\input{classtexture_1_1ModelTexture}
+\input{classcore_1_1ObjLoader}
+\input{structtinyobj_1_1path__t}
+\input{classentity_1_1Player}
+\input{classmodel_1_1RawModel}
+\input{classcore_1_1Render}
+\input{classshader_1_1Shader}
+\input{structtinyobj_1_1shape__t}
+\input{structtinyobj_1_1tag__t}
+\input{classterrain_1_1Terrain}
+\input{classcore_1_1TerrainRenderer}
+\input{classshader_1_1TerrainShader}
+\input{classtexture_1_1TerrainTexture}
+\input{classtexture_1_1TerrainTexturePack}
+\input{structtinyobj_1_1texture__option__t}
+\input{classmodel_1_1TexturedModel}
+\input{classcore_1_1VaoLoader}
+\chapter{Dokumentacija datoteke}
+\input{Engine_8h}
+\input{MainRenderer_8h}
+\input{ObjLoader_8h}
+\input{Render_8h}
+\input{TerrainRenderer_8h}
+\input{VaoLoader_8h}
+\input{Camera_8h}
+\input{Entity_8h}
+\input{Light_8h}
+\input{Player_8h}
+\input{tiny__obj__loader_8h}
+\input{RawModel_8h}
+\input{TexturedModel_8h}
+\input{Shader_8h}
+\input{TerrainShader_8h}
+\input{Terrain_8h}
+\input{ModelTexture_8h}
+\input{TerrainTexture_8h}
+\input{TerrainTexturePack_8h}
+\input{Math_8h}
+\input{Engine_8cpp}
+\input{MainRenderer_8cpp}
+\input{ObjLoader_8cpp}
+\input{Render_8cpp}
+\input{TerrainRenderer_8cpp}
+\input{VaoLoader_8cpp}
+\input{Camera_8cpp}
+\input{Entity_8cpp}
+\input{Light_8cpp}
+\input{Player_8cpp}
+\input{RawModel_8cpp}
+\input{TexturedModel_8cpp}
+\input{Shader_8cpp}
+\input{TerrainShader_8cpp}
+\input{Terrain_8cpp}
+\input{ModelTexture_8cpp}
+\input{TerrainTexture_8cpp}
+\input{TerrainTexturePack_8cpp}
+\input{Math_8cpp}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{Sadržaj}
+\printindex
+
+\end{document}

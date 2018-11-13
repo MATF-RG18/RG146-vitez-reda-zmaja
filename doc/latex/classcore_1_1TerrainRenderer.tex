@@ -1,0 +1,250 @@
+\hypertarget{classcore_1_1TerrainRenderer}{}\section{Dokumentacija klase core\+:\+:Terrain\+Renderer}
+\label{classcore_1_1TerrainRenderer}\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+
+
+Klasa \hyperlink{classcore_1_1Render}{Render} je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran.  
+
+
+
+
+{\ttfamily \#include $<$Terrain\+Renderer.\+h$>$}
+
+
+
+Klasni dijagram za core\+:\+:Terrain\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classcore_1_1TerrainRenderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1TerrainRenderer_aef52c32054bf2be3fc5ec160a2d7433b}{Terrain\+Renderer} (\hyperlink{classshader_1_1TerrainShader}{Terrain\+Shader} $\ast$\hyperlink{classcore_1_1TerrainRenderer_a6db721ffef6f7175977ad243b4ac2834}{terrain\+Shader})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classcore_1_1TerrainRenderer_a18e79e2c14c4f2196d410bbde7b85060}{$\sim$\+Terrain\+Renderer} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1TerrainRenderer_a1f2aaf851e780fc8f78aa5bb3cd1b512}{render} (list$<$ \hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$$>$ terrains)
+\begin{DoxyCompactList}\small\item\em Funkcija iscrtava terene na ekran. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1TerrainRenderer_ad4e7d88767cdfc19ee07bf3558f6c1f0}{prepare\+Terrain} (\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$\hyperlink{namespacecore_ac45da6f80dac9bead5c9310c27897f15}{terrain})
+\begin{DoxyCompactList}\small\item\em Funkcija vrsi pripremu terena za ucitavanje. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1TerrainRenderer_ac66bf45a30d7c1b443f8b77132112fe0}{bind\+Textures} (\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$\hyperlink{namespacecore_ac45da6f80dac9bead5c9310c27897f15}{terrain})
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje teksture terena. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1TerrainRenderer_ac739a96169a8fef7bfad56bbe3367962}{unbind\+Terrain} ()
+\begin{DoxyCompactList}\small\item\em Funkcija otkacinje vezu izmedju podataka terena i programa. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1TerrainRenderer_a5e1837566f4de6e49dbf19e203cc9563}{load\+Model\+Matrix} (\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$\hyperlink{namespacecore_ac45da6f80dac9bead5c9310c27897f15}{terrain})
+\begin{DoxyCompactList}\small\item\em Funkcija kreira matricu transformacije za teren i ucitava je u sejder program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+mat4 \hyperlink{classcore_1_1TerrainRenderer_a06f89d76316964a8da14498ec43756f0}{create\+Projection\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Funkcija kreira matricu projekcije. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classcore_1_1TerrainRenderer_a912eab623ca8c7ca7d8473e30383f831}{F\+OV} = 70
+\begin{DoxyCompactList}\small\item\em Polje vidika. \end{DoxyCompactList}\item 
+float \hyperlink{classcore_1_1TerrainRenderer_a68bdfd4b42381b4514991fe8c4d08c89}{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE} = 0.\+1
+\begin{DoxyCompactList}\small\item\em Prednji deo vidljivosti. \end{DoxyCompactList}\item 
+float \hyperlink{classcore_1_1TerrainRenderer_abc56752e01a0b9b0ebfd57b8daa6172c}{F\+A\+R\+\_\+\+P\+L\+A\+NE} = 1000
+\begin{DoxyCompactList}\small\item\em Zadnji deo vidljivosti. \end{DoxyCompactList}\item 
+\hyperlink{classshader_1_1TerrainShader}{Terrain\+Shader} $\ast$ \hyperlink{classcore_1_1TerrainRenderer_a6db721ffef6f7175977ad243b4ac2834}{terrain\+Shader}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Terrain\+Shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classcore_1_1Render}{Render} je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_aef52c32054bf2be3fc5ec160a2d7433b}\label{classcore_1_1TerrainRenderer_aef52c32054bf2be3fc5ec160a2d7433b}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!Terrain\+Renderer@{Terrain\+Renderer}}
+\index{Terrain\+Renderer@{Terrain\+Renderer}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{Terrain\+Renderer()}{TerrainRenderer()}}
+{\footnotesize\ttfamily core\+::\+Terrain\+Renderer\+::\+Terrain\+Renderer (\begin{DoxyParamCaption}\item[{\hyperlink{classshader_1_1TerrainShader}{Terrain\+Shader} $\ast$}]{terrain\+Shader }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em terrain\+Shader} & Pokazivac na instancu klase Terrain\+Shader. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_a18e79e2c14c4f2196d410bbde7b85060}\label{classcore_1_1TerrainRenderer_a18e79e2c14c4f2196d410bbde7b85060}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!````~Terrain\+Renderer@{$\sim$\+Terrain\+Renderer}}
+\index{````~Terrain\+Renderer@{$\sim$\+Terrain\+Renderer}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Terrain\+Renderer()}{~TerrainRenderer()}}
+{\footnotesize\ttfamily core\+::\+Terrain\+Renderer\+::$\sim$\+Terrain\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_ac66bf45a30d7c1b443f8b77132112fe0}\label{classcore_1_1TerrainRenderer_ac66bf45a30d7c1b443f8b77132112fe0}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!bind\+Textures@{bind\+Textures}}
+\index{bind\+Textures@{bind\+Textures}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{bind\+Textures()}{bindTextures()}}
+{\footnotesize\ttfamily void core\+::\+Terrain\+Renderer\+::bind\+Textures (\begin{DoxyParamCaption}\item[{\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$}]{terrain }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje teksture terena. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em terrain} & Pokazivac na instancu klase Terrain. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_a06f89d76316964a8da14498ec43756f0}\label{classcore_1_1TerrainRenderer_a06f89d76316964a8da14498ec43756f0}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!create\+Projection\+Matrix@{create\+Projection\+Matrix}}
+\index{create\+Projection\+Matrix@{create\+Projection\+Matrix}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{create\+Projection\+Matrix()}{createProjectionMatrix()}}
+{\footnotesize\ttfamily mat4 core\+::\+Terrain\+Renderer\+::create\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija kreira matricu projekcije. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+mat4 Matrica projekcije. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_a5e1837566f4de6e49dbf19e203cc9563}\label{classcore_1_1TerrainRenderer_a5e1837566f4de6e49dbf19e203cc9563}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!load\+Model\+Matrix@{load\+Model\+Matrix}}
+\index{load\+Model\+Matrix@{load\+Model\+Matrix}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{load\+Model\+Matrix()}{loadModelMatrix()}}
+{\footnotesize\ttfamily void core\+::\+Terrain\+Renderer\+::load\+Model\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$}]{terrain }\end{DoxyParamCaption})}
+
+
+
+Funkcija kreira matricu transformacije za teren i ucitava je u sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em terrain} & Pokazivac na instancu klase Terrain. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_ad4e7d88767cdfc19ee07bf3558f6c1f0}\label{classcore_1_1TerrainRenderer_ad4e7d88767cdfc19ee07bf3558f6c1f0}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!prepare\+Terrain@{prepare\+Terrain}}
+\index{prepare\+Terrain@{prepare\+Terrain}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{prepare\+Terrain()}{prepareTerrain()}}
+{\footnotesize\ttfamily void core\+::\+Terrain\+Renderer\+::prepare\+Terrain (\begin{DoxyParamCaption}\item[{\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$}]{terrain }\end{DoxyParamCaption})}
+
+
+
+Funkcija vrsi pripremu terena za ucitavanje. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em terrain} & Pokazivac na instancu klase Terrain. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_a1f2aaf851e780fc8f78aa5bb3cd1b512}\label{classcore_1_1TerrainRenderer_a1f2aaf851e780fc8f78aa5bb3cd1b512}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!render@{render}}
+\index{render@{render}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void core\+::\+Terrain\+Renderer\+::render (\begin{DoxyParamCaption}\item[{list$<$ \hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$$>$}]{terrains }\end{DoxyParamCaption})}
+
+
+
+Funkcija iscrtava terene na ekran. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em terrains} & Lista terena. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_ac739a96169a8fef7bfad56bbe3367962}\label{classcore_1_1TerrainRenderer_ac739a96169a8fef7bfad56bbe3367962}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!unbind\+Terrain@{unbind\+Terrain}}
+\index{unbind\+Terrain@{unbind\+Terrain}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{unbind\+Terrain()}{unbindTerrain()}}
+{\footnotesize\ttfamily void core\+::\+Terrain\+Renderer\+::unbind\+Terrain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija otkacinje vezu izmedju podataka terena i programa. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_abc56752e01a0b9b0ebfd57b8daa6172c}\label{classcore_1_1TerrainRenderer_abc56752e01a0b9b0ebfd57b8daa6172c}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!F\+A\+R\+\_\+\+P\+L\+A\+NE@{F\+A\+R\+\_\+\+P\+L\+A\+NE}}
+\index{F\+A\+R\+\_\+\+P\+L\+A\+NE@{F\+A\+R\+\_\+\+P\+L\+A\+NE}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{F\+A\+R\+\_\+\+P\+L\+A\+NE}{FAR\_PLANE}}
+{\footnotesize\ttfamily float core\+::\+Terrain\+Renderer\+::\+F\+A\+R\+\_\+\+P\+L\+A\+NE = 1000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zadnji deo vidljivosti. 
+
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_a912eab623ca8c7ca7d8473e30383f831}\label{classcore_1_1TerrainRenderer_a912eab623ca8c7ca7d8473e30383f831}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!F\+OV@{F\+OV}}
+\index{F\+OV@{F\+OV}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{F\+OV}{FOV}}
+{\footnotesize\ttfamily float core\+::\+Terrain\+Renderer\+::\+F\+OV = 70\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Polje vidika. 
+
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_a68bdfd4b42381b4514991fe8c4d08c89}\label{classcore_1_1TerrainRenderer_a68bdfd4b42381b4514991fe8c4d08c89}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!N\+E\+A\+R\+\_\+\+P\+L\+A\+NE@{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}}
+\index{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE@{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}{NEAR\_PLANE}}
+{\footnotesize\ttfamily float core\+::\+Terrain\+Renderer\+::\+N\+E\+A\+R\+\_\+\+P\+L\+A\+NE = 0.\+1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prednji deo vidljivosti. 
+
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_a6db721ffef6f7175977ad243b4ac2834}\label{classcore_1_1TerrainRenderer_a6db721ffef6f7175977ad243b4ac2834}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!terrain\+Shader@{terrain\+Shader}}
+\index{terrain\+Shader@{terrain\+Shader}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{terrain\+Shader}{terrainShader}}
+{\footnotesize\ttfamily \hyperlink{classshader_1_1TerrainShader}{Terrain\+Shader}$\ast$ core\+::\+Terrain\+Renderer\+::terrain\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Terrain\+Shader. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\hyperlink{TerrainRenderer_8h}{Terrain\+Renderer.\+h}\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/core/\hyperlink{TerrainRenderer_8cpp}{Terrain\+Renderer.\+cpp}\end{DoxyCompactItemize}

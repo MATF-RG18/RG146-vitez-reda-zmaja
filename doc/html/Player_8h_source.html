@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/include/entity/Player.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_b28a9729f90b4b648c644f033f08c7ee.html">entity</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Player.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Player_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _PLAYER_H_</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _PLAYER_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// Ukljucivanje korsnicki defininisanih biblioteka.</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../entity/Entity.h&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../terrain/Terrain.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Makro za definisanje brzine i rotacione brzine.</span></div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="Player_8h.html#aa5f3efb32c476acce65037d89e154c60">   15</a></span>&#160;<span class="preprocessor">#define RUN_SPEED 0.02</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="Player_8h.html#afa9188776d909e94ead6cf6ffbbdd1e8">   16</a></span>&#160;<span class="preprocessor">#define TURN_SPEED  0.2;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Koriscenje prostora imena za jednostavniji i pregledniji kod.</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceglm.html">glm</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceterrain.html">terrain</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceentity.html">entity</a> {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classentity_1_1Player.html">   33</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classentity_1_1Player.html">Player</a> : <span class="keyword">public</span> <a class="code" href="classentity_1_1Entity.html">Entity</a> {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        </div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="comment">// Privatne promenljive klase</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">private</span>:</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classentity_1_1Player.html#a06f0a95dc0b0efc3299a07f90e91dd25">   38</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="classentity_1_1Player.html#a06f0a95dc0b0efc3299a07f90e91dd25">currentSpeed</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classentity_1_1Player.html#afaac869e93409af86a6f6fc53a95687e">   41</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="classentity_1_1Player.html#afaac869e93409af86a6f6fc53a95687e">currentTurnSpeed</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classentity_1_1Player.html#adc298ca7a3d8ab3528440489ed4ea60e">   44</a></span>&#160;            <a class="code" href="classterrain_1_1Terrain.html">Terrain</a> *<a class="code" href="classentity_1_1Player.html#adc298ca7a3d8ab3528440489ed4ea60e">terrain</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classentity_1_1Player.html#ad36623cb0c52ae4dc97d73cbf1cd2134">   47</a></span>&#160;            <span class="keywordtype">bool</span> *<a class="code" href="classentity_1_1Player.html#ad36623cb0c52ae4dc97d73cbf1cd2134">keyBuffer</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">// Javne funkcije klase</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">public</span>:</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="classentity_1_1Player.html">Player</a>(<a class="code" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *<a class="code" href="namespacemodel.html">model</a>, vec3 position, vec3 rotation, <span class="keywordtype">float</span> scale, <a class="code" href="classterrain_1_1Terrain.html">Terrain</a> *terrain);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            ~<a class="code" href="classentity_1_1Player.html">Player</a>();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordtype">void</span> handleKeyUp(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> key);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordtype">void</span> handleKeyDown(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> key);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">void</span> move();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classentity_1_1Entity_html"><div class="ttname"><a href="classentity_1_1Entity.html">entity::Entity</a></div><div class="ttdoc">Klasa Entity odredjuje jedan entitet. Pomocu klase Entity odredjujemo entitet tako sto mu pridruzujem...</div><div class="ttdef"><b>Definition:</b> Entity.h:38</div></div>
+<div class="ttc" id="classentity_1_1Player_html_ad36623cb0c52ae4dc97d73cbf1cd2134"><div class="ttname"><a href="classentity_1_1Player.html#ad36623cb0c52ae4dc97d73cbf1cd2134">entity::Player::keyBuffer</a></div><div class="ttdeci">bool * keyBuffer</div><div class="ttdoc">Niz karaktera koji su pritisnuti a nisu otpusteni. </div><div class="ttdef"><b>Definition:</b> Player.h:47</div></div>
+<div class="ttc" id="classentity_1_1Player_html_a06f0a95dc0b0efc3299a07f90e91dd25"><div class="ttname"><a href="classentity_1_1Player.html#a06f0a95dc0b0efc3299a07f90e91dd25">entity::Player::currentSpeed</a></div><div class="ttdeci">float currentSpeed</div><div class="ttdoc">Trenutna brzina igraca. </div><div class="ttdef"><b>Definition:</b> Player.h:38</div></div>
+<div class="ttc" id="namespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div></div>
+<div class="ttc" id="classentity_1_1Player_html"><div class="ttname"><a href="classentity_1_1Player.html">entity::Player</a></div><div class="ttdoc">Klasa Player odredjuje igraca koji nadogradjuje entitet. Pomocu klase Player nadogradjujemo klasu Ent...</div><div class="ttdef"><b>Definition:</b> Player.h:33</div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdoc">Prostor imena model. Sadrzi sve klase, funkcije i promenljive koje opisuju model objekta. </div><div class="ttdef"><b>Definition:</b> RawModel.cpp:4</div></div>
+<div class="ttc" id="namespaceentity_html"><div class="ttname"><a href="namespaceentity.html">entity</a></div><div class="ttdoc">Prostor imena entity. Sadrzi sve klase, funkcije i promenljive koje odredjuju jedan entitet...</div><div class="ttdef"><b>Definition:</b> Camera.cpp:3</div></div>
+<div class="ttc" id="classmodel_1_1TexturedModel_html"><div class="ttname"><a href="classmodel_1_1TexturedModel.html">model::TexturedModel</a></div><div class="ttdoc">Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo...</div><div class="ttdef"><b>Definition:</b> TexturedModel.h:29</div></div>
+<div class="ttc" id="classterrain_1_1Terrain_html"><div class="ttname"><a href="classterrain_1_1Terrain.html">terrain::Terrain</a></div><div class="ttdef"><b>Definition:</b> Terrain.h:27</div></div>
+<div class="ttc" id="classentity_1_1Player_html_adc298ca7a3d8ab3528440489ed4ea60e"><div class="ttname"><a href="classentity_1_1Player.html#adc298ca7a3d8ab3528440489ed4ea60e">entity::Player::terrain</a></div><div class="ttdeci">Terrain * terrain</div><div class="ttdoc">Pokazivac na instancu klase Terrain. </div><div class="ttdef"><b>Definition:</b> Player.h:44</div></div>
+<div class="ttc" id="namespaceterrain_html"><div class="ttname"><a href="namespaceterrain.html">terrain</a></div><div class="ttdef"><b>Definition:</b> Terrain.cpp:3</div></div>
+<div class="ttc" id="classentity_1_1Player_html_afaac869e93409af86a6f6fc53a95687e"><div class="ttname"><a href="classentity_1_1Player.html#afaac869e93409af86a6f6fc53a95687e">entity::Player::currentTurnSpeed</a></div><div class="ttdeci">float currentTurnSpeed</div><div class="ttdoc">Trenutna rotaciona brzina igraca. </div><div class="ttdef"><b>Definition:</b> Player.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

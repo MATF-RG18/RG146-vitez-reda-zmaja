@@ -1,0 +1,686 @@
+\hypertarget{classshader_1_1TerrainShader}{}\section{Dokumentacija klase shader\+:\+:Terrain\+Shader}
+\label{classshader_1_1TerrainShader}\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+
+
+Klasa \hyperlink{classshader_1_1TerrainShader}{Terrain\+Shader} ucitava i izvrsava programe na Open\+GL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju.  
+
+
+
+
+{\ttfamily \#include $<$Terrain\+Shader.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classshader_1_1TerrainShader_a8d6dee90d8aabf83f0a5576c65d2e6e1}{Terrain\+Shader} (const char $\ast$vertex\+Shader\+File, const char $\ast$fragment\+Shader\+File)
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se ucitavaju sejder fajlovi i povezuju sa programom. \end{DoxyCompactList}\item 
+\hyperlink{classshader_1_1TerrainShader_afc13c4f8a4b8b6f737c9729d47c62550}{$\sim$\+Terrain\+Shader} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_ae414b98f36de2a58d9c7f18ae6b9880a}{bind\+Attribute} (int index, const char $\ast$variable\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje ime sa generickim atributom. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_afca63864591afe38d57ff8ae39aa8911}{bind\+Attributes} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje sve potrebne atribute. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_a1a198e23fea4d47a75bf7c1c90216d18}{start} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija pokrece sejder program. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_acee0c1d3730febbd229b5eee94696829}{stop} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija zaustavlja sejder program. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_a98782288fa07057e24ab2a88e0020e03}{clean\+Up} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija zaustavlja sejder program. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_a69db3dcab0c9d49d9d57ef1121dc7763}{get\+Uniform\+Location} (const char $\ast$uniform\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca lokaciju uniformne promenljive. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_ad1a4ef8d420ef0a4d7840a12912ddbfe}{get\+All\+Uniform\+Locations} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja lokacije svih uniformnih promenljivih. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_ae4ccafdcc22f15cdbc104d416decd294}{load\+Int} (int uniform\+Location, int value)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava broj u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_a9d4a75f7aa0ab0834dbef2d147919c47}{load\+Float} (int uniform\+Location, float value)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava broj u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_aa980b906e1d8b02a1427fea028750e14}{load\+Float\+Vertex} (int uniform\+Location, vec3 vertex)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava vektor koordinata u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_adba13f15120aff8a5015955afed332b2}{load\+Boolean} (int uniform\+Location, bool value)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava istinitosnu vrednost u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_a855daf1b36bc119a554caf0465c52400}{load\+Matrix} (int uniform\+Location, mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_aea937c6d3218296ebc0b9bc411c1c473}{load\+Transformation\+Matrix} (mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu transformacije u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_a16bbac5b77cac98811441dcd1f212e77}{load\+Projection\+Matrix} (mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu projekcije u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_a7a59458cbaa83284c2a74b372d6f6697}{load\+View\+Matrix} (\hyperlink{classentity_1_1Camera}{Camera} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu pogleda u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_a4c45561760ed2142804589352a820acd}{load\+Light} (\hyperlink{classentity_1_1Light}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava svetlost u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_a726a1237f6c1ebae3c3534b80260c553}{load\+Shine\+Variables} (float shine, float reflectivity)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava promenljive u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_af1a33992fb70f65ba37dba1e4027a74e}{load\+Sky\+Colour} (float r, float g, float b)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava boju neba u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1TerrainShader_aa4317635c2194f8a6fbfe08dffeaedfd}{connect\+Texture\+Units} ()
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje texture terena. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classshader_1_1TerrainShader_ada18e1df5cf7306eff49886a35298ef7}{load\+Shader} (const char $\ast$file\+Name, G\+Lenum type)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava sejder fajlove. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classshader_1_1TerrainShader_a1cb59b7dac7526e5aa17f6861f8874a6}{program\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator programa koji izvrsava sejder fajlove. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_a5f65bb56d6c39b58e79488d2d4409396}{vertex\+Shader\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator ucitanog sejder fajla. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_a0656e567bdee6c000d3fafdc77e653be}{fragment\+Shader\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator ucitanog sejder fajla. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_a1cc3dc2a1aa0190449aa65c5c97911f3}{location\+Transformation\+Matrix}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_af3f85d8f7301ce71b37fb99fbad6cc22}{location\+Projection\+Matrix}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_a3af96cb61a1d54646951c1cc46d161b5}{location\+View\+Matrix}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_a04ee26df93502b6beec604260143f749}{location\+Light\+Position}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_aaadb97ab6d82972d24e744cf1f2d0bb1}{location\+Light\+Colour}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_a8d59890fc8cc4309b3983278a105574e}{location\+Shine}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_afd0f73e3f6e4f78e98073f2669f71a7d}{location\+Reflectivity}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_afaff06ee8890773c6254db93fe3736ff}{location\+Sky\+Colour}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_ab8c3ffdad973abf2b26591aaf4cb64d1}{location\+Background\+Texture}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_acae2f0402eff8bc08c3015e860e2e413}{location\+R\+Texture}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_ae08f66a1b8e6fbe615fd24fc1e5fff20}{location\+G\+Texture}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_a097eb6e1afc654c99f8c703e3091fe95}{location\+B\+Texture}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1TerrainShader_a2fce0f97cafe09a59b828c1b777b3f41}{location\+Blend\+Map}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classshader_1_1TerrainShader}{Terrain\+Shader} ucitava i izvrsava programe na Open\+GL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a8d6dee90d8aabf83f0a5576c65d2e6e1}\label{classshader_1_1TerrainShader_a8d6dee90d8aabf83f0a5576c65d2e6e1}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!Terrain\+Shader@{Terrain\+Shader}}
+\index{Terrain\+Shader@{Terrain\+Shader}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{Terrain\+Shader()}{TerrainShader()}}
+{\footnotesize\ttfamily shader\+::\+Terrain\+Shader\+::\+Terrain\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vertex\+Shader\+File,  }\item[{const char $\ast$}]{fragment\+Shader\+File }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. U konstruktoru se ucitavaju sejder fajlovi i povezuju sa programom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em vertex\+Shader\+File} & Ime sejder fajla. \\
+\hline
+{\em fragment\+Shader\+File} & Ime sejder fajla. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_afc13c4f8a4b8b6f737c9729d47c62550}\label{classshader_1_1TerrainShader_afc13c4f8a4b8b6f737c9729d47c62550}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!````~Terrain\+Shader@{$\sim$\+Terrain\+Shader}}
+\index{````~Terrain\+Shader@{$\sim$\+Terrain\+Shader}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{$\sim$\+Terrain\+Shader()}{~TerrainShader()}}
+{\footnotesize\ttfamily shader\+::\+Terrain\+Shader\+::$\sim$\+Terrain\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_ae414b98f36de2a58d9c7f18ae6b9880a}\label{classshader_1_1TerrainShader_ae414b98f36de2a58d9c7f18ae6b9880a}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!bind\+Attribute@{bind\+Attribute}}
+\index{bind\+Attribute@{bind\+Attribute}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{bind\+Attribute()}{bindAttribute()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::bind\+Attribute (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{const char $\ast$}]{variable\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje ime sa generickim atributom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em index} & Identifikator generickog atributa \\
+\hline
+{\em variable\+Name} & Ime koje pridruzujemo generickom atributu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_afca63864591afe38d57ff8ae39aa8911}\label{classshader_1_1TerrainShader_afca63864591afe38d57ff8ae39aa8911}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!bind\+Attributes@{bind\+Attributes}}
+\index{bind\+Attributes@{bind\+Attributes}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{bind\+Attributes()}{bindAttributes()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::bind\+Attributes (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje sve potrebne atribute. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a98782288fa07057e24ab2a88e0020e03}\label{classshader_1_1TerrainShader_a98782288fa07057e24ab2a88e0020e03}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija zaustavlja sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_aa4317635c2194f8a6fbfe08dffeaedfd}\label{classshader_1_1TerrainShader_aa4317635c2194f8a6fbfe08dffeaedfd}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!connect\+Texture\+Units@{connect\+Texture\+Units}}
+\index{connect\+Texture\+Units@{connect\+Texture\+Units}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{connect\+Texture\+Units()}{connectTextureUnits()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::connect\+Texture\+Units (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje texture terena. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_ad1a4ef8d420ef0a4d7840a12912ddbfe}\label{classshader_1_1TerrainShader_ad1a4ef8d420ef0a4d7840a12912ddbfe}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!get\+All\+Uniform\+Locations@{get\+All\+Uniform\+Locations}}
+\index{get\+All\+Uniform\+Locations@{get\+All\+Uniform\+Locations}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{get\+All\+Uniform\+Locations()}{getAllUniformLocations()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::get\+All\+Uniform\+Locations (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja lokacije svih uniformnih promenljivih. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a69db3dcab0c9d49d9d57ef1121dc7763}\label{classshader_1_1TerrainShader_a69db3dcab0c9d49d9d57ef1121dc7763}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!get\+Uniform\+Location@{get\+Uniform\+Location}}
+\index{get\+Uniform\+Location@{get\+Uniform\+Location}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{get\+Uniform\+Location()}{getUniformLocation()}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::get\+Uniform\+Location (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca lokaciju uniformne promenljive. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Name} & Ime uniformne promenljive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Lokacija uniformne promenljive 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_adba13f15120aff8a5015955afed332b2}\label{classshader_1_1TerrainShader_adba13f15120aff8a5015955afed332b2}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+Boolean@{load\+Boolean}}
+\index{load\+Boolean@{load\+Boolean}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+Boolean()}{loadBoolean()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::load\+Boolean (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava istinitosnu vrednost u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive \\
+\hline
+{\em value} & Istinitosna vrednost \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a9d4a75f7aa0ab0834dbef2d147919c47}\label{classshader_1_1TerrainShader_a9d4a75f7aa0ab0834dbef2d147919c47}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+Float@{load\+Float}}
+\index{load\+Float@{load\+Float}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+Float()}{loadFloat()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::load\+Float (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava broj u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive \\
+\hline
+{\em value} & Broj pokretnom zarezu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_aa980b906e1d8b02a1427fea028750e14}\label{classshader_1_1TerrainShader_aa980b906e1d8b02a1427fea028750e14}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+Float\+Vertex@{load\+Float\+Vertex}}
+\index{load\+Float\+Vertex@{load\+Float\+Vertex}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+Float\+Vertex()}{loadFloatVertex()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::load\+Float\+Vertex (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{vec3}]{vertex }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava vektor koordinata u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive \\
+\hline
+{\em vertex} & Vektor koordinata \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_ae4ccafdcc22f15cdbc104d416decd294}\label{classshader_1_1TerrainShader_ae4ccafdcc22f15cdbc104d416decd294}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+Int@{load\+Int}}
+\index{load\+Int@{load\+Int}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+Int()}{loadInt()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::load\+Int (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava broj u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive \\
+\hline
+{\em value} & Broj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a4c45561760ed2142804589352a820acd}\label{classshader_1_1TerrainShader_a4c45561760ed2142804589352a820acd}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+Light@{load\+Light}}
+\index{load\+Light@{load\+Light}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+Light()}{loadLight()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::load\+Light (\begin{DoxyParamCaption}\item[{\hyperlink{classentity_1_1Light}{Light} $\ast$}]{light }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava svetlost u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em light} & Pokazivac na instancu klase Light \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a855daf1b36bc119a554caf0465c52400}\label{classshader_1_1TerrainShader_a855daf1b36bc119a554caf0465c52400}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+Matrix@{load\+Matrix}}
+\index{load\+Matrix@{load\+Matrix}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+Matrix()}{loadMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::load\+Matrix (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive \\
+\hline
+{\em value} & Matrica \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a16bbac5b77cac98811441dcd1f212e77}\label{classshader_1_1TerrainShader_a16bbac5b77cac98811441dcd1f212e77}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+Projection\+Matrix@{load\+Projection\+Matrix}}
+\index{load\+Projection\+Matrix@{load\+Projection\+Matrix}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+Projection\+Matrix()}{loadProjectionMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::load\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu projekcije u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em value} & Matrica projekcije \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_ada18e1df5cf7306eff49886a35298ef7}\label{classshader_1_1TerrainShader_ada18e1df5cf7306eff49886a35298ef7}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+Shader@{load\+Shader}}
+\index{load\+Shader@{load\+Shader}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+Shader()}{loadShader()}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::load\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{G\+Lenum}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava sejder fajlove. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em file\+Name} & Naziv sejder fajla \\
+\hline
+{\em type} & Vrsta sejdera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Identifikator sejdera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a726a1237f6c1ebae3c3534b80260c553}\label{classshader_1_1TerrainShader_a726a1237f6c1ebae3c3534b80260c553}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+Shine\+Variables@{load\+Shine\+Variables}}
+\index{load\+Shine\+Variables@{load\+Shine\+Variables}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+Shine\+Variables()}{loadShineVariables()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::load\+Shine\+Variables (\begin{DoxyParamCaption}\item[{float}]{shine,  }\item[{float}]{reflectivity }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava promenljive u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em shine} & Intenzitet sjaja \\
+\hline
+{\em reflectivity} & Intenzitet odbijanja svetlosti \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_af1a33992fb70f65ba37dba1e4027a74e}\label{classshader_1_1TerrainShader_af1a33992fb70f65ba37dba1e4027a74e}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+Sky\+Colour@{load\+Sky\+Colour}}
+\index{load\+Sky\+Colour@{load\+Sky\+Colour}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+Sky\+Colour()}{loadSkyColour()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::load\+Sky\+Colour (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava boju neba u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em r} & Kolicina crvene boje \\
+\hline
+{\em g} & Kolicina zelene boje \\
+\hline
+{\em b} & Kolicina plave boje \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_aea937c6d3218296ebc0b9bc411c1c473}\label{classshader_1_1TerrainShader_aea937c6d3218296ebc0b9bc411c1c473}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+Transformation\+Matrix@{load\+Transformation\+Matrix}}
+\index{load\+Transformation\+Matrix@{load\+Transformation\+Matrix}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+Transformation\+Matrix()}{loadTransformationMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::load\+Transformation\+Matrix (\begin{DoxyParamCaption}\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu transformacije u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em value} & Matrica transformacije \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a7a59458cbaa83284c2a74b372d6f6697}\label{classshader_1_1TerrainShader_a7a59458cbaa83284c2a74b372d6f6697}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!load\+View\+Matrix@{load\+View\+Matrix}}
+\index{load\+View\+Matrix@{load\+View\+Matrix}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{load\+View\+Matrix()}{loadViewMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::load\+View\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{classentity_1_1Camera}{Camera} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu pogleda u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em camera} & Pokazivac na instancu klase Camera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a1a198e23fea4d47a75bf7c1c90216d18}\label{classshader_1_1TerrainShader_a1a198e23fea4d47a75bf7c1c90216d18}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!start@{start}}
+\index{start@{start}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::start (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija pokrece sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_acee0c1d3730febbd229b5eee94696829}\label{classshader_1_1TerrainShader_acee0c1d3730febbd229b5eee94696829}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!stop@{stop}}
+\index{stop@{stop}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void shader\+::\+Terrain\+Shader\+::stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija zaustavlja sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a0656e567bdee6c000d3fafdc77e653be}\label{classshader_1_1TerrainShader_a0656e567bdee6c000d3fafdc77e653be}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!fragment\+Shader\+ID@{fragment\+Shader\+ID}}
+\index{fragment\+Shader\+ID@{fragment\+Shader\+ID}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{fragment\+Shader\+ID}{fragmentShaderID}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::fragment\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator ucitanog sejder fajla. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_ab8c3ffdad973abf2b26591aaf4cb64d1}\label{classshader_1_1TerrainShader_ab8c3ffdad973abf2b26591aaf4cb64d1}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+Background\+Texture@{location\+Background\+Texture}}
+\index{location\+Background\+Texture@{location\+Background\+Texture}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+Background\+Texture}{locationBackgroundTexture}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+Background\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a2fce0f97cafe09a59b828c1b777b3f41}\label{classshader_1_1TerrainShader_a2fce0f97cafe09a59b828c1b777b3f41}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+Blend\+Map@{location\+Blend\+Map}}
+\index{location\+Blend\+Map@{location\+Blend\+Map}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+Blend\+Map}{locationBlendMap}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+Blend\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a097eb6e1afc654c99f8c703e3091fe95}\label{classshader_1_1TerrainShader_a097eb6e1afc654c99f8c703e3091fe95}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+B\+Texture@{location\+B\+Texture}}
+\index{location\+B\+Texture@{location\+B\+Texture}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+B\+Texture}{locationBTexture}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+B\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_ae08f66a1b8e6fbe615fd24fc1e5fff20}\label{classshader_1_1TerrainShader_ae08f66a1b8e6fbe615fd24fc1e5fff20}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+G\+Texture@{location\+G\+Texture}}
+\index{location\+G\+Texture@{location\+G\+Texture}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+G\+Texture}{locationGTexture}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+G\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_aaadb97ab6d82972d24e744cf1f2d0bb1}\label{classshader_1_1TerrainShader_aaadb97ab6d82972d24e744cf1f2d0bb1}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+Light\+Colour@{location\+Light\+Colour}}
+\index{location\+Light\+Colour@{location\+Light\+Colour}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+Light\+Colour}{locationLightColour}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+Light\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a04ee26df93502b6beec604260143f749}\label{classshader_1_1TerrainShader_a04ee26df93502b6beec604260143f749}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+Light\+Position@{location\+Light\+Position}}
+\index{location\+Light\+Position@{location\+Light\+Position}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+Light\+Position}{locationLightPosition}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+Light\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_af3f85d8f7301ce71b37fb99fbad6cc22}\label{classshader_1_1TerrainShader_af3f85d8f7301ce71b37fb99fbad6cc22}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+Projection\+Matrix@{location\+Projection\+Matrix}}
+\index{location\+Projection\+Matrix@{location\+Projection\+Matrix}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+Projection\+Matrix}{locationProjectionMatrix}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+Projection\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_afd0f73e3f6e4f78e98073f2669f71a7d}\label{classshader_1_1TerrainShader_afd0f73e3f6e4f78e98073f2669f71a7d}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+Reflectivity@{location\+Reflectivity}}
+\index{location\+Reflectivity@{location\+Reflectivity}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+Reflectivity}{locationReflectivity}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+Reflectivity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_acae2f0402eff8bc08c3015e860e2e413}\label{classshader_1_1TerrainShader_acae2f0402eff8bc08c3015e860e2e413}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+R\+Texture@{location\+R\+Texture}}
+\index{location\+R\+Texture@{location\+R\+Texture}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+R\+Texture}{locationRTexture}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+R\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a8d59890fc8cc4309b3983278a105574e}\label{classshader_1_1TerrainShader_a8d59890fc8cc4309b3983278a105574e}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+Shine@{location\+Shine}}
+\index{location\+Shine@{location\+Shine}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+Shine}{locationShine}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+Shine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_afaff06ee8890773c6254db93fe3736ff}\label{classshader_1_1TerrainShader_afaff06ee8890773c6254db93fe3736ff}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+Sky\+Colour@{location\+Sky\+Colour}}
+\index{location\+Sky\+Colour@{location\+Sky\+Colour}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+Sky\+Colour}{locationSkyColour}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+Sky\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a1cc3dc2a1aa0190449aa65c5c97911f3}\label{classshader_1_1TerrainShader_a1cc3dc2a1aa0190449aa65c5c97911f3}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+Transformation\+Matrix@{location\+Transformation\+Matrix}}
+\index{location\+Transformation\+Matrix@{location\+Transformation\+Matrix}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+Transformation\+Matrix}{locationTransformationMatrix}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+Transformation\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a3af96cb61a1d54646951c1cc46d161b5}\label{classshader_1_1TerrainShader_a3af96cb61a1d54646951c1cc46d161b5}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!location\+View\+Matrix@{location\+View\+Matrix}}
+\index{location\+View\+Matrix@{location\+View\+Matrix}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{location\+View\+Matrix}{locationViewMatrix}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::location\+View\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a1cb59b7dac7526e5aa17f6861f8874a6}\label{classshader_1_1TerrainShader_a1cb59b7dac7526e5aa17f6861f8874a6}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!program\+ID@{program\+ID}}
+\index{program\+ID@{program\+ID}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{program\+ID}{programID}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::program\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator programa koji izvrsava sejder fajlove. 
+
+\mbox{\Hypertarget{classshader_1_1TerrainShader_a5f65bb56d6c39b58e79488d2d4409396}\label{classshader_1_1TerrainShader_a5f65bb56d6c39b58e79488d2d4409396}} 
+\index{shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}!vertex\+Shader\+ID@{vertex\+Shader\+ID}}
+\index{vertex\+Shader\+ID@{vertex\+Shader\+ID}!shader\+::\+Terrain\+Shader@{shader\+::\+Terrain\+Shader}}
+\subsubsection{\texorpdfstring{vertex\+Shader\+ID}{vertexShaderID}}
+{\footnotesize\ttfamily int shader\+::\+Terrain\+Shader\+::vertex\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator ucitanog sejder fajla. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/shader/\hyperlink{TerrainShader_8h}{Terrain\+Shader.\+h}\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/shader/\hyperlink{TerrainShader_8cpp}{Terrain\+Shader.\+cpp}\end{DoxyCompactItemize}

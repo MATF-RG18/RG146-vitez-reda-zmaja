@@ -1,0 +1,74 @@
+////////////////////////////////////////////////////////////////////////////////
+/// @file Camera.h
+/// @brief Deklaracija klase Camera i deklaracija callback funkcija.
+/// @author Dusan Pantelic
+/// @date Jun 2018
+////////////////////////////////////////////////////////////////////////////////
+#ifndef _LIGHT_H_
+#define _LIGHT_H_
+
+// Ukljucivanje biblioteka.
+#include <glm/vec3.hpp>
+#include <glm/mat4x4.hpp> 
+#include <glm/gtc/matrix_transform.hpp> 
+
+// Koriscenje prostora imena za jednostavniji i pregledniji kod.
+using namespace glm;
+using namespace std;
+
+
+////////////////////////////////////////////////////////////////////////////////
+/// @brief Prostor imena entity.
+/// Sadrzi sve klase, funkcije i promenljive koje odredjuju jedan entitet.
+////////////////////////////////////////////////////////////////////////////////
+namespace entity {
+
+
+    //////////////////////////////////////////////////////////////////////////////
+    /// @brief Klasa Light odredjuje osvetljenost.
+    /// Pomocu klase Light odredjujemo poziciju boju kao i intenzitet svetlosti.
+    //////////////////////////////////////////////////////////////////////////////
+    class Light {
+
+        // Privatne promenljive klase
+        private:
+            /// Pozicija izvora svetla.
+            vec3 position;
+
+            /// Boja svetlosti.
+            vec3 colour;
+
+        // Javne funkcije klase
+        public:
+            ////////////////////////////////////////////////////////////////////////////
+            /// @brief Konstruktor klase.
+            /// @param position Pozicija izvora svetla
+            /// @param colour Boja svetlosti
+            ////////////////////////////////////////////////////////////////////////////
+            Light (vec3 position, vec3 colour);
+
+            ////////////////////////////////////////////////////////////////////////////
+            /// @brief Destruktor klase.
+            /// @param void
+            ////////////////////////////////////////////////////////////////////////////
+            ~Light ();
+
+            ////////////////////////////////////////////////////////////////////////////
+            /// @brief Funkcija vraca poziciju izvora svetla.
+            /// @param void
+            /// @return vec3 Pozicija izvora svetla
+            ////////////////////////////////////////////////////////////////////////////
+            vec3 getPosition();
+
+            ////////////////////////////////////////////////////////////////////////////
+            /// @brief Funkcija vraca boju svetlosti.
+            /// @param void
+            /// @return vec3 RGB boja svetlosti
+            ////////////////////////////////////////////////////////////////////////////
+            vec3 getColour();
+
+    };
+
+} // entity
+
+#endif

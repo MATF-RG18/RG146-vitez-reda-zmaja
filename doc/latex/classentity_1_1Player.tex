@@ -1,0 +1,205 @@
+\hypertarget{classentity_1_1Player}{}\section{Dokumentacija klase entity\+:\+:Player}
+\label{classentity_1_1Player}\index{entity\+::\+Player@{entity\+::\+Player}}
+
+
+Klasa \hyperlink{classentity_1_1Player}{Player} odredjuje igraca koji nadogradjuje entitet. Pomocu klase \hyperlink{classentity_1_1Player}{Player} nadogradjujemo klasu \hyperlink{classentity_1_1Entity}{Entity} dodavajuci jos nove atribute i funkcije.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+
+
+Dijagram nasleđivanja za klasu entity\+:\+:Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classentity_1_1Player__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Klasni dijagram za entity\+:\+:Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentity_1_1Player__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classentity_1_1Player_a0edc8eeed60bf40c1ec63bb4f56a89ff}{Player} (\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$\hyperlink{classentity_1_1Entity_ac7848c5d47d4b2bf12c84ddbbc32052a}{model}, vec3 \hyperlink{classentity_1_1Entity_ad409c7f2085024479b276c2b6948bddb}{position}, vec3 \hyperlink{classentity_1_1Entity_aedb4c5dc1cfbc8cb3f6deb565ea920cb}{rotation}, float \hyperlink{classentity_1_1Entity_a59e5d5e3575df70cd5c74b5d739d84ca}{scale}, \hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$\hyperlink{classentity_1_1Player_adc298ca7a3d8ab3528440489ed4ea60e}{terrain})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classentity_1_1Player_aba0d4255d0d8624d01067418279bc9a1}{$\sim$\+Player} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Player_a27a2007873610439598c0ac07a91f3ac}{handle\+Key\+Up} (unsigned char key)
+\begin{DoxyCompactList}\small\item\em Funkcija obradjuje ulaz sa tastature. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Player_af3d0b548d6daeb37d03f9fa57fb28f8a}{handle\+Key\+Down} (unsigned char key)
+\begin{DoxyCompactList}\small\item\em Funkcija obradjuje ulaz sa tastature. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Player_a9b0a7ab96a4ba7c24c7ddac8f07c4d5e}{move} ()
+\begin{DoxyCompactList}\small\item\em Funkcija pomera igraca. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classentity_1_1Player_a06f0a95dc0b0efc3299a07f90e91dd25}{current\+Speed}
+\begin{DoxyCompactList}\small\item\em Trenutna brzina igraca. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Player_afaac869e93409af86a6f6fc53a95687e}{current\+Turn\+Speed}
+\begin{DoxyCompactList}\small\item\em Trenutna rotaciona brzina igraca. \end{DoxyCompactList}\item 
+\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$ \hyperlink{classentity_1_1Player_adc298ca7a3d8ab3528440489ed4ea60e}{terrain}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Terrain. \end{DoxyCompactList}\item 
+bool $\ast$ \hyperlink{classentity_1_1Player_ad36623cb0c52ae4dc97d73cbf1cd2134}{key\+Buffer}
+\begin{DoxyCompactList}\small\item\em Niz karaktera koji su pritisnuti a nisu otpusteni. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classentity_1_1Player}{Player} odredjuje igraca koji nadogradjuje entitet. Pomocu klase \hyperlink{classentity_1_1Player}{Player} nadogradjujemo klasu \hyperlink{classentity_1_1Entity}{Entity} dodavajuci jos nove atribute i funkcije. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classentity_1_1Player_a0edc8eeed60bf40c1ec63bb4f56a89ff}\label{classentity_1_1Player_a0edc8eeed60bf40c1ec63bb4f56a89ff}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!Player@{Player}}
+\index{Player@{Player}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily entity\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$}]{model,  }\item[{vec3}]{position,  }\item[{vec3}]{rotation,  }\item[{float}]{scale,  }\item[{\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$}]{terrain }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em model} & Pokazivac na instancu klase Textured\+Model. \\
+\hline
+{\em position} & Pozicija entiteta \\
+\hline
+{\em rotation} & Rotacija entiteta \\
+\hline
+{\em scale} & Skaliranje entiteta \\
+\hline
+{\em terrain} & Pokazivac na instancu klase Terrain \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classentity_1_1Player_aba0d4255d0d8624d01067418279bc9a1}\label{classentity_1_1Player_aba0d4255d0d8624d01067418279bc9a1}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!````~Player@{$\sim$\+Player}}
+\index{````~Player@{$\sim$\+Player}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{$\sim$\+Player()}{~Player()}}
+{\footnotesize\ttfamily entity\+::\+Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classentity_1_1Player_af3d0b548d6daeb37d03f9fa57fb28f8a}\label{classentity_1_1Player_af3d0b548d6daeb37d03f9fa57fb28f8a}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!handle\+Key\+Down@{handle\+Key\+Down}}
+\index{handle\+Key\+Down@{handle\+Key\+Down}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{handle\+Key\+Down()}{handleKeyDown()}}
+{\footnotesize\ttfamily void entity\+::\+Player\+::handle\+Key\+Down (\begin{DoxyParamCaption}\item[{unsigned char}]{key }\end{DoxyParamCaption})}
+
+
+
+Funkcija obradjuje ulaz sa tastature. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em key} & Karakter koji je pritisnut na tastaturi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Player_a27a2007873610439598c0ac07a91f3ac}\label{classentity_1_1Player_a27a2007873610439598c0ac07a91f3ac}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!handle\+Key\+Up@{handle\+Key\+Up}}
+\index{handle\+Key\+Up@{handle\+Key\+Up}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{handle\+Key\+Up()}{handleKeyUp()}}
+{\footnotesize\ttfamily void entity\+::\+Player\+::handle\+Key\+Up (\begin{DoxyParamCaption}\item[{unsigned char}]{key }\end{DoxyParamCaption})}
+
+
+
+Funkcija obradjuje ulaz sa tastature. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em key} & Karakter koji je otpusten na tastaturi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Player_a9b0a7ab96a4ba7c24c7ddac8f07c4d5e}\label{classentity_1_1Player_a9b0a7ab96a4ba7c24c7ddac8f07c4d5e}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!move@{move}}
+\index{move@{move}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void entity\+::\+Player\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija pomera igraca. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void. 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classentity_1_1Player_a06f0a95dc0b0efc3299a07f90e91dd25}\label{classentity_1_1Player_a06f0a95dc0b0efc3299a07f90e91dd25}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!current\+Speed@{current\+Speed}}
+\index{current\+Speed@{current\+Speed}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{current\+Speed}{currentSpeed}}
+{\footnotesize\ttfamily float entity\+::\+Player\+::current\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Trenutna brzina igraca. 
+
+\mbox{\Hypertarget{classentity_1_1Player_afaac869e93409af86a6f6fc53a95687e}\label{classentity_1_1Player_afaac869e93409af86a6f6fc53a95687e}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!current\+Turn\+Speed@{current\+Turn\+Speed}}
+\index{current\+Turn\+Speed@{current\+Turn\+Speed}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{current\+Turn\+Speed}{currentTurnSpeed}}
+{\footnotesize\ttfamily float entity\+::\+Player\+::current\+Turn\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Trenutna rotaciona brzina igraca. 
+
+\mbox{\Hypertarget{classentity_1_1Player_ad36623cb0c52ae4dc97d73cbf1cd2134}\label{classentity_1_1Player_ad36623cb0c52ae4dc97d73cbf1cd2134}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!key\+Buffer@{key\+Buffer}}
+\index{key\+Buffer@{key\+Buffer}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{key\+Buffer}{keyBuffer}}
+{\footnotesize\ttfamily bool$\ast$ entity\+::\+Player\+::key\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Niz karaktera koji su pritisnuti a nisu otpusteni. 
+
+\mbox{\Hypertarget{classentity_1_1Player_adc298ca7a3d8ab3528440489ed4ea60e}\label{classentity_1_1Player_adc298ca7a3d8ab3528440489ed4ea60e}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!terrain@{terrain}}
+\index{terrain@{terrain}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{terrain}{terrain}}
+{\footnotesize\ttfamily \hyperlink{classterrain_1_1Terrain}{Terrain}$\ast$ entity\+::\+Player\+::terrain\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Terrain. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/entity/\hyperlink{Player_8h}{Player.\+h}\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/entity/\hyperlink{Player_8cpp}{Player.\+cpp}\end{DoxyCompactItemize}

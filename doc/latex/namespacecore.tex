@@ -1,0 +1,259 @@
+\hypertarget{namespacecore}{}\section{Opis prostora imena core}
+\label{namespacecore}\index{core@{core}}
+
+
+Prostor imena core. Sadrzi sve klase, funkcije i promenljive koje su od sustinskog znacaja za funkcionisanje programa.  
+
+
+\subsection*{Klase, strukture i unije}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcore_1_1Engine}{Engine}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1Engine}{Engine} je jezgro i kontroler programa. Sva bitnija podesavanja i inicijalizacije desavaju se u ovoj klasi. Klasa je zaduzena za inicijalizaciju G\+L\+U\+T-\/a , Open\+G\+L-\/a, i kontrolisanje i kreiranje ostalih korisnicki definisanih klasa i funkcija. \end{DoxyCompactList}\item 
+class \hyperlink{classcore_1_1MainRenderer}{Main\+Renderer}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1MainRenderer}{Main\+Renderer} je zaduzena za iscrtavanje sadrzaja na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se iscrtavaju teren igrac i ostali entiteti. \end{DoxyCompactList}\item 
+class \hyperlink{classcore_1_1ObjLoader}{Obj\+Loader}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1ObjLoader}{Obj\+Loader} je zaduzena za ucitavanje obj fajlova. Tokom pokretanja citaju se obj fajlovi koji se zatim obradjuju i podaci se prosledjuju drugim klasama koje ih koriste. \end{DoxyCompactList}\item 
+class \hyperlink{classcore_1_1Render}{Render}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1Render}{Render} je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran. \end{DoxyCompactList}\item 
+class \hyperlink{classcore_1_1TerrainRenderer}{Terrain\+Renderer}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1Render}{Render} je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran. \end{DoxyCompactList}\item 
+class \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} je zaduzena za ucitavanje atributa u memoriju. Zadatak ove klase je ucitavanje i definisanje objekta pomocu niza atributa gde se svaki atribut ucitava u baffer koji je niz promenljivih. Ovo dovodi do komplikovanijeg koda ali kod je genericki i pomocu njega mozemo ucitavati veoma slozene objekte i texture sto bi bilo vrlo tesko kada bi smo svaki objekat sami crtali osnovnim Open\+GL funkcijama. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funkcije}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacecore_a1c3be366234e051e17b4b45f40c18960}{render\+Scene} (void)
+\begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Display\+Func(). Funkcija koja kontrolise sta ce biti iscrtano na ekranu. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecore_a179fad39a2b3f74cf7a0bffb578fce00}{on\+Keyboard} (unsigned char key, int x, int y)
+\begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Keyboard\+Func(). Funkcija koja proverava ulaz sa tastature. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecore_a581fd18fb14102b9234a113bc95341b4}{on\+Mouse} (int button, int state, int x, int y)
+\begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Mouse\+Func(). Funkcija koja proverava ulaz sa misa. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecore_a3ad12cad5f74289de4ad97762e453621}{on\+Special\+Down} (int key, int x, int y)
+\begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Special\+Func(). Funkcija koja proverava pritisnuti specijalni karakter. \end{DoxyCompactList}\item 
+void \hyperlink{namespacecore_a590273d60aac2764ebf098f1b9aab3fe}{on\+Special\+Up} (int key, int x, int y)
+\begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Special\+Up\+Func(). Funkcija koja proverava otpusteni specijalni karakter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Promenljive}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$ \hyperlink{namespacecore_a78dd24784c415d3759a0f71b8f4f9f81}{vao\+Loader}
+\item 
+\hyperlink{classcore_1_1Render}{Render} $\ast$ \hyperlink{namespacecore_a4f2740ccbefd3bb34c624a8c99d6446d}{renderer}
+\item 
+\hyperlink{classcore_1_1MainRenderer}{Main\+Renderer} $\ast$ \hyperlink{namespacecore_a01adfda2bbace85dc243e5fba0d93b52}{main\+Renderer}
+\item 
+\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{namespacecore_aa1479d4ed4dadbfe085b26662122b68a}{model}
+\item 
+\hyperlink{classtexture_1_1ModelTexture}{Model\+Texture} $\ast$ \hyperlink{namespacecore_a0738503bf610d37d44b4938dc024bfcc}{texture}
+\item 
+\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$ \hyperlink{namespacecore_ad4d5c25548862489d6a237342748ad74}{textured\+Model}
+\item 
+\hyperlink{classentity_1_1Entity}{Entity} $\ast$ \hyperlink{namespacecore_aa710c0ea388433d2d80d1d1c67582eda}{entity}
+\item 
+\hyperlink{classshader_1_1Shader}{Shader} $\ast$ \hyperlink{namespacecore_adf2f7f5f951bd01b06d6c792d7bf301b}{shader}
+\item 
+\hyperlink{classentity_1_1Camera}{Camera} $\ast$ \hyperlink{namespacecore_a9d645c490b142886301256f6cf9c65c2}{camera}
+\item 
+\hyperlink{classentity_1_1Light}{Light} $\ast$ \hyperlink{namespacecore_a2324d96000e7c6d42570a0577e8f070b}{light}
+\item 
+\hyperlink{classcore_1_1ObjLoader}{Obj\+Loader} \hyperlink{namespacecore_abf1a2ebbee224aa2f7a35148ebcac1fb}{obj\+Loader}
+\item 
+\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$ \hyperlink{namespacecore_ac45da6f80dac9bead5c9310c27897f15}{terrain}
+\item 
+\hyperlink{classentity_1_1Player}{Player} $\ast$ \hyperlink{namespacecore_a8130d7cf3bb04bc517651bc3855f8c0f}{player}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Prostor imena core. Sadrzi sve klase, funkcije i promenljive koje su od sustinskog znacaja za funkcionisanje programa. 
+
+\subsection{Dokumentacija funkcije}
+\mbox{\Hypertarget{namespacecore_a179fad39a2b3f74cf7a0bffb578fce00}\label{namespacecore_a179fad39a2b3f74cf7a0bffb578fce00}} 
+\index{core@{core}!on\+Keyboard@{on\+Keyboard}}
+\index{on\+Keyboard@{on\+Keyboard}!core@{core}}
+\subsubsection{\texorpdfstring{on\+Keyboard()}{onKeyboard()}}
+{\footnotesize\ttfamily void core\+::on\+Keyboard (\begin{DoxyParamCaption}\item[{unsigned char}]{key,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Keyboard\+Func(). Funkcija koja proverava ulaz sa tastature. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em key} & Karakter koji je pritisnut na tastaturi \\
+\hline
+{\em x} & X koordinata pozicije kursora \\
+\hline
+{\em y} & Y koordinata pozicije kursora \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacecore_a581fd18fb14102b9234a113bc95341b4}\label{namespacecore_a581fd18fb14102b9234a113bc95341b4}} 
+\index{core@{core}!on\+Mouse@{on\+Mouse}}
+\index{on\+Mouse@{on\+Mouse}!core@{core}}
+\subsubsection{\texorpdfstring{on\+Mouse()}{onMouse()}}
+{\footnotesize\ttfamily void core\+::on\+Mouse (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{state,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Mouse\+Func(). Funkcija koja proverava ulaz sa misa. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em button} & Taster koji je pritisnut na misu \\
+\hline
+{\em state} & Stanje tastera(pritisnut ili otpusten) \\
+\hline
+{\em x} & X koordinata pozicije kursora \\
+\hline
+{\em y} & Y koordinata pozicije kursora \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacecore_a3ad12cad5f74289de4ad97762e453621}\label{namespacecore_a3ad12cad5f74289de4ad97762e453621}} 
+\index{core@{core}!on\+Special\+Down@{on\+Special\+Down}}
+\index{on\+Special\+Down@{on\+Special\+Down}!core@{core}}
+\subsubsection{\texorpdfstring{on\+Special\+Down()}{onSpecialDown()}}
+{\footnotesize\ttfamily void core\+::on\+Special\+Down (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Special\+Func(). Funkcija koja proverava pritisnuti specijalni karakter. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em key} & Specijalni karakter koji je pritisnut na tastaturi \\
+\hline
+{\em x} & X koordinata pozicije kursora \\
+\hline
+{\em y} & Y koordinata pozicije kursora \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacecore_a590273d60aac2764ebf098f1b9aab3fe}\label{namespacecore_a590273d60aac2764ebf098f1b9aab3fe}} 
+\index{core@{core}!on\+Special\+Up@{on\+Special\+Up}}
+\index{on\+Special\+Up@{on\+Special\+Up}!core@{core}}
+\subsubsection{\texorpdfstring{on\+Special\+Up()}{onSpecialUp()}}
+{\footnotesize\ttfamily void core\+::on\+Special\+Up (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Special\+Up\+Func(). Funkcija koja proverava otpusteni specijalni karakter. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em key} & Specijalni karakter koji je otpusten na tastaturi \\
+\hline
+{\em x} & X koordinata pozicije kursora \\
+\hline
+{\em y} & Y koordinata pozicije kursora \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacecore_a1c3be366234e051e17b4b45f40c18960}\label{namespacecore_a1c3be366234e051e17b4b45f40c18960}} 
+\index{core@{core}!render\+Scene@{render\+Scene}}
+\index{render\+Scene@{render\+Scene}!core@{core}}
+\subsubsection{\texorpdfstring{render\+Scene()}{renderScene()}}
+{\footnotesize\ttfamily void core\+::render\+Scene (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Display\+Func(). Funkcija koja kontrolise sta ce biti iscrtano na ekranu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija promenljive}
+\mbox{\Hypertarget{namespacecore_a9d645c490b142886301256f6cf9c65c2}\label{namespacecore_a9d645c490b142886301256f6cf9c65c2}} 
+\index{core@{core}!camera@{camera}}
+\index{camera@{camera}!core@{core}}
+\subsubsection{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily \hyperlink{classentity_1_1Camera}{Camera}$\ast$ core\+::camera}
+
+\mbox{\Hypertarget{namespacecore_aa710c0ea388433d2d80d1d1c67582eda}\label{namespacecore_aa710c0ea388433d2d80d1d1c67582eda}} 
+\index{core@{core}!entity@{entity}}
+\index{entity@{entity}!core@{core}}
+\subsubsection{\texorpdfstring{entity}{entity}}
+{\footnotesize\ttfamily \hyperlink{classentity_1_1Entity}{Entity}$\ast$ core\+::entity}
+
+\mbox{\Hypertarget{namespacecore_a2324d96000e7c6d42570a0577e8f070b}\label{namespacecore_a2324d96000e7c6d42570a0577e8f070b}} 
+\index{core@{core}!light@{light}}
+\index{light@{light}!core@{core}}
+\subsubsection{\texorpdfstring{light}{light}}
+{\footnotesize\ttfamily \hyperlink{classentity_1_1Light}{Light}$\ast$ core\+::light}
+
+\mbox{\Hypertarget{namespacecore_a01adfda2bbace85dc243e5fba0d93b52}\label{namespacecore_a01adfda2bbace85dc243e5fba0d93b52}} 
+\index{core@{core}!main\+Renderer@{main\+Renderer}}
+\index{main\+Renderer@{main\+Renderer}!core@{core}}
+\subsubsection{\texorpdfstring{main\+Renderer}{mainRenderer}}
+{\footnotesize\ttfamily \hyperlink{classcore_1_1MainRenderer}{Main\+Renderer}$\ast$ core\+::main\+Renderer}
+
+\mbox{\Hypertarget{namespacecore_aa1479d4ed4dadbfe085b26662122b68a}\label{namespacecore_aa1479d4ed4dadbfe085b26662122b68a}} 
+\index{core@{core}!model@{model}}
+\index{model@{model}!core@{core}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model}$\ast$ core\+::model}
+
+\mbox{\Hypertarget{namespacecore_abf1a2ebbee224aa2f7a35148ebcac1fb}\label{namespacecore_abf1a2ebbee224aa2f7a35148ebcac1fb}} 
+\index{core@{core}!obj\+Loader@{obj\+Loader}}
+\index{obj\+Loader@{obj\+Loader}!core@{core}}
+\subsubsection{\texorpdfstring{obj\+Loader}{objLoader}}
+{\footnotesize\ttfamily \hyperlink{classcore_1_1ObjLoader}{Obj\+Loader} core\+::obj\+Loader}
+
+\mbox{\Hypertarget{namespacecore_a8130d7cf3bb04bc517651bc3855f8c0f}\label{namespacecore_a8130d7cf3bb04bc517651bc3855f8c0f}} 
+\index{core@{core}!player@{player}}
+\index{player@{player}!core@{core}}
+\subsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \hyperlink{classentity_1_1Player}{Player}$\ast$ core\+::player}
+
+\mbox{\Hypertarget{namespacecore_a4f2740ccbefd3bb34c624a8c99d6446d}\label{namespacecore_a4f2740ccbefd3bb34c624a8c99d6446d}} 
+\index{core@{core}!renderer@{renderer}}
+\index{renderer@{renderer}!core@{core}}
+\subsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily \hyperlink{classcore_1_1Render}{Render}$\ast$ core\+::renderer}
+
+\mbox{\Hypertarget{namespacecore_adf2f7f5f951bd01b06d6c792d7bf301b}\label{namespacecore_adf2f7f5f951bd01b06d6c792d7bf301b}} 
+\index{core@{core}!shader@{shader}}
+\index{shader@{shader}!core@{core}}
+\subsubsection{\texorpdfstring{shader}{shader}}
+{\footnotesize\ttfamily \hyperlink{classshader_1_1Shader}{Shader}$\ast$ core\+::shader}
+
+\mbox{\Hypertarget{namespacecore_ac45da6f80dac9bead5c9310c27897f15}\label{namespacecore_ac45da6f80dac9bead5c9310c27897f15}} 
+\index{core@{core}!terrain@{terrain}}
+\index{terrain@{terrain}!core@{core}}
+\subsubsection{\texorpdfstring{terrain}{terrain}}
+{\footnotesize\ttfamily \hyperlink{classterrain_1_1Terrain}{Terrain}$\ast$ core\+::terrain}
+
+\mbox{\Hypertarget{namespacecore_a0738503bf610d37d44b4938dc024bfcc}\label{namespacecore_a0738503bf610d37d44b4938dc024bfcc}} 
+\index{core@{core}!texture@{texture}}
+\index{texture@{texture}!core@{core}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1ModelTexture}{Model\+Texture}$\ast$ core\+::texture}
+
+\mbox{\Hypertarget{namespacecore_ad4d5c25548862489d6a237342748ad74}\label{namespacecore_ad4d5c25548862489d6a237342748ad74}} 
+\index{core@{core}!textured\+Model@{textured\+Model}}
+\index{textured\+Model@{textured\+Model}!core@{core}}
+\subsubsection{\texorpdfstring{textured\+Model}{texturedModel}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model}$\ast$ core\+::textured\+Model}
+
+\mbox{\Hypertarget{namespacecore_a78dd24784c415d3759a0f71b8f4f9f81}\label{namespacecore_a78dd24784c415d3759a0f71b8f4f9f81}} 
+\index{core@{core}!vao\+Loader@{vao\+Loader}}
+\index{vao\+Loader@{vao\+Loader}!core@{core}}
+\subsubsection{\texorpdfstring{vao\+Loader}{vaoLoader}}
+{\footnotesize\ttfamily \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader}$\ast$ core\+::vao\+Loader}
+

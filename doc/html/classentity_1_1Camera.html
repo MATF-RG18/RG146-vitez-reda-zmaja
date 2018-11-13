@@ -1,0 +1,871 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Dokumentacija klase entity::Camera</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentity.html">entity</a></li><li class="navelem"><a class="el" href="classentity_1_1Camera.html">Camera</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Javni članovi</a> &#124;
+<a href="#pri-methods">Privatni članovi</a> &#124;
+<a href="#pri-attribs">Privatni članovi</a> &#124;
+<a href="classentity_1_1Camera-members.html">Spisak svih članova</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacija klase entity::Camera</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="classentity_1_1Camera.html" title="Klasa Camera kontrolise pogled na igru. Pomocu klase Camera mozemo menjati pogled na entitete u igri ...">Camera</a> kontrolise pogled na igru. Pomocu klase <a class="el" href="classentity_1_1Camera.html" title="Klasa Camera kontrolise pogled na igru. Pomocu klase Camera mozemo menjati pogled na entitete u igri ...">Camera</a> mozemo menjati pogled na entitete u igri kao sto je rotiranje oko objekta i uvelicavanje ili umanjivanje.  
+ <a href="classentity_1_1Camera.html#details">Još...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Camera_8h_source.html">Camera.h</a>&gt;</code></p>
+<div class="dynheader">
+Klasni dijagram za entity::Camera:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentity_1_1Camera__coll__graph.png" border="0" usemap="#entity_1_1Camera_coll__map" alt="Collaboration graph"/></div>
+<map name="entity_1_1Camera_coll__map" id="entity_1_1Camera_coll__map">
+<area shape="rect" id="node2" href="classentity_1_1Player.html" title="Klasa Player odredjuje igraca koji nadogradjuje entitet. Pomocu klase Player nadogradjujemo klasu Ent..." alt="" coords="823,140,921,167"/>
+<area shape="rect" id="node3" href="classentity_1_1Entity.html" title="Klasa Entity odredjuje jedan entitet. Pomocu klase Entity odredjujemo entitet tako sto mu pridruzujem..." alt="" coords="632,164,728,191"/>
+<area shape="rect" id="node4" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo..." alt="" coords="337,195,487,221"/>
+<area shape="rect" id="node5" href="classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="19,139,146,165"/>
+<area shape="rect" id="node7" href="classterrain_1_1Terrain.html" title="terrain::Terrain" alt="" coords="627,104,733,131"/>
+<area shape="rect" id="node6" href="classtexture_1_1ModelTexture.html" title="Klasa TexturedModel opisuje teksturu objekta. Model je opisan instancom klase RawModel i odgovarajuco..." alt="" coords="8,213,157,240"/>
+<area shape="rect" id="node8" href="classtexture_1_1TerrainTexture.html" title="Klasa TerrainTexture opisuje teksturu terena. " alt="" coords="5,77,160,104"/>
+<area shape="rect" id="node9" href="classtexture_1_1TerrainTexturePack.html" title="Klasa TerrainTexture opisuje sve teksture terena. " alt="" coords="320,81,504,108"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Javni članovi</h2></td></tr>
+<tr class="memitem:ae28b5312d87e147f8a6a6b3f76c1d0fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#ae28b5312d87e147f8a6a6b3f76c1d0fa">Camera</a> (<a class="el" href="classentity_1_1Player.html">Player</a> *<a class="el" href="classentity_1_1Camera.html#ace429069cf20c1138038c00b10e2c608">player</a>)</td></tr>
+<tr class="memdesc:ae28b5312d87e147f8a6a6b3f76c1d0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klase.  <a href="#ae28b5312d87e147f8a6a6b3f76c1d0fa">Još...</a><br /></td></tr>
+<tr class="separator:ae28b5312d87e147f8a6a6b3f76c1d0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae161d83061be4f328de222570c3ece95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#ae161d83061be4f328de222570c3ece95">~Camera</a> ()</td></tr>
+<tr class="memdesc:ae161d83061be4f328de222570c3ece95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klase.  <a href="#ae161d83061be4f328de222570c3ece95">Još...</a><br /></td></tr>
+<tr class="separator:ae161d83061be4f328de222570c3ece95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6b67d27b4012631306c2c2c5a3691c"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a2c6b67d27b4012631306c2c2c5a3691c">getPosition</a> ()</td></tr>
+<tr class="memdesc:a2c6b67d27b4012631306c2c2c5a3691c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca poziciju kamere.  <a href="#a2c6b67d27b4012631306c2c2c5a3691c">Još...</a><br /></td></tr>
+<tr class="separator:a2c6b67d27b4012631306c2c2c5a3691c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a046d693a76fafe58822033c0b80bbc53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a046d693a76fafe58822033c0b80bbc53">move</a> ()</td></tr>
+<tr class="memdesc:a046d693a76fafe58822033c0b80bbc53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija pomera kameru.  <a href="#a046d693a76fafe58822033c0b80bbc53">Još...</a><br /></td></tr>
+<tr class="separator:a046d693a76fafe58822033c0b80bbc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a3b78671fb7385198696733b4faca4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#aa9a3b78671fb7385198696733b4faca4">handleMouseInput</a> (int button, int state, int x, int y)</td></tr>
+<tr class="memdesc:aa9a3b78671fb7385198696733b4faca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija obradjuje ulaz sa misa.  <a href="#aa9a3b78671fb7385198696733b4faca4">Još...</a><br /></td></tr>
+<tr class="separator:aa9a3b78671fb7385198696733b4faca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04352a62ec2c4031cfde35192faf6e03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a04352a62ec2c4031cfde35192faf6e03">handleKeyboardInput</a> (unsigned char key)</td></tr>
+<tr class="memdesc:a04352a62ec2c4031cfde35192faf6e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija obradjuje ulaz sa tastature. Funkcija koja proverava ulaz sa tastature.  <a href="#a04352a62ec2c4031cfde35192faf6e03">Još...</a><br /></td></tr>
+<tr class="separator:a04352a62ec2c4031cfde35192faf6e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502da7b4da0782356f7bf75e99e4419c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a502da7b4da0782356f7bf75e99e4419c">getPich</a> ()</td></tr>
+<tr class="memdesc:a502da7b4da0782356f7bf75e99e4419c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca rotaciju oko X ose.  <a href="#a502da7b4da0782356f7bf75e99e4419c">Još...</a><br /></td></tr>
+<tr class="separator:a502da7b4da0782356f7bf75e99e4419c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598fc170be541c2daf281f3b3a267808"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a598fc170be541c2daf281f3b3a267808">getYaw</a> ()</td></tr>
+<tr class="memdesc:a598fc170be541c2daf281f3b3a267808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca rotaciju oko Y ose.  <a href="#a598fc170be541c2daf281f3b3a267808">Još...</a><br /></td></tr>
+<tr class="separator:a598fc170be541c2daf281f3b3a267808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9288cb98d6bf73c2ac749274ae3f03"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a9d9288cb98d6bf73c2ac749274ae3f03">getRoll</a> ()</td></tr>
+<tr class="memdesc:a9d9288cb98d6bf73c2ac749274ae3f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca rotaciju oko Z ose.  <a href="#a9d9288cb98d6bf73c2ac749274ae3f03">Još...</a><br /></td></tr>
+<tr class="separator:a9d9288cb98d6bf73c2ac749274ae3f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:a7d7bed8b571309039bcfc6cbe2c829de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a7d7bed8b571309039bcfc6cbe2c829de">calculateZoom</a> (int button, int state)</td></tr>
+<tr class="memdesc:a7d7bed8b571309039bcfc6cbe2c829de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija racuna uvelicavanje pogleda.  <a href="#a7d7bed8b571309039bcfc6cbe2c829de">Još...</a><br /></td></tr>
+<tr class="separator:a7d7bed8b571309039bcfc6cbe2c829de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a338e64af13f3da99b46fbf5cf879a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a65a338e64af13f3da99b46fbf5cf879a">calculatePich</a> (unsigned char key)</td></tr>
+<tr class="memdesc:a65a338e64af13f3da99b46fbf5cf879a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija racuna rotaciju kamere oko X ose.  <a href="#a65a338e64af13f3da99b46fbf5cf879a">Još...</a><br /></td></tr>
+<tr class="separator:a65a338e64af13f3da99b46fbf5cf879a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519f8f9f625c56a94d8860c55a134ef3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a519f8f9f625c56a94d8860c55a134ef3">calculateAngleAroundPlayer</a> (unsigned char key)</td></tr>
+<tr class="memdesc:a519f8f9f625c56a94d8860c55a134ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija racuna ugao kamere oko igraca.  <a href="#a519f8f9f625c56a94d8860c55a134ef3">Još...</a><br /></td></tr>
+<tr class="separator:a519f8f9f625c56a94d8860c55a134ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ed7dcbe9aa939d82509c23a6298251"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#ad5ed7dcbe9aa939d82509c23a6298251">calculateHorizontalDistance</a> ()</td></tr>
+<tr class="memdesc:ad5ed7dcbe9aa939d82509c23a6298251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija racuna horizontalnu udaljenost od igraca.  <a href="#ad5ed7dcbe9aa939d82509c23a6298251">Još...</a><br /></td></tr>
+<tr class="separator:ad5ed7dcbe9aa939d82509c23a6298251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0662170fb43e41f529f4e2932a591858"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a0662170fb43e41f529f4e2932a591858">calculateVerticalDistance</a> ()</td></tr>
+<tr class="memdesc:a0662170fb43e41f529f4e2932a591858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija racuna vertikalnu udaljenost od igraca.  <a href="#a0662170fb43e41f529f4e2932a591858">Još...</a><br /></td></tr>
+<tr class="separator:a0662170fb43e41f529f4e2932a591858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f1d576fd701ea58b9509b243913952"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a89f1d576fd701ea58b9509b243913952">calculateCameraPosition</a> (float horizontalDistance, float verticalDistance)</td></tr>
+<tr class="memdesc:a89f1d576fd701ea58b9509b243913952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija racuna poziciju kamere.  <a href="#a89f1d576fd701ea58b9509b243913952">Još...</a><br /></td></tr>
+<tr class="separator:a89f1d576fd701ea58b9509b243913952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:a3840344199c2da97dab4bce31d60f45e"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a3840344199c2da97dab4bce31d60f45e">position</a></td></tr>
+<tr class="memdesc:a3840344199c2da97dab4bce31d60f45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Koordinate pozicije kamere.  <a href="#a3840344199c2da97dab4bce31d60f45e">Još...</a><br /></td></tr>
+<tr class="separator:a3840344199c2da97dab4bce31d60f45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b05e6208aafb082a8d78d3e01d7e544"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a9b05e6208aafb082a8d78d3e01d7e544">distanceFromPlayer</a></td></tr>
+<tr class="memdesc:a9b05e6208aafb082a8d78d3e01d7e544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Udaljenost kamere od igraca.  <a href="#a9b05e6208aafb082a8d78d3e01d7e544">Još...</a><br /></td></tr>
+<tr class="separator:a9b05e6208aafb082a8d78d3e01d7e544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d2e83177c5f3b587d030e5b8032fd2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#aa0d2e83177c5f3b587d030e5b8032fd2">angleAroundPlayer</a></td></tr>
+<tr class="memdesc:aa0d2e83177c5f3b587d030e5b8032fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ugao oko igraca.  <a href="#aa0d2e83177c5f3b587d030e5b8032fd2">Još...</a><br /></td></tr>
+<tr class="separator:aa0d2e83177c5f3b587d030e5b8032fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f9b55c4b44d7200e7517000fc499b2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a33f9b55c4b44d7200e7517000fc499b2">pich</a></td></tr>
+<tr class="memdesc:a33f9b55c4b44d7200e7517000fc499b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotacija kamere po X osi.  <a href="#a33f9b55c4b44d7200e7517000fc499b2">Još...</a><br /></td></tr>
+<tr class="separator:a33f9b55c4b44d7200e7517000fc499b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ebfeecc4fe70c880813f7a4671d8b63"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#a2ebfeecc4fe70c880813f7a4671d8b63">yaw</a></td></tr>
+<tr class="memdesc:a2ebfeecc4fe70c880813f7a4671d8b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotacija kamere po Y osi.  <a href="#a2ebfeecc4fe70c880813f7a4671d8b63">Još...</a><br /></td></tr>
+<tr class="separator:a2ebfeecc4fe70c880813f7a4671d8b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed638e415fd894c7e39eb9fecf65afbb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#aed638e415fd894c7e39eb9fecf65afbb">roll</a></td></tr>
+<tr class="memdesc:aed638e415fd894c7e39eb9fecf65afbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotacija kamere po Z osi.  <a href="#aed638e415fd894c7e39eb9fecf65afbb">Još...</a><br /></td></tr>
+<tr class="separator:aed638e415fd894c7e39eb9fecf65afbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae009950e0af66c4b5ed71f903b81513"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#aae009950e0af66c4b5ed71f903b81513">sensitivity</a></td></tr>
+<tr class="memdesc:aae009950e0af66c4b5ed71f903b81513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Osetljivost kamere na promene polozaja i rotacije.  <a href="#aae009950e0af66c4b5ed71f903b81513">Još...</a><br /></td></tr>
+<tr class="separator:aae009950e0af66c4b5ed71f903b81513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace429069cf20c1138038c00b10e2c608"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentity_1_1Player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Camera.html#ace429069cf20c1138038c00b10e2c608">player</a></td></tr>
+<tr class="memdesc:ace429069cf20c1138038c00b10e2c608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase <a class="el" href="classentity_1_1Player.html" title="Klasa Player odredjuje igraca koji nadogradjuje entitet. Pomocu klase Player nadogradjujemo klasu Ent...">Player</a>.  <a href="#ace429069cf20c1138038c00b10e2c608">Još...</a><br /></td></tr>
+<tr class="separator:ace429069cf20c1138038c00b10e2c608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
+<div class="textblock"><p>Klasa <a class="el" href="classentity_1_1Camera.html" title="Klasa Camera kontrolise pogled na igru. Pomocu klase Camera mozemo menjati pogled na entitete u igri ...">Camera</a> kontrolise pogled na igru. Pomocu klase <a class="el" href="classentity_1_1Camera.html" title="Klasa Camera kontrolise pogled na igru. Pomocu klase Camera mozemo menjati pogled na entitete u igri ...">Camera</a> mozemo menjati pogled na entitete u igri kao sto je rotiranje oko objekta i uvelicavanje ili umanjivanje. </p>
+</div><h2 class="groupheader">Dokumentacija konstruktora i destruktora</h2>
+<a id="ae28b5312d87e147f8a6a6b3f76c1d0fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28b5312d87e147f8a6a6b3f76c1d0fa">&#9670;&nbsp;</a></span>Camera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entity::Camera::Camera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentity_1_1Player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Pokazivac na instancu klase <a class="el" href="classentity_1_1Player.html" title="Klasa Player odredjuje igraca koji nadogradjuje entitet. Pomocu klase Player nadogradjujemo klasu Ent...">Player</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae161d83061be4f328de222570c3ece95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae161d83061be4f328de222570c3ece95">&#9670;&nbsp;</a></span>~Camera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entity::Camera::~Camera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija funkcija članica</h2>
+<a id="a519f8f9f625c56a94d8860c55a134ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519f8f9f625c56a94d8860c55a134ef3">&#9670;&nbsp;</a></span>calculateAngleAroundPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Camera::calculateAngleAroundPlayer </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija racuna ugao kamere oko igraca. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Karakter koji je pritisnut na tastaturi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a89f1d576fd701ea58b9509b243913952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f1d576fd701ea58b9509b243913952">&#9670;&nbsp;</a></span>calculateCameraPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Camera::calculateCameraPosition </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>horizontalDistance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>verticalDistance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija racuna poziciju kamere. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">horizontalDistance</td><td>Horizontalna udaljenost od igraca </td></tr>
+    <tr><td class="paramname">verticalDistance</td><td>Vertikalna udaljenost od igraca </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ad5ed7dcbe9aa939d82509c23a6298251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ed7dcbe9aa939d82509c23a6298251">&#9670;&nbsp;</a></span>calculateHorizontalDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Camera::calculateHorizontalDistance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija racuna horizontalnu udaljenost od igraca. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a65a338e64af13f3da99b46fbf5cf879a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a338e64af13f3da99b46fbf5cf879a">&#9670;&nbsp;</a></span>calculatePich()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Camera::calculatePich </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija racuna rotaciju kamere oko X ose. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Karakter koji je pritisnut na tastaturi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a0662170fb43e41f529f4e2932a591858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0662170fb43e41f529f4e2932a591858">&#9670;&nbsp;</a></span>calculateVerticalDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Camera::calculateVerticalDistance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija racuna vertikalnu udaljenost od igraca. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a7d7bed8b571309039bcfc6cbe2c829de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d7bed8b571309039bcfc6cbe2c829de">&#9670;&nbsp;</a></span>calculateZoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Camera::calculateZoom </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija racuna uvelicavanje pogleda. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a502da7b4da0782356f7bf75e99e4419c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502da7b4da0782356f7bf75e99e4419c">&#9670;&nbsp;</a></span>getPich()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Camera::getPich </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca rotaciju oko X ose. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>float Ugao u stepenima. </dd></dl>
+
+</div>
+</div>
+<a id="a2c6b67d27b4012631306c2c2c5a3691c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c6b67d27b4012631306c2c2c5a3691c">&#9670;&nbsp;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 entity::Camera::getPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca poziciju kamere. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>vec3 Vektor koji sadrzi polozaj kamere. </dd></dl>
+
+</div>
+</div>
+<a id="a9d9288cb98d6bf73c2ac749274ae3f03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9288cb98d6bf73c2ac749274ae3f03">&#9670;&nbsp;</a></span>getRoll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Camera::getRoll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca rotaciju oko Z ose. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>float Ugao u stepenima. </dd></dl>
+
+</div>
+</div>
+<a id="a598fc170be541c2daf281f3b3a267808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a598fc170be541c2daf281f3b3a267808">&#9670;&nbsp;</a></span>getYaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Camera::getYaw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca rotaciju oko Y ose. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>float Ugao u stepenima. </dd></dl>
+
+</div>
+</div>
+<a id="a04352a62ec2c4031cfde35192faf6e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04352a62ec2c4031cfde35192faf6e03">&#9670;&nbsp;</a></span>handleKeyboardInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Camera::handleKeyboardInput </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija obradjuje ulaz sa tastature. Funkcija koja proverava ulaz sa tastature. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Karakter koji je pritisnut na tastaturi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aa9a3b78671fb7385198696733b4faca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a3b78671fb7385198696733b4faca4">&#9670;&nbsp;</a></span>handleMouseInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Camera::handleMouseInput </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija obradjuje ulaz sa misa. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>Taster koji je pritisnut na misu </td></tr>
+    <tr><td class="paramname">state</td><td>Stanje tastera(pritisnut ili otpusten) </td></tr>
+    <tr><td class="paramname">x</td><td>X koordinata pozicije kursora </td></tr>
+    <tr><td class="paramname">y</td><td>Y koordinata pozicije kursora </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a046d693a76fafe58822033c0b80bbc53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a046d693a76fafe58822033c0b80bbc53">&#9670;&nbsp;</a></span>move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::Camera::move </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija pomera kameru. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija atributa</h2>
+<a id="aa0d2e83177c5f3b587d030e5b8032fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d2e83177c5f3b587d030e5b8032fd2">&#9670;&nbsp;</a></span>angleAroundPlayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Camera::angleAroundPlayer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ugao oko igraca. </p>
+
+</div>
+</div>
+<a id="a9b05e6208aafb082a8d78d3e01d7e544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b05e6208aafb082a8d78d3e01d7e544">&#9670;&nbsp;</a></span>distanceFromPlayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Camera::distanceFromPlayer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Udaljenost kamere od igraca. </p>
+
+</div>
+</div>
+<a id="a33f9b55c4b44d7200e7517000fc499b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f9b55c4b44d7200e7517000fc499b2">&#9670;&nbsp;</a></span>pich</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Camera::pich</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotacija kamere po X osi. </p>
+
+</div>
+</div>
+<a id="ace429069cf20c1138038c00b10e2c608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace429069cf20c1138038c00b10e2c608">&#9670;&nbsp;</a></span>player</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentity_1_1Player.html">Player</a>* entity::Camera::player</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase <a class="el" href="classentity_1_1Player.html" title="Klasa Player odredjuje igraca koji nadogradjuje entitet. Pomocu klase Player nadogradjujemo klasu Ent...">Player</a>. </p>
+
+</div>
+</div>
+<a id="a3840344199c2da97dab4bce31d60f45e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3840344199c2da97dab4bce31d60f45e">&#9670;&nbsp;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 entity::Camera::position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Koordinate pozicije kamere. </p>
+
+</div>
+</div>
+<a id="aed638e415fd894c7e39eb9fecf65afbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed638e415fd894c7e39eb9fecf65afbb">&#9670;&nbsp;</a></span>roll</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Camera::roll</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotacija kamere po Z osi. </p>
+
+</div>
+</div>
+<a id="aae009950e0af66c4b5ed71f903b81513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae009950e0af66c4b5ed71f903b81513">&#9670;&nbsp;</a></span>sensitivity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Camera::sensitivity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Osetljivost kamere na promene polozaja i rotacije. </p>
+
+</div>
+</div>
+<a id="a2ebfeecc4fe70c880813f7a4671d8b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebfeecc4fe70c880813f7a4671d8b63">&#9670;&nbsp;</a></span>yaw</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::Camera::yaw</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotacija kamere po Y osi. </p>
+
+</div>
+</div>
+<hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
+<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/include/entity/<a class="el" href="Camera_8h_source.html">Camera.h</a></li>
+<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/src/entity/<a class="el" href="Camera_8cpp.html">Camera.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

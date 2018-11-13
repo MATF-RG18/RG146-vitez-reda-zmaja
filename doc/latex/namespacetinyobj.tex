@@ -1,0 +1,152 @@
+\hypertarget{namespacetinyobj}{}\section{Opis prostora imena tinyobj}
+\label{namespacetinyobj}\index{tinyobj@{tinyobj}}
+\subsection*{Klase, strukture i unije}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtinyobj_1_1attrib__t}{attrib\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1callback__t__}{callback\+\_\+t\+\_\+}
+\item 
+struct \hyperlink{structtinyobj_1_1index__t}{index\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1material__t}{material\+\_\+t}
+\item 
+class \hyperlink{classtinyobj_1_1MaterialFileReader}{Material\+File\+Reader}
+\item 
+class \hyperlink{classtinyobj_1_1MaterialReader}{Material\+Reader}
+\item 
+class \hyperlink{classtinyobj_1_1MaterialStreamReader}{Material\+Stream\+Reader}
+\item 
+struct \hyperlink{structtinyobj_1_1mesh__t}{mesh\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1path__t}{path\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1shape__t}{shape\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1tag__t}{tag\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1texture__option__t}{texture\+\_\+option\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Definicije tipa}
+\begin{DoxyCompactItemize}
+\item 
+typedef float \hyperlink{namespacetinyobj_ad5ca7469ff56bf0d8423120cfd99adce}{real\+\_\+t}
+\item 
+typedef struct \hyperlink{structtinyobj_1_1callback__t__}{tinyobj\+::callback\+\_\+t\+\_\+} \hyperlink{namespacetinyobj_a7d9ae2b4716367a1b66b4d354482b035}{callback\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Nabrajanja}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8}{texture\+\_\+type\+\_\+t} \{ \newline
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a259804f2e7bf9c39626abe6ebce6edc1}{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a4e5a6bfb8a95a23bf0cce576aaa5dfa4}{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+P\+H\+E\+RE}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8acc4c4327df32dce3fa406865a8e35519}{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+T\+OP}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a20c37be3992ed111ba47045a63351cde}{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+O\+T\+T\+OM}, 
+\newline
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a1ce5bed3c2ba5c360ca6c2607b9d97ca}{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+F\+R\+O\+NT}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8af2cb2d4e7551e713593382c4690aa665}{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+A\+CK}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a01f908bcfb745ad0d97d84b8cacc6d30}{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+L\+E\+FT}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a7709b5986f04e87ffbdc9bd7280d261c}{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+R\+I\+G\+HT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Funkcije}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacetinyobj_a5678f6df6cb6d01bb89453022d997503}{Load\+Obj} (\hyperlink{structtinyobj_1_1attrib__t}{attrib\+\_\+t} $\ast$attrib, std\+::vector$<$ \hyperlink{structtinyobj_1_1shape__t}{shape\+\_\+t} $>$ $\ast$shapes, std\+::vector$<$ \hyperlink{structtinyobj_1_1material__t}{material\+\_\+t} $>$ $\ast$materials, std\+::string $\ast$err, const char $\ast$filename, const char $\ast$mtl\+\_\+basedir=N\+U\+LL, bool triangulate=true)
+\item 
+bool \hyperlink{namespacetinyobj_add9ad979e8011ccdfac2e1ec8def5359}{Load\+Obj\+With\+Callback} (std\+::istream \&in\+Stream, const \hyperlink{namespacetinyobj_a7d9ae2b4716367a1b66b4d354482b035}{callback\+\_\+t} \&callback, void $\ast$user\+\_\+data=N\+U\+LL, \hyperlink{classtinyobj_1_1MaterialReader}{Material\+Reader} $\ast$read\+Mat\+Fn=N\+U\+LL, std\+::string $\ast$err=N\+U\+LL)
+\item 
+bool \hyperlink{namespacetinyobj_ad1e942879313375fcd1b08b7d6e7f89d}{Load\+Obj} (\hyperlink{structtinyobj_1_1attrib__t}{attrib\+\_\+t} $\ast$attrib, std\+::vector$<$ \hyperlink{structtinyobj_1_1shape__t}{shape\+\_\+t} $>$ $\ast$shapes, std\+::vector$<$ \hyperlink{structtinyobj_1_1material__t}{material\+\_\+t} $>$ $\ast$materials, std\+::string $\ast$err, std\+::istream $\ast$in\+Stream, \hyperlink{classtinyobj_1_1MaterialReader}{Material\+Reader} $\ast$read\+Mat\+Fn=N\+U\+LL, bool triangulate=true)
+\item 
+void \hyperlink{namespacetinyobj_aa7a035d152857396e5cde8ebff8b2b9e}{Load\+Mtl} (std\+::map$<$ std\+::string, int $>$ $\ast$material\+\_\+map, std\+::vector$<$ \hyperlink{structtinyobj_1_1material__t}{material\+\_\+t} $>$ $\ast$materials, std\+::istream $\ast$in\+Stream, std\+::string $\ast$warning)
+\begin{DoxyCompactList}\small\item\em Loads materials into std\+::map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacija definicije tipa}
+\mbox{\Hypertarget{namespacetinyobj_a7d9ae2b4716367a1b66b4d354482b035}\label{namespacetinyobj_a7d9ae2b4716367a1b66b4d354482b035}} 
+\index{tinyobj@{tinyobj}!callback\+\_\+t@{callback\+\_\+t}}
+\index{callback\+\_\+t@{callback\+\_\+t}!tinyobj@{tinyobj}}
+\subsubsection{\texorpdfstring{callback\+\_\+t}{callback\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structtinyobj_1_1callback__t__}{tinyobj\+::callback\+\_\+t\+\_\+}  \hyperlink{namespacetinyobj_a7d9ae2b4716367a1b66b4d354482b035}{tinyobj\+::callback\+\_\+t}}
+
+\mbox{\Hypertarget{namespacetinyobj_ad5ca7469ff56bf0d8423120cfd99adce}\label{namespacetinyobj_ad5ca7469ff56bf0d8423120cfd99adce}} 
+\index{tinyobj@{tinyobj}!real\+\_\+t@{real\+\_\+t}}
+\index{real\+\_\+t@{real\+\_\+t}!tinyobj@{tinyobj}}
+\subsubsection{\texorpdfstring{real\+\_\+t}{real\_t}}
+{\footnotesize\ttfamily typedef float \hyperlink{namespacetinyobj_ad5ca7469ff56bf0d8423120cfd99adce}{tinyobj\+::real\+\_\+t}}
+
+
+
+\subsection{Dokumentacija nabrajanja}
+\mbox{\Hypertarget{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8}\label{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8}} 
+\index{tinyobj@{tinyobj}!texture\+\_\+type\+\_\+t@{texture\+\_\+type\+\_\+t}}
+\index{texture\+\_\+type\+\_\+t@{texture\+\_\+type\+\_\+t}!tinyobj@{tinyobj}}
+\subsubsection{\texorpdfstring{texture\+\_\+type\+\_\+t}{texture\_type\_t}}
+{\footnotesize\ttfamily enum \hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8}{tinyobj\+::texture\+\_\+type\+\_\+t}}
+
+\begin{DoxyEnumFields}{Vrednosti nabrojanih konstanti}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE}!tinyobj@{tinyobj}}\index{tinyobj@{tinyobj}!T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a259804f2e7bf9c39626abe6ebce6edc1}\label{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a259804f2e7bf9c39626abe6ebce6edc1}} 
+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+P\+H\+E\+RE@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+P\+H\+E\+RE}!tinyobj@{tinyobj}}\index{tinyobj@{tinyobj}!T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+P\+H\+E\+RE@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+P\+H\+E\+RE}}}\mbox{\Hypertarget{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a4e5a6bfb8a95a23bf0cce576aaa5dfa4}\label{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a4e5a6bfb8a95a23bf0cce576aaa5dfa4}} 
+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+P\+H\+E\+RE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+T\+OP@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+T\+OP}!tinyobj@{tinyobj}}\index{tinyobj@{tinyobj}!T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+T\+OP@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+T\+OP}}}\mbox{\Hypertarget{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8acc4c4327df32dce3fa406865a8e35519}\label{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8acc4c4327df32dce3fa406865a8e35519}} 
+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+T\+OP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+O\+T\+T\+OM@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+O\+T\+T\+OM}!tinyobj@{tinyobj}}\index{tinyobj@{tinyobj}!T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+O\+T\+T\+OM@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+O\+T\+T\+OM}}}\mbox{\Hypertarget{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a20c37be3992ed111ba47045a63351cde}\label{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a20c37be3992ed111ba47045a63351cde}} 
+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+O\+T\+T\+OM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+F\+R\+O\+NT@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+F\+R\+O\+NT}!tinyobj@{tinyobj}}\index{tinyobj@{tinyobj}!T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+F\+R\+O\+NT@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+F\+R\+O\+NT}}}\mbox{\Hypertarget{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a1ce5bed3c2ba5c360ca6c2607b9d97ca}\label{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a1ce5bed3c2ba5c360ca6c2607b9d97ca}} 
+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+F\+R\+O\+NT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+A\+CK@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+A\+CK}!tinyobj@{tinyobj}}\index{tinyobj@{tinyobj}!T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+A\+CK@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+A\+CK}}}\mbox{\Hypertarget{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8af2cb2d4e7551e713593382c4690aa665}\label{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8af2cb2d4e7551e713593382c4690aa665}} 
+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+A\+CK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+L\+E\+FT@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+L\+E\+FT}!tinyobj@{tinyobj}}\index{tinyobj@{tinyobj}!T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+L\+E\+FT@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+L\+E\+FT}}}\mbox{\Hypertarget{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a01f908bcfb745ad0d97d84b8cacc6d30}\label{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a01f908bcfb745ad0d97d84b8cacc6d30}} 
+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+R\+I\+G\+HT@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+R\+I\+G\+HT}!tinyobj@{tinyobj}}\index{tinyobj@{tinyobj}!T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+R\+I\+G\+HT@{T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+R\+I\+G\+HT}}}\mbox{\Hypertarget{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a7709b5986f04e87ffbdc9bd7280d261c}\label{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a7709b5986f04e87ffbdc9bd7280d261c}} 
+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Dokumentacija funkcije}
+\mbox{\Hypertarget{namespacetinyobj_aa7a035d152857396e5cde8ebff8b2b9e}\label{namespacetinyobj_aa7a035d152857396e5cde8ebff8b2b9e}} 
+\index{tinyobj@{tinyobj}!Load\+Mtl@{Load\+Mtl}}
+\index{Load\+Mtl@{Load\+Mtl}!tinyobj@{tinyobj}}
+\subsubsection{\texorpdfstring{Load\+Mtl()}{LoadMtl()}}
+{\footnotesize\ttfamily void tinyobj\+::\+Load\+Mtl (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, int $>$ $\ast$}]{material\+\_\+map,  }\item[{std\+::vector$<$ \hyperlink{structtinyobj_1_1material__t}{material\+\_\+t} $>$ $\ast$}]{materials,  }\item[{std\+::istream $\ast$}]{in\+Stream,  }\item[{std\+::string $\ast$}]{warning }\end{DoxyParamCaption})}
+
+
+
+Loads materials into std\+::map. 
+
+\mbox{\Hypertarget{namespacetinyobj_a5678f6df6cb6d01bb89453022d997503}\label{namespacetinyobj_a5678f6df6cb6d01bb89453022d997503}} 
+\index{tinyobj@{tinyobj}!Load\+Obj@{Load\+Obj}}
+\index{Load\+Obj@{Load\+Obj}!tinyobj@{tinyobj}}
+\subsubsection{\texorpdfstring{Load\+Obj()}{LoadObj()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool tinyobj\+::\+Load\+Obj (\begin{DoxyParamCaption}\item[{\hyperlink{structtinyobj_1_1attrib__t}{attrib\+\_\+t} $\ast$}]{attrib,  }\item[{std\+::vector$<$ \hyperlink{structtinyobj_1_1shape__t}{shape\+\_\+t} $>$ $\ast$}]{shapes,  }\item[{std\+::vector$<$ \hyperlink{structtinyobj_1_1material__t}{material\+\_\+t} $>$ $\ast$}]{materials,  }\item[{std\+::string $\ast$}]{err,  }\item[{const char $\ast$}]{filename,  }\item[{const char $\ast$}]{mtl\+\_\+basedir = {\ttfamily NULL},  }\item[{bool}]{triangulate = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Loads .obj from a file. \textquotesingle{}attrib\textquotesingle{}, \textquotesingle{}shapes\textquotesingle{} and \textquotesingle{}materials\textquotesingle{} will be filled with parsed shape data \textquotesingle{}shapes\textquotesingle{} will be filled with parsed shape data Returns true when loading .obj become success. Returns warning and error message into {\ttfamily err} \textquotesingle{}mtl\+\_\+basedir\textquotesingle{} is optional, and used for base directory for .mtl file. In default(`\+N\+U\+LL\textquotesingle{}), .mtl file is searched from an application\textquotesingle{}s working directory. \textquotesingle{}triangulate\textquotesingle{} is optional, and used whether triangulate polygon face in .obj or not. \mbox{\Hypertarget{namespacetinyobj_ad1e942879313375fcd1b08b7d6e7f89d}\label{namespacetinyobj_ad1e942879313375fcd1b08b7d6e7f89d}} 
+\index{tinyobj@{tinyobj}!Load\+Obj@{Load\+Obj}}
+\index{Load\+Obj@{Load\+Obj}!tinyobj@{tinyobj}}
+\subsubsection{\texorpdfstring{Load\+Obj()}{LoadObj()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool tinyobj\+::\+Load\+Obj (\begin{DoxyParamCaption}\item[{\hyperlink{structtinyobj_1_1attrib__t}{attrib\+\_\+t} $\ast$}]{attrib,  }\item[{std\+::vector$<$ \hyperlink{structtinyobj_1_1shape__t}{shape\+\_\+t} $>$ $\ast$}]{shapes,  }\item[{std\+::vector$<$ \hyperlink{structtinyobj_1_1material__t}{material\+\_\+t} $>$ $\ast$}]{materials,  }\item[{std\+::string $\ast$}]{err,  }\item[{std\+::istream $\ast$}]{in\+Stream,  }\item[{\hyperlink{classtinyobj_1_1MaterialReader}{Material\+Reader} $\ast$}]{read\+Mat\+Fn = {\ttfamily NULL},  }\item[{bool}]{triangulate = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Loads object from a std\+::istream, uses Get\+Mtl\+I\+Stream\+Fn to retrieve std\+::istream for materials. Returns true when loading .obj become success. Returns warning and error message into {\ttfamily err} \mbox{\Hypertarget{namespacetinyobj_add9ad979e8011ccdfac2e1ec8def5359}\label{namespacetinyobj_add9ad979e8011ccdfac2e1ec8def5359}} 
+\index{tinyobj@{tinyobj}!Load\+Obj\+With\+Callback@{Load\+Obj\+With\+Callback}}
+\index{Load\+Obj\+With\+Callback@{Load\+Obj\+With\+Callback}!tinyobj@{tinyobj}}
+\subsubsection{\texorpdfstring{Load\+Obj\+With\+Callback()}{LoadObjWithCallback()}}
+{\footnotesize\ttfamily bool tinyobj\+::\+Load\+Obj\+With\+Callback (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in\+Stream,  }\item[{const \hyperlink{namespacetinyobj_a7d9ae2b4716367a1b66b4d354482b035}{callback\+\_\+t} \&}]{callback,  }\item[{void $\ast$}]{user\+\_\+data = {\ttfamily NULL},  }\item[{\hyperlink{classtinyobj_1_1MaterialReader}{Material\+Reader} $\ast$}]{read\+Mat\+Fn = {\ttfamily NULL},  }\item[{std\+::string $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Loads .obj from a file with custom user callback. .mtl is loaded as usual and parsed \hyperlink{structtinyobj_1_1material__t}{material\+\_\+t} data will be passed to {\ttfamily callback.\+mtllib\+\_\+cb}. Returns true when loading .obj/.mtl become success. Returns warning and error message into {\ttfamily err} See {\ttfamily examples/callback\+\_\+api/} for how to use this function. 

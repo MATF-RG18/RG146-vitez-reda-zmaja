@@ -1,0 +1,110 @@
+\hypertarget{Math_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/utility/\+Math.h}
+\label{Math_8h}\index{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/utility/\+Math.\+h@{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/utility/\+Math.\+h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$glm/vec3.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/vec2.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/mat4x4.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+Graf zavisnosti datoteka za Math.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Math_8h__incl}
+\end{center}
+\end{figure}
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Math_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Makro zamene}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Math_8h_a598a3330b3c21701223ee0ca14316eca}{PI}~3.\+14159265
+\end{DoxyCompactItemize}
+\subsection*{Funkcije}
+\begin{DoxyCompactItemize}
+\item 
+mat4 \hyperlink{Math_8h_af2745946387f5bef6470da8ca8fa40c3}{create\+Transformation\+Matrix} (vec3 translation, vec3 rotation, float scale\+Factor)
+\begin{DoxyCompactList}\small\item\em Funkcija kreira matricu transformacije. \end{DoxyCompactList}\item 
+mat4 \hyperlink{Math_8h_abfc3ea2c5c1a588b51e952b00e055639}{create\+View\+Matrix} (vec3 position, float pich, float yaw)
+\begin{DoxyCompactList}\small\item\em Funkcija kreira matricu pogleda. \end{DoxyCompactList}\item 
+float \hyperlink{Math_8h_adc4665953edcb92de244a1812f5d2a3f}{barry\+Centric} (vec3 p1, vec3 p2, vec3 p3, vec2 position)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+\begin{DoxyAuthor}{Autor}
+Dusan Pantelic 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Datum}
+Februar 2017 
+\end{DoxyDate}
+
+
+\subsection{Dokumentacija makro zamene}
+\mbox{\Hypertarget{Math_8h_a598a3330b3c21701223ee0ca14316eca}\label{Math_8h_a598a3330b3c21701223ee0ca14316eca}} 
+\index{Math.\+h@{Math.\+h}!PI@{PI}}
+\index{PI@{PI}!Math.\+h@{Math.\+h}}
+\subsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily \#define PI~3.\+14159265}
+
+
+
+\subsection{Dokumentacija funkcije}
+\mbox{\Hypertarget{Math_8h_adc4665953edcb92de244a1812f5d2a3f}\label{Math_8h_adc4665953edcb92de244a1812f5d2a3f}} 
+\index{Math.\+h@{Math.\+h}!barry\+Centric@{barry\+Centric}}
+\index{barry\+Centric@{barry\+Centric}!Math.\+h@{Math.\+h}}
+\subsubsection{\texorpdfstring{barry\+Centric()}{barryCentric()}}
+{\footnotesize\ttfamily float barry\+Centric (\begin{DoxyParamCaption}\item[{vec3}]{p1,  }\item[{vec3}]{p2,  }\item[{vec3}]{p3,  }\item[{vec2}]{position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Math_8h_af2745946387f5bef6470da8ca8fa40c3}\label{Math_8h_af2745946387f5bef6470da8ca8fa40c3}} 
+\index{Math.\+h@{Math.\+h}!create\+Transformation\+Matrix@{create\+Transformation\+Matrix}}
+\index{create\+Transformation\+Matrix@{create\+Transformation\+Matrix}!Math.\+h@{Math.\+h}}
+\subsubsection{\texorpdfstring{create\+Transformation\+Matrix()}{createTransformationMatrix()}}
+{\footnotesize\ttfamily mat4 create\+Transformation\+Matrix (\begin{DoxyParamCaption}\item[{vec3}]{translation,  }\item[{vec3}]{rotation,  }\item[{float}]{scale\+Factor }\end{DoxyParamCaption})}
+
+
+
+Funkcija kreira matricu transformacije. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em translation} & Translacija objekta \\
+\hline
+{\em rotation} & Rotacija objekta \\
+\hline
+{\em scale\+Factor} & Faktor skaliranja \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+mat4 Matrica transformacije 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Math_8h_abfc3ea2c5c1a588b51e952b00e055639}\label{Math_8h_abfc3ea2c5c1a588b51e952b00e055639}} 
+\index{Math.\+h@{Math.\+h}!create\+View\+Matrix@{create\+View\+Matrix}}
+\index{create\+View\+Matrix@{create\+View\+Matrix}!Math.\+h@{Math.\+h}}
+\subsubsection{\texorpdfstring{create\+View\+Matrix()}{createViewMatrix()}}
+{\footnotesize\ttfamily mat4 create\+View\+Matrix (\begin{DoxyParamCaption}\item[{vec3}]{position,  }\item[{float}]{pich,  }\item[{float}]{yaw }\end{DoxyParamCaption})}
+
+
+
+Funkcija kreira matricu pogleda. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em position} & Pozicija kamere \\
+\hline
+{\em pitch} & Rotacija oko X ose \\
+\hline
+{\em yaw} & Rotacija oko Y ose \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+mat4 Matrica pogleda 
+\end{DoxyReturn}

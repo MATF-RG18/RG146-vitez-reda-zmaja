@@ -1,0 +1,293 @@
+\hypertarget{classcore_1_1MainRenderer}{}\section{Dokumentacija klase core\+:\+:Main\+Renderer}
+\label{classcore_1_1MainRenderer}\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+
+
+Klasa \hyperlink{classcore_1_1MainRenderer}{Main\+Renderer} je zaduzena za iscrtavanje sadrzaja na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se iscrtavaju teren igrac i ostali entiteti.  
+
+
+
+
+{\ttfamily \#include $<$Main\+Renderer.\+h$>$}
+
+
+
+Klasni dijagram za core\+:\+:Main\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcore_1_1MainRenderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1MainRenderer_ab005c6e84882d475f9579f9c09b2329d}{Main\+Renderer} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classcore_1_1MainRenderer_a1e5f39d2178a7c5738efa9be9bd486da}{$\sim$\+Main\+Renderer} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1MainRenderer_a3a8f4927df78f7b0ea7c4e5902569b1e}{render} (\hyperlink{classentity_1_1Light}{Light} $\ast$\hyperlink{namespacecore_a2324d96000e7c6d42570a0577e8f070b}{light}, \hyperlink{classentity_1_1Camera}{Camera} $\ast$\hyperlink{namespacecore_a9d645c490b142886301256f6cf9c65c2}{camera})
+\begin{DoxyCompactList}\small\item\em Funkcija iscrtava teren i ostale entitete igre. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1MainRenderer_ae5ffaef40e727ab758d7b2d36ed4e92a}{process\+Entity} (\hyperlink{classentity_1_1Entity}{Entity} $\ast$\hyperlink{namespacecore_aa710c0ea388433d2d80d1d1c67582eda}{entity})
+\begin{DoxyCompactList}\small\item\em Funkcija obradjuje entitete i ubacuje ih u mapu entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1MainRenderer_a4e8a3e6729a7d948761d6e74c48a6236}{process\+Terrain} (\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$\hyperlink{namespacecore_ac45da6f80dac9bead5c9310c27897f15}{terrain})
+\begin{DoxyCompactList}\small\item\em Funkcija obradjuje terene i ubacuje ih u listu terena. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1MainRenderer_af55caf59bc4f10718a18ecb3e784b778}{clean\+Up} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija poziva funkcije clean\+Up za sejdere entiteta i terena. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1MainRenderer_a8e8be03c3b1f51ce0721cf52aa8f0f3c}{prepare} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija vrsi pripreme za iscrtavanje sadrzaja na ekran. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1MainRenderer_abf659aace3015f29db1c3ea9561fff2f}{enable\+Culling} ()
+\begin{DoxyCompactList}\small\item\em Funkcija onemogucava iscrtavanje zadnje strane objekata. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1MainRenderer_a00a3d49faabb02f0984f521208681ac4}{disable\+Culling} ()
+\begin{DoxyCompactList}\small\item\em Funkcija omogucava iscrtavanje zadnje strane objekata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classshader_1_1Shader}{Shader} $\ast$ \hyperlink{classcore_1_1MainRenderer_a9e5b8ba9a151d64b79612b8631fc1255}{shader}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Shader. \end{DoxyCompactList}\item 
+\hyperlink{classcore_1_1Render}{Render} $\ast$ \hyperlink{classcore_1_1MainRenderer_a3cdbf7f833cac2e18e8bb7d3cdd7728d}{renderer}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase \hyperlink{classcore_1_1Render}{Render}. \end{DoxyCompactList}\item 
+\hyperlink{classcore_1_1TerrainRenderer}{Terrain\+Renderer} $\ast$ \hyperlink{classcore_1_1MainRenderer_aba23d91ed6ade9c35600156c0e1f0d83}{terrain\+Renderer}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase \hyperlink{classcore_1_1TerrainRenderer}{Terrain\+Renderer}. \end{DoxyCompactList}\item 
+\hyperlink{classshader_1_1TerrainShader}{Terrain\+Shader} $\ast$ \hyperlink{classcore_1_1MainRenderer_a502a7c6f714266f27601913496c396f3}{terrain\+Shader}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Terrain\+Shader. \end{DoxyCompactList}\item 
+map$<$ \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$, list$<$ \hyperlink{classentity_1_1Entity}{Entity} $\ast$ $>$ $>$ \hyperlink{classcore_1_1MainRenderer_a609ec87995b16fcca439ce5585993fc4}{entities}
+\begin{DoxyCompactList}\small\item\em Hes mapa koja sadrzi teksturisane modele i liste entiteta. \end{DoxyCompactList}\item 
+list$<$ \hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$ $>$ \hyperlink{classcore_1_1MainRenderer_ada8a51626222137e00ae29445e28f892}{terrains}
+\begin{DoxyCompactList}\small\item\em Lista terena. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classcore_1_1MainRenderer}{Main\+Renderer} je zaduzena za iscrtavanje sadrzaja na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se iscrtavaju teren igrac i ostali entiteti. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classcore_1_1MainRenderer_ab005c6e84882d475f9579f9c09b2329d}\label{classcore_1_1MainRenderer_ab005c6e84882d475f9579f9c09b2329d}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!Main\+Renderer@{Main\+Renderer}}
+\index{Main\+Renderer@{Main\+Renderer}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{Main\+Renderer()}{MainRenderer()}}
+{\footnotesize\ttfamily core\+::\+Main\+Renderer\+::\+Main\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1MainRenderer_a1e5f39d2178a7c5738efa9be9bd486da}\label{classcore_1_1MainRenderer_a1e5f39d2178a7c5738efa9be9bd486da}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!````~Main\+Renderer@{$\sim$\+Main\+Renderer}}
+\index{````~Main\+Renderer@{$\sim$\+Main\+Renderer}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Main\+Renderer()}{~MainRenderer()}}
+{\footnotesize\ttfamily core\+::\+Main\+Renderer\+::$\sim$\+Main\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classcore_1_1MainRenderer_af55caf59bc4f10718a18ecb3e784b778}\label{classcore_1_1MainRenderer_af55caf59bc4f10718a18ecb3e784b778}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void core\+::\+Main\+Renderer\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija poziva funkcije clean\+Up za sejdere entiteta i terena. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1MainRenderer_a00a3d49faabb02f0984f521208681ac4}\label{classcore_1_1MainRenderer_a00a3d49faabb02f0984f521208681ac4}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!disable\+Culling@{disable\+Culling}}
+\index{disable\+Culling@{disable\+Culling}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{disable\+Culling()}{disableCulling()}}
+{\footnotesize\ttfamily void core\+::\+Main\+Renderer\+::disable\+Culling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija omogucava iscrtavanje zadnje strane objekata. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1MainRenderer_abf659aace3015f29db1c3ea9561fff2f}\label{classcore_1_1MainRenderer_abf659aace3015f29db1c3ea9561fff2f}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!enable\+Culling@{enable\+Culling}}
+\index{enable\+Culling@{enable\+Culling}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{enable\+Culling()}{enableCulling()}}
+{\footnotesize\ttfamily void core\+::\+Main\+Renderer\+::enable\+Culling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija onemogucava iscrtavanje zadnje strane objekata. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1MainRenderer_a8e8be03c3b1f51ce0721cf52aa8f0f3c}\label{classcore_1_1MainRenderer_a8e8be03c3b1f51ce0721cf52aa8f0f3c}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!prepare@{prepare}}
+\index{prepare@{prepare}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily void core\+::\+Main\+Renderer\+::prepare (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vrsi pripreme za iscrtavanje sadrzaja na ekran. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1MainRenderer_ae5ffaef40e727ab758d7b2d36ed4e92a}\label{classcore_1_1MainRenderer_ae5ffaef40e727ab758d7b2d36ed4e92a}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!process\+Entity@{process\+Entity}}
+\index{process\+Entity@{process\+Entity}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{process\+Entity()}{processEntity()}}
+{\footnotesize\ttfamily void core\+::\+Main\+Renderer\+::process\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classentity_1_1Entity}{Entity} $\ast$}]{entity }\end{DoxyParamCaption})}
+
+
+
+Funkcija obradjuje entitete i ubacuje ih u mapu entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em entity} & Pokazivac na instancu klase Entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1MainRenderer_a4e8a3e6729a7d948761d6e74c48a6236}\label{classcore_1_1MainRenderer_a4e8a3e6729a7d948761d6e74c48a6236}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!process\+Terrain@{process\+Terrain}}
+\index{process\+Terrain@{process\+Terrain}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{process\+Terrain()}{processTerrain()}}
+{\footnotesize\ttfamily void core\+::\+Main\+Renderer\+::process\+Terrain (\begin{DoxyParamCaption}\item[{\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$}]{terrain }\end{DoxyParamCaption})}
+
+
+
+Funkcija obradjuje terene i ubacuje ih u listu terena. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em terrain} & Pokazivac na instancu klase Terrain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1MainRenderer_a3a8f4927df78f7b0ea7c4e5902569b1e}\label{classcore_1_1MainRenderer_a3a8f4927df78f7b0ea7c4e5902569b1e}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!render@{render}}
+\index{render@{render}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void core\+::\+Main\+Renderer\+::render (\begin{DoxyParamCaption}\item[{\hyperlink{classentity_1_1Light}{Light} $\ast$}]{light,  }\item[{\hyperlink{classentity_1_1Camera}{Camera} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Funkcija iscrtava teren i ostale entitete igre. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em light} & Pokazivac na instancu klase Light \\
+\hline
+{\em camera} & Pokazivac na instancu klase Camera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classcore_1_1MainRenderer_a609ec87995b16fcca439ce5585993fc4}\label{classcore_1_1MainRenderer_a609ec87995b16fcca439ce5585993fc4}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!entities@{entities}}
+\index{entities@{entities}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{entities}{entities}}
+{\footnotesize\ttfamily map$<$\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$, list$<$\hyperlink{classentity_1_1Entity}{Entity} $\ast$$>$ $>$ core\+::\+Main\+Renderer\+::entities\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hes mapa koja sadrzi teksturisane modele i liste entiteta. 
+
+\mbox{\Hypertarget{classcore_1_1MainRenderer_a3cdbf7f833cac2e18e8bb7d3cdd7728d}\label{classcore_1_1MainRenderer_a3cdbf7f833cac2e18e8bb7d3cdd7728d}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!renderer@{renderer}}
+\index{renderer@{renderer}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily \hyperlink{classcore_1_1Render}{Render}$\ast$ core\+::\+Main\+Renderer\+::renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase \hyperlink{classcore_1_1Render}{Render}. 
+
+\mbox{\Hypertarget{classcore_1_1MainRenderer_a9e5b8ba9a151d64b79612b8631fc1255}\label{classcore_1_1MainRenderer_a9e5b8ba9a151d64b79612b8631fc1255}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!shader@{shader}}
+\index{shader@{shader}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{shader}{shader}}
+{\footnotesize\ttfamily \hyperlink{classshader_1_1Shader}{Shader}$\ast$ core\+::\+Main\+Renderer\+::shader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Shader. 
+
+\mbox{\Hypertarget{classcore_1_1MainRenderer_aba23d91ed6ade9c35600156c0e1f0d83}\label{classcore_1_1MainRenderer_aba23d91ed6ade9c35600156c0e1f0d83}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!terrain\+Renderer@{terrain\+Renderer}}
+\index{terrain\+Renderer@{terrain\+Renderer}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{terrain\+Renderer}{terrainRenderer}}
+{\footnotesize\ttfamily \hyperlink{classcore_1_1TerrainRenderer}{Terrain\+Renderer}$\ast$ core\+::\+Main\+Renderer\+::terrain\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase \hyperlink{classcore_1_1TerrainRenderer}{Terrain\+Renderer}. 
+
+\mbox{\Hypertarget{classcore_1_1MainRenderer_ada8a51626222137e00ae29445e28f892}\label{classcore_1_1MainRenderer_ada8a51626222137e00ae29445e28f892}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!terrains@{terrains}}
+\index{terrains@{terrains}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{terrains}{terrains}}
+{\footnotesize\ttfamily list$<$\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$$>$ core\+::\+Main\+Renderer\+::terrains\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista terena. 
+
+\mbox{\Hypertarget{classcore_1_1MainRenderer_a502a7c6f714266f27601913496c396f3}\label{classcore_1_1MainRenderer_a502a7c6f714266f27601913496c396f3}} 
+\index{core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}!terrain\+Shader@{terrain\+Shader}}
+\index{terrain\+Shader@{terrain\+Shader}!core\+::\+Main\+Renderer@{core\+::\+Main\+Renderer}}
+\subsubsection{\texorpdfstring{terrain\+Shader}{terrainShader}}
+{\footnotesize\ttfamily \hyperlink{classshader_1_1TerrainShader}{Terrain\+Shader}$\ast$ core\+::\+Main\+Renderer\+::terrain\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Terrain\+Shader. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\hyperlink{MainRenderer_8h}{Main\+Renderer.\+h}\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/core/\hyperlink{MainRenderer_8cpp}{Main\+Renderer.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\hypertarget{classcore_1_1ObjLoader}{}\section{Dokumentacija klase core\+:\+:Obj\+Loader}
+\label{classcore_1_1ObjLoader}\index{core\+::\+Obj\+Loader@{core\+::\+Obj\+Loader}}
+
+
+Klasa \hyperlink{classcore_1_1ObjLoader}{Obj\+Loader} je zaduzena za ucitavanje obj fajlova. Tokom pokretanja citaju se obj fajlovi koji se zatim obradjuju i podaci se prosledjuju drugim klasama koje ih koriste.  
+
+
+
+
+{\ttfamily \#include $<$Obj\+Loader.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1ObjLoader_a4cdb4b0e2d995d3ea0f51f255e791aaa}{Obj\+Loader} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classcore_1_1ObjLoader_a127a52d790309d913f7f3711a5d8c3f4}{$\sim$\+Obj\+Loader} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classcore_1_1ObjLoader_a47f303f773dfbd6d33598a53a1dbcbc4}{load\+Obj\+Model} (const char $\ast$file\+Name, \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$\hyperlink{namespacecore_a78dd24784c415d3759a0f71b8f4f9f81}{vao\+Loader})
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava obj fajl i koristi podatke koji su u njemu za generisanje objekta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classcore_1_1ObjLoader}{Obj\+Loader} je zaduzena za ucitavanje obj fajlova. Tokom pokretanja citaju se obj fajlovi koji se zatim obradjuju i podaci se prosledjuju drugim klasama koje ih koriste. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classcore_1_1ObjLoader_a4cdb4b0e2d995d3ea0f51f255e791aaa}\label{classcore_1_1ObjLoader_a4cdb4b0e2d995d3ea0f51f255e791aaa}} 
+\index{core\+::\+Obj\+Loader@{core\+::\+Obj\+Loader}!Obj\+Loader@{Obj\+Loader}}
+\index{Obj\+Loader@{Obj\+Loader}!core\+::\+Obj\+Loader@{core\+::\+Obj\+Loader}}
+\subsubsection{\texorpdfstring{Obj\+Loader()}{ObjLoader()}}
+{\footnotesize\ttfamily core\+::\+Obj\+Loader\+::\+Obj\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1ObjLoader_a127a52d790309d913f7f3711a5d8c3f4}\label{classcore_1_1ObjLoader_a127a52d790309d913f7f3711a5d8c3f4}} 
+\index{core\+::\+Obj\+Loader@{core\+::\+Obj\+Loader}!````~Obj\+Loader@{$\sim$\+Obj\+Loader}}
+\index{````~Obj\+Loader@{$\sim$\+Obj\+Loader}!core\+::\+Obj\+Loader@{core\+::\+Obj\+Loader}}
+\subsubsection{\texorpdfstring{$\sim$\+Obj\+Loader()}{~ObjLoader()}}
+{\footnotesize\ttfamily core\+::\+Obj\+Loader\+::$\sim$\+Obj\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classcore_1_1ObjLoader_a47f303f773dfbd6d33598a53a1dbcbc4}\label{classcore_1_1ObjLoader_a47f303f773dfbd6d33598a53a1dbcbc4}} 
+\index{core\+::\+Obj\+Loader@{core\+::\+Obj\+Loader}!load\+Obj\+Model@{load\+Obj\+Model}}
+\index{load\+Obj\+Model@{load\+Obj\+Model}!core\+::\+Obj\+Loader@{core\+::\+Obj\+Loader}}
+\subsubsection{\texorpdfstring{load\+Obj\+Model()}{loadObjModel()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ core\+::\+Obj\+Loader\+::load\+Obj\+Model (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$}]{vao\+Loader }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava obj fajl i koristi podatke koji su u njemu za generisanje objekta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em file\+Name} & Naziv obj fajla koji se ucitava \\
+\hline
+{\em vao\+Loader} & Instanca klase \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+Raw\+Model $\ast$ Pokazivac na instancu klase Raw\+Model 
+\end{DoxyReturn}
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\hyperlink{ObjLoader_8h}{Obj\+Loader.\+h}\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/core/\hyperlink{ObjLoader_8cpp}{Obj\+Loader.\+cpp}\end{DoxyCompactItemize}

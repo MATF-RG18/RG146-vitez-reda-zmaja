@@ -1,0 +1,343 @@
+\hypertarget{classentity_1_1Entity}{}\section{Dokumentacija klase entity\+:\+:Entity}
+\label{classentity_1_1Entity}\index{entity\+::\+Entity@{entity\+::\+Entity}}
+
+
+Klasa \hyperlink{classentity_1_1Entity}{Entity} odredjuje jedan entitet. Pomocu klase \hyperlink{classentity_1_1Entity}{Entity} odredjujemo entitet tako sto mu pridruzujemo teksturisan model kao i poziciju u svetu i ostale transformacije.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+
+
+Dijagram nasleđivanja za klasu entity\+:\+:Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classentity_1_1Entity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Klasni dijagram za entity\+:\+:Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classentity_1_1Entity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classentity_1_1Entity_a1668042c968a630c82bbbcec8520400e}{Entity} (\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$\hyperlink{classentity_1_1Entity_ac7848c5d47d4b2bf12c84ddbbc32052a}{model}, vec3 \hyperlink{classentity_1_1Entity_ad409c7f2085024479b276c2b6948bddb}{position}, vec3 \hyperlink{classentity_1_1Entity_aedb4c5dc1cfbc8cb3f6deb565ea920cb}{rotation}, float \hyperlink{classentity_1_1Entity_a59e5d5e3575df70cd5c74b5d739d84ca}{scale})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classentity_1_1Entity_a2d1aa154095b15e2dd6fa484ec00867e}{$\sim$\+Entity} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$ \hyperlink{classentity_1_1Entity_abc6481a8bab918cfb1309d3d342ccad1}{get\+Model} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca texturisan model. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Entity_a68bdcd0dcae978514e87ee53c60367e2}{set\+Model} (\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$\hyperlink{classentity_1_1Entity_ac7848c5d47d4b2bf12c84ddbbc32052a}{model})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja texturisan model. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classentity_1_1Entity_ad255abb1afcceceb6f2efea66086d8bd}{get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca poziciju entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Entity_abb5f477d3eac07d19f0545df10e3077c}{set\+Position} (vec3 \hyperlink{classentity_1_1Entity_ad409c7f2085024479b276c2b6948bddb}{position})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja poziciju entiteta. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classentity_1_1Entity_a58680b88c9179d9cab22e881b320f9f7}{get\+Rotation} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca rotaciju entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Entity_a830cb1b8769d11322844a34f1e480e4b}{set\+Rotation} (vec3 \hyperlink{classentity_1_1Entity_aedb4c5dc1cfbc8cb3f6deb565ea920cb}{rotation})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja rotaciju entiteta. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Entity_a1923a9ecf9da2ec77d6e3eeadb4bd4d7}{get\+Scale} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca skaliranje entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Entity_a5d2d7bd6cd754ce566e2d4a9e4b991e0}{set\+Scale} (float \hyperlink{classentity_1_1Entity_a59e5d5e3575df70cd5c74b5d739d84ca}{scale})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja skaliranje entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Entity_a24a22a1554a3a412cc2583bbf87fd77c}{increase\+Position} (vec3 delta\+Position)
+\begin{DoxyCompactList}\small\item\em Funkcija povecava poziciju entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1Entity_ac5bd766ea7810db89b8948160916768a}{increase\+Rotation} (vec3 delta\+Rotation)
+\begin{DoxyCompactList}\small\item\em Funkcija povecava rotaciju entiteta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$ \hyperlink{classentity_1_1Entity_ac7848c5d47d4b2bf12c84ddbbc32052a}{model}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Textured\+Model. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classentity_1_1Entity_ad409c7f2085024479b276c2b6948bddb}{position}
+\begin{DoxyCompactList}\small\item\em Pozicija entiteta. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classentity_1_1Entity_aedb4c5dc1cfbc8cb3f6deb565ea920cb}{rotation}
+\begin{DoxyCompactList}\small\item\em Rotacija entiteta. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1Entity_a59e5d5e3575df70cd5c74b5d739d84ca}{scale}
+\begin{DoxyCompactList}\small\item\em Skaliranje entiteta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classentity_1_1Entity}{Entity} odredjuje jedan entitet. Pomocu klase \hyperlink{classentity_1_1Entity}{Entity} odredjujemo entitet tako sto mu pridruzujemo teksturisan model kao i poziciju u svetu i ostale transformacije. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classentity_1_1Entity_a1668042c968a630c82bbbcec8520400e}\label{classentity_1_1Entity_a1668042c968a630c82bbbcec8520400e}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily entity\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$}]{model,  }\item[{vec3}]{position,  }\item[{vec3}]{rotation,  }\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em model} & Pokazivac na instancu klase Textured\+Model. \\
+\hline
+{\em position} & Pozicija entiteta \\
+\hline
+{\em rotation} & Rotacija entiteta \\
+\hline
+{\em scale} & Skaliranje entiteta \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classentity_1_1Entity_a2d1aa154095b15e2dd6fa484ec00867e}\label{classentity_1_1Entity_a2d1aa154095b15e2dd6fa484ec00867e}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!````~Entity@{$\sim$\+Entity}}
+\index{````~Entity@{$\sim$\+Entity}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{$\sim$\+Entity()}{~Entity()}}
+{\footnotesize\ttfamily entity\+::\+Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classentity_1_1Entity_abc6481a8bab918cfb1309d3d342ccad1}\label{classentity_1_1Entity_abc6481a8bab918cfb1309d3d342ccad1}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!get\+Model@{get\+Model}}
+\index{get\+Model@{get\+Model}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{get\+Model()}{getModel()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$ entity\+::\+Entity\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca texturisan model. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+Textured\+Model $\ast$ Pokazivac na instancu klase Textured\+Model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Entity_ad255abb1afcceceb6f2efea66086d8bd}\label{classentity_1_1Entity_ad255abb1afcceceb6f2efea66086d8bd}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily vec3 entity\+::\+Entity\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca poziciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vec3 Pozicija entiteta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Entity_a58680b88c9179d9cab22e881b320f9f7}\label{classentity_1_1Entity_a58680b88c9179d9cab22e881b320f9f7}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!get\+Rotation@{get\+Rotation}}
+\index{get\+Rotation@{get\+Rotation}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
+{\footnotesize\ttfamily vec3 entity\+::\+Entity\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca rotaciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vec3 Rotacija entiteta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Entity_a1923a9ecf9da2ec77d6e3eeadb4bd4d7}\label{classentity_1_1Entity_a1923a9ecf9da2ec77d6e3eeadb4bd4d7}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{get\+Scale()}{getScale()}}
+{\footnotesize\ttfamily float entity\+::\+Entity\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca skaliranje entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Skaliranje entiteta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Entity_a24a22a1554a3a412cc2583bbf87fd77c}\label{classentity_1_1Entity_a24a22a1554a3a412cc2583bbf87fd77c}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!increase\+Position@{increase\+Position}}
+\index{increase\+Position@{increase\+Position}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{increase\+Position()}{increasePosition()}}
+{\footnotesize\ttfamily void entity\+::\+Entity\+::increase\+Position (\begin{DoxyParamCaption}\item[{vec3}]{delta\+Position }\end{DoxyParamCaption})}
+
+
+
+Funkcija povecava poziciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em delta\+Position} & Pozicija entiteta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Entity_ac5bd766ea7810db89b8948160916768a}\label{classentity_1_1Entity_ac5bd766ea7810db89b8948160916768a}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!increase\+Rotation@{increase\+Rotation}}
+\index{increase\+Rotation@{increase\+Rotation}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{increase\+Rotation()}{increaseRotation()}}
+{\footnotesize\ttfamily void entity\+::\+Entity\+::increase\+Rotation (\begin{DoxyParamCaption}\item[{vec3}]{delta\+Rotation }\end{DoxyParamCaption})}
+
+
+
+Funkcija povecava rotaciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em delta\+Rotation} & Rotacija entiteta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Entity_a68bdcd0dcae978514e87ee53c60367e2}\label{classentity_1_1Entity_a68bdcd0dcae978514e87ee53c60367e2}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!set\+Model@{set\+Model}}
+\index{set\+Model@{set\+Model}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{set\+Model()}{setModel()}}
+{\footnotesize\ttfamily void entity\+::\+Entity\+::set\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$}]{model }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja texturisan model. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em model} & Pokazivac na instancu klase Textured\+Model \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Entity_abb5f477d3eac07d19f0545df10e3077c}\label{classentity_1_1Entity_abb5f477d3eac07d19f0545df10e3077c}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void entity\+::\+Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{vec3}]{position }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja poziciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em position} & Pozicija entiteta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Entity_a830cb1b8769d11322844a34f1e480e4b}\label{classentity_1_1Entity_a830cb1b8769d11322844a34f1e480e4b}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}}
+{\footnotesize\ttfamily void entity\+::\+Entity\+::set\+Rotation (\begin{DoxyParamCaption}\item[{vec3}]{rotation }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja rotaciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em rotation} & Rotacija entiteta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1Entity_a5d2d7bd6cd754ce566e2d4a9e4b991e0}\label{classentity_1_1Entity_a5d2d7bd6cd754ce566e2d4a9e4b991e0}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!set\+Scale@{set\+Scale}}
+\index{set\+Scale@{set\+Scale}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{set\+Scale()}{setScale()}}
+{\footnotesize\ttfamily void entity\+::\+Entity\+::set\+Scale (\begin{DoxyParamCaption}\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja skaliranje entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em scale} & Skaliranje entiteta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classentity_1_1Entity_ac7848c5d47d4b2bf12c84ddbbc32052a}\label{classentity_1_1Entity_ac7848c5d47d4b2bf12c84ddbbc32052a}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!model@{model}}
+\index{model@{model}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model}$\ast$ entity\+::\+Entity\+::model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Textured\+Model. 
+
+\mbox{\Hypertarget{classentity_1_1Entity_ad409c7f2085024479b276c2b6948bddb}\label{classentity_1_1Entity_ad409c7f2085024479b276c2b6948bddb}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!position@{position}}
+\index{position@{position}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily vec3 entity\+::\+Entity\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pozicija entiteta. 
+
+\mbox{\Hypertarget{classentity_1_1Entity_aedb4c5dc1cfbc8cb3f6deb565ea920cb}\label{classentity_1_1Entity_aedb4c5dc1cfbc8cb3f6deb565ea920cb}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!rotation@{rotation}}
+\index{rotation@{rotation}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily vec3 entity\+::\+Entity\+::rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rotacija entiteta. 
+
+\mbox{\Hypertarget{classentity_1_1Entity_a59e5d5e3575df70cd5c74b5d739d84ca}\label{classentity_1_1Entity_a59e5d5e3575df70cd5c74b5d739d84ca}} 
+\index{entity\+::\+Entity@{entity\+::\+Entity}!scale@{scale}}
+\index{scale@{scale}!entity\+::\+Entity@{entity\+::\+Entity}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily float entity\+::\+Entity\+::scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skaliranje entiteta. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/entity/\hyperlink{Entity_8h}{Entity.\+h}\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/entity/\hyperlink{Entity_8cpp}{Entity.\+cpp}\end{DoxyCompactItemize}

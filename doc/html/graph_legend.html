@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Objašnjenje korišćenih simbola</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Objašnjenje korišćenih simbola</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p>Ova stranica objašnjava kako tumačiti grafikone koje je napravio doxygen.</p>
+<p>Na primer: </p><div class="fragment"><div class="line">/*! Klasa nevidljiva zbog trenutnih ograničenja */</div><div class="line">class Invisible { };</div><div class="line"></div><div class="line">/*! Klasa kojoj se ne vidi način izvođenja */</div><div class="line">class Truncated : public Invisible { };</div><div class="line"></div><div class="line">/* Klasa bez doxygen komentara */</div><div class="line">class Undocumented { };</div><div class="line"></div><div class="line">/*! Klasa izvedena iz osnovne klase javnim izvođenjem */</div><div class="line">class PublicBase : public Truncated { };</div><div class="line"></div><div class="line">/*! Šablonska klasa */</div><div class="line">template&lt;class T&gt; class Templ { };</div><div class="line"></div><div class="line">/*! Klasa izvedena iz osnovne klase zaštićenim izvođenjem */</div><div class="line">class ProtectedBase { };</div><div class="line"></div><div class="line">/*! Klasa izvedena iz osnovne klase privatnim izvođenjem */</div><div class="line">class PrivateBase { };</div><div class="line"></div><div class="line">/*! Klasa korišćena u nekoj/nekim od drugih klasa */</div><div class="line">class Used { };</div><div class="line"></div><div class="line">/*! Klasa izvedena iz više osnovnih klasa */</div><div class="line">class Inherited : public PublicBase,</div><div class="line">                  protected ProtectedBase,</div><div class="line">                  private PrivateBase,</div><div class="line">                  public Undocumented,</div><div class="line">                  public Templ&lt;int&gt;</div><div class="line">{</div><div class="line">  private:</div><div class="line">    Used *m_usedClass;</div><div class="line">};</div></div><!-- fragment --><p> Ako je <code>MAX_DOT_GRAPH_HEIGHT</code> tag u konfiguracionoj datoteci postavljen na <code>200</code> graf izvođenja će izgledati ovako:</p>
+<center><div class="image">
+<img src="graph_legend.png"/>
+</div>
+</center><p> Graf će biti odsečen ako ne stane unutar zadatih granica. </p>
+<p>Pravougaonici imaju sledeća značenja: </p><ul>
+<li>
+Puni sivi predstavlja strukturu ili klasu za koju je graf napravljen. </li>
+<li>
+Sa crnom ivicom predstavlja dokumentovanu strukturu ili klasu. </li>
+<li>
+Sa sivom ivicom predstavlja strukturu ili klasu bez doxygen komentara. </li>
+<li>
+Sa crvenom ivicom predstavlja dokumentovanu strukturu ili klasu za koju nisu prikazani svi relevantni grafovi. </li>
+</ul>
+<p>Strelice imaju sledeća značenja: </p><ul>
+<li>
+Tamnoplava strelica označava javno izvođenje. </li>
+<li>
+Tamnozelena strelica označava zaštićeno izvođenje. </li>
+<li>
+Tamnocrvena strelica označava privatno izvođenje. </li>
+<li>
+Ljubičasta isprekidana strelica označava da je klasa sadržana ili korišćena u drugoj klasi. Strelica je označena imenom atributa preko koga se pristupa klasi/strukturi na koju pokazuje. </li>
+<li>
+Žuta isprekidana strelica označava vezu između primerka šablona i šablona klase od kojeg je primerak napravljen. Strelica je označena stvarnim argumentima šablona. </li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

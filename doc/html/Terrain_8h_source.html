@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/include/terrain/Terrain.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_be4e29fa97ab0a9e57a94de7d0d81e41.html">terrain</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Terrain.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Terrain_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _TERRAIN_H_</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _TERRAIN_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../model/RawModel.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../texture/ModelTexture.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../texture/TerrainTexturePack.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../core/VaoLoader.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../utility/Math.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Magick++.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;glm/vec3.hpp&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;glm/glm.hpp&gt;</span> </div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="Terrain_8h.html#a70ed59adcb4159ac551058053e649640">   15</a></span>&#160;<span class="preprocessor">#define SIZE  800</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="Terrain_8h.html#ac1689bb03dbfff43e32aff331b96dea8">   16</a></span>&#160;<span class="preprocessor">#define MAX_PIXEL_COLOUR 256*256*256</span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="Terrain_8h.html#a9059fa76eb5e8e86f870405d63e72c4c">   17</a></span>&#160;<span class="preprocessor">#define MAX_HEIGHT 40</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemodel.html">model</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacetexture.html">texture</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacecore.html">core</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceglm.html">glm</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceMagick.html">Magick</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceterrain.html">terrain</a> {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classterrain_1_1Terrain.html">   27</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classterrain_1_1Terrain.html">Terrain</a> {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">private</span>:</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classterrain_1_1Terrain.html#aec56d6e8219539617090b8e99b89be29">   30</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="classterrain_1_1Terrain.html#aec56d6e8219539617090b8e99b89be29">x</a>;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classterrain_1_1Terrain.html#aaa4c36ce01096f81a0ee174c36f19657">   31</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="classterrain_1_1Terrain.html#aaa4c36ce01096f81a0ee174c36f19657">z</a>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classterrain_1_1Terrain.html#a0811e4548a966a38b3ca6a4475666324">   32</a></span>&#160;            <a class="code" href="classmodel_1_1RawModel.html">RawModel</a> *<a class="code" href="classterrain_1_1Terrain.html#a0811e4548a966a38b3ca6a4475666324">model</a>;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classterrain_1_1Terrain.html#a6f9e86bd4c98ec61c9588b9f2b57fb75">   33</a></span>&#160;            <a class="code" href="classtexture_1_1TerrainTexturePack.html">TerrainTexturePack</a> *<a class="code" href="classterrain_1_1Terrain.html#a6f9e86bd4c98ec61c9588b9f2b57fb75">texturePack</a>;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classterrain_1_1Terrain.html#a48d20417020f61e62bb5d3a497c62a57">   34</a></span>&#160;            <a class="code" href="classtexture_1_1TerrainTexture.html">TerrainTexture</a> *<a class="code" href="classterrain_1_1Terrain.html#a48d20417020f61e62bb5d3a497c62a57">blendMap</a>;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classterrain_1_1Terrain.html#a068874d68315a2dafb59630e6d9410f1">   35</a></span>&#160;            <span class="keywordtype">float</span> **<a class="code" href="classterrain_1_1Terrain.html#a068874d68315a2dafb59630e6d9410f1">heights</a>;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classterrain_1_1Terrain.html#a797e69c6650b5870643574625f853718">   36</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classterrain_1_1Terrain.html#a797e69c6650b5870643574625f853718">heightsLength</a>;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classterrain_1_1Terrain.html#a27ca93bfb1ba44b0ff2935d667614f71">   37</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classterrain_1_1Terrain.html#a27ca93bfb1ba44b0ff2935d667614f71">VERTEX_COUNT</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">public</span>:</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="classterrain_1_1Terrain.html">Terrain</a>(<span class="keywordtype">float</span> gridX, <span class="keywordtype">float</span> gridZ, <a class="code" href="classcore_1_1VaoLoader.html">VaoLoader</a> *<a class="code" href="namespacecore.html#a78dd24784c415d3759a0f71b8f4f9f81">vaoLoader</a>, <a class="code" href="classtexture_1_1TerrainTexturePack.html">TerrainTexturePack</a> *texturePack, <a class="code" href="classtexture_1_1TerrainTexture.html">TerrainTexture</a> *blendMap,<span class="keyword">const</span> <span class="keywordtype">char</span> *heightMap);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            ~<a class="code" href="classterrain_1_1Terrain.html">Terrain</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="classmodel_1_1RawModel.html">RawModel</a> *getModel();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="classtexture_1_1TerrainTexturePack.html">TerrainTexturePack</a> *getTexturePack();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="classtexture_1_1TerrainTexture.html">TerrainTexture</a> *getBlendMap();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordtype">float</span> getX();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordtype">float</span> getZ();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordtype">float</span> getHeightOfTerrain(<span class="keywordtype">int</span> worldX, <span class="keywordtype">int</span> worldZ);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">private</span>:</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            vec3 calculateNormal(Image image, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordtype">float</span> getHeight(Image image, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="classmodel_1_1RawModel.html">RawModel</a> *generateTerrain(<a class="code" href="classcore_1_1VaoLoader.html">VaoLoader</a> *<a class="code" href="namespacecore.html#a78dd24784c415d3759a0f71b8f4f9f81">vaoLoader</a>,Image image);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classterrain_1_1Terrain_html_aaa4c36ce01096f81a0ee174c36f19657"><div class="ttname"><a href="classterrain_1_1Terrain.html#aaa4c36ce01096f81a0ee174c36f19657">terrain::Terrain::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition:</b> Terrain.h:31</div></div>
+<div class="ttc" id="classterrain_1_1Terrain_html_a6f9e86bd4c98ec61c9588b9f2b57fb75"><div class="ttname"><a href="classterrain_1_1Terrain.html#a6f9e86bd4c98ec61c9588b9f2b57fb75">terrain::Terrain::texturePack</a></div><div class="ttdeci">TerrainTexturePack * texturePack</div><div class="ttdef"><b>Definition:</b> Terrain.h:33</div></div>
+<div class="ttc" id="classtexture_1_1TerrainTexture_html"><div class="ttname"><a href="classtexture_1_1TerrainTexture.html">texture::TerrainTexture</a></div><div class="ttdoc">Klasa TerrainTexture opisuje teksturu terena. </div><div class="ttdef"><b>Definition:</b> TerrainTexture.h:18</div></div>
+<div class="ttc" id="namespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div></div>
+<div class="ttc" id="namespacetexture_html"><div class="ttname"><a href="namespacetexture.html">texture</a></div><div class="ttdoc">Prostor imena texture. Sadrzi sve klase, funkcije i promenljive koje opisuju teksturu objekta...</div><div class="ttdef"><b>Definition:</b> ModelTexture.cpp:3</div></div>
+<div class="ttc" id="namespacecore_html"><div class="ttname"><a href="namespacecore.html">core</a></div><div class="ttdoc">Prostor imena core. Sadrzi sve klase, funkcije i promenljive koje su od sustinskog znacaja za funkcio...</div><div class="ttdef"><b>Definition:</b> Engine.cpp:4</div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdoc">Prostor imena model. Sadrzi sve klase, funkcije i promenljive koje opisuju model objekta. </div><div class="ttdef"><b>Definition:</b> RawModel.cpp:4</div></div>
+<div class="ttc" id="classterrain_1_1Terrain_html_a27ca93bfb1ba44b0ff2935d667614f71"><div class="ttname"><a href="classterrain_1_1Terrain.html#a27ca93bfb1ba44b0ff2935d667614f71">terrain::Terrain::VERTEX_COUNT</a></div><div class="ttdeci">int VERTEX_COUNT</div><div class="ttdef"><b>Definition:</b> Terrain.h:37</div></div>
+<div class="ttc" id="namespacecore_html_a78dd24784c415d3759a0f71b8f4f9f81"><div class="ttname"><a href="namespacecore.html#a78dd24784c415d3759a0f71b8f4f9f81">core::vaoLoader</a></div><div class="ttdeci">VaoLoader * vaoLoader</div><div class="ttdef"><b>Definition:</b> Engine.cpp:6</div></div>
+<div class="ttc" id="classterrain_1_1Terrain_html_a48d20417020f61e62bb5d3a497c62a57"><div class="ttname"><a href="classterrain_1_1Terrain.html#a48d20417020f61e62bb5d3a497c62a57">terrain::Terrain::blendMap</a></div><div class="ttdeci">TerrainTexture * blendMap</div><div class="ttdef"><b>Definition:</b> Terrain.h:34</div></div>
+<div class="ttc" id="classterrain_1_1Terrain_html"><div class="ttname"><a href="classterrain_1_1Terrain.html">terrain::Terrain</a></div><div class="ttdef"><b>Definition:</b> Terrain.h:27</div></div>
+<div class="ttc" id="classmodel_1_1RawModel_html"><div class="ttname"><a href="classmodel_1_1RawModel.html">model::RawModel</a></div><div class="ttdoc">Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa...</div><div class="ttdef"><b>Definition:</b> RawModel.h:21</div></div>
+<div class="ttc" id="classterrain_1_1Terrain_html_aec56d6e8219539617090b8e99b89be29"><div class="ttname"><a href="classterrain_1_1Terrain.html#aec56d6e8219539617090b8e99b89be29">terrain::Terrain::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> Terrain.h:30</div></div>
+<div class="ttc" id="classtexture_1_1TerrainTexturePack_html"><div class="ttname"><a href="classtexture_1_1TerrainTexturePack.html">texture::TerrainTexturePack</a></div><div class="ttdoc">Klasa TerrainTexture opisuje sve teksture terena. </div><div class="ttdef"><b>Definition:</b> TerrainTexturePack.h:22</div></div>
+<div class="ttc" id="classcore_1_1VaoLoader_html"><div class="ttname"><a href="classcore_1_1VaoLoader.html">core::VaoLoader</a></div><div class="ttdoc">Klasa VaoLoader je zaduzena za ucitavanje atributa u memoriju. Zadatak ove klase je ucitavanje i defi...</div><div class="ttdef"><b>Definition:</b> VaoLoader.h:45</div></div>
+<div class="ttc" id="namespaceterrain_html"><div class="ttname"><a href="namespaceterrain.html">terrain</a></div><div class="ttdef"><b>Definition:</b> Terrain.cpp:3</div></div>
+<div class="ttc" id="namespaceMagick_html"><div class="ttname"><a href="namespaceMagick.html">Magick</a></div></div>
+<div class="ttc" id="classterrain_1_1Terrain_html_a068874d68315a2dafb59630e6d9410f1"><div class="ttname"><a href="classterrain_1_1Terrain.html#a068874d68315a2dafb59630e6d9410f1">terrain::Terrain::heights</a></div><div class="ttdeci">float ** heights</div><div class="ttdef"><b>Definition:</b> Terrain.h:35</div></div>
+<div class="ttc" id="classterrain_1_1Terrain_html_a797e69c6650b5870643574625f853718"><div class="ttname"><a href="classterrain_1_1Terrain.html#a797e69c6650b5870643574625f853718">terrain::Terrain::heightsLength</a></div><div class="ttdeci">int heightsLength</div><div class="ttdef"><b>Definition:</b> Terrain.h:36</div></div>
+<div class="ttc" id="classterrain_1_1Terrain_html_a0811e4548a966a38b3ca6a4475666324"><div class="ttname"><a href="classterrain_1_1Terrain.html#a0811e4548a966a38b3ca6a4475666324">terrain::Terrain::model</a></div><div class="ttdeci">RawModel * model</div><div class="ttdef"><b>Definition:</b> Terrain.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

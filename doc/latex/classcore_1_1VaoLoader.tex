@@ -1,0 +1,336 @@
+\hypertarget{classcore_1_1VaoLoader}{}\section{Dokumentacija klase core\+:\+:Vao\+Loader}
+\label{classcore_1_1VaoLoader}\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+
+
+Klasa \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} je zaduzena za ucitavanje atributa u memoriju. Zadatak ove klase je ucitavanje i definisanje objekta pomocu niza atributa gde se svaki atribut ucitava u baffer koji je niz promenljivih. Ovo dovodi do komplikovanijeg koda ali kod je genericki i pomocu njega mozemo ucitavati veoma slozene objekte i texture sto bi bilo vrlo tesko kada bi smo svaki objekat sami crtali osnovnim Open\+GL funkcijama.  
+
+
+
+
+{\ttfamily \#include $<$Vao\+Loader.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1VaoLoader_ab025be7312c274b9737b19d308bd5845}{Vao\+Loader} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classcore_1_1VaoLoader_a1b522bb4b83dbe751783fee04ac712d3}{$\sim$\+Vao\+Loader} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classcore_1_1VaoLoader_a61e0aea1c2f59726a2ea8ba323d32b67}{load\+To\+Vao} (G\+Lfloat positions\mbox{[}$\,$\mbox{]}, G\+Lint positions\+Size, G\+Lint indices\mbox{[}$\,$\mbox{]}, G\+Lint indices\+Size, G\+Lfloat texture\+Coords\mbox{[}$\,$\mbox{]}, G\+Lint texture\+Size, G\+Lfloat normals\mbox{[}$\,$\mbox{]}, G\+Lint normals\+Size)
+\begin{DoxyCompactList}\small\item\em Funkcija kreira niz atributa(\+V\+A\+O). U funkciji se prvo kreira vao i dodeljuje mu se identifikator nakon cega se parametri funkcije ucitavaju u bafere koji se pridruzuju ranije kreiranom vao-\/u. \end{DoxyCompactList}\item 
+G\+Lint \hyperlink{classcore_1_1VaoLoader_aeefd4de3346c1036d8d7249694fd404d}{load\+Texture} (const char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava texturu iz png fajla. U funkciji se pomocu png biblioteke citaju informacije iz fajla koje se zatim upisuju u Open\+GL teksturu sa kreiranim identifikatorom. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1VaoLoader_a15a5ec23ffe560ad7117980aaf0d97b9}{clean\+Up} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija brise podatke iz memorije. U funkciji se prethodno kreirani identifikatori brisu zajedno sa informacijama koje identifikuju. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcore_1_1VaoLoader_af76598a15d38378e594778d9a63a7a6a}{create\+Vao} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija kreira niz atributa(\+V\+A\+O). \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1VaoLoader_a234b87947a46ffcaea7dc6de09185a41}{store\+Data\+In\+Vertex\+Buffer} (G\+Lint attribute\+Number, int coordinate\+Size, G\+Lfloat data\mbox{[}$\,$\mbox{]}, G\+Lint data\+Size)
+\begin{DoxyCompactList}\small\item\em Funkcija startuje bitne procese za funkcionisanje. U funkciji se kreira bafer u koji se smestaju informacije vazane za objekat. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1VaoLoader_a7195d251490976b2053548e19b7c6f1d}{store\+Data\+In\+Indices\+Buffer} (G\+Lint data\mbox{[}$\,$\mbox{]}, G\+Lint data\+Size)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava indekse tacaka. U funkciji se kreira bafer u koji se smestaju indeksi tacaka objekta. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1VaoLoader_a8876e8e71b0299c47406afc7a2cb6d81}{unbind\+Vao} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija prekida vezu sa nizom atributa. \end{DoxyCompactList}\item 
+vector$<$ float $>$ \hyperlink{classcore_1_1VaoLoader_a016f118749e83bbf79e6d0f2c9bf9209}{store\+Data\+In\+Float\+Buffer} (G\+Lfloat data\mbox{[}$\,$\mbox{]}, G\+Lint data\+Size)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava niz u bafer podataka. U funkciji se podaci iz niza ucitavaju u bafer realnih brojeva zbog kasnijeg ucitavanja pomocu Open\+GL funkcija. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{classcore_1_1VaoLoader_ab2c24b482be973465c548b03bf5df3af}{store\+Data\+In\+Int\+Buffer} (G\+Lint data\mbox{[}$\,$\mbox{]}, G\+Lint data\+Size)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava niz u bafer podataka. U funkciji se podaci iz niza ucitavaju u bafer celih brojeva zbog kasnijeg ucitavanja pomocu Open\+GL funkcija. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+G\+Luint \hyperlink{classcore_1_1VaoLoader_a09fec3fcaf674c66046a859e60c9c674}{vao\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator niza atributa. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{classcore_1_1VaoLoader_a4bc8031f15ad1b7c7eff491f926b93e4}{vbo\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator bafera koji postaje clan niza atributa. \end{DoxyCompactList}\item 
+vector$<$ G\+Luint $>$ \hyperlink{classcore_1_1VaoLoader_ad37e6f10d175e35a6fce4b9f76b559e2}{vaos}
+\begin{DoxyCompactList}\small\item\em Niz svih identifikatora niza atributa. \end{DoxyCompactList}\item 
+vector$<$ G\+Luint $>$ \hyperlink{classcore_1_1VaoLoader_a8866245dbda8794e13956115557159a2}{vbos}
+\begin{DoxyCompactList}\small\item\em Niz svih identifikatora bafera. \end{DoxyCompactList}\item 
+vector$<$ G\+Lint $>$ \hyperlink{classcore_1_1VaoLoader_a6f2a03c0bca3b9c8211215014747cbaa}{textures}
+\begin{DoxyCompactList}\small\item\em Niz svih identifikatora tekstura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} je zaduzena za ucitavanje atributa u memoriju. Zadatak ove klase je ucitavanje i definisanje objekta pomocu niza atributa gde se svaki atribut ucitava u baffer koji je niz promenljivih. Ovo dovodi do komplikovanijeg koda ali kod je genericki i pomocu njega mozemo ucitavati veoma slozene objekte i texture sto bi bilo vrlo tesko kada bi smo svaki objekat sami crtali osnovnim Open\+GL funkcijama. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_ab025be7312c274b9737b19d308bd5845}\label{classcore_1_1VaoLoader_ab025be7312c274b9737b19d308bd5845}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!Vao\+Loader@{Vao\+Loader}}
+\index{Vao\+Loader@{Vao\+Loader}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{Vao\+Loader()}{VaoLoader()}}
+{\footnotesize\ttfamily core\+::\+Vao\+Loader\+::\+Vao\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_a1b522bb4b83dbe751783fee04ac712d3}\label{classcore_1_1VaoLoader_a1b522bb4b83dbe751783fee04ac712d3}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!````~Vao\+Loader@{$\sim$\+Vao\+Loader}}
+\index{````~Vao\+Loader@{$\sim$\+Vao\+Loader}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{$\sim$\+Vao\+Loader()}{~VaoLoader()}}
+{\footnotesize\ttfamily core\+::\+Vao\+Loader\+::$\sim$\+Vao\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_a15a5ec23ffe560ad7117980aaf0d97b9}\label{classcore_1_1VaoLoader_a15a5ec23ffe560ad7117980aaf0d97b9}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void core\+::\+Vao\+Loader\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija brise podatke iz memorije. U funkciji se prethodno kreirani identifikatori brisu zajedno sa informacijama koje identifikuju. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_af76598a15d38378e594778d9a63a7a6a}\label{classcore_1_1VaoLoader_af76598a15d38378e594778d9a63a7a6a}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!create\+Vao@{create\+Vao}}
+\index{create\+Vao@{create\+Vao}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{create\+Vao()}{createVao()}}
+{\footnotesize\ttfamily int core\+::\+Vao\+Loader\+::create\+Vao (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija kreira niz atributa(\+V\+A\+O). 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Identifikator kreiranog niza atributa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_aeefd4de3346c1036d8d7249694fd404d}\label{classcore_1_1VaoLoader_aeefd4de3346c1036d8d7249694fd404d}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!load\+Texture@{load\+Texture}}
+\index{load\+Texture@{load\+Texture}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{load\+Texture()}{loadTexture()}}
+{\footnotesize\ttfamily int core\+::\+Vao\+Loader\+::load\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava texturu iz png fajla. U funkciji se pomocu png biblioteke citaju informacije iz fajla koje se zatim upisuju u Open\+GL teksturu sa kreiranim identifikatorom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em file\+Name} & Ime png fajla \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Identifikator teks 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_a61e0aea1c2f59726a2ea8ba323d32b67}\label{classcore_1_1VaoLoader_a61e0aea1c2f59726a2ea8ba323d32b67}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!load\+To\+Vao@{load\+To\+Vao}}
+\index{load\+To\+Vao@{load\+To\+Vao}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{load\+To\+Vao()}{loadToVao()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ core\+::\+Vao\+Loader\+::load\+To\+Vao (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{positions\mbox{[}$\,$\mbox{]},  }\item[{G\+Lint}]{positions\+Size,  }\item[{G\+Lint}]{indices\mbox{[}$\,$\mbox{]},  }\item[{G\+Lint}]{indices\+Size,  }\item[{G\+Lfloat}]{texture\+Coords\mbox{[}$\,$\mbox{]},  }\item[{G\+Lint}]{texture\+Size,  }\item[{G\+Lfloat}]{normals\mbox{[}$\,$\mbox{]},  }\item[{G\+Lint}]{normals\+Size }\end{DoxyParamCaption})}
+
+
+
+Funkcija kreira niz atributa(\+V\+A\+O). U funkciji se prvo kreira vao i dodeljuje mu se identifikator nakon cega se parametri funkcije ucitavaju u bafere koji se pridruzuju ranije kreiranom vao-\/u. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em positions\mbox{[}$\,$\mbox{]}} & Niz koordinata objekta \\
+\hline
+{\em positions\+Size} & Broj koordinata koje se nalaze u nizu pozicija \\
+\hline
+{\em indices\mbox{[}$\,$\mbox{]}} & Niz indeksa tacaka radi efikasnijeg kreiranja modela \\
+\hline
+{\em indices\+Size} & Broj indeksa koji se nalaze u nizu indeka \\
+\hline
+{\em texture\+Coords} & Niz koordinata koje oznacavaju na koji ce nacin objekat biti prektiven teksturom(Npr. da se cela tekstura razvuce preko objekta ili da se objekat prekrije sa vise istih tekstura koje se nadovezuju) \\
+\hline
+{\em texture\+Size} & Broj koordinata koje se nalaze u nizu koordinata teksture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+Raw\+Model$\ast$ Pokazivac na instancu klase Raw\+Model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_a016f118749e83bbf79e6d0f2c9bf9209}\label{classcore_1_1VaoLoader_a016f118749e83bbf79e6d0f2c9bf9209}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!store\+Data\+In\+Float\+Buffer@{store\+Data\+In\+Float\+Buffer}}
+\index{store\+Data\+In\+Float\+Buffer@{store\+Data\+In\+Float\+Buffer}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{store\+Data\+In\+Float\+Buffer()}{storeDataInFloatBuffer()}}
+{\footnotesize\ttfamily vector$<$ float $>$ core\+::\+Vao\+Loader\+::store\+Data\+In\+Float\+Buffer (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{data\mbox{[}$\,$\mbox{]},  }\item[{G\+Lint}]{data\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava niz u bafer podataka. U funkciji se podaci iz niza ucitavaju u bafer realnih brojeva zbog kasnijeg ucitavanja pomocu Open\+GL funkcija. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em data} & Niz podataka koji se upisuju u bafer \\
+\hline
+{\em data\+Size} & Broj podataka koji se nalaze u nizu data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vector$<$float$>$ Bafer prestavljen vektorom realnih podataka. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_a7195d251490976b2053548e19b7c6f1d}\label{classcore_1_1VaoLoader_a7195d251490976b2053548e19b7c6f1d}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!store\+Data\+In\+Indices\+Buffer@{store\+Data\+In\+Indices\+Buffer}}
+\index{store\+Data\+In\+Indices\+Buffer@{store\+Data\+In\+Indices\+Buffer}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{store\+Data\+In\+Indices\+Buffer()}{storeDataInIndicesBuffer()}}
+{\footnotesize\ttfamily void core\+::\+Vao\+Loader\+::store\+Data\+In\+Indices\+Buffer (\begin{DoxyParamCaption}\item[{G\+Lint}]{data\mbox{[}$\,$\mbox{]},  }\item[{G\+Lint}]{data\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava indekse tacaka. U funkciji se kreira bafer u koji se smestaju indeksi tacaka objekta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em attribute\+Number} & Indeks niza atributa kojem se pridruzuje bafer \\
+\hline
+{\em data} & Niz podataka koji se upisuju u bafer \\
+\hline
+{\em data\+Size} & Broj podataka koji se nalaze u nizu data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_ab2c24b482be973465c548b03bf5df3af}\label{classcore_1_1VaoLoader_ab2c24b482be973465c548b03bf5df3af}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!store\+Data\+In\+Int\+Buffer@{store\+Data\+In\+Int\+Buffer}}
+\index{store\+Data\+In\+Int\+Buffer@{store\+Data\+In\+Int\+Buffer}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{store\+Data\+In\+Int\+Buffer()}{storeDataInIntBuffer()}}
+{\footnotesize\ttfamily vector$<$ int $>$ core\+::\+Vao\+Loader\+::store\+Data\+In\+Int\+Buffer (\begin{DoxyParamCaption}\item[{G\+Lint}]{data\mbox{[}$\,$\mbox{]},  }\item[{G\+Lint}]{data\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava niz u bafer podataka. U funkciji se podaci iz niza ucitavaju u bafer celih brojeva zbog kasnijeg ucitavanja pomocu Open\+GL funkcija. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em data} & Niz podataka koji se upisuju u bafer \\
+\hline
+{\em data\+Size} & Broj podataka koji se nalaze u nizu data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vector$<$int$>$ Bafer prestavljen celobrojnim vektorom podataka. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_a234b87947a46ffcaea7dc6de09185a41}\label{classcore_1_1VaoLoader_a234b87947a46ffcaea7dc6de09185a41}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!store\+Data\+In\+Vertex\+Buffer@{store\+Data\+In\+Vertex\+Buffer}}
+\index{store\+Data\+In\+Vertex\+Buffer@{store\+Data\+In\+Vertex\+Buffer}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{store\+Data\+In\+Vertex\+Buffer()}{storeDataInVertexBuffer()}}
+{\footnotesize\ttfamily void core\+::\+Vao\+Loader\+::store\+Data\+In\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{G\+Lint}]{attribute\+Number,  }\item[{int}]{coordinate\+Size,  }\item[{G\+Lfloat}]{data\mbox{[}$\,$\mbox{]},  }\item[{G\+Lint}]{data\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija startuje bitne procese za funkcionisanje. U funkciji se kreira bafer u koji se smestaju informacije vazane za objekat. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em attribute\+Number} & Indeks niza atributa kojem se pridruzuje bafer \\
+\hline
+{\em coordinate\+Size} & Broj koordinata kojim je tacka definisana, validne vrednosti su 1,2,3,4 \\
+\hline
+{\em data} & Niz podataka koji se upisuju u bafer \\
+\hline
+{\em data\+Size} & Broj podataka koji se nalaze u nizu data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_a8876e8e71b0299c47406afc7a2cb6d81}\label{classcore_1_1VaoLoader_a8876e8e71b0299c47406afc7a2cb6d81}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!unbind\+Vao@{unbind\+Vao}}
+\index{unbind\+Vao@{unbind\+Vao}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{unbind\+Vao()}{unbindVao()}}
+{\footnotesize\ttfamily void core\+::\+Vao\+Loader\+::unbind\+Vao (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija prekida vezu sa nizom atributa. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classcore_1_1VaoLoader_a6f2a03c0bca3b9c8211215014747cbaa}\label{classcore_1_1VaoLoader_a6f2a03c0bca3b9c8211215014747cbaa}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!textures@{textures}}
+\index{textures@{textures}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{textures}{textures}}
+{\footnotesize\ttfamily vector$<$G\+Lint$>$ core\+::\+Vao\+Loader\+::textures\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Niz svih identifikatora tekstura. 
+
+\mbox{\Hypertarget{classcore_1_1VaoLoader_a09fec3fcaf674c66046a859e60c9c674}\label{classcore_1_1VaoLoader_a09fec3fcaf674c66046a859e60c9c674}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!vao\+ID@{vao\+ID}}
+\index{vao\+ID@{vao\+ID}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{vao\+ID}{vaoID}}
+{\footnotesize\ttfamily G\+Luint core\+::\+Vao\+Loader\+::vao\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator niza atributa. 
+
+\mbox{\Hypertarget{classcore_1_1VaoLoader_ad37e6f10d175e35a6fce4b9f76b559e2}\label{classcore_1_1VaoLoader_ad37e6f10d175e35a6fce4b9f76b559e2}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!vaos@{vaos}}
+\index{vaos@{vaos}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{vaos}{vaos}}
+{\footnotesize\ttfamily vector$<$G\+Luint$>$ core\+::\+Vao\+Loader\+::vaos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Niz svih identifikatora niza atributa. 
+
+\mbox{\Hypertarget{classcore_1_1VaoLoader_a4bc8031f15ad1b7c7eff491f926b93e4}\label{classcore_1_1VaoLoader_a4bc8031f15ad1b7c7eff491f926b93e4}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!vbo\+ID@{vbo\+ID}}
+\index{vbo\+ID@{vbo\+ID}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{vbo\+ID}{vboID}}
+{\footnotesize\ttfamily G\+Luint core\+::\+Vao\+Loader\+::vbo\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator bafera koji postaje clan niza atributa. 
+
+\mbox{\Hypertarget{classcore_1_1VaoLoader_a8866245dbda8794e13956115557159a2}\label{classcore_1_1VaoLoader_a8866245dbda8794e13956115557159a2}} 
+\index{core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}!vbos@{vbos}}
+\index{vbos@{vbos}!core\+::\+Vao\+Loader@{core\+::\+Vao\+Loader}}
+\subsubsection{\texorpdfstring{vbos}{vbos}}
+{\footnotesize\ttfamily vector$<$G\+Luint$>$ core\+::\+Vao\+Loader\+::vbos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Niz svih identifikatora bafera. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\hyperlink{VaoLoader_8h}{Vao\+Loader.\+h}\item 
+/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/core/\hyperlink{VaoLoader_8cpp}{Vao\+Loader.\+cpp}\end{DoxyCompactItemize}

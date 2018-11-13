@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/include/entity/Entity.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_b28a9729f90b4b648c644f033f08c7ee.html">entity</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Entity.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Entity_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _ENTITY_H_</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _ENTITY_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// Ukljucivanje korsnicki defininisanih biblioteka.</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../model/TexturedModel.h&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// Ukljucivanje biblioteka.</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;glm/vec3.hpp&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;glm/mat4x4.hpp&gt;</span> </div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;glm/gtc/matrix_transform.hpp&gt;</span> </div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// Makro za definisanje broja PI.</span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="Entity_8h.html#a598a3330b3c21701223ee0ca14316eca">   20</a></span>&#160;<span class="preprocessor">#define PI 3.14159265</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Koriscenje prostora imena za jednostavniji i pregledniji kod.</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemodel.html">model</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceglm.html">glm</a>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceentity.html">entity</a> {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classentity_1_1Entity.html">   38</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classentity_1_1Entity.html">Entity</a> {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Privatne promenljive klase.</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classentity_1_1Entity.html#ac7848c5d47d4b2bf12c84ddbbc32052a">   43</a></span>&#160;    <a class="code" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *<a class="code" href="classentity_1_1Entity.html#ac7848c5d47d4b2bf12c84ddbbc32052a">model</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classentity_1_1Entity.html#ad409c7f2085024479b276c2b6948bddb">   46</a></span>&#160;    vec3 <a class="code" href="classentity_1_1Entity.html#ad409c7f2085024479b276c2b6948bddb">position</a>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classentity_1_1Entity.html#aedb4c5dc1cfbc8cb3f6deb565ea920cb">   49</a></span>&#160;    vec3 <a class="code" href="classentity_1_1Entity.html#aedb4c5dc1cfbc8cb3f6deb565ea920cb">rotation</a>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classentity_1_1Entity.html#a59e5d5e3575df70cd5c74b5d739d84ca">   52</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classentity_1_1Entity.html#a59e5d5e3575df70cd5c74b5d739d84ca">scale</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// Javne funkcije klase.</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classentity_1_1Entity.html">Entity</a> (<a class="code" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *model, vec3 position, vec3 rotation, <span class="keywordtype">float</span> scale);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    ~<a class="code" href="classentity_1_1Entity.html">Entity</a> ();</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *getModel();</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> setModel(<a class="code" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *model);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    vec3 getPosition();</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> setPosition(vec3 position);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    vec3 getRotation();</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> setRotation(vec3 rotation);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">float</span> getScale();</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> setScale(<span class="keywordtype">float</span> scale);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> increasePosition(vec3 deltaPosition);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> increaseRotation(vec3 deltaRotation);</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  };</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;} <span class="comment">// entity</span></div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classentity_1_1Entity_html"><div class="ttname"><a href="classentity_1_1Entity.html">entity::Entity</a></div><div class="ttdoc">Klasa Entity odredjuje jedan entitet. Pomocu klase Entity odredjujemo entitet tako sto mu pridruzujem...</div><div class="ttdef"><b>Definition:</b> Entity.h:38</div></div>
+<div class="ttc" id="namespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdoc">Prostor imena model. Sadrzi sve klase, funkcije i promenljive koje opisuju model objekta. </div><div class="ttdef"><b>Definition:</b> RawModel.cpp:4</div></div>
+<div class="ttc" id="namespaceentity_html"><div class="ttname"><a href="namespaceentity.html">entity</a></div><div class="ttdoc">Prostor imena entity. Sadrzi sve klase, funkcije i promenljive koje odredjuju jedan entitet...</div><div class="ttdef"><b>Definition:</b> Camera.cpp:3</div></div>
+<div class="ttc" id="classentity_1_1Entity_html_ad409c7f2085024479b276c2b6948bddb"><div class="ttname"><a href="classentity_1_1Entity.html#ad409c7f2085024479b276c2b6948bddb">entity::Entity::position</a></div><div class="ttdeci">vec3 position</div><div class="ttdoc">Pozicija entiteta. </div><div class="ttdef"><b>Definition:</b> Entity.h:46</div></div>
+<div class="ttc" id="classmodel_1_1TexturedModel_html"><div class="ttname"><a href="classmodel_1_1TexturedModel.html">model::TexturedModel</a></div><div class="ttdoc">Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo...</div><div class="ttdef"><b>Definition:</b> TexturedModel.h:29</div></div>
+<div class="ttc" id="classentity_1_1Entity_html_a59e5d5e3575df70cd5c74b5d739d84ca"><div class="ttname"><a href="classentity_1_1Entity.html#a59e5d5e3575df70cd5c74b5d739d84ca">entity::Entity::scale</a></div><div class="ttdeci">float scale</div><div class="ttdoc">Skaliranje entiteta. </div><div class="ttdef"><b>Definition:</b> Entity.h:52</div></div>
+<div class="ttc" id="classentity_1_1Entity_html_aedb4c5dc1cfbc8cb3f6deb565ea920cb"><div class="ttname"><a href="classentity_1_1Entity.html#aedb4c5dc1cfbc8cb3f6deb565ea920cb">entity::Entity::rotation</a></div><div class="ttdeci">vec3 rotation</div><div class="ttdoc">Rotacija entiteta. </div><div class="ttdef"><b>Definition:</b> Entity.h:49</div></div>
+<div class="ttc" id="classentity_1_1Entity_html_ac7848c5d47d4b2bf12c84ddbbc32052a"><div class="ttname"><a href="classentity_1_1Entity.html#ac7848c5d47d4b2bf12c84ddbbc32052a">entity::Entity::model</a></div><div class="ttdeci">TexturedModel * model</div><div class="ttdoc">Pokazivac na instancu klase TexturedModel. </div><div class="ttdef"><b>Definition:</b> Entity.h:43</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

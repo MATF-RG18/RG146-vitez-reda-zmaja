@@ -1,0 +1,96 @@
+\hypertarget{tiny__obj__loader_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/external\+\_\+libs/tiny\+\_\+obj\+\_\+loader.h}
+\label{tiny__obj__loader_8h}\index{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/external\+\_\+libs/tiny\+\_\+obj\+\_\+loader.\+h@{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/external\+\_\+libs/tiny\+\_\+obj\+\_\+loader.\+h}}
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Graf zavisnosti datoteka za tiny\+\_\+obj\+\_\+loader.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tiny__obj__loader_8h__incl}
+\end{center}
+\end{figure}
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{tiny__obj__loader_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Klase, strukture i unije}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtinyobj_1_1texture__option__t}{tinyobj\+::texture\+\_\+option\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1material__t}{tinyobj\+::material\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1tag__t}{tinyobj\+::tag\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1index__t}{tinyobj\+::index\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1mesh__t}{tinyobj\+::mesh\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1path__t}{tinyobj\+::path\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1shape__t}{tinyobj\+::shape\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1attrib__t}{tinyobj\+::attrib\+\_\+t}
+\item 
+struct \hyperlink{structtinyobj_1_1callback__t__}{tinyobj\+::callback\+\_\+t\+\_\+}
+\item 
+class \hyperlink{classtinyobj_1_1MaterialReader}{tinyobj\+::\+Material\+Reader}
+\item 
+class \hyperlink{classtinyobj_1_1MaterialFileReader}{tinyobj\+::\+Material\+File\+Reader}
+\item 
+class \hyperlink{classtinyobj_1_1MaterialStreamReader}{tinyobj\+::\+Material\+Stream\+Reader}
+\end{DoxyCompactItemize}
+\subsection*{Prostori imena}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetinyobj}{tinyobj}
+\end{DoxyCompactItemize}
+\subsection*{Definicije tipa}
+\begin{DoxyCompactItemize}
+\item 
+typedef float \hyperlink{namespacetinyobj_ad5ca7469ff56bf0d8423120cfd99adce}{tinyobj\+::real\+\_\+t}
+\item 
+typedef struct \hyperlink{structtinyobj_1_1callback__t__}{tinyobj\+::callback\+\_\+t\+\_\+} \hyperlink{namespacetinyobj_a7d9ae2b4716367a1b66b4d354482b035}{tinyobj\+::callback\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Nabrajanja}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8}{tinyobj\+::texture\+\_\+type\+\_\+t} \{ \newline
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a259804f2e7bf9c39626abe6ebce6edc1}{tinyobj\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a4e5a6bfb8a95a23bf0cce576aaa5dfa4}{tinyobj\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+P\+H\+E\+RE}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8acc4c4327df32dce3fa406865a8e35519}{tinyobj\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+T\+OP}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a20c37be3992ed111ba47045a63351cde}{tinyobj\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+O\+T\+T\+OM}, 
+\newline
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a1ce5bed3c2ba5c360ca6c2607b9d97ca}{tinyobj\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+F\+R\+O\+NT}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8af2cb2d4e7551e713593382c4690aa665}{tinyobj\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+B\+A\+CK}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a01f908bcfb745ad0d97d84b8cacc6d30}{tinyobj\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+L\+E\+FT}, 
+\hyperlink{namespacetinyobj_a5c9f207e1f880a48bac0a3b69f16d7f8a7709b5986f04e87ffbdc9bd7280d261c}{tinyobj\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+B\+E\+\_\+\+R\+I\+G\+HT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Funkcije}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacetinyobj_a5678f6df6cb6d01bb89453022d997503}{tinyobj\+::\+Load\+Obj} (attrib\+\_\+t $\ast$attrib, std\+::vector$<$ shape\+\_\+t $>$ $\ast$shapes, std\+::vector$<$ material\+\_\+t $>$ $\ast$materials, std\+::string $\ast$err, const char $\ast$filename, const char $\ast$mtl\+\_\+basedir=N\+U\+LL, bool triangulate=true)
+\item 
+bool \hyperlink{namespacetinyobj_add9ad979e8011ccdfac2e1ec8def5359}{tinyobj\+::\+Load\+Obj\+With\+Callback} (std\+::istream \&in\+Stream, const callback\+\_\+t \&callback, void $\ast$user\+\_\+data=N\+U\+LL, Material\+Reader $\ast$read\+Mat\+Fn=N\+U\+LL, std\+::string $\ast$err=N\+U\+LL)
+\item 
+bool \hyperlink{namespacetinyobj_ad1e942879313375fcd1b08b7d6e7f89d}{tinyobj\+::\+Load\+Obj} (attrib\+\_\+t $\ast$attrib, std\+::vector$<$ shape\+\_\+t $>$ $\ast$shapes, std\+::vector$<$ material\+\_\+t $>$ $\ast$materials, std\+::string $\ast$err, std\+::istream $\ast$in\+Stream, Material\+Reader $\ast$read\+Mat\+Fn=N\+U\+LL, bool triangulate=true)
+\item 
+void \hyperlink{namespacetinyobj_aa7a035d152857396e5cde8ebff8b2b9e}{tinyobj\+::\+Load\+Mtl} (std\+::map$<$ std\+::string, int $>$ $\ast$material\+\_\+map, std\+::vector$<$ material\+\_\+t $>$ $\ast$materials, std\+::istream $\ast$in\+Stream, std\+::string $\ast$warning)
+\begin{DoxyCompactList}\small\item\em Loads materials into std\+::map. \end{DoxyCompactList}\end{DoxyCompactItemize}
