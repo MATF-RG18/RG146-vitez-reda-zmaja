@@ -1,5 +1,8 @@
 #include "../../include/shader/Shader.h"
 
+// Klasa je implementirana po uzoru na video tutorijal 
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+
 namespace shader {
 
   Shader::Shader(const char *vertexShaderFile, const char *fragmentShaderFile) {

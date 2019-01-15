@@ -1,5 +1,8 @@
 #include "../../include/shader/TerrainShader.h"
 
+// Klasa je implementirana po uzoru na video tutorijal 
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+
 namespace shader {
 
   TerrainShader::TerrainShader(const char *vertexShaderFile, const char *fragmentShaderFile) {

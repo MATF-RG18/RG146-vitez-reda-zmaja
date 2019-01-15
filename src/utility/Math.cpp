@@ -1,5 +1,7 @@
 #include "../../include/utility/Math.h"
 
+  // Uz pomoc http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/
+  // i https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
   mat4 createTransformationMatrix(vec3 translation, vec3 rotation, float scaleFactor) {
 

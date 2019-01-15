@@ -1,5 +1,9 @@
 #include "../../include/entity/Player.h"
 
+// Klasa je implementirana po uzoru na video tutorijal 
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+// kao i http://jerome.jouvie.free.fr/opengl-tutorials/Tutorial26.php
+
 namespace entity {
 
     Player::Player(TexturedModel *model, vec3 position, vec3 rotation, float scale, Terrain *terrain) : Entity(model, position, rotation, scale) {

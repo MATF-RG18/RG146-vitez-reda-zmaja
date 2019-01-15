@@ -1,5 +1,8 @@
 #include "../../include/terrain/Terrain.h"
 
+// Klasa je implementirana po uzoru na video tutorijal 
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+
 namespace terrain {
 
     Terrain::Terrain(float gridX, float gridZ, VaoLoader *vaoLoader, TerrainTexturePack *texturePack, TerrainTexture *blendMap,const char *heightMap) {

@@ -1,5 +1,9 @@
 #include "../../include/core/SkyboxRenderer.h"
 
+// Klasa je implementirana po uzoru na internet clanke https://learnopengl.com/Advanced-OpenGL/Cubemaps,
+// http://ogldev.atspace.co.uk/www/tutorial25/tutorial25.html
+// kao i video tutorijal https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+
 namespace core {
 
     SkyboxRenderer::SkyboxRenderer(VaoLoader *vaoLoader) {

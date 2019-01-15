@@ -1,5 +1,8 @@
 #include "../../include/texture/TerrainTexturePack.h"
 
+// Klasa je implementirana po uzoru na video tutorijal 
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+
 namespace texture {
 
     TerrainTexturePack::TerrainTexturePack(TerrainTexture *backgroundTexture, TerrainTexture *rTexture, TerrainTexture *gTexture, TerrainTexture *bTexture) {

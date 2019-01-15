@@ -6,6 +6,10 @@
 
 using namespace tinyobj;
 
+// Klasa je implementirana uz pomoc dokumentacije sa repozitorijuma biblioteke http://syoyo.github.io/tinyobjloader/
+// i pomocu video tutorijala https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+
+
 namespace core {
 
     ObjLoader::ObjLoader() {

@@ -1,5 +1,7 @@
 #include "../../include/model/RawModel.h"
 
+// Klasa je implementirana po uzoru na video tutorijal 
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
 namespace model {
 

@@ -1,5 +1,12 @@
 #include "../../include/core/VaoLoader.h"
 
+// Klasa je implementirana po uzoru na video tutorijal 
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+
+// Pomoc pri koriscenju biblioteka za ucitavanje slika
+// https://imagemagick.org/Magick++/Documentation.html
+// http://www.libpng.org/pub/png/book/chapter13.html
+
 using namespace std;
 
 namespace core {
@@ -37,6 +44,8 @@ namespace core {
 
   }
 
+  // Kod za ucitavanje png datoteke preuzet sa 
+  // https://blog.nobel-joergensen.com/2010/11/07/loading-a-png-as-texture-in-opengl-using-libpng/
   int VaoLoader::loadTexture(const char *fileName) {
 
 

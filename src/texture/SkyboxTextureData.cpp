@@ -1,5 +1,8 @@
 #include "../../include/texture/SkyboxTextureData.h"
 
+// Klasa je implementirana po uzoru na video tutorijal 
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+
 namespace texture {
 
     SkyboxTextureData::SkyboxTextureData(int width, int height, unsigned char * buffer) {

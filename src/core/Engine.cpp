@@ -1,5 +1,9 @@
 #include "../../include/core/Engine.h"
 
+// Klasa je implementirana po uzoru na video tutorijal 
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+// kao i vezbi iz racunarske grafike.
+
 // Prostor imena core
 namespace core {
 

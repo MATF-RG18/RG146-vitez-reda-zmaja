@@ -1,5 +1,9 @@
 #include "../../include/entity/Camera.h"
 
+// Klasa je implementirana po uzoru na video tutorijal 
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+// kao i http://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/
+
 namespace entity {
 
   Camera::Camera(Player *player) {

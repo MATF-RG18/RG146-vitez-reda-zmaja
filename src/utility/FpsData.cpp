@@ -1,5 +1,7 @@
 #include "../../include/utility/FpsData.h"
 
+// Implementirano pomocu http://www.opengl-tutorial.org/miscellaneous/an-fps-counter/
+
 namespace utility {
 
     FpsData::FpsData() {
