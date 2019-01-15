@@ -120,6 +120,7 @@ namespace terrain {
         if (x<0 || x>=h || y<0 || y>=h) {
             return 0;
         }
+        
         PixelPacket *pixels = image.getPixels(0, 0, w, h);
         
         Color color = pixels[ w * x+ y];

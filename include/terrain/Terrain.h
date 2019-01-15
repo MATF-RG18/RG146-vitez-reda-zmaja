@@ -14,7 +14,7 @@
 
 #define SIZE  800
 #define MAX_PIXEL_COLOUR 256*256*256
-#define MAX_HEIGHT 40
+#define MAX_HEIGHT 60
 
 using namespace model;
 using namespace texture;

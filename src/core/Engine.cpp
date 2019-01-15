@@ -129,8 +129,8 @@ namespace core {
 
     mainRenderer = new MainRenderer(vaoLoader, fpsData);
 
-    vec3 position(100, 5, -150);
-    vec3 rotation(0, 0, 0);
+    vec3 position(260, 5, -260);
+    vec3 rotation(0, 180, 0);
     float scale = 1;
     player = new Player(texturedModel, position, rotation, scale, terrain);
     
