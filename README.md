@@ -12,6 +12,8 @@
 
 > Trenutno je moguce ucitati obj fajl kreiran pomocu alata kao sto je Blender3D i pridruziti mu texturu ukoliko je textura kreirana pomocu "unwrap"(UV) metoda, i kreiranje terena. Postoji mogucnost transformacije ucitanog objekta kao sto su rotacija, translacija i skaliranje, takodje je moguce kontrolisati kameru rotiranjem po x i y osi kao i zumiranje tj. pomeranje po z osi kao i podesavanje osvetljenja u igri. Moguce je kreiranje neba i smena dana i noci. 
 
+### Za vise informacija o procesu izrade projekta pogledajte [wiki](https://github.com/MATF-RG18/RG146-vitez-reda-zmaja/wiki) stranicu projekta
+
 
 
 ## :package: Instalacija
