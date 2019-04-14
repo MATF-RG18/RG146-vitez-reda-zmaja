@@ -4,7 +4,6 @@
 /// @author Dusan Pantelic
 /// @date Januar 2017
 ////////////////////////////////////////////////////////////////////////////////
-
 #ifndef _SHADER_H_
 #define _SHADER_H_
 
@@ -20,6 +19,7 @@
 // Koriscenje prostora imena za jednostavniji i pregledniji kod.
 using namespace std;
 using namespace entity;
+using namespace glm;
 
 // Ukljucivanje OpenGL biblioteke.
 #include <GL/glut.h>
@@ -31,11 +31,9 @@ using namespace entity;
 #include <string>
 
 #include <glm/vec3.hpp>
-#include <glm/mat4x4.hpp> 
-#include <glm/gtc/matrix_transform.hpp> 
+#include <glm/mat4x4.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-
-using namespace glm;
 
 ////////////////////////////////////////////////////////////////////////////////
 /// @brief Prostor imena shader.
@@ -62,31 +60,31 @@ namespace shader {
     /// Identifikator ucitanog sejder fajla.
     int fragmentShaderID;
 
-    /// Lokacija unformne promenljive 
+    /// Lokacija unformne promenljive.
     int locationTransformationMatrix;
 
-    /// Lokacija unformne promenljive 
+    /// Lokacija unformne promenljive.
     int locationProjectionMatrix;
 
-    /// Lokacija unformne promenljive 
+    /// Lokacija unformne promenljive.
     int locationViewMatrix;
 
-    /// Lokacija unformne promenljive 
+    /// Lokacija unformne promenljive.
     int locationLightPosition;
 
-    /// Lokacija unformne promenljive 
+    /// Lokacija unformne promenljive.
     int locationLightColour;
 
-    /// Lokacija unformne promenljive 
+    /// Lokacija unformne promenljive.
     int locationShine;
 
-    /// Lokacija unformne promenljive
+    /// Lokacija unformne promenljive.
     int locationReflectivity;
 
-    /// Lokacija unformne promenljive
+    /// Lokacija unformne promenljive.
     int locationSkyColour;
 
-    /// Lokacija unformne promenljive
+    /// Lokacija unformne promenljive.
     int locationUseFakeLightning;
 
   // Javne funkcije klase
@@ -108,8 +106,8 @@ namespace shader {
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija povezuje ime sa generickim atributom.
-    /// @param index Identifikator generickog atributa
-    /// @param variableName Ime koje pridruzujemo generickom atributu
+    /// @param index Identifikator generickog atributa.
+    /// @param variableName Ime koje pridruzujemo generickom atributu.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void bindAttribute(int index, const char *variableName);
@@ -144,8 +142,8 @@ namespace shader {
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca lokaciju uniformne promenljive.
-    /// @param uniformName Ime uniformne promenljive
-    /// @return int Lokacija uniformne promenljive
+    /// @param uniformName Ime uniformne promenljive.
+    /// @return int Lokacija uniformne promenljive.
     ////////////////////////////////////////////////////////////////////////////
     int getUniformLocation(const char *uniformName);
 
@@ -158,101 +156,99 @@ namespace shader {
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava broj u uniformnu varijablu.
-    /// @param uniformLocation Lokacija uniformne promenljive
-    /// @param value Broj pokretnom zarezu
+    /// @param uniformLocation Lokacija uniformne promenljive.
+    /// @param value Broj pokretnom zarezu.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadFloat(int uniformLocation, float value);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava vektor koordinata u uniformnu varijablu.
-    /// @param uniformLocation Lokacija uniformne promenljive
-    /// @param vertex Vektor koordinata
+    /// @param uniformLocation Lokacija uniformne promenljive.
+    /// @param vertex Vektor koordinata.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadFloatVertex(int uniformLocation, vec3 vertex);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava istinitosnu vrednost u uniformnu varijablu.
-    /// @param uniformLocation Lokacija uniformne promenljive
-    /// @param value Istinitosna vrednost
+    /// @param uniformLocation Lokacija uniformne promenljive.
+    /// @param value Istinitosna vrednost.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadBoolean(int uniformLocation, bool value);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava matricu u uniformnu varijablu.
-    /// @param uniformLocation Lokacija uniformne promenljive
-    /// @param value Matrica
+    /// @param uniformLocation Lokacija uniformne promenljive.
+    /// @param matrix Matrica.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadMatrix(int uniformLocation, mat4 matrix);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava matricu transformacije u uniformnu varijablu.
-    /// @param value Matrica transformacije
+    /// @param matrix Matrica transformacije.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadTransformationMatrix(mat4 matrix);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava matricu projekcije u uniformnu varijablu.
-    /// @param value Matrica projekcije
+    /// @param matrix Matrica projekcije.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadProjectionMatrix(mat4 matrix);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava matricu pogleda u uniformnu varijablu.
-    /// @param camera Pokazivac na instancu klase Camera
+    /// @param camera Pokazivac na instancu klase Camera.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadViewMatrix(Camera *camera);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava svetlost u uniformnu varijablu.
-    /// @param light Pokazivac na instancu klase Light
+    /// @param light Pokazivac na instancu klase Light.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadLight(Light *light);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava promenljive u uniformnu varijablu.
-    /// @param shine Intenzitet sjaja
-    /// @param reflectivity Intenzitet odbijanja svetlosti
+    /// @param shine Intenzitet sjaja.
+    /// @param reflectivity Intenzitet odbijanja svetlosti.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadShineVariables(float shine, float reflectivity);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava boju neba u uniformnu varijablu.
-    /// @param r Kolicina crvene boje
-    /// @param g Kolicina zelene boje
-    /// @param b Kolicina plave boje
+    /// @param r Kolicina crvene boje.
+    /// @param g Kolicina zelene boje.
+    /// @param b Kolicina plave boje.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadSkyColour(float r, float g, float b);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava lazno osvetljenje u uniformnu varijablu.
-    /// @param useFakeLightning Istinitosna vrednost za koriscenje laznog osvetljenja
+    /// @param useFakeLightning Istinitosna vrednost za koriscenje laznog osvetljenja.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadFakeLightning(bool useFakeLightning);
 
   // Privatne funkcije klase
   private:
-
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava sejder fajlove.
-    /// @param fileName Naziv sejder fajla
-    /// @param type Vrsta sejdera
-    /// @return int Identifikator sejdera
+    /// @param fileName Naziv sejder fajla.
+    /// @param type Vrsta sejdera.
+    /// @return int Identifikator sejdera.
     ////////////////////////////////////////////////////////////////////////////
     int loadShader(const char *fileName, GLenum  type);
 
   };
-
 } // shader
 
 #endif

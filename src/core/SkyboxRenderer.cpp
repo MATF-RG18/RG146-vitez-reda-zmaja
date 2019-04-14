@@ -150,7 +150,7 @@ namespace core {
 
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_CUBE_MAP, this->dayTextureID);
-         glActiveTexture(GL_TEXTURE1);
+        glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_CUBE_MAP, this->nightTextureID);
         this->skyboxShader->loadBlendFactor(blendFactor);
 

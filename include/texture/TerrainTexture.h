@@ -27,7 +27,7 @@ namespace texture {
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Konstruktor klase.
             /// U konstruktoru se dodeljuje identifikator teksture ucitana iz png fajla.
-            /// @param id Identifikator teksture
+            /// @param id Identifikator teksture.
             ////////////////////////////////////////////////////////////////////////////
             TerrainTexture(int textureID);
 
@@ -40,10 +40,10 @@ namespace texture {
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija vraca identifikator teksture.
             /// @param void
-            /// @return int Identifikator teksture
+            /// @return int Identifikator teksture.
             ////////////////////////////////////////////////////////////////////////////
             int getTextureID();
     };
-}
+} // texture
 
 #endif

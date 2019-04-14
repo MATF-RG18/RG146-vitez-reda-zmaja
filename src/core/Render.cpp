@@ -26,7 +26,7 @@ namespace core {
       prepareTexturedModel(model);
       for(Entity * e: entity.second){
         prepareInstance(e);
-         glDrawElements(GL_TRIANGLES, model->getRawModel().getVertexCount(), GL_UNSIGNED_INT, 0);
+        glDrawElements(GL_TRIANGLES, model->getRawModel().getVertexCount(), GL_UNSIGNED_INT, 0);
       }
       unbindTexturedModel();
     }

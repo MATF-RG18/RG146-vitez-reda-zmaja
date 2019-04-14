@@ -42,8 +42,8 @@ namespace entity {
         public:
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Konstruktor klase.
-            /// @param position Pozicija izvora svetla
-            /// @param colour Boja svetlosti
+            /// @param position Pozicija izvora svetla.
+            /// @param colour Boja svetlosti.
             ////////////////////////////////////////////////////////////////////////////
             Light (vec3 position, vec3 colour);
 
@@ -56,14 +56,14 @@ namespace entity {
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija vraca poziciju izvora svetla.
             /// @param void
-            /// @return vec3 Pozicija izvora svetla
+            /// @return vec3 Pozicija izvora svetla.
             ////////////////////////////////////////////////////////////////////////////
             vec3 getPosition();
 
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija vraca boju svetlosti.
             /// @param void
-            /// @return vec3 RGB boja svetlosti
+            /// @return vec3 RGB boja svetlosti.
             ////////////////////////////////////////////////////////////////////////////
             vec3 getColour();
 

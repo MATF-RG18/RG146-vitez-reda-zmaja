@@ -36,8 +36,8 @@ namespace model {
     /// @brief Konstruktor klase.
     /// U konstruktoru se modelu pridruzuju broj tacaka objekta i identifikator
     /// niza atributa.
-    /// @param vaoID Identifikator niza atributa
-    /// @param vertexCount Broj tacaka objekta
+    /// @param vaoID Identifikator niza atributa.
+    /// @param vertexCount Broj tacaka objekta.
     ////////////////////////////////////////////////////////////////////////////
     RawModel(int vaoID, int vertexCount);
 
@@ -50,14 +50,14 @@ namespace model {
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca identifikator niza atributa objekta.
     /// @param void
-    /// @return int Identifikator niza atributa
+    /// @return int Identifikator niza atributa.
     ////////////////////////////////////////////////////////////////////////////
     int getVaoID(void);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca broj tacaka objekta.
     /// @param void
-    /// @return int Broj tacaka objekta
+    /// @return int Broj tacaka objekta.
     ////////////////////////////////////////////////////////////////////////////
     int getVertexCount(void);
 

@@ -100,17 +100,32 @@ namespace core {
     ////////////////////////////////////////////////////////////////////////////
     RawModel * loadToVao(GLfloat positions[], GLint positionsSize, GLint indices[], GLint indicesSize, GLfloat textureCoords[], GLint textureSize, GLfloat normals[], GLint normalsSize);
 
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija kreira niz atributa(VAO).
+    /// U funkciji se prvo kreira vao i dodeljuje mu se identifikator nakon cega
+    /// se parametri funkcije ucitavaju u bafere koji se pridruzuju ranije
+    /// kreiranom vao-u.
+    /// @param positions[] Niz koordinata objekta.
+    /// @param positionsSize Broj koordinata koje se nalaze u nizu pozicija.
+    /// @param dimensions Dimenzija prostora.
+    /// @return RawModel* Pokazivac na instancu klase RawModel.
+    ////////////////////////////////////////////////////////////////////////////
     RawModel * loadToVao(GLfloat positions[], GLint positionsSize, int dimensions);
     
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava texturu iz png fajla.
     /// U funkciji se pomocu png biblioteke citaju informacije iz fajla koje
     /// se zatim upisuju u OpenGL teksturu sa kreiranim identifikatorom.
-    /// @param fileName Ime png fajla
-    /// @return int Identifikator teks
+    /// @param fileName Ime png fajla.
+    /// @return GLint Identifikator teksture.
     ////////////////////////////////////////////////////////////////////////////
     GLint loadTexture(const char *fileName);
 
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija ucitava texture u kubnu mapu.
+    /// @param textureFiles Niz imena tekstura;
+    /// @return GLuint Identifikarot kubne mape tekstura.
+    ////////////////////////////////////////////////////////////////////////////
     GLuint loadCubeMap(vector<const char *> textureFiles);
 
     ////////////////////////////////////////////////////////////////////////////
@@ -136,11 +151,11 @@ namespace core {
     /// @brief Funkcija startuje bitne procese za funkcionisanje.
     /// U funkciji se kreira bafer u koji se smestaju informacije vazane za
     /// objekat.
-    /// @param attributeNumber Indeks niza atributa kojem se pridruzuje bafer
+    /// @param attributeNumber Indeks niza atributa kojem se pridruzuje bafer.
     /// @param coordinateSize Broj koordinata kojim je tacka definisana,
-    /// validne vrednosti su 1,2,3,4
-    /// @param data Niz podataka koji se upisuju u bafer
-    /// @param dataSize Broj podataka koji se nalaze u nizu data
+    /// validne vrednosti su 1,2,3,4.
+    /// @param data Niz podataka koji se upisuju u bafer.
+    /// @param dataSize Broj podataka koji se nalaze u nizu data.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void storeDataInVertexBuffer(GLint attributeNumber, int coordinateSize, GLfloat data[], GLint dataSize);
@@ -148,9 +163,9 @@ namespace core {
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava indekse tacaka.
     /// U funkciji se kreira bafer u koji se smestaju indeksi tacaka objekta.
-    /// @param attributeNumber Indeks niza atributa kojem se pridruzuje bafer
-    /// @param data Niz podataka koji se upisuju u bafer
-    /// @param dataSize Broj podataka koji se nalaze u nizu data
+    /// @param attributeNumber Indeks niza atributa kojem se pridruzuje bafer.
+    /// @param data Niz podataka koji se upisuju u bafer.
+    /// @param dataSize Broj podataka koji se nalaze u nizu data.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void storeDataInIndicesBuffer(GLint data[], GLint dataSize);
@@ -166,8 +181,8 @@ namespace core {
     /// @brief Funkcija ucitava niz u bafer podataka.
     /// U funkciji se podaci iz niza ucitavaju u bafer realnih brojeva zbog
     /// kasnijeg ucitavanja pomocu OpenGL funkcija.
-    /// @param data Niz podataka koji se upisuju u bafer
-    /// @param dataSize Broj podataka koji se nalaze u nizu data
+    /// @param data Niz podataka koji se upisuju u bafer.
+    /// @param dataSize Broj podataka koji se nalaze u nizu data.
     /// @return vector<float> Bafer prestavljen vektorom realnih podataka.
     ////////////////////////////////////////////////////////////////////////////
     vector<float> storeDataInFloatBuffer(GLfloat data[], GLint dataSize);
@@ -176,12 +191,17 @@ namespace core {
     /// @brief Funkcija ucitava niz u bafer podataka.
     /// U funkciji se podaci iz niza ucitavaju u bafer celih brojeva zbog
     /// kasnijeg ucitavanja pomocu OpenGL funkcija.
-    /// @param data Niz podataka koji se upisuju u bafer
-    /// @param dataSize Broj podataka koji se nalaze u nizu data
+    /// @param data Niz podataka koji se upisuju u bafer.
+    /// @param dataSize Broj podataka koji se nalaze u nizu data.
     /// @return vector<int> Bafer prestavljen celobrojnim vektorom podataka.
     ////////////////////////////////////////////////////////////////////////////
     vector<int> storeDataInIntBuffer(GLint data[], GLint dataSize);
 
+    ///////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija cita podatke iz fajla teksture.
+    /// @param fileName Naziv fajla teksture.
+    /// @return SkyboxTextureData* Pokazivac na instancu klase SkyboxTextureData
+    ////////////////////////////////////////////////////////////////////////////
     SkyboxTextureData *decodeTextureFile(const char *fileName);
 
   };

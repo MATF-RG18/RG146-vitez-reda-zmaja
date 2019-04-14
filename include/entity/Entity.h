@@ -57,9 +57,9 @@ namespace entity {
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Konstruktor klase.
     /// @param model Pokazivac na instancu klase TexturedModel.
-    /// @param position Pozicija entiteta
-    /// @param rotation Rotacija entiteta
-    /// @param scale Skaliranje entiteta
+    /// @param position Pozicija entiteta.
+    /// @param rotation Rotacija entiteta.
+    /// @param scale Skaliranje entiteta.
     ////////////////////////////////////////////////////////////////////////////
     Entity (TexturedModel *model, vec3 position, vec3 rotation, float scale);
 
@@ -72,13 +72,13 @@ namespace entity {
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca texturisan model.
     /// @param void
-    /// @return TexturedModel * Pokazivac na instancu klase TexturedModel
+    /// @return TexturedModel * Pokazivac na instancu klase TexturedModel.
     ////////////////////////////////////////////////////////////////////////////
     TexturedModel *getModel();
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija postavlja texturisan model.
-    /// @param model Pokazivac na instancu klase TexturedModel
+    /// @param model Pokazivac na instancu klase TexturedModel.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void setModel(TexturedModel *model);
@@ -86,13 +86,13 @@ namespace entity {
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca poziciju entiteta.
     /// @param void
-    /// @return vec3 Pozicija entiteta
+    /// @return vec3 Pozicija entiteta.
     ////////////////////////////////////////////////////////////////////////////
     vec3 getPosition();
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija postavlja poziciju entiteta.
-    /// @param position Pozicija entiteta
+    /// @param position Pozicija entiteta.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void setPosition(vec3 position);
@@ -100,13 +100,13 @@ namespace entity {
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca rotaciju entiteta.
     /// @param void
-    /// @return vec3 Rotacija entiteta
+    /// @return vec3 Rotacija entiteta.
     ////////////////////////////////////////////////////////////////////////////
     vec3 getRotation();
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija postavlja rotaciju entiteta.
-    /// @param rotation Rotacija entiteta
+    /// @param rotation Rotacija entiteta.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void setRotation(vec3 rotation);
@@ -114,27 +114,27 @@ namespace entity {
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca skaliranje entiteta.
     /// @param void
-    /// @return float Skaliranje entiteta
+    /// @return float Skaliranje entiteta.
     ////////////////////////////////////////////////////////////////////////////
     float getScale();
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija postavlja skaliranje entiteta.
-    /// @param scale Skaliranje entiteta
+    /// @param scale Skaliranje entiteta.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void setScale(float scale);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija povecava poziciju entiteta.
-    /// @param deltaPosition Pozicija entiteta
+    /// @param deltaPosition Pozicija entiteta.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void increasePosition(vec3 deltaPosition);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija povecava rotaciju entiteta.
-    /// @param deltaRotation Rotacija entiteta
+    /// @param deltaRotation Rotacija entiteta.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void increaseRotation(vec3 deltaRotation);

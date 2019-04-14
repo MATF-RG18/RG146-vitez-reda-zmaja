@@ -2,15 +2,13 @@
 
 > Vitez reda zmaja je RPG igra u kojoj je cilj savladati sve prepreke i dokazati svoje vestine.
 
-### Dnevni rezim igre
-![Screen](screenshots/Program_Day.png?raw=true "Current program day view")
+### Trenutni izgled igre
+![Screen](screenshots/Program_Stage7.png?raw=true "Current program view")
 
-### Nocni rezim igre
-![Screen](screenshots/Program_Night.png?raw=true "Current program night view")
 
 ##  :green_book: O projektu
 
-> Trenutno je moguce ucitati obj fajl kreiran pomocu alata kao sto je Blender3D i pridruziti mu texturu ukoliko je textura kreirana pomocu "unwrap"(UV) metoda, i kreiranje terena. Postoji mogucnost transformacije ucitanog objekta kao sto su rotacija, translacija i skaliranje, takodje je moguce kontrolisati kameru rotiranjem po x i y osi kao i zumiranje tj. pomeranje po z osi kao i podesavanje osvetljenja u igri. Moguce je kreiranje neba i smena dana i noci. 
+> Trenutno je moguce ucitati obj fajl kreiran pomocu alata kao sto je Blender3D i pridruziti mu texturu ukoliko je textura kreirana pomocu "unwrap"(UV) metoda, i kreiranje terena. Postoji mogucnost transformacije ucitanog objekta kao sto su rotacija, translacija i skaliranje, takodje je moguce kontrolisati kameru rotiranjem po x i y osi kao i zumiranje tj. pomeranje po z osi kao i podesavanje osvetljenja u igri. Moguce je kreiranje neba i smena dana i noci, kao i prikazivanje 2D teksta i slika. 
 
 ### Za vise informacija o procesu izrade projekta pogledajte [wiki](https://github.com/MATF-RG18/RG146-vitez-reda-zmaja/wiki) stranicu projekta
 
@@ -37,6 +35,11 @@ sudo apt install libpng-dev
 #### Magick++
 ```
 sudo apt install graphicsmagick-libmagick-dev-compat
+
+```
+#### FreeType
+```
+sudo apt install libfreetype6-dev
 
 ```
 

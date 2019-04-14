@@ -1,8 +1,8 @@
 PROGRAM = Test
 CC = g++
-CFLAGS = -g -Wall 
+CXXFLAGS = -g -Wall -Wextra -I/usr/include/freetype2
 
-LDFLAGS = -lGL -lGLU -lglut -lpng -g -lGraphicsMagick++ 
+LDFLAGS = -W -lGL -lGLU -lglut -lpng -g -lGraphicsMagick++ -lfreetype
 DEPS = include/model/RawModel.h \
 			 include/model/TexturedModel.h \
 			 include/core/Engine.h \
@@ -15,6 +15,8 @@ DEPS = include/model/RawModel.h \
 			 include/shader/Shader.h \
 			 include/shader/TerrainShader.h \
 			 include/shader/SkyboxShader.h \
+			 include/shader/HudShader.h \
+			 include/shader/FontShader.h \
 			 include/texture/ModelTexture.h \
 			 include/texture/TerrainTexture.h \
 			 include/texture/TerrainTexturePack.h \
@@ -26,7 +28,14 @@ DEPS = include/model/RawModel.h \
 			 include/utility/Math.h \
 			 include/utility/FpsData.h \
 			 include/external_libs/tiny_obj_loader.h \
-			 include/terrain/Terrain.h
+			 include/terrain/Terrain.h \
+			 include/hud/HudTexture.h \
+			 include/hud/HudRenderer.h \
+			 include/font/Font.h \
+			 include/font/Text.h \
+			 include/font/FontData.h \
+			 include/font/FontRenderer.h
+
 
 OBJ = test/$(PROGRAM).o \
 			src/core/Engine.o \
@@ -41,6 +50,8 @@ OBJ = test/$(PROGRAM).o \
 			src/shader/Shader.o \
 			src/shader/TerrainShader.o \
 			src/shader/SkyboxShader.o \
+			src/shader/HudShader.o \
+			src/shader/FontShader.o \
 			src/texture/ModelTexture.o \
 			src/texture/TerrainTexture.o \
 			src/texture/TerrainTexturePack.o \
@@ -51,10 +62,20 @@ OBJ = test/$(PROGRAM).o \
 			src/entity/Player.o \
 			src/utility/Math.o \
 			src/utility/FpsData.o \
-			src/terrain/Terrain.o
+			src/terrain/Terrain.o \
+			src/hud/HudTexture.o \
+			src/hud/HudRenderer.o \
+			src/font/Font.o \
+			src/font/Text.o \
+			src/font/FontData.o \
+			src/font/FontRenderer.o
 
 %.o: %.c $(DEPS)
-	$(CC) $(CFLAGS) -c -o $@ $< $(LDFLAGS)
+	$(CC) $(CXXFLAGS) -c -o $@ $< $(LDFLAGS)
 
 $(PROGRAM): $(OBJ)
-	$(CC) $(CFLAGS)  -o $@ $^ $(LDFLAGS)
+	$(CC) $(CXXFLAGS)  -o $@ $^ $(LDFLAGS)
+
+.PHONY : clean
+clean :
+	-rm $(OBJ)

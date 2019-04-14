@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// @file Render.h
+/// @file TerrainRenderer.h
 /// @brief Deklaracija klase TerrainRenderer.
 /// @author Dusan Pantelic
-/// @date Decembar 2017
+/// @date Decembar 2018
 ////////////////////////////////////////////////////////////////////////////////
 #ifndef _TERRAIN_RENDERER_H_
 #define _TERRAIN_RENDERER_H_
@@ -31,7 +31,7 @@ using namespace glm;
 namespace core {
 
     //////////////////////////////////////////////////////////////////////////////
-    /// @brief Klasa Render je zaduzena za iscrtavanje terena na ekran.
+    /// @brief Klasa TerrainRenderer je zaduzena za iscrtavanje terena na ekran.
     /// Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se
     /// sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran
     //////////////////////////////////////////////////////////////////////////////
@@ -39,7 +39,7 @@ namespace core {
 
         // Privatne promenljive klase
         private:
-             /// Polje vidika.
+            /// Polje vidika.
             float FOV = 70;
 
             /// Prednji deo vidljivosti.
@@ -51,6 +51,7 @@ namespace core {
             /// Pokazivac na instancu klase TerrainShader.
             TerrainShader *terrainShader;
 
+        // Javne funkcije klase
         public:
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Konstruktor klase.
@@ -86,7 +87,7 @@ namespace core {
             void bindTextures(Terrain *terrain);
 
             ////////////////////////////////////////////////////////////////////////////
-            /// @brief Funkcija otkacinje vezu izmedju podataka terena i programa.
+            /// @brief Funkcija otklanja vezu izmedju podataka terena i programa.
             /// @param void
             /// @return void
             ////////////////////////////////////////////////////////////////////////////
@@ -99,6 +100,7 @@ namespace core {
             ////////////////////////////////////////////////////////////////////////////
             void loadModelMatrix(Terrain *terrain);
         
+        // Privatne funkcije klase
         private:
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija kreira matricu projekcije.
@@ -106,7 +108,7 @@ namespace core {
             /// @return mat4 Matrica projekcije.
             ////////////////////////////////////////////////////////////////////////////
             mat4 createProjectionMatrix();
-    }; // core
-}
+    };
+} // core
 
 #endif

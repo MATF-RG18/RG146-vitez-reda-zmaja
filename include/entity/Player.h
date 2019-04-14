@@ -30,10 +30,10 @@ namespace entity {
     //////////////////////////////////////////////////////////////////////////////
     /// @brief Klasa Player odredjuje igraca koji nadogradjuje entitet.
     /// Pomocu klase Player nadogradjujemo klasu Entity dodavajuci jos nove atribute
-    /// i funkcije
+    /// i funkcije.
     //////////////////////////////////////////////////////////////////////////////
     class Player : public Entity {
-        
+
         // Privatne promenljive klase
         private:
             /// Trenutna brzina igraca.
@@ -53,10 +53,10 @@ namespace entity {
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Konstruktor klase.
             /// @param model Pokazivac na instancu klase TexturedModel.
-            /// @param position Pozicija entiteta
-            /// @param rotation Rotacija entiteta
-            /// @param scale Skaliranje entiteta
-            /// @param terrain Pokazivac na instancu klase Terrain
+            /// @param position Pozicija entiteta.
+            /// @param rotation Rotacija entiteta.
+            /// @param scale Skaliranje entiteta.
+            /// @param terrain Pokazivac na instancu klase Terrain.
             ////////////////////////////////////////////////////////////////////////////
             Player(TexturedModel *model, vec3 position, vec3 rotation, float scale, Terrain *terrain);
 
@@ -68,14 +68,14 @@ namespace entity {
 
             //////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija obradjuje ulaz sa tastature.
-            /// @param key Karakter koji je otpusten na tastaturi
+            /// @param key Karakter koji je otpusten na tastaturi.
             /// @return void
             //////////////////////////////////////////////////////////////////////////////
             void handleKeyUp(unsigned char key);
 
             //////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija obradjuje ulaz sa tastature.
-            /// @param key Karakter koji je pritisnut na tastaturi
+            /// @param key Karakter koji je pritisnut na tastaturi.
             /// @return void
             //////////////////////////////////////////////////////////////////////////////
             void handleKeyDown(unsigned char key);
@@ -83,10 +83,10 @@ namespace entity {
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija pomera igraca.
             /// @param void
-            /// @return void.
+            /// @return void
             ////////////////////////////////////////////////////////////////////////////
             void move(FpsData *fpsData);
     };
-}
+} // entity
 
 #endif

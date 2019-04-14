@@ -39,13 +39,13 @@ namespace texture {
         public:
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Konstruktor klase.
-            /// @param backgroundTexture Textura pozadine terena
-            /// @param rTexture Textura odredjena pozicijom crvene boje
-            /// @param gTexture Textura odredjena pozicijom zelene boje
-            /// @param bTexture Textura odredjena pozicijom plave boje
+            /// @param backgroundTexture Textura pozadine terena.
+            /// @param rTexture Textura odredjena pozicijom crvene boje.
+            /// @param gTexture Textura odredjena pozicijom zelene boje.
+            /// @param bTexture Textura odredjena pozicijom plave boje.
             ////////////////////////////////////////////////////////////////////////////
             TerrainTexturePack(TerrainTexture *backgroundTexture, TerrainTexture *rTexture, TerrainTexture *gTexture, TerrainTexture *bTexture);
-            
+
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Destruktor klase.
             /// @param void
@@ -55,31 +55,31 @@ namespace texture {
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija vraca teksturu pozadine.
             /// @param void
-            /// @return TerrainTexture * Pokazivac na instancu klase TerrainTexture
+            /// @return TerrainTexture * Pokazivac na instancu klase TerrainTexture.
             ////////////////////////////////////////////////////////////////////////////
             TerrainTexture *getBackgroundTexture();
 
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija vraca teksturu odredjenu crvenom bojom.
             /// @param void
-            /// @return TerrainTexture * Pokazivac na instancu klase TerrainTexture
+            /// @return TerrainTexture * Pokazivac na instancu klase TerrainTexture.
             ////////////////////////////////////////////////////////////////////////////
             TerrainTexture *getRTexture();
 
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija vraca teksturu odredjenu zelenom bojom.
             /// @param void
-            /// @return TerrainTexture * Pokazivac na instancu klase TerrainTexture
+            /// @return TerrainTexture * Pokazivac na instancu klase TerrainTexture.
             ////////////////////////////////////////////////////////////////////////////
             TerrainTexture *getGTexture();
 
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija vraca teksturu odredjenu plavom bojom.
             /// @param void
-            /// @return TerrainTexture * Pokazivac na instancu klase TerrainTexture
+            /// @return TerrainTexture * Pokazivac na instancu klase TerrainTexture.
             ////////////////////////////////////////////////////////////////////////////
             TerrainTexture *getBTexture();
     };
-}
+} // texture
 
 #endif

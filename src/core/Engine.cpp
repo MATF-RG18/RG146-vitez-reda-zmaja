@@ -1,6 +1,6 @@
 #include "../../include/core/Engine.h"
 
-// Klasa je implementirana po uzoru na video tutorijal 
+// Klasa je implementirana po uzoru na video tutorijal
 // https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 // kao i vezbi iz racunarske grafike.
 
@@ -35,6 +35,16 @@ namespace core {
 
   FpsData *fpsData;
 
+  vector<HudTexture*> huds;
+
+  HudRenderer *hudRenderer;
+
+  Font *font;
+
+  FontRenderer *fontRenderer;
+
+  Text *text;
+
   int screenWidth;
 
   int screenHeight;
@@ -50,6 +60,7 @@ namespace core {
 
   Engine::~Engine() {
     mainRenderer->cleanUp();
+    hudRenderer->cleanUp();
     vaoLoader->cleanUp();
   }
 
@@ -133,11 +144,19 @@ namespace core {
     vec3 rotation(0, 180, 0);
     float scale = 1;
     player = new Player(texturedModel, position, rotation, scale, terrain);
-    
+
+    HudTexture *hud = new HudTexture(vaoLoader->loadTexture("res/hud.png"), vec2(-0.9, -0.8), vec2(100/(float)glutGet(GLUT_WINDOW_WIDTH),100/(float)glutGet(GLUT_WINDOW_HEIGHT)), 180);
+    huds.push_back(hud);
+    hudRenderer = new HudRenderer(vaoLoader);
+
+    font = new Font("res/CalibriRegular.ttf", 48);
+    fontRenderer = new FontRenderer();
+    text = new Text(font, " ", vec2(-0.95, 0.9), vec2(1,1), 0, vec3(1, 1, 1));
+
     camera = new Camera(player);
     light = new Light(vec3 (2000, 2000, 2000), vec3 (1, 1, 1));
 
-  
+
 
     return;
   }
@@ -161,9 +180,9 @@ namespace core {
     mainRenderer->processEntity(player);
     camera->move();
     mainRenderer->render(light, camera);
-    char fpsIndicator[TEXT_BUFFER_SIZE];
-    snprintf(fpsIndicator, TEXT_BUFFER_SIZE, "FPS: %d", fpsData->getFpsCount());
-    fpsIndicator[strlen(fpsIndicator)] = '\0';
+    hudRenderer->render(huds);
+    text->setText(string("FPS: " + to_string(fpsData->getFpsCount())));
+    fontRenderer->render(text);
     glutSwapBuffers();
     fpsData->update();
 

@@ -23,6 +23,10 @@
 #include "../entity/Camera.h"
 #include "../utility/Math.h"
 #include "../utility/FpsData.h"
+#include "../hud/HudTexture.h"
+#include "../hud/HudRenderer.h"
+#include "../font/FontRenderer.h"
+#include "../font/Text.h"
 
 // Ukljucivanje OpenGL biblioteke.
 #include <GL/glut.h>
@@ -30,7 +34,6 @@
 
 #define ESC 27
 
-#define TEXT_BUFFER_SIZE 128
 
 // Koriscenje prostora imena za jednostavniji i pregledniji kod.
 using namespace shader;
@@ -38,6 +41,8 @@ using namespace model;
 using namespace texture;
 using namespace entity;
 using namespace utility;
+using namespace hud;
+using namespace font;
 
 ////////////////////////////////////////////////////////////////////////////////
 /// @brief Prostor imena core.
@@ -60,7 +65,7 @@ namespace core {
   /// Pokazivac funkcije prosledjuje se funkciji glutKeyboardFunc().
   /// Funkcija koja proverava ulaz sa tastature.
   /// @param key Karakter koji je pritisnut na tastaturi
-  /// @param x X koordinata pozicije kursora  
+  /// @param x X koordinata pozicije kursora
   /// @param y Y koordinata pozicije kursora
   /// @return void
   //////////////////////////////////////////////////////////////////////////////
@@ -72,7 +77,7 @@ namespace core {
   /// Funkcija koja proverava ulaz sa misa.
   /// @param button Taster koji je pritisnut na misu
   /// @param state Stanje tastera(pritisnut ili otpusten)
-  /// @param x X koordinata pozicije kursora  
+  /// @param x X koordinata pozicije kursora
   /// @param y Y koordinata pozicije kursora
   /// @return void
   //////////////////////////////////////////////////////////////////////////////
@@ -83,7 +88,7 @@ namespace core {
   /// Pokazivac funkcije prosledjuje se funkciji glutSpecialFunc().
   /// Funkcija koja proverava pritisnuti specijalni karakter.
   /// @param key Specijalni karakter koji je pritisnut na tastaturi
-  /// @param x X koordinata pozicije kursora  
+  /// @param x X koordinata pozicije kursora
   /// @param y Y koordinata pozicije kursora
   /// @return void
   //////////////////////////////////////////////////////////////////////////////
@@ -94,7 +99,7 @@ namespace core {
   /// Pokazivac funkcije prosledjuje se funkciji glutSpecialUpFunc().
   /// Funkcija koja proverava otpusteni specijalni karakter.
   /// @param key Specijalni karakter koji je otpusten na tastaturi
-  /// @param x X koordinata pozicije kursora  
+  /// @param x X koordinata pozicije kursora
   /// @param y Y koordinata pozicije kursora
   /// @return void
   //////////////////////////////////////////////////////////////////////////////

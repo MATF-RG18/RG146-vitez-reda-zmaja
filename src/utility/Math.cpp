@@ -3,6 +3,19 @@
   // Uz pomoc http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/
   // i https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
+   mat4 createTransformationMatrix(vec2 translation, vec2 scaleFactor, float rotation) {
+
+    mat4 transformationMatrix = mat4(1.0f);
+
+    transformationMatrix = translate(transformationMatrix, vec3(translation.x, translation.y, 0));
+
+    transformationMatrix = rotate(transformationMatrix, radians(rotation), vec3(0,0,1));
+
+    transformationMatrix = scale(transformationMatrix, vec3(scaleFactor.x, scaleFactor.y, 1));
+
+    return transformationMatrix;
+  }
+
   mat4 createTransformationMatrix(vec3 translation, vec3 rotation, float scaleFactor) {
 
     mat4 transformationMatrix = mat4(1.0f);

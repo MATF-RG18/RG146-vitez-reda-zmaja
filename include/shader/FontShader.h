@@ -1,26 +1,21 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// @file SkyboxShader.h
-/// @brief Deklaracija klase SkyboxShader.
+/// @file FontShader.h
+/// @brief Deklaracija klase FontShader.
 /// @author Dusan Pantelic
-/// @date Avgust 2018
+/// @date April 2019
 ////////////////////////////////////////////////////////////////////////////////
-#ifndef _SKYBOX_SHADER_H_
-#define _SKYBOX_SHADER_H_
+#ifndef _FONT_SHADER_H_
+#define _FONT_SHADER_H_
 
 // Omogucuje korsicenje novijih verzija OpenGL-a
 #define GL_GLEXT_PROTOTYPES
 
 // Ukljucivanje korsnicki defininisanih biblioteka.
 #include "../utility/Math.h"
-#include "../entity/Camera.h"
-#include "../entity/Light.h"
-#include "../utility/FpsData.h"
 
 // Koriscenje prostora imena za jednostavniji i pregledniji kod.
 using namespace std;
-using namespace entity;
 using namespace glm;
-using namespace utility;
 
 // Ukljucivanje OpenGL biblioteke.
 #include <GL/glut.h>
@@ -36,13 +31,6 @@ using namespace utility;
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-// Rotacija neba.
-#define SKYBOX_ROTATION_SPEED 1.0
-
-// Imena sejder fajlova.
-#define VERTEX_SHADER_FILE "src/shader/SkyboxVertexShader.txt"
-#define FRAGMENT_SHADER_FILE "src/shader/SkyboxFragmentShader.txt"
-
 ////////////////////////////////////////////////////////////////////////////////
 /// @brief Prostor imena shader.
 /// Sadrzi sejder programe.
@@ -50,14 +38,15 @@ using namespace utility;
 namespace shader {
 
   //////////////////////////////////////////////////////////////////////////////
-  /// @brief Klasa SkyboxShader ucitava i izvrsava programe na OpenGL Shading jeziku.
+  /// @brief Klasa FontShader ucitava i izvrsava programe na OpenGL Shading jeziku.
   /// Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se
   /// izvrsavaju i zaustavljaju.
   //////////////////////////////////////////////////////////////////////////////
-  class SkyboxShader {
+  class FontShader {
 
   // Privatne promenljive klase
   private:
+
     /// Identifikator programa koji izvrsava sejder fajlove.
     int programID;
 
@@ -68,40 +57,27 @@ namespace shader {
     int fragmentShaderID;
 
     /// Lokacija unformne promenljive.
-    int locationProjectionMatrix;
+    int locationTransformationMatrix;
 
     /// Lokacija unformne promenljive.
-    int locationViewMatrix;
-
-    /// Lokacija unformne promenljive.
-    int locationFogColour;
-
-    /// Lokacija unformne promenljive.
-    int locationCubeMap;
-
-    /// Lokacija unformne promenljive.
-    int locationCubeMap2;
-
-    /// Lokacija unformne promenljive.
-    int locationBlendFactor;
-
-    /// Lokacija uniformne promenljive.
-    float rotation;
+    int locationTextColor;
 
   // Javne funkcije klase
   public:
+
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Konstruktor klase.
     /// U konstruktoru se ucitavaju sejder fajlovi i povezuju sa programom.
-    /// @param void
+    /// @param vertexShaderFile Ime sejder fajla.
+    /// @param fragmentShaderFile Ime sejder fajla.
     ////////////////////////////////////////////////////////////////////////////
-    SkyboxShader();
+    FontShader(const char *vertexShaderFile, const char *fragmentShaderFile);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Destruktor klase.
     /// @param void
     ////////////////////////////////////////////////////////////////////////////
-    ~SkyboxShader();
+    ~FontShader();
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija povezuje ime sa generickim atributom.
@@ -161,8 +137,6 @@ namespace shader {
     ////////////////////////////////////////////////////////////////////////////
     void loadFloat(int uniformLocation, float value);
 
-    void loadInt(int uniformLocation, int value);
-
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava vektor koordinata u uniformnu varijablu.
     /// @param uniformLocation Lokacija uniformne promenljive.
@@ -170,6 +144,14 @@ namespace shader {
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void loadFloatVertex(int uniformLocation, vec3 vertex);
+
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija ucitava istinitosnu vrednost u uniformnu varijablu.
+    /// @param uniformLocation Lokacija uniformne promenljive.
+    /// @param value Istinitosna vrednost.
+    /// @return void
+    ////////////////////////////////////////////////////////////////////////////
+    void loadBoolean(int uniformLocation, bool value);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava matricu u uniformnu varijablu.
@@ -180,44 +162,22 @@ namespace shader {
     void loadMatrix(int uniformLocation, mat4 matrix);
 
     ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija ucitava matricu projekcije u uniformnu varijablu.
-    /// @param matrix Matrica projekcije.
+    /// @brief Funkcija ucitava matricu transformacije u uniformnu varijablu.
+    /// @param matrix Matrica transformacije.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
-    void loadProjectionMatrix(mat4 matrix);
+    void loadTransformationMatrix(mat4 matrix);
 
     ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija ucitava matricu pogleda u uniformnu varijablu.
-    /// @param camera Pokazivac na instancu klase Camera.
+    /// @brief Funkcija ucitava boju teksta u uniformnu varijablu.
+    /// @param textColor Boja u RGB formatu.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
-    void loadViewMatrix(Camera *camera, FpsData *fpsData);
-
-    ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija ucitava boju magle u uniformnu varijablu.
-    /// @param r Kolicina crvene boje.
-    /// @param g Kolicina zelene boje.
-    /// @param b Kolicina plave boje.
-    /// @return void
-    ////////////////////////////////////////////////////////////////////////////
-    void loadFogColour(float r, float g, float b);
-
-    ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija ucitava faktor mesanja u uniformnu varijablu.
-    /// @param blendFactor Faktor mesanja.
-    /// @return void
-    ////////////////////////////////////////////////////////////////////////////
-    void loadBlendFactor(float blendFactor);
-
-    ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija povezuje teksture neba.
-    /// @param void
-    /// @return void
-    ////////////////////////////////////////////////////////////////////////////
-    void connectTextureUnits();
+    void loadTextColor(vec3 textColor);
 
   // Privatne funkcije klase
   private:
+
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava sejder fajlove.
     /// @param fileName Naziv sejder fajla.

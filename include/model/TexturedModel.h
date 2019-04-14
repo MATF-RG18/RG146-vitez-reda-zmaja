@@ -44,8 +44,8 @@ namespace model {
     /// @brief Konstruktor klase.
     /// U konstruktoru se modelu pridruzuju neteksturisani objekat i njegova
     /// tekstura.
-    /// @param model Pokazivac na model objekta bez pridruzene strukture
-    /// @param texture Pokazivac na teksturu objekta
+    /// @param model Pokazivac na model objekta bez pridruzene strukture.
+    /// @param texture Pokazivac na teksturu objekta.
     ////////////////////////////////////////////////////////////////////////////
     TexturedModel(RawModel *model, ModelTexture *texture);
 
@@ -58,14 +58,14 @@ namespace model {
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca osnovni model objekta.
     /// @param void
-    /// @return RawModel Osnovni model objekta
+    /// @return RawModel Osnovni model objekta.
     ////////////////////////////////////////////////////////////////////////////
     RawModel getRawModel(void);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca teksturu modela.
     /// @param void
-    /// @return ModelTexture Tekstura modela
+    /// @return ModelTexture Tekstura modela.
     ////////////////////////////////////////////////////////////////////////////
     ModelTexture * getTexture(void);
 
