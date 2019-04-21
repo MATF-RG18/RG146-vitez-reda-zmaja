@@ -1,0 +1,10 @@
+digraph "core::SkyboxRenderer"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="core::SkyboxRenderer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cube" ];
+  Node2 [label="model::RawModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1RawModel.html",tooltip="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" skyboxShader" ];
+  Node3 [label="shader::SkyboxShader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classshader_1_1SkyboxShader.html",tooltip="Klasa SkyboxShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi ..."];
+}

@@ -11,8 +11,7 @@ Klasa \hyperlink{classentity_1_1Player}{Player} odredjuje igraca koji nadogradju
 
 
 
-Dijagram nasleđivanja za klasu entity\+:\+:Player\+:
-\nopagebreak
+Dijagram nasleđivanja za klasu entity\+:\+:Player\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Dijagram nasleđivanja za klasu entity\+:\+:Player\+:
 \end{figure}
 
 
-Klasni dijagram za entity\+:\+:Player\+:
-\nopagebreak
+Klasni dijagram za entity\+:\+:Player\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -40,7 +38,7 @@ void \hyperlink{classentity_1_1Player_a27a2007873610439598c0ac07a91f3ac}{handle\
 \begin{DoxyCompactList}\small\item\em Funkcija obradjuje ulaz sa tastature. \end{DoxyCompactList}\item 
 void \hyperlink{classentity_1_1Player_af3d0b548d6daeb37d03f9fa57fb28f8a}{handle\+Key\+Down} (unsigned char key)
 \begin{DoxyCompactList}\small\item\em Funkcija obradjuje ulaz sa tastature. \end{DoxyCompactList}\item 
-void \hyperlink{classentity_1_1Player_a9b0a7ab96a4ba7c24c7ddac8f07c4d5e}{move} ()
+void \hyperlink{classentity_1_1Player_ac4d89fa34bbc7a1a1db01db45e2da60f}{move} (\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$fps\+Data)
 \begin{DoxyCompactList}\small\item\em Funkcija pomera igraca. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Privatni članovi}
 \begin{DoxyCompactItemize}
@@ -73,13 +71,13 @@ Konstruktor klase.
 \begin{DoxyParams}{Parametri}
 {\em model} & Pokazivac na instancu klase Textured\+Model. \\
 \hline
-{\em position} & Pozicija entiteta \\
+{\em position} & Pozicija entiteta. \\
 \hline
-{\em rotation} & Rotacija entiteta \\
+{\em rotation} & Rotacija entiteta. \\
 \hline
-{\em scale} & Skaliranje entiteta \\
+{\em scale} & Skaliranje entiteta. \\
 \hline
-{\em terrain} & Pokazivac na instancu klase Terrain \\
+{\em terrain} & Pokazivac na instancu klase Terrain. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classentity_1_1Player_aba0d4255d0d8624d01067418279bc9a1}\label{classentity_1_1Player_aba0d4255d0d8624d01067418279bc9a1}} 
@@ -112,7 +110,7 @@ Funkcija obradjuje ulaz sa tastature.
 
 
 \begin{DoxyParams}{Parametri}
-{\em key} & Karakter koji je pritisnut na tastaturi \\
+{\em key} & Karakter koji je pritisnut na tastaturi. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Vrednost funkcije}
@@ -130,17 +128,17 @@ Funkcija obradjuje ulaz sa tastature.
 
 
 \begin{DoxyParams}{Parametri}
-{\em key} & Karakter koji je otpusten na tastaturi \\
+{\em key} & Karakter koji je otpusten na tastaturi. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Vrednost funkcije}
 void 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classentity_1_1Player_a9b0a7ab96a4ba7c24c7ddac8f07c4d5e}\label{classentity_1_1Player_a9b0a7ab96a4ba7c24c7ddac8f07c4d5e}} 
+\mbox{\Hypertarget{classentity_1_1Player_ac4d89fa34bbc7a1a1db01db45e2da60f}\label{classentity_1_1Player_ac4d89fa34bbc7a1a1db01db45e2da60f}} 
 \index{entity\+::\+Player@{entity\+::\+Player}!move@{move}}
 \index{move@{move}!entity\+::\+Player@{entity\+::\+Player}}
 \subsubsection{\texorpdfstring{move()}{move()}}
-{\footnotesize\ttfamily void entity\+::\+Player\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void entity\+::\+Player\+::move (\begin{DoxyParamCaption}\item[{\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$}]{fps\+Data }\end{DoxyParamCaption})}
 
 
 
@@ -152,7 +150,7 @@ Funkcija pomera igraca.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Vrednost funkcije}
-void. 
+void 
 \end{DoxyReturn}
 
 
@@ -201,5 +199,5 @@ Pokazivac na instancu klase Terrain.
 
 Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
 \item 
-/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/entity/\hyperlink{Player_8h}{Player.\+h}\item 
-/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/entity/\hyperlink{Player_8cpp}{Player.\+cpp}\end{DoxyCompactItemize}
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/entity/\hyperlink{Player_8h}{Player.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/entity/\hyperlink{Player_8cpp}{Player.\+cpp}\end{DoxyCompactItemize}

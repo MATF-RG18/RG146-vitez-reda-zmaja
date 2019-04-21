@@ -1,0 +1,394 @@
+\hypertarget{classshader_1_1HudShader}{}\section{Dokumentacija klase shader\+:\+:Hud\+Shader}
+\label{classshader_1_1HudShader}\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+
+
+Klasa \hyperlink{classshader_1_1HudShader}{Hud\+Shader} ucitava i izvrsava programe na Open\+GL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju.  
+
+
+
+
+{\ttfamily \#include $<$Hud\+Shader.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classshader_1_1HudShader_a0eaa23fb174467b4006da9de33a9f3a0}{Hud\+Shader} (const char $\ast$vertex\+Shader\+File, const char $\ast$fragment\+Shader\+File)
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se ucitavaju sejder fajlovi i povezuju sa programom. \end{DoxyCompactList}\item 
+\hyperlink{classshader_1_1HudShader_a40b9a50318827b37e1eeac09545b7727}{$\sim$\+Hud\+Shader} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1HudShader_acb1e2f4627e7ca8b1ad7510ecc0e1365}{bind\+Attribute} (int index, const char $\ast$variable\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje ime sa generickim atributom. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1HudShader_a56b7babc788d444c185cd702f97a324c}{bind\+Attributes} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje sve potrebne atribute. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1HudShader_a5c77dcdc917ba6890d210ae028cd0eba}{start} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija pokrece sejder program. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1HudShader_ac6abdbd414b55257314aeddf68e54384}{stop} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija zaustavlja sejder program. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1HudShader_a944a6532286b6071b53d97eee8980713}{clean\+Up} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija zaustavlja sejder program. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1HudShader_af9ed170816ba27a227dd8ce7c6e0aba4}{get\+Uniform\+Location} (const char $\ast$uniform\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca lokaciju uniformne promenljive. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1HudShader_a881374d89ec7a37d5e73c8694ab42d09}{get\+All\+Uniform\+Locations} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja lokacije svih uniformnih promenljivih. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1HudShader_ac184470cfd0979bc13fc7571d9e0b310}{load\+Float} (int uniform\+Location, float value)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava broj u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1HudShader_a5bfee0570129124b25d570310b18c5e5}{load\+Float\+Vertex} (int uniform\+Location, vec3 vertex)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava vektor koordinata u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1HudShader_a6e043863cf72ace1afe77e8fbe101b59}{load\+Boolean} (int uniform\+Location, bool value)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava istinitosnu vrednost u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1HudShader_a373b1c7ffde706843e2b45b7b48af3ef}{load\+Matrix} (int uniform\+Location, mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1HudShader_a000e6fafa088f6fdd9f9554da408431e}{load\+Transformation\+Matrix} (mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu transformacije u uniformnu varijablu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classshader_1_1HudShader_a585d2f65b6effa66d2f4b68b34f781b4}{load\+Shader} (const char $\ast$file\+Name, G\+Lenum type)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava sejder fajlove. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classshader_1_1HudShader_ab5aa088991bd6559ba174f553977342f}{program\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator programa koji izvrsava sejder fajlove. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1HudShader_a02815d5a104a7d94707cfdf33d8bf22c}{vertex\+Shader\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator ucitanog sejder fajla. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1HudShader_a2fec1c7c6e31bbb086e937838443b021}{fragment\+Shader\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator ucitanog sejder fajla. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1HudShader_a12942279494ff23209eeb01af8e861e5}{location\+Transformation\+Matrix}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classshader_1_1HudShader}{Hud\+Shader} ucitava i izvrsava programe na Open\+GL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classshader_1_1HudShader_a0eaa23fb174467b4006da9de33a9f3a0}\label{classshader_1_1HudShader_a0eaa23fb174467b4006da9de33a9f3a0}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!Hud\+Shader@{Hud\+Shader}}
+\index{Hud\+Shader@{Hud\+Shader}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{Hud\+Shader()}{HudShader()}}
+{\footnotesize\ttfamily shader\+::\+Hud\+Shader\+::\+Hud\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vertex\+Shader\+File,  }\item[{const char $\ast$}]{fragment\+Shader\+File }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. U konstruktoru se ucitavaju sejder fajlovi i povezuju sa programom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em vertex\+Shader\+File} & Ime sejder fajla. \\
+\hline
+{\em fragment\+Shader\+File} & Ime sejder fajla. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classshader_1_1HudShader_a40b9a50318827b37e1eeac09545b7727}\label{classshader_1_1HudShader_a40b9a50318827b37e1eeac09545b7727}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!````~Hud\+Shader@{$\sim$\+Hud\+Shader}}
+\index{````~Hud\+Shader@{$\sim$\+Hud\+Shader}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{$\sim$\+Hud\+Shader()}{~HudShader()}}
+{\footnotesize\ttfamily shader\+::\+Hud\+Shader\+::$\sim$\+Hud\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classshader_1_1HudShader_acb1e2f4627e7ca8b1ad7510ecc0e1365}\label{classshader_1_1HudShader_acb1e2f4627e7ca8b1ad7510ecc0e1365}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!bind\+Attribute@{bind\+Attribute}}
+\index{bind\+Attribute@{bind\+Attribute}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{bind\+Attribute()}{bindAttribute()}}
+{\footnotesize\ttfamily void shader\+::\+Hud\+Shader\+::bind\+Attribute (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{const char $\ast$}]{variable\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje ime sa generickim atributom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em index} & Identifikator generickog atributa. \\
+\hline
+{\em variable\+Name} & Ime koje pridruzujemo generickom atributu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_a56b7babc788d444c185cd702f97a324c}\label{classshader_1_1HudShader_a56b7babc788d444c185cd702f97a324c}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!bind\+Attributes@{bind\+Attributes}}
+\index{bind\+Attributes@{bind\+Attributes}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{bind\+Attributes()}{bindAttributes()}}
+{\footnotesize\ttfamily void shader\+::\+Hud\+Shader\+::bind\+Attributes (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje sve potrebne atribute. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_a944a6532286b6071b53d97eee8980713}\label{classshader_1_1HudShader_a944a6532286b6071b53d97eee8980713}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void shader\+::\+Hud\+Shader\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija zaustavlja sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_a881374d89ec7a37d5e73c8694ab42d09}\label{classshader_1_1HudShader_a881374d89ec7a37d5e73c8694ab42d09}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!get\+All\+Uniform\+Locations@{get\+All\+Uniform\+Locations}}
+\index{get\+All\+Uniform\+Locations@{get\+All\+Uniform\+Locations}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{get\+All\+Uniform\+Locations()}{getAllUniformLocations()}}
+{\footnotesize\ttfamily void shader\+::\+Hud\+Shader\+::get\+All\+Uniform\+Locations (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja lokacije svih uniformnih promenljivih. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_af9ed170816ba27a227dd8ce7c6e0aba4}\label{classshader_1_1HudShader_af9ed170816ba27a227dd8ce7c6e0aba4}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!get\+Uniform\+Location@{get\+Uniform\+Location}}
+\index{get\+Uniform\+Location@{get\+Uniform\+Location}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{get\+Uniform\+Location()}{getUniformLocation()}}
+{\footnotesize\ttfamily int shader\+::\+Hud\+Shader\+::get\+Uniform\+Location (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca lokaciju uniformne promenljive. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Name} & Ime uniformne promenljive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Lokacija uniformne promenljive. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_a6e043863cf72ace1afe77e8fbe101b59}\label{classshader_1_1HudShader_a6e043863cf72ace1afe77e8fbe101b59}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!load\+Boolean@{load\+Boolean}}
+\index{load\+Boolean@{load\+Boolean}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{load\+Boolean()}{loadBoolean()}}
+{\footnotesize\ttfamily void shader\+::\+Hud\+Shader\+::load\+Boolean (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava istinitosnu vrednost u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em value} & Istinitosna vrednost. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_ac184470cfd0979bc13fc7571d9e0b310}\label{classshader_1_1HudShader_ac184470cfd0979bc13fc7571d9e0b310}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!load\+Float@{load\+Float}}
+\index{load\+Float@{load\+Float}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{load\+Float()}{loadFloat()}}
+{\footnotesize\ttfamily void shader\+::\+Hud\+Shader\+::load\+Float (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava broj u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em value} & Broj pokretnom zarezu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_a5bfee0570129124b25d570310b18c5e5}\label{classshader_1_1HudShader_a5bfee0570129124b25d570310b18c5e5}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!load\+Float\+Vertex@{load\+Float\+Vertex}}
+\index{load\+Float\+Vertex@{load\+Float\+Vertex}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{load\+Float\+Vertex()}{loadFloatVertex()}}
+{\footnotesize\ttfamily void shader\+::\+Hud\+Shader\+::load\+Float\+Vertex (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{vec3}]{vertex }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava vektor koordinata u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em vertex} & Vektor koordinata. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_a373b1c7ffde706843e2b45b7b48af3ef}\label{classshader_1_1HudShader_a373b1c7ffde706843e2b45b7b48af3ef}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!load\+Matrix@{load\+Matrix}}
+\index{load\+Matrix@{load\+Matrix}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{load\+Matrix()}{loadMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Hud\+Shader\+::load\+Matrix (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em matrix} & Matrica. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_a585d2f65b6effa66d2f4b68b34f781b4}\label{classshader_1_1HudShader_a585d2f65b6effa66d2f4b68b34f781b4}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!load\+Shader@{load\+Shader}}
+\index{load\+Shader@{load\+Shader}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{load\+Shader()}{loadShader()}}
+{\footnotesize\ttfamily int shader\+::\+Hud\+Shader\+::load\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{G\+Lenum}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava sejder fajlove. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em file\+Name} & Naziv sejder fajla. \\
+\hline
+{\em type} & Vrsta sejdera. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Identifikator sejdera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_a000e6fafa088f6fdd9f9554da408431e}\label{classshader_1_1HudShader_a000e6fafa088f6fdd9f9554da408431e}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!load\+Transformation\+Matrix@{load\+Transformation\+Matrix}}
+\index{load\+Transformation\+Matrix@{load\+Transformation\+Matrix}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{load\+Transformation\+Matrix()}{loadTransformationMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Hud\+Shader\+::load\+Transformation\+Matrix (\begin{DoxyParamCaption}\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu transformacije u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em matrix} & Matrica transformacije. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_a5c77dcdc917ba6890d210ae028cd0eba}\label{classshader_1_1HudShader_a5c77dcdc917ba6890d210ae028cd0eba}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!start@{start}}
+\index{start@{start}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void shader\+::\+Hud\+Shader\+::start (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija pokrece sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1HudShader_ac6abdbd414b55257314aeddf68e54384}\label{classshader_1_1HudShader_ac6abdbd414b55257314aeddf68e54384}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!stop@{stop}}
+\index{stop@{stop}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void shader\+::\+Hud\+Shader\+::stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija zaustavlja sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classshader_1_1HudShader_a2fec1c7c6e31bbb086e937838443b021}\label{classshader_1_1HudShader_a2fec1c7c6e31bbb086e937838443b021}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!fragment\+Shader\+ID@{fragment\+Shader\+ID}}
+\index{fragment\+Shader\+ID@{fragment\+Shader\+ID}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{fragment\+Shader\+ID}{fragmentShaderID}}
+{\footnotesize\ttfamily int shader\+::\+Hud\+Shader\+::fragment\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator ucitanog sejder fajla. 
+
+\mbox{\Hypertarget{classshader_1_1HudShader_a12942279494ff23209eeb01af8e861e5}\label{classshader_1_1HudShader_a12942279494ff23209eeb01af8e861e5}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!location\+Transformation\+Matrix@{location\+Transformation\+Matrix}}
+\index{location\+Transformation\+Matrix@{location\+Transformation\+Matrix}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{location\+Transformation\+Matrix}{locationTransformationMatrix}}
+{\footnotesize\ttfamily int shader\+::\+Hud\+Shader\+::location\+Transformation\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1HudShader_ab5aa088991bd6559ba174f553977342f}\label{classshader_1_1HudShader_ab5aa088991bd6559ba174f553977342f}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!program\+ID@{program\+ID}}
+\index{program\+ID@{program\+ID}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{program\+ID}{programID}}
+{\footnotesize\ttfamily int shader\+::\+Hud\+Shader\+::program\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator programa koji izvrsava sejder fajlove. 
+
+\mbox{\Hypertarget{classshader_1_1HudShader_a02815d5a104a7d94707cfdf33d8bf22c}\label{classshader_1_1HudShader_a02815d5a104a7d94707cfdf33d8bf22c}} 
+\index{shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}!vertex\+Shader\+ID@{vertex\+Shader\+ID}}
+\index{vertex\+Shader\+ID@{vertex\+Shader\+ID}!shader\+::\+Hud\+Shader@{shader\+::\+Hud\+Shader}}
+\subsubsection{\texorpdfstring{vertex\+Shader\+ID}{vertexShaderID}}
+{\footnotesize\ttfamily int shader\+::\+Hud\+Shader\+::vertex\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator ucitanog sejder fajla. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/shader/\hyperlink{HudShader_8h}{Hud\+Shader.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/shader/\hyperlink{HudShader_8cpp}{Hud\+Shader.\+cpp}\end{DoxyCompactItemize}

@@ -1,8 +1,7 @@
-\hypertarget{Math_8cpp}{}\section{Opis datoteke /home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/utility/\+Math.cpp}
-\label{Math_8cpp}\index{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/utility/\+Math.\+cpp@{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/src/utility/\+Math.\+cpp}}
+\hypertarget{Math_8cpp}{}\section{Opis datoteke /home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/utility/\+Math.cpp}
+\label{Math_8cpp}\index{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/utility/\+Math.\+cpp@{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/utility/\+Math.\+cpp}}
 {\ttfamily \#include \char`\"{}../../include/utility/\+Math.\+h\char`\"{}}\newline
-Graf zavisnosti datoteka za Math.\+cpp\+:
-\nopagebreak
+Graf zavisnosti datoteka za Math.\+cpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,12 +11,14 @@ Graf zavisnosti datoteka za Math.\+cpp\+:
 \subsection*{Funkcije}
 \begin{DoxyCompactItemize}
 \item 
+mat4 \hyperlink{Math_8cpp_a4ac632e391368a959adcb9d423742cc4}{create\+Transformation\+Matrix} (vec2 translation, vec2 scale\+Factor, float rotation)
+\begin{DoxyCompactList}\small\item\em Funkcija kreira matricu transformacije za 2D objekte. \end{DoxyCompactList}\item 
 mat4 \hyperlink{Math_8cpp_af2745946387f5bef6470da8ca8fa40c3}{create\+Transformation\+Matrix} (vec3 translation, vec3 rotation, float scale\+Factor)
 \begin{DoxyCompactList}\small\item\em Funkcija kreira matricu transformacije. \end{DoxyCompactList}\item 
 mat4 \hyperlink{Math_8cpp_abfc3ea2c5c1a588b51e952b00e055639}{create\+View\+Matrix} (vec3 position, float pich, float yaw)
 \begin{DoxyCompactList}\small\item\em Funkcija kreira matricu pogleda. \end{DoxyCompactList}\item 
 float \hyperlink{Math_8cpp_adc4665953edcb92de244a1812f5d2a3f}{barry\+Centric} (vec3 p1, vec3 p2, vec3 p3, vec2 position)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Funkcija interpolacijom racuna visinu unutat trougla. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Dokumentacija funkcije}
@@ -27,10 +28,50 @@ float \hyperlink{Math_8cpp_adc4665953edcb92de244a1812f5d2a3f}{barry\+Centric} (v
 \subsubsection{\texorpdfstring{barry\+Centric()}{barryCentric()}}
 {\footnotesize\ttfamily float barry\+Centric (\begin{DoxyParamCaption}\item[{vec3}]{p1,  }\item[{vec3}]{p2,  }\item[{vec3}]{p3,  }\item[{vec2}]{position }\end{DoxyParamCaption})}
 
+
+
+Funkcija interpolacijom racuna visinu unutat trougla. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em p1} & Koordinate prve tacke trougla. \\
+\hline
+{\em p2} & Koordinate druge tacke trougla. \\
+\hline
+{\em p3} & Koordinate trece tacke trougla. \\
+\hline
+{\em position} & Koordinate tacke na trouglu za koju trazimo Y koordinatu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Visina. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Math_8cpp_a4ac632e391368a959adcb9d423742cc4}\label{Math_8cpp_a4ac632e391368a959adcb9d423742cc4}} 
+\index{Math.\+cpp@{Math.\+cpp}!create\+Transformation\+Matrix@{create\+Transformation\+Matrix}}
+\index{create\+Transformation\+Matrix@{create\+Transformation\+Matrix}!Math.\+cpp@{Math.\+cpp}}
+\subsubsection{\texorpdfstring{create\+Transformation\+Matrix()}{createTransformationMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mat4 create\+Transformation\+Matrix (\begin{DoxyParamCaption}\item[{vec2}]{translation,  }\item[{vec2}]{scale\+Factor,  }\item[{float}]{rotation }\end{DoxyParamCaption})}
+
+
+
+Funkcija kreira matricu transformacije za 2D objekte. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em translation} & Translacija objekta. \\
+\hline
+{\em scale\+Factor} & Faktor skaliranja. \\
+\hline
+{\em rotation} & Rotacija objekta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+mat4 Matrica transformacije. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{Math_8cpp_af2745946387f5bef6470da8ca8fa40c3}\label{Math_8cpp_af2745946387f5bef6470da8ca8fa40c3}} 
 \index{Math.\+cpp@{Math.\+cpp}!create\+Transformation\+Matrix@{create\+Transformation\+Matrix}}
 \index{create\+Transformation\+Matrix@{create\+Transformation\+Matrix}!Math.\+cpp@{Math.\+cpp}}
-\subsubsection{\texorpdfstring{create\+Transformation\+Matrix()}{createTransformationMatrix()}}
+\subsubsection{\texorpdfstring{create\+Transformation\+Matrix()}{createTransformationMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily mat4 create\+Transformation\+Matrix (\begin{DoxyParamCaption}\item[{vec3}]{translation,  }\item[{vec3}]{rotation,  }\item[{float}]{scale\+Factor }\end{DoxyParamCaption})}
 
 
@@ -39,15 +80,15 @@ Funkcija kreira matricu transformacije.
 
 
 \begin{DoxyParams}{Parametri}
-{\em translation} & Translacija objekta \\
+{\em translation} & Translacija objekta. \\
 \hline
-{\em rotation} & Rotacija objekta \\
+{\em rotation} & Rotacija objekta. \\
 \hline
-{\em scale\+Factor} & Faktor skaliranja \\
+{\em scale\+Factor} & Faktor skaliranja. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Vrednost funkcije}
-mat4 Matrica transformacije 
+mat4 Matrica transformacije. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{Math_8cpp_abfc3ea2c5c1a588b51e952b00e055639}\label{Math_8cpp_abfc3ea2c5c1a588b51e952b00e055639}} 
 \index{Math.\+cpp@{Math.\+cpp}!create\+View\+Matrix@{create\+View\+Matrix}}
@@ -61,13 +102,13 @@ Funkcija kreira matricu pogleda.
 
 
 \begin{DoxyParams}{Parametri}
-{\em position} & Pozicija kamere \\
+{\em position} & Pozicija kamere. \\
 \hline
-{\em pitch} & Rotacija oko X ose \\
+{\em pitch} & Rotacija oko X ose. \\
 \hline
-{\em yaw} & Rotacija oko Y ose \\
+{\em yaw} & Rotacija oko Y ose. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Vrednost funkcije}
-mat4 Matrica pogleda 
+mat4 Matrica pogleda. 
 \end{DoxyReturn}

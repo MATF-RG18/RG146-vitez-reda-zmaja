@@ -1,0 +1,137 @@
+\hypertarget{classhud_1_1HudRenderer}{}\section{Dokumentacija klase hud\+:\+:Hud\+Renderer}
+\label{classhud_1_1HudRenderer}\index{hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}}
+
+
+Klasa \hyperlink{classhud_1_1HudRenderer}{Hud\+Renderer} zaduzena je za iscrtavanje 2D grafike. Pomocu klase Font\+Renderer iscrtavamo 2D kvadrat na koji nalepljujemo zeljenu teksturu i pozicioniramo je u svetu pomocu matrice transformacije.  
+
+
+
+
+{\ttfamily \#include $<$Hud\+Renderer.\+h$>$}
+
+
+
+Klasni dijagram za hud\+:\+:Hud\+Renderer\+:
+% FIG 0
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classhud_1_1HudRenderer_ae84f8293c08515d5a7b3e23632b8b6b0}{Hud\+Renderer} (\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$vao\+Loader)
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classhud_1_1HudRenderer_abe526b3d520a64670efa3d3aaa986d52}{$\sim$\+Hud\+Renderer} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classhud_1_1HudRenderer_a9b64ac407d7e3f8fa9de46ee7f32fd17}{render} (vector$<$ \hyperlink{classhud_1_1HudTexture}{Hud\+Texture} $\ast$$>$ huds)
+\begin{DoxyCompactList}\small\item\em Funkcija iscrtava 2D objekte. \end{DoxyCompactList}\item 
+void \hyperlink{classhud_1_1HudRenderer_a17ec594190149eee1db61bed6034daae}{clean\+Up} ()
+\begin{DoxyCompactList}\small\item\em Funkcija poziva funkciju clean\+Up za sejder hud-\/a. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classhud_1_1HudRenderer_a322a5afc38f922fbe0f1a6705f8b34ce}{quad}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Raw\+Model. \end{DoxyCompactList}\item 
+\hyperlink{classshader_1_1HudShader}{Hud\+Shader} $\ast$ \hyperlink{classhud_1_1HudRenderer_a6610c7ad17ec6cfdad6c328018030fa2}{hud\+Shader}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Hud\+Shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classhud_1_1HudRenderer}{Hud\+Renderer} zaduzena je za iscrtavanje 2D grafike. Pomocu klase Font\+Renderer iscrtavamo 2D kvadrat na koji nalepljujemo zeljenu teksturu i pozicioniramo je u svetu pomocu matrice transformacije. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classhud_1_1HudRenderer_ae84f8293c08515d5a7b3e23632b8b6b0}\label{classhud_1_1HudRenderer_ae84f8293c08515d5a7b3e23632b8b6b0}} 
+\index{hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}!Hud\+Renderer@{Hud\+Renderer}}
+\index{Hud\+Renderer@{Hud\+Renderer}!hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}}
+\subsubsection{\texorpdfstring{Hud\+Renderer()}{HudRenderer()}}
+{\footnotesize\ttfamily hud\+::\+Hud\+Renderer\+::\+Hud\+Renderer (\begin{DoxyParamCaption}\item[{\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$}]{vao\+Loader }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em vao\+Loader} & Pokazivac na instancu klase Vao\+Loader. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhud_1_1HudRenderer_abe526b3d520a64670efa3d3aaa986d52}\label{classhud_1_1HudRenderer_abe526b3d520a64670efa3d3aaa986d52}} 
+\index{hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}!````~Hud\+Renderer@{$\sim$\+Hud\+Renderer}}
+\index{````~Hud\+Renderer@{$\sim$\+Hud\+Renderer}!hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Hud\+Renderer()}{~HudRenderer()}}
+{\footnotesize\ttfamily hud\+::\+Hud\+Renderer\+::$\sim$\+Hud\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classhud_1_1HudRenderer_a17ec594190149eee1db61bed6034daae}\label{classhud_1_1HudRenderer_a17ec594190149eee1db61bed6034daae}} 
+\index{hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void hud\+::\+Hud\+Renderer\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija poziva funkciju clean\+Up za sejder hud-\/a. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classhud_1_1HudRenderer_a9b64ac407d7e3f8fa9de46ee7f32fd17}\label{classhud_1_1HudRenderer_a9b64ac407d7e3f8fa9de46ee7f32fd17}} 
+\index{hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}!render@{render}}
+\index{render@{render}!hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void hud\+::\+Hud\+Renderer\+::render (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classhud_1_1HudTexture}{Hud\+Texture} $\ast$$>$}]{huds }\end{DoxyParamCaption})}
+
+
+
+Funkcija iscrtava 2D objekte. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em huds} & Vektor pokazivaca na instance klase \hyperlink{classhud_1_1HudTexture}{Hud\+Texture}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classhud_1_1HudRenderer_a6610c7ad17ec6cfdad6c328018030fa2}\label{classhud_1_1HudRenderer_a6610c7ad17ec6cfdad6c328018030fa2}} 
+\index{hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}!hud\+Shader@{hud\+Shader}}
+\index{hud\+Shader@{hud\+Shader}!hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}}
+\subsubsection{\texorpdfstring{hud\+Shader}{hudShader}}
+{\footnotesize\ttfamily \hyperlink{classshader_1_1HudShader}{Hud\+Shader}$\ast$ hud\+::\+Hud\+Renderer\+::hud\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Hud\+Shader. 
+
+\mbox{\Hypertarget{classhud_1_1HudRenderer_a322a5afc38f922fbe0f1a6705f8b34ce}\label{classhud_1_1HudRenderer_a322a5afc38f922fbe0f1a6705f8b34ce}} 
+\index{hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}!quad@{quad}}
+\index{quad@{quad}!hud\+::\+Hud\+Renderer@{hud\+::\+Hud\+Renderer}}
+\subsubsection{\texorpdfstring{quad}{quad}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model}$\ast$ hud\+::\+Hud\+Renderer\+::quad\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Raw\+Model. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/hud/\hyperlink{HudRenderer_8h}{Hud\+Renderer.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/hud/\hyperlink{HudRenderer_8cpp}{Hud\+Renderer.\+cpp}\end{DoxyCompactItemize}

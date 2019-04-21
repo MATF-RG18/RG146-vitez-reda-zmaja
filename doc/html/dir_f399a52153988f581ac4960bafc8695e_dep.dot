@@ -1,0 +1,14 @@
+digraph "/home/dusan/Documents/RG146-vitez-reda-zmaja/include/font" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d44c64559bbebec7f509842c48db8b23 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_d44c64559bbebec7f509842c48db8b23.html"]
+  dir_f399a52153988f581ac4960bafc8695e [shape=box, label="font", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f399a52153988f581ac4960bafc8695e.html"];
+  }
+  dir_3a4d35156996fb70540e167b84a39bd1 [shape=box label="utility" URL="dir_3a4d35156996fb70540e167b84a39bd1.html"];
+  dir_2a23ad7151370bad26fc446775fa6e94 [shape=box label="shader" URL="dir_2a23ad7151370bad26fc446775fa6e94.html"];
+  dir_f399a52153988f581ac4960bafc8695e->dir_3a4d35156996fb70540e167b84a39bd1 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000010.html"];
+  dir_f399a52153988f581ac4960bafc8695e->dir_2a23ad7151370bad26fc446775fa6e94 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000007.html"];
+  dir_2a23ad7151370bad26fc446775fa6e94->dir_3a4d35156996fb70540e167b84a39bd1 [headlabel="6", labeldistance=1.5 headhref="dir_000007_000010.html"];
+}

@@ -1,0 +1,426 @@
+\hypertarget{classshader_1_1FontShader}{}\section{Dokumentacija klase shader\+:\+:Font\+Shader}
+\label{classshader_1_1FontShader}\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+
+
+Klasa \hyperlink{classshader_1_1FontShader}{Font\+Shader} ucitava i izvrsava programe na Open\+GL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju.  
+
+
+
+
+{\ttfamily \#include $<$Font\+Shader.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classshader_1_1FontShader_ab4e52a49071555c4abaaf0c19aa7892f}{Font\+Shader} (const char $\ast$vertex\+Shader\+File, const char $\ast$fragment\+Shader\+File)
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se ucitavaju sejder fajlovi i povezuju sa programom. \end{DoxyCompactList}\item 
+\hyperlink{classshader_1_1FontShader_ad74a8facae98d230f10f3727a539be90}{$\sim$\+Font\+Shader} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_abcd615d45f374de430a10226212fa40b}{bind\+Attribute} (int index, const char $\ast$variable\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje ime sa generickim atributom. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_abd2634c5c218f6912c9cc5d63899aca9}{bind\+Attributes} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje sve potrebne atribute. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_a15d46dfb7b060d5b067b2df5be395081}{start} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija pokrece sejder program. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_a5cf531aabad7073196cddda0d2514392}{stop} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija zaustavlja sejder program. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_a9df3b86fb4829d2505cf508b95a6238f}{clean\+Up} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija zaustavlja sejder program. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1FontShader_aa1ac58dc94c17fdf26121e8967ef87fd}{get\+Uniform\+Location} (const char $\ast$uniform\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca lokaciju uniformne promenljive. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_a89c2e19fdbe971db4c7bdc72effd2043}{get\+All\+Uniform\+Locations} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja lokacije svih uniformnih promenljivih. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_a34039484ee1b1f2b4799aa08d81da019}{load\+Float} (int uniform\+Location, float value)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava broj u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_a18c2405ae1e1bdf5ff417d5bba7febdf}{load\+Float\+Vertex} (int uniform\+Location, vec3 vertex)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava vektor koordinata u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_a4415b7e9a5f22561c9d10100c3d7b71e}{load\+Boolean} (int uniform\+Location, bool value)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava istinitosnu vrednost u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_a28f790307f575713dba18aeef06b904e}{load\+Matrix} (int uniform\+Location, mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_a050d93154a3baabd8a61344670f76a9d}{load\+Transformation\+Matrix} (mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu transformacije u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1FontShader_a51f55279667df9c2661909a0bfbcdebe}{load\+Text\+Color} (vec3 text\+Color)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava boju teksta u uniformnu varijablu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classshader_1_1FontShader_abe3a0b4d642aa405ec8e27cf10c8543b}{load\+Shader} (const char $\ast$file\+Name, G\+Lenum type)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava sejder fajlove. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classshader_1_1FontShader_a5836d121dcb745fc151a76416ed82287}{program\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator programa koji izvrsava sejder fajlove. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1FontShader_aa685de6b436e9d1a0bd0904e673ac035}{vertex\+Shader\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator ucitanog sejder fajla. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1FontShader_a502033bcf071a692c5373949325d51d8}{fragment\+Shader\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator ucitanog sejder fajla. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1FontShader_ae865d1cb3d301993b5d1b27956c8b923}{location\+Transformation\+Matrix}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1FontShader_aeb4b26824dcb51dc7ba11f8a3df018e6}{location\+Text\+Color}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classshader_1_1FontShader}{Font\+Shader} ucitava i izvrsava programe na Open\+GL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classshader_1_1FontShader_ab4e52a49071555c4abaaf0c19aa7892f}\label{classshader_1_1FontShader_ab4e52a49071555c4abaaf0c19aa7892f}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!Font\+Shader@{Font\+Shader}}
+\index{Font\+Shader@{Font\+Shader}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{Font\+Shader()}{FontShader()}}
+{\footnotesize\ttfamily shader\+::\+Font\+Shader\+::\+Font\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vertex\+Shader\+File,  }\item[{const char $\ast$}]{fragment\+Shader\+File }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. U konstruktoru se ucitavaju sejder fajlovi i povezuju sa programom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em vertex\+Shader\+File} & Ime sejder fajla. \\
+\hline
+{\em fragment\+Shader\+File} & Ime sejder fajla. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classshader_1_1FontShader_ad74a8facae98d230f10f3727a539be90}\label{classshader_1_1FontShader_ad74a8facae98d230f10f3727a539be90}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!````~Font\+Shader@{$\sim$\+Font\+Shader}}
+\index{````~Font\+Shader@{$\sim$\+Font\+Shader}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{$\sim$\+Font\+Shader()}{~FontShader()}}
+{\footnotesize\ttfamily shader\+::\+Font\+Shader\+::$\sim$\+Font\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classshader_1_1FontShader_abcd615d45f374de430a10226212fa40b}\label{classshader_1_1FontShader_abcd615d45f374de430a10226212fa40b}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!bind\+Attribute@{bind\+Attribute}}
+\index{bind\+Attribute@{bind\+Attribute}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{bind\+Attribute()}{bindAttribute()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::bind\+Attribute (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{const char $\ast$}]{variable\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje ime sa generickim atributom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em index} & Identifikator generickog atributa. \\
+\hline
+{\em variable\+Name} & Ime koje pridruzujemo generickom atributu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_abd2634c5c218f6912c9cc5d63899aca9}\label{classshader_1_1FontShader_abd2634c5c218f6912c9cc5d63899aca9}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!bind\+Attributes@{bind\+Attributes}}
+\index{bind\+Attributes@{bind\+Attributes}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{bind\+Attributes()}{bindAttributes()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::bind\+Attributes (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje sve potrebne atribute. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_a9df3b86fb4829d2505cf508b95a6238f}\label{classshader_1_1FontShader_a9df3b86fb4829d2505cf508b95a6238f}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija zaustavlja sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_a89c2e19fdbe971db4c7bdc72effd2043}\label{classshader_1_1FontShader_a89c2e19fdbe971db4c7bdc72effd2043}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!get\+All\+Uniform\+Locations@{get\+All\+Uniform\+Locations}}
+\index{get\+All\+Uniform\+Locations@{get\+All\+Uniform\+Locations}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{get\+All\+Uniform\+Locations()}{getAllUniformLocations()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::get\+All\+Uniform\+Locations (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja lokacije svih uniformnih promenljivih. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_aa1ac58dc94c17fdf26121e8967ef87fd}\label{classshader_1_1FontShader_aa1ac58dc94c17fdf26121e8967ef87fd}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!get\+Uniform\+Location@{get\+Uniform\+Location}}
+\index{get\+Uniform\+Location@{get\+Uniform\+Location}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{get\+Uniform\+Location()}{getUniformLocation()}}
+{\footnotesize\ttfamily int shader\+::\+Font\+Shader\+::get\+Uniform\+Location (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca lokaciju uniformne promenljive. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Name} & Ime uniformne promenljive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Lokacija uniformne promenljive. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_a4415b7e9a5f22561c9d10100c3d7b71e}\label{classshader_1_1FontShader_a4415b7e9a5f22561c9d10100c3d7b71e}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!load\+Boolean@{load\+Boolean}}
+\index{load\+Boolean@{load\+Boolean}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{load\+Boolean()}{loadBoolean()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::load\+Boolean (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava istinitosnu vrednost u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em value} & Istinitosna vrednost. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_a34039484ee1b1f2b4799aa08d81da019}\label{classshader_1_1FontShader_a34039484ee1b1f2b4799aa08d81da019}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!load\+Float@{load\+Float}}
+\index{load\+Float@{load\+Float}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{load\+Float()}{loadFloat()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::load\+Float (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava broj u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em value} & Broj pokretnom zarezu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_a18c2405ae1e1bdf5ff417d5bba7febdf}\label{classshader_1_1FontShader_a18c2405ae1e1bdf5ff417d5bba7febdf}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!load\+Float\+Vertex@{load\+Float\+Vertex}}
+\index{load\+Float\+Vertex@{load\+Float\+Vertex}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{load\+Float\+Vertex()}{loadFloatVertex()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::load\+Float\+Vertex (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{vec3}]{vertex }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava vektor koordinata u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em vertex} & Vektor koordinata. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_a28f790307f575713dba18aeef06b904e}\label{classshader_1_1FontShader_a28f790307f575713dba18aeef06b904e}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!load\+Matrix@{load\+Matrix}}
+\index{load\+Matrix@{load\+Matrix}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{load\+Matrix()}{loadMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::load\+Matrix (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em matrix} & Matrica. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_abe3a0b4d642aa405ec8e27cf10c8543b}\label{classshader_1_1FontShader_abe3a0b4d642aa405ec8e27cf10c8543b}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!load\+Shader@{load\+Shader}}
+\index{load\+Shader@{load\+Shader}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{load\+Shader()}{loadShader()}}
+{\footnotesize\ttfamily int shader\+::\+Font\+Shader\+::load\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{G\+Lenum}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava sejder fajlove. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em file\+Name} & Naziv sejder fajla. \\
+\hline
+{\em type} & Vrsta sejdera. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Identifikator sejdera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_a51f55279667df9c2661909a0bfbcdebe}\label{classshader_1_1FontShader_a51f55279667df9c2661909a0bfbcdebe}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!load\+Text\+Color@{load\+Text\+Color}}
+\index{load\+Text\+Color@{load\+Text\+Color}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{load\+Text\+Color()}{loadTextColor()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::load\+Text\+Color (\begin{DoxyParamCaption}\item[{vec3}]{text\+Color }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava boju teksta u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em text\+Color} & Boja u R\+GB formatu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_a050d93154a3baabd8a61344670f76a9d}\label{classshader_1_1FontShader_a050d93154a3baabd8a61344670f76a9d}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!load\+Transformation\+Matrix@{load\+Transformation\+Matrix}}
+\index{load\+Transformation\+Matrix@{load\+Transformation\+Matrix}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{load\+Transformation\+Matrix()}{loadTransformationMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::load\+Transformation\+Matrix (\begin{DoxyParamCaption}\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu transformacije u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em matrix} & Matrica transformacije. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_a15d46dfb7b060d5b067b2df5be395081}\label{classshader_1_1FontShader_a15d46dfb7b060d5b067b2df5be395081}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!start@{start}}
+\index{start@{start}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::start (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija pokrece sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1FontShader_a5cf531aabad7073196cddda0d2514392}\label{classshader_1_1FontShader_a5cf531aabad7073196cddda0d2514392}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!stop@{stop}}
+\index{stop@{stop}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void shader\+::\+Font\+Shader\+::stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija zaustavlja sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classshader_1_1FontShader_a502033bcf071a692c5373949325d51d8}\label{classshader_1_1FontShader_a502033bcf071a692c5373949325d51d8}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!fragment\+Shader\+ID@{fragment\+Shader\+ID}}
+\index{fragment\+Shader\+ID@{fragment\+Shader\+ID}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{fragment\+Shader\+ID}{fragmentShaderID}}
+{\footnotesize\ttfamily int shader\+::\+Font\+Shader\+::fragment\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator ucitanog sejder fajla. 
+
+\mbox{\Hypertarget{classshader_1_1FontShader_aeb4b26824dcb51dc7ba11f8a3df018e6}\label{classshader_1_1FontShader_aeb4b26824dcb51dc7ba11f8a3df018e6}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!location\+Text\+Color@{location\+Text\+Color}}
+\index{location\+Text\+Color@{location\+Text\+Color}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{location\+Text\+Color}{locationTextColor}}
+{\footnotesize\ttfamily int shader\+::\+Font\+Shader\+::location\+Text\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1FontShader_ae865d1cb3d301993b5d1b27956c8b923}\label{classshader_1_1FontShader_ae865d1cb3d301993b5d1b27956c8b923}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!location\+Transformation\+Matrix@{location\+Transformation\+Matrix}}
+\index{location\+Transformation\+Matrix@{location\+Transformation\+Matrix}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{location\+Transformation\+Matrix}{locationTransformationMatrix}}
+{\footnotesize\ttfamily int shader\+::\+Font\+Shader\+::location\+Transformation\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1FontShader_a5836d121dcb745fc151a76416ed82287}\label{classshader_1_1FontShader_a5836d121dcb745fc151a76416ed82287}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!program\+ID@{program\+ID}}
+\index{program\+ID@{program\+ID}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{program\+ID}{programID}}
+{\footnotesize\ttfamily int shader\+::\+Font\+Shader\+::program\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator programa koji izvrsava sejder fajlove. 
+
+\mbox{\Hypertarget{classshader_1_1FontShader_aa685de6b436e9d1a0bd0904e673ac035}\label{classshader_1_1FontShader_aa685de6b436e9d1a0bd0904e673ac035}} 
+\index{shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}!vertex\+Shader\+ID@{vertex\+Shader\+ID}}
+\index{vertex\+Shader\+ID@{vertex\+Shader\+ID}!shader\+::\+Font\+Shader@{shader\+::\+Font\+Shader}}
+\subsubsection{\texorpdfstring{vertex\+Shader\+ID}{vertexShaderID}}
+{\footnotesize\ttfamily int shader\+::\+Font\+Shader\+::vertex\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator ucitanog sejder fajla. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/shader/\hyperlink{FontShader_8h}{Font\+Shader.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/shader/\hyperlink{FontShader_8cpp}{Font\+Shader.\+cpp}\end{DoxyCompactItemize}

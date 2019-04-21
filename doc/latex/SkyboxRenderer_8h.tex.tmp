@@ -1,0 +1,56 @@
+\hypertarget{SkyboxRenderer_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\+Skybox\+Renderer.h}
+\label{SkyboxRenderer_8h}\index{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\+Skybox\+Renderer.\+h@{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\+Skybox\+Renderer.\+h}}
+
+
+Deklaracija klase Skybox\+Renderer.  
+
+
+{\ttfamily \#include \char`\"{}../model/\+Raw\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../shader/\+Skybox\+Shader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../core/\+Vao\+Loader.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/freeglut.\+h$>$}\newline
+{\ttfamily \#include $<$glm/vec3.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/mat4x4.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/type\+\_\+ptr.\+hpp$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Graf zavisnosti datoteka za Skybox\+Renderer.\+h\+:
+% FIG 0
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
+% FIG 1
+\subsection*{Klase, strukture i unije}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcore_1_1SkyboxRenderer}{core\+::\+Skybox\+Renderer}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1SkyboxRenderer}{Skybox\+Renderer} je zaduzena za iscrtavanje neba na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se iscrtava kutija neba na koju se nalepljuju dnevne i nocne teksture u zavisnosti od trenutnog dela igri. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Prostori imena}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecore}{core}
+\begin{DoxyCompactList}\small\item\em Prostor imena core. Sadrzi sve klase, funkcije i promenljive koje su od sustinskog znacaja za funkcionisanje programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Makro zamene}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{SkyboxRenderer_8h_af4a1f8e6131f8feced1f751879e130cf}{C\+U\+B\+E\+\_\+\+S\+I\+ZE}~500
+\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Deklaracija klase Skybox\+Renderer. 
+
+\begin{DoxyAuthor}{Autor}
+Dusan Pantelic 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Datum}
+Avgust 2018 
+\end{DoxyDate}
+
+
+\subsection{Dokumentacija makro zamene}
+\mbox{\Hypertarget{SkyboxRenderer_8h_af4a1f8e6131f8feced1f751879e130cf}\label{SkyboxRenderer_8h_af4a1f8e6131f8feced1f751879e130cf}} 
+\index{Skybox\+Renderer.\+h@{Skybox\+Renderer.\+h}!C\+U\+B\+E\+\_\+\+S\+I\+ZE@{C\+U\+B\+E\+\_\+\+S\+I\+ZE}}
+\index{C\+U\+B\+E\+\_\+\+S\+I\+ZE@{C\+U\+B\+E\+\_\+\+S\+I\+ZE}!Skybox\+Renderer.\+h@{Skybox\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{C\+U\+B\+E\+\_\+\+S\+I\+ZE}{CUBE\_SIZE}}
+{\footnotesize\ttfamily \#define C\+U\+B\+E\+\_\+\+S\+I\+ZE~500}
+

@@ -1,0 +1,20 @@
+digraph "/home/dusan/Documents/RG146-vitez-reda-zmaja/include/shader/SkyboxShader.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node32 [label="/home/dusan/Documents\l/RG146-vitez-reda-zmaja\l/include/shader/SkyboxShader.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node32 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node33 [label="/home/dusan/Documents\l/RG146-vitez-reda-zmaja\l/include/core/SkyboxRenderer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$SkyboxRenderer_8h.html",tooltip="Deklaracija klase SkyboxRenderer. "];
+  Node33 -> Node34 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node34 [label="/home/dusan/Documents\l/RG146-vitez-reda-zmaja\l/include/core/MainRenderer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MainRenderer_8h.html",tooltip="Deklaracija klase Render. "];
+  Node34 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node35 [label="/home/dusan/Documents\l/RG146-vitez-reda-zmaja\l/include/core/Engine.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Engine_8h.html",tooltip="Deklaracija klase Engine i deklaracija callback funkcija. "];
+  Node35 -> Node36 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node36 [label="/home/dusan/Documents\l/RG146-vitez-reda-zmaja\l/src/core/Engine.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Engine_8cpp.html"];
+  Node34 -> Node37 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node37 [label="/home/dusan/Documents\l/RG146-vitez-reda-zmaja\l/src/core/MainRenderer.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MainRenderer_8cpp.html"];
+  Node33 -> Node38 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node38 [label="/home/dusan/Documents\l/RG146-vitez-reda-zmaja\l/src/core/SkyboxRenderer.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$SkyboxRenderer_8cpp.html"];
+  Node32 -> Node39 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node39 [label="/home/dusan/Documents\l/RG146-vitez-reda-zmaja\l/src/shader/SkyboxShader.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$SkyboxShader_8cpp.html"];
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Opis datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/include/shader/SkyboxShader.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a23ad7151370bad26fc446775fa6e94.html">shader</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Klase, strukture i unije</a> &#124;
+<a href="#namespaces">Prostori imena</a> &#124;
+<a href="#define-members">Makro zamene</a>  </div>
+  <div class="headertitle">
+<div class="title">Opis datoteke SkyboxShader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Deklaracija klase SkyboxShader.  
+<a href="#details">Još...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="Math_8h_source.html">../utility/Math.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Camera_8h_source.html">../entity/Camera.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Light_8h_source.html">../entity/Light.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="FpsData_8h_source.html">../utility/FpsData.h</a>&quot;</code><br />
+<code>#include &lt;GL/glut.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;glm/vec3.hpp&gt;</code><br />
+<code>#include &lt;glm/mat4x4.hpp&gt;</code><br />
+<code>#include &lt;glm/gtc/matrix_transform.hpp&gt;</code><br />
+<code>#include &lt;glm/gtc/type_ptr.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf zavisnosti datoteka za SkyboxShader.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="SkyboxShader_8h__incl.png" border="0" usemap="#_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2shader_2SkyboxShader_8h" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku: </div>
+<div class="dyncontent">
+<div class="center"><img src="SkyboxShader_8h__dep__incl.png" border="0" usemap="#_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2shader_2SkyboxShader_8hdep" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+</div>
+<p><a href="SkyboxShader_8h_source.html">Izvorni kod.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Klase, strukture i unije</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classshader_1_1SkyboxShader.html">shader::SkyboxShader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klasa <a class="el" href="classshader_1_1SkyboxShader.html" title="Klasa SkyboxShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi ...">SkyboxShader</a> ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju.  <a href="classshader_1_1SkyboxShader.html#details">Još...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Prostori imena</h2></td></tr>
+<tr class="memitem:namespaceshader"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceshader.html">shader</a></td></tr>
+<tr class="memdesc:namespaceshader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prostor imena shader. Sadrzi sejder programe. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Makro zamene</h2></td></tr>
+<tr class="memitem:a120fb070bddb21f0bd899f50252c4cb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkyboxShader_8h.html#a120fb070bddb21f0bd899f50252c4cb5">GL_GLEXT_PROTOTYPES</a></td></tr>
+<tr class="separator:a120fb070bddb21f0bd899f50252c4cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01659d0d57190e0150566e9024ba8aed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkyboxShader_8h.html#a01659d0d57190e0150566e9024ba8aed">SKYBOX_ROTATION_SPEED</a>&#160;&#160;&#160;1.0</td></tr>
+<tr class="separator:a01659d0d57190e0150566e9024ba8aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80757f1a53908b5582a9ba77c133c079"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkyboxShader_8h.html#a80757f1a53908b5582a9ba77c133c079">VERTEX_SHADER_FILE</a>&#160;&#160;&#160;&quot;src/shader/SkyboxVertexShader.txt&quot;</td></tr>
+<tr class="separator:a80757f1a53908b5582a9ba77c133c079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1fd4f6150716de5c7ad0534cb64f5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SkyboxShader_8h.html#a1e1fd4f6150716de5c7ad0534cb64f5d">FRAGMENT_SHADER_FILE</a>&#160;&#160;&#160;&quot;src/shader/SkyboxFragmentShader.txt&quot;</td></tr>
+<tr class="separator:a1e1fd4f6150716de5c7ad0534cb64f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
+<div class="textblock"><p>Deklaracija klase SkyboxShader. </p>
+<dl class="section author"><dt>Autor</dt><dd>Dusan Pantelic </dd></dl>
+<dl class="section date"><dt>Datum</dt><dd>Avgust 2018 </dd></dl>
+</div><h2 class="groupheader">Dokumentacija makro zamene</h2>
+<a id="a1e1fd4f6150716de5c7ad0534cb64f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e1fd4f6150716de5c7ad0534cb64f5d">&#9670;&nbsp;</a></span>FRAGMENT_SHADER_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FRAGMENT_SHADER_FILE&#160;&#160;&#160;&quot;src/shader/SkyboxFragmentShader.txt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a120fb070bddb21f0bd899f50252c4cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120fb070bddb21f0bd899f50252c4cb5">&#9670;&nbsp;</a></span>GL_GLEXT_PROTOTYPES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GL_GLEXT_PROTOTYPES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01659d0d57190e0150566e9024ba8aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01659d0d57190e0150566e9024ba8aed">&#9670;&nbsp;</a></span>SKYBOX_ROTATION_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKYBOX_ROTATION_SPEED&#160;&#160;&#160;1.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80757f1a53908b5582a9ba77c133c079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80757f1a53908b5582a9ba77c133c079">&#9670;&nbsp;</a></span>VERTEX_SHADER_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VERTEX_SHADER_FILE&#160;&#160;&#160;&quot;src/shader/SkyboxVertexShader.txt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

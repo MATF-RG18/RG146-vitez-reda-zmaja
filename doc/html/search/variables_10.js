@@ -1,22 +1,14 @@
 var searchData=
 [
-  ['scale',['scale',['../classentity_1_1Entity.html#a59e5d5e3575df70cd5c74b5d739d84ca',1,'entity::Entity::scale()'],['../structtinyobj_1_1texture__option__t.html#a821b861e21a282c14ab702e45ac137dd',1,'tinyobj::texture_option_t::scale()']]],
-  ['screenheight',['screenHeight',['../classcore_1_1Engine.html#a40fe67e2a2dbbc34c1955fa2b28d87bc',1,'core::Engine']]],
-  ['screentitle',['screenTitle',['../classcore_1_1Engine.html#ad695d2314128b2500074282b10139804',1,'core::Engine']]],
-  ['screenwidth',['screenWidth',['../classcore_1_1Engine.html#a69e16377fb9f9420b7147e0465abd1f7',1,'core::Engine']]],
-  ['sensitivity',['sensitivity',['../classentity_1_1Camera.html#aae009950e0af66c4b5ed71f903b81513',1,'entity::Camera']]],
-  ['shader',['shader',['../classcore_1_1MainRenderer.html#a9e5b8ba9a151d64b79612b8631fc1255',1,'core::MainRenderer::shader()'],['../classcore_1_1Render.html#a220be4bb26b6cbec909953f247a7732c',1,'core::Render::shader()'],['../namespacecore.html#adf2f7f5f951bd01b06d6c792d7bf301b',1,'core::shader()']]],
-  ['sharpness',['sharpness',['../structtinyobj_1_1texture__option__t.html#a047615e368808b85d5a9cd740ff05846',1,'tinyobj::texture_option_t']]],
-  ['sheen',['sheen',['../structtinyobj_1_1material__t.html#a9c56ee4bf20385c8968a8b97b5d115c1',1,'tinyobj::material_t']]],
-  ['sheen_5ftexname',['sheen_texname',['../structtinyobj_1_1material__t.html#a0410f86a8fbe3f5d533d440f07781c04',1,'tinyobj::material_t']]],
-  ['sheen_5ftexopt',['sheen_texopt',['../structtinyobj_1_1material__t.html#a60a907d53aed60591b8d78ae220c7c4a',1,'tinyobj::material_t']]],
-  ['shine',['shine',['../classtexture_1_1ModelTexture.html#a7a74ed6a4d5fc91d1537fbf68e74ce03',1,'texture::ModelTexture']]],
-  ['shininess',['shininess',['../structtinyobj_1_1material__t.html#aed153afc668c6b4760da57e0e63e0e97',1,'tinyobj::material_t']]],
-  ['smoothing_5fgroup_5fids',['smoothing_group_ids',['../structtinyobj_1_1mesh__t.html#a89b017a3446709c264d94438a9d7541b',1,'tinyobj::mesh_t']]],
-  ['specular',['specular',['../structtinyobj_1_1material__t.html#ac03664c37a93e4da3441036abd0ad153',1,'tinyobj::material_t']]],
-  ['specular_5fhighlight_5ftexname',['specular_highlight_texname',['../structtinyobj_1_1material__t.html#a5c0e981297646f1fc1aeba616692c41b',1,'tinyobj::material_t']]],
-  ['specular_5fhighlight_5ftexopt',['specular_highlight_texopt',['../structtinyobj_1_1material__t.html#a9bfc943306506fa35abbb4377b8c071e',1,'tinyobj::material_t']]],
-  ['specular_5ftexname',['specular_texname',['../structtinyobj_1_1material__t.html#aed8c38d64472ba0db5186dba800b1b34',1,'tinyobj::material_t']]],
-  ['specular_5ftexopt',['specular_texopt',['../structtinyobj_1_1material__t.html#aec86b92157df1e714aeb1f28ebabae24',1,'tinyobj::material_t']]],
-  ['stringvalues',['stringValues',['../structtinyobj_1_1tag__t.html#a25634eea923961fd5b2520ea782397e8',1,'tinyobj::tag_t']]]
+  ['rawmodel',['rawModel',['../classmodel_1_1TexturedModel.html#ac6157368c7e55a78aa02f9546f5f2dc3',1,'model::TexturedModel']]],
+  ['reflection_5ftexname',['reflection_texname',['../structtinyobj_1_1material__t.html#a111faaae52874d8715c7719acf60d726',1,'tinyobj::material_t']]],
+  ['reflection_5ftexopt',['reflection_texopt',['../structtinyobj_1_1material__t.html#a8e9e796988061cf2446f65d79a6f6ae9',1,'tinyobj::material_t']]],
+  ['reflectivity',['reflectivity',['../classtexture_1_1ModelTexture.html#a230e6f2abbfc59eae1daf72eba177b90',1,'texture::ModelTexture']]],
+  ['renderer',['renderer',['../classcore_1_1MainRenderer.html#a3cdbf7f833cac2e18e8bb7d3cdd7728d',1,'core::MainRenderer::renderer()'],['../namespacecore.html#a4f2740ccbefd3bb34c624a8c99d6446d',1,'core::renderer()']]],
+  ['roll',['roll',['../classentity_1_1Camera.html#aed638e415fd894c7e39eb9fecf65afbb',1,'entity::Camera']]],
+  ['rotation',['rotation',['../classentity_1_1Entity.html#aedb4c5dc1cfbc8cb3f6deb565ea920cb',1,'entity::Entity::rotation()'],['../classfont_1_1Text.html#a4dc0a823fa5a8592b6d09e90b18226fb',1,'font::Text::rotation()'],['../classhud_1_1HudTexture.html#a79336d9ce1cc8ffb719355442b3b27c0',1,'hud::HudTexture::rotation()'],['../classshader_1_1SkyboxShader.html#a9e6ac7d8bed0467c3aa3b77f0fe80401',1,'shader::SkyboxShader::rotation()']]],
+  ['roughness',['roughness',['../structtinyobj_1_1material__t.html#a7e26f199e4a308bd9fd224349e266cea',1,'tinyobj::material_t']]],
+  ['roughness_5ftexname',['roughness_texname',['../structtinyobj_1_1material__t.html#a7d7a7791ad94f2a5eadc2c8ee8c9a902',1,'tinyobj::material_t']]],
+  ['roughness_5ftexopt',['roughness_texopt',['../structtinyobj_1_1material__t.html#aa02a56f4de95ab212e19a5d77b1f2d91',1,'tinyobj::material_t']]],
+  ['rtexture',['rTexture',['../classtexture_1_1TerrainTexturePack.html#a08b5f1b7665151358b6b162627fc37d4',1,'texture::TerrainTexturePack']]]
 ];

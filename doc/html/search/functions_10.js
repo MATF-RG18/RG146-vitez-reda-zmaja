@@ -1,24 +1,4 @@
 var searchData=
 [
-  ['_7ecamera',['~Camera',['../classentity_1_1Camera.html#ae161d83061be4f328de222570c3ece95',1,'entity::Camera']]],
-  ['_7eengine',['~Engine',['../classcore_1_1Engine.html#afadff2634c914c9f6c4ade95e78ff693',1,'core::Engine']]],
-  ['_7eentity',['~Entity',['../classentity_1_1Entity.html#a2d1aa154095b15e2dd6fa484ec00867e',1,'entity::Entity']]],
-  ['_7elight',['~Light',['../classentity_1_1Light.html#a7d0af8d0bea98a97c4e61c23b562f6fa',1,'entity::Light']]],
-  ['_7emainrenderer',['~MainRenderer',['../classcore_1_1MainRenderer.html#a1e5f39d2178a7c5738efa9be9bd486da',1,'core::MainRenderer']]],
-  ['_7ematerialfilereader',['~MaterialFileReader',['../classtinyobj_1_1MaterialFileReader.html#a0a00d236393f9972b676a2fb6fe2b819',1,'tinyobj::MaterialFileReader']]],
-  ['_7ematerialreader',['~MaterialReader',['../classtinyobj_1_1MaterialReader.html#afd62ceccd9b373801226e037ea1a5f9f',1,'tinyobj::MaterialReader']]],
-  ['_7ematerialstreamreader',['~MaterialStreamReader',['../classtinyobj_1_1MaterialStreamReader.html#afcafa6030bbf8ea8fdbc6aefb8bebc74',1,'tinyobj::MaterialStreamReader']]],
-  ['_7emodeltexture',['~ModelTexture',['../classtexture_1_1ModelTexture.html#ab0ce63043b8241b064a2c233ec24bfae',1,'texture::ModelTexture']]],
-  ['_7eobjloader',['~ObjLoader',['../classcore_1_1ObjLoader.html#a127a52d790309d913f7f3711a5d8c3f4',1,'core::ObjLoader']]],
-  ['_7eplayer',['~Player',['../classentity_1_1Player.html#aba0d4255d0d8624d01067418279bc9a1',1,'entity::Player']]],
-  ['_7erawmodel',['~RawModel',['../classmodel_1_1RawModel.html#a44e687484478b0747abe25baa3533b71',1,'model::RawModel']]],
-  ['_7erender',['~Render',['../classcore_1_1Render.html#ac11786f4406333b24a33b61c5e2506f4',1,'core::Render']]],
-  ['_7eshader',['~Shader',['../classshader_1_1Shader.html#a8d9b3ffe1ba804f91a26bd79a7588a34',1,'shader::Shader']]],
-  ['_7eterrain',['~Terrain',['../classterrain_1_1Terrain.html#a6aa3821700c2010298c1ad9f83971670',1,'terrain::Terrain']]],
-  ['_7eterrainrenderer',['~TerrainRenderer',['../classcore_1_1TerrainRenderer.html#a18e79e2c14c4f2196d410bbde7b85060',1,'core::TerrainRenderer']]],
-  ['_7eterrainshader',['~TerrainShader',['../classshader_1_1TerrainShader.html#afc13c4f8a4b8b6f737c9729d47c62550',1,'shader::TerrainShader']]],
-  ['_7eterraintexture',['~TerrainTexture',['../classtexture_1_1TerrainTexture.html#a461b011cd3b6ee4b48b083c1705d0113',1,'texture::TerrainTexture']]],
-  ['_7eterraintexturepack',['~TerrainTexturePack',['../classtexture_1_1TerrainTexturePack.html#a763a7fb6c053d0998fc17b12adb28c3a',1,'texture::TerrainTexturePack']]],
-  ['_7etexturedmodel',['~TexturedModel',['../classmodel_1_1TexturedModel.html#a8a11ba96d5a73a962a2ffcf8c5a53afe',1,'model::TexturedModel']]],
-  ['_7evaoloader',['~VaoLoader',['../classcore_1_1VaoLoader.html#a1b522bb4b83dbe751783fee04ac712d3',1,'core::VaoLoader']]]
+  ['vaoloader',['VaoLoader',['../classcore_1_1VaoLoader.html#ab025be7312c274b9737b19d308bd5845',1,'core::VaoLoader']]]
 ];

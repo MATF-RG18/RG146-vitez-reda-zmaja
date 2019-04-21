@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/include/font/Text.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_f399a52153988f581ac4960bafc8695e.html">font</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Text.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Text_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _TEXT_H_</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _TEXT_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// Ukljucivanje korsnicki defininisanih biblioteka.</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../font/Font.h&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// Ukljucivanje biblioteka</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;glm/vec3.hpp&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;glm/vec2.hpp&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Koriscenje prostora imena za jednostavniji i pregledniji kod.</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceglm.html">glm</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefont.html">font</a> {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classfont_1_1Text.html">   33</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classfont_1_1Text.html">Text</a> {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// Privatne promenljive klase.</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classfont_1_1Text.html#abcaa4524d10d18e780ff793cca49a168">   38</a></span>&#160;    <a class="code" href="classfont_1_1Font.html">Font</a> *<a class="code" href="classfont_1_1Text.html#abcaa4524d10d18e780ff793cca49a168">font</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfont_1_1Text.html#aee63974ff23d9e971bbd04fe041ccb07">   41</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classfont_1_1Text.html#aee63974ff23d9e971bbd04fe041ccb07">text</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classfont_1_1Text.html#a65489ce0d1c13aaf242804987dba8b8d">   44</a></span>&#160;    vec2 <a class="code" href="classfont_1_1Text.html#a65489ce0d1c13aaf242804987dba8b8d">position</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classfont_1_1Text.html#aec4f985d466d9f4b10cc426e393d6f14">   47</a></span>&#160;    vec2 <a class="code" href="classfont_1_1Text.html#aec4f985d466d9f4b10cc426e393d6f14">scale</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classfont_1_1Text.html#a4dc0a823fa5a8592b6d09e90b18226fb">   50</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classfont_1_1Text.html#a4dc0a823fa5a8592b6d09e90b18226fb">rotation</a>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classfont_1_1Text.html#a83c69eadc420a466aaade60393f35b24">   53</a></span>&#160;    vec3 <a class="code" href="classfont_1_1Text.html#a83c69eadc420a466aaade60393f35b24">color</a>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Javne funkcije klase</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classfont_1_1Text.html">Text</a>(<a class="code" href="classfont_1_1Font.html">Font</a> *font, <span class="keywordtype">string</span> text, vec2 position, vec2 scale, <span class="keywordtype">float</span> rotation, vec3 color);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    ~<a class="code" href="classfont_1_1Text.html">Text</a>();</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> setFont(<a class="code" href="classfont_1_1Font.html">Font</a> *font);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> setText(<span class="keywordtype">string</span> text);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> setPosition(vec2 position);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> setScale(vec2 scale);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> setRotation(<span class="keywordtype">float</span> rotation);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> setColor(vec3 color);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="classfont_1_1Font.html">Font</a> *getFont();</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">string</span> getText();</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    vec2 getPosition();</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    vec2 getScale();</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">float</span> getRotation();</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    vec3 getColor();</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  };</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;} <span class="comment">// font</span></div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classfont_1_1Text_html_abcaa4524d10d18e780ff793cca49a168"><div class="ttname"><a href="classfont_1_1Text.html#abcaa4524d10d18e780ff793cca49a168">font::Text::font</a></div><div class="ttdeci">Font * font</div><div class="ttdoc">Pokazivac na instancu klase Font. </div><div class="ttdef"><b>Definition:</b> Text.h:38</div></div>
+<div class="ttc" id="classfont_1_1Text_html"><div class="ttname"><a href="classfont_1_1Text.html">font::Text</a></div><div class="ttdoc">Klasa Text odredjuje tekst sa njegovim osobinama. Pomocu klase Text cuvamo podatke o tekstu kao i nje...</div><div class="ttdef"><b>Definition:</b> Text.h:33</div></div>
+<div class="ttc" id="namespacefont_html"><div class="ttname"><a href="namespacefont.html">font</a></div><div class="ttdoc">Prostor imena font. Sadrzi sve klase, funkcije i promenljive za rad sa tekstom. </div><div class="ttdef"><b>Definition:</b> Font.cpp:6</div></div>
+<div class="ttc" id="namespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classfont_1_1Text_html_aee63974ff23d9e971bbd04fe041ccb07"><div class="ttname"><a href="classfont_1_1Text.html#aee63974ff23d9e971bbd04fe041ccb07">font::Text::text</a></div><div class="ttdeci">string text</div><div class="ttdoc">Niska koju treba iscrtati. </div><div class="ttdef"><b>Definition:</b> Text.h:41</div></div>
+<div class="ttc" id="classfont_1_1Font_html"><div class="ttname"><a href="classfont_1_1Font.html">font::Font</a></div><div class="ttdoc">Klasa Font odredjuje font. Pomocu klase Font ucitavamo font fajl u ttf formatu. </div><div class="ttdef"><b>Definition:</b> Font.h:35</div></div>
+<div class="ttc" id="classfont_1_1Text_html_aec4f985d466d9f4b10cc426e393d6f14"><div class="ttname"><a href="classfont_1_1Text.html#aec4f985d466d9f4b10cc426e393d6f14">font::Text::scale</a></div><div class="ttdeci">vec2 scale</div><div class="ttdoc">Sklaliranje po X i Y osi. </div><div class="ttdef"><b>Definition:</b> Text.h:47</div></div>
+<div class="ttc" id="classfont_1_1Text_html_a4dc0a823fa5a8592b6d09e90b18226fb"><div class="ttname"><a href="classfont_1_1Text.html#a4dc0a823fa5a8592b6d09e90b18226fb">font::Text::rotation</a></div><div class="ttdeci">float rotation</div><div class="ttdoc">Rotacija teksta po Z osi. </div><div class="ttdef"><b>Definition:</b> Text.h:50</div></div>
+<div class="ttc" id="classfont_1_1Text_html_a83c69eadc420a466aaade60393f35b24"><div class="ttname"><a href="classfont_1_1Text.html#a83c69eadc420a466aaade60393f35b24">font::Text::color</a></div><div class="ttdeci">vec3 color</div><div class="ttdoc">Boja teksta u RGB formatu. </div><div class="ttdef"><b>Definition:</b> Text.h:53</div></div>
+<div class="ttc" id="classfont_1_1Text_html_a65489ce0d1c13aaf242804987dba8b8d"><div class="ttname"><a href="classfont_1_1Text.html#a65489ce0d1c13aaf242804987dba8b8d">font::Text::position</a></div><div class="ttdeci">vec2 position</div><div class="ttdoc">Pozicija prvog karaktera niske u svetu. </div><div class="ttdef"><b>Definition:</b> Text.h:44</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

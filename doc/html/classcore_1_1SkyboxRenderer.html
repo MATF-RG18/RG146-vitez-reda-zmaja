@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Dokumentacija klase core::SkyboxRenderer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecore.html">core</a></li><li class="navelem"><a class="el" href="classcore_1_1SkyboxRenderer.html">SkyboxRenderer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Javni članovi</a> &#124;
+<a href="#pri-methods">Privatni članovi</a> &#124;
+<a href="#pri-attribs">Privatni članovi</a> &#124;
+<a href="classcore_1_1SkyboxRenderer-members.html">Spisak svih članova</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacija klase core::SkyboxRenderer</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="classcore_1_1SkyboxRenderer.html" title="Klasa SkyboxRenderer je zaduzena za iscrtavanje neba na ekran. Tokom pokretanja prvo se vrsi priprema...">SkyboxRenderer</a> je zaduzena za iscrtavanje neba na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se iscrtava kutija neba na koju se nalepljuju dnevne i nocne teksture u zavisnosti od trenutnog dela igri.  
+ <a href="classcore_1_1SkyboxRenderer.html#details">Još...</a></p>
+
+<p><code>#include &lt;<a class="el" href="SkyboxRenderer_8h_source.html">SkyboxRenderer.h</a>&gt;</code></p>
+<div class="dynheader">
+Klasni dijagram za core::SkyboxRenderer:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcore_1_1SkyboxRenderer__coll__graph.png" border="0" usemap="#core_1_1SkyboxRenderer_coll__map" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Javni članovi</h2></td></tr>
+<tr class="memitem:a2b7e44e90391374f8583c2143a6b1e25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#a2b7e44e90391374f8583c2143a6b1e25">SkyboxRenderer</a> (<a class="el" href="classcore_1_1VaoLoader.html">VaoLoader</a> *<a class="el" href="namespacecore.html#a78dd24784c415d3759a0f71b8f4f9f81">vaoLoader</a>)</td></tr>
+<tr class="memdesc:a2b7e44e90391374f8583c2143a6b1e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klase.  <a href="#a2b7e44e90391374f8583c2143a6b1e25">Još...</a><br /></td></tr>
+<tr class="separator:a2b7e44e90391374f8583c2143a6b1e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c93db248d8df20a05823139e8751a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#aa2c93db248d8df20a05823139e8751a7">~SkyboxRenderer</a> ()</td></tr>
+<tr class="memdesc:aa2c93db248d8df20a05823139e8751a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klase.  <a href="#aa2c93db248d8df20a05823139e8751a7">Još...</a><br /></td></tr>
+<tr class="separator:aa2c93db248d8df20a05823139e8751a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab6906aa0c5ff7931088a0ddd52e4c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#a6ab6906aa0c5ff7931088a0ddd52e4c6">render</a> (<a class="el" href="classentity_1_1Camera.html">Camera</a> *<a class="el" href="namespacecore.html#a9d645c490b142886301256f6cf9c65c2">camera</a>, float r, float g, float b, <a class="el" href="classutility_1_1FpsData.html">FpsData</a> *<a class="el" href="namespacecore.html#a5d5106eb67b679c9260ebe0a9faf14db">fpsData</a>)</td></tr>
+<tr class="memdesc:a6ab6906aa0c5ff7931088a0ddd52e4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija iscrtava nebo na ekran.  <a href="#a6ab6906aa0c5ff7931088a0ddd52e4c6">Još...</a><br /></td></tr>
+<tr class="separator:a6ab6906aa0c5ff7931088a0ddd52e4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:a27b7410b8520160da370a2707ac29b7e"><td class="memItemLeft" align="right" valign="top">mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#a27b7410b8520160da370a2707ac29b7e">createProjectionMatrix</a> ()</td></tr>
+<tr class="memdesc:a27b7410b8520160da370a2707ac29b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija kreira matricu projekcije.  <a href="#a27b7410b8520160da370a2707ac29b7e">Još...</a><br /></td></tr>
+<tr class="separator:a27b7410b8520160da370a2707ac29b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555969e8b9ba0bf2a2dea2756974c3b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#a555969e8b9ba0bf2a2dea2756974c3b6">bindTextures</a> (<a class="el" href="classutility_1_1FpsData.html">FpsData</a> *<a class="el" href="namespacecore.html#a5d5106eb67b679c9260ebe0a9faf14db">fpsData</a>)</td></tr>
+<tr class="memdesc:a555969e8b9ba0bf2a2dea2756974c3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija povezuje dnevne i nocne teksture u zavisnosti od vremena.  <a href="#a555969e8b9ba0bf2a2dea2756974c3b6">Još...</a><br /></td></tr>
+<tr class="separator:a555969e8b9ba0bf2a2dea2756974c3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:added919bd8c7e122c8c5702b9cb0e5e7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#added919bd8c7e122c8c5702b9cb0e5e7">FOV</a> = 70</td></tr>
+<tr class="memdesc:added919bd8c7e122c8c5702b9cb0e5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polje vidika.  <a href="#added919bd8c7e122c8c5702b9cb0e5e7">Još...</a><br /></td></tr>
+<tr class="separator:added919bd8c7e122c8c5702b9cb0e5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5fc53b032c0cde164920baf85d0bb56"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#ad5fc53b032c0cde164920baf85d0bb56">NEAR_PLANE</a> = 0.1</td></tr>
+<tr class="memdesc:ad5fc53b032c0cde164920baf85d0bb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prednji deo vidljivosti.  <a href="#ad5fc53b032c0cde164920baf85d0bb56">Još...</a><br /></td></tr>
+<tr class="separator:ad5fc53b032c0cde164920baf85d0bb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a304ec1ed4e472a481bd4b78ffa49d520"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#a304ec1ed4e472a481bd4b78ffa49d520">FAR_PLANE</a> = 1000</td></tr>
+<tr class="memdesc:a304ec1ed4e472a481bd4b78ffa49d520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zadnji deo vidljivosti.  <a href="#a304ec1ed4e472a481bd4b78ffa49d520">Još...</a><br /></td></tr>
+<tr class="separator:a304ec1ed4e472a481bd4b78ffa49d520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80185112c11644ffc888f86ed8282b1"><td class="memItemLeft" align="right" valign="top">vector&lt; const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#ad80185112c11644ffc888f86ed8282b1">dayTextureFiles</a></td></tr>
+<tr class="memdesc:ad80185112c11644ffc888f86ed8282b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vektor imena dnevih tekstura neba.  <a href="#ad80185112c11644ffc888f86ed8282b1">Još...</a><br /></td></tr>
+<tr class="separator:ad80185112c11644ffc888f86ed8282b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53670cdc9ac01d301dd873213befa1a"><td class="memItemLeft" align="right" valign="top">vector&lt; const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#aa53670cdc9ac01d301dd873213befa1a">nightTextureFiles</a></td></tr>
+<tr class="memdesc:aa53670cdc9ac01d301dd873213befa1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vektor imena nocnih tekstura neba.  <a href="#aa53670cdc9ac01d301dd873213befa1a">Još...</a><br /></td></tr>
+<tr class="separator:aa53670cdc9ac01d301dd873213befa1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a68b3bd047fc64ce132ae5c21ad9e77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel_1_1RawModel.html">RawModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#a1a68b3bd047fc64ce132ae5c21ad9e77">cube</a></td></tr>
+<tr class="memdesc:a1a68b3bd047fc64ce132ae5c21ad9e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase RawModel.  <a href="#a1a68b3bd047fc64ce132ae5c21ad9e77">Još...</a><br /></td></tr>
+<tr class="separator:a1a68b3bd047fc64ce132ae5c21ad9e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4500833da09fe980955bc6f354b042ff"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#a4500833da09fe980955bc6f354b042ff">dayTextureID</a></td></tr>
+<tr class="memdesc:a4500833da09fe980955bc6f354b042ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifikator teksture dnevnog neba.  <a href="#a4500833da09fe980955bc6f354b042ff">Još...</a><br /></td></tr>
+<tr class="separator:a4500833da09fe980955bc6f354b042ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4284f49fcad25e10008ba656eb55037d"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#a4284f49fcad25e10008ba656eb55037d">nightTextureID</a></td></tr>
+<tr class="memdesc:a4284f49fcad25e10008ba656eb55037d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifikator teksture nocnog neba.  <a href="#a4284f49fcad25e10008ba656eb55037d">Još...</a><br /></td></tr>
+<tr class="separator:a4284f49fcad25e10008ba656eb55037d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf903d3d4e235215d0252b3e2693ad8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classshader_1_1SkyboxShader.html">SkyboxShader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#abaf903d3d4e235215d0252b3e2693ad8">skyboxShader</a></td></tr>
+<tr class="memdesc:abaf903d3d4e235215d0252b3e2693ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase SkyboxShader.  <a href="#abaf903d3d4e235215d0252b3e2693ad8">Još...</a><br /></td></tr>
+<tr class="separator:abaf903d3d4e235215d0252b3e2693ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399f6a16f9c5778419942ae35a0d3e82"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1SkyboxRenderer.html#a399f6a16f9c5778419942ae35a0d3e82">time</a></td></tr>
+<tr class="memdesc:a399f6a16f9c5778419942ae35a0d3e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trenutno vreme u igri.  <a href="#a399f6a16f9c5778419942ae35a0d3e82">Još...</a><br /></td></tr>
+<tr class="separator:a399f6a16f9c5778419942ae35a0d3e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
+<div class="textblock"><p>Klasa <a class="el" href="classcore_1_1SkyboxRenderer.html" title="Klasa SkyboxRenderer je zaduzena za iscrtavanje neba na ekran. Tokom pokretanja prvo se vrsi priprema...">SkyboxRenderer</a> je zaduzena za iscrtavanje neba na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se iscrtava kutija neba na koju se nalepljuju dnevne i nocne teksture u zavisnosti od trenutnog dela igri. </p>
+</div><h2 class="groupheader">Dokumentacija konstruktora i destruktora</h2>
+<a id="a2b7e44e90391374f8583c2143a6b1e25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b7e44e90391374f8583c2143a6b1e25">&#9670;&nbsp;</a></span>SkyboxRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core::SkyboxRenderer::SkyboxRenderer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcore_1_1VaoLoader.html">VaoLoader</a> *&#160;</td>
+          <td class="paramname"><em>vaoLoader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vaoLoader</td><td>Pokazivac na instancu klase <a class="el" href="classcore_1_1VaoLoader.html" title="Klasa VaoLoader je zaduzena za ucitavanje atributa u memoriju. Zadatak ove klase je ucitavanje i defi...">VaoLoader</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa2c93db248d8df20a05823139e8751a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c93db248d8df20a05823139e8751a7">&#9670;&nbsp;</a></span>~SkyboxRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core::SkyboxRenderer::~SkyboxRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija funkcija članica</h2>
+<a id="a555969e8b9ba0bf2a2dea2756974c3b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555969e8b9ba0bf2a2dea2756974c3b6">&#9670;&nbsp;</a></span>bindTextures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::SkyboxRenderer::bindTextures </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classutility_1_1FpsData.html">FpsData</a> *&#160;</td>
+          <td class="paramname"><em>fpsData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija povezuje dnevne i nocne teksture u zavisnosti od vremena. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fpsData</td><td>Pokazivac na instancu klase FpsData. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a27b7410b8520160da370a2707ac29b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27b7410b8520160da370a2707ac29b7e">&#9670;&nbsp;</a></span>createProjectionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mat4 core::SkyboxRenderer::createProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija kreira matricu projekcije. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>mat4 Matrica projekcije. </dd></dl>
+
+</div>
+</div>
+<a id="a6ab6906aa0c5ff7931088a0ddd52e4c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ab6906aa0c5ff7931088a0ddd52e4c6">&#9670;&nbsp;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::SkyboxRenderer::render </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentity_1_1Camera.html">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classutility_1_1FpsData.html">FpsData</a> *&#160;</td>
+          <td class="paramname"><em>fpsData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija iscrtava nebo na ekran. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera</td><td>Pokazivac na instancu klase Camera. </td></tr>
+    <tr><td class="paramname">r</td><td>Kolicina crvene boje u boji magle. </td></tr>
+    <tr><td class="paramname">g</td><td>Kolicina zelene boje u boji magle. </td></tr>
+    <tr><td class="paramname">b</td><td>Kolicina plave boje u boji magle. </td></tr>
+    <tr><td class="paramname">fpsData</td><td>Pokazivac na instancu klase FpsData. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija atributa</h2>
+<a id="a1a68b3bd047fc64ce132ae5c21ad9e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a68b3bd047fc64ce132ae5c21ad9e77">&#9670;&nbsp;</a></span>cube</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmodel_1_1RawModel.html">RawModel</a>* core::SkyboxRenderer::cube</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase RawModel. </p>
+
+</div>
+</div>
+<a id="ad80185112c11644ffc888f86ed8282b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80185112c11644ffc888f86ed8282b1">&#9670;&nbsp;</a></span>dayTextureFiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;const char *&gt; core::SkyboxRenderer::dayTextureFiles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vektor imena dnevih tekstura neba. </p>
+
+</div>
+</div>
+<a id="a4500833da09fe980955bc6f354b042ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4500833da09fe980955bc6f354b042ff">&#9670;&nbsp;</a></span>dayTextureID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint core::SkyboxRenderer::dayTextureID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Identifikator teksture dnevnog neba. </p>
+
+</div>
+</div>
+<a id="a304ec1ed4e472a481bd4b78ffa49d520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a304ec1ed4e472a481bd4b78ffa49d520">&#9670;&nbsp;</a></span>FAR_PLANE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float core::SkyboxRenderer::FAR_PLANE = 1000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zadnji deo vidljivosti. </p>
+
+</div>
+</div>
+<a id="added919bd8c7e122c8c5702b9cb0e5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#added919bd8c7e122c8c5702b9cb0e5e7">&#9670;&nbsp;</a></span>FOV</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float core::SkyboxRenderer::FOV = 70</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Polje vidika. </p>
+
+</div>
+</div>
+<a id="ad5fc53b032c0cde164920baf85d0bb56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5fc53b032c0cde164920baf85d0bb56">&#9670;&nbsp;</a></span>NEAR_PLANE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float core::SkyboxRenderer::NEAR_PLANE = 0.1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prednji deo vidljivosti. </p>
+
+</div>
+</div>
+<a id="aa53670cdc9ac01d301dd873213befa1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa53670cdc9ac01d301dd873213befa1a">&#9670;&nbsp;</a></span>nightTextureFiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;const char *&gt; core::SkyboxRenderer::nightTextureFiles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vektor imena nocnih tekstura neba. </p>
+
+</div>
+</div>
+<a id="a4284f49fcad25e10008ba656eb55037d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4284f49fcad25e10008ba656eb55037d">&#9670;&nbsp;</a></span>nightTextureID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint core::SkyboxRenderer::nightTextureID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Identifikator teksture nocnog neba. </p>
+
+</div>
+</div>
+<a id="abaf903d3d4e235215d0252b3e2693ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf903d3d4e235215d0252b3e2693ad8">&#9670;&nbsp;</a></span>skyboxShader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classshader_1_1SkyboxShader.html">SkyboxShader</a>* core::SkyboxRenderer::skyboxShader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase SkyboxShader. </p>
+
+</div>
+</div>
+<a id="a399f6a16f9c5778419942ae35a0d3e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399f6a16f9c5778419942ae35a0d3e82">&#9670;&nbsp;</a></span>time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float core::SkyboxRenderer::time</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Trenutno vreme u igri. </p>
+
+</div>
+</div>
+<hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/include/core/<a class="el" href="SkyboxRenderer_8h_source.html">SkyboxRenderer.h</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/src/core/<a class="el" href="SkyboxRenderer_8cpp.html">SkyboxRenderer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

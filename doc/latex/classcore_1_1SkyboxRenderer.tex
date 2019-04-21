@@ -1,0 +1,264 @@
+\hypertarget{classcore_1_1SkyboxRenderer}{}\section{Dokumentacija klase core\+:\+:Skybox\+Renderer}
+\label{classcore_1_1SkyboxRenderer}\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+
+
+Klasa \hyperlink{classcore_1_1SkyboxRenderer}{Skybox\+Renderer} je zaduzena za iscrtavanje neba na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se iscrtava kutija neba na koju se nalepljuju dnevne i nocne teksture u zavisnosti od trenutnog dela igri.  
+
+
+
+
+{\ttfamily \#include $<$Skybox\+Renderer.\+h$>$}
+
+
+
+Klasni dijagram za core\+:\+:Skybox\+Renderer\+:
+% FIG 0
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1SkyboxRenderer_a2b7e44e90391374f8583c2143a6b1e25}{Skybox\+Renderer} (\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$\hyperlink{namespacecore_a78dd24784c415d3759a0f71b8f4f9f81}{vao\+Loader})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classcore_1_1SkyboxRenderer_aa2c93db248d8df20a05823139e8751a7}{$\sim$\+Skybox\+Renderer} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1SkyboxRenderer_a6ab6906aa0c5ff7931088a0ddd52e4c6}{render} (\hyperlink{classentity_1_1Camera}{Camera} $\ast$\hyperlink{namespacecore_a9d645c490b142886301256f6cf9c65c2}{camera}, float r, float g, float b, \hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$\hyperlink{namespacecore_a5d5106eb67b679c9260ebe0a9faf14db}{fps\+Data})
+\begin{DoxyCompactList}\small\item\em Funkcija iscrtava nebo na ekran. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+mat4 \hyperlink{classcore_1_1SkyboxRenderer_a27b7410b8520160da370a2707ac29b7e}{create\+Projection\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Funkcija kreira matricu projekcije. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1SkyboxRenderer_a555969e8b9ba0bf2a2dea2756974c3b6}{bind\+Textures} (\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$\hyperlink{namespacecore_a5d5106eb67b679c9260ebe0a9faf14db}{fps\+Data})
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje dnevne i nocne teksture u zavisnosti od vremena. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classcore_1_1SkyboxRenderer_added919bd8c7e122c8c5702b9cb0e5e7}{F\+OV} = 70
+\begin{DoxyCompactList}\small\item\em Polje vidika. \end{DoxyCompactList}\item 
+float \hyperlink{classcore_1_1SkyboxRenderer_ad5fc53b032c0cde164920baf85d0bb56}{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE} = 0.\+1
+\begin{DoxyCompactList}\small\item\em Prednji deo vidljivosti. \end{DoxyCompactList}\item 
+float \hyperlink{classcore_1_1SkyboxRenderer_a304ec1ed4e472a481bd4b78ffa49d520}{F\+A\+R\+\_\+\+P\+L\+A\+NE} = 1000
+\begin{DoxyCompactList}\small\item\em Zadnji deo vidljivosti. \end{DoxyCompactList}\item 
+vector$<$ const char $\ast$ $>$ \hyperlink{classcore_1_1SkyboxRenderer_ad80185112c11644ffc888f86ed8282b1}{day\+Texture\+Files}
+\begin{DoxyCompactList}\small\item\em Vektor imena dnevih tekstura neba. \end{DoxyCompactList}\item 
+vector$<$ const char $\ast$ $>$ \hyperlink{classcore_1_1SkyboxRenderer_aa53670cdc9ac01d301dd873213befa1a}{night\+Texture\+Files}
+\begin{DoxyCompactList}\small\item\em Vektor imena nocnih tekstura neba. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classcore_1_1SkyboxRenderer_a1a68b3bd047fc64ce132ae5c21ad9e77}{cube}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Raw\+Model. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{classcore_1_1SkyboxRenderer_a4500833da09fe980955bc6f354b042ff}{day\+Texture\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator teksture dnevnog neba. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{classcore_1_1SkyboxRenderer_a4284f49fcad25e10008ba656eb55037d}{night\+Texture\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator teksture nocnog neba. \end{DoxyCompactList}\item 
+\hyperlink{classshader_1_1SkyboxShader}{Skybox\+Shader} $\ast$ \hyperlink{classcore_1_1SkyboxRenderer_abaf903d3d4e235215d0252b3e2693ad8}{skybox\+Shader}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Skybox\+Shader. \end{DoxyCompactList}\item 
+float \hyperlink{classcore_1_1SkyboxRenderer_a399f6a16f9c5778419942ae35a0d3e82}{time}
+\begin{DoxyCompactList}\small\item\em Trenutno vreme u igri. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classcore_1_1SkyboxRenderer}{Skybox\+Renderer} je zaduzena za iscrtavanje neba na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se iscrtava kutija neba na koju se nalepljuju dnevne i nocne teksture u zavisnosti od trenutnog dela igri. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_a2b7e44e90391374f8583c2143a6b1e25}\label{classcore_1_1SkyboxRenderer_a2b7e44e90391374f8583c2143a6b1e25}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!Skybox\+Renderer@{Skybox\+Renderer}}
+\index{Skybox\+Renderer@{Skybox\+Renderer}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{Skybox\+Renderer()}{SkyboxRenderer()}}
+{\footnotesize\ttfamily core\+::\+Skybox\+Renderer\+::\+Skybox\+Renderer (\begin{DoxyParamCaption}\item[{\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$}]{vao\+Loader }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em vao\+Loader} & Pokazivac na instancu klase \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_aa2c93db248d8df20a05823139e8751a7}\label{classcore_1_1SkyboxRenderer_aa2c93db248d8df20a05823139e8751a7}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!````~Skybox\+Renderer@{$\sim$\+Skybox\+Renderer}}
+\index{````~Skybox\+Renderer@{$\sim$\+Skybox\+Renderer}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Skybox\+Renderer()}{~SkyboxRenderer()}}
+{\footnotesize\ttfamily core\+::\+Skybox\+Renderer\+::$\sim$\+Skybox\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_a555969e8b9ba0bf2a2dea2756974c3b6}\label{classcore_1_1SkyboxRenderer_a555969e8b9ba0bf2a2dea2756974c3b6}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!bind\+Textures@{bind\+Textures}}
+\index{bind\+Textures@{bind\+Textures}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{bind\+Textures()}{bindTextures()}}
+{\footnotesize\ttfamily void core\+::\+Skybox\+Renderer\+::bind\+Textures (\begin{DoxyParamCaption}\item[{\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$}]{fps\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija povezuje dnevne i nocne teksture u zavisnosti od vremena. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em fps\+Data} & Pokazivac na instancu klase Fps\+Data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_a27b7410b8520160da370a2707ac29b7e}\label{classcore_1_1SkyboxRenderer_a27b7410b8520160da370a2707ac29b7e}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!create\+Projection\+Matrix@{create\+Projection\+Matrix}}
+\index{create\+Projection\+Matrix@{create\+Projection\+Matrix}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{create\+Projection\+Matrix()}{createProjectionMatrix()}}
+{\footnotesize\ttfamily mat4 core\+::\+Skybox\+Renderer\+::create\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija kreira matricu projekcije. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+mat4 Matrica projekcije. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_a6ab6906aa0c5ff7931088a0ddd52e4c6}\label{classcore_1_1SkyboxRenderer_a6ab6906aa0c5ff7931088a0ddd52e4c6}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!render@{render}}
+\index{render@{render}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void core\+::\+Skybox\+Renderer\+::render (\begin{DoxyParamCaption}\item[{\hyperlink{classentity_1_1Camera}{Camera} $\ast$}]{camera,  }\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$}]{fps\+Data }\end{DoxyParamCaption})}
+
+
+
+Funkcija iscrtava nebo na ekran. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em camera} & Pokazivac na instancu klase Camera. \\
+\hline
+{\em r} & Kolicina crvene boje u boji magle. \\
+\hline
+{\em g} & Kolicina zelene boje u boji magle. \\
+\hline
+{\em b} & Kolicina plave boje u boji magle. \\
+\hline
+{\em fps\+Data} & Pokazivac na instancu klase Fps\+Data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_a1a68b3bd047fc64ce132ae5c21ad9e77}\label{classcore_1_1SkyboxRenderer_a1a68b3bd047fc64ce132ae5c21ad9e77}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!cube@{cube}}
+\index{cube@{cube}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{cube}{cube}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model}$\ast$ core\+::\+Skybox\+Renderer\+::cube\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Raw\+Model. 
+
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_ad80185112c11644ffc888f86ed8282b1}\label{classcore_1_1SkyboxRenderer_ad80185112c11644ffc888f86ed8282b1}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!day\+Texture\+Files@{day\+Texture\+Files}}
+\index{day\+Texture\+Files@{day\+Texture\+Files}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{day\+Texture\+Files}{dayTextureFiles}}
+{\footnotesize\ttfamily vector$<$const char $\ast$$>$ core\+::\+Skybox\+Renderer\+::day\+Texture\+Files\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vektor imena dnevih tekstura neba. 
+
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_a4500833da09fe980955bc6f354b042ff}\label{classcore_1_1SkyboxRenderer_a4500833da09fe980955bc6f354b042ff}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!day\+Texture\+ID@{day\+Texture\+ID}}
+\index{day\+Texture\+ID@{day\+Texture\+ID}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{day\+Texture\+ID}{dayTextureID}}
+{\footnotesize\ttfamily G\+Luint core\+::\+Skybox\+Renderer\+::day\+Texture\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator teksture dnevnog neba. 
+
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_a304ec1ed4e472a481bd4b78ffa49d520}\label{classcore_1_1SkyboxRenderer_a304ec1ed4e472a481bd4b78ffa49d520}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!F\+A\+R\+\_\+\+P\+L\+A\+NE@{F\+A\+R\+\_\+\+P\+L\+A\+NE}}
+\index{F\+A\+R\+\_\+\+P\+L\+A\+NE@{F\+A\+R\+\_\+\+P\+L\+A\+NE}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{F\+A\+R\+\_\+\+P\+L\+A\+NE}{FAR\_PLANE}}
+{\footnotesize\ttfamily float core\+::\+Skybox\+Renderer\+::\+F\+A\+R\+\_\+\+P\+L\+A\+NE = 1000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zadnji deo vidljivosti. 
+
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_added919bd8c7e122c8c5702b9cb0e5e7}\label{classcore_1_1SkyboxRenderer_added919bd8c7e122c8c5702b9cb0e5e7}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!F\+OV@{F\+OV}}
+\index{F\+OV@{F\+OV}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{F\+OV}{FOV}}
+{\footnotesize\ttfamily float core\+::\+Skybox\+Renderer\+::\+F\+OV = 70\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Polje vidika. 
+
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_ad5fc53b032c0cde164920baf85d0bb56}\label{classcore_1_1SkyboxRenderer_ad5fc53b032c0cde164920baf85d0bb56}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!N\+E\+A\+R\+\_\+\+P\+L\+A\+NE@{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}}
+\index{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE@{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}{NEAR\_PLANE}}
+{\footnotesize\ttfamily float core\+::\+Skybox\+Renderer\+::\+N\+E\+A\+R\+\_\+\+P\+L\+A\+NE = 0.\+1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prednji deo vidljivosti. 
+
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_aa53670cdc9ac01d301dd873213befa1a}\label{classcore_1_1SkyboxRenderer_aa53670cdc9ac01d301dd873213befa1a}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!night\+Texture\+Files@{night\+Texture\+Files}}
+\index{night\+Texture\+Files@{night\+Texture\+Files}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{night\+Texture\+Files}{nightTextureFiles}}
+{\footnotesize\ttfamily vector$<$const char $\ast$$>$ core\+::\+Skybox\+Renderer\+::night\+Texture\+Files\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vektor imena nocnih tekstura neba. 
+
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_a4284f49fcad25e10008ba656eb55037d}\label{classcore_1_1SkyboxRenderer_a4284f49fcad25e10008ba656eb55037d}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!night\+Texture\+ID@{night\+Texture\+ID}}
+\index{night\+Texture\+ID@{night\+Texture\+ID}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{night\+Texture\+ID}{nightTextureID}}
+{\footnotesize\ttfamily G\+Luint core\+::\+Skybox\+Renderer\+::night\+Texture\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator teksture nocnog neba. 
+
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_abaf903d3d4e235215d0252b3e2693ad8}\label{classcore_1_1SkyboxRenderer_abaf903d3d4e235215d0252b3e2693ad8}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!skybox\+Shader@{skybox\+Shader}}
+\index{skybox\+Shader@{skybox\+Shader}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{skybox\+Shader}{skyboxShader}}
+{\footnotesize\ttfamily \hyperlink{classshader_1_1SkyboxShader}{Skybox\+Shader}$\ast$ core\+::\+Skybox\+Renderer\+::skybox\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Skybox\+Shader. 
+
+\mbox{\Hypertarget{classcore_1_1SkyboxRenderer_a399f6a16f9c5778419942ae35a0d3e82}\label{classcore_1_1SkyboxRenderer_a399f6a16f9c5778419942ae35a0d3e82}} 
+\index{core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}!time@{time}}
+\index{time@{time}!core\+::\+Skybox\+Renderer@{core\+::\+Skybox\+Renderer}}
+\subsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily float core\+::\+Skybox\+Renderer\+::time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Trenutno vreme u igri. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\hyperlink{SkyboxRenderer_8h}{Skybox\+Renderer.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/core/\hyperlink{SkyboxRenderer_8cpp}{Skybox\+Renderer.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,395 @@
+\hypertarget{classfont_1_1Text}{}\section{Dokumentacija klase font\+:\+:Text}
+\label{classfont_1_1Text}\index{font\+::\+Text@{font\+::\+Text}}
+
+
+Klasa \hyperlink{classfont_1_1Text}{Text} odredjuje tekst sa njegovim osobinama. Pomocu klase \hyperlink{classfont_1_1Text}{Text} cuvamo podatke o tekstu kao i njegove osobine poput boje i pozicije u svetu koje kasnije koristimo za iscrtavanje teksta.  
+
+
+
+
+{\ttfamily \#include $<$Text.\+h$>$}
+
+
+
+Klasni dijagram za font\+:\+:Text\+:
+% FIG 0
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfont_1_1Text_ab5d3ba772a694bed6c4aae538d78f4a2}{Text} (\hyperlink{classfont_1_1Font}{Font} $\ast$\hyperlink{classfont_1_1Text_abcaa4524d10d18e780ff793cca49a168}{font}, string \hyperlink{classfont_1_1Text_aee63974ff23d9e971bbd04fe041ccb07}{text}, vec2 \hyperlink{classfont_1_1Text_a65489ce0d1c13aaf242804987dba8b8d}{position}, vec2 \hyperlink{classfont_1_1Text_aec4f985d466d9f4b10cc426e393d6f14}{scale}, float \hyperlink{classfont_1_1Text_a4dc0a823fa5a8592b6d09e90b18226fb}{rotation}, vec3 \hyperlink{classfont_1_1Text_a83c69eadc420a466aaade60393f35b24}{color})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classfont_1_1Text_a50beaa869e82f58675eec45b8b9a292d}{$\sim$\+Text} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classfont_1_1Text_a0011424ac1cb959e601463e48c8e58dd}{set\+Font} (\hyperlink{classfont_1_1Font}{Font} $\ast$\hyperlink{classfont_1_1Text_abcaa4524d10d18e780ff793cca49a168}{font})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja vrednost privatne promenljive font. \end{DoxyCompactList}\item 
+void \hyperlink{classfont_1_1Text_a3eae0fce16f5ea89ae3b0fae55cf3e93}{set\+Text} (string \hyperlink{classfont_1_1Text_aee63974ff23d9e971bbd04fe041ccb07}{text})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja vrednost privatne promenljive text. \end{DoxyCompactList}\item 
+void \hyperlink{classfont_1_1Text_adf4bb1e9486fcb905ec62a6ad776dbde}{set\+Position} (vec2 \hyperlink{classfont_1_1Text_a65489ce0d1c13aaf242804987dba8b8d}{position})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja vrednost privatne promenljive position. \end{DoxyCompactList}\item 
+void \hyperlink{classfont_1_1Text_ab2162e943ec0ab36a19a2762e1352369}{set\+Scale} (vec2 \hyperlink{classfont_1_1Text_aec4f985d466d9f4b10cc426e393d6f14}{scale})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja vrednost privatne promenljive scale. \end{DoxyCompactList}\item 
+void \hyperlink{classfont_1_1Text_a4687ff4053103b3fdf730fd8585aea7e}{set\+Rotation} (float \hyperlink{classfont_1_1Text_a4dc0a823fa5a8592b6d09e90b18226fb}{rotation})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja vrednost privatne promenljive rotation. \end{DoxyCompactList}\item 
+void \hyperlink{classfont_1_1Text_a650c183619f7f2a41ef7cb9a50d04f05}{set\+Color} (vec3 \hyperlink{classfont_1_1Text_a83c69eadc420a466aaade60393f35b24}{color})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja vrednost privatne promenljive color. \end{DoxyCompactList}\item 
+\hyperlink{classfont_1_1Font}{Font} $\ast$ \hyperlink{classfont_1_1Text_a8ef804f199ccc299a180ad82e588fa38}{get\+Font} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca vrednost privatne promenljive font. \end{DoxyCompactList}\item 
+string \hyperlink{classfont_1_1Text_ae78670d785e8071d66298c84bcf89330}{get\+Text} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca vrednost privatne promenljive text. \end{DoxyCompactList}\item 
+vec2 \hyperlink{classfont_1_1Text_a6d9c2d80d02c59ce0811190ba0ee5cb8}{get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca vrednost privatne promenljive position. \end{DoxyCompactList}\item 
+vec2 \hyperlink{classfont_1_1Text_af94e22a422e17028fef39e69b46736f3}{get\+Scale} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca vrednost privatne promenljive scale. \end{DoxyCompactList}\item 
+float \hyperlink{classfont_1_1Text_a5e59176805cd037ae0c528b84703961c}{get\+Rotation} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca vrednost privatne promenljive rotation. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classfont_1_1Text_ae947a015d868f5750e28b10010b0cb9d}{get\+Color} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca vrednost privatne promenljive color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfont_1_1Font}{Font} $\ast$ \hyperlink{classfont_1_1Text_abcaa4524d10d18e780ff793cca49a168}{font}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase \hyperlink{classfont_1_1Font}{Font}. \end{DoxyCompactList}\item 
+string \hyperlink{classfont_1_1Text_aee63974ff23d9e971bbd04fe041ccb07}{text}
+\begin{DoxyCompactList}\small\item\em Niska koju treba iscrtati. \end{DoxyCompactList}\item 
+vec2 \hyperlink{classfont_1_1Text_a65489ce0d1c13aaf242804987dba8b8d}{position}
+\begin{DoxyCompactList}\small\item\em Pozicija prvog karaktera niske u svetu. \end{DoxyCompactList}\item 
+vec2 \hyperlink{classfont_1_1Text_aec4f985d466d9f4b10cc426e393d6f14}{scale}
+\begin{DoxyCompactList}\small\item\em Sklaliranje po X i Y osi. \end{DoxyCompactList}\item 
+float \hyperlink{classfont_1_1Text_a4dc0a823fa5a8592b6d09e90b18226fb}{rotation}
+\begin{DoxyCompactList}\small\item\em Rotacija teksta po Z osi. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classfont_1_1Text_a83c69eadc420a466aaade60393f35b24}{color}
+\begin{DoxyCompactList}\small\item\em Boja teksta u R\+GB formatu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classfont_1_1Text}{Text} odredjuje tekst sa njegovim osobinama. Pomocu klase \hyperlink{classfont_1_1Text}{Text} cuvamo podatke o tekstu kao i njegove osobine poput boje i pozicije u svetu koje kasnije koristimo za iscrtavanje teksta. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classfont_1_1Text_ab5d3ba772a694bed6c4aae538d78f4a2}\label{classfont_1_1Text_ab5d3ba772a694bed6c4aae538d78f4a2}} 
+\index{font\+::\+Text@{font\+::\+Text}!Text@{Text}}
+\index{Text@{Text}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{Text()}{Text()}}
+{\footnotesize\ttfamily font\+::\+Text\+::\+Text (\begin{DoxyParamCaption}\item[{\hyperlink{classfont_1_1Font}{Font} $\ast$}]{font,  }\item[{string}]{text,  }\item[{vec2}]{position,  }\item[{vec2}]{scale,  }\item[{float}]{rotation,  }\item[{vec3}]{color }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em font} & Pokazivac na instancu klase \hyperlink{classfont_1_1Font}{Font}. \\
+\hline
+{\em text} & Niska koju treba iscrtati. \\
+\hline
+{\em position} & Pozicija prvog karaktera niske u svetu. \\
+\hline
+{\em scale} & Sklaliranje po X i Y osi. \\
+\hline
+{\em Rotacija} & teksta po Z osi. \\
+\hline
+{\em color} & Boja teksta u R\+GB formatu. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfont_1_1Text_a50beaa869e82f58675eec45b8b9a292d}\label{classfont_1_1Text_a50beaa869e82f58675eec45b8b9a292d}} 
+\index{font\+::\+Text@{font\+::\+Text}!````~Text@{$\sim$\+Text}}
+\index{````~Text@{$\sim$\+Text}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{$\sim$\+Text()}{~Text()}}
+{\footnotesize\ttfamily font\+::\+Text\+::$\sim$\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classfont_1_1Text_ae947a015d868f5750e28b10010b0cb9d}\label{classfont_1_1Text_ae947a015d868f5750e28b10010b0cb9d}} 
+\index{font\+::\+Text@{font\+::\+Text}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily vec3 font\+::\+Text\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca vrednost privatne promenljive color. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vec3 Boja teksta u R\+GB formatu. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Text_a8ef804f199ccc299a180ad82e588fa38}\label{classfont_1_1Text_a8ef804f199ccc299a180ad82e588fa38}} 
+\index{font\+::\+Text@{font\+::\+Text}!get\+Font@{get\+Font}}
+\index{get\+Font@{get\+Font}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{get\+Font()}{getFont()}}
+{\footnotesize\ttfamily \hyperlink{classfont_1_1Font}{Font} $\ast$ font\+::\+Text\+::get\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca vrednost privatne promenljive font. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+\hyperlink{classfont_1_1Font}{Font} $\ast$ Pokazivac na instancu klase \hyperlink{classfont_1_1Font}{Font}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Text_a6d9c2d80d02c59ce0811190ba0ee5cb8}\label{classfont_1_1Text_a6d9c2d80d02c59ce0811190ba0ee5cb8}} 
+\index{font\+::\+Text@{font\+::\+Text}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily vec2 font\+::\+Text\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca vrednost privatne promenljive position. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vec2 Pozicija prvog karaktera niske u svetu. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Text_a5e59176805cd037ae0c528b84703961c}\label{classfont_1_1Text_a5e59176805cd037ae0c528b84703961c}} 
+\index{font\+::\+Text@{font\+::\+Text}!get\+Rotation@{get\+Rotation}}
+\index{get\+Rotation@{get\+Rotation}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
+{\footnotesize\ttfamily float font\+::\+Text\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca vrednost privatne promenljive rotation. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Rotacija po Z osi. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Text_af94e22a422e17028fef39e69b46736f3}\label{classfont_1_1Text_af94e22a422e17028fef39e69b46736f3}} 
+\index{font\+::\+Text@{font\+::\+Text}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{get\+Scale()}{getScale()}}
+{\footnotesize\ttfamily vec2 font\+::\+Text\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca vrednost privatne promenljive scale. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vec2 Sklaliranje po X i Y osi. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Text_ae78670d785e8071d66298c84bcf89330}\label{classfont_1_1Text_ae78670d785e8071d66298c84bcf89330}} 
+\index{font\+::\+Text@{font\+::\+Text}!get\+Text@{get\+Text}}
+\index{get\+Text@{get\+Text}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{get\+Text()}{getText()}}
+{\footnotesize\ttfamily string font\+::\+Text\+::get\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca vrednost privatne promenljive text. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+string Niska koju treba iscrtati. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Text_a650c183619f7f2a41ef7cb9a50d04f05}\label{classfont_1_1Text_a650c183619f7f2a41ef7cb9a50d04f05}} 
+\index{font\+::\+Text@{font\+::\+Text}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void font\+::\+Text\+::set\+Color (\begin{DoxyParamCaption}\item[{vec3}]{color }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja vrednost privatne promenljive color. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em color} & Boja teksta u R\+GB formatu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Text_a0011424ac1cb959e601463e48c8e58dd}\label{classfont_1_1Text_a0011424ac1cb959e601463e48c8e58dd}} 
+\index{font\+::\+Text@{font\+::\+Text}!set\+Font@{set\+Font}}
+\index{set\+Font@{set\+Font}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{set\+Font()}{setFont()}}
+{\footnotesize\ttfamily void font\+::\+Text\+::set\+Font (\begin{DoxyParamCaption}\item[{\hyperlink{classfont_1_1Font}{Font} $\ast$}]{font }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja vrednost privatne promenljive font. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em font} & Pokazivac na instancu klase \hyperlink{classfont_1_1Font}{Font}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Text_adf4bb1e9486fcb905ec62a6ad776dbde}\label{classfont_1_1Text_adf4bb1e9486fcb905ec62a6ad776dbde}} 
+\index{font\+::\+Text@{font\+::\+Text}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void font\+::\+Text\+::set\+Position (\begin{DoxyParamCaption}\item[{vec2}]{position }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja vrednost privatne promenljive position. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em position} & Pozicija prvog karaktera niske u svetu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Text_a4687ff4053103b3fdf730fd8585aea7e}\label{classfont_1_1Text_a4687ff4053103b3fdf730fd8585aea7e}} 
+\index{font\+::\+Text@{font\+::\+Text}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}}
+{\footnotesize\ttfamily void font\+::\+Text\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{rotation }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja vrednost privatne promenljive rotation. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em rotation} & Rotacija po Z osi. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Text_ab2162e943ec0ab36a19a2762e1352369}\label{classfont_1_1Text_ab2162e943ec0ab36a19a2762e1352369}} 
+\index{font\+::\+Text@{font\+::\+Text}!set\+Scale@{set\+Scale}}
+\index{set\+Scale@{set\+Scale}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{set\+Scale()}{setScale()}}
+{\footnotesize\ttfamily void font\+::\+Text\+::set\+Scale (\begin{DoxyParamCaption}\item[{vec2}]{scale }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja vrednost privatne promenljive scale. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em scale} & Sklaliranje po X i Y osi. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Text_a3eae0fce16f5ea89ae3b0fae55cf3e93}\label{classfont_1_1Text_a3eae0fce16f5ea89ae3b0fae55cf3e93}} 
+\index{font\+::\+Text@{font\+::\+Text}!set\+Text@{set\+Text}}
+\index{set\+Text@{set\+Text}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{set\+Text()}{setText()}}
+{\footnotesize\ttfamily void font\+::\+Text\+::set\+Text (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja vrednost privatne promenljive text. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em text} & Niska koju treba iscrtati. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classfont_1_1Text_a83c69eadc420a466aaade60393f35b24}\label{classfont_1_1Text_a83c69eadc420a466aaade60393f35b24}} 
+\index{font\+::\+Text@{font\+::\+Text}!color@{color}}
+\index{color@{color}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily vec3 font\+::\+Text\+::color\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Boja teksta u R\+GB formatu. 
+
+\mbox{\Hypertarget{classfont_1_1Text_abcaa4524d10d18e780ff793cca49a168}\label{classfont_1_1Text_abcaa4524d10d18e780ff793cca49a168}} 
+\index{font\+::\+Text@{font\+::\+Text}!font@{font}}
+\index{font@{font}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \hyperlink{classfont_1_1Font}{Font}$\ast$ font\+::\+Text\+::font\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase \hyperlink{classfont_1_1Font}{Font}. 
+
+\mbox{\Hypertarget{classfont_1_1Text_a65489ce0d1c13aaf242804987dba8b8d}\label{classfont_1_1Text_a65489ce0d1c13aaf242804987dba8b8d}} 
+\index{font\+::\+Text@{font\+::\+Text}!position@{position}}
+\index{position@{position}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily vec2 font\+::\+Text\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pozicija prvog karaktera niske u svetu. 
+
+\mbox{\Hypertarget{classfont_1_1Text_a4dc0a823fa5a8592b6d09e90b18226fb}\label{classfont_1_1Text_a4dc0a823fa5a8592b6d09e90b18226fb}} 
+\index{font\+::\+Text@{font\+::\+Text}!rotation@{rotation}}
+\index{rotation@{rotation}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily float font\+::\+Text\+::rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rotacija teksta po Z osi. 
+
+\mbox{\Hypertarget{classfont_1_1Text_aec4f985d466d9f4b10cc426e393d6f14}\label{classfont_1_1Text_aec4f985d466d9f4b10cc426e393d6f14}} 
+\index{font\+::\+Text@{font\+::\+Text}!scale@{scale}}
+\index{scale@{scale}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily vec2 font\+::\+Text\+::scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sklaliranje po X i Y osi. 
+
+\mbox{\Hypertarget{classfont_1_1Text_aee63974ff23d9e971bbd04fe041ccb07}\label{classfont_1_1Text_aee63974ff23d9e971bbd04fe041ccb07}} 
+\index{font\+::\+Text@{font\+::\+Text}!text@{text}}
+\index{text@{text}!font\+::\+Text@{font\+::\+Text}}
+\subsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily string font\+::\+Text\+::text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Niska koju treba iscrtati. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/font/\hyperlink{Text_8h}{Text.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/font/\hyperlink{Text_8cpp}{Text.\+cpp}\end{DoxyCompactItemize}

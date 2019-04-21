@@ -112,9 +112,9 @@ Javni članovi</h2></td></tr>
 <tr class="memitem:af3d0b548d6daeb37d03f9fa57fb28f8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Player.html#af3d0b548d6daeb37d03f9fa57fb28f8a">handleKeyDown</a> (unsigned char key)</td></tr>
 <tr class="memdesc:af3d0b548d6daeb37d03f9fa57fb28f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija obradjuje ulaz sa tastature.  <a href="#af3d0b548d6daeb37d03f9fa57fb28f8a">Još...</a><br /></td></tr>
 <tr class="separator:af3d0b548d6daeb37d03f9fa57fb28f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b0a7ab96a4ba7c24c7ddac8f07c4d5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Player.html#a9b0a7ab96a4ba7c24c7ddac8f07c4d5e">move</a> ()</td></tr>
-<tr class="memdesc:a9b0a7ab96a4ba7c24c7ddac8f07c4d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija pomera igraca.  <a href="#a9b0a7ab96a4ba7c24c7ddac8f07c4d5e">Još...</a><br /></td></tr>
-<tr class="separator:a9b0a7ab96a4ba7c24c7ddac8f07c4d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d89fa34bbc7a1a1db01db45e2da60f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Player.html#ac4d89fa34bbc7a1a1db01db45e2da60f">move</a> (<a class="el" href="classutility_1_1FpsData.html">FpsData</a> *fpsData)</td></tr>
+<tr class="memdesc:ac4d89fa34bbc7a1a1db01db45e2da60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija pomera igraca.  <a href="#ac4d89fa34bbc7a1a1db01db45e2da60f">Još...</a><br /></td></tr>
+<tr class="separator:ac4d89fa34bbc7a1a1db01db45e2da60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classentity_1_1Entity"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classentity_1_1Entity')"><img src="closed.png" alt="-"/>&#160;Javni članovi inherited from <a class="el" href="classentity_1_1Entity.html">entity::Entity</a></td></tr>
 <tr class="memitem:a1668042c968a630c82bbbcec8520400e inherit pub_methods_classentity_1_1Entity"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1Entity.html#a1668042c968a630c82bbbcec8520400e">Entity</a> (<a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *<a class="el" href="classentity_1_1Entity.html#ac7848c5d47d4b2bf12c84ddbbc32052a">model</a>, vec3 <a class="el" href="classentity_1_1Entity.html#ad409c7f2085024479b276c2b6948bddb">position</a>, vec3 <a class="el" href="classentity_1_1Entity.html#aedb4c5dc1cfbc8cb3f6deb565ea920cb">rotation</a>, float <a class="el" href="classentity_1_1Entity.html#a59e5d5e3575df70cd5c74b5d739d84ca">scale</a>)</td></tr>
 <tr class="memdesc:a1668042c968a630c82bbbcec8520400e inherit pub_methods_classentity_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klase.  <a href="classentity_1_1Entity.html#a1668042c968a630c82bbbcec8520400e">Još...</a><br /></td></tr>
@@ -219,10 +219,10 @@ Privatni članovi</h2></td></tr>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
     <tr><td class="paramname">model</td><td>Pokazivac na instancu klase TexturedModel. </td></tr>
-    <tr><td class="paramname">position</td><td>Pozicija entiteta </td></tr>
-    <tr><td class="paramname">rotation</td><td>Rotacija entiteta </td></tr>
-    <tr><td class="paramname">scale</td><td>Skaliranje entiteta </td></tr>
-    <tr><td class="paramname">terrain</td><td>Pokazivac na instancu klase Terrain </td></tr>
+    <tr><td class="paramname">position</td><td>Pozicija entiteta. </td></tr>
+    <tr><td class="paramname">rotation</td><td>Rotacija entiteta. </td></tr>
+    <tr><td class="paramname">scale</td><td>Skaliranje entiteta. </td></tr>
+    <tr><td class="paramname">terrain</td><td>Pokazivac na instancu klase Terrain. </td></tr>
   </table>
   </dd>
 </dl>
@@ -274,7 +274,7 @@ Privatni članovi</h2></td></tr>
 <p>Funkcija obradjuje ulaz sa tastature. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td>Karakter koji je pritisnut na tastaturi </td></tr>
+    <tr><td class="paramname">key</td><td>Karakter koji je pritisnut na tastaturi. </td></tr>
   </table>
   </dd>
 </dl>
@@ -301,7 +301,7 @@ Privatni članovi</h2></td></tr>
 <p>Funkcija obradjuje ulaz sa tastature. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td>Karakter koji je otpusten na tastaturi </td></tr>
+    <tr><td class="paramname">key</td><td>Karakter koji je otpusten na tastaturi. </td></tr>
   </table>
   </dd>
 </dl>
@@ -309,8 +309,8 @@ Privatni članovi</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b0a7ab96a4ba7c24c7ddac8f07c4d5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b0a7ab96a4ba7c24c7ddac8f07c4d5e">&#9670;&nbsp;</a></span>move()</h2>
+<a id="ac4d89fa34bbc7a1a1db01db45e2da60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4d89fa34bbc7a1a1db01db45e2da60f">&#9670;&nbsp;</a></span>move()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,7 +318,8 @@ Privatni članovi</h2></td></tr>
         <tr>
           <td class="memname">void entity::Player::move </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classutility_1_1FpsData.html">FpsData</a> *&#160;</td>
+          <td class="paramname"><em>fpsData</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -331,7 +332,7 @@ Privatni članovi</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Vrednost funkcije</dt><dd>void. </dd></dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -433,8 +434,8 @@ Privatni članovi</h2></td></tr>
 </div>
 </div>
 <hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
-<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/include/entity/<a class="el" href="Player_8h_source.html">Player.h</a></li>
-<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/src/entity/<a class="el" href="Player_8cpp.html">Player.cpp</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/include/entity/<a class="el" href="Player_8h_source.html">Player.h</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/src/entity/<a class="el" href="Player_8cpp.html">Player.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

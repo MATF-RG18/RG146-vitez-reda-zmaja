@@ -1,0 +1,150 @@
+\hypertarget{classfont_1_1Font}{}\section{Dokumentacija klase font\+:\+:Font}
+\label{classfont_1_1Font}\index{font\+::\+Font@{font\+::\+Font}}
+
+
+Klasa \hyperlink{classfont_1_1Font}{Font} odredjuje font. Pomocu klase \hyperlink{classfont_1_1Font}{Font} ucitavamo font fajl u ttf formatu.  
+
+
+
+
+{\ttfamily \#include $<$Font.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfont_1_1Font_aed65c4302c3fe8426e60a6809ae766c1}{Font} (const char $\ast$font\+Name, int font\+Size)
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classfont_1_1Font_af5ef955edcbbcd84fc49510123b4037e}{$\sim$\+Font} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classfont_1_1FontData}{Font\+Data} $\ast$ \hyperlink{classfont_1_1Font_a7b63e5c88b80f597a2a334f44df001f0}{get\+Char\+Data} (G\+Lchar c)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca podatke o karakteru iz mape karaktera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfont_1_1Font_af0e0a6951622786fe3175719e9b48590}{load\+Font\+Data} ()
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava u mapu karaktera informacije za A\+S\+C\+II karaktere. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ G\+Lchar, \hyperlink{classfont_1_1FontData}{Font\+Data} $\ast$ $>$ \hyperlink{classfont_1_1Font_a8c7aa4a1fef0409f481b7bda30b1269e}{font\+Characters}
+\begin{DoxyCompactList}\small\item\em Mapa karaktera sa svim njegovim osobinama unutar \hyperlink{classfont_1_1FontData}{Font\+Data} klase. \end{DoxyCompactList}\item 
+F\+T\+\_\+\+Library \hyperlink{classfont_1_1Font_a18b0337c00acccf27f72250100f2a1f1}{ft}
+\begin{DoxyCompactList}\small\item\em Promenljiva biblioteke Free\+Type za inicijalizaciju biblioteke. \end{DoxyCompactList}\item 
+F\+T\+\_\+\+Face \hyperlink{classfont_1_1Font_a1217a07286461eceda8467479619ec2e}{face}
+\begin{DoxyCompactList}\small\item\em Promenljiva biblioteke Free\+Type za ucitavanje informacija o fontu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classfont_1_1Font}{Font} odredjuje font. Pomocu klase \hyperlink{classfont_1_1Font}{Font} ucitavamo font fajl u ttf formatu. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classfont_1_1Font_aed65c4302c3fe8426e60a6809ae766c1}\label{classfont_1_1Font_aed65c4302c3fe8426e60a6809ae766c1}} 
+\index{font\+::\+Font@{font\+::\+Font}!Font@{Font}}
+\index{Font@{Font}!font\+::\+Font@{font\+::\+Font}}
+\subsubsection{\texorpdfstring{Font()}{Font()}}
+{\footnotesize\ttfamily font\+::\+Font\+::\+Font (\begin{DoxyParamCaption}\item[{const char $\ast$}]{font\+Name,  }\item[{int}]{font\+Size }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em font\+Name} & Ime fonta. \\
+\hline
+{\em font\+Size} & Velicina fonta. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfont_1_1Font_af5ef955edcbbcd84fc49510123b4037e}\label{classfont_1_1Font_af5ef955edcbbcd84fc49510123b4037e}} 
+\index{font\+::\+Font@{font\+::\+Font}!````~Font@{$\sim$\+Font}}
+\index{````~Font@{$\sim$\+Font}!font\+::\+Font@{font\+::\+Font}}
+\subsubsection{\texorpdfstring{$\sim$\+Font()}{~Font()}}
+{\footnotesize\ttfamily font\+::\+Font\+::$\sim$\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classfont_1_1Font_a7b63e5c88b80f597a2a334f44df001f0}\label{classfont_1_1Font_a7b63e5c88b80f597a2a334f44df001f0}} 
+\index{font\+::\+Font@{font\+::\+Font}!get\+Char\+Data@{get\+Char\+Data}}
+\index{get\+Char\+Data@{get\+Char\+Data}!font\+::\+Font@{font\+::\+Font}}
+\subsubsection{\texorpdfstring{get\+Char\+Data()}{getCharData()}}
+{\footnotesize\ttfamily \hyperlink{classfont_1_1FontData}{Font\+Data} $\ast$ font\+::\+Font\+::get\+Char\+Data (\begin{DoxyParamCaption}\item[{G\+Lchar}]{c }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca podatke o karakteru iz mape karaktera. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em c} & Karakter koji se cita iz mape karaktera. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+\hyperlink{classfont_1_1FontData}{Font\+Data} $\ast$ Pokazivac na instancu klase \hyperlink{classfont_1_1FontData}{Font\+Data}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1Font_af0e0a6951622786fe3175719e9b48590}\label{classfont_1_1Font_af0e0a6951622786fe3175719e9b48590}} 
+\index{font\+::\+Font@{font\+::\+Font}!load\+Font\+Data@{load\+Font\+Data}}
+\index{load\+Font\+Data@{load\+Font\+Data}!font\+::\+Font@{font\+::\+Font}}
+\subsubsection{\texorpdfstring{load\+Font\+Data()}{loadFontData()}}
+{\footnotesize\ttfamily void font\+::\+Font\+::load\+Font\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava u mapu karaktera informacije za A\+S\+C\+II karaktere. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classfont_1_1Font_a1217a07286461eceda8467479619ec2e}\label{classfont_1_1Font_a1217a07286461eceda8467479619ec2e}} 
+\index{font\+::\+Font@{font\+::\+Font}!face@{face}}
+\index{face@{face}!font\+::\+Font@{font\+::\+Font}}
+\subsubsection{\texorpdfstring{face}{face}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Face font\+::\+Font\+::face\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Promenljiva biblioteke Free\+Type za ucitavanje informacija o fontu. 
+
+\mbox{\Hypertarget{classfont_1_1Font_a8c7aa4a1fef0409f481b7bda30b1269e}\label{classfont_1_1Font_a8c7aa4a1fef0409f481b7bda30b1269e}} 
+\index{font\+::\+Font@{font\+::\+Font}!font\+Characters@{font\+Characters}}
+\index{font\+Characters@{font\+Characters}!font\+::\+Font@{font\+::\+Font}}
+\subsubsection{\texorpdfstring{font\+Characters}{fontCharacters}}
+{\footnotesize\ttfamily map$<$G\+Lchar, \hyperlink{classfont_1_1FontData}{Font\+Data}$\ast$$>$ font\+::\+Font\+::font\+Characters\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mapa karaktera sa svim njegovim osobinama unutar \hyperlink{classfont_1_1FontData}{Font\+Data} klase. 
+
+\mbox{\Hypertarget{classfont_1_1Font_a18b0337c00acccf27f72250100f2a1f1}\label{classfont_1_1Font_a18b0337c00acccf27f72250100f2a1f1}} 
+\index{font\+::\+Font@{font\+::\+Font}!ft@{ft}}
+\index{ft@{ft}!font\+::\+Font@{font\+::\+Font}}
+\subsubsection{\texorpdfstring{ft}{ft}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Library font\+::\+Font\+::ft\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Promenljiva biblioteke Free\+Type za inicijalizaciju biblioteke. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/font/\hyperlink{Font_8h}{Font.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/font/\hyperlink{Font_8cpp}{Font.\+cpp}\end{DoxyCompactItemize}

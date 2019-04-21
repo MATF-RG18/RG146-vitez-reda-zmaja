@@ -1,5 +1,5 @@
-\hypertarget{Engine_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Engine.h}
-\label{Engine_8h}\index{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Engine.\+h@{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Engine.\+h}}
+\hypertarget{Engine_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\+Engine.h}
+\label{Engine_8h}\index{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\+Engine.\+h@{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\+Engine.\+h}}
 
 
 Deklaracija klase Engine i deklaracija callback funkcija.  
@@ -18,17 +18,21 @@ Deklaracija klase Engine i deklaracija callback funkcija.
 {\ttfamily \#include \char`\"{}../entity/\+Player.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../entity/\+Camera.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../utility/\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../utility/\+Fps\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../hud/\+Hud\+Texture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../hud/\+Hud\+Renderer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../font/\+Font\+Renderer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../font/\+Text.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
-Graf zavisnosti datoteka za Engine.\+h\+:
-\nopagebreak
+{\ttfamily \#include $<$G\+L/freeglut.\+h$>$}\newline
+Graf zavisnosti datoteka za Engine.\+h\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{Engine_8h__incl}
 \end{center}
 \end{figure}
-Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
-\nopagebreak
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -45,6 +49,11 @@ class \hyperlink{classcore_1_1Engine}{core\+::\+Engine}
 \item 
  \hyperlink{namespacecore}{core}
 \begin{DoxyCompactList}\small\item\em Prostor imena core. Sadrzi sve klase, funkcije i promenljive koje su od sustinskog znacaja za funkcionisanje programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Makro zamene}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Engine_8h_a4af1b6159e447ba72652bb7fcdfa726e}{E\+SC}~27
+\end{DoxyCompactItemize}
 \subsection*{Funkcije}
 \begin{DoxyCompactItemize}
 \item 
@@ -69,3 +78,12 @@ Dusan Pantelic
 \begin{DoxyDate}{Datum}
 Decembar 2017 
 \end{DoxyDate}
+
+
+\subsection{Dokumentacija makro zamene}
+\mbox{\Hypertarget{Engine_8h_a4af1b6159e447ba72652bb7fcdfa726e}\label{Engine_8h_a4af1b6159e447ba72652bb7fcdfa726e}} 
+\index{Engine.\+h@{Engine.\+h}!E\+SC@{E\+SC}}
+\index{E\+SC@{E\+SC}!Engine.\+h@{Engine.\+h}}
+\subsubsection{\texorpdfstring{E\+SC}{ESC}}
+{\footnotesize\ttfamily \#define E\+SC~27}
+

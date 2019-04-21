@@ -1,5 +1,5 @@
-\hypertarget{MainRenderer_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Main\+Renderer.h}
-\label{MainRenderer_8h}\index{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Main\+Renderer.\+h@{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/core/\+Main\+Renderer.\+h}}
+\hypertarget{MainRenderer_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\+Main\+Renderer.h}
+\label{MainRenderer_8h}\index{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\+Main\+Renderer.\+h@{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\+Main\+Renderer.\+h}}
 
 
 Deklaracija klase Render.  
@@ -10,18 +10,18 @@ Deklaracija klase Render.
 {\ttfamily \#include \char`\"{}../core/\+Terrain\+Renderer.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../shader/\+Terrain\+Shader.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../entity/\+Entity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../core/\+Skybox\+Renderer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../core/\+Vao\+Loader.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$map$>$}\newline
 {\ttfamily \#include $<$list$>$}\newline
-Graf zavisnosti datoteka za Main\+Renderer.\+h\+:
-\nopagebreak
+Graf zavisnosti datoteka za Main\+Renderer.\+h\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{MainRenderer_8h__incl}
 \end{center}
 \end{figure}
-Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
-\nopagebreak
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -49,11 +49,11 @@ class \hyperlink{classcore_1_1MainRenderer}{core\+::\+Main\+Renderer}
 \item 
 \#define \hyperlink{MainRenderer_8h_ae0f5765ea8e4bfeea87a86374508e4fb}{T\+E\+R\+R\+A\+I\+N\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}~\char`\"{}src/shader/Terrain\+Fragment\+Shader.\+txt\char`\"{}
 \item 
-\#define \hyperlink{MainRenderer_8h_a5c71a5e59a53413cd6c270266d63b031}{R}~0.\+5
+\#define \hyperlink{MainRenderer_8h_a5c71a5e59a53413cd6c270266d63b031}{R}~0.\+6
 \item 
-\#define \hyperlink{MainRenderer_8h_aed9ea78689ecce0b7264c02c7f8a9a54}{G}~0.\+5
+\#define \hyperlink{MainRenderer_8h_aed9ea78689ecce0b7264c02c7f8a9a54}{G}~0.\+6
 \item 
-\#define \hyperlink{MainRenderer_8h_a111da81ae5883147168bbb8366377b10}{B}~0.\+5
+\#define \hyperlink{MainRenderer_8h_a111da81ae5883147168bbb8366377b10}{B}~0.\+6
 \end{DoxyCompactItemize}
 
 
@@ -73,7 +73,7 @@ Avgvust 2018
 \index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!B@{B}}
 \index{B@{B}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
 \subsubsection{\texorpdfstring{B}{B}}
-{\footnotesize\ttfamily \#define B~0.\+5}
+{\footnotesize\ttfamily \#define B~0.\+6}
 
 \mbox{\Hypertarget{MainRenderer_8h_a30d830937cb33de7ec847474ed321d2d}\label{MainRenderer_8h_a30d830937cb33de7ec847474ed321d2d}} 
 \index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE@{F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}}
@@ -85,13 +85,13 @@ Avgvust 2018
 \index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!G@{G}}
 \index{G@{G}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
 \subsubsection{\texorpdfstring{G}{G}}
-{\footnotesize\ttfamily \#define G~0.\+5}
+{\footnotesize\ttfamily \#define G~0.\+6}
 
 \mbox{\Hypertarget{MainRenderer_8h_a5c71a5e59a53413cd6c270266d63b031}\label{MainRenderer_8h_a5c71a5e59a53413cd6c270266d63b031}} 
 \index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!R@{R}}
 \index{R@{R}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
 \subsubsection{\texorpdfstring{R}{R}}
-{\footnotesize\ttfamily \#define R~0.\+5}
+{\footnotesize\ttfamily \#define R~0.\+6}
 
 \mbox{\Hypertarget{MainRenderer_8h_ae0f5765ea8e4bfeea87a86374508e4fb}\label{MainRenderer_8h_ae0f5765ea8e4bfeea87a86374508e4fb}} 
 \index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!T\+E\+R\+R\+A\+I\+N\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE@{T\+E\+R\+R\+A\+I\+N\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}}

@@ -1,0 +1,60 @@
+\hypertarget{HudRenderer_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/hud/\+Hud\+Renderer.h}
+\label{HudRenderer_8h}\index{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/hud/\+Hud\+Renderer.\+h@{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/hud/\+Hud\+Renderer.\+h}}
+
+
+Deklaracija klase Hud\+Renderer.  
+
+
+{\ttfamily \#include \char`\"{}../model/\+Raw\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../core/\+Vao\+Loader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../hud/\+Hud\+Texture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../shader/\+Hud\+Shader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../utility/\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Graf zavisnosti datoteka za Hud\+Renderer.\+h\+:
+% FIG 0
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
+% FIG 1
+\subsection*{Klase, strukture i unije}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classhud_1_1HudRenderer}{hud\+::\+Hud\+Renderer}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classhud_1_1HudRenderer}{Hud\+Renderer} zaduzena je za iscrtavanje 2D grafike. Pomocu klase Font\+Renderer iscrtavamo 2D kvadrat na koji nalepljujemo zeljenu teksturu i pozicioniramo je u svetu pomocu matrice transformacije. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Prostori imena}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacehud}{hud}
+\begin{DoxyCompactList}\small\item\em Prostor imena hud. Sadrzi sve klase, funkcije i promenljive za rad sa 2D grafikom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Makro zamene}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{HudRenderer_8h_a4ff3812599d1eab5d8bc9010a0ee8ef9}{H\+U\+D\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER}~\char`\"{}src/shader/Hud\+Fragment\+Shader.\+txt\char`\"{}
+\item 
+\#define \hyperlink{HudRenderer_8h_ab5c2102af58ce5dbab17c3722c65bc9f}{H\+U\+D\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER}~\char`\"{}src/shader/Hud\+Vertex\+Shader.\+txt\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Deklaracija klase Hud\+Renderer. 
+
+\begin{DoxyAuthor}{Autor}
+Dusan Pantelic 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Datum}
+Mart 2019 
+\end{DoxyDate}
+
+
+\subsection{Dokumentacija makro zamene}
+\mbox{\Hypertarget{HudRenderer_8h_a4ff3812599d1eab5d8bc9010a0ee8ef9}\label{HudRenderer_8h_a4ff3812599d1eab5d8bc9010a0ee8ef9}} 
+\index{Hud\+Renderer.\+h@{Hud\+Renderer.\+h}!H\+U\+D\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER@{H\+U\+D\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER}}
+\index{H\+U\+D\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER@{H\+U\+D\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER}!Hud\+Renderer.\+h@{Hud\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{H\+U\+D\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER}{HUD\_FRAGMENT\_SHADER}}
+{\footnotesize\ttfamily \#define H\+U\+D\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER~\char`\"{}src/shader/Hud\+Fragment\+Shader.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{HudRenderer_8h_ab5c2102af58ce5dbab17c3722c65bc9f}\label{HudRenderer_8h_ab5c2102af58ce5dbab17c3722c65bc9f}} 
+\index{Hud\+Renderer.\+h@{Hud\+Renderer.\+h}!H\+U\+D\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER@{H\+U\+D\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER}}
+\index{H\+U\+D\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER@{H\+U\+D\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER}!Hud\+Renderer.\+h@{Hud\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{H\+U\+D\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER}{HUD\_VERTEX\_SHADER}}
+{\footnotesize\ttfamily \#define H\+U\+D\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER~\char`\"{}src/shader/Hud\+Vertex\+Shader.\+txt\char`\"{}}
+

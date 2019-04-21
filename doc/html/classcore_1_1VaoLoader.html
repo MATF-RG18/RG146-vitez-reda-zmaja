@@ -88,9 +88,15 @@ Javni članovi</h2></td></tr>
 <tr class="memitem:a61e0aea1c2f59726a2ea8ba323d32b67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel_1_1RawModel.html">RawModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1VaoLoader.html#a61e0aea1c2f59726a2ea8ba323d32b67">loadToVao</a> (GLfloat positions[], GLint positionsSize, GLint indices[], GLint indicesSize, GLfloat textureCoords[], GLint textureSize, GLfloat normals[], GLint normalsSize)</td></tr>
 <tr class="memdesc:a61e0aea1c2f59726a2ea8ba323d32b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija kreira niz atributa(VAO). U funkciji se prvo kreira vao i dodeljuje mu se identifikator nakon cega se parametri funkcije ucitavaju u bafere koji se pridruzuju ranije kreiranom vao-u.  <a href="#a61e0aea1c2f59726a2ea8ba323d32b67">Još...</a><br /></td></tr>
 <tr class="separator:a61e0aea1c2f59726a2ea8ba323d32b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44296bb7ab4ac3b909b050b54350f861"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel_1_1RawModel.html">RawModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1VaoLoader.html#a44296bb7ab4ac3b909b050b54350f861">loadToVao</a> (GLfloat positions[], GLint positionsSize, int dimensions)</td></tr>
+<tr class="memdesc:a44296bb7ab4ac3b909b050b54350f861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija kreira niz atributa(VAO). U funkciji se prvo kreira vao i dodeljuje mu se identifikator nakon cega se parametri funkcije ucitavaju u bafere koji se pridruzuju ranije kreiranom vao-u.  <a href="#a44296bb7ab4ac3b909b050b54350f861">Još...</a><br /></td></tr>
+<tr class="separator:a44296bb7ab4ac3b909b050b54350f861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeefd4de3346c1036d8d7249694fd404d"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1VaoLoader.html#aeefd4de3346c1036d8d7249694fd404d">loadTexture</a> (const char *fileName)</td></tr>
 <tr class="memdesc:aeefd4de3346c1036d8d7249694fd404d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija ucitava texturu iz png fajla. U funkciji se pomocu png biblioteke citaju informacije iz fajla koje se zatim upisuju u OpenGL teksturu sa kreiranim identifikatorom.  <a href="#aeefd4de3346c1036d8d7249694fd404d">Još...</a><br /></td></tr>
 <tr class="separator:aeefd4de3346c1036d8d7249694fd404d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98165161bee2940808fe5e546dfa25d9"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1VaoLoader.html#a98165161bee2940808fe5e546dfa25d9">loadCubeMap</a> (vector&lt; const char *&gt; textureFiles)</td></tr>
+<tr class="memdesc:a98165161bee2940808fe5e546dfa25d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija ucitava texture u kubnu mapu.  <a href="#a98165161bee2940808fe5e546dfa25d9">Još...</a><br /></td></tr>
+<tr class="separator:a98165161bee2940808fe5e546dfa25d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15a5ec23ffe560ad7117980aaf0d97b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1VaoLoader.html#a15a5ec23ffe560ad7117980aaf0d97b9">cleanUp</a> (void)</td></tr>
 <tr class="memdesc:a15a5ec23ffe560ad7117980aaf0d97b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija brise podatke iz memorije. U funkciji se prethodno kreirani identifikatori brisu zajedno sa informacijama koje identifikuju.  <a href="#a15a5ec23ffe560ad7117980aaf0d97b9">Još...</a><br /></td></tr>
 <tr class="separator:a15a5ec23ffe560ad7117980aaf0d97b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,6 +121,9 @@ Privatni članovi</h2></td></tr>
 <tr class="memitem:ab2c24b482be973465c548b03bf5df3af"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1VaoLoader.html#ab2c24b482be973465c548b03bf5df3af">storeDataInIntBuffer</a> (GLint data[], GLint dataSize)</td></tr>
 <tr class="memdesc:ab2c24b482be973465c548b03bf5df3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija ucitava niz u bafer podataka. U funkciji se podaci iz niza ucitavaju u bafer celih brojeva zbog kasnijeg ucitavanja pomocu OpenGL funkcija.  <a href="#ab2c24b482be973465c548b03bf5df3af">Još...</a><br /></td></tr>
 <tr class="separator:ab2c24b482be973465c548b03bf5df3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8310742834449c159828f87e771a5258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtexture_1_1SkyboxTextureData.html">SkyboxTextureData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1VaoLoader.html#a8310742834449c159828f87e771a5258">decodeTextureFile</a> (const char *fileName)</td></tr>
+<tr class="memdesc:a8310742834449c159828f87e771a5258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija cita podatke iz fajla teksture.  <a href="#a8310742834449c159828f87e771a5258">Još...</a><br /></td></tr>
+<tr class="separator:a8310742834449c159828f87e771a5258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Privatni članovi</h2></td></tr>
@@ -250,6 +259,68 @@ Privatni članovi</h2></td></tr>
 
 </div>
 </div>
+<a id="a8310742834449c159828f87e771a5258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8310742834449c159828f87e771a5258">&#9670;&nbsp;</a></span>decodeTextureFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtexture_1_1SkyboxTextureData.html">SkyboxTextureData</a> * core::VaoLoader::decodeTextureFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija cita podatke iz fajla teksture. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>Naziv fajla teksture. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>SkyboxTextureData* Pokazivac na instancu klase SkyboxTextureData </dd></dl>
+
+</div>
+</div>
+<a id="a98165161bee2940808fe5e546dfa25d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98165161bee2940808fe5e546dfa25d9">&#9670;&nbsp;</a></span>loadCubeMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint core::VaoLoader::loadCubeMap </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; const char *&gt;&#160;</td>
+          <td class="paramname"><em>textureFiles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija ucitava texture u kubnu mapu. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">textureFiles</td><td>Niz imena tekstura; </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>GLuint Identifikarot kubne mape tekstura. </dd></dl>
+
+</div>
+</div>
 <a id="aeefd4de3346c1036d8d7249694fd404d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeefd4de3346c1036d8d7249694fd404d">&#9670;&nbsp;</a></span>loadTexture()</h2>
 
@@ -269,16 +340,16 @@ Privatni članovi</h2></td></tr>
 <p>Funkcija ucitava texturu iz png fajla. U funkciji se pomocu png biblioteke citaju informacije iz fajla koje se zatim upisuju u OpenGL teksturu sa kreiranim identifikatorom. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>Ime png fajla </td></tr>
+    <tr><td class="paramname">fileName</td><td>Ime png fajla. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Vrednost funkcije</dt><dd>int Identifikator teks </dd></dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>GLint Identifikator teksture. </dd></dl>
 
 </div>
 </div>
 <a id="a61e0aea1c2f59726a2ea8ba323d32b67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61e0aea1c2f59726a2ea8ba323d32b67">&#9670;&nbsp;</a></span>loadToVao()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e0aea1c2f59726a2ea8ba323d32b67">&#9670;&nbsp;</a></span>loadToVao() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,6 +426,51 @@ Privatni članovi</h2></td></tr>
 
 </div>
 </div>
+<a id="a44296bb7ab4ac3b909b050b54350f861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44296bb7ab4ac3b909b050b54350f861">&#9670;&nbsp;</a></span>loadToVao() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmodel_1_1RawModel.html">RawModel</a> * core::VaoLoader::loadToVao </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&#160;</td>
+          <td class="paramname"><em>positions</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLint&#160;</td>
+          <td class="paramname"><em>positionsSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dimensions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija kreira niz atributa(VAO). U funkciji se prvo kreira vao i dodeljuje mu se identifikator nakon cega se parametri funkcije ucitavaju u bafere koji se pridruzuju ranije kreiranom vao-u. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">positions[]</td><td>Niz koordinata objekta. </td></tr>
+    <tr><td class="paramname">positionsSize</td><td>Broj koordinata koje se nalaze u nizu pozicija. </td></tr>
+    <tr><td class="paramname">dimensions</td><td>Dimenzija prostora. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>RawModel* Pokazivac na instancu klase RawModel. </dd></dl>
+
+</div>
+</div>
 <a id="a016f118749e83bbf79e6d0f2c9bf9209"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a016f118749e83bbf79e6d0f2c9bf9209">&#9670;&nbsp;</a></span>storeDataInFloatBuffer()</h2>
 
@@ -392,8 +508,8 @@ Privatni članovi</h2></td></tr>
 <p>Funkcija ucitava niz u bafer podataka. U funkciji se podaci iz niza ucitavaju u bafer realnih brojeva zbog kasnijeg ucitavanja pomocu OpenGL funkcija. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>Niz podataka koji se upisuju u bafer </td></tr>
-    <tr><td class="paramname">dataSize</td><td>Broj podataka koji se nalaze u nizu data </td></tr>
+    <tr><td class="paramname">data</td><td>Niz podataka koji se upisuju u bafer. </td></tr>
+    <tr><td class="paramname">dataSize</td><td>Broj podataka koji se nalaze u nizu data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -438,9 +554,9 @@ Privatni članovi</h2></td></tr>
 <p>Funkcija ucitava indekse tacaka. U funkciji se kreira bafer u koji se smestaju indeksi tacaka objekta. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attributeNumber</td><td>Indeks niza atributa kojem se pridruzuje bafer </td></tr>
-    <tr><td class="paramname">data</td><td>Niz podataka koji se upisuju u bafer </td></tr>
-    <tr><td class="paramname">dataSize</td><td>Broj podataka koji se nalaze u nizu data </td></tr>
+    <tr><td class="paramname">attributeNumber</td><td>Indeks niza atributa kojem se pridruzuje bafer. </td></tr>
+    <tr><td class="paramname">data</td><td>Niz podataka koji se upisuju u bafer. </td></tr>
+    <tr><td class="paramname">dataSize</td><td>Broj podataka koji se nalaze u nizu data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -485,8 +601,8 @@ Privatni članovi</h2></td></tr>
 <p>Funkcija ucitava niz u bafer podataka. U funkciji se podaci iz niza ucitavaju u bafer celih brojeva zbog kasnijeg ucitavanja pomocu OpenGL funkcija. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>Niz podataka koji se upisuju u bafer </td></tr>
-    <tr><td class="paramname">dataSize</td><td>Broj podataka koji se nalaze u nizu data </td></tr>
+    <tr><td class="paramname">data</td><td>Niz podataka koji se upisuju u bafer. </td></tr>
+    <tr><td class="paramname">dataSize</td><td>Broj podataka koji se nalaze u nizu data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -543,10 +659,10 @@ Privatni članovi</h2></td></tr>
 <p>Funkcija startuje bitne procese za funkcionisanje. U funkciji se kreira bafer u koji se smestaju informacije vazane za objekat. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attributeNumber</td><td>Indeks niza atributa kojem se pridruzuje bafer </td></tr>
-    <tr><td class="paramname">coordinateSize</td><td>Broj koordinata kojim je tacka definisana, validne vrednosti su 1,2,3,4 </td></tr>
-    <tr><td class="paramname">data</td><td>Niz podataka koji se upisuju u bafer </td></tr>
-    <tr><td class="paramname">dataSize</td><td>Broj podataka koji se nalaze u nizu data </td></tr>
+    <tr><td class="paramname">attributeNumber</td><td>Indeks niza atributa kojem se pridruzuje bafer. </td></tr>
+    <tr><td class="paramname">coordinateSize</td><td>Broj koordinata kojim je tacka definisana, validne vrednosti su 1,2,3,4. </td></tr>
+    <tr><td class="paramname">data</td><td>Niz podataka koji se upisuju u bafer. </td></tr>
+    <tr><td class="paramname">dataSize</td><td>Broj podataka koji se nalaze u nizu data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -711,8 +827,8 @@ Privatni članovi</h2></td></tr>
 </div>
 </div>
 <hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
-<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/include/core/<a class="el" href="VaoLoader_8h_source.html">VaoLoader.h</a></li>
-<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/src/core/<a class="el" href="VaoLoader_8cpp.html">VaoLoader.cpp</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/include/core/<a class="el" href="VaoLoader_8h_source.html">VaoLoader.h</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/src/core/<a class="el" href="VaoLoader_8cpp.html">VaoLoader.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

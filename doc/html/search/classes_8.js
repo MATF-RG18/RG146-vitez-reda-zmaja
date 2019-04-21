@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['rawmodel',['RawModel',['../classmodel_1_1RawModel.html',1,'model']]],
-  ['render',['Render',['../classcore_1_1Render.html',1,'core']]]
+  ['objloader',['ObjLoader',['../classcore_1_1ObjLoader.html',1,'core']]]
 ];

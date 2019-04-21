@@ -1,0 +1,7 @@
+digraph "Hijerarhija klasa u obliku grafa"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="utility::FpsData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classutility_1_1FpsData.html",tooltip="Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f..."];
+}

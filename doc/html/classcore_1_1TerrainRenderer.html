@@ -72,7 +72,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Klasa <a class="el" href="classcore_1_1Render.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ...">Render</a> je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran.  
+<p>Klasa <a class="el" href="classcore_1_1TerrainRenderer.html" title="Klasa TerrainRenderer je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi pripr...">TerrainRenderer</a> je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran.  
  <a href="classcore_1_1TerrainRenderer.html#details">Još...</a></p>
 
 <p><code>#include &lt;<a class="el" href="TerrainRenderer_8h_source.html">TerrainRenderer.h</a>&gt;</code></p>
@@ -103,7 +103,7 @@ Javni članovi</h2></td></tr>
 <tr class="memdesc:ac66bf45a30d7c1b443f8b77132112fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija povezuje teksture terena.  <a href="#ac66bf45a30d7c1b443f8b77132112fe0">Još...</a><br /></td></tr>
 <tr class="separator:ac66bf45a30d7c1b443f8b77132112fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac739a96169a8fef7bfad56bbe3367962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#ac739a96169a8fef7bfad56bbe3367962">unbindTerrain</a> ()</td></tr>
-<tr class="memdesc:ac739a96169a8fef7bfad56bbe3367962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija otkacinje vezu izmedju podataka terena i programa.  <a href="#ac739a96169a8fef7bfad56bbe3367962">Još...</a><br /></td></tr>
+<tr class="memdesc:ac739a96169a8fef7bfad56bbe3367962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija otklanja vezu izmedju podataka terena i programa.  <a href="#ac739a96169a8fef7bfad56bbe3367962">Još...</a><br /></td></tr>
 <tr class="separator:ac739a96169a8fef7bfad56bbe3367962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e1837566f4de6e49dbf19e203cc9563"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1TerrainRenderer.html#a5e1837566f4de6e49dbf19e203cc9563">loadModelMatrix</a> (<a class="el" href="classterrain_1_1Terrain.html">Terrain</a> *<a class="el" href="namespacecore.html#ac45da6f80dac9bead5c9310c27897f15">terrain</a>)</td></tr>
 <tr class="memdesc:a5e1837566f4de6e49dbf19e203cc9563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija kreira matricu transformacije za teren i ucitava je u sejder program.  <a href="#a5e1837566f4de6e49dbf19e203cc9563">Još...</a><br /></td></tr>
@@ -131,7 +131,7 @@ Privatni članovi</h2></td></tr>
 <tr class="separator:a6db721ffef6f7175977ad243b4ac2834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
-<div class="textblock"><p>Klasa <a class="el" href="classcore_1_1Render.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ...">Render</a> je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran. </p>
+<div class="textblock"><p>Klasa <a class="el" href="classcore_1_1TerrainRenderer.html" title="Klasa TerrainRenderer je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi pripr...">TerrainRenderer</a> je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran. </p>
 </div><h2 class="groupheader">Dokumentacija konstruktora i destruktora</h2>
 <a id="aef52c32054bf2be3fc5ec160a2d7433b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef52c32054bf2be3fc5ec160a2d7433b">&#9670;&nbsp;</a></span>TerrainRenderer()</h2>
@@ -342,7 +342,7 @@ Privatni članovi</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Funkcija otkacinje vezu izmedju podataka terena i programa. </p>
+<p>Funkcija otklanja vezu izmedju podataka terena i programa. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
     <tr><td class="paramname">void</td><td></td></tr>
@@ -451,8 +451,8 @@ Privatni članovi</h2></td></tr>
 </div>
 </div>
 <hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
-<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/include/core/<a class="el" href="TerrainRenderer_8h_source.html">TerrainRenderer.h</a></li>
-<li>/home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/src/core/<a class="el" href="TerrainRenderer_8cpp.html">TerrainRenderer.cpp</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/include/core/<a class="el" href="TerrainRenderer_8h_source.html">TerrainRenderer.h</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/src/core/<a class="el" href="TerrainRenderer_8cpp.html">TerrainRenderer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

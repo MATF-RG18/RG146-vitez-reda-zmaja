@@ -49,7 +49,7 @@ namespace font {
         /// @brief Konstruktor klase.
         /// @param textureID Identifikator teksture.
         /// @param size Vektor velcine karaktera.
-        /// @oaram bearing Vektor pozicija bitmape.
+        /// @param bearing Vektor pozicija bitmape.
         /// @param advance Razdaljina do mesta gde se sledeci karakter iscrtava.
         ////////////////////////////////////////////////////////////////////////////
         FontData(GLuint textureID, vec2 size, vec2 bearing, GLuint advance);

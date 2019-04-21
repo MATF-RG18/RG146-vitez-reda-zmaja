@@ -1,0 +1,83 @@
+\hypertarget{SkyboxShader_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/shader/\+Skybox\+Shader.h}
+\label{SkyboxShader_8h}\index{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/shader/\+Skybox\+Shader.\+h@{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/shader/\+Skybox\+Shader.\+h}}
+
+
+Deklaracija klase Skybox\+Shader.  
+
+
+{\ttfamily \#include \char`\"{}../utility/\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../entity/\+Camera.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../entity/\+Light.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../utility/\+Fps\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$glm/vec3.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/mat4x4.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/type\+\_\+ptr.\+hpp$>$}\newline
+Graf zavisnosti datoteka za Skybox\+Shader.\+h\+:
+% FIG 0
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
+% FIG 1
+\subsection*{Klase, strukture i unije}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classshader_1_1SkyboxShader}{shader\+::\+Skybox\+Shader}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classshader_1_1SkyboxShader}{Skybox\+Shader} ucitava i izvrsava programe na Open\+GL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Prostori imena}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceshader}{shader}
+\begin{DoxyCompactList}\small\item\em Prostor imena shader. Sadrzi sejder programe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Makro zamene}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{SkyboxShader_8h_a120fb070bddb21f0bd899f50252c4cb5}{G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES}
+\item 
+\#define \hyperlink{SkyboxShader_8h_a01659d0d57190e0150566e9024ba8aed}{S\+K\+Y\+B\+O\+X\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+S\+P\+E\+ED}~1.\+0
+\item 
+\#define \hyperlink{SkyboxShader_8h_a80757f1a53908b5582a9ba77c133c079}{V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE}~\char`\"{}src/shader/Skybox\+Vertex\+Shader.\+txt\char`\"{}
+\item 
+\#define \hyperlink{SkyboxShader_8h_a1e1fd4f6150716de5c7ad0534cb64f5d}{F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE}~\char`\"{}src/shader/Skybox\+Fragment\+Shader.\+txt\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Deklaracija klase Skybox\+Shader. 
+
+\begin{DoxyAuthor}{Autor}
+Dusan Pantelic 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Datum}
+Avgust 2018 
+\end{DoxyDate}
+
+
+\subsection{Dokumentacija makro zamene}
+\mbox{\Hypertarget{SkyboxShader_8h_a1e1fd4f6150716de5c7ad0534cb64f5d}\label{SkyboxShader_8h_a1e1fd4f6150716de5c7ad0534cb64f5d}} 
+\index{Skybox\+Shader.\+h@{Skybox\+Shader.\+h}!F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE@{F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE}}
+\index{F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE@{F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE}!Skybox\+Shader.\+h@{Skybox\+Shader.\+h}}
+\subsubsection{\texorpdfstring{F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE}{FRAGMENT\_SHADER\_FILE}}
+{\footnotesize\ttfamily \#define F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE~\char`\"{}src/shader/Skybox\+Fragment\+Shader.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{SkyboxShader_8h_a120fb070bddb21f0bd899f50252c4cb5}\label{SkyboxShader_8h_a120fb070bddb21f0bd899f50252c4cb5}} 
+\index{Skybox\+Shader.\+h@{Skybox\+Shader.\+h}!G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES@{G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES}}
+\index{G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES@{G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES}!Skybox\+Shader.\+h@{Skybox\+Shader.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES}{GL\_GLEXT\_PROTOTYPES}}
+{\footnotesize\ttfamily \#define G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES}
+
+\mbox{\Hypertarget{SkyboxShader_8h_a01659d0d57190e0150566e9024ba8aed}\label{SkyboxShader_8h_a01659d0d57190e0150566e9024ba8aed}} 
+\index{Skybox\+Shader.\+h@{Skybox\+Shader.\+h}!S\+K\+Y\+B\+O\+X\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+S\+P\+E\+ED@{S\+K\+Y\+B\+O\+X\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+S\+P\+E\+ED}}
+\index{S\+K\+Y\+B\+O\+X\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+S\+P\+E\+ED@{S\+K\+Y\+B\+O\+X\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+S\+P\+E\+ED}!Skybox\+Shader.\+h@{Skybox\+Shader.\+h}}
+\subsubsection{\texorpdfstring{S\+K\+Y\+B\+O\+X\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+S\+P\+E\+ED}{SKYBOX\_ROTATION\_SPEED}}
+{\footnotesize\ttfamily \#define S\+K\+Y\+B\+O\+X\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+S\+P\+E\+ED~1.\+0}
+
+\mbox{\Hypertarget{SkyboxShader_8h_a80757f1a53908b5582a9ba77c133c079}\label{SkyboxShader_8h_a80757f1a53908b5582a9ba77c133c079}} 
+\index{Skybox\+Shader.\+h@{Skybox\+Shader.\+h}!V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE@{V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE}}
+\index{V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE@{V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE}!Skybox\+Shader.\+h@{Skybox\+Shader.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE}{VERTEX\_SHADER\_FILE}}
+{\footnotesize\ttfamily \#define V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+F\+I\+LE~\char`\"{}src/shader/Skybox\+Vertex\+Shader.\+txt\char`\"{}}
+

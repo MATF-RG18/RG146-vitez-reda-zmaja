@@ -1,0 +1,11 @@
+digraph "Hijerarhija klasa u obliku grafa"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="tinyobj::MaterialReader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtinyobj_1_1MaterialReader.html"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="tinyobj::MaterialFileReader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtinyobj_1_1MaterialFileReader.html"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tinyobj::MaterialStreamReader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtinyobj_1_1MaterialStreamReader.html"];
+}

@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['daytexturefiles',['dayTextureFiles',['../classcore_1_1SkyboxRenderer.html#ad80185112c11644ffc888f86ed8282b1',1,'core::SkyboxRenderer']]],
+  ['daytextureid',['dayTextureID',['../classcore_1_1SkyboxRenderer.html#a4500833da09fe980955bc6f354b042ff',1,'core::SkyboxRenderer']]],
   ['diffuse',['diffuse',['../structtinyobj_1_1material__t.html#a783cdfe69d52d4011bdcad54869ac453',1,'tinyobj::material_t']]],
   ['diffuse_5ftexname',['diffuse_texname',['../structtinyobj_1_1material__t.html#ad7f71a301a261fca07d2e50edccc792d',1,'tinyobj::material_t']]],
   ['diffuse_5ftexopt',['diffuse_texopt',['../structtinyobj_1_1material__t.html#a170412a1e339856e55d5cec406ecc196',1,'tinyobj::material_t']]],

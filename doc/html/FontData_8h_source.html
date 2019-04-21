@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/include/font/FontData.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_f399a52153988f581ac4960bafc8695e.html">font</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">FontData.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="FontData_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _FONT_DATA_H_</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _FONT_DATA_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// Ukljucivanje biblioteka</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;glm/vec2.hpp&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// Ukljucivanje OpenGL biblioteke.</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;GL/glut.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;GL/freeglut.h&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// Koriscenje prostora imena za jednostavniji i pregledniji kod.</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceglm.html">glm</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefont.html">font</a> {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classfont_1_1FontData.html">   30</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfont_1_1FontData.html">FontData</a> {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// Javne promenljive klase.</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classfont_1_1FontData.html#ad91fcb854ec0a18c84d315c5c70f0eb5">   35</a></span>&#160;        GLuint <a class="code" href="classfont_1_1FontData.html#ad91fcb854ec0a18c84d315c5c70f0eb5">textureID</a>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classfont_1_1FontData.html#a783ccdb54f0b3319c31c31bd8acf6111">   38</a></span>&#160;        vec2 <a class="code" href="classfont_1_1FontData.html#a783ccdb54f0b3319c31c31bd8acf6111">size</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfont_1_1FontData.html#a08a463faed8b16ed9fd55f94228a44d4">   41</a></span>&#160;        vec2 <a class="code" href="classfont_1_1FontData.html#a08a463faed8b16ed9fd55f94228a44d4">bearing</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classfont_1_1FontData.html#a837cf15ff5ef8e10d0aa6132bff4b676">   44</a></span>&#160;        GLuint <a class="code" href="classfont_1_1FontData.html#a837cf15ff5ef8e10d0aa6132bff4b676">advance</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Javne funkcije klase.</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classfont_1_1FontData.html">FontData</a>(GLuint textureID, vec2 size, vec2 bearing, GLuint advance);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        ~<a class="code" href="classfont_1_1FontData.html">FontData</a>();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    };</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// font</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacefont_html"><div class="ttname"><a href="namespacefont.html">font</a></div><div class="ttdoc">Prostor imena font. Sadrzi sve klase, funkcije i promenljive za rad sa tekstom. </div><div class="ttdef"><b>Definition:</b> Font.cpp:6</div></div>
+<div class="ttc" id="namespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div></div>
+<div class="ttc" id="classfont_1_1FontData_html"><div class="ttname"><a href="classfont_1_1FontData.html">font::FontData</a></div><div class="ttdoc">Klasa FontData odredjuje karakter. Klasa FontData cuva informacije o grafickoj reprezentaciji karakte...</div><div class="ttdef"><b>Definition:</b> FontData.h:30</div></div>
+<div class="ttc" id="classfont_1_1FontData_html_a783ccdb54f0b3319c31c31bd8acf6111"><div class="ttname"><a href="classfont_1_1FontData.html#a783ccdb54f0b3319c31c31bd8acf6111">font::FontData::size</a></div><div class="ttdeci">vec2 size</div><div class="ttdoc">Vektor velcine karaktera. </div><div class="ttdef"><b>Definition:</b> FontData.h:38</div></div>
+<div class="ttc" id="classfont_1_1FontData_html_ad91fcb854ec0a18c84d315c5c70f0eb5"><div class="ttname"><a href="classfont_1_1FontData.html#ad91fcb854ec0a18c84d315c5c70f0eb5">font::FontData::textureID</a></div><div class="ttdeci">GLuint textureID</div><div class="ttdoc">Identifikator teksture. </div><div class="ttdef"><b>Definition:</b> FontData.h:35</div></div>
+<div class="ttc" id="classfont_1_1FontData_html_a08a463faed8b16ed9fd55f94228a44d4"><div class="ttname"><a href="classfont_1_1FontData.html#a08a463faed8b16ed9fd55f94228a44d4">font::FontData::bearing</a></div><div class="ttdeci">vec2 bearing</div><div class="ttdoc">Vektor pozicija bitmape u odnosu na kvadrat u kome se karakter iscrtava. </div><div class="ttdef"><b>Definition:</b> FontData.h:41</div></div>
+<div class="ttc" id="classfont_1_1FontData_html_a837cf15ff5ef8e10d0aa6132bff4b676"><div class="ttname"><a href="classfont_1_1FontData.html#a837cf15ff5ef8e10d0aa6132bff4b676">font::FontData::advance</a></div><div class="ttdeci">GLuint advance</div><div class="ttdoc">Horizontalna razdaljina do mesta gde se sledeci karakter iscrtava. </div><div class="ttdef"><b>Definition:</b> FontData.h:44</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

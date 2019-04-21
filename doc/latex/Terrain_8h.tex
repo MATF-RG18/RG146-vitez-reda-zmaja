@@ -1,5 +1,10 @@
-\hypertarget{Terrain_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/terrain/\+Terrain.h}
-\label{Terrain_8h}\index{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/terrain/\+Terrain.\+h@{/home/dusan/\+Documents/\+Projects/\+R\+G102-\/vitez-\/reda-\/zmaja/include/terrain/\+Terrain.\+h}}
+\hypertarget{Terrain_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/terrain/\+Terrain.h}
+\label{Terrain_8h}\index{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/terrain/\+Terrain.\+h@{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/terrain/\+Terrain.\+h}}
+
+
+Deklaracija klase Terrain.  
+
+
 {\ttfamily \#include \char`\"{}../model/\+Raw\+Model.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../texture/\+Model\+Texture.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../texture/\+Terrain\+Texture\+Pack.\+h\char`\"{}}\newline
@@ -9,16 +14,14 @@
 {\ttfamily \#include $<$math.\+h$>$}\newline
 {\ttfamily \#include $<$glm/vec3.\+hpp$>$}\newline
 {\ttfamily \#include $<$glm/glm.\+hpp$>$}\newline
-Graf zavisnosti datoteka za Terrain.\+h\+:
-\nopagebreak
+Graf zavisnosti datoteka za Terrain.\+h\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{Terrain_8h__incl}
 \end{center}
 \end{figure}
-Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
-\nopagebreak
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -29,12 +32,12 @@ Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{classterrain_1_1Terrain}{terrain\+::\+Terrain}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classterrain_1_1Terrain}{Terrain} zaduzena je za kreiranje terena. Pomocu klase \hyperlink{classterrain_1_1Terrain}{Terrain} generisemo teren na osnovu visinske mape. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Prostori imena}
 \begin{DoxyCompactItemize}
 \item 
  \hyperlink{namespaceterrain}{terrain}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Prostor imena terain. Sadrzi sve klase, funkcije i promenljive za kreiranje i rad sa terenom. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Makro zamene}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,8 +45,19 @@ class \hyperlink{classterrain_1_1Terrain}{terrain\+::\+Terrain}
 \item 
 \#define \hyperlink{Terrain_8h_ac1689bb03dbfff43e32aff331b96dea8}{M\+A\+X\+\_\+\+P\+I\+X\+E\+L\+\_\+\+C\+O\+L\+O\+UR}~256$\ast$256$\ast$256
 \item 
-\#define \hyperlink{Terrain_8h_a9059fa76eb5e8e86f870405d63e72c4c}{M\+A\+X\+\_\+\+H\+E\+I\+G\+HT}~40
+\#define \hyperlink{Terrain_8h_a9059fa76eb5e8e86f870405d63e72c4c}{M\+A\+X\+\_\+\+H\+E\+I\+G\+HT}~60
 \end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Deklaracija klase Terrain. 
+
+\begin{DoxyAuthor}{Autor}
+Dusan Pantelic 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Datum}
+Septembar 2018 
+\end{DoxyDate}
 
 
 \subsection{Dokumentacija makro zamene}
@@ -51,7 +65,7 @@ class \hyperlink{classterrain_1_1Terrain}{terrain\+::\+Terrain}
 \index{Terrain.\+h@{Terrain.\+h}!M\+A\+X\+\_\+\+H\+E\+I\+G\+HT@{M\+A\+X\+\_\+\+H\+E\+I\+G\+HT}}
 \index{M\+A\+X\+\_\+\+H\+E\+I\+G\+HT@{M\+A\+X\+\_\+\+H\+E\+I\+G\+HT}!Terrain.\+h@{Terrain.\+h}}
 \subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+H\+E\+I\+G\+HT}{MAX\_HEIGHT}}
-{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+H\+E\+I\+G\+HT~40}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+H\+E\+I\+G\+HT~60}
 
 \mbox{\Hypertarget{Terrain_8h_ac1689bb03dbfff43e32aff331b96dea8}\label{Terrain_8h_ac1689bb03dbfff43e32aff331b96dea8}} 
 \index{Terrain.\+h@{Terrain.\+h}!M\+A\+X\+\_\+\+P\+I\+X\+E\+L\+\_\+\+C\+O\+L\+O\+UR@{M\+A\+X\+\_\+\+P\+I\+X\+E\+L\+\_\+\+C\+O\+L\+O\+UR}}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vitez reda zmaja: Opis datoteke /home/dusan/Documents/Projects/RG102-vitez-reda-zmaja/src/utility/Math.cpp</title>
+<title>Vitez reda zmaja: Opis datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/src/utility/Math.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,14 +72,17 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Graf zavisnosti datoteka za Math.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="Math_8cpp__incl.png" border="0" usemap="#_2home_2dusan_2Documents_2Projects_2RG102-vitez-reda-zmaja_2src_2utility_2Math_8cpp" alt=""/></div>
-<map name="_2home_2dusan_2Documents_2Projects_2RG102-vitez-reda-zmaja_2src_2utility_2Math_8cpp" id="_2home_2dusan_2Documents_2Projects_2RG102-vitez-reda-zmaja_2src_2utility_2Math_8cpp">
+<div class="center"><img src="Math_8cpp__incl.png" border="0" usemap="#_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2src_2utility_2Math_8cpp" alt=""/></div>
+<map name="_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2src_2utility_2Math_8cpp" id="_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2src_2utility_2Math_8cpp">
 <area shape="rect" id="node2" href="Math_8h.html" title="../../include/utility\l/Math.h" alt="" coords="250,124,373,165"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funkcije</h2></td></tr>
+<tr class="memitem:a4ac632e391368a959adcb9d423742cc4"><td class="memItemLeft" align="right" valign="top">mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Math_8cpp.html#a4ac632e391368a959adcb9d423742cc4">createTransformationMatrix</a> (vec2 translation, vec2 scaleFactor, float rotation)</td></tr>
+<tr class="memdesc:a4ac632e391368a959adcb9d423742cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija kreira matricu transformacije za 2D objekte.  <a href="#a4ac632e391368a959adcb9d423742cc4">Još...</a><br /></td></tr>
+<tr class="separator:a4ac632e391368a959adcb9d423742cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2745946387f5bef6470da8ca8fa40c3"><td class="memItemLeft" align="right" valign="top">mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Math_8cpp.html#af2745946387f5bef6470da8ca8fa40c3">createTransformationMatrix</a> (vec3 translation, vec3 rotation, float scaleFactor)</td></tr>
 <tr class="memdesc:af2745946387f5bef6470da8ca8fa40c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija kreira matricu transformacije.  <a href="#af2745946387f5bef6470da8ca8fa40c3">Još...</a><br /></td></tr>
 <tr class="separator:af2745946387f5bef6470da8ca8fa40c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -87,6 +90,7 @@ Funkcije</h2></td></tr>
 <tr class="memdesc:abfc3ea2c5c1a588b51e952b00e055639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija kreira matricu pogleda.  <a href="#abfc3ea2c5c1a588b51e952b00e055639">Još...</a><br /></td></tr>
 <tr class="separator:abfc3ea2c5c1a588b51e952b00e055639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc4665953edcb92de244a1812f5d2a3f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Math_8cpp.html#adc4665953edcb92de244a1812f5d2a3f">barryCentric</a> (vec3 p1, vec3 p2, vec3 p3, vec2 position)</td></tr>
+<tr class="memdesc:adc4665953edcb92de244a1812f5d2a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija interpolacijom racuna visinu unutat trougla.  <a href="#adc4665953edcb92de244a1812f5d2a3f">Još...</a><br /></td></tr>
 <tr class="separator:adc4665953edcb92de244a1812f5d2a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Dokumentacija funkcije</h2>
@@ -128,10 +132,67 @@ Funkcije</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Funkcija interpolacijom racuna visinu unutat trougla. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>Koordinate prve tacke trougla. </td></tr>
+    <tr><td class="paramname">p2</td><td>Koordinate druge tacke trougla. </td></tr>
+    <tr><td class="paramname">p3</td><td>Koordinate trece tacke trougla. </td></tr>
+    <tr><td class="paramname">position</td><td>Koordinate tacke na trouglu za koju trazimo Y koordinatu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>float Visina. </dd></dl>
+
+</div>
+</div>
+<a id="a4ac632e391368a959adcb9d423742cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac632e391368a959adcb9d423742cc4">&#9670;&nbsp;</a></span>createTransformationMatrix() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mat4 createTransformationMatrix </td>
+          <td>(</td>
+          <td class="paramtype">vec2&#160;</td>
+          <td class="paramname"><em>translation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec2&#160;</td>
+          <td class="paramname"><em>scaleFactor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rotation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija kreira matricu transformacije za 2D objekte. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">translation</td><td>Translacija objekta. </td></tr>
+    <tr><td class="paramname">scaleFactor</td><td>Faktor skaliranja. </td></tr>
+    <tr><td class="paramname">rotation</td><td>Rotacija objekta. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>mat4 Matrica transformacije. </dd></dl>
+
 </div>
 </div>
 <a id="af2745946387f5bef6470da8ca8fa40c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2745946387f5bef6470da8ca8fa40c3">&#9670;&nbsp;</a></span>createTransformationMatrix()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2745946387f5bef6470da8ca8fa40c3">&#9670;&nbsp;</a></span>createTransformationMatrix() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,13 +226,13 @@ Funkcije</h2></td></tr>
 <p>Funkcija kreira matricu transformacije. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">translation</td><td>Translacija objekta </td></tr>
-    <tr><td class="paramname">rotation</td><td>Rotacija objekta </td></tr>
-    <tr><td class="paramname">scaleFactor</td><td>Faktor skaliranja </td></tr>
+    <tr><td class="paramname">translation</td><td>Translacija objekta. </td></tr>
+    <tr><td class="paramname">rotation</td><td>Rotacija objekta. </td></tr>
+    <tr><td class="paramname">scaleFactor</td><td>Faktor skaliranja. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Vrednost funkcije</dt><dd>mat4 Matrica transformacije </dd></dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>mat4 Matrica transformacije. </dd></dl>
 
 </div>
 </div>
@@ -210,13 +271,13 @@ Funkcije</h2></td></tr>
 <p>Funkcija kreira matricu pogleda. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>Pozicija kamere </td></tr>
-    <tr><td class="paramname">pitch</td><td>Rotacija oko X ose </td></tr>
-    <tr><td class="paramname">yaw</td><td>Rotacija oko Y ose </td></tr>
+    <tr><td class="paramname">position</td><td>Pozicija kamere. </td></tr>
+    <tr><td class="paramname">pitch</td><td>Rotacija oko X ose. </td></tr>
+    <tr><td class="paramname">yaw</td><td>Rotacija oko Y ose. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Vrednost funkcije</dt><dd>mat4 Matrica pogleda </dd></dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>mat4 Matrica pogleda. </dd></dl>
 
 </div>
 </div>

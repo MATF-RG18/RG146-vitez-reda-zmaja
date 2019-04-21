@@ -1,0 +1,534 @@
+\hypertarget{classshader_1_1SkyboxShader}{}\section{Dokumentacija klase shader\+:\+:Skybox\+Shader}
+\label{classshader_1_1SkyboxShader}\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+
+
+Klasa \hyperlink{classshader_1_1SkyboxShader}{Skybox\+Shader} ucitava i izvrsava programe na Open\+GL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju.  
+
+
+
+
+{\ttfamily \#include $<$Skybox\+Shader.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classshader_1_1SkyboxShader_a88e79167a010f126f34b7948187a2fb0}{Skybox\+Shader} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se ucitavaju sejder fajlovi i povezuju sa programom. \end{DoxyCompactList}\item 
+\hyperlink{classshader_1_1SkyboxShader_a95a5bab5ba781c47c594621f4f0059f4}{$\sim$\+Skybox\+Shader} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_ab97f006a672c72d1821f16e20f50307e}{bind\+Attribute} (int index, const char $\ast$variable\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje ime sa generickim atributom. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_a82e42bdf622da1879f391ea65749f1e7}{bind\+Attributes} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje sve potrebne atribute. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_aafcfd5c65e11b80953a8ba9645b0e2bf}{start} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija pokrece sejder program. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_a81d50b999a376fcd9cbbc20faa79df60}{stop} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija zaustavlja sejder program. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_a23be1cc008c7ac985cd34be65c446238}{clean\+Up} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija zaustavlja sejder program. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1SkyboxShader_a4a253cd426b56b9a7cd2e232dfc34ef6}{get\+Uniform\+Location} (const char $\ast$uniform\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca lokaciju uniformne promenljive. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_a1add7258c2e59462e6214d904a5a4256}{get\+All\+Uniform\+Locations} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja lokacije svih uniformnih promenljivih. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_a76e48c257263e1434e465539824c6670}{load\+Float} (int uniform\+Location, float value)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava broj u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_a1d7818f1d41d2dbec52f33e49fead0ec}{load\+Int} (int uniform\+Location, int value)
+\item 
+void \hyperlink{classshader_1_1SkyboxShader_ad1fe04f2b333178df6d760727ec8193d}{load\+Float\+Vertex} (int uniform\+Location, vec3 vertex)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava vektor koordinata u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_aa393967943968af99c1eab26f510f856}{load\+Matrix} (int uniform\+Location, mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_a6535b40978fc4a7bbe2b26b20f4b55c4}{load\+Projection\+Matrix} (mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu projekcije u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_ad9d6069bb62fc7b3bfb6e8ee0bfe8784}{load\+View\+Matrix} (\hyperlink{classentity_1_1Camera}{Camera} $\ast$camera, \hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$fps\+Data)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu pogleda u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_ab265c7bade726b97b9fb06aa2f7d94df}{load\+Fog\+Colour} (float r, float g, float b)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava boju magle u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_a7f82a4e1c953df83dddb6760c83742a1}{load\+Blend\+Factor} (float blend\+Factor)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava faktor mesanja u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1SkyboxShader_a0ec32687208276708275f34f589c5b44}{connect\+Texture\+Units} ()
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje teksture neba. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classshader_1_1SkyboxShader_a3d221aee6e11f91ea59332956e5edcbb}{load\+Shader} (const char $\ast$file\+Name, G\+Lenum type)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava sejder fajlove. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classshader_1_1SkyboxShader_a49d2262bba368bf6b24f32e645d7cc3d}{program\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator programa koji izvrsava sejder fajlove. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1SkyboxShader_ad0770dc09d144e47273dc691e3aec00c}{vertex\+Shader\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator ucitanog sejder fajla. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1SkyboxShader_a149d67af113a2f81247d4cbe573d32fa}{fragment\+Shader\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator ucitanog sejder fajla. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1SkyboxShader_aac607fdddcc532a76dd9e42caa6828d8}{location\+Projection\+Matrix}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1SkyboxShader_a6c31cfe83864808df46064a4f9c29aa7}{location\+View\+Matrix}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1SkyboxShader_a80bdb1b20baf13d123500d8c16f9900d}{location\+Fog\+Colour}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1SkyboxShader_a72b916251cca075201956fcc9cb08c38}{location\+Cube\+Map}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1SkyboxShader_a011fc4476645aae62b9ae6e64faead3a}{location\+Cube\+Map2}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1SkyboxShader_a5f21030a22bd04c0b5a3018d5175b881}{location\+Blend\+Factor}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+float \hyperlink{classshader_1_1SkyboxShader_a9e6ac7d8bed0467c3aa3b77f0fe80401}{rotation}
+\begin{DoxyCompactList}\small\item\em Lokacija uniformne promenljive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classshader_1_1SkyboxShader}{Skybox\+Shader} ucitava i izvrsava programe na Open\+GL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a88e79167a010f126f34b7948187a2fb0}\label{classshader_1_1SkyboxShader_a88e79167a010f126f34b7948187a2fb0}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!Skybox\+Shader@{Skybox\+Shader}}
+\index{Skybox\+Shader@{Skybox\+Shader}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{Skybox\+Shader()}{SkyboxShader()}}
+{\footnotesize\ttfamily shader\+::\+Skybox\+Shader\+::\+Skybox\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. U konstruktoru se ucitavaju sejder fajlovi i povezuju sa programom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a95a5bab5ba781c47c594621f4f0059f4}\label{classshader_1_1SkyboxShader_a95a5bab5ba781c47c594621f4f0059f4}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!````~Skybox\+Shader@{$\sim$\+Skybox\+Shader}}
+\index{````~Skybox\+Shader@{$\sim$\+Skybox\+Shader}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{$\sim$\+Skybox\+Shader()}{~SkyboxShader()}}
+{\footnotesize\ttfamily shader\+::\+Skybox\+Shader\+::$\sim$\+Skybox\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_ab97f006a672c72d1821f16e20f50307e}\label{classshader_1_1SkyboxShader_ab97f006a672c72d1821f16e20f50307e}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!bind\+Attribute@{bind\+Attribute}}
+\index{bind\+Attribute@{bind\+Attribute}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{bind\+Attribute()}{bindAttribute()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::bind\+Attribute (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{const char $\ast$}]{variable\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje ime sa generickim atributom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em index} & Identifikator generickog atributa. \\
+\hline
+{\em variable\+Name} & Ime koje pridruzujemo generickom atributu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a82e42bdf622da1879f391ea65749f1e7}\label{classshader_1_1SkyboxShader_a82e42bdf622da1879f391ea65749f1e7}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!bind\+Attributes@{bind\+Attributes}}
+\index{bind\+Attributes@{bind\+Attributes}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{bind\+Attributes()}{bindAttributes()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::bind\+Attributes (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje sve potrebne atribute. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a23be1cc008c7ac985cd34be65c446238}\label{classshader_1_1SkyboxShader_a23be1cc008c7ac985cd34be65c446238}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija zaustavlja sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a0ec32687208276708275f34f589c5b44}\label{classshader_1_1SkyboxShader_a0ec32687208276708275f34f589c5b44}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!connect\+Texture\+Units@{connect\+Texture\+Units}}
+\index{connect\+Texture\+Units@{connect\+Texture\+Units}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{connect\+Texture\+Units()}{connectTextureUnits()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::connect\+Texture\+Units (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje teksture neba. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a1add7258c2e59462e6214d904a5a4256}\label{classshader_1_1SkyboxShader_a1add7258c2e59462e6214d904a5a4256}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!get\+All\+Uniform\+Locations@{get\+All\+Uniform\+Locations}}
+\index{get\+All\+Uniform\+Locations@{get\+All\+Uniform\+Locations}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{get\+All\+Uniform\+Locations()}{getAllUniformLocations()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::get\+All\+Uniform\+Locations (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja lokacije svih uniformnih promenljivih. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a4a253cd426b56b9a7cd2e232dfc34ef6}\label{classshader_1_1SkyboxShader_a4a253cd426b56b9a7cd2e232dfc34ef6}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!get\+Uniform\+Location@{get\+Uniform\+Location}}
+\index{get\+Uniform\+Location@{get\+Uniform\+Location}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{get\+Uniform\+Location()}{getUniformLocation()}}
+{\footnotesize\ttfamily int shader\+::\+Skybox\+Shader\+::get\+Uniform\+Location (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca lokaciju uniformne promenljive. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Name} & Ime uniformne promenljive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Lokacija uniformne promenljive. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a7f82a4e1c953df83dddb6760c83742a1}\label{classshader_1_1SkyboxShader_a7f82a4e1c953df83dddb6760c83742a1}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!load\+Blend\+Factor@{load\+Blend\+Factor}}
+\index{load\+Blend\+Factor@{load\+Blend\+Factor}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{load\+Blend\+Factor()}{loadBlendFactor()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::load\+Blend\+Factor (\begin{DoxyParamCaption}\item[{float}]{blend\+Factor }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava faktor mesanja u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em blend\+Factor} & Faktor mesanja. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a76e48c257263e1434e465539824c6670}\label{classshader_1_1SkyboxShader_a76e48c257263e1434e465539824c6670}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!load\+Float@{load\+Float}}
+\index{load\+Float@{load\+Float}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{load\+Float()}{loadFloat()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::load\+Float (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava broj u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em value} & Broj pokretnom zarezu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_ad1fe04f2b333178df6d760727ec8193d}\label{classshader_1_1SkyboxShader_ad1fe04f2b333178df6d760727ec8193d}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!load\+Float\+Vertex@{load\+Float\+Vertex}}
+\index{load\+Float\+Vertex@{load\+Float\+Vertex}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{load\+Float\+Vertex()}{loadFloatVertex()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::load\+Float\+Vertex (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{vec3}]{vertex }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava vektor koordinata u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em vertex} & Vektor koordinata. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_ab265c7bade726b97b9fb06aa2f7d94df}\label{classshader_1_1SkyboxShader_ab265c7bade726b97b9fb06aa2f7d94df}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!load\+Fog\+Colour@{load\+Fog\+Colour}}
+\index{load\+Fog\+Colour@{load\+Fog\+Colour}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{load\+Fog\+Colour()}{loadFogColour()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::load\+Fog\+Colour (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava boju magle u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em r} & Kolicina crvene boje. \\
+\hline
+{\em g} & Kolicina zelene boje. \\
+\hline
+{\em b} & Kolicina plave boje. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a1d7818f1d41d2dbec52f33e49fead0ec}\label{classshader_1_1SkyboxShader_a1d7818f1d41d2dbec52f33e49fead0ec}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!load\+Int@{load\+Int}}
+\index{load\+Int@{load\+Int}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{load\+Int()}{loadInt()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::load\+Int (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_aa393967943968af99c1eab26f510f856}\label{classshader_1_1SkyboxShader_aa393967943968af99c1eab26f510f856}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!load\+Matrix@{load\+Matrix}}
+\index{load\+Matrix@{load\+Matrix}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{load\+Matrix()}{loadMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::load\+Matrix (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em matrix} & Matrica. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a6535b40978fc4a7bbe2b26b20f4b55c4}\label{classshader_1_1SkyboxShader_a6535b40978fc4a7bbe2b26b20f4b55c4}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!load\+Projection\+Matrix@{load\+Projection\+Matrix}}
+\index{load\+Projection\+Matrix@{load\+Projection\+Matrix}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{load\+Projection\+Matrix()}{loadProjectionMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::load\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu projekcije u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em matrix} & Matrica projekcije. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a3d221aee6e11f91ea59332956e5edcbb}\label{classshader_1_1SkyboxShader_a3d221aee6e11f91ea59332956e5edcbb}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!load\+Shader@{load\+Shader}}
+\index{load\+Shader@{load\+Shader}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{load\+Shader()}{loadShader()}}
+{\footnotesize\ttfamily int shader\+::\+Skybox\+Shader\+::load\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{G\+Lenum}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava sejder fajlove. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em file\+Name} & Naziv sejder fajla. \\
+\hline
+{\em type} & Vrsta sejdera. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Identifikator sejdera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_ad9d6069bb62fc7b3bfb6e8ee0bfe8784}\label{classshader_1_1SkyboxShader_ad9d6069bb62fc7b3bfb6e8ee0bfe8784}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!load\+View\+Matrix@{load\+View\+Matrix}}
+\index{load\+View\+Matrix@{load\+View\+Matrix}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{load\+View\+Matrix()}{loadViewMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::load\+View\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{classentity_1_1Camera}{Camera} $\ast$}]{camera,  }\item[{\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$}]{fps\+Data }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu pogleda u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em camera} & Pokazivac na instancu klase Camera. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_aafcfd5c65e11b80953a8ba9645b0e2bf}\label{classshader_1_1SkyboxShader_aafcfd5c65e11b80953a8ba9645b0e2bf}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!start@{start}}
+\index{start@{start}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::start (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija pokrece sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a81d50b999a376fcd9cbbc20faa79df60}\label{classshader_1_1SkyboxShader_a81d50b999a376fcd9cbbc20faa79df60}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!stop@{stop}}
+\index{stop@{stop}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void shader\+::\+Skybox\+Shader\+::stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija zaustavlja sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a149d67af113a2f81247d4cbe573d32fa}\label{classshader_1_1SkyboxShader_a149d67af113a2f81247d4cbe573d32fa}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!fragment\+Shader\+ID@{fragment\+Shader\+ID}}
+\index{fragment\+Shader\+ID@{fragment\+Shader\+ID}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{fragment\+Shader\+ID}{fragmentShaderID}}
+{\footnotesize\ttfamily int shader\+::\+Skybox\+Shader\+::fragment\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator ucitanog sejder fajla. 
+
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a5f21030a22bd04c0b5a3018d5175b881}\label{classshader_1_1SkyboxShader_a5f21030a22bd04c0b5a3018d5175b881}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!location\+Blend\+Factor@{location\+Blend\+Factor}}
+\index{location\+Blend\+Factor@{location\+Blend\+Factor}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{location\+Blend\+Factor}{locationBlendFactor}}
+{\footnotesize\ttfamily int shader\+::\+Skybox\+Shader\+::location\+Blend\+Factor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a72b916251cca075201956fcc9cb08c38}\label{classshader_1_1SkyboxShader_a72b916251cca075201956fcc9cb08c38}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!location\+Cube\+Map@{location\+Cube\+Map}}
+\index{location\+Cube\+Map@{location\+Cube\+Map}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{location\+Cube\+Map}{locationCubeMap}}
+{\footnotesize\ttfamily int shader\+::\+Skybox\+Shader\+::location\+Cube\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a011fc4476645aae62b9ae6e64faead3a}\label{classshader_1_1SkyboxShader_a011fc4476645aae62b9ae6e64faead3a}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!location\+Cube\+Map2@{location\+Cube\+Map2}}
+\index{location\+Cube\+Map2@{location\+Cube\+Map2}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{location\+Cube\+Map2}{locationCubeMap2}}
+{\footnotesize\ttfamily int shader\+::\+Skybox\+Shader\+::location\+Cube\+Map2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a80bdb1b20baf13d123500d8c16f9900d}\label{classshader_1_1SkyboxShader_a80bdb1b20baf13d123500d8c16f9900d}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!location\+Fog\+Colour@{location\+Fog\+Colour}}
+\index{location\+Fog\+Colour@{location\+Fog\+Colour}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{location\+Fog\+Colour}{locationFogColour}}
+{\footnotesize\ttfamily int shader\+::\+Skybox\+Shader\+::location\+Fog\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_aac607fdddcc532a76dd9e42caa6828d8}\label{classshader_1_1SkyboxShader_aac607fdddcc532a76dd9e42caa6828d8}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!location\+Projection\+Matrix@{location\+Projection\+Matrix}}
+\index{location\+Projection\+Matrix@{location\+Projection\+Matrix}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{location\+Projection\+Matrix}{locationProjectionMatrix}}
+{\footnotesize\ttfamily int shader\+::\+Skybox\+Shader\+::location\+Projection\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a6c31cfe83864808df46064a4f9c29aa7}\label{classshader_1_1SkyboxShader_a6c31cfe83864808df46064a4f9c29aa7}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!location\+View\+Matrix@{location\+View\+Matrix}}
+\index{location\+View\+Matrix@{location\+View\+Matrix}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{location\+View\+Matrix}{locationViewMatrix}}
+{\footnotesize\ttfamily int shader\+::\+Skybox\+Shader\+::location\+View\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a49d2262bba368bf6b24f32e645d7cc3d}\label{classshader_1_1SkyboxShader_a49d2262bba368bf6b24f32e645d7cc3d}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!program\+ID@{program\+ID}}
+\index{program\+ID@{program\+ID}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{program\+ID}{programID}}
+{\footnotesize\ttfamily int shader\+::\+Skybox\+Shader\+::program\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator programa koji izvrsava sejder fajlove. 
+
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_a9e6ac7d8bed0467c3aa3b77f0fe80401}\label{classshader_1_1SkyboxShader_a9e6ac7d8bed0467c3aa3b77f0fe80401}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!rotation@{rotation}}
+\index{rotation@{rotation}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily float shader\+::\+Skybox\+Shader\+::rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija uniformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1SkyboxShader_ad0770dc09d144e47273dc691e3aec00c}\label{classshader_1_1SkyboxShader_ad0770dc09d144e47273dc691e3aec00c}} 
+\index{shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}!vertex\+Shader\+ID@{vertex\+Shader\+ID}}
+\index{vertex\+Shader\+ID@{vertex\+Shader\+ID}!shader\+::\+Skybox\+Shader@{shader\+::\+Skybox\+Shader}}
+\subsubsection{\texorpdfstring{vertex\+Shader\+ID}{vertexShaderID}}
+{\footnotesize\ttfamily int shader\+::\+Skybox\+Shader\+::vertex\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator ucitanog sejder fajla. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/shader/\hyperlink{SkyboxShader_8h}{Skybox\+Shader.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/shader/\hyperlink{SkyboxShader_8cpp}{Skybox\+Shader.\+cpp}\end{DoxyCompactItemize}

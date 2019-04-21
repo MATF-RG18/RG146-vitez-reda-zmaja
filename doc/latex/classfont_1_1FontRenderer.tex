@@ -1,0 +1,173 @@
+\hypertarget{classfont_1_1FontRenderer}{}\section{Dokumentacija klase font\+:\+:Font\+Renderer}
+\label{classfont_1_1FontRenderer}\index{font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}}
+
+
+Klasa \hyperlink{classfont_1_1FontRenderer}{Font\+Renderer} zaduzena je za iscrtavanje karaktera. Pomocu klase \hyperlink{classfont_1_1FontRenderer}{Font\+Renderer} iscrtavamo sve karaktere iz niske uz prosledjene osobine teksta navedene u \hyperlink{classfont_1_1Text}{Text} klasi.  
+
+
+
+
+{\ttfamily \#include $<$Font\+Renderer.\+h$>$}
+
+
+
+Klasni dijagram za font\+:\+:Font\+Renderer\+:
+% FIG 0
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfont_1_1FontRenderer_a272ad655371b8a90e2ae76d03b578a21}{Font\+Renderer} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classfont_1_1FontRenderer_adc2bcaedb1eac4421e42b264d186c1bb}{$\sim$\+Font\+Renderer} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classfont_1_1FontRenderer_adc45aa765d978d8b445c7e8f2eb5c90a}{render} (\hyperlink{classfont_1_1Text}{Text} $\ast$text)
+\begin{DoxyCompactList}\small\item\em Funkcija iscrtava tekst pomocu podataka iz klase \hyperlink{classfont_1_1Text}{Text}. \end{DoxyCompactList}\item 
+void \hyperlink{classfont_1_1FontRenderer_ae35691cc191fad294054df6e87cde119}{clean\+Up} ()
+\begin{DoxyCompactList}\small\item\em Funkcija poziva funkciju clean\+Up za sejder fonta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classshader_1_1FontShader}{Font\+Shader} $\ast$ \hyperlink{classfont_1_1FontRenderer_ac53abacecd3c69c963e481ba7af5041b}{font\+Shader}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Font\+Shader. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{classfont_1_1FontRenderer_aa67dc4a985fd53d19094b542601f20f6}{vao\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator niza atributa. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{classfont_1_1FontRenderer_aea11a2460411cec768c047adc0e2615d}{vbo\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator bafera koji postaje clan niza atributa. \end{DoxyCompactList}\item 
+G\+Lfloat \hyperlink{classfont_1_1FontRenderer_aa86ddacb12c06709125f0b72d275d7ba}{screen\+Width}
+\begin{DoxyCompactList}\small\item\em Sirina ekrana. \end{DoxyCompactList}\item 
+G\+Lfloat \hyperlink{classfont_1_1FontRenderer_ad048dc05d9a1f47944f1c2a913840fa3}{screen\+Height}
+\begin{DoxyCompactList}\small\item\em Duzina ekrana. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classfont_1_1FontRenderer}{Font\+Renderer} zaduzena je za iscrtavanje karaktera. Pomocu klase \hyperlink{classfont_1_1FontRenderer}{Font\+Renderer} iscrtavamo sve karaktere iz niske uz prosledjene osobine teksta navedene u \hyperlink{classfont_1_1Text}{Text} klasi. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classfont_1_1FontRenderer_a272ad655371b8a90e2ae76d03b578a21}\label{classfont_1_1FontRenderer_a272ad655371b8a90e2ae76d03b578a21}} 
+\index{font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}!Font\+Renderer@{Font\+Renderer}}
+\index{Font\+Renderer@{Font\+Renderer}!font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}}
+\subsubsection{\texorpdfstring{Font\+Renderer()}{FontRenderer()}}
+{\footnotesize\ttfamily font\+::\+Font\+Renderer\+::\+Font\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfont_1_1FontRenderer_adc2bcaedb1eac4421e42b264d186c1bb}\label{classfont_1_1FontRenderer_adc2bcaedb1eac4421e42b264d186c1bb}} 
+\index{font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}!````~Font\+Renderer@{$\sim$\+Font\+Renderer}}
+\index{````~Font\+Renderer@{$\sim$\+Font\+Renderer}!font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Font\+Renderer()}{~FontRenderer()}}
+{\footnotesize\ttfamily font\+::\+Font\+Renderer\+::$\sim$\+Font\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classfont_1_1FontRenderer_ae35691cc191fad294054df6e87cde119}\label{classfont_1_1FontRenderer_ae35691cc191fad294054df6e87cde119}} 
+\index{font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void font\+::\+Font\+Renderer\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija poziva funkciju clean\+Up za sejder fonta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfont_1_1FontRenderer_adc45aa765d978d8b445c7e8f2eb5c90a}\label{classfont_1_1FontRenderer_adc45aa765d978d8b445c7e8f2eb5c90a}} 
+\index{font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}!render@{render}}
+\index{render@{render}!font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void font\+::\+Font\+Renderer\+::render (\begin{DoxyParamCaption}\item[{\hyperlink{classfont_1_1Text}{Text} $\ast$}]{text }\end{DoxyParamCaption})}
+
+
+
+Funkcija iscrtava tekst pomocu podataka iz klase \hyperlink{classfont_1_1Text}{Text}. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em text} & Pokazivac na instancu klase \hyperlink{classfont_1_1Text}{Text}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classfont_1_1FontRenderer_ac53abacecd3c69c963e481ba7af5041b}\label{classfont_1_1FontRenderer_ac53abacecd3c69c963e481ba7af5041b}} 
+\index{font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}!font\+Shader@{font\+Shader}}
+\index{font\+Shader@{font\+Shader}!font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}}
+\subsubsection{\texorpdfstring{font\+Shader}{fontShader}}
+{\footnotesize\ttfamily \hyperlink{classshader_1_1FontShader}{Font\+Shader}$\ast$ font\+::\+Font\+Renderer\+::font\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Font\+Shader. 
+
+\mbox{\Hypertarget{classfont_1_1FontRenderer_ad048dc05d9a1f47944f1c2a913840fa3}\label{classfont_1_1FontRenderer_ad048dc05d9a1f47944f1c2a913840fa3}} 
+\index{font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}!screen\+Height@{screen\+Height}}
+\index{screen\+Height@{screen\+Height}!font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}}
+\subsubsection{\texorpdfstring{screen\+Height}{screenHeight}}
+{\footnotesize\ttfamily G\+Lfloat font\+::\+Font\+Renderer\+::screen\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Duzina ekrana. 
+
+\mbox{\Hypertarget{classfont_1_1FontRenderer_aa86ddacb12c06709125f0b72d275d7ba}\label{classfont_1_1FontRenderer_aa86ddacb12c06709125f0b72d275d7ba}} 
+\index{font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}!screen\+Width@{screen\+Width}}
+\index{screen\+Width@{screen\+Width}!font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}}
+\subsubsection{\texorpdfstring{screen\+Width}{screenWidth}}
+{\footnotesize\ttfamily G\+Lfloat font\+::\+Font\+Renderer\+::screen\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sirina ekrana. 
+
+\mbox{\Hypertarget{classfont_1_1FontRenderer_aa67dc4a985fd53d19094b542601f20f6}\label{classfont_1_1FontRenderer_aa67dc4a985fd53d19094b542601f20f6}} 
+\index{font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}!vao\+ID@{vao\+ID}}
+\index{vao\+ID@{vao\+ID}!font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}}
+\subsubsection{\texorpdfstring{vao\+ID}{vaoID}}
+{\footnotesize\ttfamily G\+Luint font\+::\+Font\+Renderer\+::vao\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator niza atributa. 
+
+\mbox{\Hypertarget{classfont_1_1FontRenderer_aea11a2460411cec768c047adc0e2615d}\label{classfont_1_1FontRenderer_aea11a2460411cec768c047adc0e2615d}} 
+\index{font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}!vbo\+ID@{vbo\+ID}}
+\index{vbo\+ID@{vbo\+ID}!font\+::\+Font\+Renderer@{font\+::\+Font\+Renderer}}
+\subsubsection{\texorpdfstring{vbo\+ID}{vboID}}
+{\footnotesize\ttfamily G\+Luint font\+::\+Font\+Renderer\+::vbo\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator bafera koji postaje clan niza atributa. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/font/\hyperlink{FontRenderer_8h}{Font\+Renderer.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/font/\hyperlink{FontRenderer_8cpp}{Font\+Renderer.\+cpp}\end{DoxyCompactItemize}

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['shader_2ecpp',['Shader.cpp',['../Shader_8cpp.html',1,'']]],
-  ['shader_2eh',['Shader.h',['../Shader_8h.html',1,'']]]
+  ['player_2ecpp',['Player.cpp',['../Player_8cpp.html',1,'']]],
+  ['player_2eh',['Player.h',['../Player_8h.html',1,'']]]
 ];
