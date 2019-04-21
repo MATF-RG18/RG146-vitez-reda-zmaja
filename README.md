@@ -115,7 +115,7 @@ cd RG102-vitez-reda-zmaja
 <table>
 
 ##  :large_blue_circle: Napomena
-> Prilikom kreiranja projekta koriscen je YouTube tutorijal [OpenGL 3D Java Game Tutorial](https://www.youtube.com/watch?v=VS8wlS9hF8E&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP) koji je u velikoj meri pomogao pri razumevanju kreiranja video igara i uticao na izgled i strukturu projekta.
+> Prilikom kreiranja projekta koriscen je YouTube tutorijal [OpenGL 3D Java Game Tutorial](https://www.youtube.com/watch?v=VS8wlS9hF8E&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP) koji je u velikoj meri pomogao pri razumevanju kreiranja video igara i uticao na izgled i strukturu projekta. Takodje je koriscena i veb stranica  [Learn OpenGL](https://learnopengl.com/).
 
 > Za pomoc pri upotrebi OpenGL funkcija koriscen je sajt [Khronos](https://www.khronos.org/registry/OpenGL-Refpages/)
 
