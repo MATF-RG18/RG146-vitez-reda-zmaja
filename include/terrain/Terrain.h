@@ -21,7 +21,7 @@
 #include <glm/glm.hpp>
 
 // Velicina terena
-#define SIZE  800
+#define SIZE  1000
 // Vrednost boje predstavljene kao broj
 #define MAX_PIXEL_COLOUR 256*256*256
 // Maksimalna visina terena

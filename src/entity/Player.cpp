@@ -69,7 +69,6 @@ namespace entity {
         float deltaZ = this->currentSpeed*cos(radians(this->getRotation().y));
 
         this->increasePosition(vec3 (deltaX, 0, deltaZ));
-
         float terrainHeight = this->terrain->getHeightOfTerrain(this->getPosition().x, this->getPosition().z);
         this->setPosition(vec3(this->getPosition().x, terrainHeight ,this->getPosition().z));
 

@@ -34,22 +34,27 @@ namespace terrain {
     }
 
     RawModel * Terrain::getModel() {
+
         return this->model;
     }
 
     TerrainTexturePack * Terrain::getTexturePack() {
+
         return this->texturePack;
     }
 
     TerrainTexture * Terrain::getBlendMap() {
+
         return this->blendMap;
     }
 
     float Terrain::getX() {
+
         return this->x;
     }
 
     float Terrain::getZ() {
+
         return this->z;
     }
 
@@ -64,12 +69,12 @@ namespace terrain {
         int vertexIndex = 0;
         for (int i = 0; i < VERTEX_COUNT; i++) {
             for (int j = 0; j < VERTEX_COUNT; j++) {
-                float h = getHeight(image, i, j);
-                this->heights[i][j] = h;
+                float h = getHeight(image, j, i);
+                this->heights[j][i] = h;
                 vertices[vertexIndex*3] = float(j)/float(VERTEX_COUNT-1)*SIZE;
                 vertices[vertexIndex*3 + 1] = h;
                 vertices[vertexIndex*3 + 2] = float(i)/float(VERTEX_COUNT-1)*SIZE;
-                vec3 normal= calculateNormal(image, i, j);
+                vec3 normal= calculateNormal(image, j, i);
                 normals[vertexIndex*3] = normal.x;
                 normals[vertexIndex*3 + 1] = normal.y;
                 normals[vertexIndex*3 + 2] = normal.z;
@@ -123,7 +128,7 @@ namespace terrain {
         
         PixelPacket *pixels = image.getPixels(0, 0, w, h);
         
-        Color color = pixels[ w * x+ y];
+        Color color = pixels[ w * x + y];
         ColorRGB c = color;
         float height = c.red() * c.green()* c.blue();
         height *= MAX_HEIGHT;
@@ -133,17 +138,16 @@ namespace terrain {
 
     float Terrain::getHeightOfTerrain(int worldX, int worldZ) {
 
-        int terrainX = worldX - this->x;
-        int terrainZ = worldZ - this->z;
-        int gridSquareSize = abs(SIZE / (this->heightsLength - 1));
+        float terrainX = worldX - this->x;
+        float terrainZ = worldZ - this->z;
+        float gridSquareSize = (float)SIZE / ((float)this->heightsLength - 1);
         int gridX = floor(terrainX/gridSquareSize);
         int gridZ = floor(terrainZ/gridSquareSize);
         if (gridX >= heightsLength-1 || gridZ >= heightsLength-1 || gridX<0 || gridZ<0) {
             return 0;
         }
-        int xCoord = (terrainX%gridSquareSize)/gridSquareSize;
-        int zCoord = (terrainZ%gridSquareSize)/gridSquareSize;
-        
+        float xCoord = fmod(terrainX,gridSquareSize)/gridSquareSize;
+        float zCoord = fmod(terrainZ,gridSquareSize)/gridSquareSize;
         float answer;
 
         if (xCoord <= 1 - zCoord) {

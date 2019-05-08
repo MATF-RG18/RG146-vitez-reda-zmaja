@@ -102,12 +102,12 @@ namespace core {
     screenHeight = glutGet(GLUT_SCREEN_HEIGHT);
 
     glutInitWindowSize(screenWidth, screenHeight);
-      glutInitWindowPosition(0, 0);
-      glutCreateWindow(screenTitle);
+    glutInitWindowPosition(0, 0);
+    glutCreateWindow(screenTitle);
 
-    if (glutGameModeGet (GLUT_GAME_MODE_POSSIBLE)) {
-      glutEnterGameMode();
-    }
+    // if (glutGameModeGet (GLUT_GAME_MODE_POSSIBLE)) {
+    //   glutEnterGameMode();
+    // }
 
     return;
   }
