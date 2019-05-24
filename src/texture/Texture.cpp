@@ -1,11 +1,11 @@
-#include "../../include/texture/ModelTexture.h"
+#include "../../include/texture/Texture.h"
 
-// Klasa je implementirana po uzoru na video tutorijal 
+// Klasa je implementirana po uzoru na video tutorijal
 // https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
 namespace texture {
 
-  ModelTexture::ModelTexture(int id) {
+  Texture::Texture(int id) {
 
     this->textureID = id;
     this->shine = 1;
@@ -14,51 +14,51 @@ namespace texture {
     this->useFakeLightning = false;
   }
 
-  ModelTexture::~ModelTexture() {
+  Texture::~Texture() {
 
   }
 
-  int ModelTexture::getID() {
+  int Texture::getID() {
 
     return this->textureID;
   }
 
-  float ModelTexture::getShine() {
-    
+  float Texture::getShine() {
+
     return this->shine;
   }
 
-  float ModelTexture::getReflectivity() {
+  float Texture::getReflectivity() {
 
     return this->reflectivity;
   }
 
-  bool ModelTexture::getHasTransparency() {
+  bool Texture::getHasTransparency() {
 
     return this->hasTransparency;
   }
 
-  bool ModelTexture::getUseFakeLightning() {
+  bool Texture::getUseFakeLightning() {
 
     return this->useFakeLightning;
   }
 
-  void ModelTexture::setShine(float shine) {
+  void Texture::setShine(float shine) {
 
     this->shine = shine;
   }
 
-  void ModelTexture::setReflectivity(float reflectivity) {
-    
+  void Texture::setReflectivity(float reflectivity) {
+
     this->reflectivity = reflectivity;
   }
 
-  void ModelTexture::setHasTransparency(bool transparency) {
+  void Texture::setHasTransparency(bool transparency) {
 
     this->hasTransparency = transparency;
   }
 
-  void ModelTexture::setUseFakeLightning(bool lightning) {
+  void Texture::setUseFakeLightning(bool lightning) {
 
     this->useFakeLightning = lightning;
   }

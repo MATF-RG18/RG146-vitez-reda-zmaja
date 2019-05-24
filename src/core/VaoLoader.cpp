@@ -1,6 +1,6 @@
 #include "../../include/core/VaoLoader.h"
 
-// Klasa je implementirana po uzoru na video tutorijal 
+// Klasa je implementirana po uzoru na video tutorijal
 // https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
 // Pomoc pri koriscenju biblioteka za ucitavanje slika
@@ -12,7 +12,7 @@ using namespace std;
 namespace core {
 
   VaoLoader::VaoLoader() {
-    
+
   }
 
   VaoLoader::~VaoLoader() {
@@ -20,7 +20,7 @@ namespace core {
     cleanUp();
   }
 
-  RawModel * VaoLoader::loadToVao(GLfloat positions[], GLint positionsSize,
+  GLint VaoLoader::loadToVao(GLfloat positions[], GLint positionsSize,
   GLint indices[], GLint indicesSize,
   GLfloat textureCoords[], GLint textureSize,
   GLfloat normals[], GLint normalsSize) {
@@ -31,20 +31,38 @@ namespace core {
     storeDataInVertexBuffer(2, 3, normals, normalsSize);
     unbindVao();
 
-    return new RawModel(vaoID, indicesSize);
+    return vaoID;
   }
 
-  RawModel * VaoLoader::loadToVao(GLfloat positions[], GLint positionsSize, int dimensions) {
+  GLint VaoLoader::loadToVao(GLfloat positions[], GLint positionsSize, GLint indices[], GLint indicesSize,
+  GLfloat textureCoords[], GLint textureSize,
+  GLfloat normals[], GLint normalsSize,
+  GLint boneIndices[], GLint boneIndicesSize,
+  GLfloat weights[], GLint weightsSize) {
+
+    vaoID = createVao();
+    storeDataInIndicesBuffer(indices, indicesSize);
+    storeDataInVertexBuffer(0, 3, positions, positionsSize);
+    storeDataInVertexBuffer(1, 2, textureCoords, textureSize);
+    storeDataInVertexBuffer(2, 3, normals, normalsSize);
+    storeDataInVertexBuffer(3, 4, boneIndices, boneIndicesSize);
+    storeDataInVertexBuffer(4, 4, weights, weightsSize);
+    unbindVao();
+
+    return vaoID;
+  }
+
+  GLint VaoLoader::loadToVao(GLfloat positions[], GLint positionsSize, int dimensions) {
     // Prostiji model ucitavanja gde su nam potrebne samo pozicije bez tekstura i normala
     GLuint vaoID = createVao();
     storeDataInVertexBuffer(0, dimensions, positions, positionsSize);
     unbindVao();
 
-    return new RawModel(vaoID, positionsSize/dimensions);
+    return vaoID;
 
   }
 
-  // Kod za ucitavanje png datoteke preuzet sa 
+  // Kod za ucitavanje png datoteke preuzet sa
   // https://blog.nobel-joergensen.com/2010/11/07/loading-a-png-as-texture-in-opengl-using-libpng/
   int VaoLoader::loadTexture(const char *fileName) {
 
@@ -187,7 +205,7 @@ namespace core {
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_LOD_BIAS, -1);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT); 
+    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
     png_destroy_read_struct(&pngPointer, &infoPointer, &endInfo);
@@ -217,6 +235,19 @@ namespace core {
     vector<GLfloat> buffer = storeDataInFloatBuffer(data, dataSize);
     glBufferData(GL_ARRAY_BUFFER, buffer.size() * sizeof(float), &(buffer[0]), GL_STATIC_DRAW);
     glVertexAttribPointer(attributeNumber, coordinateSize, GL_FLOAT, false, 0, 0);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+    return;
+  }
+
+  void VaoLoader::storeDataInVertexBuffer(GLint attributeNumber, int coordinateSize, GLint data[], GLint dataSize) {
+
+    glGenBuffers(1, &vboID);
+    vbos.push_back(vboID);
+    glBindBuffer(GL_ARRAY_BUFFER, vboID);
+    vector<GLint> buffer = storeDataInIntBuffer(data, dataSize);
+    glBufferData(GL_ARRAY_BUFFER, buffer.size() * sizeof(int), &(buffer[0]), GL_STATIC_DRAW);
+    glVertexAttribPointer(attributeNumber, coordinateSize, GL_INT, false, 0, 0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 
     return;
@@ -260,9 +291,9 @@ namespace core {
   }
 
   GLuint VaoLoader::loadCubeMap(vector<const char *> textureFiles) {
-    
+
     // Inicijalizujemo biblioteku
-    InitializeMagick(NULL);  
+    InitializeMagick(NULL);
 
     // Generisemo teksturu koja se sastoji od 6 delova svaki nalepljen na jedan deo kocke
     GLuint textureID;
@@ -281,8 +312,8 @@ namespace core {
       glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
       glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
       glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-      glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE); 
-      
+      glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
+
     }
 
     this->textures.push_back(textureID);
@@ -314,7 +345,7 @@ namespace core {
         buffer.push_back(c.green()*255.0);
         buffer.push_back(c.blue()*255.0);
         buffer.push_back(c.alpha()*255.0);
-  
+
       }
     }
 
@@ -322,7 +353,7 @@ namespace core {
     return new SkyboxTextureData(width, height, buffer.data());
 
   }
-  
+
   void VaoLoader::cleanUp() {
 
     for (GLuint vao : vaos) {

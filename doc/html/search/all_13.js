@@ -5,7 +5,7 @@ var searchData=
   ['unbindvao',['unbindVao',['../classcore_1_1VaoLoader.html#a8876e8e71b0299c47406afc7a2cb6d81',1,'core::VaoLoader']]],
   ['unknown_5fparameter',['unknown_parameter',['../structtinyobj_1_1material__t.html#a18b700227c94d410ed1aa550c7fa9226',1,'tinyobj::material_t']]],
   ['update',['update',['../classutility_1_1FpsData.html#adcc115a219b00aa4d0c979955b617f91',1,'utility::FpsData']]],
-  ['usefakelightning',['useFakeLightning',['../classtexture_1_1ModelTexture.html#aa14650f7cc629b9f5c0ed15f82b22cad',1,'texture::ModelTexture']]],
+  ['usefakelightning',['useFakeLightning',['../classtexture_1_1Texture.html#aa14650f7cc629b9f5c0ed15f82b22cad',1,'texture::Texture']]],
   ['usemtl_5fcb',['usemtl_cb',['../structtinyobj_1_1callback__t__.html#a8c5ae85ae10186b6c0e925b4b2b9a987',1,'tinyobj::callback_t_']]],
   ['utility',['utility',['../namespaceutility.html',1,'']]]
 ];

@@ -13,6 +13,9 @@
 #include "../core/TerrainRenderer.h"
 #include "../shader/TerrainShader.h"
 #include "../entity/Entity.h"
+#include "../entity/AnimatedEntity.h"
+#include "../shader/AnimatedModelShader.h"
+#include "../core/AnimatedModelRenderer.h"
 #include "../core/SkyboxRenderer.h"
 #include "../core/VaoLoader.h"
 
@@ -25,6 +28,8 @@
 #define FRAGMENT_FILE "src/shader/FragmentShader.txt"
 #define TERRAIN_VERTEX_FILE "src/shader/TerrainVertexShader.txt"
 #define TERRAIN_FRAGMENT_FILE "src/shader/TerrainFragmentShader.txt"
+#define ANIMATED_MODEL_VERTEX_FILE "src/shader/AnimatedModelVertexShader.txt"
+#define ANIMATED_MODEL_FRAGMENT_FILE "src/shader/AnimatedModelFragmentShader.txt"
 
 // Makroi za definisanje RGB boje
 #define R 0.6
@@ -47,7 +52,7 @@ namespace core {
 
         // Privatne promenljive klase.
         private:
-            /// Pokazivac na instancu klase Shader. 
+            /// Pokazivac na instancu klase Shader.
             Shader *shader;
 
             /// Pokazivac na instancu klase Render.
@@ -60,12 +65,18 @@ namespace core {
             TerrainShader *terrainShader;
 
             /// Hes mapa koja sadrzi teksturisane modele i liste entiteta.
-            map<TexturedModel *, list<Entity *>> entities;
+            map<TexturedModel *, list<Entity *>> modelEntities;
+
+            map<AnimatedModel *, list<AnimatedEntity *>> animatedModelEntities;
 
             /// Lista terena
             list<Terrain *> terrains;
 
             SkyboxRenderer *skyboxRenderer;
+
+            AnimatedModelShader *animatedModelShader;
+
+            AnimatedModelRenderer *animatedModelRenderer;
 
             FpsData *fpsData;
         // Javne funkcije klase.
@@ -96,6 +107,8 @@ namespace core {
             /// @return void
             ////////////////////////////////////////////////////////////////////////////
             void processEntity(Entity *entity);
+
+            void processAnimatedEntity(AnimatedEntity *AnimatedEntity);
 
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija obradjuje terene i ubacuje ih u listu terena.

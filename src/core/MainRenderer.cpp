@@ -1,6 +1,6 @@
 #include "../../include/core/MainRenderer.h"
 
-// Klasa je implementirana po uzoru na video tutorijal 
+// Klasa je implementirana po uzoru na video tutorijal
 // https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
 namespace core {
@@ -13,6 +13,8 @@ namespace core {
         this->terrainShader = new TerrainShader(TERRAIN_VERTEX_FILE, TERRAIN_FRAGMENT_FILE);
         this->terrainRenderer = new TerrainRenderer(terrainShader);
         this->skyboxRenderer = new SkyboxRenderer(vaoLoader);
+        this->animatedModelShader = new AnimatedModelShader(ANIMATED_MODEL_VERTEX_FILE, ANIMATED_MODEL_FRAGMENT_FILE);
+        this->animatedModelRenderer = new AnimatedModelRenderer(animatedModelShader);
     }
 
     MainRenderer::~MainRenderer() {
@@ -20,15 +22,23 @@ namespace core {
     }
 
     void MainRenderer::render(Light *light, Camera *camera) {
-        
+
         prepare();
         this->shader->start();
         this->shader->loadSkyColour(R,G,B);
         this->shader->loadLight(light);
         this->shader->loadViewMatrix(camera);
-        this->renderer->render(this->entities);
+        this->renderer->render(this->modelEntities);
         this->shader->stop();
-        this->entities.clear();
+        this->modelEntities.clear();
+
+        this->animatedModelShader->start();
+        this->animatedModelShader->loadSkyColour(R,G,B);
+        this->animatedModelShader->loadLight(light);
+        this->animatedModelShader->loadViewMatrix(camera);
+        this->animatedModelRenderer->render(this->animatedModelEntities);
+        this->animatedModelShader->stop();
+        this->animatedModelEntities.clear();
 
         this->terrainShader->start();
         terrainShader->loadSkyColour(R,G,B);
@@ -43,7 +53,7 @@ namespace core {
 
 
     void MainRenderer::processTerrain(Terrain *terrain) {
-        
+
         this->terrains.push_back(terrain);
     }
 
@@ -51,13 +61,25 @@ namespace core {
 
         TexturedModel *entityModel = entity->getModel();
         list<Entity *> batch;
-        if (this->entities.find(entityModel) != entities.end()) {
-            this->entities.find(entityModel)->second.push_back(entity);
+        if (this->modelEntities.find(entityModel) != modelEntities.end()) {
+            this->modelEntities.find(entityModel)->second.push_back(entity);
         } else {
             list<Entity *> newBatch = {entity};
-            this->entities.insert(pair<TexturedModel *, list<Entity *>>(entityModel, newBatch));
+            this->modelEntities.insert(pair<TexturedModel *, list<Entity *>>(entityModel, newBatch));
         }
-    
+
+    }
+
+    void MainRenderer::processAnimatedEntity(AnimatedEntity *entity) {
+
+      AnimatedModel *entityModel = entity->getModel();
+      list<AnimatedEntity *> batch;
+      if (this->animatedModelEntities.find(entityModel) != animatedModelEntities.end()) {
+          this->animatedModelEntities.find(entityModel)->second.push_back(entity);
+      } else {
+          list<AnimatedEntity *> newBatch = {entity};
+          this->animatedModelEntities.insert(pair<AnimatedModel *, list<AnimatedEntity *>>(entityModel, newBatch));
+      }
     }
 
     void MainRenderer::prepare(void) {
@@ -82,9 +104,10 @@ namespace core {
     }
 
     void MainRenderer::cleanUp() {
-        
+
         this->shader->cleanUp();
         this->terrainShader->cleanUp();
+        this->animatedModelShader->cleanUp();
     }
 
 }

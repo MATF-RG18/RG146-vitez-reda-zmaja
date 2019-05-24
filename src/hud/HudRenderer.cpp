@@ -8,7 +8,9 @@ namespace hud {
     HudRenderer::HudRenderer(VaoLoader *vaoLoader) {
 
         float positions[] = {-1,1,-1,-1,1,1,1,-1};
-        this->quad = vaoLoader->loadToVao(positions, sizeof(positions)/sizeof(positions[0]),2);
+        GLint vaoID = vaoLoader->loadToVao(positions, sizeof(positions)/sizeof(positions[0]),2);
+        GLint vertexCount = (sizeof(positions)/sizeof(positions[0]))/2;
+        this->quad = new RawModel(vector<GLint> {vaoID}, vector<GLint> {vertexCount});
         this->hudShader = new HudShader(HUD_VERTEX_SHADER, HUD_FRAGMENT_SHADER);
     }
 
@@ -19,7 +21,7 @@ namespace hud {
     void HudRenderer::render(vector<HudTexture*> huds) {
 
         this->hudShader->start();
-        glBindVertexArray(this->quad->getVaoID());
+        glBindVertexArray(this->quad->getMeshesVaoID()[0]);
         glEnableVertexAttribArray(0);
         glEnable(GL_BLEND);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -29,7 +31,7 @@ namespace hud {
             glBindTexture(GL_TEXTURE_2D, hudTex->getTextureID());
             mat4 transformationMatrix = createTransformationMatrix(hudTex->getPosition(), hudTex->getScale(), hudTex->getRotation());
             hudShader->loadTransformationMatrix(transformationMatrix);
-            glDrawArrays(GL_TRIANGLE_STRIP, 0, this->quad->getVertexCount());
+            glDrawArrays(GL_TRIANGLE_STRIP, 0, this->quad->getMeshesVertexCount()[0]);
         }
         glEnable(GL_DEPTH_TEST);
         glDisable(GL_BLEND);

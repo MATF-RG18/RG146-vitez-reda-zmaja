@@ -10,13 +10,14 @@
 
 // Ukljucivanje korsnicki defininisanih biblioteka.
 #include "../model/TexturedModel.h"
+#include "../model/AnimatedModel.h"
+#include "../core/Loader.h"
 #include "../model/RawModel.h"
 #include "../core/VaoLoader.h"
 #include "../core/Render.h"
 #include "../core/MainRenderer.h"
-#include "../core/ObjLoader.h"
 #include "../shader/Shader.h"
-#include "../texture/ModelTexture.h"
+#include "../texture/Texture.h"
 #include "../texture/TerrainTexturePack.h"
 #include "../entity/Entity.h"
 #include "../entity/Player.h"
@@ -27,6 +28,7 @@
 #include "../hud/HudRenderer.h"
 #include "../font/FontRenderer.h"
 #include "../font/Text.h"
+#include "../animation/Animator.h"
 
 // Ukljucivanje OpenGL biblioteke.
 #include <GL/glut.h>
@@ -43,6 +45,7 @@ using namespace entity;
 using namespace utility;
 using namespace hud;
 using namespace font;
+using namespace animation;
 
 ////////////////////////////////////////////////////////////////////////////////
 /// @brief Prostor imena core.

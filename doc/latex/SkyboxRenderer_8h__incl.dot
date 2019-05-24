@@ -33,7 +33,7 @@ digraph "/home/dusan/Documents/RG146-vitez-reda-zmaja/include/core/SkyboxRendere
   Node14 [label="../model/TexturedModel.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$TexturedModel_8h.html",tooltip="Deklaracija klase TexturedModel. "];
   Node14 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
   Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
-  Node15 [label="../texture/ModelTexture.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ModelTexture_8h.html",tooltip="Deklaracija klase ModelTexture. "];
+  Node15 [label="../texture/Texture.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Texture_8h.html",tooltip="Deklaracija klase Texture. "];
   Node13 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
   Node13 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
   Node13 -> Node10 [color="midnightblue",fontsize="10",style="solid"];

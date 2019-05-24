@@ -39,6 +39,8 @@ namespace utility {
           /// Broj frejmova.
           int numOfFrames;
 
+          float frameDeltaTime;
+
         // Javne funkcije klase.
         public:
           ////////////////////////////////////////////////////////////////////////////
@@ -66,6 +68,8 @@ namespace utility {
           /// return int Trenutni broj frejmova po sekundi.
           ////////////////////////////////////////////////////////////////////////////
           int getFpsCount();
+
+          float getFrameDeltaTime();
 
     };
 } // utility

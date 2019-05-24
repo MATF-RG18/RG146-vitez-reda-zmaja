@@ -15,7 +15,7 @@ namespace core {
 
   RawModel *model;
 
-  ModelTexture *texture;
+  Texture *texture;
 
   TexturedModel *texturedModel;
 
@@ -26,8 +26,6 @@ namespace core {
   Camera *camera;
 
   Light *light;
-
-  ObjLoader objLoader;
 
   Terrain *terrain;
 
@@ -43,7 +41,17 @@ namespace core {
 
   FontRenderer *fontRenderer;
 
+  AnimatedModel *animatedModel;
+
+  AnimatedModelRenderer *animatedModelRenderer;
+
+  Loader *loader;
+
   Text *text;
+
+  Animator *animator;
+
+  Animation *animation;
 
   int screenWidth;
 
@@ -118,14 +126,11 @@ namespace core {
     glEnable(GL_DEPTH_TEST);
     glViewport(0, 0, screenWidth, screenHeight);
 
-    vaoLoader = new VaoLoader;
+    vaoLoader = new VaoLoader();
+    loader = new Loader();
 
-    model = objLoader.loadObjModel("res/character.obj", vaoLoader);
-    texture = new ModelTexture(vaoLoader->loadTexture("res/characterTexture.png"));
-    texture->setShine(200);
-    texture->setReflectivity(0.1);
-    texturedModel = new TexturedModel(model, texture);
-
+    texturedModel = loader->loadTexturedModel("res/model.dae", vaoLoader);
+    animatedModel = loader->loadAnimatedModel("res/model.dae", vaoLoader);
     TerrainTexture *backgroundTexture = new TerrainTexture(vaoLoader->loadTexture("res/grassy.png"));
     TerrainTexture *rTexture = new TerrainTexture(vaoLoader->loadTexture("res/mud.png"));
     TerrainTexture *gTexture = new TerrainTexture(vaoLoader->loadTexture("res/grassFlowers.png"));
@@ -140,10 +145,12 @@ namespace core {
 
     mainRenderer = new MainRenderer(vaoLoader, fpsData);
 
+    animator = new Animator(animatedModel, fpsData);
+
     vec3 position(260, 5, -260);
-    vec3 rotation(0, 180, 0);
+    vec3 rotation(-90, 0, 0);
     float scale = 1;
-    player = new Player(texturedModel, position, rotation, scale, terrain);
+    player = new Player(animatedModel, position, rotation, scale, terrain, fpsData, animator);
 
     HudTexture *hud = new HudTexture(vaoLoader->loadTexture("res/hud.png"), vec2(-0.9, -0.8), vec2(100/(float)glutGet(GLUT_WINDOW_WIDTH),100/(float)glutGet(GLUT_WINDOW_HEIGHT)), 180);
     huds.push_back(hud);
@@ -155,8 +162,6 @@ namespace core {
 
     camera = new Camera(player);
     light = new Light(vec3 (2000, 2000, 2000), vec3 (1, 1, 1));
-
-
 
     return;
   }
@@ -176,8 +181,9 @@ namespace core {
   void renderScene(void) {
 
     mainRenderer->processTerrain(terrain);
-    player->move(fpsData);
-    mainRenderer->processEntity(player);
+    player->move();
+    animator->update();
+    mainRenderer->processAnimatedEntity(player);
     camera->move();
     mainRenderer->render(light, camera);
     hudRenderer->render(huds);

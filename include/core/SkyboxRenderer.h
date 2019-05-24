@@ -12,14 +12,17 @@
 #include "../shader/SkyboxShader.h"
 #include "../core/VaoLoader.h"
 
+// Omogucuje korsicenje novijih verzija OpenGL-a
+#define GL_GLEXT_PROTOTYPES
+
 // Ukljucivanje OpenGL biblioteke.
 #include <GL/glut.h>
 #include <GL/freeglut.h>
 
 // Ukljucivanje biblioteka.
 #include <glm/vec3.hpp>
-#include <glm/mat4x4.hpp> 
-#include <glm/gtc/matrix_transform.hpp> 
+#include <glm/mat4x4.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
 
@@ -42,7 +45,7 @@ namespace core {
     //////////////////////////////////////////////////////////////////////////////
     /// @brief Klasa SkyboxRenderer je zaduzena za iscrtavanje neba na ekran.
     /// Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se
-    /// iscrtava kutija neba na koju se nalepljuju dnevne i nocne teksture 
+    /// iscrtava kutija neba na koju se nalepljuju dnevne i nocne teksture
     /// u zavisnosti od trenutnog dela igri.
     //////////////////////////////////////////////////////////////////////////////
     class SkyboxRenderer {
@@ -103,7 +106,7 @@ namespace core {
             /// @return void
             ////////////////////////////////////////////////////////////////////////////
             void render(Camera *camera, float r, float g, float b, FpsData *fpsData);
-        
+
         // Privatne funkcije klase
         private:
             ////////////////////////////////////////////////////////////////////////////

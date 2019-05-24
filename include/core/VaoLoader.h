@@ -98,7 +98,16 @@ namespace core {
     /// teksture
     /// @return RawModel* Pokazivac na instancu klase RawModel
     ////////////////////////////////////////////////////////////////////////////
-    RawModel * loadToVao(GLfloat positions[], GLint positionsSize, GLint indices[], GLint indicesSize, GLfloat textureCoords[], GLint textureSize, GLfloat normals[], GLint normalsSize);
+    GLint loadToVao(GLfloat positions[], GLint positionsSize,
+                    GLint indices[], GLint indicesSize,
+                    GLfloat textureCoords[], GLint textureSize,
+                    GLfloat normals[], GLint normalsSize);
+
+    GLint loadToVao(GLfloat positions[], GLint positionsSize, GLint indices[], GLint indicesSize,
+                    GLfloat textureCoords[], GLint textureSize,
+                    GLfloat normals[], GLint normalsSize,
+                    GLint boneIndices[], GLint boneIndicesSize,
+                    GLfloat weights[], GLint weightsSize);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija kreira niz atributa(VAO).
@@ -110,8 +119,8 @@ namespace core {
     /// @param dimensions Dimenzija prostora.
     /// @return RawModel* Pokazivac na instancu klase RawModel.
     ////////////////////////////////////////////////////////////////////////////
-    RawModel * loadToVao(GLfloat positions[], GLint positionsSize, int dimensions);
-    
+    GLint loadToVao(GLfloat positions[], GLint positionsSize, int dimensions);
+
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava texturu iz png fajla.
     /// U funkciji se pomocu png biblioteke citaju informacije iz fajla koje
@@ -159,6 +168,19 @@ namespace core {
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void storeDataInVertexBuffer(GLint attributeNumber, int coordinateSize, GLfloat data[], GLint dataSize);
+
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija startuje bitne procese za funkcionisanje.
+    /// U funkciji se kreira bafer u koji se smestaju informacije vazane za
+    /// objekat.
+    /// @param attributeNumber Indeks niza atributa kojem se pridruzuje bafer.
+    /// @param coordinateSize Broj koordinata kojim je tacka definisana,
+    /// validne vrednosti su 1,2,3,4.
+    /// @param data Niz podataka koji se upisuju u bafer.
+    /// @param dataSize Broj podataka koji se nalaze u nizu data.
+    /// @return void
+    ////////////////////////////////////////////////////////////////////////////
+    void storeDataInVertexBuffer(GLint attributeNumber, int coordinateSize, GLint data[], GLint dataSize);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija ucitava indekse tacaka.

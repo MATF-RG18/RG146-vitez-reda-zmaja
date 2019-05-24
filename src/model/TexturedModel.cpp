@@ -1,28 +1,28 @@
 #include "../../include/model/TexturedModel.h"
 
-// Klasa je implementirana po uzoru na video tutorijal 
+// Klasa je implementirana po uzoru na video tutorijal
 // https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
 namespace model {
 
-  TexturedModel::TexturedModel(RawModel *model, ModelTexture *texture) {
+  TexturedModel::TexturedModel(RawModel *model, vector<Texture *> textures) {
 
     this->rawModel = model;
-    this->texture = texture;
+    this->textures = textures;
   }
 
   TexturedModel::~TexturedModel() {
 
   }
 
-  RawModel TexturedModel::getRawModel(void) {
+  RawModel *TexturedModel::getRawModel(void) {
 
-    return *rawModel;
+    return this->rawModel;
   }
 
-  ModelTexture *TexturedModel::getTexture(void) {
+  vector<Texture *> TexturedModel::getTextures(void) {
 
-    return texture;
+    return this->textures;
   }
 
 } // model

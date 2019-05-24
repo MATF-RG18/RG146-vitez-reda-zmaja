@@ -1,0 +1,61 @@
+#version 400 core
+
+const int MAX_BONES = 100;
+const int MAX_WEIGHTS = 4;
+
+in vec3 position;
+in vec2 textureCoords;
+in vec3 normal;
+in ivec4 boneIndices;
+in vec4 weights;
+
+out vec2 pass_textureCoords;
+out vec3 surfaceNormal;
+out vec3 toLightVector;
+out vec3 toCameraVector;
+out float visibility;
+
+
+uniform mat4 transformationMatrix;
+uniform mat4 projectionMatrix;
+uniform mat4 viewMatrix;
+uniform vec3 lightPosition;
+uniform mat4 boneTransforms[MAX_BONES];
+uniform float useFakeLightning;
+
+const float density = 0.003;
+const float gradient = 1.0;
+
+void main(void){
+
+	vec4 totalLocalPos = vec4(0.0);
+	vec4 totalNormal = vec4(0.0);
+
+	for(int i=0;i<MAX_WEIGHTS;i++){
+		mat4 boneTransform = boneTransforms[boneIndices[i]];
+		vec4 posePosition = boneTransform * vec4(position, 1.0);
+		totalLocalPos += posePosition * 1; //weights[i]
+
+		vec4 worldNormal = boneTransform * vec4(normal, 0.0);
+		totalNormal += worldNormal * weights[i];
+	}
+
+  vec4 worldPosition = transformationMatrix * totalLocalPos;
+
+	gl_Position = projectionMatrix * viewMatrix * worldPosition;
+
+	if(useFakeLightning > 0.5) {
+    totalNormal = vec4(0.0, 1.0, 0.0, 0.0);
+  }
+	surfaceNormal = (transformationMatrix*totalNormal).xyz;
+	pass_textureCoords = textureCoords;
+
+  toLightVector = lightPosition - worldPosition.xyz;
+  toCameraVector = (inverse(viewMatrix)*vec4(0.0,0.0,0.0,1.0)).xyz - worldPosition.xyz;
+
+  vec4 positionRelativeToCam = viewMatrix * worldPosition;
+  float distance = length(positionRelativeToCam.xyz);
+  visibility = exp(-pow(distance*density, gradient));
+  visibility = clamp(visibility, 0.0, 1.0);
+
+}

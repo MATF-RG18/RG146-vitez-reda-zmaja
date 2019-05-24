@@ -23,8 +23,8 @@
 #include <map>
 #include <list>
 #include <glm/vec3.hpp>
-#include <glm/mat4x4.hpp> 
-#include <glm/gtc/matrix_transform.hpp> 
+#include <glm/mat4x4.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 
 // Koriscenje prostora imena za jednostavniji i pregledniji kod.
 using namespace model;
@@ -87,7 +87,7 @@ namespace core {
     /// @param model Pokazivac na instancu klase TexturedModel.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
-    void prepareTexturedModel(TexturedModel *model);
+    void drawTexturedModel(TexturedModel *model);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija otkacinje vezu izmedju podataka texturisanog modela i programa.

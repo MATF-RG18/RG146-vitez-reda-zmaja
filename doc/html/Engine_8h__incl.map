@@ -1,7 +1,7 @@
 <map id="/home/dusan/Documents/Projects/RG102&#45;vitez&#45;reda&#45;zmaja/include/core/Engine.h" name="/home/dusan/Documents/Projects/RG102&#45;vitez&#45;reda&#45;zmaja/include/core/Engine.h">
 <area shape="rect" id="node2" href="$TexturedModel_8h.html" title="Deklaracija klase TexturedModel. " alt="" coords="93,579,264,606"/>
 <area shape="rect" id="node3" href="$RawModel_8h.html" title="Deklaracija klase RawModel. " alt="" coords="249,661,396,688"/>
-<area shape="rect" id="node4" href="$ModelTexture_8h.html" title="Deklaracija klase ModelTexture. " alt="" coords="57,661,225,688"/>
+<area shape="rect" id="node4" href="$Texture_8h.html" title="Deklaracija klase Texture. " alt="" coords="57,661,225,688"/>
 <area shape="rect" id="node5" href="$VaoLoader_8h.html" title="Deklaracija klase VaoLoader. " alt="" coords="693,579,829,606"/>
 <area shape="rect" id="node10" href="$Render_8h.html" title="Deklaracija klase Render. " alt="" coords="873,199,989,225"/>
 <area shape="rect" id="node11" href="$Entity_8h.html" title="Deklaracija klase Entity. " alt="" coords="1085,497,1200,524"/>

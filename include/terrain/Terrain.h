@@ -9,7 +9,7 @@
 
 // Ukljucivanje korsnicki defininisanih biblioteka.
 #include "../model/RawModel.h"
-#include "../texture/ModelTexture.h"
+#include "../texture/Texture.h"
 #include "../texture/TerrainTexturePack.h"
 #include "../core/VaoLoader.h"
 #include "../utility/Math.h"

@@ -10,7 +10,7 @@ namespace core {
 
         this->time = 0.0;
 
-        float VERTICES[] = {        
+        float VERTICES[] = {
             -CUBE_SIZE,  CUBE_SIZE, -CUBE_SIZE,
             -CUBE_SIZE, -CUBE_SIZE, -CUBE_SIZE,
             CUBE_SIZE, -CUBE_SIZE, -CUBE_SIZE,
@@ -55,23 +55,26 @@ namespace core {
         };
 
 
-        this->dayTextureFiles = {"res/day_skybox/right.png", 
-                            "res/day_skybox/left.png", 
-                            "res/day_skybox/top.png", 
+        this->dayTextureFiles = {"res/day_skybox/right.png",
+                            "res/day_skybox/left.png",
+                            "res/day_skybox/top.png",
                             "res/day_skybox/bottom.png",
                             "res/day_skybox/back.png",
                             "res/day_skybox/front.png"};
 
-        this->nightTextureFiles = {"res/night_skybox/right.png", 
-                            "res/night_skybox/left.png", 
-                            "res/night_skybox/top.png", 
+        this->nightTextureFiles = {"res/night_skybox/right.png",
+                            "res/night_skybox/left.png",
+                            "res/night_skybox/top.png",
                             "res/night_skybox/bottom.png",
                             "res/night_skybox/back.png",
                             "res/night_skybox/front.png"};
 
         // Ucitavamo kocku na koju ce biti nalepljene teksture neba
-        this->cube = vaoLoader->loadToVao(VERTICES, sizeof(VERTICES)/sizeof(VERTICES[0]), 3);
-        
+        GLint verticesSize = sizeof(VERTICES)/sizeof(VERTICES[0]);
+        GLint vaoID = vaoLoader->loadToVao(VERTICES, verticesSize, 3);
+        GLint vertexCount = verticesSize/3;
+        this->cube = new RawModel(vector<GLint> {vaoID}, vector<GLint> {vertexCount});
+
         // Ucitavamo texture
         this->dayTextureID = vaoLoader->loadCubeMap(this->dayTextureFiles);
         this->nightTextureID = vaoLoader->loadCubeMap(this->nightTextureFiles);
@@ -87,7 +90,7 @@ namespace core {
         mat4 projectionMatrix = createProjectionMatrix();
         this->skyboxShader->loadProjectionMatrix(projectionMatrix);
 
-        // Zaustavljamo sejder 
+        // Zaustavljamo sejder
         this->skyboxShader->stop();
     }
 
@@ -107,15 +110,15 @@ namespace core {
         this->skyboxShader->loadFogColour(r, g, b);
 
         // Ucitavanje podataka i tekstura
-        glBindVertexArray(this->cube->getVaoID());
+        glBindVertexArray(this->cube->getMeshesVaoID()[0]);
         glEnableVertexAttribArray(0);
-        
+
         bindTextures(fpsData);
 
         // Iscrtavanje neba
-        glDrawArrays(GL_TRIANGLES, 0, this->cube->getVertexCount());
+        glDrawArrays(GL_TRIANGLES, 0, this->cube->getMeshesVertexCount()[0]);
 
-        // Otkacinjanje podataka 
+        // Otkacinjanje podataka
         glDisableVertexAttribArray(0);
         glBindVertexArray(0);
 
@@ -135,16 +138,16 @@ namespace core {
         if(this->time <= 10)
             // Svice
             blendFactor = (10 - time)/10;
-        else if(this->time > 10 && this->time <= 20) 
+        else if(this->time > 10 && this->time <= 20)
             // Dan
             blendFactor = 0.0;
-        else if(this->time > 20 && this->time <= 30) 
+        else if(this->time > 20 && this->time <= 30)
             // Smrkava se
             blendFactor = (time-20)/10;
         else if(this->time > 30)
             // Noc
             blendFactor = 1.0;
-   
+
 
 
 

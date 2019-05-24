@@ -20,9 +20,9 @@ var searchData=
   ['metallic_5ftexname',['metallic_texname',['../structtinyobj_1_1material__t.html#acf05b62ec21680f4d803f02a59ad183a',1,'tinyobj::material_t']]],
   ['metallic_5ftexopt',['metallic_texopt',['../structtinyobj_1_1material__t.html#abbae6c6e634f9899c3974731c554be21',1,'tinyobj::material_t']]],
   ['model',['model',['../namespacemodel.html',1,'model'],['../classentity_1_1Entity.html#ac7848c5d47d4b2bf12c84ddbbc32052a',1,'entity::Entity::model()'],['../classterrain_1_1Terrain.html#a0811e4548a966a38b3ca6a4475666324',1,'terrain::Terrain::model()'],['../namespacecore.html#aa1479d4ed4dadbfe085b26662122b68a',1,'core::model()']]],
-  ['modeltexture',['ModelTexture',['../classtexture_1_1ModelTexture.html',1,'texture::ModelTexture'],['../classtexture_1_1ModelTexture.html#a8a404382554b8e2625978824202c42b9',1,'texture::ModelTexture::ModelTexture()']]],
-  ['modeltexture_2ecpp',['ModelTexture.cpp',['../ModelTexture_8cpp.html',1,'']]],
-  ['modeltexture_2eh',['ModelTexture.h',['../ModelTexture_8h.html',1,'']]],
+  ['Texture',['Texture',['../classtexture_1_1Texture.html',1,'texture::Texture'],['../classtexture_1_1Texture.html#a8a404382554b8e2625978824202c42b9',1,'texture::Texture::Texture()']]],
+  ['Texture_2ecpp',['Texture.cpp',['../Texture_8cpp.html',1,'']]],
+  ['Texture_2eh',['Texture.h',['../Texture_8h.html',1,'']]],
   ['move',['move',['../classentity_1_1Camera.html#a046d693a76fafe58822033c0b80bbc53',1,'entity::Camera::move()'],['../classentity_1_1Player.html#ac4d89fa34bbc7a1a1db01db45e2da60f',1,'entity::Player::move()']]],
   ['mtllib_5fcb',['mtllib_cb',['../structtinyobj_1_1callback__t__.html#ac9002031da7d0ae5e035e6ccfbb5fb0e',1,'tinyobj::callback_t_']]]
 ];

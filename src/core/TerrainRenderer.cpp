@@ -1,6 +1,6 @@
 #include "../../include/core/TerrainRenderer.h"
 
-// Klasa je implementirana po uzoru na video tutorijal 
+// Klasa je implementirana po uzoru na video tutorijal
 // https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
 namespace core {
@@ -21,23 +21,27 @@ namespace core {
     void TerrainRenderer::render(list<Terrain *> terrains) {
 
         for(Terrain *terrain:terrains) {
-            prepareTerrain(terrain);
             loadModelMatrix(terrain);
-            glDrawElements(GL_TRIANGLES, terrain->getModel()->getVertexCount(), GL_UNSIGNED_INT, 0);
+            drawTerrain(terrain);
             unbindTerrain();
         }
     }
 
-    void TerrainRenderer::prepareTerrain(Terrain *terrain) {
+    void TerrainRenderer::drawTerrain(Terrain *terrain) {
 
         RawModel *rawModel = terrain->getModel();
-        glBindVertexArray(rawModel->getVaoID());
-        glEnableVertexAttribArray(0);
-        glEnableVertexAttribArray(1);
-        glEnableVertexAttribArray(2);
-        bindTextures(terrain);
-        terrainShader->loadShineVariables(1, 0);
-        
+        vector<GLint> meshes = rawModel->getMeshesVaoID();
+        vector<GLint> vertexCounts = rawModel->getMeshesVertexCount();
+        for (int i = 0; i < meshes.size(); i++) {
+          glBindVertexArray(meshes[i]);
+          glEnableVertexAttribArray(0);
+          glEnableVertexAttribArray(1);
+          glEnableVertexAttribArray(2);
+          bindTextures(terrain);
+          terrainShader->loadShineVariables(1, 0);
+          glDrawElements(GL_TRIANGLES, vertexCounts[i], GL_UNSIGNED_INT, 0);
+        }
+
     }
 
     void TerrainRenderer::bindTextures(Terrain *terrain){

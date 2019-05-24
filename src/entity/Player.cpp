@@ -1,12 +1,12 @@
 #include "../../include/entity/Player.h"
 
-// Klasa je implementirana po uzoru na video tutorijal 
+// Klasa je implementirana po uzoru na video tutorijal
 // https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 // kao i http://jerome.jouvie.free.fr/opengl-tutorials/Tutorial26.php
 
 namespace entity {
 
-    Player::Player(TexturedModel *model, vec3 position, vec3 rotation, float scale, Terrain *terrain) : Entity(model, position, rotation, scale) {
+    Player::Player(AnimatedModel *model, vec3 position, vec3 rotation, float scale, Terrain *terrain, FpsData *fpsData, Animator *animator) : AnimatedEntity(model, position, rotation, scale) {
         this->currentSpeed = 0;
         this->currentTurnSpeed = 0;
         this->terrain = terrain;
@@ -14,7 +14,10 @@ namespace entity {
         for(int i = 0; i < 256; i++) {
             this->keyBuffer[i] = false;
         }
-        
+        this->fpsData = fpsData;
+        this->animator = animator;
+        this->animationOn = false;
+
     }
 
     Player::~Player() {
@@ -24,17 +27,22 @@ namespace entity {
     void Player::handleKeyUp(unsigned char key) {
 
         this->keyBuffer[key] = false;
+        this->animationOn = false;
+        this->animator->doAnimation(nullptr);
     }
 
     void Player::handleKeyDown(unsigned char key) {
 
         this->keyBuffer[key] = true;
+        if(!this->animationOn) {
+          this->animator->doAnimation(this->getModel()->getAnimation(""));
+        }
     }
 
-    void Player::move(FpsData *fpsData) {
+    void Player::move() {
 
 
-        float fps = fpsData->getFpsCount();
+        float fps = this->fpsData->getFpsCount();
 
         if (this->keyBuffer[GLUT_KEY_UP]) {
 
@@ -45,7 +53,6 @@ namespace entity {
             this->currentSpeed = -RUN_SPEED/fps;
         }
         else {
-
             this->currentSpeed = 0;
         }
 
@@ -58,11 +65,10 @@ namespace entity {
             this->currentTurnSpeed = -TURN_SPEED/fps;
         }
         else {
-
             this->currentTurnSpeed = 0;
         }
 
-            
+
         this->increaseRotation(vec3 {0, this->currentTurnSpeed, 0});
 
         float deltaX = this->currentSpeed*sin(radians(this->getRotation().y));

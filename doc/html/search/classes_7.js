@@ -6,5 +6,5 @@ var searchData=
   ['materialreader',['MaterialReader',['../classtinyobj_1_1MaterialReader.html',1,'tinyobj']]],
   ['materialstreamreader',['MaterialStreamReader',['../classtinyobj_1_1MaterialStreamReader.html',1,'tinyobj']]],
   ['mesh_5ft',['mesh_t',['../structtinyobj_1_1mesh__t.html',1,'tinyobj']]],
-  ['modeltexture',['ModelTexture',['../classtexture_1_1ModelTexture.html',1,'texture']]]
+  ['Texture',['Texture',['../classtexture_1_1Texture.html',1,'texture']]]
 ];

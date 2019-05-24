@@ -1,28 +1,28 @@
 #include "../../include/model/RawModel.h"
 
-// Klasa je implementirana po uzoru na video tutorijal 
+// Klasa je implementirana po uzoru na video tutorijal
 // https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
 namespace model {
 
-  RawModel::RawModel(int vaoID, int vertexCount) {
+  RawModel::RawModel(vector<GLint> meshesVaoID, vector<GLint> meshesVertexCount) {
 
-    this->vaoID = vaoID;
-    this->vertexCount = vertexCount;
+    this->meshesVaoID = meshesVaoID;
+    this->meshesVertexCount = meshesVertexCount;
   }
 
   RawModel::~RawModel() {
 
   }
 
-  int RawModel::getVaoID(void) {
+  vector<GLint> RawModel::getMeshesVaoID(void) {
 
-    return vaoID;
+    return this->meshesVaoID;
   }
 
-  int RawModel::getVertexCount(void) {
+  vector<GLint> RawModel::getMeshesVertexCount(void) {
 
-    return vertexCount;
+    return this->meshesVertexCount;
   }
 
 } // model

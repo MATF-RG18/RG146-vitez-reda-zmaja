@@ -13,8 +13,8 @@
 
 // Ukljucivanje biblioteka.
 #include <glm/vec3.hpp>
-#include <glm/mat4x4.hpp> 
-#include <glm/gtc/matrix_transform.hpp> 
+#include <glm/mat4x4.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <list>
 
@@ -77,7 +77,7 @@ namespace core {
             /// @param terrain Pokazivac na instancu klase Terrain.
             /// @return void
             ////////////////////////////////////////////////////////////////////////////
-            void prepareTerrain(Terrain *terrain);
+            void drawTerrain(Terrain *terrain);
 
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija povezuje teksture terena.
@@ -99,7 +99,7 @@ namespace core {
             /// @return void
             ////////////////////////////////////////////////////////////////////////////
             void loadModelMatrix(Terrain *terrain);
-        
+
         // Privatne funkcije klase
         private:
             ////////////////////////////////////////////////////////////////////////////

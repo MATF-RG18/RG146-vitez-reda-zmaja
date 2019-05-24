@@ -10,7 +10,7 @@ var searchData=
   ['sheen',['sheen',['../structtinyobj_1_1material__t.html#a9c56ee4bf20385c8968a8b97b5d115c1',1,'tinyobj::material_t']]],
   ['sheen_5ftexname',['sheen_texname',['../structtinyobj_1_1material__t.html#a0410f86a8fbe3f5d533d440f07781c04',1,'tinyobj::material_t']]],
   ['sheen_5ftexopt',['sheen_texopt',['../structtinyobj_1_1material__t.html#a60a907d53aed60591b8d78ae220c7c4a',1,'tinyobj::material_t']]],
-  ['shine',['shine',['../classtexture_1_1ModelTexture.html#a7a74ed6a4d5fc91d1537fbf68e74ce03',1,'texture::ModelTexture']]],
+  ['shine',['shine',['../classtexture_1_1Texture.html#a7a74ed6a4d5fc91d1537fbf68e74ce03',1,'texture::Texture']]],
   ['shininess',['shininess',['../structtinyobj_1_1material__t.html#aed153afc668c6b4760da57e0e63e0e97',1,'tinyobj::material_t']]],
   ['size',['size',['../classfont_1_1FontData.html#a783ccdb54f0b3319c31c31bd8acf6111',1,'font::FontData']]],
   ['skyboxrenderer',['skyboxRenderer',['../classcore_1_1MainRenderer.html#a2e02e2528a233d92ed37587fa2ba38a4',1,'core::MainRenderer']]],

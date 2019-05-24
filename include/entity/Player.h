@@ -8,9 +8,10 @@
 #define _PLAYER_H_
 
 // Ukljucivanje korsnicki defininisanih biblioteka.
-#include "../entity/Entity.h"
+#include "../entity/AnimatedEntity.h"
 #include "../terrain/Terrain.h"
 #include "../utility/FpsData.h"
+#include "../animation/Animator.h"
 
 // Makro za definisanje brzine i rotacione brzine.
 #define RUN_SPEED 10
@@ -20,6 +21,7 @@
 using namespace glm;
 using namespace terrain;
 using namespace utility;
+using namespace animation;
 
 ////////////////////////////////////////////////////////////////////////////////
 /// @brief Prostor imena entity.
@@ -32,7 +34,7 @@ namespace entity {
     /// Pomocu klase Player nadogradjujemo klasu Entity dodavajuci jos nove atribute
     /// i funkcije.
     //////////////////////////////////////////////////////////////////////////////
-    class Player : public Entity {
+    class Player : public AnimatedEntity {
 
         // Privatne promenljive klase
         private:
@@ -48,17 +50,23 @@ namespace entity {
             /// Niz karaktera koji su pritisnuti a nisu otpusteni.
             bool *keyBuffer;
 
+            FpsData *fpsData;
+
+            Animator *animator;
+
+            bool animationOn;
+
         // Javne funkcije klase
         public:
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Konstruktor klase.
-            /// @param model Pokazivac na instancu klase TexturedModel.
+            /// @param model Pokazivac na instancu klase AnimatedModel.
             /// @param position Pozicija entiteta.
             /// @param rotation Rotacija entiteta.
             /// @param scale Skaliranje entiteta.
             /// @param terrain Pokazivac na instancu klase Terrain.
             ////////////////////////////////////////////////////////////////////////////
-            Player(TexturedModel *model, vec3 position, vec3 rotation, float scale, Terrain *terrain);
+            Player(AnimatedModel *model, vec3 position, vec3 rotation, float scale, Terrain *terrain, FpsData *fpsData, Animator *animator);
 
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Destruktor klase.
@@ -85,7 +93,7 @@ namespace entity {
             /// @param void
             /// @return void
             ////////////////////////////////////////////////////////////////////////////
-            void move(FpsData *fpsData);
+            void move();
     };
 } // entity
 

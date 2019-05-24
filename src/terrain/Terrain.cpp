@@ -1,6 +1,6 @@
 #include "../../include/terrain/Terrain.h"
 
-// Klasa je implementirana po uzoru na video tutorijal 
+// Klasa je implementirana po uzoru na video tutorijal
 // https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
 namespace terrain {
@@ -21,7 +21,7 @@ namespace terrain {
         this->heights = new float*[VERTEX_COUNT];
         for (int i = 0; i < VERTEX_COUNT; i++) {
             heights[i] = new float[VERTEX_COUNT];
-        }   
+        }
 
         this->heightsLength = VERTEX_COUNT;
 
@@ -100,10 +100,13 @@ namespace terrain {
             }
         }
 
-        return vaoLoader->loadToVao(vertices, count*3,
+        GLint vaoID = vaoLoader->loadToVao(vertices, count*3,
                                   indices, 6*(VERTEX_COUNT-1)*(VERTEX_COUNT-1),
                                   textures, count*2,
                                   normals, count*3);
+        GLint vertexCount = 6*(VERTEX_COUNT-1)*(VERTEX_COUNT-1);
+
+        return new RawModel(vector<GLint> {vaoID}, vector<GLint> {vertexCount});
     }
 
     vec3 Terrain::calculateNormal(Image image, int x, int y) {
@@ -125,9 +128,9 @@ namespace terrain {
         if (x<0 || x>=h || y<0 || y>=h) {
             return 0;
         }
-        
+
         PixelPacket *pixels = image.getPixels(0, 0, w, h);
-        
+
         Color color = pixels[ w * x + y];
         ColorRGB c = color;
         float height = c.red() * c.green()* c.blue();

@@ -1,12 +1,12 @@
 #include "../../include/core/Render.h"
 
-// Klasa je implementirana po uzoru na video tutorijal 
+// Klasa je implementirana po uzoru na video tutorijal
 // https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
 namespace core {
 
   Render::Render(Shader *shader) {
-    
+
     this->shader = shader;
     mat4 projectionMatrix = createProjectionMatrix();
     this->shader->start();
@@ -23,30 +23,36 @@ namespace core {
 
     for(pair<TexturedModel *, list<Entity *>> entity:entities){
       TexturedModel *model = entity.first;
-      prepareTexturedModel(model);
       for(Entity * e: entity.second){
         prepareInstance(e);
-        glDrawElements(GL_TRIANGLES, model->getRawModel().getVertexCount(), GL_UNSIGNED_INT, 0);
+        drawTexturedModel(model);
       }
       unbindTexturedModel();
     }
   }
 
-  void Render::prepareTexturedModel(TexturedModel *model) {
+  void Render::drawTexturedModel(TexturedModel *model) {
 
-    RawModel rawModel = model->getRawModel();
-    glBindVertexArray(rawModel.getVaoID());
-    glEnableVertexAttribArray(0);
-    glEnableVertexAttribArray(1);
-    glEnableVertexAttribArray(2);
-    ModelTexture *texture = model->getTexture();
-    if (texture->getHasTransparency()) {
-     // MainRenderer->disableCulling();
+    RawModel *rawModel = model->getRawModel();
+    vector<GLint> meshes = rawModel->getMeshesVaoID();
+    vector<Texture *> textures = model->getTextures();
+    vector<GLint> vertexCounts = rawModel->getMeshesVertexCount();
+    for (int i = 0; i < meshes.size(); i++) {
+      glBindVertexArray(meshes[i]);
+      glEnableVertexAttribArray(0);
+      glEnableVertexAttribArray(1);
+      glEnableVertexAttribArray(2);
+      Texture *texture = textures[i];
+      if (texture->getHasTransparency()) {
+       // MainRenderer->disableCulling();
+      }
+      shader->loadFakeLightning(texture->getUseFakeLightning());
+      shader->loadShineVariables(texture->getShine(), texture->getReflectivity());
+      glActiveTexture(GL_TEXTURE0);
+      glBindTexture(GL_TEXTURE_2D, texture->getID());
+
+      glDrawElements(GL_TRIANGLES, vertexCounts[i] , GL_UNSIGNED_INT, 0);
     }
-    shader->loadFakeLightning(texture->getUseFakeLightning());
-    shader->loadShineVariables(texture->getShine(), texture->getReflectivity());
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, model->getTexture()->getID());
   }
 
   void Render::unbindTexturedModel() {
@@ -71,7 +77,7 @@ namespace core {
     mat4 projectionMatrix = perspective(radians(FOV), aspectRatio, NEAR_PLANE, FAR_PLANE);
 
     return projectionMatrix;
-    
+
   }
 
 } // core

@@ -10,7 +10,7 @@
 
 // Ukljucivanje korsnicki defininisanih biblioteka.
 #include "../model/RawModel.h"
-#include "../texture/ModelTexture.h"
+#include "../texture/Texture.h"
 
 // Koriscenje prostora imena za jednostavniji i pregledniji kod.
 using namespace texture;
@@ -24,7 +24,7 @@ namespace model {
   //////////////////////////////////////////////////////////////////////////////
   /// @brief Klasa TexturedModel opisuje model objekta zajedno sa teksturom.
   /// Model je opisan instancom klase RawModel i odgovarajucom teksturom objekta
-  /// pomocu instance klase ModelTexture.
+  /// pomocu instance klase Texture.
   //////////////////////////////////////////////////////////////////////////////
   class TexturedModel {
 
@@ -35,7 +35,7 @@ namespace model {
     RawModel *rawModel;
 
     /// Pokazivac na teksturu objekta.
-    ModelTexture *texture;
+    vector<Texture *> textures;
 
   // Javne funkcije klase.
   public:
@@ -47,7 +47,7 @@ namespace model {
     /// @param model Pokazivac na model objekta bez pridruzene strukture.
     /// @param texture Pokazivac na teksturu objekta.
     ////////////////////////////////////////////////////////////////////////////
-    TexturedModel(RawModel *model, ModelTexture *texture);
+    TexturedModel(RawModel *model, vector<Texture *> textures);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Destruktor klase.
@@ -60,14 +60,14 @@ namespace model {
     /// @param void
     /// @return RawModel Osnovni model objekta.
     ////////////////////////////////////////////////////////////////////////////
-    RawModel getRawModel(void);
+    RawModel *getRawModel(void);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca teksturu modela.
     /// @param void
-    /// @return ModelTexture Tekstura modela.
+    /// @return Texture Tekstura modela.
     ////////////////////////////////////////////////////////////////////////////
-    ModelTexture * getTexture(void);
+    vector<Texture *> getTextures(void);
 
   };
 } // model

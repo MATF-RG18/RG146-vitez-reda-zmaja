@@ -8,7 +8,7 @@
 
 ##  :green_book: O projektu
 
-> Trenutno je moguce ucitati obj fajl kreiran pomocu alata kao sto je Blender3D i pridruziti mu texturu ukoliko je textura kreirana pomocu "unwrap"(UV) metoda, i kreiranje terena. Postoji mogucnost transformacije ucitanog objekta kao sto su rotacija, translacija i skaliranje, takodje je moguce kontrolisati kameru rotiranjem po x i y osi kao i zumiranje tj. pomeranje po z osi kao i podesavanje osvetljenja u igri. Moguce je kreiranje neba i smena dana i noci, kao i prikazivanje 2D teksta i slika. 
+> Trenutno je moguce ucitati obj fajl kreiran pomocu alata kao sto je Blender3D i pridruziti mu texturu ukoliko je textura kreirana pomocu "unwrap"(UV) metoda, i kreiranje terena. Postoji mogucnost transformacije ucitanog objekta kao sto su rotacija, translacija i skaliranje, takodje je moguce kontrolisati kameru rotiranjem po x i y osi kao i zumiranje tj. pomeranje po z osi kao i podesavanje osvetljenja u igri. Moguce je kreiranje neba i smena dana i noci, kao i prikazivanje 2D teksta i slika.
 
 ### Za vise informacija o procesu izrade projekta pogledajte [wiki](https://github.com/MATF-RG18/RG146-vitez-reda-zmaja/wiki) stranicu projekta
 
@@ -18,15 +18,15 @@
 
 ### Zahtevano za instalaciju
 
-#### Freeglut 
+#### Freeglut
 ```
 sudo apt install freeglut3-dev
-``` 
+```
 
 #### Libglm
 ```
 sudo apt install libglm-dev
-``` 
+```
 
 #### Libpng
 ```
@@ -42,6 +42,13 @@ sudo apt install graphicsmagick-libmagick-dev-compat
 sudo apt install libfreetype6-dev
 
 ```
+
+#### Assimp
+```
+sudo apt install libassimp-dev
+
+```
+
 
 ### Upustvo za instalaciju
 ```

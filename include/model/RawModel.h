@@ -8,6 +8,17 @@
 #ifndef _RAWMODEL_H_
 #define _RAWMODEL_H_
 
+// Omogucuje korsicenje novijih verzija OpenGL-a
+#define GL_GLEXT_PROTOTYPES
+
+// Ukljucivanje OpenGL biblioteke.
+#include <GL/glut.h>
+#include <GL/freeglut.h>
+
+#include <vector>
+
+using namespace std;
+
 ////////////////////////////////////////////////////////////////////////////////
 /// @brief Prostor imena model.
 /// Sadrzi sve klase, funkcije i promenljive koje opisuju model objekta.
@@ -23,11 +34,11 @@ namespace model {
   // Privatne promenljive klase.
   private:
 
-    /// Identifikator niza atributa.
-    int vaoID;
+    /// Identifikatori niza atributa.
+    vector<GLint> meshesVaoID;
 
     /// Broj tacaka objekta
-    int vertexCount;
+    vector<GLint> meshesVertexCount;
 
   // Javne funkcije klase.
   public:
@@ -39,7 +50,7 @@ namespace model {
     /// @param vaoID Identifikator niza atributa.
     /// @param vertexCount Broj tacaka objekta.
     ////////////////////////////////////////////////////////////////////////////
-    RawModel(int vaoID, int vertexCount);
+    RawModel(vector<GLint> meshesVaoID, vector<GLint> meshesVertexCount);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Destruktor klase.
@@ -50,16 +61,16 @@ namespace model {
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca identifikator niza atributa objekta.
     /// @param void
-    /// @return int Identifikator niza atributa.
+    /// @return GLint Identifikator niza atributa.
     ////////////////////////////////////////////////////////////////////////////
-    int getVaoID(void);
+    vector<GLint> getMeshesVaoID(void);
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija vraca broj tacaka objekta.
     /// @param void
-    /// @return int Broj tacaka objekta.
+    /// @return GLint Broj tacaka objekta.
     ////////////////////////////////////////////////////////////////////////////
-    int getVertexCount(void);
+    vector<GLint> getMeshesVertexCount(void);
 
   };
 

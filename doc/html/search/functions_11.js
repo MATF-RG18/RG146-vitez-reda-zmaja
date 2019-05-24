@@ -16,7 +16,7 @@ var searchData=
   ['_7ematerialfilereader',['~MaterialFileReader',['../classtinyobj_1_1MaterialFileReader.html#a0a00d236393f9972b676a2fb6fe2b819',1,'tinyobj::MaterialFileReader']]],
   ['_7ematerialreader',['~MaterialReader',['../classtinyobj_1_1MaterialReader.html#afd62ceccd9b373801226e037ea1a5f9f',1,'tinyobj::MaterialReader']]],
   ['_7ematerialstreamreader',['~MaterialStreamReader',['../classtinyobj_1_1MaterialStreamReader.html#afcafa6030bbf8ea8fdbc6aefb8bebc74',1,'tinyobj::MaterialStreamReader']]],
-  ['_7emodeltexture',['~ModelTexture',['../classtexture_1_1ModelTexture.html#ab0ce63043b8241b064a2c233ec24bfae',1,'texture::ModelTexture']]],
+  ['_7eTexture',['~Texture',['../classtexture_1_1Texture.html#ab0ce63043b8241b064a2c233ec24bfae',1,'texture::Texture']]],
   ['_7eobjloader',['~ObjLoader',['../classcore_1_1ObjLoader.html#a127a52d790309d913f7f3711a5d8c3f4',1,'core::ObjLoader']]],
   ['_7eplayer',['~Player',['../classentity_1_1Player.html#aba0d4255d0d8624d01067418279bc9a1',1,'entity::Player']]],
   ['_7erawmodel',['~RawModel',['../classmodel_1_1RawModel.html#a44e687484478b0747abe25baa3533b71',1,'model::RawModel']]],

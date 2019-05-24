@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$Engine_8h.html" title="Deklaracija klase Engine i deklaracija callback funkcija. " alt="" coords="533,109,649,151"/>
 <area shape="rect" id="node3" href="$TexturedModel_8h.html" title="Deklaracija klase TexturedModel. " alt="" coords="93,654,264,681"/>
 <area shape="rect" id="node4" href="$RawModel_8h.html" title="Deklaracija klase RawModel. " alt="" coords="249,736,396,763"/>
-<area shape="rect" id="node5" href="$ModelTexture_8h.html" title="Deklaracija klase ModelTexture. " alt="" coords="57,736,225,763"/>
+<area shape="rect" id="node5" href="$Texture_8h.html" title="Deklaracija klase Texture. " alt="" coords="57,736,225,763"/>
 <area shape="rect" id="node6" href="$VaoLoader_8h.html" title="Deklaracija klase VaoLoader. " alt="" coords="693,654,829,681"/>
 <area shape="rect" id="node11" href="$Render_8h.html" title="Deklaracija klase Render. " alt="" coords="873,273,989,300"/>
 <area shape="rect" id="node12" href="$Entity_8h.html" title="Deklaracija klase Entity. " alt="" coords="1085,572,1200,599"/>
