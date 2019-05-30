@@ -281,7 +281,7 @@ namespace core {
         keyFrames.push_back(new KeyFrame(it.first, it.second));
       }
       Animation *anim = new Animation(animationLength, keyFrames);
-      animatedModel->addAnimation(animationName, anim);
+      animatedModel->addAnimation("run", anim);
     }
   }
 

@@ -28,14 +28,14 @@ namespace entity {
 
         this->keyBuffer[key] = false;
         this->animationOn = false;
-        this->animator->doAnimation(nullptr);
+        // this->animator->doAnimation(nullptr);
     }
 
     void Player::handleKeyDown(unsigned char key) {
 
         this->keyBuffer[key] = true;
         if(!this->animationOn) {
-          this->animator->doAnimation(this->getModel()->getAnimation(""));
+          this->animator->doAnimation(this->getModel()->getAnimation("run"));
         }
     }
 
@@ -47,10 +47,12 @@ namespace entity {
         if (this->keyBuffer[GLUT_KEY_UP]) {
 
             this->currentSpeed = RUN_SPEED/fps;
+            this->animator->update();
         }
         else if (this->keyBuffer[GLUT_KEY_DOWN]) {
 
             this->currentSpeed = -RUN_SPEED/fps;
+            this->animator->update();
         }
         else {
             this->currentSpeed = 0;
@@ -59,10 +61,12 @@ namespace entity {
         if (this->keyBuffer[GLUT_KEY_LEFT]) {
 
             this->currentTurnSpeed = TURN_SPEED/fps;
+            this->animator->update();
         }
         else if (this->keyBuffer[GLUT_KEY_RIGHT]) {
 
             this->currentTurnSpeed = -TURN_SPEED/fps;
+            this->animator->update();
         }
         else {
             this->currentTurnSpeed = 0;

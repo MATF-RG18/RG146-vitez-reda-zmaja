@@ -129,7 +129,6 @@ namespace core {
     vaoLoader = new VaoLoader();
     loader = new Loader();
 
-    texturedModel = loader->loadTexturedModel("res/model.dae", vaoLoader);
     animatedModel = loader->loadAnimatedModel("res/model.dae", vaoLoader);
     TerrainTexture *backgroundTexture = new TerrainTexture(vaoLoader->loadTexture("res/grassy.png"));
     TerrainTexture *rTexture = new TerrainTexture(vaoLoader->loadTexture("res/mud.png"));
@@ -180,9 +179,9 @@ namespace core {
 
   void renderScene(void) {
 
+    fpsData->update();
     mainRenderer->processTerrain(terrain);
     player->move();
-    animator->update();
     mainRenderer->processAnimatedEntity(player);
     camera->move();
     mainRenderer->render(light, camera);
@@ -190,7 +189,6 @@ namespace core {
     text->setText(string("FPS: " + to_string(fpsData->getFpsCount())));
     fontRenderer->render(text);
     glutSwapBuffers();
-    fpsData->update();
 
     return;
   }

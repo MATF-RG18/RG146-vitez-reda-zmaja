@@ -37,6 +37,6 @@ namespace utility {
 
     float FpsData::getFrameDeltaTime() {
 
-      return this->frameDeltaTime;
+      return this->frameDeltaTime/1000.0;
     }
 }

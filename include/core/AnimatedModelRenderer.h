@@ -32,7 +32,7 @@ using namespace shader;
 using namespace entity;
 using namespace glm;
 
-#define MAX_BONES 100
+#define MAX_BONES 16
 
 ////////////////////////////////////////////////////////////////////////////////
 /// @brief Prostor imena core.
