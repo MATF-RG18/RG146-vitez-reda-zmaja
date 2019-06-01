@@ -194,8 +194,9 @@ namespace core {
 
     aiString textureFile;
     material->GetTexture(aiTextureType_DIFFUSE, 0, &textureFile);
+    string textureFileName = textureFile.C_Str();
     string texturePath(fileName);
-    texturePath = texturePath.substr(0, texturePath.find_last_of("/")+1) + textureFile.C_Str();
+    texturePath = texturePath.substr(0, texturePath.find_last_of("/")+1) + textureFileName.substr(0, textureFileName.find_first_of(".")) + ".png";
     Texture *texture = new Texture(vaoLoader->loadTexture(texturePath.c_str()));
     texture->setShine(200);
     texture->setReflectivity(0.1);

@@ -47,11 +47,11 @@ namespace animation {
   void Animator::applyPoseToBones(map<string, mat4> currentPose, Bone *bone, mat4 parentTransform) {
 
     mat4 currentLocalTransform = currentPose[bone->getName()];
-    mat4 currentTransform = matrixCompMult(parentTransform, currentLocalTransform);
+    mat4 currentTransform = parentTransform * currentLocalTransform;
     for (Bone *child: bone->getChildrens()) {
       applyPoseToBones(currentPose, child, currentTransform);
     }
-    currentTransform = matrixCompMult(currentTransform, bone->getInverseBindTransform());
+    currentTransform = currentTransform * bone->getInverseBindTransform();
     bone->setAnimatedTransform(currentTransform);
   }
 

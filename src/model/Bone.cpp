@@ -52,7 +52,7 @@ namespace model {
 
   void Bone::calculateInverseBindTransform(mat4 parentTransform) {
 
-    mat4 bindTransform = matrixCompMult(parentTransform, this->localBindTransform);
+    mat4 bindTransform = parentTransform * this->localBindTransform;
     this->inverseBindTransform = inverse(bindTransform);
     for(Bone* child: this->childrens) {
       child->calculateInverseBindTransform(bindTransform);

@@ -37,6 +37,10 @@ namespace utility {
 
     float FpsData::getFrameDeltaTime() {
 
-      return this->frameDeltaTime/1000.0;
+      if (this->numOfFrames > 0){
+        return this->frameDeltaTime/1000.0/this->numOfFrames;
+      }
+      return this->frameDeltaTime/1000.0/this->fpsCount;
+
     }
 }

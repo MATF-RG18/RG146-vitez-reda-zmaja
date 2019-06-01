@@ -1,6 +1,6 @@
 #include "../../include/entity/Camera.h"
 
-// Klasa je implementirana po uzoru na video tutorijal 
+// Klasa je implementirana po uzoru na video tutorijal
 // https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 // kao i http://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/
 
@@ -11,7 +11,7 @@ namespace entity {
     this->position = vec3(player->getPosition());
     this->distanceFromPlayer = 50;
     this->angleAroundPlayer = 0;
-    this->pich = 10;
+    this->pich = 25;
     this->yaw = 180;
     this->roll = 0;
     this->player = player;
@@ -23,7 +23,7 @@ namespace entity {
   }
 
   void Camera::move() {
-    
+
     float horizontalDistance = calculateHorizontalDistance();
     float verticalDistance = calculateVerticalDistance();
     calculateCameraPosition(horizontalDistance, verticalDistance);
@@ -31,7 +31,7 @@ namespace entity {
   }
 
   void Camera::handleMouseInput(int button, int state, int x, int y) {
-    
+
     calculateZoom(button, state);
     float horizontalDistance = calculateHorizontalDistance();
     float verticalDistance = calculateVerticalDistance();

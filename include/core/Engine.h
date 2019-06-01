@@ -29,6 +29,7 @@
 #include "../font/FontRenderer.h"
 #include "../font/Text.h"
 #include "../animation/Animator.h"
+#include "../particle/WeatherSystem.h"
 
 // Ukljucivanje OpenGL biblioteke.
 #include <GL/glut.h>
@@ -46,6 +47,7 @@ using namespace utility;
 using namespace hud;
 using namespace font;
 using namespace animation;
+using namespace particle;
 
 ////////////////////////////////////////////////////////////////////////////////
 /// @brief Prostor imena core.

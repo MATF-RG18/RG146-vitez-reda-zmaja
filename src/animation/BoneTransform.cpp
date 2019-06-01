@@ -16,7 +16,7 @@ namespace animation {
 
       mat4 matrix(1.0f);
       matrix = translate(matrix, this->position);
-      matrix = matrixCompMult(matrix, toMat4(this->rotation));
+      matrix = matrix * toMat4(this->rotation);
       return matrix;
   }
 

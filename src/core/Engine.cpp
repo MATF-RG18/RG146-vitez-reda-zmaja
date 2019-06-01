@@ -45,6 +45,8 @@ namespace core {
 
   AnimatedModelRenderer *animatedModelRenderer;
 
+  vector<Entity *> trees;
+
   Loader *loader;
 
   Text *text;
@@ -53,9 +55,17 @@ namespace core {
 
   Animation *animation;
 
+  ParticleHandler *particleHandler;
+
+  WeatherSystem *weatherSystem;
+
   int screenWidth;
 
   int screenHeight;
+
+  Texture *snowTexture;
+  Texture *rainTexture;
+  bool weather = false;
 
   const char *screenTitle = "VitezRedaZmaja";
 
@@ -70,6 +80,7 @@ namespace core {
     mainRenderer->cleanUp();
     hudRenderer->cleanUp();
     vaoLoader->cleanUp();
+    particleHandler->cleanUp();
   }
 
   void Engine::start(int *argcp, char **argv) {
@@ -129,6 +140,7 @@ namespace core {
     vaoLoader = new VaoLoader();
     loader = new Loader();
 
+    texturedModel = loader->loadTexturedModel("res/tree.dae", vaoLoader);
     animatedModel = loader->loadAnimatedModel("res/model.dae", vaoLoader);
     TerrainTexture *backgroundTexture = new TerrainTexture(vaoLoader->loadTexture("res/grassy.png"));
     TerrainTexture *rTexture = new TerrainTexture(vaoLoader->loadTexture("res/mud.png"));
@@ -151,6 +163,20 @@ namespace core {
     float scale = 1;
     player = new Player(animatedModel, position, rotation, scale, terrain, fpsData, animator);
 
+    for (size_t i = 0; i < 250; i++) {
+      float posX = rand()%1000;
+      float posZ = -(rand()%1000);
+      vec3 tposition(posX, terrain->getHeightOfTerrain(posX, posZ), posZ);
+      vec3 trotation(0, 0, 0);
+      float tscale = 5;
+      entity = new Entity(texturedModel, tposition, trotation, tscale);
+      trees.push_back(entity);
+    }
+    vec3 tposition(250, terrain->getHeightOfTerrain(250,-250), -250);
+    vec3 trotation(0, 0, 0);
+    float tscale = 5;
+    entity = new Entity(texturedModel, tposition, trotation, tscale);
+
     HudTexture *hud = new HudTexture(vaoLoader->loadTexture("res/hud.png"), vec2(-0.9, -0.8), vec2(100/(float)glutGet(GLUT_WINDOW_WIDTH),100/(float)glutGet(GLUT_WINDOW_HEIGHT)), 180);
     huds.push_back(hud);
     hudRenderer = new HudRenderer(vaoLoader);
@@ -162,6 +188,13 @@ namespace core {
     camera = new Camera(player);
     light = new Light(vec3 (2000, 2000, 2000), vec3 (1, 1, 1));
 
+    particleHandler = new ParticleHandler(vaoLoader);
+    snowTexture = new Texture(vaoLoader->loadTexture("res/snowflake.png"));
+    rainTexture = new Texture(vaoLoader->loadTexture("res/raindrop.png"));
+    weatherSystem = new WeatherSystem(400, 6, 3, 60, fpsData, snowTexture);
+
+
+    fpsData->update();
     return;
   }
 
@@ -183,8 +216,22 @@ namespace core {
     mainRenderer->processTerrain(terrain);
     player->move();
     mainRenderer->processAnimatedEntity(player);
+    for (Entity *e : trees) {
+      mainRenderer->processEntity(e);
+    }
     camera->move();
     mainRenderer->render(light, camera);
+
+    float posX = camera->getPosition().x;
+    float posZ = camera->getPosition().z;
+    float posY = camera->getPosition().y+10;
+
+    if (weather) {
+      weatherSystem->generateParticles(particleHandler, vec3(posX, posY, posZ));
+      particleHandler->update();
+      particleHandler->renderParticles(camera, weatherSystem->getTexture());
+    }
+
     hudRenderer->render(huds);
     text->setText(string("FPS: " + to_string(fpsData->getFpsCount())));
     fontRenderer->render(text);
@@ -196,6 +243,19 @@ namespace core {
   void onKeyboard(unsigned char key, int x, int y) {
     if (key == ESC) {
       glutLeaveMainLoop();
+    }
+    if (key == '1') {
+
+      weather = false;
+    }
+    else if (key == '2') {
+
+      weather = true;
+      weatherSystem->setTexture(snowTexture);
+    }
+    else if (key == '3') {
+      weather = true;
+      weatherSystem->setTexture(rainTexture);
     }
     camera->move();
     camera->handleKeyboardInput(key);

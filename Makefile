@@ -21,6 +21,7 @@ DEPS = include/model/RawModel.h \
 			 include/shader/HudShader.h \
 			 include/shader/FontShader.h \
 			 include/shader/AnimatedModelShader.h \
+			 include/shader/ParticleShader.h \
 			 include/texture/Texture.h \
 			 include/texture/TerrainTexture.h \
 			 include/texture/TerrainTexturePack.h \
@@ -43,7 +44,11 @@ DEPS = include/model/RawModel.h \
 			 include/animation/Animation.h \
 			 include/animation/Animator.h \
 			 include/animation/KeyFrame.h \
-			 include/animation/BoneTransform.h
+			 include/animation/BoneTransform.h \
+			 include/particle/Particle.h \
+			 include/particle/ParticleRenderer.h \
+			 include/particle/ParticleHandler.h \
+			 include/particle/WeatherSystem.h
 
 
 OBJ = test/$(PROGRAM).o \
@@ -65,6 +70,7 @@ OBJ = test/$(PROGRAM).o \
 			src/shader/HudShader.o \
 			src/shader/FontShader.o \
 			src/shader/AnimatedModelShader.o \
+			src/shader/ParticleShader.o \
 			src/texture/Texture.o \
 			src/texture/TerrainTexture.o \
 			src/texture/TerrainTexturePack.o \
@@ -86,7 +92,12 @@ OBJ = test/$(PROGRAM).o \
 			src/animation/Animation.o \
 			src/animation/Animator.o \
 			src/animation/KeyFrame.o \
-			src/animation/BoneTransform.o
+			src/animation/BoneTransform.o \
+			src/particle/Particle.o \
+			src/particle/ParticleRenderer.o \
+			src/particle/ParticleHandler.o \
+			src/particle/WeatherSystem.o
+
 
 %.o: %.c $(DEPS)
 	$(CC) $(CXXFLAGS) -c -o $@ $< $(LDFLAGS)
