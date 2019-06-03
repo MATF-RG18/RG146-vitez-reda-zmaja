@@ -23,7 +23,9 @@ namespace core {
     vector<GLint> meshesVertexCount;
     vector<Texture *> textures;
 
-    Bone *rootNode = nullptr;
+    vector<Bone *> rootNodes;
+    this->bonesMap.reserve(scene->mNumMeshes);
+    vector<int> bonesCount;
 
     for(int i = 0; i < scene->mNumMeshes; i++) {
       aiMesh *mesh = scene->mMeshes[i];
@@ -37,13 +39,16 @@ namespace core {
       vector<int> boneIndices(mesh->mNumVertices * 4);
       vector<float> weights(mesh->mNumVertices * 4);
 
-      loadBoneData(mesh, boneIndices, weights);
+      loadBoneData(mesh, i, boneIndices, weights);
 
       aiNode *rootBone = nullptr;
 
-      findRootBone(scene->mRootNode, rootBone);
+      Bone *rootNode = nullptr;
+      findRootBone(scene->mRootNode, rootBone, i);
 
-      rootNode = loadBoneHierarchy(rootBone, mesh);
+      rootNode = loadBoneHierarchy(rootBone, mesh, i);
+      rootNodes.push_back(rootNode);
+      bonesCount.push_back(mesh->mNumBones);
 
       for (int j = 0; j < mesh->mNumVertices; j++) {
         vertices.push_back(mesh->mVertices[j].x);
@@ -78,7 +83,7 @@ namespace core {
 
     TexturedModel *texturedModel = new TexturedModel(new RawModel(meshesVaoID, meshesVertexCount), textures);
 
-    AnimatedModel *animatedModel = new AnimatedModel(texturedModel, rootNode, this->bonesMap.size());
+    AnimatedModel *animatedModel = new AnimatedModel(texturedModel, rootNodes, bonesCount);
 
     loadAnimation(animatedModel, scene);
 
@@ -203,10 +208,11 @@ namespace core {
     return texture;
   }
 
-  void Loader::loadBoneData(aiMesh *mesh, vector<int> &boneIndices, vector<float> &weights) {
+  void Loader::loadBoneData(aiMesh *mesh, int meshID, vector<int> &boneIndices, vector<float> &weights) {
 
+    this->bonesMap[meshID] = new map<string, int>;
     for (int i = 0; i < mesh->mNumBones; i++) {
-      this->bonesMap[string(mesh->mBones[i]->mName.C_Str())] = i;
+      (*this->bonesMap[meshID])[string(mesh->mBones[i]->mName.C_Str())] = i;
 
       for (int j = 0; j < mesh->mBones[i]->mNumWeights; j++) {
         GLint vertexId = mesh->mBones[i]->mWeights[j].mVertexId;
@@ -230,23 +236,25 @@ namespace core {
     }
   }
 
-  Bone *Loader::loadBoneHierarchy(aiNode *rootBone, aiMesh *mesh) {
-    int boneId = this->bonesMap[rootBone->mName.C_Str()];
+  Bone *Loader::loadBoneHierarchy(aiNode *rootBone, aiMesh *mesh, int meshID) {
+    if (rootBone == nullptr)
+      return nullptr;
+    int boneId = (*this->bonesMap[meshID])[rootBone->mName.C_Str()];
     string boneName = rootBone->mName.C_Str();
     mat4 offsetMatrix = convertAiMatrix(mesh->mBones[boneId]->mOffsetMatrix);
     Bone *bone = new Bone(boneId, boneName, offsetMatrix);
     for(int i = 0; i < rootBone->mNumChildren; i++) {
-      bone->addChild(loadBoneHierarchy(rootBone->mChildren[i], mesh));
+      bone->addChild(loadBoneHierarchy(rootBone->mChildren[i], mesh, meshID));
     }
     return bone;
   }
 
-  void Loader::findRootBone(aiNode *node, aiNode *&rootBone) {
-    if (this->bonesMap.find(node->mName.C_Str()) != this->bonesMap.end()) {
+  void Loader::findRootBone(aiNode *node, aiNode *&rootBone, int meshID) {
+    if (this->bonesMap[meshID]->find(node->mName.C_Str()) != this->bonesMap[meshID]->end()) {
       rootBone = node;
     } else {
       for (int i = 0; i < node->mNumChildren; i++) {
-        findRootBone(node->mChildren[i], rootBone);
+        findRootBone(node->mChildren[i], rootBone, meshID);
       }
     }
   }
@@ -282,7 +290,7 @@ namespace core {
         keyFrames.push_back(new KeyFrame(it.first, it.second));
       }
       Animation *anim = new Animation(animationLength, keyFrames);
-      animatedModel->addAnimation("run", anim);
+      animatedModel->addAnimation(animationName, anim);
     }
   }
 

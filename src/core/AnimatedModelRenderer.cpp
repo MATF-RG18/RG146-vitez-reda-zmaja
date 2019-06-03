@@ -50,7 +50,7 @@ namespace core {
       }
       shader->loadFakeLightning(texture->getUseFakeLightning());
       shader->loadShineVariables(texture->getShine(), texture->getReflectivity());
-      shader->loadBoneTransforms(model->getBoneTransforms(), MAX_BONES);
+      shader->loadBoneTransforms(model->getBoneTransforms(i), MAX_BONES);
       glActiveTexture(GL_TEXTURE0);
       glBindTexture(GL_TEXTURE_2D, texture->getID());
 

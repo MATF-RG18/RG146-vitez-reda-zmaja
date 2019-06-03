@@ -14,18 +14,20 @@ namespace model {
     class AnimatedModel {
     private:
         TexturedModel *model;
-        Bone *rootNode;
-        int boneCount;
+        vector<Bone *> rootNodes;
+        vector<int> bonesCount;
         map<string, Animation*> animations;
+        int numRootNodes;
     public:
-        AnimatedModel(TexturedModel *model, Bone *rootNode, int boneCount);
+        AnimatedModel(TexturedModel *model, vector<Bone *> rootNodes, vector<int> bonesCount);
         ~AnimatedModel();
         TexturedModel *getModel();
-        Bone *getRootNode();
-        mat4 *getBoneTransforms();
+        Bone *getRootNode(int rootBoneID);
+        mat4 *getBoneTransforms(int rootBoneID);
         void addBones(Bone *headBone, mat4 *boneMatrices);
         Animation *getAnimation(string animationName);
         void addAnimation(string animationName, Animation *animation);
+        int getNumRootNodes();
     };
 
 } // modeln

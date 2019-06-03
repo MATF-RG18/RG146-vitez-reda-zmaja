@@ -2,12 +2,12 @@
 
 namespace model {
 
-    AnimatedModel::AnimatedModel(TexturedModel *model, Bone *rootNode, int boneCount) {
+    AnimatedModel::AnimatedModel(TexturedModel *model, vector<Bone *> rootNodes, vector<int> bonesCount) {
 
         this->model = model;
-        this->rootNode = rootNode;
-        this->boneCount = boneCount;
-        rootNode->calculateInverseBindTransform(mat4(1.0f));
+        this->rootNodes = rootNodes;
+        this->bonesCount = bonesCount;
+        this->numRootNodes = rootNodes.size();
     }
 
     AnimatedModel::~AnimatedModel() {
@@ -19,16 +19,20 @@ namespace model {
         return this->model;
     }
 
-    Bone *AnimatedModel::getRootNode() {
+    Bone *AnimatedModel::getRootNode(int rootBoneID) {
 
-        return this->rootNode;
+        return this->rootNodes[rootBoneID];
     }
 
 
-    mat4 *AnimatedModel::getBoneTransforms() {
+    mat4 *AnimatedModel::getBoneTransforms(int rootBoneID) {
 
-        mat4 *boneMatrices = (mat4 *)malloc(this->boneCount * sizeof(mat4));
-        addBones(this->rootNode, boneMatrices);
+        Bone *rootNode = this->rootNodes[rootBoneID];
+        mat4 *boneMatrices = (mat4 *)malloc(this->bonesCount[rootBoneID] * sizeof(mat4));
+        if (rootNode == nullptr) {
+          return nullptr;
+        }
+        addBones(rootNode, boneMatrices);
         return boneMatrices;
 
     }
@@ -53,5 +57,10 @@ namespace model {
     void AnimatedModel::addAnimation(string animationName, Animation *animation) {
 
       this->animations[animationName] = animation;
+    }
+
+    int AnimatedModel::getNumRootNodes() {
+
+      return this->numRootNodes;
     }
 }

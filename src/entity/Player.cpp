@@ -35,7 +35,7 @@ namespace entity {
 
         this->keyBuffer[key] = true;
         if(!this->animationOn) {
-          this->animator->doAnimation(this->getModel()->getAnimation("run"));
+          //this->animator->doAnimation(this->getModel()->getAnimation(""));
         }
     }
 
@@ -73,10 +73,10 @@ namespace entity {
         }
 
 
-        this->increaseRotation(vec3 {0, this->currentTurnSpeed, 0});
+        this->increaseRotation(vec3 {0, 0, this->currentTurnSpeed});
 
-        float deltaX = this->currentSpeed*sin(radians(this->getRotation().y));
-        float deltaZ = this->currentSpeed*cos(radians(this->getRotation().y));
+        float deltaX = this->currentSpeed*sin(radians(this->getRotation().z));
+        float deltaZ = this->currentSpeed*cos(radians(this->getRotation().z));
 
         this->increasePosition(vec3 (deltaX, 0, deltaZ));
         float terrainHeight = this->terrain->getHeightOfTerrain(this->getPosition().x, this->getPosition().z);

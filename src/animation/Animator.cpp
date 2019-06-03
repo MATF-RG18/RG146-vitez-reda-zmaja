@@ -25,8 +25,13 @@ namespace animation {
       return;
     }
     increaseAnimationTime();
+    vector<KeyFrame *> allFrames = this->currentAnimation->getKeyFrames();
+    if(allFrames[0]->getTimeStamp() >= this->animationTime)
+      return;
     map<string, mat4> currentPose = calculateCurrentAnimationPose();
-    applyPoseToBones(currentPose, model->getRootNode(), mat4(1.0f));
+    for (int i = 0; i < this->model->getNumRootNodes(); i++) {
+      applyPoseToBones(currentPose, model->getRootNode(i), mat4(1.0f));
+    }
   }
 
   void Animator::increaseAnimationTime() {

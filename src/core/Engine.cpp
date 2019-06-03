@@ -77,10 +77,8 @@ namespace core {
   }
 
   Engine::~Engine() {
-    mainRenderer->cleanUp();
-    hudRenderer->cleanUp();
-    vaoLoader->cleanUp();
-    particleHandler->cleanUp();
+
+    cleanUp();
   }
 
   void Engine::start(int *argcp, char **argv) {
@@ -159,8 +157,8 @@ namespace core {
     animator = new Animator(animatedModel, fpsData);
 
     vec3 position(260, 5, -260);
-    vec3 rotation(-90, 0, 0);
-    float scale = 1;
+    vec3 rotation(-90, 0, 180);
+    float scale = 0.07;
     player = new Player(animatedModel, position, rotation, scale, terrain, fpsData, animator);
 
     for (size_t i = 0; i < 250; i++) {
@@ -210,6 +208,14 @@ namespace core {
     return;
   }
 
+  void cleanUp() {
+
+    mainRenderer->cleanUp();
+    hudRenderer->cleanUp();
+    vaoLoader->cleanUp();
+    particleHandler->cleanUp();
+  }
+
   void renderScene(void) {
 
     fpsData->update();
@@ -242,6 +248,7 @@ namespace core {
 
   void onKeyboard(unsigned char key, int x, int y) {
     if (key == ESC) {
+      cleanUp();
       glutLeaveMainLoop();
     }
     if (key == '1') {

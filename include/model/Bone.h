@@ -16,10 +16,9 @@ namespace model {
         string name;
         vector<Bone*> childrens;
         mat4 animatedTransform;
-        mat4 localBindTransform;
         mat4 inverseBindTransform;
     public:
-        Bone(int ID, string name, mat4 localBindTransform);
+        Bone(int ID, string name, mat4 inverseBindTransform);
         ~Bone();
         void addChild(Bone *child);
         int getID();
@@ -28,7 +27,6 @@ namespace model {
         mat4 getAnimatedTransform();
         void setAnimatedTransform(mat4 animatedTransform);
         mat4 getInverseBindTransform();
-        void calculateInverseBindTransform(mat4 parentTransform);
 
     };
 }

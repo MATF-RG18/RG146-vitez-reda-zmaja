@@ -2,13 +2,12 @@
 
 namespace model {
 
-  Bone::Bone(int ID, string name, mat4 localBindTransform) {
+  Bone::Bone(int ID, string name, mat4 inverseBindTransform) {
 
       this->ID = ID;
       this->name = name;
-      this->localBindTransform = localBindTransform;
+      this->inverseBindTransform = inverseBindTransform;
       this->animatedTransform = mat4(1.0f);
-      this->inverseBindTransform = mat4(1.0f);
   }
 
   Bone::~Bone() {
@@ -50,12 +49,4 @@ namespace model {
     return this->inverseBindTransform;
   }
 
-  void Bone::calculateInverseBindTransform(mat4 parentTransform) {
-
-    mat4 bindTransform = parentTransform * this->localBindTransform;
-    this->inverseBindTransform = inverse(bindTransform);
-    for(Bone* child: this->childrens) {
-      child->calculateInverseBindTransform(bindTransform);
-    }
-  }
 }

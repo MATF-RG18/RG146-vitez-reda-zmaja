@@ -356,14 +356,17 @@ namespace core {
 
   void VaoLoader::cleanUp() {
 
+    unique(vaos.begin(), vaos.end());
     for (GLuint vao : vaos) {
       glDeleteVertexArrays(1, &vao);
     }
 
+    unique(vbos.begin(), vbos.end());
     for (GLuint vbo : vbos) {
       glDeleteBuffers(1, &vbo);
 	  }
 
+    unique(textures.begin(), textures.end());
     for (GLuint texture : textures) {
       glDeleteTextures(1, &texture);
     }

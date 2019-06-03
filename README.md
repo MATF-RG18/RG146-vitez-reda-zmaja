@@ -114,6 +114,21 @@ cd RG102-vitez-reda-zmaja
 
 <table>
 <tr>
+    <th colspan="2">Kontrole vremena</th>
+</tr>
+<tr>
+    <td>1</td><td>Bez padavina(podrazumevan mod u igri)</td>
+</tr>
+<tr>
+    <td>2</td><td>Sneg</td>
+</tr>
+<tr>
+    <td>3</td><td>Kisa</td>
+</tr>
+<table>
+
+<table>
+<tr>
     <th colspan="2">Kontrole igre</th>
 </tr>
 <tr>
