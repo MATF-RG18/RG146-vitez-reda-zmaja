@@ -3,12 +3,12 @@
 > Vitez reda zmaja je RPG igra u kojoj je cilj savladati sve prepreke i dokazati svoje vestine.
 
 ### Trenutni izgled igre
-![Screen](screenshots/Program_Stage7.png?raw=true "Current program view")
+![Screen](screenshots/Program_Stage9.png?raw=true "Current program view")
 
 
 ##  :green_book: O projektu
 
-> Trenutno je moguce ucitati obj fajl kreiran pomocu alata kao sto je Blender3D i pridruziti mu texturu ukoliko je textura kreirana pomocu "unwrap"(UV) metoda, i kreiranje terena. Postoji mogucnost transformacije ucitanog objekta kao sto su rotacija, translacija i skaliranje, takodje je moguce kontrolisati kameru rotiranjem po x i y osi kao i zumiranje tj. pomeranje po z osi kao i podesavanje osvetljenja u igri. Moguce je kreiranje neba i smena dana i noci, kao i prikazivanje 2D teksta i slika.
+> U trenutnoj fazi projekta moguce je ucitati model iz sirokog spektra fajlova(.obj, .fbx, .dae, .3ds, ...). Model se moze sastojati iz vise delova gde svaki deo moze imati tekstutu, podatke o skeletu i animacije(trenutno funkcionise samo ucitavanje animacija ali ne i renderovanje). Model se moze kontrolisati komandama sa tasture a takodje postoji i interakcija sa terenom kreiranim pomocu visinskih mapa tako da ce se model uvek nalaziti na povrsini terena. Moguce su kontrole kamere i to: rotiranje po x i y osi kao i zumiranje tj pomeranje kamere po z osi. Podrzano je ucitavanje kutije neba sa teksturama a takodje i smena dnevnog i nocnog neba u zavisnosti od vremena u igri. Moguce je kreiranje 2d objekata u igri kao sto su tekst ili 2D slike. U zavisnost od izabranog vremena moguce je renderovanje cesticnih sistema pomocu kojih mozemo simulirati sneg ili kisu.
 
 ### Za vise informacija o procesu izrade projekta pogledajte [wiki](https://github.com/MATF-RG18/RG146-vitez-reda-zmaja/wiki) stranicu projekta
 
