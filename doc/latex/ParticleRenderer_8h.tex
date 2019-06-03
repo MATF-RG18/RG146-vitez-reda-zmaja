@@ -1,0 +1,70 @@
+\hypertarget{ParticleRenderer_8h}{}\section{Opis datoteke /home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/particle/\+Particle\+Renderer.h}
+\label{ParticleRenderer_8h}\index{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/particle/\+Particle\+Renderer.\+h@{/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/particle/\+Particle\+Renderer.\+h}}
+{\ttfamily \#include \char`\"{}../particle/\+Particle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../utility/\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../shader/\+Particle\+Shader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../model/\+Raw\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../entity/\+Camera.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../texture/\+Texture.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$glm/vec3.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/mat4x4.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+Graf zavisnosti datoteka za Particle\+Renderer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ParticleRenderer_8h__incl}
+\end{center}
+\end{figure}
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ParticleRenderer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Klase, strukture i unije}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classparticle_1_1ParticleRenderer}{particle\+::\+Particle\+Renderer}
+\begin{DoxyCompactList}\small\item\em Klasa Particle\+Render je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Prostori imena}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceparticle}{particle}
+\begin{DoxyCompactList}\small\item\em Prostor imena particle. Sadrzi sve klase, funkcije i promenljive koje su vezane za sistem cestica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Makro zamene}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ParticleRenderer_8h_a5abd0b0af1694dc1c2179d7ce73db69d}{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER}~\char`\"{}src/shader/Particle\+Fragment\+Shader.\+txt\char`\"{}
+\item 
+\#define \hyperlink{ParticleRenderer_8h_a354f578a80e99bc6b8d6d3faf231b67c}{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER}~\char`\"{}src/shader/Particle\+Vertex\+Shader.\+txt\char`\"{}
+\item 
+\#define \hyperlink{ParticleRenderer_8h_a120fb070bddb21f0bd899f50252c4cb5}{G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacija makro zamene}
+\mbox{\Hypertarget{ParticleRenderer_8h_a120fb070bddb21f0bd899f50252c4cb5}\label{ParticleRenderer_8h_a120fb070bddb21f0bd899f50252c4cb5}} 
+\index{Particle\+Renderer.\+h@{Particle\+Renderer.\+h}!G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES@{G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES}}
+\index{G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES@{G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES}!Particle\+Renderer.\+h@{Particle\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES}{GL\_GLEXT\_PROTOTYPES}}
+{\footnotesize\ttfamily \#define G\+L\+\_\+\+G\+L\+E\+X\+T\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+P\+ES}
+
+\mbox{\Hypertarget{ParticleRenderer_8h_a5abd0b0af1694dc1c2179d7ce73db69d}\label{ParticleRenderer_8h_a5abd0b0af1694dc1c2179d7ce73db69d}} 
+\index{Particle\+Renderer.\+h@{Particle\+Renderer.\+h}!P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER@{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER}}
+\index{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER@{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER}!Particle\+Renderer.\+h@{Particle\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER}{PARTICLE\_FRAGMENT\_SHADER}}
+{\footnotesize\ttfamily \#define P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER~\char`\"{}src/shader/Particle\+Fragment\+Shader.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{ParticleRenderer_8h_a354f578a80e99bc6b8d6d3faf231b67c}\label{ParticleRenderer_8h_a354f578a80e99bc6b8d6d3faf231b67c}} 
+\index{Particle\+Renderer.\+h@{Particle\+Renderer.\+h}!P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER@{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER}}
+\index{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER@{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER}!Particle\+Renderer.\+h@{Particle\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER}{PARTICLE\_VERTEX\_SHADER}}
+{\footnotesize\ttfamily \#define P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER~\char`\"{}src/shader/Particle\+Vertex\+Shader.\+txt\char`\"{}}
+

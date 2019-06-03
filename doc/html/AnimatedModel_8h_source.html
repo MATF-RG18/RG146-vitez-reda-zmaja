@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/include/model/AnimatedModel.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_5c067e43b62dc1a915e487a737196819.html">model</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AnimatedModel.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="AnimatedModel_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _ANIMATED_MODEL_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _ANIMATED_MODEL_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Ukljucivanje korsnicki defininisanih biblioteka.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../model/TexturedModel.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../model/Bone.h&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../animation/Animation.h&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Ukljucivanje biblioteka</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// Koriscenje prostora imena za jednostavniji i pregledniji kod.</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceanimation.html">animation</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemodel.html">model</a> {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmodel_1_1AnimatedModel.html">   34</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// Privatne promenljive klase.</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classmodel_1_1AnimatedModel.html#a9856ce11025686cdf78bf5729556613c">   39</a></span>&#160;        <a class="code" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *<a class="code" href="classmodel_1_1AnimatedModel.html#a9856ce11025686cdf78bf5729556613c">model</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classmodel_1_1AnimatedModel.html#a26c1309582cde31ac4dfb8e2436a0cd7">   42</a></span>&#160;        vector&lt;Bone *&gt; <a class="code" href="classmodel_1_1AnimatedModel.html#a26c1309582cde31ac4dfb8e2436a0cd7">rootNodes</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classmodel_1_1AnimatedModel.html#aea55cadf949b3bd7bd5eb66d1d6ad304">   45</a></span>&#160;        vector&lt;int&gt; <a class="code" href="classmodel_1_1AnimatedModel.html#aea55cadf949b3bd7bd5eb66d1d6ad304">bonesCount</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classmodel_1_1AnimatedModel.html#ae366eb62ff617640a6b7a4aee86ff273">   48</a></span>&#160;        map&lt;string, Animation*&gt; <a class="code" href="classmodel_1_1AnimatedModel.html#ae366eb62ff617640a6b7a4aee86ff273">animations</a>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmodel_1_1AnimatedModel.html#a0115b34f0a5c6f60e06c446ee3d7e442">   51</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classmodel_1_1AnimatedModel.html#a0115b34f0a5c6f60e06c446ee3d7e442">numRootNodes</a>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Javne funkcije klase.</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a>(<a class="code" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *model, vector&lt;Bone *&gt; rootNodes, vector&lt;int&gt; bonesCount);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        ~<a class="code" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a>();</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *getModel();</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="classmodel_1_1Bone.html">Bone</a> *getRootNode(<span class="keywordtype">int</span> rootBoneID);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        mat4 *getBoneTransforms(<span class="keywordtype">int</span> rootBoneID);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">void</span> addBones(<a class="code" href="classmodel_1_1Bone.html">Bone</a> *headBone, mat4 *boneMatrices);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="classanimation_1_1Animation.html">Animation</a> *getAnimation(<span class="keywordtype">string</span> animationName);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">void</span> addAnimation(<span class="keywordtype">string</span> animationName, <a class="code" href="classanimation_1_1Animation.html">Animation</a> *<a class="code" href="namespaceanimation.html">animation</a>);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">int</span> getNumRootNodes();</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    };</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;} <span class="comment">// model</span></div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classmodel_1_1AnimatedModel_html_a9856ce11025686cdf78bf5729556613c"><div class="ttname"><a href="classmodel_1_1AnimatedModel.html#a9856ce11025686cdf78bf5729556613c">model::AnimatedModel::model</a></div><div class="ttdeci">TexturedModel * model</div><div class="ttdoc">Pokazivac na instancu klase TexturedModel. </div><div class="ttdef"><b>Definition:</b> AnimatedModel.h:39</div></div>
+<div class="ttc" id="namespaceanimation_html"><div class="ttname"><a href="namespaceanimation.html">animation</a></div><div class="ttdoc">Prostor imena animation. Sadrzi sve klase, funkcije i promenljive za rad sa animacajima modela...</div><div class="ttdef"><b>Definition:</b> Animation.cpp:9</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdoc">Prostor imena model. Sadrzi sve klase, funkcije i promenljive koje opisuju model objekta. </div><div class="ttdef"><b>Definition:</b> AnimatedModel.cpp:9</div></div>
+<div class="ttc" id="classanimation_1_1Animation_html"><div class="ttname"><a href="classanimation_1_1Animation.html">animation::Animation</a></div><div class="ttdoc">Klasa Animation odredjuje animaciju modela. Pomocu klase Animation cuvamo podatke o animaciji modela...</div><div class="ttdef"><b>Definition:</b> Animation.h:30</div></div>
+<div class="ttc" id="classmodel_1_1Bone_html"><div class="ttname"><a href="classmodel_1_1Bone.html">model::Bone</a></div><div class="ttdoc">Klasa Bone opisuje kost modela. Kost je opisana indeksom, imenom, listom dece, matricom transformacij...</div><div class="ttdef"><b>Definition:</b> Bone.h:32</div></div>
+<div class="ttc" id="classmodel_1_1TexturedModel_html"><div class="ttname"><a href="classmodel_1_1TexturedModel.html">model::TexturedModel</a></div><div class="ttdoc">Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo...</div><div class="ttdef"><b>Definition:</b> TexturedModel.h:29</div></div>
+<div class="ttc" id="classmodel_1_1AnimatedModel_html_a26c1309582cde31ac4dfb8e2436a0cd7"><div class="ttname"><a href="classmodel_1_1AnimatedModel.html#a26c1309582cde31ac4dfb8e2436a0cd7">model::AnimatedModel::rootNodes</a></div><div class="ttdeci">vector&lt; Bone * &gt; rootNodes</div><div class="ttdoc">Vektor pokazivaca na instance klase Bone. </div><div class="ttdef"><b>Definition:</b> AnimatedModel.h:42</div></div>
+<div class="ttc" id="classmodel_1_1AnimatedModel_html"><div class="ttname"><a href="classmodel_1_1AnimatedModel.html">model::AnimatedModel</a></div><div class="ttdoc">Klasa AnimatedModel opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instanco...</div><div class="ttdef"><b>Definition:</b> AnimatedModel.h:34</div></div>
+<div class="ttc" id="classmodel_1_1AnimatedModel_html_aea55cadf949b3bd7bd5eb66d1d6ad304"><div class="ttname"><a href="classmodel_1_1AnimatedModel.html#aea55cadf949b3bd7bd5eb66d1d6ad304">model::AnimatedModel::bonesCount</a></div><div class="ttdeci">vector&lt; int &gt; bonesCount</div><div class="ttdoc">Vektor broja kostiju. </div><div class="ttdef"><b>Definition:</b> AnimatedModel.h:45</div></div>
+<div class="ttc" id="classmodel_1_1AnimatedModel_html_a0115b34f0a5c6f60e06c446ee3d7e442"><div class="ttname"><a href="classmodel_1_1AnimatedModel.html#a0115b34f0a5c6f60e06c446ee3d7e442">model::AnimatedModel::numRootNodes</a></div><div class="ttdeci">int numRootNodes</div><div class="ttdoc">Broj glavnih kostiju. </div><div class="ttdef"><b>Definition:</b> AnimatedModel.h:51</div></div>
+<div class="ttc" id="classmodel_1_1AnimatedModel_html_ae366eb62ff617640a6b7a4aee86ff273"><div class="ttname"><a href="classmodel_1_1AnimatedModel.html#ae366eb62ff617640a6b7a4aee86ff273">model::AnimatedModel::animations</a></div><div class="ttdeci">map&lt; string, Animation * &gt; animations</div><div class="ttdoc">Mapa imena animacija sa pokazivacima na instance klase Animation. </div><div class="ttdef"><b>Definition:</b> AnimatedModel.h:48</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

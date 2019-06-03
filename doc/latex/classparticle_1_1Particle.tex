@@ -1,0 +1,267 @@
+\hypertarget{classparticle_1_1Particle}{}\section{Dokumentacija klase particle\+:\+:Particle}
+\label{classparticle_1_1Particle}\index{particle\+::\+Particle@{particle\+::\+Particle}}
+
+
+Klasa \hyperlink{classparticle_1_1Particle}{Particle} opisuje jednu cesticu. Cestica je opisana pozicijom, brzinom, efektom gravitacije, duzinom zivotnog veka, rotacijom i faktorom skaliranja.  
+
+
+
+
+{\ttfamily \#include $<$Particle.\+h$>$}
+
+
+
+Klasni dijagram za particle\+:\+:Particle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classparticle_1_1Particle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classparticle_1_1Particle_afb9da92466e6c043e69d0d5fb4e9a04f}{Particle} (vec3 \hyperlink{classparticle_1_1Particle_adbbe15e722e36d8933f228891b6e9d68}{position}, vec3 \hyperlink{classparticle_1_1Particle_a24b42fc49ed65250499e0ba059764f0c}{speed}, float \hyperlink{classparticle_1_1Particle_ae600a9dd750175cc63e19ddc826e7ce2}{gravity}, float \hyperlink{classparticle_1_1Particle_a5489d20fe4168e0fda5b58b3802a9003}{life\+Length}, float \hyperlink{classparticle_1_1Particle_a8ca9da0e74a86eced58a66db613a59a5}{rotation}, float \hyperlink{classparticle_1_1Particle_ae33238d14fd210a1d8336e568a456960}{scale}, \hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$\hyperlink{classparticle_1_1Particle_a84e6c4f5fbc007346f27db18dd696045}{fps\+Data})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se cestici pridruzuje pozicija, brzi na, efektgravitacije, duzina zivotnog veka, rotacija i faktor skaliranja. \end{DoxyCompactList}\item 
+\hyperlink{classparticle_1_1Particle_a7cc19695c515e8cffa9f4d9929ca9e61}{$\sim$\+Particle} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classparticle_1_1Particle_a8dc9962f0f373739437652fbe8c5820d}{get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca poziciju cestice. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1Particle_a0a9002e65ea2db2f9e28935d3e3e9aa5}{get\+Rotation} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca rotaciju cestice. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1Particle_a1de9470fa01253971c9f6ed0f5849b66}{get\+Scale} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca faktor skaliranja cestice. \end{DoxyCompactList}\item 
+bool \hyperlink{classparticle_1_1Particle_ae64c03b4dd9a95879c0fee100955a800}{update} ()
+\begin{DoxyCompactList}\small\item\em Funkcija azurira poziciju cestice i trenutno vreme zivotnog veka. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+vec3 \hyperlink{classparticle_1_1Particle_adbbe15e722e36d8933f228891b6e9d68}{position}
+\begin{DoxyCompactList}\small\item\em Pozicija cestice. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classparticle_1_1Particle_a24b42fc49ed65250499e0ba059764f0c}{speed}
+\begin{DoxyCompactList}\small\item\em Brzina cestice. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1Particle_ae600a9dd750175cc63e19ddc826e7ce2}{gravity}
+\begin{DoxyCompactList}\small\item\em Efekat gravitacije. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1Particle_a5489d20fe4168e0fda5b58b3802a9003}{life\+Length}
+\begin{DoxyCompactList}\small\item\em Duzina zivotnog veka. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1Particle_a995fbbd73908130f6dc08c5a2107c1d8}{current\+Life\+Time}
+\begin{DoxyCompactList}\small\item\em Trenutno vreme zivota. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1Particle_a8ca9da0e74a86eced58a66db613a59a5}{rotation}
+\begin{DoxyCompactList}\small\item\em Rotacija cestice. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1Particle_ae33238d14fd210a1d8336e568a456960}{scale}
+\begin{DoxyCompactList}\small\item\em Faktor skaliranja cestice. \end{DoxyCompactList}\item 
+\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$ \hyperlink{classparticle_1_1Particle_a84e6c4f5fbc007346f27db18dd696045}{fps\+Data}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Fps\+Data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classparticle_1_1Particle}{Particle} opisuje jednu cesticu. Cestica je opisana pozicijom, brzinom, efektom gravitacije, duzinom zivotnog veka, rotacijom i faktorom skaliranja. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classparticle_1_1Particle_afb9da92466e6c043e69d0d5fb4e9a04f}\label{classparticle_1_1Particle_afb9da92466e6c043e69d0d5fb4e9a04f}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{Particle()}{Particle()}}
+{\footnotesize\ttfamily particle\+::\+Particle\+::\+Particle (\begin{DoxyParamCaption}\item[{vec3}]{position,  }\item[{vec3}]{speed,  }\item[{float}]{gravity,  }\item[{float}]{life\+Length,  }\item[{float}]{rotation,  }\item[{float}]{scale,  }\item[{\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$}]{fps\+Data }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. U konstruktoru se cestici pridruzuje pozicija, brzi na, efektgravitacije, duzina zivotnog veka, rotacija i faktor skaliranja. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em position} & Pozicija cestice. \\
+\hline
+{\em speed} & Brzina cestice. \\
+\hline
+{\em gravity} & Efekat gravitacije. \\
+\hline
+{\em life\+Length} & Duzina zivotnog veka. \\
+\hline
+{\em rotation} & Rotacija cestice. \\
+\hline
+{\em scale} & Faktor skaliranja cestice. \\
+\hline
+{\em fps\+Data} & Pokazivac na instancu klase Fps\+Data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classparticle_1_1Particle_a7cc19695c515e8cffa9f4d9929ca9e61}\label{classparticle_1_1Particle_a7cc19695c515e8cffa9f4d9929ca9e61}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!````~Particle@{$\sim$\+Particle}}
+\index{````~Particle@{$\sim$\+Particle}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle()}{~Particle()}}
+{\footnotesize\ttfamily particle\+::\+Particle\+::$\sim$\+Particle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classparticle_1_1Particle_a8dc9962f0f373739437652fbe8c5820d}\label{classparticle_1_1Particle_a8dc9962f0f373739437652fbe8c5820d}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily vec3 particle\+::\+Particle\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca poziciju cestice. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vec3 Pozicija cestice. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1Particle_a0a9002e65ea2db2f9e28935d3e3e9aa5}\label{classparticle_1_1Particle_a0a9002e65ea2db2f9e28935d3e3e9aa5}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!get\+Rotation@{get\+Rotation}}
+\index{get\+Rotation@{get\+Rotation}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
+{\footnotesize\ttfamily float particle\+::\+Particle\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca rotaciju cestice. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Rotacija cestice. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1Particle_a1de9470fa01253971c9f6ed0f5849b66}\label{classparticle_1_1Particle_a1de9470fa01253971c9f6ed0f5849b66}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{get\+Scale()}{getScale()}}
+{\footnotesize\ttfamily float particle\+::\+Particle\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca faktor skaliranja cestice. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Faktor skaliranja cestice. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1Particle_ae64c03b4dd9a95879c0fee100955a800}\label{classparticle_1_1Particle_ae64c03b4dd9a95879c0fee100955a800}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!update@{update}}
+\index{update@{update}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool particle\+::\+Particle\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija azurira poziciju cestice i trenutno vreme zivotnog veka. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+bool Da li je zivotni vek cestice zavrsen. 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classparticle_1_1Particle_a995fbbd73908130f6dc08c5a2107c1d8}\label{classparticle_1_1Particle_a995fbbd73908130f6dc08c5a2107c1d8}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!current\+Life\+Time@{current\+Life\+Time}}
+\index{current\+Life\+Time@{current\+Life\+Time}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{current\+Life\+Time}{currentLifeTime}}
+{\footnotesize\ttfamily float particle\+::\+Particle\+::current\+Life\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Trenutno vreme zivota. 
+
+\mbox{\Hypertarget{classparticle_1_1Particle_a84e6c4f5fbc007346f27db18dd696045}\label{classparticle_1_1Particle_a84e6c4f5fbc007346f27db18dd696045}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!fps\+Data@{fps\+Data}}
+\index{fps\+Data@{fps\+Data}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{fps\+Data}{fpsData}}
+{\footnotesize\ttfamily \hyperlink{classutility_1_1FpsData}{Fps\+Data}$\ast$ particle\+::\+Particle\+::fps\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Fps\+Data. 
+
+\mbox{\Hypertarget{classparticle_1_1Particle_ae600a9dd750175cc63e19ddc826e7ce2}\label{classparticle_1_1Particle_ae600a9dd750175cc63e19ddc826e7ce2}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!gravity@{gravity}}
+\index{gravity@{gravity}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{gravity}{gravity}}
+{\footnotesize\ttfamily float particle\+::\+Particle\+::gravity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Efekat gravitacije. 
+
+\mbox{\Hypertarget{classparticle_1_1Particle_a5489d20fe4168e0fda5b58b3802a9003}\label{classparticle_1_1Particle_a5489d20fe4168e0fda5b58b3802a9003}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!life\+Length@{life\+Length}}
+\index{life\+Length@{life\+Length}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{life\+Length}{lifeLength}}
+{\footnotesize\ttfamily float particle\+::\+Particle\+::life\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Duzina zivotnog veka. 
+
+\mbox{\Hypertarget{classparticle_1_1Particle_adbbe15e722e36d8933f228891b6e9d68}\label{classparticle_1_1Particle_adbbe15e722e36d8933f228891b6e9d68}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!position@{position}}
+\index{position@{position}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily vec3 particle\+::\+Particle\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pozicija cestice. 
+
+\mbox{\Hypertarget{classparticle_1_1Particle_a8ca9da0e74a86eced58a66db613a59a5}\label{classparticle_1_1Particle_a8ca9da0e74a86eced58a66db613a59a5}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!rotation@{rotation}}
+\index{rotation@{rotation}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily float particle\+::\+Particle\+::rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rotacija cestice. 
+
+\mbox{\Hypertarget{classparticle_1_1Particle_ae33238d14fd210a1d8336e568a456960}\label{classparticle_1_1Particle_ae33238d14fd210a1d8336e568a456960}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!scale@{scale}}
+\index{scale@{scale}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily float particle\+::\+Particle\+::scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Faktor skaliranja cestice. 
+
+\mbox{\Hypertarget{classparticle_1_1Particle_a24b42fc49ed65250499e0ba059764f0c}\label{classparticle_1_1Particle_a24b42fc49ed65250499e0ba059764f0c}} 
+\index{particle\+::\+Particle@{particle\+::\+Particle}!speed@{speed}}
+\index{speed@{speed}!particle\+::\+Particle@{particle\+::\+Particle}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily vec3 particle\+::\+Particle\+::speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Brzina cestice. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/particle/\hyperlink{Particle_8h}{Particle.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/particle/\hyperlink{Particle_8cpp}{Particle.\+cpp}\end{DoxyCompactItemize}

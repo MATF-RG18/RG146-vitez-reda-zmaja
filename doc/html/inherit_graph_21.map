@@ -1,5 +1,3 @@
 <map id="Hijerarhija klasa u obliku grafa" name="Hijerarhija klasa u obliku grafa">
-<area shape="rect" id="node1" href="$classtinyobj_1_1MaterialReader.html" title="tinyobj::MaterialReader" alt="" coords="5,31,161,57"/>
-<area shape="rect" id="node2" href="$classtinyobj_1_1MaterialFileReader.html" title="tinyobj::MaterialFileReader" alt="" coords="220,5,397,32"/>
-<area shape="rect" id="node3" href="$classtinyobj_1_1MaterialStreamReader.html" title="tinyobj::MaterialStreamReader" alt="" coords="209,56,408,83"/>
+<area shape="rect" id="node1" href="$classhud_1_1HudTexture.html" title="Klasa HudTexture odredjuje teksture 2D grafike. Pomocu klase Font cuvamo podatke o teksturi i pozicio..." alt="" coords="5,5,124,32"/>
 </map>

@@ -1,0 +1,288 @@
+\hypertarget{classcore_1_1Loader}{}\section{Dokumentacija klase core\+:\+:Loader}
+\label{classcore_1_1Loader}\index{core\+::\+Loader@{core\+::\+Loader}}
+
+
+Klasa \hyperlink{classcore_1_1Loader}{Loader} je zaduzena za ucitavanje modela. Klasa sadrzi funkcije za ucitavanje raznih vrsta modela iz sirokog spektra fajlova za cuvanje podataka o modelu.  
+
+
+
+
+{\ttfamily \#include $<$Loader.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1Loader_a8fc16cee7fd1812e40b1e78aa2568535}{Loader} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classcore_1_1Loader_a16110f8585d6f746307d1d145a1d6f04}{$\sim$\+Loader} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$ \hyperlink{classcore_1_1Loader_a468d5cec790c008637111fb0b0bd7d6d}{load\+Animated\+Model} (const char $\ast$file\+Name, \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$\hyperlink{namespacecore_a78dd24784c415d3759a0f71b8f4f9f81}{vao\+Loader})
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava podatke o animiranom modelu Funkcija pomocu biblioteke Assimp ucitva u V\+AO pomocu Vao\+Loader-\/a pozicije, normale, koordinate tekstura, indekse kostiju i tezine modela. Takodje se ucitavaju teksture i hijerarhija kostiju. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$ \hyperlink{classcore_1_1Loader_a0738ff43667e227e672b4d12f12afb46}{load\+Textured\+Model} (const char $\ast$file\+Name, \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$\hyperlink{namespacecore_a78dd24784c415d3759a0f71b8f4f9f81}{vao\+Loader})
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava podatke o teksturisanom modelu Funkcija pomocu biblioteke Assimp ucitva u V\+AO pomocu Vao\+Loader-\/a pozicije, normale, koordinate tekstura modela. Takodje se ucitavaju teksture. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classcore_1_1Loader_afff340dee890eb62e24d958b1d1a609c}{load\+Raw\+Model} (const char $\ast$file\+Name, \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$\hyperlink{namespacecore_a78dd24784c415d3759a0f71b8f4f9f81}{vao\+Loader})
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava podatke o sirovom modelu Funkcija pomocu biblioteke Assimp ucitva u V\+AO pomocu Vao\+Loader-\/a pozicije, normale, koordinate tekstura modela. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtexture_1_1Texture}{Texture} $\ast$ \hyperlink{classcore_1_1Loader_ab1e01bdf019c36ce9b4c3a83d194f9fc}{load\+Material} (ai\+Material $\ast$material, const char $\ast$file\+Name, \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$\hyperlink{namespacecore_a78dd24784c415d3759a0f71b8f4f9f81}{vao\+Loader})
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava teksture Funkcija pomocu biblioteke Assimp ucitva u V\+AO pomocu Vao\+Loader-\/a difuzne teksture, sa predodredjenim faktorom sjaja i reflekcije. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1Loader_acfe1b4eb91cac78068c8c1edefe460b3}{load\+Bone\+Data} (ai\+Mesh $\ast$mesh, int mesh\+ID, vector$<$ int $>$ \&bone\+Indices, vector$<$ float $>$ \&weights)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava podatke o kostima(indekse i tezine za svaku tacku). \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1Bone}{Bone} $\ast$ \hyperlink{classcore_1_1Loader_a86badeeb7089e9c2e8d0dea8be60bbe9}{load\+Bone\+Hierarchy} (ai\+Node $\ast$root\+Bone, ai\+Mesh $\ast$mesh, int mesh\+ID)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava hijerarhiju kostiju i vraca glavnu kost. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1Loader_aae32d85640af5eb6d4a9c8e27fc0e83e}{find\+Root\+Bone} (ai\+Node $\ast$node, ai\+Node $\ast$\&root\+Bone, int mesh\+ID)
+\begin{DoxyCompactList}\small\item\em Funkcija pronalazi glavnu kost. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1Loader_a228087d022e5102cc4e40b12e7ecf9fa}{load\+Animation} (\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$\hyperlink{namespacecore_a32acc9ced9824face25fb6376f19427c}{animated\+Model}, const ai\+Scene $\ast$scene)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava informacije o animacijama modela. Informacije se skladiste u mapi imena i instanci klase Animation unutar klase Animated\+Model. \end{DoxyCompactList}\item 
+mat4 \hyperlink{classcore_1_1Loader_a4d635316740767d7aaebc7bf0c52ebe2}{convert\+Ai\+Matrix} (ai\+Matrix4x4 ai\+Matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija konvertuje Assimp matricu u glm format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ map$<$ string, int $>$ $\ast$ $>$ \hyperlink{classcore_1_1Loader_a86ae8bc5968de3aa3c7450acadfb6fea}{bones\+Map}
+\begin{DoxyCompactList}\small\item\em Mapa imena kostiju sa njihovim indeksima. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classcore_1_1Loader}{Loader} je zaduzena za ucitavanje modela. Klasa sadrzi funkcije za ucitavanje raznih vrsta modela iz sirokog spektra fajlova za cuvanje podataka o modelu. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classcore_1_1Loader_a8fc16cee7fd1812e40b1e78aa2568535}\label{classcore_1_1Loader_a8fc16cee7fd1812e40b1e78aa2568535}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!Loader@{Loader}}
+\index{Loader@{Loader}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{Loader()}{Loader()}}
+{\footnotesize\ttfamily core\+::\+Loader\+::\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1Loader_a16110f8585d6f746307d1d145a1d6f04}\label{classcore_1_1Loader_a16110f8585d6f746307d1d145a1d6f04}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!````~Loader@{$\sim$\+Loader}}
+\index{````~Loader@{$\sim$\+Loader}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{$\sim$\+Loader()}{~Loader()}}
+{\footnotesize\ttfamily core\+::\+Loader\+::$\sim$\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classcore_1_1Loader_a4d635316740767d7aaebc7bf0c52ebe2}\label{classcore_1_1Loader_a4d635316740767d7aaebc7bf0c52ebe2}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!convert\+Ai\+Matrix@{convert\+Ai\+Matrix}}
+\index{convert\+Ai\+Matrix@{convert\+Ai\+Matrix}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{convert\+Ai\+Matrix()}{convertAiMatrix()}}
+{\footnotesize\ttfamily mat4 core\+::\+Loader\+::convert\+Ai\+Matrix (\begin{DoxyParamCaption}\item[{ai\+Matrix4x4}]{ai\+Matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija konvertuje Assimp matricu u glm format. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em ai\+Matrix} & Assimp struktura za matricu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+mat4 Konvertovana matrica. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Loader_aae32d85640af5eb6d4a9c8e27fc0e83e}\label{classcore_1_1Loader_aae32d85640af5eb6d4a9c8e27fc0e83e}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!find\+Root\+Bone@{find\+Root\+Bone}}
+\index{find\+Root\+Bone@{find\+Root\+Bone}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{find\+Root\+Bone()}{findRootBone()}}
+{\footnotesize\ttfamily void core\+::\+Loader\+::find\+Root\+Bone (\begin{DoxyParamCaption}\item[{ai\+Node $\ast$}]{node,  }\item[{ai\+Node $\ast$\&}]{root\+Bone,  }\item[{int}]{mesh\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija pronalazi glavnu kost. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em node} & Assimp struktura sa informacijama o cvorovima modela. \\
+\hline
+{\em root\+Bone} & Assimp za cvor u koji se upisuje glavna kost. \\
+\hline
+{\em mesh\+ID} & Identifikator dela modela. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Loader_a468d5cec790c008637111fb0b0bd7d6d}\label{classcore_1_1Loader_a468d5cec790c008637111fb0b0bd7d6d}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!load\+Animated\+Model@{load\+Animated\+Model}}
+\index{load\+Animated\+Model@{load\+Animated\+Model}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{load\+Animated\+Model()}{loadAnimatedModel()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$ core\+::\+Loader\+::load\+Animated\+Model (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$}]{vao\+Loader }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava podatke o animiranom modelu Funkcija pomocu biblioteke Assimp ucitva u V\+AO pomocu Vao\+Loader-\/a pozicije, normale, koordinate tekstura, indekse kostiju i tezine modela. Takodje se ucitavaju teksture i hijerarhija kostiju. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em file\+Name} & Ime fajla sa podacima o modelu. \\
+\hline
+{\em vao\+Loader} & Pokazivac na instancu klase \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+Animated\+Model $\ast$ Pokazivac na instancu klase Animated\+Model. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Loader_a228087d022e5102cc4e40b12e7ecf9fa}\label{classcore_1_1Loader_a228087d022e5102cc4e40b12e7ecf9fa}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!load\+Animation@{load\+Animation}}
+\index{load\+Animation@{load\+Animation}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{load\+Animation()}{loadAnimation()}}
+{\footnotesize\ttfamily void core\+::\+Loader\+::load\+Animation (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$}]{animated\+Model,  }\item[{const ai\+Scene $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava informacije o animacijama modela. Informacije se skladiste u mapi imena i instanci klase Animation unutar klase Animated\+Model. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em animated\+Model} & Pokazivac na instancu klase Animated\+Model. \\
+\hline
+{\em scene} & Assimp struktura sa informacijama o sceni. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Loader_acfe1b4eb91cac78068c8c1edefe460b3}\label{classcore_1_1Loader_acfe1b4eb91cac78068c8c1edefe460b3}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!load\+Bone\+Data@{load\+Bone\+Data}}
+\index{load\+Bone\+Data@{load\+Bone\+Data}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{load\+Bone\+Data()}{loadBoneData()}}
+{\footnotesize\ttfamily void core\+::\+Loader\+::load\+Bone\+Data (\begin{DoxyParamCaption}\item[{ai\+Mesh $\ast$}]{mesh,  }\item[{int}]{mesh\+ID,  }\item[{vector$<$ int $>$ \&}]{bone\+Indices,  }\item[{vector$<$ float $>$ \&}]{weights }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava podatke o kostima(indekse i tezine za svaku tacku). 
+
+
+\begin{DoxyParams}{Parametri}
+{\em mesh} & Assimp struktura sa informacijama o delu modela. \\
+\hline
+{\em mesh\+ID} & Identifikator dela modela. \\
+\hline
+{\em bone\+Indices} & Vektor indeksa kostiju. \\
+\hline
+{\em weights} & Vektor tezina kostiju. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Loader_a86badeeb7089e9c2e8d0dea8be60bbe9}\label{classcore_1_1Loader_a86badeeb7089e9c2e8d0dea8be60bbe9}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!load\+Bone\+Hierarchy@{load\+Bone\+Hierarchy}}
+\index{load\+Bone\+Hierarchy@{load\+Bone\+Hierarchy}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{load\+Bone\+Hierarchy()}{loadBoneHierarchy()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1Bone}{Bone} $\ast$ core\+::\+Loader\+::load\+Bone\+Hierarchy (\begin{DoxyParamCaption}\item[{ai\+Node $\ast$}]{root\+Bone,  }\item[{ai\+Mesh $\ast$}]{mesh,  }\item[{int}]{mesh\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava hijerarhiju kostiju i vraca glavnu kost. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em mesh} & Assimp struktura sa informacijama o delu modela. \\
+\hline
+{\em mesh\+ID} & Identifikator dela modela. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+Bone $\ast$ Pokazivac na instancu klase Bone. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Loader_ab1e01bdf019c36ce9b4c3a83d194f9fc}\label{classcore_1_1Loader_ab1e01bdf019c36ce9b4c3a83d194f9fc}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!load\+Material@{load\+Material}}
+\index{load\+Material@{load\+Material}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{load\+Material()}{loadMaterial()}}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1Texture}{Texture} $\ast$ core\+::\+Loader\+::load\+Material (\begin{DoxyParamCaption}\item[{ai\+Material $\ast$}]{material,  }\item[{const char $\ast$}]{file\+Name,  }\item[{\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$}]{vao\+Loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava teksture Funkcija pomocu biblioteke Assimp ucitva u V\+AO pomocu Vao\+Loader-\/a difuzne teksture, sa predodredjenim faktorom sjaja i reflekcije. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em material} & Assimp struktura sa informacijama o materijalu. \\
+\hline
+{\em file\+Name} & Ime fajla sa podacima o modelu. \\
+\hline
+{\em vao\+Loader} & Pokazivac na instancu klase \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+Texture $\ast$ Pokazivac na instancu klase Texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Loader_afff340dee890eb62e24d958b1d1a609c}\label{classcore_1_1Loader_afff340dee890eb62e24d958b1d1a609c}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!load\+Raw\+Model@{load\+Raw\+Model}}
+\index{load\+Raw\+Model@{load\+Raw\+Model}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{load\+Raw\+Model()}{loadRawModel()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ core\+::\+Loader\+::load\+Raw\+Model (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$}]{vao\+Loader }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava podatke o sirovom modelu Funkcija pomocu biblioteke Assimp ucitva u V\+AO pomocu Vao\+Loader-\/a pozicije, normale, koordinate tekstura modela. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em file\+Name} & Ime fajla sa podacima o modelu. \\
+\hline
+{\em vao\+Loader} & Pokazivac na instancu klase \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+Raw\+Model $\ast$ Pokazivac na instancu klase Raw\+Model. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Loader_a0738ff43667e227e672b4d12f12afb46}\label{classcore_1_1Loader_a0738ff43667e227e672b4d12f12afb46}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!load\+Textured\+Model@{load\+Textured\+Model}}
+\index{load\+Textured\+Model@{load\+Textured\+Model}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{load\+Textured\+Model()}{loadTexturedModel()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$ core\+::\+Loader\+::load\+Textured\+Model (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$}]{vao\+Loader }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava podatke o teksturisanom modelu Funkcija pomocu biblioteke Assimp ucitva u V\+AO pomocu Vao\+Loader-\/a pozicije, normale, koordinate tekstura modela. Takodje se ucitavaju teksture. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em file\+Name} & Ime fajla sa podacima o modelu. \\
+\hline
+{\em vao\+Loader} & Pokazivac na instancu klase \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+Textured\+Model $\ast$ Pokazivac na instancu klase Textured\+Model. 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classcore_1_1Loader_a86ae8bc5968de3aa3c7450acadfb6fea}\label{classcore_1_1Loader_a86ae8bc5968de3aa3c7450acadfb6fea}} 
+\index{core\+::\+Loader@{core\+::\+Loader}!bones\+Map@{bones\+Map}}
+\index{bones\+Map@{bones\+Map}!core\+::\+Loader@{core\+::\+Loader}}
+\subsubsection{\texorpdfstring{bones\+Map}{bonesMap}}
+{\footnotesize\ttfamily vector$<$map$<$string, int$>$ $\ast$$>$ core\+::\+Loader\+::bones\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mapa imena kostiju sa njihovim indeksima. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\hyperlink{Loader_8h}{Loader.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/core/\hyperlink{Loader_8cpp}{Loader.\+cpp}\end{DoxyCompactItemize}

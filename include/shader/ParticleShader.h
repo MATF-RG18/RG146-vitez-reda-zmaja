@@ -2,7 +2,7 @@
 /// @file ParticleShader.h
 /// @brief Deklaracija klase ParticleShader.
 /// @author Dusan Pantelic
-/// @date Mart 2019
+/// @date Jun 2019
 ////////////////////////////////////////////////////////////////////////////////
 #ifndef _PARTICLE_SHADER_H_
 #define _PARTICLE_SHADER_H_
@@ -168,6 +168,13 @@ namespace shader {
     ////////////////////////////////////////////////////////////////////////////
     void loadProjectionMatrix(mat4 matrix);
 
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija ucitava matricu u uniformnu varijablu.
+    /// Ucitava se matrica koja je varijacija proizvoda matrice transformacije
+    /// i marice pogleda.
+    /// @param matrix Matrica projekcije.
+    /// @return void
+    ////////////////////////////////////////////////////////////////////////////
     void loadModelViewMatrix(mat4 matrix);
 
   // Privatne funkcije klase

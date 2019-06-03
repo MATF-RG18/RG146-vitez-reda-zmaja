@@ -1,8 +1,0 @@
-digraph "font::FontRenderer"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="font::FontRenderer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fontShader" ,fontname="Helvetica"];
-  Node2 [label="shader::FontShader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classshader_1_1FontShader.html",tooltip="Klasa FontShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi ko..."];
-}

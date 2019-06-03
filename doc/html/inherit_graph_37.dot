@@ -1,7 +1,0 @@
-digraph "Hijerarhija klasa u obliku grafa"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="tinyobj::texture_option_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structtinyobj_1_1texture__option__t.html"];
-}

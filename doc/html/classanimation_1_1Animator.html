@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Dokumentacija klase animation::Animator</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceanimation.html">animation</a></li><li class="navelem"><a class="el" href="classanimation_1_1Animator.html">Animator</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Javni članovi</a> &#124;
+<a href="#pri-methods">Privatni članovi</a> &#124;
+<a href="#pri-attribs">Privatni članovi</a> &#124;
+<a href="classanimation_1_1Animator-members.html">Spisak svih članova</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacija klase animation::Animator</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="classanimation_1_1Animator.html" title="Klasa Animator kontrolise animaciju modela. Pomocu klase Animator kontrolisemo ponasanje animacije i ...">Animator</a> kontrolise animaciju modela. Pomocu klase <a class="el" href="classanimation_1_1Animator.html" title="Klasa Animator kontrolise animaciju modela. Pomocu klase Animator kontrolisemo ponasanje animacije i ...">Animator</a> kontrolisemo ponasanje animacije i racunamo neophodne podatke za pravilno renderovanje animiranog modela.  
+ <a href="classanimation_1_1Animator.html#details">Još...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Animator_8h_source.html">Animator.h</a>&gt;</code></p>
+<div class="dynheader">
+Klasni dijagram za animation::Animator:</div>
+<div class="dyncontent">
+<div class="center"><img src="classanimation_1_1Animator__coll__graph.png" border="0" usemap="#animation_1_1Animator_coll__map" alt="Collaboration graph"/></div>
+<map name="animation_1_1Animator_coll__map" id="animation_1_1Animator_coll__map">
+<area shape="rect" id="node2" href="classutility_1_1FpsData.html" title="Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f..." alt="" coords="5,184,116,211"/>
+<area shape="rect" id="node3" href="classmodel_1_1AnimatedModel.html" title="Klasa AnimatedModel opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instanco..." alt="" coords="141,184,295,211"/>
+<area shape="rect" id="node4" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo..." alt="" coords="143,95,293,121"/>
+<area shape="rect" id="node5" href="classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="155,5,281,32"/>
+<area shape="rect" id="node6" href="classanimation_1_1Animation.html" title="Klasa Animation odredjuje animaciju modela. Pomocu klase Animation cuvamo podatke o animaciji modela..." alt="" coords="319,184,463,211"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Javni članovi</h2></td></tr>
+<tr class="memitem:ab8f3fac8a3500bf117e3a68c6cf58b62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#ab8f3fac8a3500bf117e3a68c6cf58b62">Animator</a> (<a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *<a class="el" href="classanimation_1_1Animator.html#a5578ef87b7bf69b4434dcf916c279714">model</a>, <a class="el" href="classutility_1_1FpsData.html">FpsData</a> *<a class="el" href="classanimation_1_1Animator.html#a865e52c4c069f203f847fbd98b86c52a">fpsData</a>)</td></tr>
+<tr class="memdesc:ab8f3fac8a3500bf117e3a68c6cf58b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klase.  <a href="#ab8f3fac8a3500bf117e3a68c6cf58b62">Još...</a><br /></td></tr>
+<tr class="separator:ab8f3fac8a3500bf117e3a68c6cf58b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41360723d4542becc20a238f25bed4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#aa41360723d4542becc20a238f25bed4a">~Animator</a> ()</td></tr>
+<tr class="memdesc:aa41360723d4542becc20a238f25bed4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klase.  <a href="#aa41360723d4542becc20a238f25bed4a">Još...</a><br /></td></tr>
+<tr class="separator:aa41360723d4542becc20a238f25bed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770c61c392ecf21df366a5cf69f4318e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#a770c61c392ecf21df366a5cf69f4318e">doAnimation</a> (<a class="el" href="classanimation_1_1Animation.html">Animation</a> *animation)</td></tr>
+<tr class="memdesc:a770c61c392ecf21df366a5cf69f4318e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija inicijalizuje podatke o animaciji.  <a href="#a770c61c392ecf21df366a5cf69f4318e">Još...</a><br /></td></tr>
+<tr class="separator:a770c61c392ecf21df366a5cf69f4318e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c3fb2eca8bb0a882d36a452b170c9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#a65c3fb2eca8bb0a882d36a452b170c9e">update</a> ()</td></tr>
+<tr class="memdesc:a65c3fb2eca8bb0a882d36a452b170c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija azurira podatke o animaciji.  <a href="#a65c3fb2eca8bb0a882d36a452b170c9e">Još...</a><br /></td></tr>
+<tr class="separator:a65c3fb2eca8bb0a882d36a452b170c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:a688e72bb61014ad3431a8bbfd9e75c99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#a688e72bb61014ad3431a8bbfd9e75c99">increaseAnimationTime</a> ()</td></tr>
+<tr class="memdesc:a688e72bb61014ad3431a8bbfd9e75c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija povecava trenutno vreme animacije.  <a href="#a688e72bb61014ad3431a8bbfd9e75c99">Još...</a><br /></td></tr>
+<tr class="separator:a688e72bb61014ad3431a8bbfd9e75c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42f79e412ade4f598612b6301b06f9a"><td class="memItemLeft" align="right" valign="top">map&lt; string, mat4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#af42f79e412ade4f598612b6301b06f9a">calculateCurrentAnimationPose</a> ()</td></tr>
+<tr class="memdesc:af42f79e412ade4f598612b6301b06f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija racuna matrice transformacije za trenutno pozu modela.  <a href="#af42f79e412ade4f598612b6301b06f9a">Još...</a><br /></td></tr>
+<tr class="separator:af42f79e412ade4f598612b6301b06f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a23a845327e2935845a8bfc1a934ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#ad3a23a845327e2935845a8bfc1a934ce">applyPoseToBones</a> (map&lt; string, mat4 &gt; currentPose, <a class="el" href="classmodel_1_1Bone.html">Bone</a> *bone, mat4 parentTransform)</td></tr>
+<tr class="memdesc:ad3a23a845327e2935845a8bfc1a934ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija ucitava matrice transformacije U funkciji se racunaju matrice transformacije na osnovu hijerarhije kostiju i ucitavju se u instance klase Bone.  <a href="#ad3a23a845327e2935845a8bfc1a934ce">Još...</a><br /></td></tr>
+<tr class="separator:ad3a23a845327e2935845a8bfc1a934ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91ac2386b9606f8fa50d65f33fa0be0"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classanimation_1_1KeyFrame.html">KeyFrame</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#af91ac2386b9606f8fa50d65f33fa0be0">getPreviousAndNextFrames</a> ()</td></tr>
+<tr class="memdesc:af91ac2386b9606f8fa50d65f33fa0be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca dva kljucna frejma. U funkciji se pronalaze dva kljucna frejma izmedju cijih vremena izvrsavanja je trenutno vreme animacije.  <a href="#af91ac2386b9606f8fa50d65f33fa0be0">Još...</a><br /></td></tr>
+<tr class="separator:af91ac2386b9606f8fa50d65f33fa0be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050280aa6171aed0f34c481a3b7e0053"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#a050280aa6171aed0f34c481a3b7e0053">calculateProgression</a> (<a class="el" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *previous, <a class="el" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *next)</td></tr>
+<tr class="memdesc:a050280aa6171aed0f34c481a3b7e0053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija racuna progresiju izmedju dva kljucna vrejma.  <a href="#a050280aa6171aed0f34c481a3b7e0053">Još...</a><br /></td></tr>
+<tr class="separator:a050280aa6171aed0f34c481a3b7e0053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263a7e899c2df14b37d733f020412f54"><td class="memItemLeft" align="right" valign="top">map&lt; string, mat4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#a263a7e899c2df14b37d733f020412f54">interpolatePoses</a> (<a class="el" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *previous, <a class="el" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *next, float progression)</td></tr>
+<tr class="memdesc:a263a7e899c2df14b37d733f020412f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija racuna interpolisane matrice transformacije. U funkciji se racunaju matrice transformacije koje su interpolacija matrica transformacije dva kljucna frejma sa zadatim faktorom progresije.  <a href="#a263a7e899c2df14b37d733f020412f54">Još...</a><br /></td></tr>
+<tr class="separator:a263a7e899c2df14b37d733f020412f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:a5578ef87b7bf69b4434dcf916c279714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#a5578ef87b7bf69b4434dcf916c279714">model</a></td></tr>
+<tr class="memdesc:a5578ef87b7bf69b4434dcf916c279714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase AnimatedModel.  <a href="#a5578ef87b7bf69b4434dcf916c279714">Još...</a><br /></td></tr>
+<tr class="separator:a5578ef87b7bf69b4434dcf916c279714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97342956340bc49d17161b83ce72d6d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classanimation_1_1Animation.html">Animation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#a97342956340bc49d17161b83ce72d6d1">currentAnimation</a></td></tr>
+<tr class="memdesc:a97342956340bc49d17161b83ce72d6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase <a class="el" href="classanimation_1_1Animation.html" title="Klasa Animation odredjuje animaciju modela. Pomocu klase Animation cuvamo podatke o animaciji modela...">Animation</a>.  <a href="#a97342956340bc49d17161b83ce72d6d1">Još...</a><br /></td></tr>
+<tr class="separator:a97342956340bc49d17161b83ce72d6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39bfb15584fa3389f2314188f92f92d9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#a39bfb15584fa3389f2314188f92f92d9">animationTime</a></td></tr>
+<tr class="memdesc:a39bfb15584fa3389f2314188f92f92d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trenutno vreme animacije.  <a href="#a39bfb15584fa3389f2314188f92f92d9">Još...</a><br /></td></tr>
+<tr class="separator:a39bfb15584fa3389f2314188f92f92d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865e52c4c069f203f847fbd98b86c52a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classutility_1_1FpsData.html">FpsData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanimation_1_1Animator.html#a865e52c4c069f203f847fbd98b86c52a">fpsData</a></td></tr>
+<tr class="memdesc:a865e52c4c069f203f847fbd98b86c52a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase FpsData.  <a href="#a865e52c4c069f203f847fbd98b86c52a">Još...</a><br /></td></tr>
+<tr class="separator:a865e52c4c069f203f847fbd98b86c52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
+<div class="textblock"><p>Klasa <a class="el" href="classanimation_1_1Animator.html" title="Klasa Animator kontrolise animaciju modela. Pomocu klase Animator kontrolisemo ponasanje animacije i ...">Animator</a> kontrolise animaciju modela. Pomocu klase <a class="el" href="classanimation_1_1Animator.html" title="Klasa Animator kontrolise animaciju modela. Pomocu klase Animator kontrolisemo ponasanje animacije i ...">Animator</a> kontrolisemo ponasanje animacije i racunamo neophodne podatke za pravilno renderovanje animiranog modela. </p>
+</div><h2 class="groupheader">Dokumentacija konstruktora i destruktora</h2>
+<a id="ab8f3fac8a3500bf117e3a68c6cf58b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f3fac8a3500bf117e3a68c6cf58b62">&#9670;&nbsp;</a></span>Animator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">animation::Animator::Animator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classutility_1_1FpsData.html">FpsData</a> *&#160;</td>
+          <td class="paramname"><em>fpsData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>Pokazivac na instancu klase AnimatedModel. </td></tr>
+    <tr><td class="paramname">fpsData</td><td>Pokazivac na instancu klase FpsData. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa41360723d4542becc20a238f25bed4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa41360723d4542becc20a238f25bed4a">&#9670;&nbsp;</a></span>~Animator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">animation::Animator::~Animator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija funkcija članica</h2>
+<a id="ad3a23a845327e2935845a8bfc1a934ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a23a845327e2935845a8bfc1a934ce">&#9670;&nbsp;</a></span>applyPoseToBones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void animation::Animator::applyPoseToBones </td>
+          <td>(</td>
+          <td class="paramtype">map&lt; string, mat4 &gt;&#160;</td>
+          <td class="paramname"><em>currentPose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmodel_1_1Bone.html">Bone</a> *&#160;</td>
+          <td class="paramname"><em>bone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mat4&#160;</td>
+          <td class="paramname"><em>parentTransform</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija ucitava matrice transformacije U funkciji se racunaju matrice transformacije na osnovu hijerarhije kostiju i ucitavju se u instance klase Bone. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentPose</td><td>Mapa imena kostiju i njihovih matrica transformacije. </td></tr>
+    <tr><td class="paramname">parentTransform</td><td>Matrica transformacije roditeljske koske. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="af42f79e412ade4f598612b6301b06f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af42f79e412ade4f598612b6301b06f9a">&#9670;&nbsp;</a></span>calculateCurrentAnimationPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt; string, mat4 &gt; animation::Animator::calculateCurrentAnimationPose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija racuna matrice transformacije za trenutno pozu modela. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>map&lt;string, mat4&gt; Mapa imena kostiju i njihovih matrica transformacije. </dd></dl>
+
+</div>
+</div>
+<a id="a050280aa6171aed0f34c481a3b7e0053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a050280aa6171aed0f34c481a3b7e0053">&#9670;&nbsp;</a></span>calculateProgression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float animation::Animator::calculateProgression </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>previous</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>next</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija racuna progresiju izmedju dva kljucna vrejma. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>float Procenat progresije ka sledecem frejmu u intervalu [0,1]. </dd></dl>
+
+</div>
+</div>
+<a id="a770c61c392ecf21df366a5cf69f4318e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770c61c392ecf21df366a5cf69f4318e">&#9670;&nbsp;</a></span>doAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void animation::Animator::doAnimation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classanimation_1_1Animation.html">Animation</a> *&#160;</td>
+          <td class="paramname"><em>animation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija inicijalizuje podatke o animaciji. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animation</td><td>Pokazivac na instancu klase <a class="el" href="classanimation_1_1Animation.html" title="Klasa Animation odredjuje animaciju modela. Pomocu klase Animation cuvamo podatke o animaciji modela...">Animation</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="af91ac2386b9606f8fa50d65f33fa0be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af91ac2386b9606f8fa50d65f33fa0be0">&#9670;&nbsp;</a></span>getPreviousAndNextFrames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="classanimation_1_1KeyFrame.html">KeyFrame</a> * &gt; animation::Animator::getPreviousAndNextFrames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca dva kljucna frejma. U funkciji se pronalaze dva kljucna frejma izmedju cijih vremena izvrsavanja je trenutno vreme animacije. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>vector&lt;KeyFrame *&gt; Vektor pokazivaca na instance klase <a class="el" href="classanimation_1_1KeyFrame.html" title="Klasa KeyFrame sadrzi podatke o animaciji u odredjenom trenutku. Pomocu klase KeyFrame cuvamo mapu im...">KeyFrame</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a688e72bb61014ad3431a8bbfd9e75c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688e72bb61014ad3431a8bbfd9e75c99">&#9670;&nbsp;</a></span>increaseAnimationTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void animation::Animator::increaseAnimationTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija povecava trenutno vreme animacije. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a263a7e899c2df14b37d733f020412f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263a7e899c2df14b37d733f020412f54">&#9670;&nbsp;</a></span>interpolatePoses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt; string, mat4 &gt; animation::Animator::interpolatePoses </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>previous</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *&#160;</td>
+          <td class="paramname"><em>next</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>progression</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcija racuna interpolisane matrice transformacije. U funkciji se racunaju matrice transformacije koje su interpolacija matrica transformacije dva kljucna frejma sa zadatim faktorom progresije. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">previous</td><td>Vektor pokazivaca na instance klase <a class="el" href="classanimation_1_1KeyFrame.html" title="Klasa KeyFrame sadrzi podatke o animaciji u odredjenom trenutku. Pomocu klase KeyFrame cuvamo mapu im...">KeyFrame</a>. </td></tr>
+    <tr><td class="paramname">next</td><td>Vektor pokazivaca na instance klase <a class="el" href="classanimation_1_1KeyFrame.html" title="Klasa KeyFrame sadrzi podatke o animaciji u odredjenom trenutku. Pomocu klase KeyFrame cuvamo mapu im...">KeyFrame</a>. </td></tr>
+    <tr><td class="paramname">progression</td><td>Procenat progresije ka sledecem frejmu u intervalu [0,1]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>map&lt;string, mat4&gt; Mapa imena kostiju i njihovih matrica transformacije. </dd></dl>
+
+</div>
+</div>
+<a id="a65c3fb2eca8bb0a882d36a452b170c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65c3fb2eca8bb0a882d36a452b170c9e">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void animation::Animator::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija azurira podatke o animaciji. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija atributa</h2>
+<a id="a39bfb15584fa3389f2314188f92f92d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39bfb15584fa3389f2314188f92f92d9">&#9670;&nbsp;</a></span>animationTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float animation::Animator::animationTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Trenutno vreme animacije. </p>
+
+</div>
+</div>
+<a id="a97342956340bc49d17161b83ce72d6d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97342956340bc49d17161b83ce72d6d1">&#9670;&nbsp;</a></span>currentAnimation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classanimation_1_1Animation.html">Animation</a>* animation::Animator::currentAnimation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase <a class="el" href="classanimation_1_1Animation.html" title="Klasa Animation odredjuje animaciju modela. Pomocu klase Animation cuvamo podatke o animaciji modela...">Animation</a>. </p>
+
+</div>
+</div>
+<a id="a865e52c4c069f203f847fbd98b86c52a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a865e52c4c069f203f847fbd98b86c52a">&#9670;&nbsp;</a></span>fpsData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classutility_1_1FpsData.html">FpsData</a>* animation::Animator::fpsData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase FpsData. </p>
+
+</div>
+</div>
+<a id="a5578ef87b7bf69b4434dcf916c279714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5578ef87b7bf69b4434dcf916c279714">&#9670;&nbsp;</a></span>model</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a>* animation::Animator::model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase AnimatedModel. </p>
+
+</div>
+</div>
+<hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/include/animation/<a class="el" href="Animator_8h_source.html">Animator.h</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/src/animation/<a class="el" href="Animator_8cpp.html">Animator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

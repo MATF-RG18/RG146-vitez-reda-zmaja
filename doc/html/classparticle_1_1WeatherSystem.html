@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Dokumentacija klase particle::WeatherSystem</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceparticle.html">particle</a></li><li class="navelem"><a class="el" href="classparticle_1_1WeatherSystem.html">WeatherSystem</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Javni članovi</a> &#124;
+<a href="#pri-attribs">Privatni članovi</a> &#124;
+<a href="classparticle_1_1WeatherSystem-members.html">Spisak svih članova</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacija klase particle::WeatherSystem</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="classparticle_1_1WeatherSystem.html" title="Klasa WeatherSystem kontrolise stvaranje cestica i njihovo ponasanje. Pomocu klase WeatherSystem simu...">WeatherSystem</a> kontrolise stvaranje cestica i njihovo ponasanje. Pomocu klase <a class="el" href="classparticle_1_1WeatherSystem.html" title="Klasa WeatherSystem kontrolise stvaranje cestica i njihovo ponasanje. Pomocu klase WeatherSystem simu...">WeatherSystem</a> simuliramo padavine kreiranjem cestica u prostoru definisanom dimenzijama i centrom oblaka.  
+ <a href="classparticle_1_1WeatherSystem.html#details">Još...</a></p>
+
+<p><code>#include &lt;<a class="el" href="WeatherSystem_8h_source.html">WeatherSystem.h</a>&gt;</code></p>
+<div class="dynheader">
+Klasni dijagram za particle::WeatherSystem:</div>
+<div class="dyncontent">
+<div class="center"><img src="classparticle_1_1WeatherSystem__coll__graph.png" border="0" usemap="#particle_1_1WeatherSystem_coll__map" alt="Collaboration graph"/></div>
+<map name="particle_1_1WeatherSystem_coll__map" id="particle_1_1WeatherSystem_coll__map">
+<area shape="rect" id="node2" href="classtexture_1_1Texture.html" title="Klasa TexturedModel opisuje teksturu objekta. Model je opisan instancom klase RawModel i odgovarajuco..." alt="" coords="5,95,120,121"/>
+<area shape="rect" id="node4" href="classparticle_1_1ParticleHandler.html" title="Klasa ParticleHandler kontrolise cestice. Lista cestica se azurira i poziva se klasa za renderovanje ..." alt="" coords="133,184,294,211"/>
+<area shape="rect" id="node3" href="classutility_1_1FpsData.html" title="Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f..." alt="" coords="318,184,429,211"/>
+<area shape="rect" id="node5" href="classparticle_1_1ParticleRenderer.html" title="Klasa ParticleRender je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi pripr..." alt="" coords="145,95,314,121"/>
+<area shape="rect" id="node6" href="classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="83,5,210,32"/>
+<area shape="rect" id="node7" href="classshader_1_1ParticleShader.html" title="Klasa ParticleShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlov..." alt="" coords="235,5,389,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Javni članovi</h2></td></tr>
+<tr class="memitem:a2ff7884009380a886ea3d5d5a2b8e765"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#a2ff7884009380a886ea3d5d5a2b8e765">WeatherSystem</a> (float <a class="el" href="classparticle_1_1WeatherSystem.html#ad2bd921d15667d8866d64fa633d76d0f">particlesPerSecond</a>, float <a class="el" href="classparticle_1_1WeatherSystem.html#aceaf5d329722c25c744bf3cbdc155295">fallIntensity</a>, float <a class="el" href="classparticle_1_1WeatherSystem.html#a0aa06ba52db7729e12657baf726fb116">lifeLength</a>, float <a class="el" href="classparticle_1_1WeatherSystem.html#a64e9626cc1511271c24ff62a1c31200f">cloudSize</a>, <a class="el" href="classutility_1_1FpsData.html">FpsData</a> *<a class="el" href="classparticle_1_1WeatherSystem.html#adefe5a2956dfd92f8271ed0e8c70799e">fpsData</a>, <a class="el" href="classtexture_1_1Texture.html">Texture</a> *<a class="el" href="classparticle_1_1WeatherSystem.html#a8fbccea8de57ff87bdd606aa6e95cbab">texture</a>)</td></tr>
+<tr class="memdesc:a2ff7884009380a886ea3d5d5a2b8e765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klase.  <a href="#a2ff7884009380a886ea3d5d5a2b8e765">Još...</a><br /></td></tr>
+<tr class="separator:a2ff7884009380a886ea3d5d5a2b8e765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a0b57d1870183c56da2aff9021ae6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#ac2a0b57d1870183c56da2aff9021ae6e">~WeatherSystem</a> ()</td></tr>
+<tr class="memdesc:ac2a0b57d1870183c56da2aff9021ae6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klase.  <a href="#ac2a0b57d1870183c56da2aff9021ae6e">Još...</a><br /></td></tr>
+<tr class="separator:ac2a0b57d1870183c56da2aff9021ae6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac26bba944fcc147b49f12df6d11b53e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#ac26bba944fcc147b49f12df6d11b53e5">generateParticles</a> (<a class="el" href="classparticle_1_1ParticleHandler.html">ParticleHandler</a> *<a class="el" href="classparticle_1_1WeatherSystem.html#a0f24302815bf5a77140b26d015fefdbe">particleHandler</a>, vec3 cloudCenter)</td></tr>
+<tr class="memdesc:ac26bba944fcc147b49f12df6d11b53e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija generise nove cestice i dodaje ih u listu cestica.  <a href="#ac26bba944fcc147b49f12df6d11b53e5">Još...</a><br /></td></tr>
+<tr class="separator:ac26bba944fcc147b49f12df6d11b53e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9826ba8ab1324f9b4df5124d058ddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#a5e9826ba8ab1324f9b4df5124d058ddd">setTexture</a> (<a class="el" href="classtexture_1_1Texture.html">Texture</a> *<a class="el" href="classparticle_1_1WeatherSystem.html#a8fbccea8de57ff87bdd606aa6e95cbab">texture</a>)</td></tr>
+<tr class="memdesc:a5e9826ba8ab1324f9b4df5124d058ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija postavlja teksturu cestica.  <a href="#a5e9826ba8ab1324f9b4df5124d058ddd">Još...</a><br /></td></tr>
+<tr class="separator:a5e9826ba8ab1324f9b4df5124d058ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0914ccb5a062a4b7d54c17d107c543"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtexture_1_1Texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#aba0914ccb5a062a4b7d54c17d107c543">getTexture</a> ()</td></tr>
+<tr class="memdesc:aba0914ccb5a062a4b7d54c17d107c543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca teksturu cestica.  <a href="#aba0914ccb5a062a4b7d54c17d107c543">Još...</a><br /></td></tr>
+<tr class="separator:aba0914ccb5a062a4b7d54c17d107c543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:ad2bd921d15667d8866d64fa633d76d0f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#ad2bd921d15667d8866d64fa633d76d0f">particlesPerSecond</a></td></tr>
+<tr class="memdesc:ad2bd921d15667d8866d64fa633d76d0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broj cestica koje se generisu po sekundi.  <a href="#ad2bd921d15667d8866d64fa633d76d0f">Još...</a><br /></td></tr>
+<tr class="separator:ad2bd921d15667d8866d64fa633d76d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceaf5d329722c25c744bf3cbdc155295"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#aceaf5d329722c25c744bf3cbdc155295">fallIntensity</a></td></tr>
+<tr class="memdesc:aceaf5d329722c25c744bf3cbdc155295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intenzitet padavina.  <a href="#aceaf5d329722c25c744bf3cbdc155295">Još...</a><br /></td></tr>
+<tr class="separator:aceaf5d329722c25c744bf3cbdc155295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa06ba52db7729e12657baf726fb116"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#a0aa06ba52db7729e12657baf726fb116">lifeLength</a></td></tr>
+<tr class="memdesc:a0aa06ba52db7729e12657baf726fb116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duzina zivotnog veka cestice.  <a href="#a0aa06ba52db7729e12657baf726fb116">Još...</a><br /></td></tr>
+<tr class="separator:a0aa06ba52db7729e12657baf726fb116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e9626cc1511271c24ff62a1c31200f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#a64e9626cc1511271c24ff62a1c31200f">cloudSize</a></td></tr>
+<tr class="memdesc:a64e9626cc1511271c24ff62a1c31200f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velicina oblaka.  <a href="#a64e9626cc1511271c24ff62a1c31200f">Još...</a><br /></td></tr>
+<tr class="separator:a64e9626cc1511271c24ff62a1c31200f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f24302815bf5a77140b26d015fefdbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classparticle_1_1ParticleHandler.html">ParticleHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#a0f24302815bf5a77140b26d015fefdbe">particleHandler</a></td></tr>
+<tr class="memdesc:a0f24302815bf5a77140b26d015fefdbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase <a class="el" href="classparticle_1_1ParticleHandler.html" title="Klasa ParticleHandler kontrolise cestice. Lista cestica se azurira i poziva se klasa za renderovanje ...">ParticleHandler</a>.  <a href="#a0f24302815bf5a77140b26d015fefdbe">Još...</a><br /></td></tr>
+<tr class="separator:a0f24302815bf5a77140b26d015fefdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adefe5a2956dfd92f8271ed0e8c70799e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classutility_1_1FpsData.html">FpsData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#adefe5a2956dfd92f8271ed0e8c70799e">fpsData</a></td></tr>
+<tr class="memdesc:adefe5a2956dfd92f8271ed0e8c70799e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase FpsData.  <a href="#adefe5a2956dfd92f8271ed0e8c70799e">Još...</a><br /></td></tr>
+<tr class="separator:adefe5a2956dfd92f8271ed0e8c70799e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbccea8de57ff87bdd606aa6e95cbab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtexture_1_1Texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1WeatherSystem.html#a8fbccea8de57ff87bdd606aa6e95cbab">texture</a></td></tr>
+<tr class="memdesc:a8fbccea8de57ff87bdd606aa6e95cbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase Texture.  <a href="#a8fbccea8de57ff87bdd606aa6e95cbab">Još...</a><br /></td></tr>
+<tr class="separator:a8fbccea8de57ff87bdd606aa6e95cbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
+<div class="textblock"><p>Klasa <a class="el" href="classparticle_1_1WeatherSystem.html" title="Klasa WeatherSystem kontrolise stvaranje cestica i njihovo ponasanje. Pomocu klase WeatherSystem simu...">WeatherSystem</a> kontrolise stvaranje cestica i njihovo ponasanje. Pomocu klase <a class="el" href="classparticle_1_1WeatherSystem.html" title="Klasa WeatherSystem kontrolise stvaranje cestica i njihovo ponasanje. Pomocu klase WeatherSystem simu...">WeatherSystem</a> simuliramo padavine kreiranjem cestica u prostoru definisanom dimenzijama i centrom oblaka. </p>
+</div><h2 class="groupheader">Dokumentacija konstruktora i destruktora</h2>
+<a id="a2ff7884009380a886ea3d5d5a2b8e765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff7884009380a886ea3d5d5a2b8e765">&#9670;&nbsp;</a></span>WeatherSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particle::WeatherSystem::WeatherSystem </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>particlesPerSecond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fallIntensity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lifeLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cloudSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classutility_1_1FpsData.html">FpsData</a> *&#160;</td>
+          <td class="paramname"><em>fpsData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtexture_1_1Texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">particlesPerSecond</td><td>Broj cestica koje se generisu po sekundi. </td></tr>
+    <tr><td class="paramname">fallIntensity</td><td>Intenzitet padavina. </td></tr>
+    <tr><td class="paramname">lifeLength</td><td>Duzina zivotnog veka. </td></tr>
+    <tr><td class="paramname">cloudSize</td><td>Velicina oblaka. </td></tr>
+    <tr><td class="paramname">fpsData</td><td>Pokazivac na instancu klase FpsData. </td></tr>
+    <tr><td class="paramname">texture</td><td>Pokazivac na instancu klase Texture. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac2a0b57d1870183c56da2aff9021ae6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a0b57d1870183c56da2aff9021ae6e">&#9670;&nbsp;</a></span>~WeatherSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particle::WeatherSystem::~WeatherSystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija funkcija članica</h2>
+<a id="ac26bba944fcc147b49f12df6d11b53e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac26bba944fcc147b49f12df6d11b53e5">&#9670;&nbsp;</a></span>generateParticles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void particle::WeatherSystem::generateParticles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classparticle_1_1ParticleHandler.html">ParticleHandler</a> *&#160;</td>
+          <td class="paramname"><em>particleHandler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>cloudCenter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija generise nove cestice i dodaje ih u listu cestica. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">particleHandler</td><td>Pokazivac na instancu klase <a class="el" href="classparticle_1_1ParticleHandler.html" title="Klasa ParticleHandler kontrolise cestice. Lista cestica se azurira i poziva se klasa za renderovanje ...">ParticleHandler</a>. </td></tr>
+    <tr><td class="paramname">cloudCenter</td><td>Centar oblaka. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aba0914ccb5a062a4b7d54c17d107c543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0914ccb5a062a4b7d54c17d107c543">&#9670;&nbsp;</a></span>getTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtexture_1_1Texture.html">Texture</a> * particle::WeatherSystem::getTexture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca teksturu cestica. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>Texture * Pokazivac na instancu klase Texture. </dd></dl>
+
+</div>
+</div>
+<a id="a5e9826ba8ab1324f9b4df5124d058ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9826ba8ab1324f9b4df5124d058ddd">&#9670;&nbsp;</a></span>setTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void particle::WeatherSystem::setTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtexture_1_1Texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija postavlja teksturu cestica. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>Pokazivac na instancu klase Texture. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija atributa</h2>
+<a id="a64e9626cc1511271c24ff62a1c31200f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64e9626cc1511271c24ff62a1c31200f">&#9670;&nbsp;</a></span>cloudSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particle::WeatherSystem::cloudSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Velicina oblaka. </p>
+
+</div>
+</div>
+<a id="aceaf5d329722c25c744bf3cbdc155295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceaf5d329722c25c744bf3cbdc155295">&#9670;&nbsp;</a></span>fallIntensity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particle::WeatherSystem::fallIntensity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Intenzitet padavina. </p>
+
+</div>
+</div>
+<a id="adefe5a2956dfd92f8271ed0e8c70799e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adefe5a2956dfd92f8271ed0e8c70799e">&#9670;&nbsp;</a></span>fpsData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classutility_1_1FpsData.html">FpsData</a>* particle::WeatherSystem::fpsData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase FpsData. </p>
+
+</div>
+</div>
+<a id="a0aa06ba52db7729e12657baf726fb116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa06ba52db7729e12657baf726fb116">&#9670;&nbsp;</a></span>lifeLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particle::WeatherSystem::lifeLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Duzina zivotnog veka cestice. </p>
+
+</div>
+</div>
+<a id="a0f24302815bf5a77140b26d015fefdbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f24302815bf5a77140b26d015fefdbe">&#9670;&nbsp;</a></span>particleHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classparticle_1_1ParticleHandler.html">ParticleHandler</a>* particle::WeatherSystem::particleHandler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase <a class="el" href="classparticle_1_1ParticleHandler.html" title="Klasa ParticleHandler kontrolise cestice. Lista cestica se azurira i poziva se klasa za renderovanje ...">ParticleHandler</a>. </p>
+
+</div>
+</div>
+<a id="ad2bd921d15667d8866d64fa633d76d0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2bd921d15667d8866d64fa633d76d0f">&#9670;&nbsp;</a></span>particlesPerSecond</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particle::WeatherSystem::particlesPerSecond</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Broj cestica koje se generisu po sekundi. </p>
+
+</div>
+</div>
+<a id="a8fbccea8de57ff87bdd606aa6e95cbab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fbccea8de57ff87bdd606aa6e95cbab">&#9670;&nbsp;</a></span>texture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtexture_1_1Texture.html">Texture</a>* particle::WeatherSystem::texture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase Texture. </p>
+
+</div>
+</div>
+<hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/include/particle/<a class="el" href="WeatherSystem_8h_source.html">WeatherSystem.h</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/src/particle/<a class="el" href="WeatherSystem_8cpp.html">WeatherSystem.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

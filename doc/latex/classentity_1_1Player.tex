@@ -11,16 +11,18 @@ Klasa \hyperlink{classentity_1_1Player}{Player} odredjuje igraca koji nadogradju
 
 
 
-Dijagram nasleđivanja za klasu entity\+:\+:Player\+:\nopagebreak
+Dijagram nasleđivanja za klasu entity\+:\+:Player\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=154pt]{classentity_1_1Player__inherit__graph}
+\includegraphics[width=193pt]{classentity_1_1Player__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Klasni dijagram za entity\+:\+:Player\+:\nopagebreak
+Klasni dijagram za entity\+:\+:Player\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,7 +32,7 @@ Klasni dijagram za entity\+:\+:Player\+:\nopagebreak
 \subsection*{Javni članovi}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classentity_1_1Player_a0edc8eeed60bf40c1ec63bb4f56a89ff}{Player} (\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$\hyperlink{classentity_1_1Entity_ac7848c5d47d4b2bf12c84ddbbc32052a}{model}, vec3 \hyperlink{classentity_1_1Entity_ad409c7f2085024479b276c2b6948bddb}{position}, vec3 \hyperlink{classentity_1_1Entity_aedb4c5dc1cfbc8cb3f6deb565ea920cb}{rotation}, float \hyperlink{classentity_1_1Entity_a59e5d5e3575df70cd5c74b5d739d84ca}{scale}, \hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$\hyperlink{classentity_1_1Player_adc298ca7a3d8ab3528440489ed4ea60e}{terrain})
+\hyperlink{classentity_1_1Player_ab96231144acc882d898ec60abd7ed702}{Player} (\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$\hyperlink{classentity_1_1AnimatedEntity_a1f9e73e14bf1588ed9e7c9e7f7d4aab3}{model}, vec3 \hyperlink{classentity_1_1AnimatedEntity_ab02891959f4c1191807e267c48466230}{position}, vec3 \hyperlink{classentity_1_1AnimatedEntity_a32f7718856950b74d40f4a96c1aa6f3d}{rotation}, float \hyperlink{classentity_1_1AnimatedEntity_a137e8fe0398142e9dedebb3eb1fe4f2f}{scale}, \hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$\hyperlink{classentity_1_1Player_adc298ca7a3d8ab3528440489ed4ea60e}{terrain}, \hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$\hyperlink{classentity_1_1Player_a830db86853301f3619dd4416c52229e4}{fps\+Data}, \hyperlink{classanimation_1_1Animator}{Animator} $\ast$\hyperlink{classentity_1_1Player_a77d9fff91395b091561f81b9acd5f034}{animator})
 \begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
 \hyperlink{classentity_1_1Player_aba0d4255d0d8624d01067418279bc9a1}{$\sim$\+Player} ()
 \begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
@@ -38,7 +40,7 @@ void \hyperlink{classentity_1_1Player_a27a2007873610439598c0ac07a91f3ac}{handle\
 \begin{DoxyCompactList}\small\item\em Funkcija obradjuje ulaz sa tastature. \end{DoxyCompactList}\item 
 void \hyperlink{classentity_1_1Player_af3d0b548d6daeb37d03f9fa57fb28f8a}{handle\+Key\+Down} (unsigned char key)
 \begin{DoxyCompactList}\small\item\em Funkcija obradjuje ulaz sa tastature. \end{DoxyCompactList}\item 
-void \hyperlink{classentity_1_1Player_ac4d89fa34bbc7a1a1db01db45e2da60f}{move} (\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$fps\+Data)
+void \hyperlink{classentity_1_1Player_a9b0a7ab96a4ba7c24c7ddac8f07c4d5e}{move} ()
 \begin{DoxyCompactList}\small\item\em Funkcija pomera igraca. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Privatni članovi}
 \begin{DoxyCompactItemize}
@@ -50,18 +52,24 @@ float \hyperlink{classentity_1_1Player_afaac869e93409af86a6f6fc53a95687e}{curren
 \hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$ \hyperlink{classentity_1_1Player_adc298ca7a3d8ab3528440489ed4ea60e}{terrain}
 \begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Terrain. \end{DoxyCompactList}\item 
 bool $\ast$ \hyperlink{classentity_1_1Player_ad36623cb0c52ae4dc97d73cbf1cd2134}{key\+Buffer}
-\begin{DoxyCompactList}\small\item\em Niz karaktera koji su pritisnuti a nisu otpusteni. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Niz karaktera koji su pritisnuti a nisu otpusteni. \end{DoxyCompactList}\item 
+\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$ \hyperlink{classentity_1_1Player_a830db86853301f3619dd4416c52229e4}{fps\+Data}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Fps\+Data. \end{DoxyCompactList}\item 
+\hyperlink{classanimation_1_1Animator}{Animator} $\ast$ \hyperlink{classentity_1_1Player_a77d9fff91395b091561f81b9acd5f034}{animator}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Animator. \end{DoxyCompactList}\item 
+bool \hyperlink{classentity_1_1Player_a92fb9b7321096cd6dedbcc31b12cf011}{animation\+On}
+\begin{DoxyCompactList}\small\item\em Istinitosna vrednost koja oznacava da li je animacija aktivna. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Opširniji opis}
 Klasa \hyperlink{classentity_1_1Player}{Player} odredjuje igraca koji nadogradjuje entitet. Pomocu klase \hyperlink{classentity_1_1Player}{Player} nadogradjujemo klasu \hyperlink{classentity_1_1Entity}{Entity} dodavajuci jos nove atribute i funkcije. 
 
 \subsection{Dokumentacija konstruktora i destruktora}
-\mbox{\Hypertarget{classentity_1_1Player_a0edc8eeed60bf40c1ec63bb4f56a89ff}\label{classentity_1_1Player_a0edc8eeed60bf40c1ec63bb4f56a89ff}} 
+\mbox{\Hypertarget{classentity_1_1Player_ab96231144acc882d898ec60abd7ed702}\label{classentity_1_1Player_ab96231144acc882d898ec60abd7ed702}} 
 \index{entity\+::\+Player@{entity\+::\+Player}!Player@{Player}}
 \index{Player@{Player}!entity\+::\+Player@{entity\+::\+Player}}
 \subsubsection{\texorpdfstring{Player()}{Player()}}
-{\footnotesize\ttfamily entity\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$}]{model,  }\item[{vec3}]{position,  }\item[{vec3}]{rotation,  }\item[{float}]{scale,  }\item[{\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$}]{terrain }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily entity\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$}]{model,  }\item[{vec3}]{position,  }\item[{vec3}]{rotation,  }\item[{float}]{scale,  }\item[{\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$}]{terrain,  }\item[{\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$}]{fps\+Data,  }\item[{\hyperlink{classanimation_1_1Animator}{Animator} $\ast$}]{animator }\end{DoxyParamCaption})}
 
 
 
@@ -69,7 +77,7 @@ Konstruktor klase.
 
 
 \begin{DoxyParams}{Parametri}
-{\em model} & Pokazivac na instancu klase Textured\+Model. \\
+{\em model} & Pokazivac na instancu klase Animated\+Model. \\
 \hline
 {\em position} & Pozicija entiteta. \\
 \hline
@@ -78,6 +86,10 @@ Konstruktor klase.
 {\em scale} & Skaliranje entiteta. \\
 \hline
 {\em terrain} & Pokazivac na instancu klase Terrain. \\
+\hline
+{\em fps\+Data} & Pokazivac na instancu klase Fps\+Data. \\
+\hline
+{\em animator} & Pokazivac na instancu klase Animator. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classentity_1_1Player_aba0d4255d0d8624d01067418279bc9a1}\label{classentity_1_1Player_aba0d4255d0d8624d01067418279bc9a1}} 
@@ -134,11 +146,11 @@ Funkcija obradjuje ulaz sa tastature.
 \begin{DoxyReturn}{Vrednost funkcije}
 void 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classentity_1_1Player_ac4d89fa34bbc7a1a1db01db45e2da60f}\label{classentity_1_1Player_ac4d89fa34bbc7a1a1db01db45e2da60f}} 
+\mbox{\Hypertarget{classentity_1_1Player_a9b0a7ab96a4ba7c24c7ddac8f07c4d5e}\label{classentity_1_1Player_a9b0a7ab96a4ba7c24c7ddac8f07c4d5e}} 
 \index{entity\+::\+Player@{entity\+::\+Player}!move@{move}}
 \index{move@{move}!entity\+::\+Player@{entity\+::\+Player}}
 \subsubsection{\texorpdfstring{move()}{move()}}
-{\footnotesize\ttfamily void entity\+::\+Player\+::move (\begin{DoxyParamCaption}\item[{\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$}]{fps\+Data }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void entity\+::\+Player\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -155,6 +167,26 @@ void
 
 
 \subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classentity_1_1Player_a92fb9b7321096cd6dedbcc31b12cf011}\label{classentity_1_1Player_a92fb9b7321096cd6dedbcc31b12cf011}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!animation\+On@{animation\+On}}
+\index{animation\+On@{animation\+On}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{animation\+On}{animationOn}}
+{\footnotesize\ttfamily bool entity\+::\+Player\+::animation\+On\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Istinitosna vrednost koja oznacava da li je animacija aktivna. 
+
+\mbox{\Hypertarget{classentity_1_1Player_a77d9fff91395b091561f81b9acd5f034}\label{classentity_1_1Player_a77d9fff91395b091561f81b9acd5f034}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!animator@{animator}}
+\index{animator@{animator}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{animator}{animator}}
+{\footnotesize\ttfamily \hyperlink{classanimation_1_1Animator}{Animator}$\ast$ entity\+::\+Player\+::animator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Animator. 
+
 \mbox{\Hypertarget{classentity_1_1Player_a06f0a95dc0b0efc3299a07f90e91dd25}\label{classentity_1_1Player_a06f0a95dc0b0efc3299a07f90e91dd25}} 
 \index{entity\+::\+Player@{entity\+::\+Player}!current\+Speed@{current\+Speed}}
 \index{current\+Speed@{current\+Speed}!entity\+::\+Player@{entity\+::\+Player}}
@@ -174,6 +206,16 @@ Trenutna brzina igraca.
 
 
 Trenutna rotaciona brzina igraca. 
+
+\mbox{\Hypertarget{classentity_1_1Player_a830db86853301f3619dd4416c52229e4}\label{classentity_1_1Player_a830db86853301f3619dd4416c52229e4}} 
+\index{entity\+::\+Player@{entity\+::\+Player}!fps\+Data@{fps\+Data}}
+\index{fps\+Data@{fps\+Data}!entity\+::\+Player@{entity\+::\+Player}}
+\subsubsection{\texorpdfstring{fps\+Data}{fpsData}}
+{\footnotesize\ttfamily \hyperlink{classutility_1_1FpsData}{Fps\+Data}$\ast$ entity\+::\+Player\+::fps\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Fps\+Data. 
 
 \mbox{\Hypertarget{classentity_1_1Player_ad36623cb0c52ae4dc97d73cbf1cd2134}\label{classentity_1_1Player_ad36623cb0c52ae4dc97d73cbf1cd2134}} 
 \index{entity\+::\+Player@{entity\+::\+Player}!key\+Buffer@{key\+Buffer}}

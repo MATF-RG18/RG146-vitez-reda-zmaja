@@ -90,6 +90,9 @@ Javni članovi</h2></td></tr>
 <tr class="memitem:abd745ff03d01035ff7a5453558469c2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutility_1_1FpsData.html#abd745ff03d01035ff7a5453558469c2c">getFpsCount</a> ()</td></tr>
 <tr class="memdesc:abd745ff03d01035ff7a5453558469c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca vrednost privatne promenljive fpsCount.  <a href="#abd745ff03d01035ff7a5453558469c2c">Još...</a><br /></td></tr>
 <tr class="separator:abd745ff03d01035ff7a5453558469c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3b4f2272afb4efcc628a5947cf5383"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutility_1_1FpsData.html#afe3b4f2272afb4efcc628a5947cf5383">getFrameDeltaTime</a> ()</td></tr>
+<tr class="memdesc:afe3b4f2272afb4efcc628a5947cf5383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca vreme proteklo od izmedju poslednja dva frejma.  <a href="#afe3b4f2272afb4efcc628a5947cf5383">Još...</a><br /></td></tr>
+<tr class="separator:afe3b4f2272afb4efcc628a5947cf5383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Privatni članovi</h2></td></tr>
@@ -105,6 +108,9 @@ Privatni članovi</h2></td></tr>
 <tr class="memitem:acbf0bbe28e4d134e959970b252bc1bc1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutility_1_1FpsData.html#acbf0bbe28e4d134e959970b252bc1bc1">numOfFrames</a></td></tr>
 <tr class="memdesc:acbf0bbe28e4d134e959970b252bc1bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broj frejmova.  <a href="#acbf0bbe28e4d134e959970b252bc1bc1">Još...</a><br /></td></tr>
 <tr class="separator:acbf0bbe28e4d134e959970b252bc1bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80cd8b43a338ae4d1d8a03d9d2d5d8e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutility_1_1FpsData.html#ae80cd8b43a338ae4d1d8a03d9d2d5d8e">frameDeltaTime</a></td></tr>
+<tr class="memdesc:ae80cd8b43a338ae4d1d8a03d9d2d5d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vreme proteklo od kreiranja poslednja dva frejma.  <a href="#ae80cd8b43a338ae4d1d8a03d9d2d5d8e">Još...</a><br /></td></tr>
+<tr class="separator:ae80cd8b43a338ae4d1d8a03d9d2d5d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
 <div class="textblock"><p>Klasa <a class="el" href="classutility_1_1FpsData.html" title="Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f...">FpsData</a> cuva podatke o broju frejmova po sekundi. Pomocu klase <a class="el" href="classutility_1_1FpsData.html" title="Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f...">FpsData</a> racunamo trenutni broj frejmova po sekundi pomocu kojeg sinhronizujemo igru. </p>
@@ -185,6 +191,31 @@ Privatni članovi</h2></td></tr>
 
 </div>
 </div>
+<a id="afe3b4f2272afb4efcc628a5947cf5383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3b4f2272afb4efcc628a5947cf5383">&#9670;&nbsp;</a></span>getFrameDeltaTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float utility::FpsData::getFrameDeltaTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca vreme proteklo od izmedju poslednja dva frejma. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>return float Vreme proteklo od kreiranja poslednja dva frejma. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adcc115a219b00aa4d0c979955b617f91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adcc115a219b00aa4d0c979955b617f91">&#9670;&nbsp;</a></span>update()</h2>
 
@@ -256,6 +287,30 @@ Privatni članovi</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Trenutni broj frejmova po sekundi. </p>
+
+</div>
+</div>
+<a id="ae80cd8b43a338ae4d1d8a03d9d2d5d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae80cd8b43a338ae4d1d8a03d9d2d5d8e">&#9670;&nbsp;</a></span>frameDeltaTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float utility::FpsData::frameDeltaTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vreme proteklo od kreiranja poslednja dva frejma. </p>
 
 </div>
 </div>

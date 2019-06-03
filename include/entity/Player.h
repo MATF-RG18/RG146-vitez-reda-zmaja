@@ -50,10 +50,13 @@ namespace entity {
             /// Niz karaktera koji su pritisnuti a nisu otpusteni.
             bool *keyBuffer;
 
+            /// Pokazivac na instancu klase FpsData.
             FpsData *fpsData;
 
+            /// Pokazivac na instancu klase Animator.
             Animator *animator;
 
+            /// Istinitosna vrednost koja oznacava da li je animacija aktivna.
             bool animationOn;
 
         // Javne funkcije klase
@@ -65,6 +68,8 @@ namespace entity {
             /// @param rotation Rotacija entiteta.
             /// @param scale Skaliranje entiteta.
             /// @param terrain Pokazivac na instancu klase Terrain.
+            /// @param fpsData Pokazivac na instancu klase FpsData.
+            /// @param animator Pokazivac na instancu klase Animator.
             ////////////////////////////////////////////////////////////////////////////
             Player(AnimatedModel *model, vec3 position, vec3 rotation, float scale, Terrain *terrain, FpsData *fpsData, Animator *animator);
 

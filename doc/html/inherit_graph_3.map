@@ -1,3 +1,3 @@
 <map id="Hijerarhija klasa u obliku grafa" name="Hijerarhija klasa u obliku grafa">
-<area shape="rect" id="node1" href="$classcore_1_1Render.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ..." alt="" coords="5,5,103,32"/>
+<area shape="rect" id="node1" href="$classanimation_1_1KeyFrame.html" title="Klasa KeyFrame sadrzi podatke o animaciji u odredjenom trenutku. Pomocu klase KeyFrame cuvamo mapu im..." alt="" coords="5,5,152,32"/>
 </map>

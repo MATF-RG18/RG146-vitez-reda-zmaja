@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Dokumentacija klase entity::AnimatedEntity</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentity.html">entity</a></li><li class="navelem"><a class="el" href="classentity_1_1AnimatedEntity.html">AnimatedEntity</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Javni članovi</a> &#124;
+<a href="#pri-attribs">Privatni članovi</a> &#124;
+<a href="classentity_1_1AnimatedEntity-members.html">Spisak svih članova</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacija klase entity::AnimatedEntity</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="classentity_1_1AnimatedEntity.html" title="Klasa AnimatedEntity odredjuje jedan animirani entitet. Pomocu klase AnimatedEntity odredjujemo entit...">AnimatedEntity</a> odredjuje jedan animirani entitet. Pomocu klase <a class="el" href="classentity_1_1AnimatedEntity.html" title="Klasa AnimatedEntity odredjuje jedan animirani entitet. Pomocu klase AnimatedEntity odredjujemo entit...">AnimatedEntity</a> odredjujemo entitet tako sto mu pridruzujemo animirani model kao i poziciju u svetu i ostale transformacije.  
+ <a href="classentity_1_1AnimatedEntity.html#details">Još...</a></p>
+
+<p><code>#include &lt;<a class="el" href="AnimatedEntity_8h_source.html">AnimatedEntity.h</a>&gt;</code></p>
+<div class="dynheader">
+Dijagram nasleđivanja za klasu entity::AnimatedEntity:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentity_1_1AnimatedEntity__inherit__graph.png" border="0" usemap="#entity_1_1AnimatedEntity_inherit__map" alt="Inheritance graph"/></div>
+<map name="entity_1_1AnimatedEntity_inherit__map" id="entity_1_1AnimatedEntity_inherit__map">
+<area shape="rect" id="node2" href="classentity_1_1Player.html" title="Klasa Player odredjuje igraca koji nadogradjuje entitet. Pomocu klase Player nadogradjujemo klasu Ent..." alt="" coords="31,80,130,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<div class="dynheader">
+Klasni dijagram za entity::AnimatedEntity:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentity_1_1AnimatedEntity__coll__graph.png" border="0" usemap="#entity_1_1AnimatedEntity_coll__map" alt="Collaboration graph"/></div>
+<map name="entity_1_1AnimatedEntity_coll__map" id="entity_1_1AnimatedEntity_coll__map">
+<area shape="rect" id="node2" href="classmodel_1_1AnimatedModel.html" title="Klasa AnimatedModel opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instanco..." alt="" coords="5,184,160,211"/>
+<area shape="rect" id="node3" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo..." alt="" coords="7,95,158,121"/>
+<area shape="rect" id="node4" href="classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="19,5,146,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Javni članovi</h2></td></tr>
+<tr class="memitem:a5b237ce1eaf0be4ea8d769ee94ea65b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#a5b237ce1eaf0be4ea8d769ee94ea65b2">AnimatedEntity</a> (<a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *<a class="el" href="classentity_1_1AnimatedEntity.html#a1f9e73e14bf1588ed9e7c9e7f7d4aab3">model</a>, vec3 <a class="el" href="classentity_1_1AnimatedEntity.html#ab02891959f4c1191807e267c48466230">position</a>, vec3 <a class="el" href="classentity_1_1AnimatedEntity.html#a32f7718856950b74d40f4a96c1aa6f3d">rotation</a>, float <a class="el" href="classentity_1_1AnimatedEntity.html#a137e8fe0398142e9dedebb3eb1fe4f2f">scale</a>)</td></tr>
+<tr class="memdesc:a5b237ce1eaf0be4ea8d769ee94ea65b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klase.  <a href="#a5b237ce1eaf0be4ea8d769ee94ea65b2">Još...</a><br /></td></tr>
+<tr class="separator:a5b237ce1eaf0be4ea8d769ee94ea65b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086eb2e6c8d1765ffd675b51293ed85b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#a086eb2e6c8d1765ffd675b51293ed85b">~AnimatedEntity</a> ()</td></tr>
+<tr class="memdesc:a086eb2e6c8d1765ffd675b51293ed85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klase.  <a href="#a086eb2e6c8d1765ffd675b51293ed85b">Još...</a><br /></td></tr>
+<tr class="separator:a086eb2e6c8d1765ffd675b51293ed85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7e7879a67cd75dac8cd867e79dd744"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#ace7e7879a67cd75dac8cd867e79dd744">getModel</a> ()</td></tr>
+<tr class="memdesc:ace7e7879a67cd75dac8cd867e79dd744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca animirani model.  <a href="#ace7e7879a67cd75dac8cd867e79dd744">Još...</a><br /></td></tr>
+<tr class="separator:ace7e7879a67cd75dac8cd867e79dd744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4948cd74084f403db1e660e5815cad6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#ae4948cd74084f403db1e660e5815cad6">setModel</a> (<a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *<a class="el" href="classentity_1_1AnimatedEntity.html#a1f9e73e14bf1588ed9e7c9e7f7d4aab3">model</a>)</td></tr>
+<tr class="memdesc:ae4948cd74084f403db1e660e5815cad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija postavlja animirani model.  <a href="#ae4948cd74084f403db1e660e5815cad6">Još...</a><br /></td></tr>
+<tr class="separator:ae4948cd74084f403db1e660e5815cad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc612d974f4cb04142edc2a4dbe7c3fa"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#adc612d974f4cb04142edc2a4dbe7c3fa">getPosition</a> ()</td></tr>
+<tr class="memdesc:adc612d974f4cb04142edc2a4dbe7c3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca poziciju entiteta.  <a href="#adc612d974f4cb04142edc2a4dbe7c3fa">Još...</a><br /></td></tr>
+<tr class="separator:adc612d974f4cb04142edc2a4dbe7c3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757b7e1a09af9299d807e4c5d1b1bab7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#a757b7e1a09af9299d807e4c5d1b1bab7">setPosition</a> (vec3 <a class="el" href="classentity_1_1AnimatedEntity.html#ab02891959f4c1191807e267c48466230">position</a>)</td></tr>
+<tr class="memdesc:a757b7e1a09af9299d807e4c5d1b1bab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija postavlja poziciju entiteta.  <a href="#a757b7e1a09af9299d807e4c5d1b1bab7">Još...</a><br /></td></tr>
+<tr class="separator:a757b7e1a09af9299d807e4c5d1b1bab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbb9afaea995f85a112f32efe7f77e8"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#a6dbb9afaea995f85a112f32efe7f77e8">getRotation</a> ()</td></tr>
+<tr class="memdesc:a6dbb9afaea995f85a112f32efe7f77e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca rotaciju entiteta.  <a href="#a6dbb9afaea995f85a112f32efe7f77e8">Još...</a><br /></td></tr>
+<tr class="separator:a6dbb9afaea995f85a112f32efe7f77e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170e9954b61845de9a0a6b016cc8429e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#a170e9954b61845de9a0a6b016cc8429e">setRotation</a> (vec3 <a class="el" href="classentity_1_1AnimatedEntity.html#a32f7718856950b74d40f4a96c1aa6f3d">rotation</a>)</td></tr>
+<tr class="memdesc:a170e9954b61845de9a0a6b016cc8429e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija postavlja rotaciju entiteta.  <a href="#a170e9954b61845de9a0a6b016cc8429e">Još...</a><br /></td></tr>
+<tr class="separator:a170e9954b61845de9a0a6b016cc8429e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50284046aa25cb7d264f9341cf904a5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#ab50284046aa25cb7d264f9341cf904a5">getScale</a> ()</td></tr>
+<tr class="memdesc:ab50284046aa25cb7d264f9341cf904a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca skaliranje entiteta.  <a href="#ab50284046aa25cb7d264f9341cf904a5">Još...</a><br /></td></tr>
+<tr class="separator:ab50284046aa25cb7d264f9341cf904a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9d22061e72c42ded0d898f43d351c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#aee9d22061e72c42ded0d898f43d351c3">setScale</a> (float <a class="el" href="classentity_1_1AnimatedEntity.html#a137e8fe0398142e9dedebb3eb1fe4f2f">scale</a>)</td></tr>
+<tr class="memdesc:aee9d22061e72c42ded0d898f43d351c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija postavlja skaliranje entiteta.  <a href="#aee9d22061e72c42ded0d898f43d351c3">Još...</a><br /></td></tr>
+<tr class="separator:aee9d22061e72c42ded0d898f43d351c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525fd1a4aaa4019d28e224323ce536ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#a525fd1a4aaa4019d28e224323ce536ef">increasePosition</a> (vec3 deltaPosition)</td></tr>
+<tr class="memdesc:a525fd1a4aaa4019d28e224323ce536ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija povecava poziciju entiteta.  <a href="#a525fd1a4aaa4019d28e224323ce536ef">Još...</a><br /></td></tr>
+<tr class="separator:a525fd1a4aaa4019d28e224323ce536ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9ba713f406ad55f2c5f0baaf3d21b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#adc9ba713f406ad55f2c5f0baaf3d21b4">increaseRotation</a> (vec3 deltaRotation)</td></tr>
+<tr class="memdesc:adc9ba713f406ad55f2c5f0baaf3d21b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija povecava rotaciju entiteta.  <a href="#adc9ba713f406ad55f2c5f0baaf3d21b4">Još...</a><br /></td></tr>
+<tr class="separator:adc9ba713f406ad55f2c5f0baaf3d21b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:a1f9e73e14bf1588ed9e7c9e7f7d4aab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#a1f9e73e14bf1588ed9e7c9e7f7d4aab3">model</a></td></tr>
+<tr class="memdesc:a1f9e73e14bf1588ed9e7c9e7f7d4aab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase AnimatedModel.  <a href="#a1f9e73e14bf1588ed9e7c9e7f7d4aab3">Još...</a><br /></td></tr>
+<tr class="separator:a1f9e73e14bf1588ed9e7c9e7f7d4aab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02891959f4c1191807e267c48466230"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#ab02891959f4c1191807e267c48466230">position</a></td></tr>
+<tr class="memdesc:ab02891959f4c1191807e267c48466230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pozicija entiteta.  <a href="#ab02891959f4c1191807e267c48466230">Još...</a><br /></td></tr>
+<tr class="separator:ab02891959f4c1191807e267c48466230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f7718856950b74d40f4a96c1aa6f3d"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#a32f7718856950b74d40f4a96c1aa6f3d">rotation</a></td></tr>
+<tr class="memdesc:a32f7718856950b74d40f4a96c1aa6f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotacija entiteta.  <a href="#a32f7718856950b74d40f4a96c1aa6f3d">Još...</a><br /></td></tr>
+<tr class="separator:a32f7718856950b74d40f4a96c1aa6f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a137e8fe0398142e9dedebb3eb1fe4f2f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentity_1_1AnimatedEntity.html#a137e8fe0398142e9dedebb3eb1fe4f2f">scale</a></td></tr>
+<tr class="memdesc:a137e8fe0398142e9dedebb3eb1fe4f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skaliranje entiteta.  <a href="#a137e8fe0398142e9dedebb3eb1fe4f2f">Još...</a><br /></td></tr>
+<tr class="separator:a137e8fe0398142e9dedebb3eb1fe4f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
+<div class="textblock"><p>Klasa <a class="el" href="classentity_1_1AnimatedEntity.html" title="Klasa AnimatedEntity odredjuje jedan animirani entitet. Pomocu klase AnimatedEntity odredjujemo entit...">AnimatedEntity</a> odredjuje jedan animirani entitet. Pomocu klase <a class="el" href="classentity_1_1AnimatedEntity.html" title="Klasa AnimatedEntity odredjuje jedan animirani entitet. Pomocu klase AnimatedEntity odredjujemo entit...">AnimatedEntity</a> odredjujemo entitet tako sto mu pridruzujemo animirani model kao i poziciju u svetu i ostale transformacije. </p>
+</div><h2 class="groupheader">Dokumentacija konstruktora i destruktora</h2>
+<a id="a5b237ce1eaf0be4ea8d769ee94ea65b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b237ce1eaf0be4ea8d769ee94ea65b2">&#9670;&nbsp;</a></span>AnimatedEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entity::AnimatedEntity::AnimatedEntity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>rotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>Pokazivac na instancu klase AnimatedModel. </td></tr>
+    <tr><td class="paramname">position</td><td>Pozicija entiteta. </td></tr>
+    <tr><td class="paramname">rotation</td><td>Rotacija entiteta. </td></tr>
+    <tr><td class="paramname">scale</td><td>Skaliranje entiteta. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a086eb2e6c8d1765ffd675b51293ed85b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086eb2e6c8d1765ffd675b51293ed85b">&#9670;&nbsp;</a></span>~AnimatedEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entity::AnimatedEntity::~AnimatedEntity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija funkcija članica</h2>
+<a id="ace7e7879a67cd75dac8cd867e79dd744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace7e7879a67cd75dac8cd867e79dd744">&#9670;&nbsp;</a></span>getModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> * entity::AnimatedEntity::getModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca animirani model. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>AnimatedModel * Pokazivac na instancu klase AnimatedModel. </dd></dl>
+
+</div>
+</div>
+<a id="adc612d974f4cb04142edc2a4dbe7c3fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc612d974f4cb04142edc2a4dbe7c3fa">&#9670;&nbsp;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 entity::AnimatedEntity::getPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca poziciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>vec3 Pozicija entiteta. </dd></dl>
+
+</div>
+</div>
+<a id="a6dbb9afaea995f85a112f32efe7f77e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dbb9afaea995f85a112f32efe7f77e8">&#9670;&nbsp;</a></span>getRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 entity::AnimatedEntity::getRotation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca rotaciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>vec3 Rotacija entiteta. </dd></dl>
+
+</div>
+</div>
+<a id="ab50284046aa25cb7d264f9341cf904a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab50284046aa25cb7d264f9341cf904a5">&#9670;&nbsp;</a></span>getScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::AnimatedEntity::getScale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca skaliranje entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>float Skaliranje entiteta. </dd></dl>
+
+</div>
+</div>
+<a id="a525fd1a4aaa4019d28e224323ce536ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525fd1a4aaa4019d28e224323ce536ef">&#9670;&nbsp;</a></span>increasePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::AnimatedEntity::increasePosition </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>deltaPosition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija povecava poziciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaPosition</td><td>Pozicija entiteta. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="adc9ba713f406ad55f2c5f0baaf3d21b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9ba713f406ad55f2c5f0baaf3d21b4">&#9670;&nbsp;</a></span>increaseRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::AnimatedEntity::increaseRotation </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>deltaRotation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija povecava rotaciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaRotation</td><td>Rotacija entiteta. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ae4948cd74084f403db1e660e5815cad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4948cd74084f403db1e660e5815cad6">&#9670;&nbsp;</a></span>setModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::AnimatedEntity::setModel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija postavlja animirani model. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>Pokazivac na instancu klase AnimatedModel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a757b7e1a09af9299d807e4c5d1b1bab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757b7e1a09af9299d807e4c5d1b1bab7">&#9670;&nbsp;</a></span>setPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::AnimatedEntity::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija postavlja poziciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>Pozicija entiteta. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a170e9954b61845de9a0a6b016cc8429e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a170e9954b61845de9a0a6b016cc8429e">&#9670;&nbsp;</a></span>setRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::AnimatedEntity::setRotation </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>rotation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija postavlja rotaciju entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotation</td><td>Rotacija entiteta. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aee9d22061e72c42ded0d898f43d351c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9d22061e72c42ded0d898f43d351c3">&#9670;&nbsp;</a></span>setScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entity::AnimatedEntity::setScale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija postavlja skaliranje entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scale</td><td>Skaliranje entiteta. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija atributa</h2>
+<a id="a1f9e73e14bf1588ed9e7c9e7f7d4aab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f9e73e14bf1588ed9e7c9e7f7d4aab3">&#9670;&nbsp;</a></span>model</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a>* entity::AnimatedEntity::model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase AnimatedModel. </p>
+
+</div>
+</div>
+<a id="ab02891959f4c1191807e267c48466230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab02891959f4c1191807e267c48466230">&#9670;&nbsp;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 entity::AnimatedEntity::position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pozicija entiteta. </p>
+
+</div>
+</div>
+<a id="a32f7718856950b74d40f4a96c1aa6f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f7718856950b74d40f4a96c1aa6f3d">&#9670;&nbsp;</a></span>rotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 entity::AnimatedEntity::rotation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotacija entiteta. </p>
+
+</div>
+</div>
+<a id="a137e8fe0398142e9dedebb3eb1fe4f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a137e8fe0398142e9dedebb3eb1fe4f2f">&#9670;&nbsp;</a></span>scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float entity::AnimatedEntity::scale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Skaliranje entiteta. </p>
+
+</div>
+</div>
+<hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/include/entity/<a class="el" href="AnimatedEntity_8h_source.html">AnimatedEntity.h</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/src/entity/<a class="el" href="AnimatedEntity_8cpp.html">AnimatedEntity.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

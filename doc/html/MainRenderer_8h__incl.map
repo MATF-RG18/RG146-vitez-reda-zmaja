@@ -1,18 +1,31 @@
-<map id="/home/dusan/Documents/Projects/RG102&#45;vitez&#45;reda&#45;zmaja/include/core/MainRenderer.h" name="/home/dusan/Documents/Projects/RG102&#45;vitez&#45;reda&#45;zmaja/include/core/MainRenderer.h">
-<area shape="rect" id="node2" href="$Render_8h.html" title="Deklaracija klase Render. " alt="" coords="1589,124,1705,151"/>
-<area shape="rect" id="node6" href="$Entity_8h.html" title="Deklaracija klase Entity. " alt="" coords="1206,423,1320,449"/>
-<area shape="rect" id="node15" href="$Shader_8h.html" title="Deklaracija klase Shader. " alt="" coords="544,199,673,225"/>
-<area shape="rect" id="node33" href="$TerrainRenderer_8h.html" title="../core/TerrainRenderer.h" alt="" coords="1253,124,1420,151"/>
-<area shape="rect" id="node34" href="$TerrainShader_8h.html" title="Deklaracija klase TerrainShader. " alt="" coords="948,199,1117,225"/>
-<area shape="rect" id="node3" href="$TexturedModel_8h.html" title="Deklaracija klase TexturedModel. " alt="" coords="2139,505,2310,531"/>
-<area shape="rect" id="node11" href="$Math_8h.html" title="../utility/Math.h" alt="" coords="968,505,1078,531"/>
-<area shape="rect" id="node4" href="$RawModel_8h.html" title="Deklaracija klase RawModel. " alt="" coords="2182,587,2328,613"/>
-<area shape="rect" id="node5" href="$Texture_8h.html" title="Deklaracija klase Texture. " alt="" coords="1990,587,2158,613"/>
-<area shape="rect" id="node16" href="$Camera_8h.html" title="Deklaracija klase Camera. " alt="" coords="868,273,994,300"/>
-<area shape="rect" id="node26" href="$Light_8h.html" title="../entity/Light.h" alt="" coords="430,505,539,531"/>
-<area shape="rect" id="node17" href="$Player_8h.html" title="Deklaracija klase Player. " alt="" coords="1172,348,1290,375"/>
-<area shape="rect" id="node18" href="$Terrain_8h.html" title="../terrain/Terrain.h" alt="" coords="1811,423,1936,449"/>
-<area shape="rect" id="node19" href="$TerrainTexturePack_8h.html" title="Deklaracija klase TerrainTexturePack. " alt="" coords="2454,497,2616,539"/>
-<area shape="rect" id="node21" href="$VaoLoader_8h.html" title="Deklaracija klase VaoLoader. " alt="" coords="1928,505,2064,531"/>
-<area shape="rect" id="node20" href="$TerrainTexture_8h.html" title="Deklaracija klase TerrainTexture. " alt="" coords="2467,587,2640,613"/>
+<map id="/home/dusan/Documents/RG146&#45;vitez&#45;reda&#45;zmaja/include/core/MainRenderer.h" name="/home/dusan/Documents/RG146&#45;vitez&#45;reda&#45;zmaja/include/core/MainRenderer.h">
+<area shape="rect" id="node2" href="$Render_8h.html" title="Deklaracija klase Render. " alt="" coords="2770,109,2886,136"/>
+<area shape="rect" id="node9" href="$Entity_8h.html" title="Deklaracija klase Entity. " alt="" coords="2709,490,2824,517"/>
+<area shape="rect" id="node17" href="$Shader_8h.html" title="Deklaracija klase Shader. " alt="" coords="1891,184,2021,211"/>
+<area shape="rect" id="node20" href="$AnimatedEntity_8h.html" title="Deklaracija klase AnimatedEntity. " alt="" coords="1133,408,1304,435"/>
+<area shape="rect" id="node32" href="$VaoLoader_8h.html" title="Deklaracija klase VaoLoader. " alt="" coords="4115,490,4251,517"/>
+<area shape="rect" id="node45" href="$TerrainRenderer_8h.html" title="Deklaracija klase TerrainRenderer. " alt="" coords="3138,109,3305,136"/>
+<area shape="rect" id="node46" href="$TerrainShader_8h.html" title="Deklaracija klase TerrainShader. " alt="" coords="2383,184,2553,211"/>
+<area shape="rect" id="node47" href="$AnimatedModelShader_8h.html" title="Deklaracija klase AnimatedModelShader. " alt="" coords="1400,184,1619,211"/>
+<area shape="rect" id="node48" href="$AnimatedModelRenderer_8h.html" title="Deklaracija klase AnimatedModelRenderer. " alt="" coords="678,109,895,136"/>
+<area shape="rect" id="node49" href="$SkyboxRenderer_8h.html" title="Deklaracija klase SkyboxRenderer. " alt="" coords="3941,109,4112,136"/>
+<area shape="rect" id="node3" href="$TexturedModel_8h.html" title="Deklaracija klase TexturedModel. " alt="" coords="2768,572,2939,599"/>
+<area shape="rect" id="node14" href="$Math_8h.html" title="../utility/Math.h" alt="" coords="2475,490,2584,517"/>
+<area shape="rect" id="node4" href="$RawModel_8h.html" title="Deklaracija klase RawModel. " alt="" coords="4045,654,4192,681"/>
+<area shape="rect" id="node8" href="$Texture_8h.html" title="Deklaracija klase Texture. " alt="" coords="3031,654,3164,681"/>
+<area shape="rect" id="node18" href="$Camera_8h.html" title="Deklaracija klase Camera. " alt="" coords="1451,259,1578,285"/>
+<area shape="rect" id="node40" href="$Light_8h.html" title="Deklaracija klase Camera i deklaracija callback funkcija. " alt="" coords="1856,259,1965,285"/>
+<area shape="rect" id="node19" href="$Player_8h.html" title="Deklaracija klase Player. " alt="" coords="1134,333,1253,360"/>
+<area shape="rect" id="node29" href="$Terrain_8h.html" title="Deklaracija klase Terrain. " alt="" coords="3372,408,3497,435"/>
+<area shape="rect" id="node38" href="$FpsData_8h.html" title="Deklaracija klase FpsData. " alt="" coords="1053,490,1184,517"/>
+<area shape="rect" id="node39" href="$Animator_8h.html" title="Deklaracija klase Animator. " alt="" coords="800,408,957,435"/>
+<area shape="rect" id="node21" href="$AnimatedModel_8h.html" title="Deklaracija klase AnimatedModel. " alt="" coords="246,490,421,517"/>
+<area shape="rect" id="node22" href="$Bone_8h.html" title="Deklaracija klase Bone. " alt="" coords="171,572,285,599"/>
+<area shape="rect" id="node25" href="$Animation_8h.html" title="Deklaracija klase Animation. " alt="" coords="309,572,472,599"/>
+<area shape="rect" id="node26" href="$KeyFrame_8h.html" title="Deklaracija klase KeyFrame. " alt="" coords="277,654,443,681"/>
+<area shape="rect" id="node27" href="$BoneTransform_8h.html" title="Deklaracija klase BoneTransform. " alt="" coords="709,736,904,763"/>
+<area shape="rect" id="node30" href="$TerrainTexturePack_8h.html" title="Deklaracija klase TerrainTexturePack. " alt="" coords="3472,483,3635,524"/>
+<area shape="rect" id="node31" href="$TerrainTexture_8h.html" title="Deklaracija klase TerrainTexture. " alt="" coords="3379,572,3552,599"/>
+<area shape="rect" id="node33" href="$SkyboxTextureData_8h.html" title="../texture/SkyboxTexture\lData.h" alt="" coords="3753,647,3919,688"/>
+<area shape="rect" id="node50" href="$SkyboxShader_8h.html" title="Deklaracija klase SkyboxShader. " alt="" coords="3461,184,3635,211"/>
 </map>

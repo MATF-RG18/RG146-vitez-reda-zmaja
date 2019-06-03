@@ -118,6 +118,7 @@ namespace texture {
     void setUseFakeLightning(bool lightning);
 
   };
+  
 } // texture
 
 #endif

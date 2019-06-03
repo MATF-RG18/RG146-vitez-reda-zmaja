@@ -1,0 +1,298 @@
+\hypertarget{classanimation_1_1Animator}{}\section{Dokumentacija klase animation\+:\+:Animator}
+\label{classanimation_1_1Animator}\index{animation\+::\+Animator@{animation\+::\+Animator}}
+
+
+Klasa \hyperlink{classanimation_1_1Animator}{Animator} kontrolise animaciju modela. Pomocu klase \hyperlink{classanimation_1_1Animator}{Animator} kontrolisemo ponasanje animacije i racunamo neophodne podatke za pravilno renderovanje animiranog modela.  
+
+
+
+
+{\ttfamily \#include $<$Animator.\+h$>$}
+
+
+
+Klasni dijagram za animation\+:\+:Animator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classanimation_1_1Animator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classanimation_1_1Animator_ab8f3fac8a3500bf117e3a68c6cf58b62}{Animator} (\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$\hyperlink{classanimation_1_1Animator_a5578ef87b7bf69b4434dcf916c279714}{model}, \hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$\hyperlink{classanimation_1_1Animator_a865e52c4c069f203f847fbd98b86c52a}{fps\+Data})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classanimation_1_1Animator_aa41360723d4542becc20a238f25bed4a}{$\sim$\+Animator} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classanimation_1_1Animator_a770c61c392ecf21df366a5cf69f4318e}{do\+Animation} (\hyperlink{classanimation_1_1Animation}{Animation} $\ast$animation)
+\begin{DoxyCompactList}\small\item\em Funkcija inicijalizuje podatke o animaciji. \end{DoxyCompactList}\item 
+void \hyperlink{classanimation_1_1Animator_a65c3fb2eca8bb0a882d36a452b170c9e}{update} ()
+\begin{DoxyCompactList}\small\item\em Funkcija azurira podatke o animaciji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classanimation_1_1Animator_a688e72bb61014ad3431a8bbfd9e75c99}{increase\+Animation\+Time} ()
+\begin{DoxyCompactList}\small\item\em Funkcija povecava trenutno vreme animacije. \end{DoxyCompactList}\item 
+map$<$ string, mat4 $>$ \hyperlink{classanimation_1_1Animator_af42f79e412ade4f598612b6301b06f9a}{calculate\+Current\+Animation\+Pose} ()
+\begin{DoxyCompactList}\small\item\em Funkcija racuna matrice transformacije za trenutno pozu modela. \end{DoxyCompactList}\item 
+void \hyperlink{classanimation_1_1Animator_ad3a23a845327e2935845a8bfc1a934ce}{apply\+Pose\+To\+Bones} (map$<$ string, mat4 $>$ current\+Pose, \hyperlink{classmodel_1_1Bone}{Bone} $\ast$bone, mat4 parent\+Transform)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matrice transformacije U funkciji se racunaju matrice transformacije na osnovu hijerarhije kostiju i ucitavju se u instance klase Bone. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$ $>$ \hyperlink{classanimation_1_1Animator_af91ac2386b9606f8fa50d65f33fa0be0}{get\+Previous\+And\+Next\+Frames} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca dva kljucna frejma. U funkciji se pronalaze dva kljucna frejma izmedju cijih vremena izvrsavanja je trenutno vreme animacije. \end{DoxyCompactList}\item 
+float \hyperlink{classanimation_1_1Animator_a050280aa6171aed0f34c481a3b7e0053}{calculate\+Progression} (\hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$previous, \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$next)
+\begin{DoxyCompactList}\small\item\em Funkcija racuna progresiju izmedju dva kljucna vrejma. \end{DoxyCompactList}\item 
+map$<$ string, mat4 $>$ \hyperlink{classanimation_1_1Animator_a263a7e899c2df14b37d733f020412f54}{interpolate\+Poses} (\hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$previous, \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$next, float progression)
+\begin{DoxyCompactList}\small\item\em Funkcija racuna interpolisane matrice transformacije. U funkciji se racunaju matrice transformacije koje su interpolacija matrica transformacije dva kljucna frejma sa zadatim faktorom progresije. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$ \hyperlink{classanimation_1_1Animator_a5578ef87b7bf69b4434dcf916c279714}{model}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Animated\+Model. \end{DoxyCompactList}\item 
+\hyperlink{classanimation_1_1Animation}{Animation} $\ast$ \hyperlink{classanimation_1_1Animator_a97342956340bc49d17161b83ce72d6d1}{current\+Animation}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase \hyperlink{classanimation_1_1Animation}{Animation}. \end{DoxyCompactList}\item 
+float \hyperlink{classanimation_1_1Animator_a39bfb15584fa3389f2314188f92f92d9}{animation\+Time}
+\begin{DoxyCompactList}\small\item\em Trenutno vreme animacije. \end{DoxyCompactList}\item 
+\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$ \hyperlink{classanimation_1_1Animator_a865e52c4c069f203f847fbd98b86c52a}{fps\+Data}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Fps\+Data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classanimation_1_1Animator}{Animator} kontrolise animaciju modela. Pomocu klase \hyperlink{classanimation_1_1Animator}{Animator} kontrolisemo ponasanje animacije i racunamo neophodne podatke za pravilno renderovanje animiranog modela. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classanimation_1_1Animator_ab8f3fac8a3500bf117e3a68c6cf58b62}\label{classanimation_1_1Animator_ab8f3fac8a3500bf117e3a68c6cf58b62}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!Animator@{Animator}}
+\index{Animator@{Animator}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{Animator()}{Animator()}}
+{\footnotesize\ttfamily animation\+::\+Animator\+::\+Animator (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$}]{model,  }\item[{\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$}]{fps\+Data }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em model} & Pokazivac na instancu klase Animated\+Model. \\
+\hline
+{\em fps\+Data} & Pokazivac na instancu klase Fps\+Data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classanimation_1_1Animator_aa41360723d4542becc20a238f25bed4a}\label{classanimation_1_1Animator_aa41360723d4542becc20a238f25bed4a}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!````~Animator@{$\sim$\+Animator}}
+\index{````~Animator@{$\sim$\+Animator}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{$\sim$\+Animator()}{~Animator()}}
+{\footnotesize\ttfamily animation\+::\+Animator\+::$\sim$\+Animator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classanimation_1_1Animator_ad3a23a845327e2935845a8bfc1a934ce}\label{classanimation_1_1Animator_ad3a23a845327e2935845a8bfc1a934ce}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!apply\+Pose\+To\+Bones@{apply\+Pose\+To\+Bones}}
+\index{apply\+Pose\+To\+Bones@{apply\+Pose\+To\+Bones}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{apply\+Pose\+To\+Bones()}{applyPoseToBones()}}
+{\footnotesize\ttfamily void animation\+::\+Animator\+::apply\+Pose\+To\+Bones (\begin{DoxyParamCaption}\item[{map$<$ string, mat4 $>$}]{current\+Pose,  }\item[{\hyperlink{classmodel_1_1Bone}{Bone} $\ast$}]{bone,  }\item[{mat4}]{parent\+Transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava matrice transformacije U funkciji se racunaju matrice transformacije na osnovu hijerarhije kostiju i ucitavju se u instance klase Bone. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em current\+Pose} & Mapa imena kostiju i njihovih matrica transformacije. \\
+\hline
+{\em parent\+Transform} & Matrica transformacije roditeljske koske. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanimation_1_1Animator_af42f79e412ade4f598612b6301b06f9a}\label{classanimation_1_1Animator_af42f79e412ade4f598612b6301b06f9a}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!calculate\+Current\+Animation\+Pose@{calculate\+Current\+Animation\+Pose}}
+\index{calculate\+Current\+Animation\+Pose@{calculate\+Current\+Animation\+Pose}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{calculate\+Current\+Animation\+Pose()}{calculateCurrentAnimationPose()}}
+{\footnotesize\ttfamily map$<$ string, mat4 $>$ animation\+::\+Animator\+::calculate\+Current\+Animation\+Pose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija racuna matrice transformacije za trenutno pozu modela. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+map$<$string, mat4$>$ Mapa imena kostiju i njihovih matrica transformacije. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanimation_1_1Animator_a050280aa6171aed0f34c481a3b7e0053}\label{classanimation_1_1Animator_a050280aa6171aed0f34c481a3b7e0053}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!calculate\+Progression@{calculate\+Progression}}
+\index{calculate\+Progression@{calculate\+Progression}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{calculate\+Progression()}{calculateProgression()}}
+{\footnotesize\ttfamily float animation\+::\+Animator\+::calculate\+Progression (\begin{DoxyParamCaption}\item[{\hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$}]{previous,  }\item[{\hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$}]{next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija racuna progresiju izmedju dva kljucna vrejma. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Procenat progresije ka sledecem frejmu u intervalu \mbox{[}0,1\mbox{]}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanimation_1_1Animator_a770c61c392ecf21df366a5cf69f4318e}\label{classanimation_1_1Animator_a770c61c392ecf21df366a5cf69f4318e}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!do\+Animation@{do\+Animation}}
+\index{do\+Animation@{do\+Animation}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{do\+Animation()}{doAnimation()}}
+{\footnotesize\ttfamily void animation\+::\+Animator\+::do\+Animation (\begin{DoxyParamCaption}\item[{\hyperlink{classanimation_1_1Animation}{Animation} $\ast$}]{animation }\end{DoxyParamCaption})}
+
+
+
+Funkcija inicijalizuje podatke o animaciji. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em animation} & Pokazivac na instancu klase \hyperlink{classanimation_1_1Animation}{Animation}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanimation_1_1Animator_af91ac2386b9606f8fa50d65f33fa0be0}\label{classanimation_1_1Animator_af91ac2386b9606f8fa50d65f33fa0be0}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!get\+Previous\+And\+Next\+Frames@{get\+Previous\+And\+Next\+Frames}}
+\index{get\+Previous\+And\+Next\+Frames@{get\+Previous\+And\+Next\+Frames}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{get\+Previous\+And\+Next\+Frames()}{getPreviousAndNextFrames()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$ $>$ animation\+::\+Animator\+::get\+Previous\+And\+Next\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija vraca dva kljucna frejma. U funkciji se pronalaze dva kljucna frejma izmedju cijih vremena izvrsavanja je trenutno vreme animacije. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vector$<$\+Key\+Frame $\ast$$>$ Vektor pokazivaca na instance klase \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanimation_1_1Animator_a688e72bb61014ad3431a8bbfd9e75c99}\label{classanimation_1_1Animator_a688e72bb61014ad3431a8bbfd9e75c99}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!increase\+Animation\+Time@{increase\+Animation\+Time}}
+\index{increase\+Animation\+Time@{increase\+Animation\+Time}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{increase\+Animation\+Time()}{increaseAnimationTime()}}
+{\footnotesize\ttfamily void animation\+::\+Animator\+::increase\+Animation\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija povecava trenutno vreme animacije. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanimation_1_1Animator_a263a7e899c2df14b37d733f020412f54}\label{classanimation_1_1Animator_a263a7e899c2df14b37d733f020412f54}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!interpolate\+Poses@{interpolate\+Poses}}
+\index{interpolate\+Poses@{interpolate\+Poses}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{interpolate\+Poses()}{interpolatePoses()}}
+{\footnotesize\ttfamily map$<$ string, mat4 $>$ animation\+::\+Animator\+::interpolate\+Poses (\begin{DoxyParamCaption}\item[{\hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$}]{previous,  }\item[{\hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$}]{next,  }\item[{float}]{progression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija racuna interpolisane matrice transformacije. U funkciji se racunaju matrice transformacije koje su interpolacija matrica transformacije dva kljucna frejma sa zadatim faktorom progresije. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em previous} & Vektor pokazivaca na instance klase \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame}. \\
+\hline
+{\em next} & Vektor pokazivaca na instance klase \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame}. \\
+\hline
+{\em progression} & Procenat progresije ka sledecem frejmu u intervalu \mbox{[}0,1\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+map$<$string, mat4$>$ Mapa imena kostiju i njihovih matrica transformacije. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanimation_1_1Animator_a65c3fb2eca8bb0a882d36a452b170c9e}\label{classanimation_1_1Animator_a65c3fb2eca8bb0a882d36a452b170c9e}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!update@{update}}
+\index{update@{update}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void animation\+::\+Animator\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija azurira podatke o animaciji. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classanimation_1_1Animator_a39bfb15584fa3389f2314188f92f92d9}\label{classanimation_1_1Animator_a39bfb15584fa3389f2314188f92f92d9}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!animation\+Time@{animation\+Time}}
+\index{animation\+Time@{animation\+Time}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{animation\+Time}{animationTime}}
+{\footnotesize\ttfamily float animation\+::\+Animator\+::animation\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Trenutno vreme animacije. 
+
+\mbox{\Hypertarget{classanimation_1_1Animator_a97342956340bc49d17161b83ce72d6d1}\label{classanimation_1_1Animator_a97342956340bc49d17161b83ce72d6d1}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!current\+Animation@{current\+Animation}}
+\index{current\+Animation@{current\+Animation}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{current\+Animation}{currentAnimation}}
+{\footnotesize\ttfamily \hyperlink{classanimation_1_1Animation}{Animation}$\ast$ animation\+::\+Animator\+::current\+Animation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase \hyperlink{classanimation_1_1Animation}{Animation}. 
+
+\mbox{\Hypertarget{classanimation_1_1Animator_a865e52c4c069f203f847fbd98b86c52a}\label{classanimation_1_1Animator_a865e52c4c069f203f847fbd98b86c52a}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!fps\+Data@{fps\+Data}}
+\index{fps\+Data@{fps\+Data}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{fps\+Data}{fpsData}}
+{\footnotesize\ttfamily \hyperlink{classutility_1_1FpsData}{Fps\+Data}$\ast$ animation\+::\+Animator\+::fps\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Fps\+Data. 
+
+\mbox{\Hypertarget{classanimation_1_1Animator_a5578ef87b7bf69b4434dcf916c279714}\label{classanimation_1_1Animator_a5578ef87b7bf69b4434dcf916c279714}} 
+\index{animation\+::\+Animator@{animation\+::\+Animator}!model@{model}}
+\index{model@{model}!animation\+::\+Animator@{animation\+::\+Animator}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model}$\ast$ animation\+::\+Animator\+::model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Animated\+Model. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/animation/\hyperlink{Animator_8h}{Animator.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/animation/\hyperlink{Animator_8cpp}{Animator.\+cpp}\end{DoxyCompactItemize}

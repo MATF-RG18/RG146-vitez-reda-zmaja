@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/include/model/Bone.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_5c067e43b62dc1a915e487a737196819.html">model</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Bone.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Bone_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _BONE_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _BONE_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Ukljucivanje biblioteka</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;glm/matrix.hpp&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Koriscenje prostora imena za jednostavniji i pregledniji kod.</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceglm.html">glm</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemodel.html">model</a> {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmodel_1_1Bone.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmodel_1_1Bone.html">Bone</a> {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// Privatne promenljive klase.</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmodel_1_1Bone.html#a7a300f62a3d7ffdde6f31d55cdffa44e">   37</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classmodel_1_1Bone.html#a7a300f62a3d7ffdde6f31d55cdffa44e">ID</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmodel_1_1Bone.html#ad1613b072247f5310db1ad9ec9182956">   40</a></span>&#160;        <span class="keywordtype">string</span> <a class="code" href="classmodel_1_1Bone.html#ad1613b072247f5310db1ad9ec9182956">name</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classmodel_1_1Bone.html#a41f8eef1aa80ccb7bb47f6de93316cf7">   43</a></span>&#160;        vector&lt;Bone*&gt; <a class="code" href="classmodel_1_1Bone.html#a41f8eef1aa80ccb7bb47f6de93316cf7">childrens</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmodel_1_1Bone.html#a72f5c45330effbe7a68b7984fcf2250e">   46</a></span>&#160;        mat4 <a class="code" href="classmodel_1_1Bone.html#a72f5c45330effbe7a68b7984fcf2250e">animatedTransform</a>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classmodel_1_1Bone.html#a4e3fe672d5a018cf9755a344c9f193ab">   49</a></span>&#160;        mat4 <a class="code" href="classmodel_1_1Bone.html#a4e3fe672d5a018cf9755a344c9f193ab">inverseBindTransform</a>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Javne funkcije klase</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classmodel_1_1Bone.html">Bone</a>(<span class="keywordtype">int</span> ID, <span class="keywordtype">string</span> name, mat4 inverseBindTransform);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        ~<a class="code" href="classmodel_1_1Bone.html">Bone</a>();</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span> addChild(<a class="code" href="classmodel_1_1Bone.html">Bone</a> *child);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">int</span> getID();</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        vector&lt;Bone*&gt; getChildrens();</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">string</span> getName();</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        mat4 getAnimatedTransform();</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">void</span> setAnimatedTransform(mat4 animatedTransform);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        mat4 getInverseBindTransform();</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    };</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;} <span class="comment">// model</span></div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classmodel_1_1Bone_html_a41f8eef1aa80ccb7bb47f6de93316cf7"><div class="ttname"><a href="classmodel_1_1Bone.html#a41f8eef1aa80ccb7bb47f6de93316cf7">model::Bone::childrens</a></div><div class="ttdeci">vector&lt; Bone * &gt; childrens</div><div class="ttdoc">Lista dece koske. </div><div class="ttdef"><b>Definition:</b> Bone.h:43</div></div>
+<div class="ttc" id="classmodel_1_1Bone_html_a7a300f62a3d7ffdde6f31d55cdffa44e"><div class="ttname"><a href="classmodel_1_1Bone.html#a7a300f62a3d7ffdde6f31d55cdffa44e">model::Bone::ID</a></div><div class="ttdeci">int ID</div><div class="ttdoc">Identifikator koske. </div><div class="ttdef"><b>Definition:</b> Bone.h:37</div></div>
+<div class="ttc" id="namespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdoc">Prostor imena model. Sadrzi sve klase, funkcije i promenljive koje opisuju model objekta. </div><div class="ttdef"><b>Definition:</b> AnimatedModel.cpp:9</div></div>
+<div class="ttc" id="classmodel_1_1Bone_html"><div class="ttname"><a href="classmodel_1_1Bone.html">model::Bone</a></div><div class="ttdoc">Klasa Bone opisuje kost modela. Kost je opisana indeksom, imenom, listom dece, matricom transformacij...</div><div class="ttdef"><b>Definition:</b> Bone.h:32</div></div>
+<div class="ttc" id="classmodel_1_1Bone_html_a4e3fe672d5a018cf9755a344c9f193ab"><div class="ttname"><a href="classmodel_1_1Bone.html#a4e3fe672d5a018cf9755a344c9f193ab">model::Bone::inverseBindTransform</a></div><div class="ttdeci">mat4 inverseBindTransform</div><div class="ttdoc">Matrica transformacije koordinatnog sistema koske u sistem modela. </div><div class="ttdef"><b>Definition:</b> Bone.h:49</div></div>
+<div class="ttc" id="classmodel_1_1Bone_html_ad1613b072247f5310db1ad9ec9182956"><div class="ttname"><a href="classmodel_1_1Bone.html#ad1613b072247f5310db1ad9ec9182956">model::Bone::name</a></div><div class="ttdeci">string name</div><div class="ttdoc">Ime koske. </div><div class="ttdef"><b>Definition:</b> Bone.h:40</div></div>
+<div class="ttc" id="classmodel_1_1Bone_html_a72f5c45330effbe7a68b7984fcf2250e"><div class="ttname"><a href="classmodel_1_1Bone.html#a72f5c45330effbe7a68b7984fcf2250e">model::Bone::animatedTransform</a></div><div class="ttdeci">mat4 animatedTransform</div><div class="ttdoc">Matrica transformacije animacije. </div><div class="ttdef"><b>Definition:</b> Bone.h:46</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

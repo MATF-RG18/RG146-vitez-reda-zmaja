@@ -34,7 +34,7 @@ namespace model {
     /// Pokazivac na model objekta bez pridruzene strukture.
     RawModel *rawModel;
 
-    /// Pokazivac na teksturu objekta.
+    /// Lista pokazivaca na teksture delova objekta.
     vector<Texture *> textures;
 
   // Javne funkcije klase.
@@ -45,7 +45,7 @@ namespace model {
     /// U konstruktoru se modelu pridruzuju neteksturisani objekat i njegova
     /// tekstura.
     /// @param model Pokazivac na model objekta bez pridruzene strukture.
-    /// @param texture Pokazivac na teksturu objekta.
+    /// @param textures Lista pokazivaca na teksture delova objekta.
     ////////////////////////////////////////////////////////////////////////////
     TexturedModel(RawModel *model, vector<Texture *> textures);
 
@@ -63,13 +63,13 @@ namespace model {
     RawModel *getRawModel(void);
 
     ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija vraca teksturu modela.
+    /// @brief Funkcija vraca listu tekstura modela.
     /// @param void
-    /// @return Texture Tekstura modela.
+    /// @return vector<Texture *> lista tekstura modela.
     ////////////////////////////////////////////////////////////////////////////
     vector<Texture *> getTextures(void);
-
   };
+  
 } // model
 
 #endif

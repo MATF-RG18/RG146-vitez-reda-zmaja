@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['size',['SIZE',['../Terrain_8h.html#a70ed59adcb4159ac551058053e649640',1,'Terrain.h']]],
-  ['skybox_5frotation_5fspeed',['SKYBOX_ROTATION_SPEED',['../SkyboxShader_8h.html#a01659d0d57190e0150566e9024ba8aed',1,'SkyboxShader.h']]]
+  ['r',['R',['../MainRenderer_8h.html#a5c71a5e59a53413cd6c270266d63b031',1,'MainRenderer.h']]],
+  ['run_5fspeed',['RUN_SPEED',['../Player_8h.html#aa5f3efb32c476acce65037d89e154c60',1,'Player.h']]]
 ];

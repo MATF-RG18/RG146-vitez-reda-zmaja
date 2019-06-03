@@ -96,13 +96,35 @@ namespace core {
     /// koje se nadovezuju)
     /// @param textureSize Broj koordinata koje se nalaze u nizu koordinata
     /// teksture
-    /// @return RawModel* Pokazivac na instancu klase RawModel
+    /// @return GLint Identifikator VAO-a
     ////////////////////////////////////////////////////////////////////////////
     GLint loadToVao(GLfloat positions[], GLint positionsSize,
                     GLint indices[], GLint indicesSize,
                     GLfloat textureCoords[], GLint textureSize,
                     GLfloat normals[], GLint normalsSize);
 
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija kreira niz atributa(VAO).
+    /// U funkciji se prvo kreira vao i dodeljuje mu se identifikator nakon cega
+    /// se parametri funkcije ucitavaju u bafere koji se pridruzuju ranije
+    /// kreiranom vao-u.
+    /// @param positions[] Niz koordinata objekta
+    /// @param positionsSize Broj koordinata koje se nalaze u nizu pozicija
+    /// @param indices[] Niz indeksa tacaka radi efikasnijeg kreiranja
+    /// modela
+    /// @param indicesSize Broj indeksa koji se nalaze u nizu indeka
+    /// @param textureCoords Niz koordinata koje oznacavaju na koji
+    /// ce nacin objekat biti prektiven teksturom(Npr. da se cela tekstura
+    /// razvuce preko objekta ili da se objekat prekrije sa vise istih tekstura
+    /// koje se nadovezuju)
+    /// @param textureSize Broj koordinata koje se nalaze u nizu koordinata
+    /// teksture
+    /// @param boneIndices Niz indeksa kostiju
+    /// @param boneIndicesSize Borj indeksa kostiju
+    /// @param weights Niz tezina kostiju
+    /// @param weightsSize Broj tezina kostiju
+    /// @return GLint Identifikator VAO-a
+    ////////////////////////////////////////////////////////////////////////////
     GLint loadToVao(GLfloat positions[], GLint positionsSize, GLint indices[], GLint indicesSize,
                     GLfloat textureCoords[], GLint textureSize,
                     GLfloat normals[], GLint normalsSize,
@@ -117,7 +139,7 @@ namespace core {
     /// @param positions[] Niz koordinata objekta.
     /// @param positionsSize Broj koordinata koje se nalaze u nizu pozicija.
     /// @param dimensions Dimenzija prostora.
-    /// @return RawModel* Pokazivac na instancu klase RawModel.
+    /// @return GLint Identifikator VAO-a
     ////////////////////////////////////////////////////////////////////////////
     GLint loadToVao(GLfloat positions[], GLint positionsSize, int dimensions);
 

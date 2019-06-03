@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Dokumentacija klase model::AnimatedModel</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacemodel.html">model</a></li><li class="navelem"><a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Javni članovi</a> &#124;
+<a href="#pri-attribs">Privatni članovi</a> &#124;
+<a href="classmodel_1_1AnimatedModel-members.html">Spisak svih članova</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacija klase model::AnimatedModel</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="classmodel_1_1AnimatedModel.html" title="Klasa AnimatedModel opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instanco...">AnimatedModel</a> opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instancom klase <a class="el" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo...">TexturedModel</a>, nizom glavnih kostiju i mapom animacija.  
+ <a href="classmodel_1_1AnimatedModel.html#details">Još...</a></p>
+
+<p><code>#include &lt;<a class="el" href="AnimatedModel_8h_source.html">AnimatedModel.h</a>&gt;</code></p>
+<div class="dynheader">
+Klasni dijagram za model::AnimatedModel:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmodel_1_1AnimatedModel__coll__graph.png" border="0" usemap="#model_1_1AnimatedModel_coll__map" alt="Collaboration graph"/></div>
+<map name="model_1_1AnimatedModel_coll__map" id="model_1_1AnimatedModel_coll__map">
+<area shape="rect" id="node2" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo..." alt="" coords="7,95,158,121"/>
+<area shape="rect" id="node3" href="classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="19,5,146,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Javni članovi</h2></td></tr>
+<tr class="memitem:a0255a7b4af5f8fb0f9fb7c042f7016c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#a0255a7b4af5f8fb0f9fb7c042f7016c5">AnimatedModel</a> (<a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *<a class="el" href="classmodel_1_1AnimatedModel.html#a9856ce11025686cdf78bf5729556613c">model</a>, vector&lt; <a class="el" href="classmodel_1_1Bone.html">Bone</a> *&gt; <a class="el" href="classmodel_1_1AnimatedModel.html#a26c1309582cde31ac4dfb8e2436a0cd7">rootNodes</a>, vector&lt; int &gt; <a class="el" href="classmodel_1_1AnimatedModel.html#aea55cadf949b3bd7bd5eb66d1d6ad304">bonesCount</a>)</td></tr>
+<tr class="memdesc:a0255a7b4af5f8fb0f9fb7c042f7016c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klase. U konstruktoru se modelu pridruzuju teksturisan model, lista glavnih kostiju i brojem kostiju u svakom delu modela.  <a href="#a0255a7b4af5f8fb0f9fb7c042f7016c5">Još...</a><br /></td></tr>
+<tr class="separator:a0255a7b4af5f8fb0f9fb7c042f7016c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302e899520ce6406d902aaa41be64b07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#a302e899520ce6406d902aaa41be64b07">~AnimatedModel</a> ()</td></tr>
+<tr class="memdesc:a302e899520ce6406d902aaa41be64b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klase.  <a href="#a302e899520ce6406d902aaa41be64b07">Još...</a><br /></td></tr>
+<tr class="separator:a302e899520ce6406d902aaa41be64b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad16bb9c53cb3b9bacb39e50c5ecee33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#aad16bb9c53cb3b9bacb39e50c5ecee33">getModel</a> ()</td></tr>
+<tr class="memdesc:aad16bb9c53cb3b9bacb39e50c5ecee33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca teksturisan model objekta.  <a href="#aad16bb9c53cb3b9bacb39e50c5ecee33">Još...</a><br /></td></tr>
+<tr class="separator:aad16bb9c53cb3b9bacb39e50c5ecee33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1056ac7c71920cd1ff123d372a9dd05d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel_1_1Bone.html">Bone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#a1056ac7c71920cd1ff123d372a9dd05d">getRootNode</a> (int rootBoneID)</td></tr>
+<tr class="memdesc:a1056ac7c71920cd1ff123d372a9dd05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca glavnu kost za deo modela.  <a href="#a1056ac7c71920cd1ff123d372a9dd05d">Još...</a><br /></td></tr>
+<tr class="separator:a1056ac7c71920cd1ff123d372a9dd05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1769cb021a4128bda636eab48e4c55cc"><td class="memItemLeft" align="right" valign="top">mat4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#a1769cb021a4128bda636eab48e4c55cc">getBoneTransforms</a> (int rootBoneID)</td></tr>
+<tr class="memdesc:a1769cb021a4128bda636eab48e4c55cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca matrice transformacija kostiju dela modela.  <a href="#a1769cb021a4128bda636eab48e4c55cc">Još...</a><br /></td></tr>
+<tr class="separator:a1769cb021a4128bda636eab48e4c55cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da32dc14c679424f45027fc300f3905"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#a4da32dc14c679424f45027fc300f3905">addBones</a> (<a class="el" href="classmodel_1_1Bone.html">Bone</a> *headBone, mat4 *boneMatrices)</td></tr>
+<tr class="memdesc:a4da32dc14c679424f45027fc300f3905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija dodaje matricu transformacije koske u niz matrica.  <a href="#a4da32dc14c679424f45027fc300f3905">Još...</a><br /></td></tr>
+<tr class="separator:a4da32dc14c679424f45027fc300f3905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1c3b1e93e2934ba085dd14e65e364a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classanimation_1_1Animation.html">Animation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#ada1c3b1e93e2934ba085dd14e65e364a">getAnimation</a> (string animationName)</td></tr>
+<tr class="memdesc:ada1c3b1e93e2934ba085dd14e65e364a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca animaciju iz mape animacija.  <a href="#ada1c3b1e93e2934ba085dd14e65e364a">Još...</a><br /></td></tr>
+<tr class="separator:ada1c3b1e93e2934ba085dd14e65e364a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287cf08a5abf805da23895b2fd0dabff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#a287cf08a5abf805da23895b2fd0dabff">addAnimation</a> (string animationName, <a class="el" href="classanimation_1_1Animation.html">Animation</a> *animation)</td></tr>
+<tr class="memdesc:a287cf08a5abf805da23895b2fd0dabff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija dodaje animaciju u mapu animacija.  <a href="#a287cf08a5abf805da23895b2fd0dabff">Još...</a><br /></td></tr>
+<tr class="separator:a287cf08a5abf805da23895b2fd0dabff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26d43c3b5b3a3f623418666f787565f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#ae26d43c3b5b3a3f623418666f787565f">getNumRootNodes</a> ()</td></tr>
+<tr class="memdesc:ae26d43c3b5b3a3f623418666f787565f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca vrednost privatne promenljive numRootNodes.  <a href="#ae26d43c3b5b3a3f623418666f787565f">Još...</a><br /></td></tr>
+<tr class="separator:ae26d43c3b5b3a3f623418666f787565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:a9856ce11025686cdf78bf5729556613c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#a9856ce11025686cdf78bf5729556613c">model</a></td></tr>
+<tr class="memdesc:a9856ce11025686cdf78bf5729556613c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase <a class="el" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo...">TexturedModel</a>.  <a href="#a9856ce11025686cdf78bf5729556613c">Još...</a><br /></td></tr>
+<tr class="separator:a9856ce11025686cdf78bf5729556613c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c1309582cde31ac4dfb8e2436a0cd7"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classmodel_1_1Bone.html">Bone</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#a26c1309582cde31ac4dfb8e2436a0cd7">rootNodes</a></td></tr>
+<tr class="memdesc:a26c1309582cde31ac4dfb8e2436a0cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vektor pokazivaca na instance klase <a class="el" href="classmodel_1_1Bone.html" title="Klasa Bone opisuje kost modela. Kost je opisana indeksom, imenom, listom dece, matricom transformacij...">Bone</a>.  <a href="#a26c1309582cde31ac4dfb8e2436a0cd7">Još...</a><br /></td></tr>
+<tr class="separator:a26c1309582cde31ac4dfb8e2436a0cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea55cadf949b3bd7bd5eb66d1d6ad304"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#aea55cadf949b3bd7bd5eb66d1d6ad304">bonesCount</a></td></tr>
+<tr class="memdesc:aea55cadf949b3bd7bd5eb66d1d6ad304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vektor broja kostiju.  <a href="#aea55cadf949b3bd7bd5eb66d1d6ad304">Još...</a><br /></td></tr>
+<tr class="separator:aea55cadf949b3bd7bd5eb66d1d6ad304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae366eb62ff617640a6b7a4aee86ff273"><td class="memItemLeft" align="right" valign="top">map&lt; string, <a class="el" href="classanimation_1_1Animation.html">Animation</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#ae366eb62ff617640a6b7a4aee86ff273">animations</a></td></tr>
+<tr class="memdesc:ae366eb62ff617640a6b7a4aee86ff273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapa imena animacija sa pokazivacima na instance klase Animation.  <a href="#ae366eb62ff617640a6b7a4aee86ff273">Još...</a><br /></td></tr>
+<tr class="separator:ae366eb62ff617640a6b7a4aee86ff273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0115b34f0a5c6f60e06c446ee3d7e442"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel_1_1AnimatedModel.html#a0115b34f0a5c6f60e06c446ee3d7e442">numRootNodes</a></td></tr>
+<tr class="memdesc:a0115b34f0a5c6f60e06c446ee3d7e442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broj glavnih kostiju.  <a href="#a0115b34f0a5c6f60e06c446ee3d7e442">Još...</a><br /></td></tr>
+<tr class="separator:a0115b34f0a5c6f60e06c446ee3d7e442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
+<div class="textblock"><p>Klasa <a class="el" href="classmodel_1_1AnimatedModel.html" title="Klasa AnimatedModel opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instanco...">AnimatedModel</a> opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instancom klase <a class="el" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo...">TexturedModel</a>, nizom glavnih kostiju i mapom animacija. </p>
+</div><h2 class="groupheader">Dokumentacija konstruktora i destruktora</h2>
+<a id="a0255a7b4af5f8fb0f9fb7c042f7016c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0255a7b4af5f8fb0f9fb7c042f7016c5">&#9670;&nbsp;</a></span>AnimatedModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">model::AnimatedModel::AnimatedModel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="classmodel_1_1Bone.html">Bone</a> *&gt;&#160;</td>
+          <td class="paramname"><em>rootNodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>bonesCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klase. U konstruktoru se modelu pridruzuju teksturisan model, lista glavnih kostiju i brojem kostiju u svakom delu modela. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>Pokazivac na instancu klase <a class="el" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo...">TexturedModel</a>. </td></tr>
+    <tr><td class="paramname">rootNodes</td><td>Vektor pokazivaca na instance klase <a class="el" href="classmodel_1_1Bone.html" title="Klasa Bone opisuje kost modela. Kost je opisana indeksom, imenom, listom dece, matricom transformacij...">Bone</a>. </td></tr>
+    <tr><td class="paramname">bonesCount</td><td>Vektor broja kostiju. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a302e899520ce6406d902aaa41be64b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a302e899520ce6406d902aaa41be64b07">&#9670;&nbsp;</a></span>~AnimatedModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">model::AnimatedModel::~AnimatedModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija funkcija članica</h2>
+<a id="a287cf08a5abf805da23895b2fd0dabff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a287cf08a5abf805da23895b2fd0dabff">&#9670;&nbsp;</a></span>addAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void model::AnimatedModel::addAnimation </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>animationName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classanimation_1_1Animation.html">Animation</a> *&#160;</td>
+          <td class="paramname"><em>animation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija dodaje animaciju u mapu animacija. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animationName</td><td>Ime animacije koje je kljuc mape animacija. </td></tr>
+    <tr><td class="paramname">animation</td><td>Pokazivac na instancu klase Animation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a4da32dc14c679424f45027fc300f3905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da32dc14c679424f45027fc300f3905">&#9670;&nbsp;</a></span>addBones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void model::AnimatedModel::addBones </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmodel_1_1Bone.html">Bone</a> *&#160;</td>
+          <td class="paramname"><em>headBone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mat4 *&#160;</td>
+          <td class="paramname"><em>boneMatrices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija dodaje matricu transformacije koske u niz matrica. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">headBone</td><td>Roditeljska kost. </td></tr>
+    <tr><td class="paramname">boneMatrices</td><td>Niz matrica transformacija kostiju. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ada1c3b1e93e2934ba085dd14e65e364a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1c3b1e93e2934ba085dd14e65e364a">&#9670;&nbsp;</a></span>getAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classanimation_1_1Animation.html">Animation</a> * model::AnimatedModel::getAnimation </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>animationName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca animaciju iz mape animacija. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animationName</td><td>Ime animacije koje je kljuc mape animacija. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>Animation * Pokazivac na instancu klase Animation. </dd></dl>
+
+</div>
+</div>
+<a id="a1769cb021a4128bda636eab48e4c55cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1769cb021a4128bda636eab48e4c55cc">&#9670;&nbsp;</a></span>getBoneTransforms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mat4 * model::AnimatedModel::getBoneTransforms </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rootBoneID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca matrice transformacija kostiju dela modela. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rootBoneID</td><td>Identifikator dela modela za koji se traze matrice. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>mat4 * Niz matrica transformacija kostiju. </dd></dl>
+
+</div>
+</div>
+<a id="aad16bb9c53cb3b9bacb39e50c5ecee33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad16bb9c53cb3b9bacb39e50c5ecee33">&#9670;&nbsp;</a></span>getModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> * model::AnimatedModel::getModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca teksturisan model objekta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd><a class="el" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo...">TexturedModel</a> Pokazivac na instancu klase <a class="el" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo...">TexturedModel</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ae26d43c3b5b3a3f623418666f787565f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26d43c3b5b3a3f623418666f787565f">&#9670;&nbsp;</a></span>getNumRootNodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int model::AnimatedModel::getNumRootNodes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca vrednost privatne promenljive numRootNodes. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>int Broj glavnih kostiju. </dd></dl>
+
+</div>
+</div>
+<a id="a1056ac7c71920cd1ff123d372a9dd05d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1056ac7c71920cd1ff123d372a9dd05d">&#9670;&nbsp;</a></span>getRootNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmodel_1_1Bone.html">Bone</a> * model::AnimatedModel::getRootNode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rootBoneID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca glavnu kost za deo modela. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rootBoneID</td><td>Identifikator dela modela za koji se trazi glavna kost. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd><a class="el" href="classmodel_1_1Bone.html" title="Klasa Bone opisuje kost modela. Kost je opisana indeksom, imenom, listom dece, matricom transformacij...">Bone</a> * Pokazivac na instancu klase <a class="el" href="classmodel_1_1Bone.html" title="Klasa Bone opisuje kost modela. Kost je opisana indeksom, imenom, listom dece, matricom transformacij...">Bone</a>. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija atributa</h2>
+<a id="ae366eb62ff617640a6b7a4aee86ff273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae366eb62ff617640a6b7a4aee86ff273">&#9670;&nbsp;</a></span>animations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string, <a class="el" href="classanimation_1_1Animation.html">Animation</a>*&gt; model::AnimatedModel::animations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mapa imena animacija sa pokazivacima na instance klase Animation. </p>
+
+</div>
+</div>
+<a id="aea55cadf949b3bd7bd5eb66d1d6ad304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea55cadf949b3bd7bd5eb66d1d6ad304">&#9670;&nbsp;</a></span>bonesCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;int&gt; model::AnimatedModel::bonesCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vektor broja kostiju. </p>
+
+</div>
+</div>
+<a id="a9856ce11025686cdf78bf5729556613c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9856ce11025686cdf78bf5729556613c">&#9670;&nbsp;</a></span>model</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a>* model::AnimatedModel::model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase <a class="el" href="classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo...">TexturedModel</a>. </p>
+
+</div>
+</div>
+<a id="a0115b34f0a5c6f60e06c446ee3d7e442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0115b34f0a5c6f60e06c446ee3d7e442">&#9670;&nbsp;</a></span>numRootNodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int model::AnimatedModel::numRootNodes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Broj glavnih kostiju. </p>
+
+</div>
+</div>
+<a id="a26c1309582cde31ac4dfb8e2436a0cd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c1309582cde31ac4dfb8e2436a0cd7">&#9670;&nbsp;</a></span>rootNodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="classmodel_1_1Bone.html">Bone</a> *&gt; model::AnimatedModel::rootNodes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vektor pokazivaca na instance klase <a class="el" href="classmodel_1_1Bone.html" title="Klasa Bone opisuje kost modela. Kost je opisana indeksom, imenom, listom dece, matricom transformacij...">Bone</a>. </p>
+
+</div>
+</div>
+<hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/include/model/<a class="el" href="AnimatedModel_8h_source.html">AnimatedModel.h</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/src/model/<a class="el" href="AnimatedModel_8cpp.html">AnimatedModel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

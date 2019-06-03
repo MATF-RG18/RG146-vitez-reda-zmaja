@@ -1,23 +1,39 @@
-<map id="/home/dusan/Documents/Projects/RG102&#45;vitez&#45;reda&#45;zmaja/include/core/VaoLoader.h" name="/home/dusan/Documents/Projects/RG102&#45;vitez&#45;reda&#45;zmaja/include/core/VaoLoader.h">
-<area shape="rect" id="node2" href="$Engine_8h.html" title="Deklaracija klase Engine i deklaracija callback funkcija. " alt="" coords="863,836,1031,907"/>
-<area shape="rect" id="node4" href="$Terrain_8h.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/include/terrain\l/Terrain.h" alt="" coords="693,124,868,195"/>
-<area shape="rect" id="node20" href="$ObjLoader_8h.html" title="Deklaracija klase Render. " alt="" coords="1117,124,1285,195"/>
-<area shape="rect" id="node22" href="$VaoLoader_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/core/VaoLoader.cpp" alt="" coords="1390,131,1622,187"/>
-<area shape="rect" id="node3" href="$Engine_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/core/Engine.cpp" alt="" coords="842,955,1053,1011"/>
-<area shape="rect" id="node5" href="$Player_8h.html" title="Deklaracija klase Player. " alt="" coords="791,243,962,313"/>
-<area shape="rect" id="node14" href="$TerrainRenderer_8h.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/include/core\l/TerrainRenderer.h" alt="" coords="14,599,182,669"/>
-<area shape="rect" id="node19" href="$Terrain_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/terrain\l/Terrain.cpp" alt="" coords="599,243,767,313"/>
-<area shape="rect" id="node6" href="$Camera_8h.html" title="Deklaracija klase Camera. " alt="" coords="598,361,769,432"/>
-<area shape="rect" id="node18" href="$Player_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/entity\l/Player.cpp" alt="" coords="793,361,961,432"/>
-<area shape="rect" id="node7" href="$Shader_8h.html" title="Deklaracija klase Shader. " alt="" coords="497,480,675,551"/>
-<area shape="rect" id="node13" href="$TerrainShader_8h.html" title="Deklaracija klase TerrainShader. " alt="" coords="222,480,401,551"/>
-<area shape="rect" id="node17" href="$Camera_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/entity\l/Camera.cpp" alt="" coords="699,480,867,551"/>
-<area shape="rect" id="node8" href="$Render_8h.html" title="Deklaracija klase Render. " alt="" coords="550,599,718,669"/>
-<area shape="rect" id="node9" href="$MainRenderer_8h.html" title="Deklaracija klase Render. " alt="" coords="307,717,475,788"/>
-<area shape="rect" id="node12" href="$Shader_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/shader\l/Shader.cpp" alt="" coords="742,599,910,669"/>
-<area shape="rect" id="node11" href="$Render_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/core/Render.cpp" alt="" coords="671,725,883,781"/>
-<area shape="rect" id="node10" href="$MainRenderer_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/core/MainRenderer.cpp" alt="" coords="266,843,517,899"/>
-<area shape="rect" id="node16" href="$TerrainShader_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/shader\l/TerrainShader.cpp" alt="" coords="257,599,425,669"/>
-<area shape="rect" id="node15" href="$TerrainRenderer_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/core/Terrain\lRenderer.cpp" alt="" coords="5,717,191,788"/>
-<area shape="rect" id="node21" href="$ObjLoader_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/core/ObjLoader.cpp" alt="" coords="1086,250,1315,306"/>
+<map id="/home/dusan/Documents/RG146&#45;vitez&#45;reda&#45;zmaja/include/core/VaoLoader.h" name="/home/dusan/Documents/RG146&#45;vitez&#45;reda&#45;zmaja/include/core/VaoLoader.h">
+<area shape="rect" id="node2" href="$Terrain_8h.html" title="Deklaracija klase Terrain. " alt="" coords="1049,109,1217,165"/>
+<area shape="rect" id="node8" href="$MainRenderer_8h.html" title="Deklaracija klase Render. " alt="" coords="885,629,1077,685"/>
+<area shape="rect" id="node9" href="$Engine_8h.html" title="Deklaracija klase Engine i deklaracija callback funkcija. " alt="" coords="2554,733,2722,789"/>
+<area shape="rect" id="node22" href="$SkyboxRenderer_8h.html" title="Deklaracija klase SkyboxRenderer. " alt="" coords="48,525,256,581"/>
+<area shape="rect" id="node34" href="$Loader_8h.html" title="Deklaracija klase Loader. " alt="" coords="2534,109,2702,165"/>
+<area shape="rect" id="node36" href="$HudRenderer_8h.html" title="Deklaracija klase HudRenderer. " alt="" coords="2749,109,2933,165"/>
+<area shape="rect" id="node38" href="$VaoLoader_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/VaoLoader.cpp" alt="" coords="2957,109,3125,165"/>
+<area shape="rect" id="node3" href="$Player_8h.html" title="Deklaracija klase Player. " alt="" coords="1440,213,1608,269"/>
+<area shape="rect" id="node18" href="$TerrainRenderer_8h.html" title="Deklaracija klase TerrainRenderer. " alt="" coords="506,525,710,581"/>
+<area shape="rect" id="node33" href="$Terrain_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/terrain/Terrain.cpp" alt="" coords="537,213,705,269"/>
+<area shape="rect" id="node4" href="$Camera_8h.html" title="Deklaracija klase Camera. " alt="" coords="1536,317,1704,373"/>
+<area shape="rect" id="node32" href="$Player_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/entity/Player.cpp" alt="" coords="1344,317,1512,373"/>
+<area shape="rect" id="node5" href="$AnimatedModelShader_8h.html" title="Deklaracija klase AnimatedModelShader. " alt="" coords="1192,421,1448,477"/>
+<area shape="rect" id="node13" href="$Shader_8h.html" title="Deklaracija klase Shader. " alt="" coords="1849,421,2017,477"/>
+<area shape="rect" id="node17" href="$TerrainShader_8h.html" title="Deklaracija klase TerrainShader. " alt="" coords="780,421,987,477"/>
+<area shape="rect" id="node21" href="$SkyboxShader_8h.html" title="Deklaracija klase SkyboxShader. " alt="" coords="276,421,486,477"/>
+<area shape="rect" id="node25" href="$ParticleRenderer_8h.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/include/particle/ParticleRenderer.h" alt="" coords="2138,421,2363,477"/>
+<area shape="rect" id="node31" href="$Camera_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/entity/Camera.cpp" alt="" coords="1657,421,1825,477"/>
+<area shape="rect" id="node6" href="$AnimatedModelRenderer_8h.html" title="Deklaracija klase AnimatedModelRenderer. " alt="" coords="1058,525,1312,581"/>
+<area shape="rect" id="node12" href="$AnimatedModelShader_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/shader/AnimatedModelShader.cpp" alt="" coords="1336,525,1583,581"/>
+<area shape="rect" id="node7" href="$AnimatedModelRenderer_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/AnimatedModelRenderer.cpp" alt="" coords="1101,629,1346,685"/>
+<area shape="rect" id="node11" href="$MainRenderer_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/MainRenderer.cpp" alt="" coords="890,733,1072,789"/>
+<area shape="rect" id="node10" href="$Engine_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/Engine.cpp" alt="" coords="2554,837,2722,893"/>
+<area shape="rect" id="node14" href="$Render_8h.html" title="Deklaracija klase Render. " alt="" coords="1900,525,2068,581"/>
+<area shape="rect" id="node16" href="$Shader_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/shader/Shader.cpp" alt="" coords="1708,525,1876,581"/>
+<area shape="rect" id="node15" href="$Render_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/Render.cpp" alt="" coords="1849,629,2017,685"/>
+<area shape="rect" id="node20" href="$TerrainShader_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/shader/TerrainShader.cpp" alt="" coords="785,525,982,581"/>
+<area shape="rect" id="node19" href="$TerrainRenderer_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/TerrainRenderer.cpp" alt="" coords="510,629,705,685"/>
+<area shape="rect" id="node24" href="$SkyboxShader_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/shader/SkyboxShader.cpp" alt="" coords="280,525,482,581"/>
+<area shape="rect" id="node23" href="$SkyboxRenderer_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/SkyboxRenderer.cpp" alt="" coords="52,629,251,685"/>
+<area shape="rect" id="node26" href="$ParticleHandler_8h.html" title="Deklaracija klase ParticleHandler. " alt="" coords="2383,525,2600,581"/>
+<area shape="rect" id="node30" href="$ParticleRenderer_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/particle/ParticleRenderer.cpp" alt="" coords="2142,525,2358,581"/>
+<area shape="rect" id="node27" href="$WeatherSystem_8h.html" title="Deklaracija klase WeatherSystem. " alt="" coords="2776,629,2999,685"/>
+<area shape="rect" id="node29" href="$ParticleHandler_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/particle/ParticleHandler.cpp" alt="" coords="2388,629,2596,685"/>
+<area shape="rect" id="node28" href="$WeatherSystem_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/particle/WeatherSystem.cpp" alt="" coords="2781,733,2994,789"/>
+<area shape="rect" id="node35" href="$Loader_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/Loader.cpp" alt="" coords="2534,213,2702,269"/>
+<area shape="rect" id="node37" href="$HudRenderer_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/hud/HudRenderer.cpp" alt="" coords="2778,213,2952,269"/>
 </map>

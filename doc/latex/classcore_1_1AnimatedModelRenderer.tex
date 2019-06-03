@@ -1,0 +1,230 @@
+\hypertarget{classcore_1_1AnimatedModelRenderer}{}\section{Dokumentacija klase core\+:\+:Animated\+Model\+Renderer}
+\label{classcore_1_1AnimatedModelRenderer}\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+
+
+Klasa \hyperlink{classcore_1_1Render}{Render} je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran.  
+
+
+
+
+{\ttfamily \#include $<$Animated\+Model\+Renderer.\+h$>$}
+
+
+
+Klasni dijagram za core\+:\+:Animated\+Model\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classcore_1_1AnimatedModelRenderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcore_1_1AnimatedModelRenderer_abb8518841908e242c3112ad872c5d8cb}{Animated\+Model\+Renderer} (\hyperlink{classshader_1_1AnimatedModelShader}{Animated\+Model\+Shader} $\ast$\hyperlink{classcore_1_1AnimatedModelRenderer_acb2349d2a687cead94b8538731cd436a}{shader})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classcore_1_1AnimatedModelRenderer_aa04751cf1a8d43e45859b56621017602}{$\sim$\+Animated\+Model\+Renderer} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1AnimatedModelRenderer_ab6e05f6e3eada213e56938cd0b929ebe}{render} (map$<$ \hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$, list$<$ \hyperlink{classentity_1_1AnimatedEntity}{Animated\+Entity} $\ast$$>$$>$ entities)
+\begin{DoxyCompactList}\small\item\em Funkcija iscrtava sve entitete i animirane modele koje im odgovaraju. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1AnimatedModelRenderer_a8b495a2557e6ca557dfd5129a6400958}{draw\+Animated\+Model} (\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$\hyperlink{namespacecore_aa1479d4ed4dadbfe085b26662122b68a}{model})
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava teksture modela i iscrtava sve njegove delove. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1AnimatedModelRenderer_a55f3ffa2f9ec2fc7b2f47691316cf87c}{unbind\+Animated\+Model} ()
+\begin{DoxyCompactList}\small\item\em Funkcija otkacinje vezu izmedju podataka animiranog modela i programa. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1AnimatedModelRenderer_af16329ff35cbfd45aae572e85e7d5f0d}{prepare\+Instance} (\hyperlink{classentity_1_1AnimatedEntity}{Animated\+Entity} $\ast$\hyperlink{namespacecore_aa710c0ea388433d2d80d1d1c67582eda}{entity})
+\begin{DoxyCompactList}\small\item\em Funkcija kreira matricu transformacije za entitet i ucitava je u sejder program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+mat4 \hyperlink{classcore_1_1AnimatedModelRenderer_a937c6ee9822091b28bbd33c7830070d1}{create\+Projection\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Funkcija kreira matricu projekcije. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classcore_1_1AnimatedModelRenderer_a6e6bdd3332f1444de611866c39820939}{F\+OV} = 70
+\begin{DoxyCompactList}\small\item\em Polje vidika. \end{DoxyCompactList}\item 
+float \hyperlink{classcore_1_1AnimatedModelRenderer_ae1866e112d319afa80dc143dca02e921}{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE} = 0.\+1
+\begin{DoxyCompactList}\small\item\em Prednji deo vidljivosti. \end{DoxyCompactList}\item 
+float \hyperlink{classcore_1_1AnimatedModelRenderer_a2266704b843367472fcb7cb56d17f3cf}{F\+A\+R\+\_\+\+P\+L\+A\+NE} = 1000
+\begin{DoxyCompactList}\small\item\em Zadnji deo vidljivosti. \end{DoxyCompactList}\item 
+\hyperlink{classshader_1_1AnimatedModelShader}{Animated\+Model\+Shader} $\ast$ \hyperlink{classcore_1_1AnimatedModelRenderer_acb2349d2a687cead94b8538731cd436a}{shader}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Animated\+Model\+Shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classcore_1_1Render}{Render} je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classcore_1_1AnimatedModelRenderer_abb8518841908e242c3112ad872c5d8cb}\label{classcore_1_1AnimatedModelRenderer_abb8518841908e242c3112ad872c5d8cb}} 
+\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}!Animated\+Model\+Renderer@{Animated\+Model\+Renderer}}
+\index{Animated\+Model\+Renderer@{Animated\+Model\+Renderer}!core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{Animated\+Model\+Renderer()}{AnimatedModelRenderer()}}
+{\footnotesize\ttfamily core\+::\+Animated\+Model\+Renderer\+::\+Animated\+Model\+Renderer (\begin{DoxyParamCaption}\item[{\hyperlink{classshader_1_1AnimatedModelShader}{Animated\+Model\+Shader} $\ast$}]{shader }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em shader} & Pokazivac na instancu klase Animated\+Model\+Shader. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1AnimatedModelRenderer_aa04751cf1a8d43e45859b56621017602}\label{classcore_1_1AnimatedModelRenderer_aa04751cf1a8d43e45859b56621017602}} 
+\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}!````~Animated\+Model\+Renderer@{$\sim$\+Animated\+Model\+Renderer}}
+\index{````~Animated\+Model\+Renderer@{$\sim$\+Animated\+Model\+Renderer}!core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Animated\+Model\+Renderer()}{~AnimatedModelRenderer()}}
+{\footnotesize\ttfamily core\+::\+Animated\+Model\+Renderer\+::$\sim$\+Animated\+Model\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classcore_1_1AnimatedModelRenderer_a937c6ee9822091b28bbd33c7830070d1}\label{classcore_1_1AnimatedModelRenderer_a937c6ee9822091b28bbd33c7830070d1}} 
+\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}!create\+Projection\+Matrix@{create\+Projection\+Matrix}}
+\index{create\+Projection\+Matrix@{create\+Projection\+Matrix}!core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{create\+Projection\+Matrix()}{createProjectionMatrix()}}
+{\footnotesize\ttfamily mat4 core\+::\+Animated\+Model\+Renderer\+::create\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija kreira matricu projekcije. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+mat4 Matrica projekcije. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1AnimatedModelRenderer_a8b495a2557e6ca557dfd5129a6400958}\label{classcore_1_1AnimatedModelRenderer_a8b495a2557e6ca557dfd5129a6400958}} 
+\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}!draw\+Animated\+Model@{draw\+Animated\+Model}}
+\index{draw\+Animated\+Model@{draw\+Animated\+Model}!core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{draw\+Animated\+Model()}{drawAnimatedModel()}}
+{\footnotesize\ttfamily void core\+::\+Animated\+Model\+Renderer\+::draw\+Animated\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$}]{model }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava teksture modela i iscrtava sve njegove delove. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em model} & Pokazivac na instancu klase Animated\+Model. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1AnimatedModelRenderer_af16329ff35cbfd45aae572e85e7d5f0d}\label{classcore_1_1AnimatedModelRenderer_af16329ff35cbfd45aae572e85e7d5f0d}} 
+\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}!prepare\+Instance@{prepare\+Instance}}
+\index{prepare\+Instance@{prepare\+Instance}!core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{prepare\+Instance()}{prepareInstance()}}
+{\footnotesize\ttfamily void core\+::\+Animated\+Model\+Renderer\+::prepare\+Instance (\begin{DoxyParamCaption}\item[{\hyperlink{classentity_1_1AnimatedEntity}{Animated\+Entity} $\ast$}]{entity }\end{DoxyParamCaption})}
+
+
+
+Funkcija kreira matricu transformacije za entitet i ucitava je u sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em entity} & Pokazivac na instancu klase Animated\+Entity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1AnimatedModelRenderer_ab6e05f6e3eada213e56938cd0b929ebe}\label{classcore_1_1AnimatedModelRenderer_ab6e05f6e3eada213e56938cd0b929ebe}} 
+\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}!render@{render}}
+\index{render@{render}!core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void core\+::\+Animated\+Model\+Renderer\+::render (\begin{DoxyParamCaption}\item[{map$<$ \hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$, list$<$ \hyperlink{classentity_1_1AnimatedEntity}{Animated\+Entity} $\ast$$>$$>$}]{entities }\end{DoxyParamCaption})}
+
+
+
+Funkcija iscrtava sve entitete i animirane modele koje im odgovaraju. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em entities} & Hes mapa animiranih modela i lista entiteta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1AnimatedModelRenderer_a55f3ffa2f9ec2fc7b2f47691316cf87c}\label{classcore_1_1AnimatedModelRenderer_a55f3ffa2f9ec2fc7b2f47691316cf87c}} 
+\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}!unbind\+Animated\+Model@{unbind\+Animated\+Model}}
+\index{unbind\+Animated\+Model@{unbind\+Animated\+Model}!core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{unbind\+Animated\+Model()}{unbindAnimatedModel()}}
+{\footnotesize\ttfamily void core\+::\+Animated\+Model\+Renderer\+::unbind\+Animated\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija otkacinje vezu izmedju podataka animiranog modela i programa. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classcore_1_1AnimatedModelRenderer_a2266704b843367472fcb7cb56d17f3cf}\label{classcore_1_1AnimatedModelRenderer_a2266704b843367472fcb7cb56d17f3cf}} 
+\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}!F\+A\+R\+\_\+\+P\+L\+A\+NE@{F\+A\+R\+\_\+\+P\+L\+A\+NE}}
+\index{F\+A\+R\+\_\+\+P\+L\+A\+NE@{F\+A\+R\+\_\+\+P\+L\+A\+NE}!core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{F\+A\+R\+\_\+\+P\+L\+A\+NE}{FAR\_PLANE}}
+{\footnotesize\ttfamily float core\+::\+Animated\+Model\+Renderer\+::\+F\+A\+R\+\_\+\+P\+L\+A\+NE = 1000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zadnji deo vidljivosti. 
+
+\mbox{\Hypertarget{classcore_1_1AnimatedModelRenderer_a6e6bdd3332f1444de611866c39820939}\label{classcore_1_1AnimatedModelRenderer_a6e6bdd3332f1444de611866c39820939}} 
+\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}!F\+OV@{F\+OV}}
+\index{F\+OV@{F\+OV}!core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{F\+OV}{FOV}}
+{\footnotesize\ttfamily float core\+::\+Animated\+Model\+Renderer\+::\+F\+OV = 70\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Polje vidika. 
+
+\mbox{\Hypertarget{classcore_1_1AnimatedModelRenderer_ae1866e112d319afa80dc143dca02e921}\label{classcore_1_1AnimatedModelRenderer_ae1866e112d319afa80dc143dca02e921}} 
+\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}!N\+E\+A\+R\+\_\+\+P\+L\+A\+NE@{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}}
+\index{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE@{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}!core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}{NEAR\_PLANE}}
+{\footnotesize\ttfamily float core\+::\+Animated\+Model\+Renderer\+::\+N\+E\+A\+R\+\_\+\+P\+L\+A\+NE = 0.\+1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prednji deo vidljivosti. 
+
+\mbox{\Hypertarget{classcore_1_1AnimatedModelRenderer_acb2349d2a687cead94b8538731cd436a}\label{classcore_1_1AnimatedModelRenderer_acb2349d2a687cead94b8538731cd436a}} 
+\index{core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}!shader@{shader}}
+\index{shader@{shader}!core\+::\+Animated\+Model\+Renderer@{core\+::\+Animated\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{shader}{shader}}
+{\footnotesize\ttfamily \hyperlink{classshader_1_1AnimatedModelShader}{Animated\+Model\+Shader}$\ast$ core\+::\+Animated\+Model\+Renderer\+::shader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Animated\+Model\+Shader. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/core/\hyperlink{AnimatedModelRenderer_8h}{Animated\+Model\+Renderer.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/core/\hyperlink{AnimatedModelRenderer_8cpp}{Animated\+Model\+Renderer.\+cpp}\end{DoxyCompactItemize}

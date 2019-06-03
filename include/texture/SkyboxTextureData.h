@@ -73,6 +73,7 @@ namespace texture {
             ////////////////////////////////////////////////////////////////////////////
             unsigned char *getBuffer();
     };
+    
 } // texture
 
 #endif

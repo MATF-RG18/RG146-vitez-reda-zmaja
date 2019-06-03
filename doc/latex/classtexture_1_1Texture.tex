@@ -1,0 +1,309 @@
+\hypertarget{classtexture_1_1Texture}{}\section{Dokumentacija klase texture\+:\+:Texture}
+\label{classtexture_1_1Texture}\index{texture\+::\+Texture@{texture\+::\+Texture}}
+
+
+Klasa Textured\+Model opisuje teksturu objekta. Model je opisan instancom klase Raw\+Model i odgovarajucom teksturom objekta pomocu instance klase \hyperlink{classtexture_1_1Texture}{Texture}.  
+
+
+
+
+{\ttfamily \#include $<$Texture.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtexture_1_1Texture_a3de34511b42d770506bddaa58875eb3d}{Texture} (int id)
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se dodeljuje identifikator teksture ucitana iz png fajla. \end{DoxyCompactList}\item 
+\hyperlink{classtexture_1_1Texture_a78ee86dc34523d645ea009de0b01ed45}{$\sim$\+Texture} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+int \hyperlink{classtexture_1_1Texture_ad68f41e90862c73b209743625b64dffa}{get\+ID} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca identifikator teksture. \end{DoxyCompactList}\item 
+float \hyperlink{classtexture_1_1Texture_a9a7667b3a055b2e0c27c2490d4ab4e7e}{get\+Shine} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca intenzitet sjaja. \end{DoxyCompactList}\item 
+float \hyperlink{classtexture_1_1Texture_a0c2fb82845e340acced35d96a80bbb25}{get\+Reflectivity} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca intenzitet reflektovanja. \end{DoxyCompactList}\item 
+bool \hyperlink{classtexture_1_1Texture_af200f2548ab2379026b6b234d53e6e18}{get\+Has\+Transparency} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca prozirnost. \end{DoxyCompactList}\item 
+bool \hyperlink{classtexture_1_1Texture_adba4e7c4fa1d9cf6691af081c63bf962}{get\+Use\+Fake\+Lightning} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca koriscenje laznog osvetljenja. \end{DoxyCompactList}\item 
+void \hyperlink{classtexture_1_1Texture_a46165b592ed1f20ef8b5409dce41300d}{set\+Shine} (float \hyperlink{classtexture_1_1Texture_abf70b1d80fb1df005deb34561467d740}{shine})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja intenzitet sjaja. \end{DoxyCompactList}\item 
+void \hyperlink{classtexture_1_1Texture_aff2b95ba459704df9e0cb83f753c03e9}{set\+Reflectivity} (float \hyperlink{classtexture_1_1Texture_aa7e9fa291399f6f0e82ba94af7bc221f}{reflectivity})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja intenzitet reflektovanja. \end{DoxyCompactList}\item 
+void \hyperlink{classtexture_1_1Texture_a31e8e44a5b4fe35c5f5b46232203748b}{set\+Has\+Transparency} (bool transparency)
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja prozirnost. \end{DoxyCompactList}\item 
+void \hyperlink{classtexture_1_1Texture_af5e98e7311d5c9aab742d58b6f9918a8}{set\+Use\+Fake\+Lightning} (bool lightning)
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja koriscenje laznog osvetljenja. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtexture_1_1Texture_a7fe8db510038a2bd30a32676a20418bb}{texture\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator teksture. \end{DoxyCompactList}\item 
+float \hyperlink{classtexture_1_1Texture_abf70b1d80fb1df005deb34561467d740}{shine}
+\begin{DoxyCompactList}\small\item\em Intenzitet sjaja. \end{DoxyCompactList}\item 
+float \hyperlink{classtexture_1_1Texture_aa7e9fa291399f6f0e82ba94af7bc221f}{reflectivity}
+\begin{DoxyCompactList}\small\item\em Intenzitet reflektovanja svetlosti. \end{DoxyCompactList}\item 
+bool \hyperlink{classtexture_1_1Texture_ae21644c129b699d28722f86fe098b028}{has\+Transparency}
+\begin{DoxyCompactList}\small\item\em Providnost. \end{DoxyCompactList}\item 
+bool \hyperlink{classtexture_1_1Texture_ac8ea906062f8a7c558134072955af52f}{use\+Fake\+Lightning}
+\begin{DoxyCompactList}\small\item\em Koriscenje laznog osvetljenja. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa Textured\+Model opisuje teksturu objekta. Model je opisan instancom klase Raw\+Model i odgovarajucom teksturom objekta pomocu instance klase \hyperlink{classtexture_1_1Texture}{Texture}. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classtexture_1_1Texture_a3de34511b42d770506bddaa58875eb3d}\label{classtexture_1_1Texture_a3de34511b42d770506bddaa58875eb3d}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{Texture()}{Texture()}}
+{\footnotesize\ttfamily texture\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. U konstruktoru se dodeljuje identifikator teksture ucitana iz png fajla. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em id} & Identifikator teksture. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtexture_1_1Texture_a78ee86dc34523d645ea009de0b01ed45}\label{classtexture_1_1Texture_a78ee86dc34523d645ea009de0b01ed45}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!````~Texture@{$\sim$\+Texture}}
+\index{````~Texture@{$\sim$\+Texture}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{$\sim$\+Texture()}{~Texture()}}
+{\footnotesize\ttfamily texture\+::\+Texture\+::$\sim$\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classtexture_1_1Texture_af200f2548ab2379026b6b234d53e6e18}\label{classtexture_1_1Texture_af200f2548ab2379026b6b234d53e6e18}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!get\+Has\+Transparency@{get\+Has\+Transparency}}
+\index{get\+Has\+Transparency@{get\+Has\+Transparency}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{get\+Has\+Transparency()}{getHasTransparency()}}
+{\footnotesize\ttfamily bool texture\+::\+Texture\+::get\+Has\+Transparency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca prozirnost. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+bool Prozirnost. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtexture_1_1Texture_ad68f41e90862c73b209743625b64dffa}\label{classtexture_1_1Texture_ad68f41e90862c73b209743625b64dffa}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int texture\+::\+Texture\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca identifikator teksture. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Identifikator teksture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtexture_1_1Texture_a0c2fb82845e340acced35d96a80bbb25}\label{classtexture_1_1Texture_a0c2fb82845e340acced35d96a80bbb25}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!get\+Reflectivity@{get\+Reflectivity}}
+\index{get\+Reflectivity@{get\+Reflectivity}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{get\+Reflectivity()}{getReflectivity()}}
+{\footnotesize\ttfamily float texture\+::\+Texture\+::get\+Reflectivity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca intenzitet reflektovanja. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Intenzitet reflektovanja. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtexture_1_1Texture_a9a7667b3a055b2e0c27c2490d4ab4e7e}\label{classtexture_1_1Texture_a9a7667b3a055b2e0c27c2490d4ab4e7e}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!get\+Shine@{get\+Shine}}
+\index{get\+Shine@{get\+Shine}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{get\+Shine()}{getShine()}}
+{\footnotesize\ttfamily float texture\+::\+Texture\+::get\+Shine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca intenzitet sjaja. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Intenzitet sjaja. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtexture_1_1Texture_adba4e7c4fa1d9cf6691af081c63bf962}\label{classtexture_1_1Texture_adba4e7c4fa1d9cf6691af081c63bf962}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!get\+Use\+Fake\+Lightning@{get\+Use\+Fake\+Lightning}}
+\index{get\+Use\+Fake\+Lightning@{get\+Use\+Fake\+Lightning}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{get\+Use\+Fake\+Lightning()}{getUseFakeLightning()}}
+{\footnotesize\ttfamily bool texture\+::\+Texture\+::get\+Use\+Fake\+Lightning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca koriscenje laznog osvetljenja. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+bool Koriscenje laznog osvetljenja. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtexture_1_1Texture_a31e8e44a5b4fe35c5f5b46232203748b}\label{classtexture_1_1Texture_a31e8e44a5b4fe35c5f5b46232203748b}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!set\+Has\+Transparency@{set\+Has\+Transparency}}
+\index{set\+Has\+Transparency@{set\+Has\+Transparency}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{set\+Has\+Transparency()}{setHasTransparency()}}
+{\footnotesize\ttfamily void texture\+::\+Texture\+::set\+Has\+Transparency (\begin{DoxyParamCaption}\item[{bool}]{transparency }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja prozirnost. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em transparency} & Prozirnost. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtexture_1_1Texture_aff2b95ba459704df9e0cb83f753c03e9}\label{classtexture_1_1Texture_aff2b95ba459704df9e0cb83f753c03e9}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!set\+Reflectivity@{set\+Reflectivity}}
+\index{set\+Reflectivity@{set\+Reflectivity}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{set\+Reflectivity()}{setReflectivity()}}
+{\footnotesize\ttfamily void texture\+::\+Texture\+::set\+Reflectivity (\begin{DoxyParamCaption}\item[{float}]{reflectivity }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja intenzitet reflektovanja. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em reflectivity} & Intenzitet reflektovanja. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtexture_1_1Texture_a46165b592ed1f20ef8b5409dce41300d}\label{classtexture_1_1Texture_a46165b592ed1f20ef8b5409dce41300d}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!set\+Shine@{set\+Shine}}
+\index{set\+Shine@{set\+Shine}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{set\+Shine()}{setShine()}}
+{\footnotesize\ttfamily void texture\+::\+Texture\+::set\+Shine (\begin{DoxyParamCaption}\item[{float}]{shine }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja intenzitet sjaja. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em shine} & Intenzitet sjaja. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtexture_1_1Texture_af5e98e7311d5c9aab742d58b6f9918a8}\label{classtexture_1_1Texture_af5e98e7311d5c9aab742d58b6f9918a8}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!set\+Use\+Fake\+Lightning@{set\+Use\+Fake\+Lightning}}
+\index{set\+Use\+Fake\+Lightning@{set\+Use\+Fake\+Lightning}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{set\+Use\+Fake\+Lightning()}{setUseFakeLightning()}}
+{\footnotesize\ttfamily void texture\+::\+Texture\+::set\+Use\+Fake\+Lightning (\begin{DoxyParamCaption}\item[{bool}]{lightning }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja koriscenje laznog osvetljenja. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em lightning} & Koriscenje laznog osvetljenja. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classtexture_1_1Texture_ae21644c129b699d28722f86fe098b028}\label{classtexture_1_1Texture_ae21644c129b699d28722f86fe098b028}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!has\+Transparency@{has\+Transparency}}
+\index{has\+Transparency@{has\+Transparency}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{has\+Transparency}{hasTransparency}}
+{\footnotesize\ttfamily bool texture\+::\+Texture\+::has\+Transparency\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Providnost. 
+
+\mbox{\Hypertarget{classtexture_1_1Texture_aa7e9fa291399f6f0e82ba94af7bc221f}\label{classtexture_1_1Texture_aa7e9fa291399f6f0e82ba94af7bc221f}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!reflectivity@{reflectivity}}
+\index{reflectivity@{reflectivity}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{reflectivity}{reflectivity}}
+{\footnotesize\ttfamily float texture\+::\+Texture\+::reflectivity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Intenzitet reflektovanja svetlosti. 
+
+\mbox{\Hypertarget{classtexture_1_1Texture_abf70b1d80fb1df005deb34561467d740}\label{classtexture_1_1Texture_abf70b1d80fb1df005deb34561467d740}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!shine@{shine}}
+\index{shine@{shine}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{shine}{shine}}
+{\footnotesize\ttfamily float texture\+::\+Texture\+::shine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Intenzitet sjaja. 
+
+\mbox{\Hypertarget{classtexture_1_1Texture_a7fe8db510038a2bd30a32676a20418bb}\label{classtexture_1_1Texture_a7fe8db510038a2bd30a32676a20418bb}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!texture\+ID@{texture\+ID}}
+\index{texture\+ID@{texture\+ID}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{texture\+ID}{textureID}}
+{\footnotesize\ttfamily int texture\+::\+Texture\+::texture\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator teksture. 
+
+\mbox{\Hypertarget{classtexture_1_1Texture_ac8ea906062f8a7c558134072955af52f}\label{classtexture_1_1Texture_ac8ea906062f8a7c558134072955af52f}} 
+\index{texture\+::\+Texture@{texture\+::\+Texture}!use\+Fake\+Lightning@{use\+Fake\+Lightning}}
+\index{use\+Fake\+Lightning@{use\+Fake\+Lightning}!texture\+::\+Texture@{texture\+::\+Texture}}
+\subsubsection{\texorpdfstring{use\+Fake\+Lightning}{useFakeLightning}}
+{\footnotesize\ttfamily bool texture\+::\+Texture\+::use\+Fake\+Lightning\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Koriscenje laznog osvetljenja. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/texture/\hyperlink{Texture_8h}{Texture.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/texture/\hyperlink{Texture_8cpp}{Texture.\+cpp}\end{DoxyCompactItemize}

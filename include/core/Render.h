@@ -83,7 +83,7 @@ namespace core {
     void render(map<TexturedModel *, list<Entity *>> entities);
 
     ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija ucitava teksture entiteta.
+    /// @brief Funkcija ucitava teksture modela i iscrtava sve njegove delove.
     /// @param model Pokazivac na instancu klase TexturedModel.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////

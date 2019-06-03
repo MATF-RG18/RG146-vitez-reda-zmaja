@@ -80,6 +80,7 @@ namespace texture {
             ////////////////////////////////////////////////////////////////////////////
             TerrainTexture *getBTexture();
     };
+    
 } // texture
 
 #endif

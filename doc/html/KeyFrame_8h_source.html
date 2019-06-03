@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/include/animation/KeyFrame.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_fa14765899559c72289886039a0d2991.html">animation</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">KeyFrame.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="KeyFrame_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _KEY_FRAME_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _KEY_FRAME_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Ukljucivanje korsnicki defininisanih biblioteka.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../animation/BoneTransform.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Ukljucivanje biblioteka</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Koriscenje prostora imena za jednostavniji i pregledniji kod.</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceanimation.html">animation</a> {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classanimation_1_1KeyFrame.html">   32</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classanimation_1_1KeyFrame.html">KeyFrame</a> {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="comment">// Privatne promenljive klase.</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classanimation_1_1KeyFrame.html#ab8aa2370d72822b00f0528c69b9a5932">   37</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classanimation_1_1KeyFrame.html#ab8aa2370d72822b00f0528c69b9a5932">timeStamp</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classanimation_1_1KeyFrame.html#a8e01baabf041ee027a0166670ad30e96">   40</a></span>&#160;    map&lt;string, BoneTransform *&gt;  <a class="code" href="classanimation_1_1KeyFrame.html#a8e01baabf041ee027a0166670ad30e96">positions</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">// Javne funkcije klase</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classanimation_1_1KeyFrame.html">KeyFrame</a>(<span class="keywordtype">float</span> timeStamp, map&lt;string, BoneTransform *&gt;  positions);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ~<a class="code" href="classanimation_1_1KeyFrame.html">KeyFrame</a>();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">float</span> getTimeStamp();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    map&lt;string, BoneTransform *&gt; getPositions();</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  };</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// animation</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classanimation_1_1KeyFrame_html_ab8aa2370d72822b00f0528c69b9a5932"><div class="ttname"><a href="classanimation_1_1KeyFrame.html#ab8aa2370d72822b00f0528c69b9a5932">animation::KeyFrame::timeStamp</a></div><div class="ttdeci">float timeStamp</div><div class="ttdoc">Trenutak animacije kljucnog frejma. </div><div class="ttdef"><b>Definition:</b> KeyFrame.h:37</div></div>
+<div class="ttc" id="namespaceanimation_html"><div class="ttname"><a href="namespaceanimation.html">animation</a></div><div class="ttdoc">Prostor imena animation. Sadrzi sve klase, funkcije i promenljive za rad sa animacajima modela...</div><div class="ttdef"><b>Definition:</b> Animation.cpp:9</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classanimation_1_1KeyFrame_html"><div class="ttname"><a href="classanimation_1_1KeyFrame.html">animation::KeyFrame</a></div><div class="ttdoc">Klasa KeyFrame sadrzi podatke o animaciji u odredjenom trenutku. Pomocu klase KeyFrame cuvamo mapu im...</div><div class="ttdef"><b>Definition:</b> KeyFrame.h:32</div></div>
+<div class="ttc" id="classanimation_1_1KeyFrame_html_a8e01baabf041ee027a0166670ad30e96"><div class="ttname"><a href="classanimation_1_1KeyFrame.html#a8e01baabf041ee027a0166670ad30e96">animation::KeyFrame::positions</a></div><div class="ttdeci">map&lt; string, BoneTransform * &gt; positions</div><div class="ttdoc">Mapa imena kostiju sa njihovim transformacijama. </div><div class="ttdef"><b>Definition:</b> KeyFrame.h:40</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

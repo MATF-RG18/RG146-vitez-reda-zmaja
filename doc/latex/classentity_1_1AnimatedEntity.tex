@@ -1,0 +1,343 @@
+\hypertarget{classentity_1_1AnimatedEntity}{}\section{Dokumentacija klase entity\+:\+:Animated\+Entity}
+\label{classentity_1_1AnimatedEntity}\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+
+
+Klasa \hyperlink{classentity_1_1AnimatedEntity}{Animated\+Entity} odredjuje jedan animirani entitet. Pomocu klase \hyperlink{classentity_1_1AnimatedEntity}{Animated\+Entity} odredjujemo entitet tako sto mu pridruzujemo animirani model kao i poziciju u svetu i ostale transformacije.  
+
+
+
+
+{\ttfamily \#include $<$Animated\+Entity.\+h$>$}
+
+
+
+Dijagram nasleđivanja za klasu entity\+:\+:Animated\+Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classentity_1_1AnimatedEntity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Klasni dijagram za entity\+:\+:Animated\+Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classentity_1_1AnimatedEntity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classentity_1_1AnimatedEntity_a5b237ce1eaf0be4ea8d769ee94ea65b2}{Animated\+Entity} (\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$\hyperlink{classentity_1_1AnimatedEntity_a1f9e73e14bf1588ed9e7c9e7f7d4aab3}{model}, vec3 \hyperlink{classentity_1_1AnimatedEntity_ab02891959f4c1191807e267c48466230}{position}, vec3 \hyperlink{classentity_1_1AnimatedEntity_a32f7718856950b74d40f4a96c1aa6f3d}{rotation}, float \hyperlink{classentity_1_1AnimatedEntity_a137e8fe0398142e9dedebb3eb1fe4f2f}{scale})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classentity_1_1AnimatedEntity_a086eb2e6c8d1765ffd675b51293ed85b}{$\sim$\+Animated\+Entity} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$ \hyperlink{classentity_1_1AnimatedEntity_ace7e7879a67cd75dac8cd867e79dd744}{get\+Model} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca animirani model. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1AnimatedEntity_ae4948cd74084f403db1e660e5815cad6}{set\+Model} (\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$\hyperlink{classentity_1_1AnimatedEntity_a1f9e73e14bf1588ed9e7c9e7f7d4aab3}{model})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja animirani model. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classentity_1_1AnimatedEntity_adc612d974f4cb04142edc2a4dbe7c3fa}{get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca poziciju entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1AnimatedEntity_a757b7e1a09af9299d807e4c5d1b1bab7}{set\+Position} (vec3 \hyperlink{classentity_1_1AnimatedEntity_ab02891959f4c1191807e267c48466230}{position})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja poziciju entiteta. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classentity_1_1AnimatedEntity_a6dbb9afaea995f85a112f32efe7f77e8}{get\+Rotation} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca rotaciju entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1AnimatedEntity_a170e9954b61845de9a0a6b016cc8429e}{set\+Rotation} (vec3 \hyperlink{classentity_1_1AnimatedEntity_a32f7718856950b74d40f4a96c1aa6f3d}{rotation})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja rotaciju entiteta. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1AnimatedEntity_ab50284046aa25cb7d264f9341cf904a5}{get\+Scale} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca skaliranje entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1AnimatedEntity_aee9d22061e72c42ded0d898f43d351c3}{set\+Scale} (float \hyperlink{classentity_1_1AnimatedEntity_a137e8fe0398142e9dedebb3eb1fe4f2f}{scale})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja skaliranje entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1AnimatedEntity_a525fd1a4aaa4019d28e224323ce536ef}{increase\+Position} (vec3 delta\+Position)
+\begin{DoxyCompactList}\small\item\em Funkcija povecava poziciju entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classentity_1_1AnimatedEntity_adc9ba713f406ad55f2c5f0baaf3d21b4}{increase\+Rotation} (vec3 delta\+Rotation)
+\begin{DoxyCompactList}\small\item\em Funkcija povecava rotaciju entiteta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$ \hyperlink{classentity_1_1AnimatedEntity_a1f9e73e14bf1588ed9e7c9e7f7d4aab3}{model}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Animated\+Model. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classentity_1_1AnimatedEntity_ab02891959f4c1191807e267c48466230}{position}
+\begin{DoxyCompactList}\small\item\em Pozicija entiteta. \end{DoxyCompactList}\item 
+vec3 \hyperlink{classentity_1_1AnimatedEntity_a32f7718856950b74d40f4a96c1aa6f3d}{rotation}
+\begin{DoxyCompactList}\small\item\em Rotacija entiteta. \end{DoxyCompactList}\item 
+float \hyperlink{classentity_1_1AnimatedEntity_a137e8fe0398142e9dedebb3eb1fe4f2f}{scale}
+\begin{DoxyCompactList}\small\item\em Skaliranje entiteta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classentity_1_1AnimatedEntity}{Animated\+Entity} odredjuje jedan animirani entitet. Pomocu klase \hyperlink{classentity_1_1AnimatedEntity}{Animated\+Entity} odredjujemo entitet tako sto mu pridruzujemo animirani model kao i poziciju u svetu i ostale transformacije. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_a5b237ce1eaf0be4ea8d769ee94ea65b2}\label{classentity_1_1AnimatedEntity_a5b237ce1eaf0be4ea8d769ee94ea65b2}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!Animated\+Entity@{Animated\+Entity}}
+\index{Animated\+Entity@{Animated\+Entity}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{Animated\+Entity()}{AnimatedEntity()}}
+{\footnotesize\ttfamily entity\+::\+Animated\+Entity\+::\+Animated\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$}]{model,  }\item[{vec3}]{position,  }\item[{vec3}]{rotation,  }\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em model} & Pokazivac na instancu klase Animated\+Model. \\
+\hline
+{\em position} & Pozicija entiteta. \\
+\hline
+{\em rotation} & Rotacija entiteta. \\
+\hline
+{\em scale} & Skaliranje entiteta. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_a086eb2e6c8d1765ffd675b51293ed85b}\label{classentity_1_1AnimatedEntity_a086eb2e6c8d1765ffd675b51293ed85b}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!````~Animated\+Entity@{$\sim$\+Animated\+Entity}}
+\index{````~Animated\+Entity@{$\sim$\+Animated\+Entity}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{$\sim$\+Animated\+Entity()}{~AnimatedEntity()}}
+{\footnotesize\ttfamily entity\+::\+Animated\+Entity\+::$\sim$\+Animated\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_ace7e7879a67cd75dac8cd867e79dd744}\label{classentity_1_1AnimatedEntity_ace7e7879a67cd75dac8cd867e79dd744}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!get\+Model@{get\+Model}}
+\index{get\+Model@{get\+Model}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{get\+Model()}{getModel()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$ entity\+::\+Animated\+Entity\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca animirani model. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+Animated\+Model $\ast$ Pokazivac na instancu klase Animated\+Model. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_adc612d974f4cb04142edc2a4dbe7c3fa}\label{classentity_1_1AnimatedEntity_adc612d974f4cb04142edc2a4dbe7c3fa}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily vec3 entity\+::\+Animated\+Entity\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca poziciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vec3 Pozicija entiteta. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_a6dbb9afaea995f85a112f32efe7f77e8}\label{classentity_1_1AnimatedEntity_a6dbb9afaea995f85a112f32efe7f77e8}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!get\+Rotation@{get\+Rotation}}
+\index{get\+Rotation@{get\+Rotation}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
+{\footnotesize\ttfamily vec3 entity\+::\+Animated\+Entity\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca rotaciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vec3 Rotacija entiteta. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_ab50284046aa25cb7d264f9341cf904a5}\label{classentity_1_1AnimatedEntity_ab50284046aa25cb7d264f9341cf904a5}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{get\+Scale()}{getScale()}}
+{\footnotesize\ttfamily float entity\+::\+Animated\+Entity\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca skaliranje entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Skaliranje entiteta. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_a525fd1a4aaa4019d28e224323ce536ef}\label{classentity_1_1AnimatedEntity_a525fd1a4aaa4019d28e224323ce536ef}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!increase\+Position@{increase\+Position}}
+\index{increase\+Position@{increase\+Position}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{increase\+Position()}{increasePosition()}}
+{\footnotesize\ttfamily void entity\+::\+Animated\+Entity\+::increase\+Position (\begin{DoxyParamCaption}\item[{vec3}]{delta\+Position }\end{DoxyParamCaption})}
+
+
+
+Funkcija povecava poziciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em delta\+Position} & Pozicija entiteta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_adc9ba713f406ad55f2c5f0baaf3d21b4}\label{classentity_1_1AnimatedEntity_adc9ba713f406ad55f2c5f0baaf3d21b4}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!increase\+Rotation@{increase\+Rotation}}
+\index{increase\+Rotation@{increase\+Rotation}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{increase\+Rotation()}{increaseRotation()}}
+{\footnotesize\ttfamily void entity\+::\+Animated\+Entity\+::increase\+Rotation (\begin{DoxyParamCaption}\item[{vec3}]{delta\+Rotation }\end{DoxyParamCaption})}
+
+
+
+Funkcija povecava rotaciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em delta\+Rotation} & Rotacija entiteta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_ae4948cd74084f403db1e660e5815cad6}\label{classentity_1_1AnimatedEntity_ae4948cd74084f403db1e660e5815cad6}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!set\+Model@{set\+Model}}
+\index{set\+Model@{set\+Model}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{set\+Model()}{setModel()}}
+{\footnotesize\ttfamily void entity\+::\+Animated\+Entity\+::set\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$}]{model }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja animirani model. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em model} & Pokazivac na instancu klase Animated\+Model. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_a757b7e1a09af9299d807e4c5d1b1bab7}\label{classentity_1_1AnimatedEntity_a757b7e1a09af9299d807e4c5d1b1bab7}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void entity\+::\+Animated\+Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{vec3}]{position }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja poziciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em position} & Pozicija entiteta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_a170e9954b61845de9a0a6b016cc8429e}\label{classentity_1_1AnimatedEntity_a170e9954b61845de9a0a6b016cc8429e}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}}
+{\footnotesize\ttfamily void entity\+::\+Animated\+Entity\+::set\+Rotation (\begin{DoxyParamCaption}\item[{vec3}]{rotation }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja rotaciju entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em rotation} & Rotacija entiteta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_aee9d22061e72c42ded0d898f43d351c3}\label{classentity_1_1AnimatedEntity_aee9d22061e72c42ded0d898f43d351c3}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!set\+Scale@{set\+Scale}}
+\index{set\+Scale@{set\+Scale}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{set\+Scale()}{setScale()}}
+{\footnotesize\ttfamily void entity\+::\+Animated\+Entity\+::set\+Scale (\begin{DoxyParamCaption}\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja skaliranje entiteta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em scale} & Skaliranje entiteta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_a1f9e73e14bf1588ed9e7c9e7f7d4aab3}\label{classentity_1_1AnimatedEntity_a1f9e73e14bf1588ed9e7c9e7f7d4aab3}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!model@{model}}
+\index{model@{model}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model}$\ast$ entity\+::\+Animated\+Entity\+::model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Animated\+Model. 
+
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_ab02891959f4c1191807e267c48466230}\label{classentity_1_1AnimatedEntity_ab02891959f4c1191807e267c48466230}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!position@{position}}
+\index{position@{position}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily vec3 entity\+::\+Animated\+Entity\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pozicija entiteta. 
+
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_a32f7718856950b74d40f4a96c1aa6f3d}\label{classentity_1_1AnimatedEntity_a32f7718856950b74d40f4a96c1aa6f3d}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!rotation@{rotation}}
+\index{rotation@{rotation}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily vec3 entity\+::\+Animated\+Entity\+::rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rotacija entiteta. 
+
+\mbox{\Hypertarget{classentity_1_1AnimatedEntity_a137e8fe0398142e9dedebb3eb1fe4f2f}\label{classentity_1_1AnimatedEntity_a137e8fe0398142e9dedebb3eb1fe4f2f}} 
+\index{entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}!scale@{scale}}
+\index{scale@{scale}!entity\+::\+Animated\+Entity@{entity\+::\+Animated\+Entity}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily float entity\+::\+Animated\+Entity\+::scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skaliranje entiteta. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/entity/\hyperlink{AnimatedEntity_8h}{Animated\+Entity.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/entity/\hyperlink{AnimatedEntity_8cpp}{Animated\+Entity.\+cpp}\end{DoxyCompactItemize}

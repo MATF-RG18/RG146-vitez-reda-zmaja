@@ -1,14 +1,12 @@
 var searchData=
 [
-  ['illum',['illum',['../structtinyobj_1_1material__t.html#af846245315bd70c1a4f815dfdd6b80cc',1,'tinyobj::material_t']]],
-  ['imfchan',['imfchan',['../structtinyobj_1_1texture__option__t.html#a2ea1261e85ce71e4f7bacd508a623b65',1,'tinyobj::texture_option_t']]],
-  ['increaseposition',['increasePosition',['../classentity_1_1Entity.html#a24a22a1554a3a412cc2583bbf87fd77c',1,'entity::Entity']]],
-  ['increaserotation',['increaseRotation',['../classentity_1_1Entity.html#ac5bd766ea7810db89b8948160916768a',1,'entity::Entity']]],
-  ['index_5fcb',['index_cb',['../structtinyobj_1_1callback__t__.html#a40a2a07b3c61aedb38a1efd3c2e53a76',1,'tinyobj::callback_t_']]],
-  ['index_5ft',['index_t',['../structtinyobj_1_1index__t.html',1,'tinyobj']]],
-  ['indices',['indices',['../structtinyobj_1_1mesh__t.html#a9dcdbdf04eca02a552793ac7d160127c',1,'tinyobj::mesh_t::indices()'],['../structtinyobj_1_1path__t.html#ab6ce1d658025985d26ad90d88ff91a60',1,'tinyobj::path_t::indices()']]],
+  ['id',['ID',['../classmodel_1_1Bone.html#a7a300f62a3d7ffdde6f31d55cdffa44e',1,'model::Bone']]],
+  ['increaseanimationtime',['increaseAnimationTime',['../classanimation_1_1Animator.html#a688e72bb61014ad3431a8bbfd9e75c99',1,'animation::Animator']]],
+  ['increaseposition',['increasePosition',['../classentity_1_1AnimatedEntity.html#a525fd1a4aaa4019d28e224323ce536ef',1,'entity::AnimatedEntity::increasePosition()'],['../classentity_1_1Entity.html#a24a22a1554a3a412cc2583bbf87fd77c',1,'entity::Entity::increasePosition()']]],
+  ['increaserotation',['increaseRotation',['../classentity_1_1AnimatedEntity.html#adc9ba713f406ad55f2c5f0baaf3d21b4',1,'entity::AnimatedEntity::increaseRotation()'],['../classentity_1_1Entity.html#ac5bd766ea7810db89b8948160916768a',1,'entity::Entity::increaseRotation()']]],
   ['initgl',['initGl',['../classcore_1_1Engine.html#a6cfe680acf87f9882f92b1ffc134021f',1,'core::Engine']]],
   ['initglut',['initGlut',['../classcore_1_1Engine.html#a737de95b00aa5b62c466f2e3dc4edcdb',1,'core::Engine']]],
-  ['intvalues',['intValues',['../structtinyobj_1_1tag__t.html#adc6a6682263abaa11e3ec62b910bb80d',1,'tinyobj::tag_t']]],
-  ['ior',['ior',['../structtinyobj_1_1material__t.html#ac5d5fed58b485804119ed374ea90709e',1,'tinyobj::material_t']]]
+  ['interpolate',['interpolate',['../classanimation_1_1BoneTransform.html#a5901bd53ff37e252e70020b9a232c0d6',1,'animation::BoneTransform::interpolate(BoneTransform *frameA, BoneTransform *frameB, float progression)'],['../classanimation_1_1BoneTransform.html#a4ddd09561114b38b70a4933ec329618d',1,'animation::BoneTransform::interpolate(vec3 start, vec3 end, float progression)']]],
+  ['interpolateposes',['interpolatePoses',['../classanimation_1_1Animator.html#a263a7e899c2df14b37d733f020412f54',1,'animation::Animator']]],
+  ['inversebindtransform',['inverseBindTransform',['../classmodel_1_1Bone.html#a4e3fe672d5a018cf9755a344c9f193ab',1,'model::Bone']]]
 ];

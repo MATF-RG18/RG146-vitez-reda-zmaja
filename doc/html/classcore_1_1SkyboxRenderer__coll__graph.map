@@ -1,0 +1,4 @@
+<map id="core::SkyboxRenderer" name="core::SkyboxRenderer">
+<area shape="rect" id="node2" href="$classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node3" href="$classshader_1_1SkyboxShader.html" title="Klasa SkyboxShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi ..." alt="" coords="157,5,311,32"/>
+</map>

@@ -80,10 +80,16 @@ Klasni dijagram za core::MainRenderer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcore_1_1MainRenderer__coll__graph.png" border="0" usemap="#core_1_1MainRenderer_coll__map" alt="Collaboration graph"/></div>
 <map name="core_1_1MainRenderer_coll__map" id="core_1_1MainRenderer_coll__map">
-<area shape="rect" id="node2" href="classshader_1_1TerrainShader.html" title="Klasa TerrainShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi..." alt="" coords="21,5,171,32"/>
-<area shape="rect" id="node3" href="classcore_1_1TerrainRenderer.html" title="Klasa Render je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi priprema za is..." alt="" coords="106,95,254,121"/>
-<area shape="rect" id="node4" href="classcore_1_1Render.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ..." alt="" coords="371,95,469,121"/>
-<area shape="rect" id="node5" href="classshader_1_1Shader.html" title="Klasa Shader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi koji s..." alt="" coords="269,5,379,32"/>
+<area shape="rect" id="node2" href="classshader_1_1AnimatedModelShader.html" title="Klasa AnimatedModelShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder f..." alt="" coords="5,45,205,72"/>
+<area shape="rect" id="node8" href="classcore_1_1AnimatedModelRenderer.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ..." alt="" coords="341,89,540,116"/>
+<area shape="rect" id="node3" href="classutility_1_1FpsData.html" title="Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f..." alt="" coords="385,140,496,167"/>
+<area shape="rect" id="node4" href="classshader_1_1TerrainShader.html" title="Klasa TerrainShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi..." alt="" coords="30,223,181,249"/>
+<area shape="rect" id="node5" href="classcore_1_1TerrainRenderer.html" title="Klasa TerrainRenderer je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi pripr..." alt="" coords="367,253,515,280"/>
+<area shape="rect" id="node6" href="classcore_1_1Render.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ..." alt="" coords="392,367,489,393"/>
+<area shape="rect" id="node7" href="classshader_1_1Shader.html" title="Klasa Shader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi koji s..." alt="" coords="50,327,161,353"/>
+<area shape="rect" id="node9" href="classcore_1_1SkyboxRenderer.html" title="Klasa SkyboxRenderer je zaduzena za iscrtavanje neba na ekran. Tokom pokretanja prvo se vrsi priprema..." alt="" coords="365,417,517,444"/>
+<area shape="rect" id="node10" href="classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="42,409,169,436"/>
+<area shape="rect" id="node11" href="classshader_1_1SkyboxShader.html" title="Klasa SkyboxShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi ..." alt="" coords="28,460,183,487"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
 <table class="memberdecls">
@@ -101,6 +107,9 @@ Javni članovi</h2></td></tr>
 <tr class="memitem:ae5ffaef40e727ab758d7b2d36ed4e92a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#ae5ffaef40e727ab758d7b2d36ed4e92a">processEntity</a> (<a class="el" href="classentity_1_1Entity.html">Entity</a> *<a class="el" href="namespacecore.html#aa710c0ea388433d2d80d1d1c67582eda">entity</a>)</td></tr>
 <tr class="memdesc:ae5ffaef40e727ab758d7b2d36ed4e92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija obradjuje entitete i ubacuje ih u mapu entiteta.  <a href="#ae5ffaef40e727ab758d7b2d36ed4e92a">Još...</a><br /></td></tr>
 <tr class="separator:ae5ffaef40e727ab758d7b2d36ed4e92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9be9ef0cda2ee739635c0a9bb152df3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#ac9be9ef0cda2ee739635c0a9bb152df3">processAnimatedEntity</a> (<a class="el" href="classentity_1_1AnimatedEntity.html">AnimatedEntity</a> *<a class="el" href="namespacecore.html#aa710c0ea388433d2d80d1d1c67582eda">entity</a>)</td></tr>
+<tr class="memdesc:ac9be9ef0cda2ee739635c0a9bb152df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija obradjuje animirane entitete i ubacuje ih u mapu animiranih entiteta.  <a href="#ac9be9ef0cda2ee739635c0a9bb152df3">Još...</a><br /></td></tr>
+<tr class="separator:ac9be9ef0cda2ee739635c0a9bb152df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8a3e6729a7d948761d6e74c48a6236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#a4e8a3e6729a7d948761d6e74c48a6236">processTerrain</a> (<a class="el" href="classterrain_1_1Terrain.html">Terrain</a> *<a class="el" href="namespacecore.html#ac45da6f80dac9bead5c9310c27897f15">terrain</a>)</td></tr>
 <tr class="memdesc:a4e8a3e6729a7d948761d6e74c48a6236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija obradjuje terene i ubacuje ih u listu terena.  <a href="#a4e8a3e6729a7d948761d6e74c48a6236">Još...</a><br /></td></tr>
 <tr class="separator:a4e8a3e6729a7d948761d6e74c48a6236"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,15 +140,26 @@ Privatni članovi</h2></td></tr>
 <tr class="memitem:a502a7c6f714266f27601913496c396f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classshader_1_1TerrainShader.html">TerrainShader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#a502a7c6f714266f27601913496c396f3">terrainShader</a></td></tr>
 <tr class="memdesc:a502a7c6f714266f27601913496c396f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase TerrainShader.  <a href="#a502a7c6f714266f27601913496c396f3">Još...</a><br /></td></tr>
 <tr class="separator:a502a7c6f714266f27601913496c396f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a609ec87995b16fcca439ce5585993fc4"><td class="memItemLeft" align="right" valign="top">map&lt; <a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *, list&lt; <a class="el" href="classentity_1_1Entity.html">Entity</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#a609ec87995b16fcca439ce5585993fc4">entities</a></td></tr>
-<tr class="memdesc:a609ec87995b16fcca439ce5585993fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hes mapa koja sadrzi teksturisane modele i liste entiteta.  <a href="#a609ec87995b16fcca439ce5585993fc4">Još...</a><br /></td></tr>
-<tr class="separator:a609ec87995b16fcca439ce5585993fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98c73a5c79cb0017ae5a7f307c9aafe"><td class="memItemLeft" align="right" valign="top">map&lt; <a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *, list&lt; <a class="el" href="classentity_1_1Entity.html">Entity</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#ab98c73a5c79cb0017ae5a7f307c9aafe">modelEntities</a></td></tr>
+<tr class="memdesc:ab98c73a5c79cb0017ae5a7f307c9aafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hes mapa koja sadrzi teksturisane modele i liste entiteta.  <a href="#ab98c73a5c79cb0017ae5a7f307c9aafe">Još...</a><br /></td></tr>
+<tr class="separator:ab98c73a5c79cb0017ae5a7f307c9aafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec98b646c857dd05b42a5c1961c3b9d"><td class="memItemLeft" align="right" valign="top">map&lt; <a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *, list&lt; <a class="el" href="classentity_1_1AnimatedEntity.html">AnimatedEntity</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#a9ec98b646c857dd05b42a5c1961c3b9d">animatedModelEntities</a></td></tr>
+<tr class="memdesc:a9ec98b646c857dd05b42a5c1961c3b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hes mapa koja sadrzi animirane modele i liste entiteta.  <a href="#a9ec98b646c857dd05b42a5c1961c3b9d">Još...</a><br /></td></tr>
+<tr class="separator:a9ec98b646c857dd05b42a5c1961c3b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada8a51626222137e00ae29445e28f892"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="classterrain_1_1Terrain.html">Terrain</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#ada8a51626222137e00ae29445e28f892">terrains</a></td></tr>
 <tr class="memdesc:ada8a51626222137e00ae29445e28f892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista terena.  <a href="#ada8a51626222137e00ae29445e28f892">Još...</a><br /></td></tr>
 <tr class="separator:ada8a51626222137e00ae29445e28f892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e02e2528a233d92ed37587fa2ba38a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcore_1_1SkyboxRenderer.html">SkyboxRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#a2e02e2528a233d92ed37587fa2ba38a4">skyboxRenderer</a></td></tr>
+<tr class="memdesc:a2e02e2528a233d92ed37587fa2ba38a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase <a class="el" href="classcore_1_1SkyboxRenderer.html" title="Klasa SkyboxRenderer je zaduzena za iscrtavanje neba na ekran. Tokom pokretanja prvo se vrsi priprema...">SkyboxRenderer</a>.  <a href="#a2e02e2528a233d92ed37587fa2ba38a4">Još...</a><br /></td></tr>
 <tr class="separator:a2e02e2528a233d92ed37587fa2ba38a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877b54b83993c0b0550f5ec5517330cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classshader_1_1AnimatedModelShader.html">AnimatedModelShader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#a877b54b83993c0b0550f5ec5517330cc">animatedModelShader</a></td></tr>
+<tr class="memdesc:a877b54b83993c0b0550f5ec5517330cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase AnimatedModelShader.  <a href="#a877b54b83993c0b0550f5ec5517330cc">Još...</a><br /></td></tr>
+<tr class="separator:a877b54b83993c0b0550f5ec5517330cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bd7e1f715fd09726103eb412b6149e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcore_1_1AnimatedModelRenderer.html">AnimatedModelRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#a90bd7e1f715fd09726103eb412b6149e">animatedModelRenderer</a></td></tr>
+<tr class="memdesc:a90bd7e1f715fd09726103eb412b6149e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase <a class="el" href="classcore_1_1AnimatedModelRenderer.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ...">AnimatedModelRenderer</a>.  <a href="#a90bd7e1f715fd09726103eb412b6149e">Još...</a><br /></td></tr>
+<tr class="separator:a90bd7e1f715fd09726103eb412b6149e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea0659ecfb85286fb5f2bb1d8dc1be1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classutility_1_1FpsData.html">FpsData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1MainRenderer.html#a0ea0659ecfb85286fb5f2bb1d8dc1be1">fpsData</a></td></tr>
+<tr class="memdesc:a0ea0659ecfb85286fb5f2bb1d8dc1be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase FpsData.  <a href="#a0ea0659ecfb85286fb5f2bb1d8dc1be1">Još...</a><br /></td></tr>
 <tr class="separator:a0ea0659ecfb85286fb5f2bb1d8dc1be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
@@ -175,6 +195,7 @@ Privatni članovi</h2></td></tr>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
     <tr><td class="paramname">vaoLoader</td><td>Pokazivac na instancu klase <a class="el" href="classcore_1_1VaoLoader.html" title="Klasa VaoLoader je zaduzena za ucitavanje atributa u memoriju. Zadatak ove klase je ucitavanje i defi...">VaoLoader</a> </td></tr>
+    <tr><td class="paramname">fpsData</td><td>Pokazivac na instancu klase FpsData. </td></tr>
   </table>
   </dd>
 </dl>
@@ -313,6 +334,33 @@ Privatni članovi</h2></td></tr>
 
 </div>
 </div>
+<a id="ac9be9ef0cda2ee739635c0a9bb152df3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9be9ef0cda2ee739635c0a9bb152df3">&#9670;&nbsp;</a></span>processAnimatedEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::MainRenderer::processAnimatedEntity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentity_1_1AnimatedEntity.html">AnimatedEntity</a> *&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija obradjuje animirane entitete i ubacuje ih u mapu animiranih entiteta. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Pokazivac na instancu klase AnimatedEntity </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
 <a id="ae5ffaef40e727ab758d7b2d36ed4e92a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5ffaef40e727ab758d7b2d36ed4e92a">&#9670;&nbsp;</a></span>processEntity()</h2>
 
@@ -406,8 +454,8 @@ Privatni članovi</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Dokumentacija atributa</h2>
-<a id="a609ec87995b16fcca439ce5585993fc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a609ec87995b16fcca439ce5585993fc4">&#9670;&nbsp;</a></span>entities</h2>
+<a id="a9ec98b646c857dd05b42a5c1961c3b9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ec98b646c857dd05b42a5c1961c3b9d">&#9670;&nbsp;</a></span>animatedModelEntities</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,7 +464,7 @@ Privatni članovi</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">map&lt;<a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *, list&lt;<a class="el" href="classentity_1_1Entity.html">Entity</a> *&gt; &gt; core::MainRenderer::entities</td>
+          <td class="memname">map&lt;<a class="el" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *, list&lt;<a class="el" href="classentity_1_1AnimatedEntity.html">AnimatedEntity</a> *&gt; &gt; core::MainRenderer::animatedModelEntities</td>
         </tr>
       </table>
   </td>
@@ -426,7 +474,55 @@ Privatni članovi</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Hes mapa koja sadrzi teksturisane modele i liste entiteta. </p>
+<p>Hes mapa koja sadrzi animirane modele i liste entiteta. </p>
+
+</div>
+</div>
+<a id="a90bd7e1f715fd09726103eb412b6149e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90bd7e1f715fd09726103eb412b6149e">&#9670;&nbsp;</a></span>animatedModelRenderer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcore_1_1AnimatedModelRenderer.html">AnimatedModelRenderer</a>* core::MainRenderer::animatedModelRenderer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase <a class="el" href="classcore_1_1AnimatedModelRenderer.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ...">AnimatedModelRenderer</a>. </p>
+
+</div>
+</div>
+<a id="a877b54b83993c0b0550f5ec5517330cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a877b54b83993c0b0550f5ec5517330cc">&#9670;&nbsp;</a></span>animatedModelShader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classshader_1_1AnimatedModelShader.html">AnimatedModelShader</a>* core::MainRenderer::animatedModelShader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase AnimatedModelShader. </p>
 
 </div>
 </div>
@@ -449,6 +545,32 @@ Privatni članovi</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pokazivac na instancu klase FpsData. </p>
+
+</div>
+</div>
+<a id="ab98c73a5c79cb0017ae5a7f307c9aafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98c73a5c79cb0017ae5a7f307c9aafe">&#9670;&nbsp;</a></span>modelEntities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;<a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *, list&lt;<a class="el" href="classentity_1_1Entity.html">Entity</a> *&gt; &gt; core::MainRenderer::modelEntities</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Hes mapa koja sadrzi teksturisane modele i liste entiteta. </p>
 
 </div>
 </div>
@@ -519,6 +641,8 @@ Privatni članovi</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pokazivac na instancu klase <a class="el" href="classcore_1_1SkyboxRenderer.html" title="Klasa SkyboxRenderer je zaduzena za iscrtavanje neba na ekran. Tokom pokretanja prvo se vrsi priprema...">SkyboxRenderer</a>. </p>
 
 </div>
 </div>

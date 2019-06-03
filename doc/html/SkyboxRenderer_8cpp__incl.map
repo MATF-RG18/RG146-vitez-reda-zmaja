@@ -1,0 +1,24 @@
+<map id="/home/dusan/Documents/RG146&#45;vitez&#45;reda&#45;zmaja/src/core/SkyboxRenderer.cpp" name="/home/dusan/Documents/RG146&#45;vitez&#45;reda&#45;zmaja/src/core/SkyboxRenderer.cpp">
+<area shape="rect" id="node2" href="$SkyboxRenderer_8h.html" title="Deklaracija klase SkyboxRenderer. " alt="" coords="2171,109,2306,151"/>
+<area shape="rect" id="node3" href="$RawModel_8h.html" title="Deklaracija klase RawModel. " alt="" coords="1980,669,2127,695"/>
+<area shape="rect" id="node7" href="$SkyboxShader_8h.html" title="Deklaracija klase SkyboxShader. " alt="" coords="931,199,1104,225"/>
+<area shape="rect" id="node33" href="$VaoLoader_8h.html" title="Deklaracija klase VaoLoader. " alt="" coords="1985,587,2121,613"/>
+<area shape="rect" id="node8" href="$Math_8h.html" title="../utility/Math.h" alt="" coords="860,505,969,531"/>
+<area shape="rect" id="node15" href="$Camera_8h.html" title="Deklaracija klase Camera. " alt="" coords="1005,273,1131,300"/>
+<area shape="rect" id="node39" href="$FpsData_8h.html" title="Deklaracija klase FpsData. " alt="" coords="1908,505,2039,531"/>
+<area shape="rect" id="node41" href="$Light_8h.html" title="Deklaracija klase Camera i deklaracija callback funkcija. " alt="" coords="372,505,481,531"/>
+<area shape="rect" id="node16" href="$Player_8h.html" title="Deklaracija klase Player. " alt="" coords="1335,348,1454,375"/>
+<area shape="rect" id="node17" href="$AnimatedEntity_8h.html" title="Deklaracija klase AnimatedEntity. " alt="" coords="759,423,929,449"/>
+<area shape="rect" id="node30" href="$Terrain_8h.html" title="Deklaracija klase Terrain. " alt="" coords="1332,423,1457,449"/>
+<area shape="rect" id="node40" href="$Animator_8h.html" title="Deklaracija klase Animator. " alt="" coords="1481,423,1639,449"/>
+<area shape="rect" id="node18" href="$AnimatedModel_8h.html" title="Deklaracija klase AnimatedModel. " alt="" coords="1146,505,1321,531"/>
+<area shape="rect" id="node19" href="$TexturedModel_8h.html" title="Deklaracija klase TexturedModel. " alt="" coords="1324,587,1495,613"/>
+<area shape="rect" id="node21" href="$Bone_8h.html" title="Deklaracija klase Bone. " alt="" coords="999,587,1113,613"/>
+<area shape="rect" id="node24" href="$Animation_8h.html" title="Deklaracija klase Animation. " alt="" coords="1137,587,1300,613"/>
+<area shape="rect" id="node20" href="$Texture_8h.html" title="Deklaracija klase Texture. " alt="" coords="1364,669,1497,695"/>
+<area shape="rect" id="node25" href="$KeyFrame_8h.html" title="Deklaracija klase KeyFrame. " alt="" coords="1124,669,1289,695"/>
+<area shape="rect" id="node26" href="$BoneTransform_8h.html" title="Deklaracija klase BoneTransform. " alt="" coords="1024,751,1219,777"/>
+<area shape="rect" id="node31" href="$TerrainTexturePack_8h.html" title="Deklaracija klase TerrainTexturePack. " alt="" coords="1620,497,1783,539"/>
+<area shape="rect" id="node32" href="$TerrainTexture_8h.html" title="Deklaracija klase TerrainTexture. " alt="" coords="1620,587,1793,613"/>
+<area shape="rect" id="node34" href="$SkyboxTextureData_8h.html" title="../texture/SkyboxTexture\lData.h" alt="" coords="1789,661,1955,703"/>
+</map>

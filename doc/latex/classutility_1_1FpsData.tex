@@ -19,7 +19,9 @@ Klasa \hyperlink{classutility_1_1FpsData}{Fps\+Data} cuva podatke o broju frejmo
 void \hyperlink{classutility_1_1FpsData_adcc115a219b00aa4d0c979955b617f91}{update} ()
 \begin{DoxyCompactList}\small\item\em Funkcija azurira trenutni broj frejmova po sekundi. \end{DoxyCompactList}\item 
 int \hyperlink{classutility_1_1FpsData_abd745ff03d01035ff7a5453558469c2c}{get\+Fps\+Count} ()
-\begin{DoxyCompactList}\small\item\em Funkcija vraca vrednost privatne promenljive fps\+Count. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Funkcija vraca vrednost privatne promenljive fps\+Count. \end{DoxyCompactList}\item 
+float \hyperlink{classutility_1_1FpsData_afe3b4f2272afb4efcc628a5947cf5383}{get\+Frame\+Delta\+Time} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca vreme proteklo od izmedju poslednja dva frejma. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Privatni članovi}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,7 +32,9 @@ float \hyperlink{classutility_1_1FpsData_a8d446a1d25857ec240d8fe91a8db0e47}{curr
 int \hyperlink{classutility_1_1FpsData_a72384b61915ece78bad19d36cfc0de41}{fps\+Count}
 \begin{DoxyCompactList}\small\item\em Trenutni broj frejmova po sekundi. \end{DoxyCompactList}\item 
 int \hyperlink{classutility_1_1FpsData_acbf0bbe28e4d134e959970b252bc1bc1}{num\+Of\+Frames}
-\begin{DoxyCompactList}\small\item\em Broj frejmova. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Broj frejmova. \end{DoxyCompactList}\item 
+float \hyperlink{classutility_1_1FpsData_ae80cd8b43a338ae4d1d8a03d9d2d5d8e}{frame\+Delta\+Time}
+\begin{DoxyCompactList}\small\item\em Vreme proteklo od kreiranja poslednja dva frejma. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Opširniji opis}
@@ -85,6 +89,21 @@ Funkcija vraca vrednost privatne promenljive fps\+Count.
 {\em void} & return int Trenutni broj frejmova po sekundi. \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classutility_1_1FpsData_afe3b4f2272afb4efcc628a5947cf5383}\label{classutility_1_1FpsData_afe3b4f2272afb4efcc628a5947cf5383}} 
+\index{utility\+::\+Fps\+Data@{utility\+::\+Fps\+Data}!get\+Frame\+Delta\+Time@{get\+Frame\+Delta\+Time}}
+\index{get\+Frame\+Delta\+Time@{get\+Frame\+Delta\+Time}!utility\+::\+Fps\+Data@{utility\+::\+Fps\+Data}}
+\subsubsection{\texorpdfstring{get\+Frame\+Delta\+Time()}{getFrameDeltaTime()}}
+{\footnotesize\ttfamily float utility\+::\+Fps\+Data\+::get\+Frame\+Delta\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca vreme proteklo od izmedju poslednja dva frejma. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & return float Vreme proteklo od kreiranja poslednja dva frejma. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classutility_1_1FpsData_adcc115a219b00aa4d0c979955b617f91}\label{classutility_1_1FpsData_adcc115a219b00aa4d0c979955b617f91}} 
 \index{utility\+::\+Fps\+Data@{utility\+::\+Fps\+Data}!update@{update}}
 \index{update@{update}!utility\+::\+Fps\+Data@{utility\+::\+Fps\+Data}}
@@ -122,6 +141,16 @@ Vreme iscrtavanja trenutnog frejma.
 
 
 Trenutni broj frejmova po sekundi. 
+
+\mbox{\Hypertarget{classutility_1_1FpsData_ae80cd8b43a338ae4d1d8a03d9d2d5d8e}\label{classutility_1_1FpsData_ae80cd8b43a338ae4d1d8a03d9d2d5d8e}} 
+\index{utility\+::\+Fps\+Data@{utility\+::\+Fps\+Data}!frame\+Delta\+Time@{frame\+Delta\+Time}}
+\index{frame\+Delta\+Time@{frame\+Delta\+Time}!utility\+::\+Fps\+Data@{utility\+::\+Fps\+Data}}
+\subsubsection{\texorpdfstring{frame\+Delta\+Time}{frameDeltaTime}}
+{\footnotesize\ttfamily float utility\+::\+Fps\+Data\+::frame\+Delta\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vreme proteklo od kreiranja poslednja dva frejma. 
 
 \mbox{\Hypertarget{classutility_1_1FpsData_a0340fb16b83e32835d5e8327b5b322e3}\label{classutility_1_1FpsData_a0340fb16b83e32835d5e8327b5b322e3}} 
 \index{utility\+::\+Fps\+Data@{utility\+::\+Fps\+Data}!last\+Frame\+Time@{last\+Frame\+Time}}

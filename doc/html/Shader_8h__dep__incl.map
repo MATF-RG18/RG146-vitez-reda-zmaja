@@ -1,9 +1,9 @@
-<map id="/home/dusan/Documents/Projects/RG102&#45;vitez&#45;reda&#45;zmaja/include/shader/Shader.h" name="/home/dusan/Documents/Projects/RG102&#45;vitez&#45;reda&#45;zmaja/include/shader/Shader.h">
-<area shape="rect" id="node2" href="$Render_8h.html" title="Deklaracija klase Render. " alt="" coords="193,124,361,195"/>
-<area shape="rect" id="node3" href="$Engine_8h.html" title="Deklaracija klase Engine i deklaracija callback funkcija. " alt="" coords="137,361,305,432"/>
-<area shape="rect" id="node5" href="$MainRenderer_8h.html" title="Deklaracija klase Render. " alt="" coords="315,243,483,313"/>
-<area shape="rect" id="node8" href="$Shader_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/shader\l/Shader.cpp" alt="" coords="436,124,604,195"/>
-<area shape="rect" id="node7" href="$Render_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/core/Render.cpp" alt="" coords="29,250,241,306"/>
-<area shape="rect" id="node4" href="$Engine_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/core/Engine.cpp" alt="" coords="116,480,327,536"/>
-<area shape="rect" id="node6" href="$MainRenderer_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/core/MainRenderer.cpp" alt="" coords="329,369,580,425"/>
+<map id="/home/dusan/Documents/RG146&#45;vitez&#45;reda&#45;zmaja/include/shader/Shader.h" name="/home/dusan/Documents/RG146&#45;vitez&#45;reda&#45;zmaja/include/shader/Shader.h">
+<area shape="rect" id="node2" href="$Render_8h.html" title="Deklaracija klase Render. " alt="" coords="148,109,316,165"/>
+<area shape="rect" id="node3" href="$Engine_8h.html" title="Deklaracija klase Engine i deklaracija callback funkcija. " alt="" coords="115,317,283,373"/>
+<area shape="rect" id="node5" href="$MainRenderer_8h.html" title="Deklaracija klase Render. " alt="" coords="269,213,461,269"/>
+<area shape="rect" id="node8" href="$Shader_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/shader/Shader.cpp" alt="" coords="391,109,559,165"/>
+<area shape="rect" id="node7" href="$Render_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/Render.cpp" alt="" coords="27,213,195,269"/>
+<area shape="rect" id="node4" href="$Engine_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/Engine.cpp" alt="" coords="115,421,283,477"/>
+<area shape="rect" id="node6" href="$MainRenderer_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/MainRenderer.cpp" alt="" coords="307,317,490,373"/>
 </map>

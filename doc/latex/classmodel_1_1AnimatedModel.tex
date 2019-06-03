@@ -1,0 +1,287 @@
+\hypertarget{classmodel_1_1AnimatedModel}{}\section{Dokumentacija klase model\+:\+:Animated\+Model}
+\label{classmodel_1_1AnimatedModel}\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+
+
+Klasa \hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instancom klase \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model}, nizom glavnih kostiju i mapom animacija.  
+
+
+
+
+{\ttfamily \#include $<$Animated\+Model.\+h$>$}
+
+
+
+Klasni dijagram za model\+:\+:Animated\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classmodel_1_1AnimatedModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1AnimatedModel_a0255a7b4af5f8fb0f9fb7c042f7016c5}{Animated\+Model} (\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$\hyperlink{classmodel_1_1AnimatedModel_a9856ce11025686cdf78bf5729556613c}{model}, vector$<$ \hyperlink{classmodel_1_1Bone}{Bone} $\ast$$>$ \hyperlink{classmodel_1_1AnimatedModel_a26c1309582cde31ac4dfb8e2436a0cd7}{root\+Nodes}, vector$<$ int $>$ \hyperlink{classmodel_1_1AnimatedModel_aea55cadf949b3bd7bd5eb66d1d6ad304}{bones\+Count})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se modelu pridruzuju teksturisan model, lista glavnih kostiju i brojem kostiju u svakom delu modela. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1AnimatedModel_a302e899520ce6406d902aaa41be64b07}{$\sim$\+Animated\+Model} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$ \hyperlink{classmodel_1_1AnimatedModel_aad16bb9c53cb3b9bacb39e50c5ecee33}{get\+Model} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca teksturisan model objekta. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1Bone}{Bone} $\ast$ \hyperlink{classmodel_1_1AnimatedModel_a1056ac7c71920cd1ff123d372a9dd05d}{get\+Root\+Node} (int root\+Bone\+ID)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca glavnu kost za deo modela. \end{DoxyCompactList}\item 
+mat4 $\ast$ \hyperlink{classmodel_1_1AnimatedModel_a1769cb021a4128bda636eab48e4c55cc}{get\+Bone\+Transforms} (int root\+Bone\+ID)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca matrice transformacija kostiju dela modela. \end{DoxyCompactList}\item 
+void \hyperlink{classmodel_1_1AnimatedModel_a4da32dc14c679424f45027fc300f3905}{add\+Bones} (\hyperlink{classmodel_1_1Bone}{Bone} $\ast$head\+Bone, mat4 $\ast$bone\+Matrices)
+\begin{DoxyCompactList}\small\item\em Funkcija dodaje matricu transformacije koske u niz matrica. \end{DoxyCompactList}\item 
+\hyperlink{classanimation_1_1Animation}{Animation} $\ast$ \hyperlink{classmodel_1_1AnimatedModel_ada1c3b1e93e2934ba085dd14e65e364a}{get\+Animation} (string animation\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca animaciju iz mape animacija. \end{DoxyCompactList}\item 
+void \hyperlink{classmodel_1_1AnimatedModel_a287cf08a5abf805da23895b2fd0dabff}{add\+Animation} (string animation\+Name, \hyperlink{classanimation_1_1Animation}{Animation} $\ast$animation)
+\begin{DoxyCompactList}\small\item\em Funkcija dodaje animaciju u mapu animacija. \end{DoxyCompactList}\item 
+int \hyperlink{classmodel_1_1AnimatedModel_ae26d43c3b5b3a3f623418666f787565f}{get\+Num\+Root\+Nodes} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca vrednost privatne promenljive num\+Root\+Nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$ \hyperlink{classmodel_1_1AnimatedModel_a9856ce11025686cdf78bf5729556613c}{model}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model}. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classmodel_1_1Bone}{Bone} $\ast$ $>$ \hyperlink{classmodel_1_1AnimatedModel_a26c1309582cde31ac4dfb8e2436a0cd7}{root\+Nodes}
+\begin{DoxyCompactList}\small\item\em Vektor pokazivaca na instance klase \hyperlink{classmodel_1_1Bone}{Bone}. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{classmodel_1_1AnimatedModel_aea55cadf949b3bd7bd5eb66d1d6ad304}{bones\+Count}
+\begin{DoxyCompactList}\small\item\em Vektor broja kostiju. \end{DoxyCompactList}\item 
+map$<$ string, \hyperlink{classanimation_1_1Animation}{Animation} $\ast$ $>$ \hyperlink{classmodel_1_1AnimatedModel_ae366eb62ff617640a6b7a4aee86ff273}{animations}
+\begin{DoxyCompactList}\small\item\em Mapa imena animacija sa pokazivacima na instance klase Animation. \end{DoxyCompactList}\item 
+int \hyperlink{classmodel_1_1AnimatedModel_a0115b34f0a5c6f60e06c446ee3d7e442}{num\+Root\+Nodes}
+\begin{DoxyCompactList}\small\item\em Broj glavnih kostiju. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instancom klase \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model}, nizom glavnih kostiju i mapom animacija. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_a0255a7b4af5f8fb0f9fb7c042f7016c5}\label{classmodel_1_1AnimatedModel_a0255a7b4af5f8fb0f9fb7c042f7016c5}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!Animated\+Model@{Animated\+Model}}
+\index{Animated\+Model@{Animated\+Model}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{Animated\+Model()}{AnimatedModel()}}
+{\footnotesize\ttfamily model\+::\+Animated\+Model\+::\+Animated\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$}]{model,  }\item[{vector$<$ \hyperlink{classmodel_1_1Bone}{Bone} $\ast$$>$}]{root\+Nodes,  }\item[{vector$<$ int $>$}]{bones\+Count }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. U konstruktoru se modelu pridruzuju teksturisan model, lista glavnih kostiju i brojem kostiju u svakom delu modela. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em model} & Pokazivac na instancu klase \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model}. \\
+\hline
+{\em root\+Nodes} & Vektor pokazivaca na instance klase \hyperlink{classmodel_1_1Bone}{Bone}. \\
+\hline
+{\em bones\+Count} & Vektor broja kostiju. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_a302e899520ce6406d902aaa41be64b07}\label{classmodel_1_1AnimatedModel_a302e899520ce6406d902aaa41be64b07}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!````~Animated\+Model@{$\sim$\+Animated\+Model}}
+\index{````~Animated\+Model@{$\sim$\+Animated\+Model}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{$\sim$\+Animated\+Model()}{~AnimatedModel()}}
+{\footnotesize\ttfamily model\+::\+Animated\+Model\+::$\sim$\+Animated\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_a287cf08a5abf805da23895b2fd0dabff}\label{classmodel_1_1AnimatedModel_a287cf08a5abf805da23895b2fd0dabff}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!add\+Animation@{add\+Animation}}
+\index{add\+Animation@{add\+Animation}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{add\+Animation()}{addAnimation()}}
+{\footnotesize\ttfamily void model\+::\+Animated\+Model\+::add\+Animation (\begin{DoxyParamCaption}\item[{string}]{animation\+Name,  }\item[{\hyperlink{classanimation_1_1Animation}{Animation} $\ast$}]{animation }\end{DoxyParamCaption})}
+
+
+
+Funkcija dodaje animaciju u mapu animacija. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em animation\+Name} & Ime animacije koje je kljuc mape animacija. \\
+\hline
+{\em animation} & Pokazivac na instancu klase Animation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_a4da32dc14c679424f45027fc300f3905}\label{classmodel_1_1AnimatedModel_a4da32dc14c679424f45027fc300f3905}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!add\+Bones@{add\+Bones}}
+\index{add\+Bones@{add\+Bones}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{add\+Bones()}{addBones()}}
+{\footnotesize\ttfamily void model\+::\+Animated\+Model\+::add\+Bones (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1Bone}{Bone} $\ast$}]{head\+Bone,  }\item[{mat4 $\ast$}]{bone\+Matrices }\end{DoxyParamCaption})}
+
+
+
+Funkcija dodaje matricu transformacije koske u niz matrica. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em head\+Bone} & Roditeljska kost. \\
+\hline
+{\em bone\+Matrices} & Niz matrica transformacija kostiju. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_ada1c3b1e93e2934ba085dd14e65e364a}\label{classmodel_1_1AnimatedModel_ada1c3b1e93e2934ba085dd14e65e364a}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!get\+Animation@{get\+Animation}}
+\index{get\+Animation@{get\+Animation}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{get\+Animation()}{getAnimation()}}
+{\footnotesize\ttfamily \hyperlink{classanimation_1_1Animation}{Animation} $\ast$ model\+::\+Animated\+Model\+::get\+Animation (\begin{DoxyParamCaption}\item[{string}]{animation\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca animaciju iz mape animacija. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em animation\+Name} & Ime animacije koje je kljuc mape animacija. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+Animation $\ast$ Pokazivac na instancu klase Animation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_a1769cb021a4128bda636eab48e4c55cc}\label{classmodel_1_1AnimatedModel_a1769cb021a4128bda636eab48e4c55cc}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!get\+Bone\+Transforms@{get\+Bone\+Transforms}}
+\index{get\+Bone\+Transforms@{get\+Bone\+Transforms}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{get\+Bone\+Transforms()}{getBoneTransforms()}}
+{\footnotesize\ttfamily mat4 $\ast$ model\+::\+Animated\+Model\+::get\+Bone\+Transforms (\begin{DoxyParamCaption}\item[{int}]{root\+Bone\+ID }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca matrice transformacija kostiju dela modela. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em root\+Bone\+ID} & Identifikator dela modela za koji se traze matrice. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+mat4 $\ast$ Niz matrica transformacija kostiju. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_aad16bb9c53cb3b9bacb39e50c5ecee33}\label{classmodel_1_1AnimatedModel_aad16bb9c53cb3b9bacb39e50c5ecee33}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!get\+Model@{get\+Model}}
+\index{get\+Model@{get\+Model}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{get\+Model()}{getModel()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$ model\+::\+Animated\+Model\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca teksturisan model objekta. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} Pokazivac na instancu klase \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_ae26d43c3b5b3a3f623418666f787565f}\label{classmodel_1_1AnimatedModel_ae26d43c3b5b3a3f623418666f787565f}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!get\+Num\+Root\+Nodes@{get\+Num\+Root\+Nodes}}
+\index{get\+Num\+Root\+Nodes@{get\+Num\+Root\+Nodes}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{get\+Num\+Root\+Nodes()}{getNumRootNodes()}}
+{\footnotesize\ttfamily int model\+::\+Animated\+Model\+::get\+Num\+Root\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca vrednost privatne promenljive num\+Root\+Nodes. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Broj glavnih kostiju. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_a1056ac7c71920cd1ff123d372a9dd05d}\label{classmodel_1_1AnimatedModel_a1056ac7c71920cd1ff123d372a9dd05d}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!get\+Root\+Node@{get\+Root\+Node}}
+\index{get\+Root\+Node@{get\+Root\+Node}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{get\+Root\+Node()}{getRootNode()}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1Bone}{Bone} $\ast$ model\+::\+Animated\+Model\+::get\+Root\+Node (\begin{DoxyParamCaption}\item[{int}]{root\+Bone\+ID }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca glavnu kost za deo modela. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em root\+Bone\+ID} & Identifikator dela modela za koji se trazi glavna kost. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+\hyperlink{classmodel_1_1Bone}{Bone} $\ast$ Pokazivac na instancu klase \hyperlink{classmodel_1_1Bone}{Bone}. 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_ae366eb62ff617640a6b7a4aee86ff273}\label{classmodel_1_1AnimatedModel_ae366eb62ff617640a6b7a4aee86ff273}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!animations@{animations}}
+\index{animations@{animations}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{animations}{animations}}
+{\footnotesize\ttfamily map$<$string, \hyperlink{classanimation_1_1Animation}{Animation}$\ast$$>$ model\+::\+Animated\+Model\+::animations\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mapa imena animacija sa pokazivacima na instance klase Animation. 
+
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_aea55cadf949b3bd7bd5eb66d1d6ad304}\label{classmodel_1_1AnimatedModel_aea55cadf949b3bd7bd5eb66d1d6ad304}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!bones\+Count@{bones\+Count}}
+\index{bones\+Count@{bones\+Count}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{bones\+Count}{bonesCount}}
+{\footnotesize\ttfamily vector$<$int$>$ model\+::\+Animated\+Model\+::bones\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vektor broja kostiju. 
+
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_a9856ce11025686cdf78bf5729556613c}\label{classmodel_1_1AnimatedModel_a9856ce11025686cdf78bf5729556613c}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!model@{model}}
+\index{model@{model}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model}$\ast$ model\+::\+Animated\+Model\+::model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model}. 
+
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_a0115b34f0a5c6f60e06c446ee3d7e442}\label{classmodel_1_1AnimatedModel_a0115b34f0a5c6f60e06c446ee3d7e442}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!num\+Root\+Nodes@{num\+Root\+Nodes}}
+\index{num\+Root\+Nodes@{num\+Root\+Nodes}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{num\+Root\+Nodes}{numRootNodes}}
+{\footnotesize\ttfamily int model\+::\+Animated\+Model\+::num\+Root\+Nodes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Broj glavnih kostiju. 
+
+\mbox{\Hypertarget{classmodel_1_1AnimatedModel_a26c1309582cde31ac4dfb8e2436a0cd7}\label{classmodel_1_1AnimatedModel_a26c1309582cde31ac4dfb8e2436a0cd7}} 
+\index{model\+::\+Animated\+Model@{model\+::\+Animated\+Model}!root\+Nodes@{root\+Nodes}}
+\index{root\+Nodes@{root\+Nodes}!model\+::\+Animated\+Model@{model\+::\+Animated\+Model}}
+\subsubsection{\texorpdfstring{root\+Nodes}{rootNodes}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classmodel_1_1Bone}{Bone} $\ast$$>$ model\+::\+Animated\+Model\+::root\+Nodes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vektor pokazivaca na instance klase \hyperlink{classmodel_1_1Bone}{Bone}. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/model/\hyperlink{AnimatedModel_8h}{Animated\+Model.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/model/\hyperlink{AnimatedModel_8cpp}{Animated\+Model.\+cpp}\end{DoxyCompactItemize}

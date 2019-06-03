@@ -1,0 +1,235 @@
+\hypertarget{classparticle_1_1WeatherSystem}{}\section{Dokumentacija klase particle\+:\+:Weather\+System}
+\label{classparticle_1_1WeatherSystem}\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+
+
+Klasa \hyperlink{classparticle_1_1WeatherSystem}{Weather\+System} kontrolise stvaranje cestica i njihovo ponasanje. Pomocu klase \hyperlink{classparticle_1_1WeatherSystem}{Weather\+System} simuliramo padavine kreiranjem cestica u prostoru definisanom dimenzijama i centrom oblaka.  
+
+
+
+
+{\ttfamily \#include $<$Weather\+System.\+h$>$}
+
+
+
+Klasni dijagram za particle\+:\+:Weather\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classparticle_1_1WeatherSystem__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classparticle_1_1WeatherSystem_a2ff7884009380a886ea3d5d5a2b8e765}{Weather\+System} (float \hyperlink{classparticle_1_1WeatherSystem_ad2bd921d15667d8866d64fa633d76d0f}{particles\+Per\+Second}, float \hyperlink{classparticle_1_1WeatherSystem_aceaf5d329722c25c744bf3cbdc155295}{fall\+Intensity}, float \hyperlink{classparticle_1_1WeatherSystem_a0aa06ba52db7729e12657baf726fb116}{life\+Length}, float \hyperlink{classparticle_1_1WeatherSystem_a64e9626cc1511271c24ff62a1c31200f}{cloud\+Size}, \hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$\hyperlink{classparticle_1_1WeatherSystem_adefe5a2956dfd92f8271ed0e8c70799e}{fps\+Data}, \hyperlink{classtexture_1_1Texture}{Texture} $\ast$\hyperlink{classparticle_1_1WeatherSystem_a8fbccea8de57ff87bdd606aa6e95cbab}{texture})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classparticle_1_1WeatherSystem_ac2a0b57d1870183c56da2aff9021ae6e}{$\sim$\+Weather\+System} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classparticle_1_1WeatherSystem_ac26bba944fcc147b49f12df6d11b53e5}{generate\+Particles} (\hyperlink{classparticle_1_1ParticleHandler}{Particle\+Handler} $\ast$\hyperlink{classparticle_1_1WeatherSystem_a0f24302815bf5a77140b26d015fefdbe}{particle\+Handler}, vec3 cloud\+Center)
+\begin{DoxyCompactList}\small\item\em Funkcija generise nove cestice i dodaje ih u listu cestica. \end{DoxyCompactList}\item 
+void \hyperlink{classparticle_1_1WeatherSystem_a5e9826ba8ab1324f9b4df5124d058ddd}{set\+Texture} (\hyperlink{classtexture_1_1Texture}{Texture} $\ast$\hyperlink{classparticle_1_1WeatherSystem_a8fbccea8de57ff87bdd606aa6e95cbab}{texture})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja teksturu cestica. \end{DoxyCompactList}\item 
+\hyperlink{classtexture_1_1Texture}{Texture} $\ast$ \hyperlink{classparticle_1_1WeatherSystem_aba0914ccb5a062a4b7d54c17d107c543}{get\+Texture} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca teksturu cestica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classparticle_1_1WeatherSystem_ad2bd921d15667d8866d64fa633d76d0f}{particles\+Per\+Second}
+\begin{DoxyCompactList}\small\item\em Broj cestica koje se generisu po sekundi. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1WeatherSystem_aceaf5d329722c25c744bf3cbdc155295}{fall\+Intensity}
+\begin{DoxyCompactList}\small\item\em Intenzitet padavina. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1WeatherSystem_a0aa06ba52db7729e12657baf726fb116}{life\+Length}
+\begin{DoxyCompactList}\small\item\em Duzina zivotnog veka cestice. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1WeatherSystem_a64e9626cc1511271c24ff62a1c31200f}{cloud\+Size}
+\begin{DoxyCompactList}\small\item\em Velicina oblaka. \end{DoxyCompactList}\item 
+\hyperlink{classparticle_1_1ParticleHandler}{Particle\+Handler} $\ast$ \hyperlink{classparticle_1_1WeatherSystem_a0f24302815bf5a77140b26d015fefdbe}{particle\+Handler}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase \hyperlink{classparticle_1_1ParticleHandler}{Particle\+Handler}. \end{DoxyCompactList}\item 
+\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$ \hyperlink{classparticle_1_1WeatherSystem_adefe5a2956dfd92f8271ed0e8c70799e}{fps\+Data}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Fps\+Data. \end{DoxyCompactList}\item 
+\hyperlink{classtexture_1_1Texture}{Texture} $\ast$ \hyperlink{classparticle_1_1WeatherSystem_a8fbccea8de57ff87bdd606aa6e95cbab}{texture}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classparticle_1_1WeatherSystem}{Weather\+System} kontrolise stvaranje cestica i njihovo ponasanje. Pomocu klase \hyperlink{classparticle_1_1WeatherSystem}{Weather\+System} simuliramo padavine kreiranjem cestica u prostoru definisanom dimenzijama i centrom oblaka. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_a2ff7884009380a886ea3d5d5a2b8e765}\label{classparticle_1_1WeatherSystem_a2ff7884009380a886ea3d5d5a2b8e765}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!Weather\+System@{Weather\+System}}
+\index{Weather\+System@{Weather\+System}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{Weather\+System()}{WeatherSystem()}}
+{\footnotesize\ttfamily particle\+::\+Weather\+System\+::\+Weather\+System (\begin{DoxyParamCaption}\item[{float}]{particles\+Per\+Second,  }\item[{float}]{fall\+Intensity,  }\item[{float}]{life\+Length,  }\item[{float}]{cloud\+Size,  }\item[{\hyperlink{classutility_1_1FpsData}{Fps\+Data} $\ast$}]{fps\+Data,  }\item[{\hyperlink{classtexture_1_1Texture}{Texture} $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em particles\+Per\+Second} & Broj cestica koje se generisu po sekundi. \\
+\hline
+{\em fall\+Intensity} & Intenzitet padavina. \\
+\hline
+{\em life\+Length} & Duzina zivotnog veka. \\
+\hline
+{\em cloud\+Size} & Velicina oblaka. \\
+\hline
+{\em fps\+Data} & Pokazivac na instancu klase Fps\+Data. \\
+\hline
+{\em texture} & Pokazivac na instancu klase Texture. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_ac2a0b57d1870183c56da2aff9021ae6e}\label{classparticle_1_1WeatherSystem_ac2a0b57d1870183c56da2aff9021ae6e}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!````~Weather\+System@{$\sim$\+Weather\+System}}
+\index{````~Weather\+System@{$\sim$\+Weather\+System}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{$\sim$\+Weather\+System()}{~WeatherSystem()}}
+{\footnotesize\ttfamily particle\+::\+Weather\+System\+::$\sim$\+Weather\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_ac26bba944fcc147b49f12df6d11b53e5}\label{classparticle_1_1WeatherSystem_ac26bba944fcc147b49f12df6d11b53e5}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!generate\+Particles@{generate\+Particles}}
+\index{generate\+Particles@{generate\+Particles}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{generate\+Particles()}{generateParticles()}}
+{\footnotesize\ttfamily void particle\+::\+Weather\+System\+::generate\+Particles (\begin{DoxyParamCaption}\item[{\hyperlink{classparticle_1_1ParticleHandler}{Particle\+Handler} $\ast$}]{particle\+Handler,  }\item[{vec3}]{cloud\+Center }\end{DoxyParamCaption})}
+
+
+
+Funkcija generise nove cestice i dodaje ih u listu cestica. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em particle\+Handler} & Pokazivac na instancu klase \hyperlink{classparticle_1_1ParticleHandler}{Particle\+Handler}. \\
+\hline
+{\em cloud\+Center} & Centar oblaka. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_aba0914ccb5a062a4b7d54c17d107c543}\label{classparticle_1_1WeatherSystem_aba0914ccb5a062a4b7d54c17d107c543}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1Texture}{Texture} $\ast$ particle\+::\+Weather\+System\+::get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca teksturu cestica. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+Texture $\ast$ Pokazivac na instancu klase Texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_a5e9826ba8ab1324f9b4df5124d058ddd}\label{classparticle_1_1WeatherSystem_a5e9826ba8ab1324f9b4df5124d058ddd}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!set\+Texture@{set\+Texture}}
+\index{set\+Texture@{set\+Texture}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}}
+{\footnotesize\ttfamily void particle\+::\+Weather\+System\+::set\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{classtexture_1_1Texture}{Texture} $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja teksturu cestica. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em texture} & Pokazivac na instancu klase Texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_a64e9626cc1511271c24ff62a1c31200f}\label{classparticle_1_1WeatherSystem_a64e9626cc1511271c24ff62a1c31200f}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!cloud\+Size@{cloud\+Size}}
+\index{cloud\+Size@{cloud\+Size}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{cloud\+Size}{cloudSize}}
+{\footnotesize\ttfamily float particle\+::\+Weather\+System\+::cloud\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Velicina oblaka. 
+
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_aceaf5d329722c25c744bf3cbdc155295}\label{classparticle_1_1WeatherSystem_aceaf5d329722c25c744bf3cbdc155295}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!fall\+Intensity@{fall\+Intensity}}
+\index{fall\+Intensity@{fall\+Intensity}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{fall\+Intensity}{fallIntensity}}
+{\footnotesize\ttfamily float particle\+::\+Weather\+System\+::fall\+Intensity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Intenzitet padavina. 
+
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_adefe5a2956dfd92f8271ed0e8c70799e}\label{classparticle_1_1WeatherSystem_adefe5a2956dfd92f8271ed0e8c70799e}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!fps\+Data@{fps\+Data}}
+\index{fps\+Data@{fps\+Data}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{fps\+Data}{fpsData}}
+{\footnotesize\ttfamily \hyperlink{classutility_1_1FpsData}{Fps\+Data}$\ast$ particle\+::\+Weather\+System\+::fps\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Fps\+Data. 
+
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_a0aa06ba52db7729e12657baf726fb116}\label{classparticle_1_1WeatherSystem_a0aa06ba52db7729e12657baf726fb116}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!life\+Length@{life\+Length}}
+\index{life\+Length@{life\+Length}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{life\+Length}{lifeLength}}
+{\footnotesize\ttfamily float particle\+::\+Weather\+System\+::life\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Duzina zivotnog veka cestice. 
+
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_a0f24302815bf5a77140b26d015fefdbe}\label{classparticle_1_1WeatherSystem_a0f24302815bf5a77140b26d015fefdbe}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!particle\+Handler@{particle\+Handler}}
+\index{particle\+Handler@{particle\+Handler}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{particle\+Handler}{particleHandler}}
+{\footnotesize\ttfamily \hyperlink{classparticle_1_1ParticleHandler}{Particle\+Handler}$\ast$ particle\+::\+Weather\+System\+::particle\+Handler\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase \hyperlink{classparticle_1_1ParticleHandler}{Particle\+Handler}. 
+
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_ad2bd921d15667d8866d64fa633d76d0f}\label{classparticle_1_1WeatherSystem_ad2bd921d15667d8866d64fa633d76d0f}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!particles\+Per\+Second@{particles\+Per\+Second}}
+\index{particles\+Per\+Second@{particles\+Per\+Second}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{particles\+Per\+Second}{particlesPerSecond}}
+{\footnotesize\ttfamily float particle\+::\+Weather\+System\+::particles\+Per\+Second\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Broj cestica koje se generisu po sekundi. 
+
+\mbox{\Hypertarget{classparticle_1_1WeatherSystem_a8fbccea8de57ff87bdd606aa6e95cbab}\label{classparticle_1_1WeatherSystem_a8fbccea8de57ff87bdd606aa6e95cbab}} 
+\index{particle\+::\+Weather\+System@{particle\+::\+Weather\+System}!texture@{texture}}
+\index{texture@{texture}!particle\+::\+Weather\+System@{particle\+::\+Weather\+System}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1Texture}{Texture}$\ast$ particle\+::\+Weather\+System\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Texture. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/particle/\hyperlink{WeatherSystem_8h}{Weather\+System.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/particle/\hyperlink{WeatherSystem_8cpp}{Weather\+System.\+cpp}\end{DoxyCompactItemize}

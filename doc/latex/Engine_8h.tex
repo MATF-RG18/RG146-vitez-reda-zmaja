@@ -6,13 +6,14 @@ Deklaracija klase Engine i deklaracija callback funkcija.
 
 
 {\ttfamily \#include \char`\"{}../model/\+Textured\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../model/\+Animated\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../core/\+Loader.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../model/\+Raw\+Model.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../core/\+Vao\+Loader.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../core/\+Render.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../core/\+Main\+Renderer.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../core/\+Obj\+Loader.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../shader/\+Shader.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../texture/\+Model\+Texture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../texture/\+Texture.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../texture/\+Terrain\+Texture\+Pack.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../entity/\+Entity.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../entity/\+Player.\+h\char`\"{}}\newline
@@ -23,20 +24,24 @@ Deklaracija klase Engine i deklaracija callback funkcija.
 {\ttfamily \#include \char`\"{}../hud/\+Hud\+Renderer.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../font/\+Font\+Renderer.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../font/\+Text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../animation/\+Animator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../particle/\+Weather\+System.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
 {\ttfamily \#include $<$G\+L/freeglut.\+h$>$}\newline
-Graf zavisnosti datoteka za Engine.\+h\+:\nopagebreak
+Graf zavisnosti datoteka za Engine.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{Engine_8h__incl}
 \end{center}
 \end{figure}
-Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: \nopagebreak
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=238pt]{Engine_8h__dep__incl}
+\includegraphics[width=206pt]{Engine_8h__dep__incl}
 \end{center}
 \end{figure}
 \subsection*{Klase, strukture i unije}
@@ -57,6 +62,8 @@ class \hyperlink{classcore_1_1Engine}{core\+::\+Engine}
 \subsection*{Funkcije}
 \begin{DoxyCompactItemize}
 \item 
+void \hyperlink{namespacecore_aa39dd0a5d67c7531b2adf84acb6bb496}{core\+::clean\+Up} ()
+\begin{DoxyCompactList}\small\item\em Funkcija oslobadja memoriju alociranu prilikom koriscenja programa. \end{DoxyCompactList}\item 
 void \hyperlink{namespacecore_a1c3be366234e051e17b4b45f40c18960}{core\+::render\+Scene} (void)
 \begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Display\+Func(). Funkcija koja kontrolise sta ce biti iscrtano na ekranu. \end{DoxyCompactList}\item 
 void \hyperlink{namespacecore_a179fad39a2b3f74cf7a0bffb578fce00}{core\+::on\+Keyboard} (unsigned char key, int x, int y)

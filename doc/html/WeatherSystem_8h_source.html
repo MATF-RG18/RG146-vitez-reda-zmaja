@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/include/particle/WeatherSystem.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e80574ad75c4623ab83350b3a8fc81c6.html">particle</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">WeatherSystem.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="WeatherSystem_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _WEATHER_SYSTEM_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _WEATHER_SYSTEM_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Ukljucivanje korsnicki defininisanih biblioteka.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../particle/ParticleHandler.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceparticle.html">particle</a> {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classparticle_1_1WeatherSystem.html">   25</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classparticle_1_1WeatherSystem.html">WeatherSystem</a> {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="comment">// Privatne promenljive klase</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classparticle_1_1WeatherSystem.html#ad2bd921d15667d8866d64fa633d76d0f">   30</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classparticle_1_1WeatherSystem.html#ad2bd921d15667d8866d64fa633d76d0f">particlesPerSecond</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classparticle_1_1WeatherSystem.html#aceaf5d329722c25c744bf3cbdc155295">   33</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classparticle_1_1WeatherSystem.html#aceaf5d329722c25c744bf3cbdc155295">fallIntensity</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classparticle_1_1WeatherSystem.html#a0aa06ba52db7729e12657baf726fb116">   36</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classparticle_1_1WeatherSystem.html#a0aa06ba52db7729e12657baf726fb116">lifeLength</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classparticle_1_1WeatherSystem.html#a64e9626cc1511271c24ff62a1c31200f">   39</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classparticle_1_1WeatherSystem.html#a64e9626cc1511271c24ff62a1c31200f">cloudSize</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classparticle_1_1WeatherSystem.html#a0f24302815bf5a77140b26d015fefdbe">   42</a></span>&#160;    <a class="code" href="classparticle_1_1ParticleHandler.html">ParticleHandler</a> *<a class="code" href="classparticle_1_1WeatherSystem.html#a0f24302815bf5a77140b26d015fefdbe">particleHandler</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classparticle_1_1WeatherSystem.html#adefe5a2956dfd92f8271ed0e8c70799e">   45</a></span>&#160;    <a class="code" href="classutility_1_1FpsData.html">FpsData</a> *<a class="code" href="classparticle_1_1WeatherSystem.html#adefe5a2956dfd92f8271ed0e8c70799e">fpsData</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classparticle_1_1WeatherSystem.html#a8fbccea8de57ff87bdd606aa6e95cbab">   48</a></span>&#160;    <a class="code" href="classtexture_1_1Texture.html">Texture</a> *<a class="code" href="classparticle_1_1WeatherSystem.html#a8fbccea8de57ff87bdd606aa6e95cbab">texture</a>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// Javne funkcije klase</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classparticle_1_1WeatherSystem.html#a2ff7884009380a886ea3d5d5a2b8e765">WeatherSystem</a>(<span class="keywordtype">float</span> particlesPerSecond, <span class="keywordtype">float</span> fallIntensity, <span class="keywordtype">float</span> lifeLength, <span class="keywordtype">float</span> cloudSize, <a class="code" href="classutility_1_1FpsData.html">FpsData</a> *fpsData, <a class="code" href="classtexture_1_1Texture.html">Texture</a> *texture);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classparticle_1_1WeatherSystem.html#ac2a0b57d1870183c56da2aff9021ae6e">~WeatherSystem</a>();</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classparticle_1_1WeatherSystem.html#ac26bba944fcc147b49f12df6d11b53e5">generateParticles</a>(<a class="code" href="classparticle_1_1ParticleHandler.html">ParticleHandler</a> *particleHandler, vec3 cloudCenter);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classparticle_1_1WeatherSystem.html#a5e9826ba8ab1324f9b4df5124d058ddd">setTexture</a>(<a class="code" href="classtexture_1_1Texture.html">Texture</a> *texture);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classtexture_1_1Texture.html">Texture</a> *<a class="code" href="classparticle_1_1WeatherSystem.html#aba0914ccb5a062a4b7d54c17d107c543">getTexture</a>();</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  };</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;} <span class="comment">// particle</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classparticle_1_1WeatherSystem_html_a2ff7884009380a886ea3d5d5a2b8e765"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#a2ff7884009380a886ea3d5d5a2b8e765">particle::WeatherSystem::WeatherSystem</a></div><div class="ttdeci">WeatherSystem(float particlesPerSecond, float fallIntensity, float lifeLength, float cloudSize, FpsData *fpsData, Texture *texture)</div><div class="ttdoc">Konstruktor klase. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.cpp:5</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html_a0f24302815bf5a77140b26d015fefdbe"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#a0f24302815bf5a77140b26d015fefdbe">particle::WeatherSystem::particleHandler</a></div><div class="ttdeci">ParticleHandler * particleHandler</div><div class="ttdoc">Pokazivac na instancu klase ParticleHandler. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.h:42</div></div>
+<div class="ttc" id="namespaceparticle_html"><div class="ttname"><a href="namespaceparticle.html">particle</a></div><div class="ttdoc">Prostor imena particle. Sadrzi sve klase, funkcije i promenljive koje su vezane za sistem cestica...</div><div class="ttdef"><b>Definition:</b> Particle.cpp:9</div></div>
+<div class="ttc" id="classparticle_1_1ParticleHandler_html"><div class="ttname"><a href="classparticle_1_1ParticleHandler.html">particle::ParticleHandler</a></div><div class="ttdoc">Klasa ParticleHandler kontrolise cestice. Lista cestica se azurira i poziva se klasa za renderovanje ...</div><div class="ttdef"><b>Definition:</b> ParticleHandler.h:29</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html_ac2a0b57d1870183c56da2aff9021ae6e"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#ac2a0b57d1870183c56da2aff9021ae6e">particle::WeatherSystem::~WeatherSystem</a></div><div class="ttdeci">~WeatherSystem()</div><div class="ttdoc">Destruktor klase. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.cpp:15</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html_aba0914ccb5a062a4b7d54c17d107c543"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#aba0914ccb5a062a4b7d54c17d107c543">particle::WeatherSystem::getTexture</a></div><div class="ttdeci">Texture * getTexture()</div><div class="ttdoc">Funkcija vraca teksturu cestica. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.cpp:37</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html_a5e9826ba8ab1324f9b4df5124d058ddd"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#a5e9826ba8ab1324f9b4df5124d058ddd">particle::WeatherSystem::setTexture</a></div><div class="ttdeci">void setTexture(Texture *texture)</div><div class="ttdoc">Funkcija postavlja teksturu cestica. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.cpp:32</div></div>
+<div class="ttc" id="classtexture_1_1Texture_html"><div class="ttname"><a href="classtexture_1_1Texture.html">texture::Texture</a></div><div class="ttdoc">Klasa TexturedModel opisuje teksturu objekta. Model je opisan instancom klase RawModel i odgovarajuco...</div><div class="ttdef"><b>Definition:</b> Texture.h:21</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html_a8fbccea8de57ff87bdd606aa6e95cbab"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#a8fbccea8de57ff87bdd606aa6e95cbab">particle::WeatherSystem::texture</a></div><div class="ttdeci">Texture * texture</div><div class="ttdoc">Pokazivac na instancu klase Texture. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.h:48</div></div>
+<div class="ttc" id="classutility_1_1FpsData_html"><div class="ttname"><a href="classutility_1_1FpsData.html">utility::FpsData</a></div><div class="ttdoc">Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f...</div><div class="ttdef"><b>Definition:</b> FpsData.h:26</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html_aceaf5d329722c25c744bf3cbdc155295"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#aceaf5d329722c25c744bf3cbdc155295">particle::WeatherSystem::fallIntensity</a></div><div class="ttdeci">float fallIntensity</div><div class="ttdoc">Intenzitet padavina. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.h:33</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html">particle::WeatherSystem</a></div><div class="ttdoc">Klasa WeatherSystem kontrolise stvaranje cestica i njihovo ponasanje. Pomocu klase WeatherSystem simu...</div><div class="ttdef"><b>Definition:</b> WeatherSystem.h:25</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html_ac26bba944fcc147b49f12df6d11b53e5"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#ac26bba944fcc147b49f12df6d11b53e5">particle::WeatherSystem::generateParticles</a></div><div class="ttdeci">void generateParticles(ParticleHandler *particleHandler, vec3 cloudCenter)</div><div class="ttdoc">Funkcija generise nove cestice i dodaje ih u listu cestica. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.cpp:19</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html_ad2bd921d15667d8866d64fa633d76d0f"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#ad2bd921d15667d8866d64fa633d76d0f">particle::WeatherSystem::particlesPerSecond</a></div><div class="ttdeci">float particlesPerSecond</div><div class="ttdoc">Broj cestica koje se generisu po sekundi. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.h:30</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html_adefe5a2956dfd92f8271ed0e8c70799e"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#adefe5a2956dfd92f8271ed0e8c70799e">particle::WeatherSystem::fpsData</a></div><div class="ttdeci">FpsData * fpsData</div><div class="ttdoc">Pokazivac na instancu klase FpsData. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.h:45</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html_a0aa06ba52db7729e12657baf726fb116"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#a0aa06ba52db7729e12657baf726fb116">particle::WeatherSystem::lifeLength</a></div><div class="ttdeci">float lifeLength</div><div class="ttdoc">Duzina zivotnog veka cestice. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.h:36</div></div>
+<div class="ttc" id="classparticle_1_1WeatherSystem_html_a64e9626cc1511271c24ff62a1c31200f"><div class="ttname"><a href="classparticle_1_1WeatherSystem.html#a64e9626cc1511271c24ff62a1c31200f">particle::WeatherSystem::cloudSize</a></div><div class="ttdeci">float cloudSize</div><div class="ttdoc">Velicina oblaka. </div><div class="ttdef"><b>Definition:</b> WeatherSystem.h:39</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

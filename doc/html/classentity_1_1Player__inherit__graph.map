@@ -1,3 +1,3 @@
 <map id="entity::Player" name="entity::Player">
-<area shape="rect" id="node2" href="$classentity_1_1Entity.html" title="Klasa Entity odredjuje jedan entitet. Pomocu klase Entity odredjujemo entitet tako sto mu pridruzujem..." alt="" coords="7,5,103,32"/>
+<area shape="rect" id="node2" href="$classentity_1_1AnimatedEntity.html" title="Klasa AnimatedEntity odredjuje jedan animirani entitet. Pomocu klase AnimatedEntity odredjujemo entit..." alt="" coords="5,5,156,32"/>
 </map>

@@ -1,5 +1,11 @@
 #include "../../include/particle/Particle.h"
 
+// Klasa je implementirana po uzoru na video tutorijal:
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+// i internet stranice i clanke:
+// http://www.opengl-tutorial.org/intermediate-tutorials/billboards-particles/particles-instancing/
+// https://learnopengl.com/In-Practice/2D-Game/Particles
+
 namespace particle {
 
   Particle::Particle(vec3 position, vec3 speed, float gravity, float lifeLength, float rotation, float scale, FpsData *fpsData) {
@@ -11,6 +17,7 @@ namespace particle {
     this->rotation = rotation;
     this->scale = scale;
     this->fpsData = fpsData;
+    this->currentLifeTime = 0;
   }
 
   Particle::~Particle() {

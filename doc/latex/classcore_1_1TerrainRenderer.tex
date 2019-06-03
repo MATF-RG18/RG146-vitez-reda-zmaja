@@ -27,8 +27,8 @@ Klasni dijagram za core\+:\+:Terrain\+Renderer\+:\nopagebreak
 \begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
 void \hyperlink{classcore_1_1TerrainRenderer_a1f2aaf851e780fc8f78aa5bb3cd1b512}{render} (list$<$ \hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$$>$ terrains)
 \begin{DoxyCompactList}\small\item\em Funkcija iscrtava terene na ekran. \end{DoxyCompactList}\item 
-void \hyperlink{classcore_1_1TerrainRenderer_ad4e7d88767cdfc19ee07bf3558f6c1f0}{prepare\+Terrain} (\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$\hyperlink{namespacecore_ac45da6f80dac9bead5c9310c27897f15}{terrain})
-\begin{DoxyCompactList}\small\item\em Funkcija vrsi pripremu terena za ucitavanje. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1TerrainRenderer_aa81fb29d5ab446955ffc1aae79514d8a}{draw\+Terrain} (\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$\hyperlink{namespacecore_ac45da6f80dac9bead5c9310c27897f15}{terrain})
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava teksture terena i iscrtava sve njegove delove.. \end{DoxyCompactList}\item 
 void \hyperlink{classcore_1_1TerrainRenderer_ac66bf45a30d7c1b443f8b77132112fe0}{bind\+Textures} (\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$\hyperlink{namespacecore_ac45da6f80dac9bead5c9310c27897f15}{terrain})
 \begin{DoxyCompactList}\small\item\em Funkcija povezuje teksture terena. \end{DoxyCompactList}\item 
 void \hyperlink{classcore_1_1TerrainRenderer_ac739a96169a8fef7bfad56bbe3367962}{unbind\+Terrain} ()
@@ -126,15 +126,15 @@ Funkcija kreira matricu projekcije.
 \begin{DoxyReturn}{Vrednost funkcije}
 mat4 Matrica projekcije. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classcore_1_1TerrainRenderer_a5e1837566f4de6e49dbf19e203cc9563}\label{classcore_1_1TerrainRenderer_a5e1837566f4de6e49dbf19e203cc9563}} 
-\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!load\+Model\+Matrix@{load\+Model\+Matrix}}
-\index{load\+Model\+Matrix@{load\+Model\+Matrix}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
-\subsubsection{\texorpdfstring{load\+Model\+Matrix()}{loadModelMatrix()}}
-{\footnotesize\ttfamily void core\+::\+Terrain\+Renderer\+::load\+Model\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$}]{terrain }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_aa81fb29d5ab446955ffc1aae79514d8a}\label{classcore_1_1TerrainRenderer_aa81fb29d5ab446955ffc1aae79514d8a}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!draw\+Terrain@{draw\+Terrain}}
+\index{draw\+Terrain@{draw\+Terrain}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{draw\+Terrain()}{drawTerrain()}}
+{\footnotesize\ttfamily void core\+::\+Terrain\+Renderer\+::draw\+Terrain (\begin{DoxyParamCaption}\item[{\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$}]{terrain }\end{DoxyParamCaption})}
 
 
 
-Funkcija kreira matricu transformacije za teren i ucitava je u sejder program. 
+Funkcija ucitava teksture terena i iscrtava sve njegove delove.. 
 
 
 \begin{DoxyParams}{Parametri}
@@ -144,15 +144,15 @@ Funkcija kreira matricu transformacije za teren i ucitava je u sejder program.
 \begin{DoxyReturn}{Vrednost funkcije}
 void 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classcore_1_1TerrainRenderer_ad4e7d88767cdfc19ee07bf3558f6c1f0}\label{classcore_1_1TerrainRenderer_ad4e7d88767cdfc19ee07bf3558f6c1f0}} 
-\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!prepare\+Terrain@{prepare\+Terrain}}
-\index{prepare\+Terrain@{prepare\+Terrain}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
-\subsubsection{\texorpdfstring{prepare\+Terrain()}{prepareTerrain()}}
-{\footnotesize\ttfamily void core\+::\+Terrain\+Renderer\+::prepare\+Terrain (\begin{DoxyParamCaption}\item[{\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$}]{terrain }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classcore_1_1TerrainRenderer_a5e1837566f4de6e49dbf19e203cc9563}\label{classcore_1_1TerrainRenderer_a5e1837566f4de6e49dbf19e203cc9563}} 
+\index{core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}!load\+Model\+Matrix@{load\+Model\+Matrix}}
+\index{load\+Model\+Matrix@{load\+Model\+Matrix}!core\+::\+Terrain\+Renderer@{core\+::\+Terrain\+Renderer}}
+\subsubsection{\texorpdfstring{load\+Model\+Matrix()}{loadModelMatrix()}}
+{\footnotesize\ttfamily void core\+::\+Terrain\+Renderer\+::load\+Model\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$}]{terrain }\end{DoxyParamCaption})}
 
 
 
-Funkcija vrsi pripremu terena za ucitavanje. 
+Funkcija kreira matricu transformacije za teren i ucitava je u sejder program. 
 
 
 \begin{DoxyParams}{Parametri}

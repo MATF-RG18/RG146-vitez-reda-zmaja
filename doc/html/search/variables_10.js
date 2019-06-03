@@ -1,14 +1,15 @@
 var searchData=
 [
-  ['rawmodel',['rawModel',['../classmodel_1_1TexturedModel.html#ac6157368c7e55a78aa02f9546f5f2dc3',1,'model::TexturedModel']]],
-  ['reflection_5ftexname',['reflection_texname',['../structtinyobj_1_1material__t.html#a111faaae52874d8715c7719acf60d726',1,'tinyobj::material_t']]],
-  ['reflection_5ftexopt',['reflection_texopt',['../structtinyobj_1_1material__t.html#a8e9e796988061cf2446f65d79a6f6ae9',1,'tinyobj::material_t']]],
-  ['reflectivity',['reflectivity',['../classtexture_1_1Texture.html#a230e6f2abbfc59eae1daf72eba177b90',1,'texture::Texture']]],
-  ['renderer',['renderer',['../classcore_1_1MainRenderer.html#a3cdbf7f833cac2e18e8bb7d3cdd7728d',1,'core::MainRenderer::renderer()'],['../namespacecore.html#a4f2740ccbefd3bb34c624a8c99d6446d',1,'core::renderer()']]],
-  ['roll',['roll',['../classentity_1_1Camera.html#aed638e415fd894c7e39eb9fecf65afbb',1,'entity::Camera']]],
-  ['rotation',['rotation',['../classentity_1_1Entity.html#aedb4c5dc1cfbc8cb3f6deb565ea920cb',1,'entity::Entity::rotation()'],['../classfont_1_1Text.html#a4dc0a823fa5a8592b6d09e90b18226fb',1,'font::Text::rotation()'],['../classhud_1_1HudTexture.html#a79336d9ce1cc8ffb719355442b3b27c0',1,'hud::HudTexture::rotation()'],['../classshader_1_1SkyboxShader.html#a9e6ac7d8bed0467c3aa3b77f0fe80401',1,'shader::SkyboxShader::rotation()']]],
-  ['roughness',['roughness',['../structtinyobj_1_1material__t.html#a7e26f199e4a308bd9fd224349e266cea',1,'tinyobj::material_t']]],
-  ['roughness_5ftexname',['roughness_texname',['../structtinyobj_1_1material__t.html#a7d7a7791ad94f2a5eadc2c8ee8c9a902',1,'tinyobj::material_t']]],
-  ['roughness_5ftexopt',['roughness_texopt',['../structtinyobj_1_1material__t.html#aa02a56f4de95ab212e19a5d77b1f2d91',1,'tinyobj::material_t']]],
-  ['rtexture',['rTexture',['../classtexture_1_1TerrainTexturePack.html#a08b5f1b7665151358b6b162627fc37d4',1,'texture::TerrainTexturePack']]]
+  ['scale',['scale',['../classentity_1_1AnimatedEntity.html#a137e8fe0398142e9dedebb3eb1fe4f2f',1,'entity::AnimatedEntity::scale()'],['../classentity_1_1Entity.html#a59e5d5e3575df70cd5c74b5d739d84ca',1,'entity::Entity::scale()'],['../classfont_1_1Text.html#aec4f985d466d9f4b10cc426e393d6f14',1,'font::Text::scale()'],['../classhud_1_1HudTexture.html#af4fb370dbaffb1604a886368daa72507',1,'hud::HudTexture::scale()'],['../classparticle_1_1Particle.html#ae33238d14fd210a1d8336e568a456960',1,'particle::Particle::scale()']]],
+  ['screenheight',['screenHeight',['../classfont_1_1FontRenderer.html#ad048dc05d9a1f47944f1c2a913840fa3',1,'font::FontRenderer::screenHeight()'],['../namespacecore.html#a985c45c5bff737ef922df5a06c814756',1,'core::screenHeight()']]],
+  ['screentitle',['screenTitle',['../namespacecore.html#ab274ea2c748b3da9a978f504eab4ee85',1,'core']]],
+  ['screenwidth',['screenWidth',['../classfont_1_1FontRenderer.html#aa86ddacb12c06709125f0b72d275d7ba',1,'font::FontRenderer::screenWidth()'],['../namespacecore.html#a1b1f1651effee4b2dba419d8381a9d60',1,'core::screenWidth()']]],
+  ['sensitivity',['sensitivity',['../classentity_1_1Camera.html#aae009950e0af66c4b5ed71f903b81513',1,'entity::Camera']]],
+  ['shader',['shader',['../classcore_1_1AnimatedModelRenderer.html#acb2349d2a687cead94b8538731cd436a',1,'core::AnimatedModelRenderer::shader()'],['../classcore_1_1MainRenderer.html#a9e5b8ba9a151d64b79612b8631fc1255',1,'core::MainRenderer::shader()'],['../classcore_1_1Render.html#a220be4bb26b6cbec909953f247a7732c',1,'core::Render::shader()'],['../namespacecore.html#adf2f7f5f951bd01b06d6c792d7bf301b',1,'core::shader()']]],
+  ['shine',['shine',['../classtexture_1_1Texture.html#abf70b1d80fb1df005deb34561467d740',1,'texture::Texture']]],
+  ['size',['size',['../classfont_1_1FontData.html#a783ccdb54f0b3319c31c31bd8acf6111',1,'font::FontData']]],
+  ['skyboxrenderer',['skyboxRenderer',['../classcore_1_1MainRenderer.html#a2e02e2528a233d92ed37587fa2ba38a4',1,'core::MainRenderer']]],
+  ['skyboxshader',['skyboxShader',['../classcore_1_1SkyboxRenderer.html#abaf903d3d4e235215d0252b3e2693ad8',1,'core::SkyboxRenderer']]],
+  ['snowtexture',['snowTexture',['../namespacecore.html#aa7075d07c89f570f428557cfaaefc16b',1,'core']]],
+  ['speed',['speed',['../classparticle_1_1Particle.html#a24b42fc49ed65250499e0ba059764f0c',1,'particle::Particle']]]
 ];

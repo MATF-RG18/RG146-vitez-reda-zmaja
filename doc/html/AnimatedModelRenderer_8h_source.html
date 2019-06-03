@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/include/core/AnimatedModelRenderer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_3d69f64eaf81436fe2b22361382717e5.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AnimatedModelRenderer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="AnimatedModelRenderer_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _ANIMATED_MODEL_RENDERER_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _ANIMATED_MODEL_RENDERER_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Omogucuje korsicenje novijih verzija OpenGL-a</span></div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="AnimatedModelRenderer_8h.html#a120fb070bddb21f0bd899f50252c4cb5">   12</a></span>&#160;<span class="preprocessor">#define GL_GLEXT_PROTOTYPES</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Ukljucivanje korsnicki defininisanih biblioteka.</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../model/AnimatedModel.h&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../entity/AnimatedEntity.h&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../utility/Math.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../shader/AnimatedModelShader.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Ukljucivanje OpenGL biblioteke.</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;GL/glut.h&gt;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;glm/vec3.hpp&gt;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;glm/mat4x4.hpp&gt;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;glm/gtc/matrix_transform.hpp&gt;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// Koriscenje prostora imena za jednostavniji i pregledniji kod.</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemodel.html">model</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceshader.html">shader</a>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceentity.html">entity</a>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceglm.html">glm</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// Maksimalan broj kostiju.</span></div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="AnimatedModelRenderer_8h.html#abdb86b63a3ac2d2b3d6ad946ea404087">   36</a></span>&#160;<span class="preprocessor">#define MAX_BONES 50</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacecore.html">core</a> {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classcore_1_1AnimatedModelRenderer.html">   50</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classcore_1_1AnimatedModelRenderer.html">AnimatedModelRenderer</a> {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Privatne promenljive klase</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classcore_1_1AnimatedModelRenderer.html#a6e6bdd3332f1444de611866c39820939">   55</a></span>&#160;    <span class="keywordtype">float</span> FOV = 70;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classcore_1_1AnimatedModelRenderer.html#ae1866e112d319afa80dc143dca02e921">   58</a></span>&#160;    <span class="keywordtype">float</span> NEAR_PLANE = 0.1;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classcore_1_1AnimatedModelRenderer.html#a2266704b843367472fcb7cb56d17f3cf">   61</a></span>&#160;    <span class="keywordtype">float</span> FAR_PLANE = 1000;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classcore_1_1AnimatedModelRenderer.html#acb2349d2a687cead94b8538731cd436a">   64</a></span>&#160;    <a class="code" href="classshader_1_1AnimatedModelShader.html">AnimatedModelShader</a> *<a class="code" href="classcore_1_1AnimatedModelRenderer.html#acb2349d2a687cead94b8538731cd436a">shader</a>;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// Javne funkcije klase</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classcore_1_1AnimatedModelRenderer.html">AnimatedModelRenderer</a>(<a class="code" href="classshader_1_1AnimatedModelShader.html">AnimatedModelShader</a> *shader);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    ~<a class="code" href="classcore_1_1AnimatedModelRenderer.html">AnimatedModelRenderer</a>();</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> render(map&lt;<a class="code" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *, list&lt;AnimatedEntity *&gt;&gt; entities);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> drawAnimatedModel(<a class="code" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *<a class="code" href="namespacemodel.html">model</a>);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> unbindAnimatedModel();</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> prepareInstance(<a class="code" href="classentity_1_1AnimatedEntity.html">AnimatedEntity</a> *<a class="code" href="namespaceentity.html">entity</a>);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">// Privatne funkcije klase</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    mat4 createProjectionMatrix();</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  };</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;} <span class="comment">// core</span></div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespaceshader_html"><div class="ttname"><a href="namespaceshader.html">shader</a></div><div class="ttdoc">Prostor imena shader. Sadrzi sejder programe. </div><div class="ttdef"><b>Definition:</b> AnimatedModelShader.cpp:6</div></div>
+<div class="ttc" id="classshader_1_1AnimatedModelShader_html"><div class="ttname"><a href="classshader_1_1AnimatedModelShader.html">shader::AnimatedModelShader</a></div><div class="ttdoc">Klasa AnimatedModelShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder f...</div><div class="ttdef"><b>Definition:</b> AnimatedModelShader.h:49</div></div>
+<div class="ttc" id="namespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div></div>
+<div class="ttc" id="namespacecore_html"><div class="ttname"><a href="namespacecore.html">core</a></div><div class="ttdoc">Prostor imena core. Sadrzi sve klase, funkcije i promenljive koje su od sustinskog znacaja za funkcio...</div><div class="ttdef"><b>Definition:</b> AnimatedModelRenderer.cpp:9</div></div>
+<div class="ttc" id="classentity_1_1AnimatedEntity_html"><div class="ttname"><a href="classentity_1_1AnimatedEntity.html">entity::AnimatedEntity</a></div><div class="ttdoc">Klasa AnimatedEntity odredjuje jedan animirani entitet. Pomocu klase AnimatedEntity odredjujemo entit...</div><div class="ttdef"><b>Definition:</b> AnimatedEntity.h:39</div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdoc">Prostor imena model. Sadrzi sve klase, funkcije i promenljive koje opisuju model objekta. </div><div class="ttdef"><b>Definition:</b> AnimatedModel.cpp:9</div></div>
+<div class="ttc" id="namespaceentity_html"><div class="ttname"><a href="namespaceentity.html">entity</a></div><div class="ttdoc">Prostor imena entity. Sadrzi sve klase, funkcije i promenljive koje odredjuju jedan entitet...</div><div class="ttdef"><b>Definition:</b> AnimatedEntity.cpp:6</div></div>
+<div class="ttc" id="classmodel_1_1AnimatedModel_html"><div class="ttname"><a href="classmodel_1_1AnimatedModel.html">model::AnimatedModel</a></div><div class="ttdoc">Klasa AnimatedModel opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instanco...</div><div class="ttdef"><b>Definition:</b> AnimatedModel.h:34</div></div>
+<div class="ttc" id="classcore_1_1AnimatedModelRenderer_html"><div class="ttname"><a href="classcore_1_1AnimatedModelRenderer.html">core::AnimatedModelRenderer</a></div><div class="ttdoc">Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ...</div><div class="ttdef"><b>Definition:</b> AnimatedModelRenderer.h:50</div></div>
+<div class="ttc" id="classcore_1_1AnimatedModelRenderer_html_acb2349d2a687cead94b8538731cd436a"><div class="ttname"><a href="classcore_1_1AnimatedModelRenderer.html#acb2349d2a687cead94b8538731cd436a">core::AnimatedModelRenderer::shader</a></div><div class="ttdeci">AnimatedModelShader * shader</div><div class="ttdoc">Pokazivac na instancu klase AnimatedModelShader. </div><div class="ttdef"><b>Definition:</b> AnimatedModelRenderer.h:64</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

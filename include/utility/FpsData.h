@@ -39,6 +39,7 @@ namespace utility {
           /// Broj frejmova.
           int numOfFrames;
 
+          /// Vreme proteklo od kreiranja poslednja dva frejma.
           float frameDeltaTime;
 
         // Javne funkcije klase.
@@ -69,6 +70,11 @@ namespace utility {
           ////////////////////////////////////////////////////////////////////////////
           int getFpsCount();
 
+          ////////////////////////////////////////////////////////////////////////////
+          /// @brief Funkcija vraca vreme proteklo od izmedju poslednja dva frejma.
+          /// @param void
+          /// return float Vreme proteklo od kreiranja poslednja dva frejma.
+          ////////////////////////////////////////////////////////////////////////////
           float getFrameDeltaTime();
 
     };

@@ -75,11 +75,12 @@ $(function() {
 <p>Deklaracija klase Engine i deklaracija callback funkcija.  
 <a href="#details">Još...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="TexturedModel_8h_source.html">../model/TexturedModel.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="AnimatedModel_8h_source.html">../model/AnimatedModel.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Loader_8h_source.html">../core/Loader.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="RawModel_8h_source.html">../model/RawModel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="VaoLoader_8h_source.html">../core/VaoLoader.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Render_8h_source.html">../core/Render.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MainRenderer_8h_source.html">../core/MainRenderer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ObjLoader_8h_source.html">../core/ObjLoader.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Shader_8h_source.html">../shader/Shader.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Texture_8h_source.html">../texture/Texture.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TerrainTexturePack_8h_source.html">../texture/TerrainTexturePack.h</a>&quot;</code><br />
@@ -92,6 +93,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="HudRenderer_8h_source.html">../hud/HudRenderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="FontRenderer_8h_source.html">../font/FontRenderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Text_8h_source.html">../font/Text.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Animator_8h_source.html">../animation/Animator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="WeatherSystem_8h_source.html">../particle/WeatherSystem.h</a>&quot;</code><br />
 <code>#include &lt;GL/glut.h&gt;</code><br />
 <code>#include &lt;GL/freeglut.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -99,24 +102,37 @@ Graf zavisnosti datoteka za Engine.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="Engine_8h__incl.png" border="0" usemap="#_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2core_2Engine_8h" alt=""/></div>
 <map name="_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2core_2Engine_8h" id="_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2core_2Engine_8h">
-<area shape="rect" id="node2" href="TexturedModel_8h.html" title="Deklaracija klase TexturedModel. " alt="" coords="93,579,264,606"/>
-<area shape="rect" id="node3" href="RawModel_8h.html" title="Deklaracija klase RawModel. " alt="" coords="249,661,396,688"/>
-<area shape="rect" id="node4" href="Texture_8h.html" title="Deklaracija klase Texture. " alt="" coords="57,661,225,688"/>
-<area shape="rect" id="node5" href="VaoLoader_8h.html" title="Deklaracija klase VaoLoader. " alt="" coords="693,579,829,606"/>
-<area shape="rect" id="node10" href="Render_8h.html" title="Deklaracija klase Render. " alt="" coords="873,199,989,225"/>
-<area shape="rect" id="node11" href="Entity_8h.html" title="Deklaracija klase Entity. " alt="" coords="1085,497,1200,524"/>
-<area shape="rect" id="node16" href="Math_8h.html" title="../utility/Math.h" alt="" coords="1376,579,1485,606"/>
-<area shape="rect" id="node19" href="Shader_8h.html" title="Deklaracija klase Shader. " alt="" coords="1935,273,2065,300"/>
-<area shape="rect" id="node20" href="Camera_8h.html" title="Deklaracija klase Camera. " alt="" coords="1763,348,1890,375"/>
-<area shape="rect" id="node21" href="Player_8h.html" title="Deklaracija klase Player. " alt="" coords="857,423,975,449"/>
-<area shape="rect" id="node23" href="TerrainTexturePack_8h.html" title="Deklaracija klase TerrainTexturePack. " alt="" coords="2467,572,2629,613"/>
-<area shape="rect" id="node33" href="MainRenderer_8h.html" title="Deklaracija klase Render. " alt="" coords="1113,124,1268,151"/>
-<area shape="rect" id="node36" href="ObjLoader_8h.html" title="Deklaracija klase Render. " alt="" coords="2433,273,2567,300"/>
-<area shape="rect" id="node26" href="Light_8h.html" title="../entity/Light.h" alt="" coords="2016,579,2125,606"/>
-<area shape="rect" id="node22" href="Terrain_8h.html" title="../terrain/Terrain.h" alt="" coords="856,497,981,524"/>
-<area shape="rect" id="node24" href="TerrainTexture_8h.html" title="Deklaracija klase TerrainTexture. " alt="" coords="2461,661,2635,688"/>
-<area shape="rect" id="node34" href="TerrainRenderer_8h.html" title="../core/TerrainRenderer.h" alt="" coords="1267,199,1434,225"/>
-<area shape="rect" id="node35" href="TerrainShader_8h.html" title="Deklaracija klase TerrainShader. " alt="" coords="1742,273,1911,300"/>
+<area shape="rect" id="node2" href="TexturedModel_8h.html" title="Deklaracija klase TexturedModel. " alt="" coords="440,647,611,673"/>
+<area shape="rect" id="node3" href="RawModel_8h.html" title="Deklaracija klase RawModel. " alt="" coords="3876,729,4023,755"/>
+<area shape="rect" id="node7" href="Texture_8h.html" title="Deklaracija klase Texture. " alt="" coords="301,729,435,755"/>
+<area shape="rect" id="node8" href="AnimatedModel_8h.html" title="Deklaracija klase AnimatedModel. " alt="" coords="1094,572,1269,599"/>
+<area shape="rect" id="node12" href="Loader_8h.html" title="Deklaracija klase Loader. " alt="" coords="711,497,825,524"/>
+<area shape="rect" id="node13" href="VaoLoader_8h.html" title="Deklaracija klase VaoLoader. " alt="" coords="3969,572,4105,599"/>
+<area shape="rect" id="node24" href="Render_8h.html" title="Deklaracija klase Render. " alt="" coords="1359,199,1475,225"/>
+<area shape="rect" id="node25" href="Entity_8h.html" title="Deklaracija klase Entity. " alt="" coords="1639,497,1753,524"/>
+<area shape="rect" id="node28" href="Math_8h.html" title="../utility/Math.h" alt="" coords="3036,497,3145,524"/>
+<area shape="rect" id="node30" href="Shader_8h.html" title="Deklaracija klase Shader. " alt="" coords="3291,273,3421,300"/>
+<area shape="rect" id="node31" href="Camera_8h.html" title="Deklaracija klase Camera. " alt="" coords="3141,348,3267,375"/>
+<area shape="rect" id="node32" href="Player_8h.html" title="Deklaracija klase Player. " alt="" coords="1557,423,1675,449"/>
+<area shape="rect" id="node34" href="FpsData_8h.html" title="Deklaracija klase FpsData. " alt="" coords="1731,572,1861,599"/>
+<area shape="rect" id="node35" href="Animator_8h.html" title="Deklaracija klase Animator. " alt="" coords="1103,497,1260,524"/>
+<area shape="rect" id="node39" href="MainRenderer_8h.html" title="Deklaracija klase Render. " alt="" coords="2431,117,2585,143"/>
+<area shape="rect" id="node45" href="TerrainTexturePack_8h.html" title="Deklaracija klase TerrainTexturePack. " alt="" coords="4197,109,4360,151"/>
+<area shape="rect" id="node46" href="HudTexture_8h.html" title="Deklaracija klase HudTexture. " alt="" coords="4527,729,4665,755"/>
+<area shape="rect" id="node47" href="HudRenderer_8h.html" title="Deklaracija klase HudRenderer. " alt="" coords="4431,423,4577,449"/>
+<area shape="rect" id="node48" href="FontRenderer_8h.html" title="Deklaracija klase FontRenderer. " alt="" coords="4147,423,4298,449"/>
+<area shape="rect" id="node49" href="Text_8h.html" title="Deklaracija klase Text. " alt="" coords="4175,497,4273,524"/>
+<area shape="rect" id="node50" href="WeatherSystem_8h.html" title="Deklaracija klase WeatherSystem. " alt="" coords="4741,117,4926,143"/>
+<area shape="rect" id="node9" href="Bone_8h.html" title="Deklaracija klase Bone. " alt="" coords="1833,729,1948,755"/>
+<area shape="rect" id="node10" href="Animation_8h.html" title="Deklaracija klase Animation. " alt="" coords="1157,647,1320,673"/>
+<area shape="rect" id="node14" href="SkyboxTextureData_8h.html" title="../texture/SkyboxTexture\lData.h" alt="" coords="4234,721,4401,763"/>
+<area shape="rect" id="node36" href="Light_8h.html" title="Deklaracija klase Camera i deklaracija callback funkcija. " alt="" coords="2612,348,2721,375"/>
+<area shape="rect" id="node33" href="AnimatedEntity_8h.html" title="Deklaracija klase AnimatedEntity. " alt="" coords="1777,497,1948,524"/>
+<area shape="rect" id="node40" href="TerrainRenderer_8h.html" title="Deklaracija klase TerrainRenderer. " alt="" coords="2735,199,2902,225"/>
+<area shape="rect" id="node41" href="TerrainShader_8h.html" title="Deklaracija klase TerrainShader. " alt="" coords="2423,273,2593,300"/>
+<area shape="rect" id="node42" href="AnimatedModelShader_8h.html" title="Deklaracija klase AnimatedModelShader. " alt="" coords="2617,273,2836,300"/>
+<area shape="rect" id="node43" href="AnimatedModelRenderer_8h.html" title="Deklaracija klase AnimatedModelRenderer. " alt="" coords="1934,199,2151,225"/>
+<area shape="rect" id="node44" href="SkyboxRenderer_8h.html" title="Deklaracija klase SkyboxRenderer. " alt="" coords="3828,497,3999,524"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -124,7 +140,7 @@ Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku
 <div class="dyncontent">
 <div class="center"><img src="Engine_8h__dep__incl.png" border="0" usemap="#_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2core_2Engine_8hdep" alt=""/></div>
 <map name="_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2core_2Engine_8hdep" id="_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2core_2Engine_8hdep">
-<area shape="rect" id="node2" href="Engine_8cpp.html" title="/home/dusan/Documents\l/Projects/RG102&#45;vitez\l&#45;reda&#45;zmaja/src/core/Engine.cpp" alt="" coords="5,124,216,180"/>
+<area shape="rect" id="node2" href="Engine_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/Engine.cpp" alt="" coords="5,109,173,165"/>
 </map>
 </div>
 </div>
@@ -149,6 +165,9 @@ Makro zamene</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funkcije</h2></td></tr>
+<tr class="memitem:aa39dd0a5d67c7531b2adf84acb6bb496"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore.html#aa39dd0a5d67c7531b2adf84acb6bb496">core::cleanUp</a> ()</td></tr>
+<tr class="memdesc:aa39dd0a5d67c7531b2adf84acb6bb496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija oslobadja memoriju alociranu prilikom koriscenja programa.  <a href="namespacecore.html#aa39dd0a5d67c7531b2adf84acb6bb496">Još...</a><br /></td></tr>
+<tr class="separator:aa39dd0a5d67c7531b2adf84acb6bb496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c3be366234e051e17b4b45f40c18960"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore.html#a1c3be366234e051e17b4b45f40c18960">core::renderScene</a> (void)</td></tr>
 <tr class="memdesc:a1c3be366234e051e17b4b45f40c18960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glutDisplayFunc(). Funkcija koja kontrolise sta ce biti iscrtano na ekranu.  <a href="namespacecore.html#a1c3be366234e051e17b4b45f40c18960">Još...</a><br /></td></tr>
 <tr class="separator:a1c3be366234e051e17b4b45f40c18960"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['width',['width',['../classtexture_1_1SkyboxTextureData.html#a25bc82e26b87789657821ac97bedce70',1,'texture::SkyboxTextureData']]]
+  ['x',['x',['../classterrain_1_1Terrain.html#aec56d6e8219539617090b8e99b89be29',1,'terrain::Terrain']]]
 ];

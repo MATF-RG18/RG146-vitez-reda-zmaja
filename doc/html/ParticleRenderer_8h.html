@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Opis datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/include/particle/ParticleRenderer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e80574ad75c4623ab83350b3a8fc81c6.html">particle</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Klase, strukture i unije</a> &#124;
+<a href="#namespaces">Prostori imena</a> &#124;
+<a href="#define-members">Makro zamene</a>  </div>
+  <div class="headertitle">
+<div class="title">Opis datoteke ParticleRenderer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="Particle_8h_source.html">../particle/Particle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Math_8h_source.html">../utility/Math.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ParticleShader_8h_source.html">../shader/ParticleShader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="RawModel_8h_source.html">../model/RawModel.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Camera_8h_source.html">../entity/Camera.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Texture_8h_source.html">../texture/Texture.h</a>&quot;</code><br />
+<code>#include &lt;GL/glut.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;glm/vec3.hpp&gt;</code><br />
+<code>#include &lt;glm/mat4x4.hpp&gt;</code><br />
+<code>#include &lt;glm/gtc/matrix_transform.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graf zavisnosti datoteka za ParticleRenderer.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="ParticleRenderer_8h__incl.png" border="0" usemap="#_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2particle_2ParticleRenderer_8h" alt=""/></div>
+<map name="_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2particle_2ParticleRenderer_8h" id="_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2particle_2ParticleRenderer_8h">
+<area shape="rect" id="node2" href="Particle_8h.html" title="Deklaracija klase Particle. " alt="" coords="94,341,229,367"/>
+<area shape="rect" id="node8" href="Math_8h.html" title="../utility/Math.h" alt="" coords="960,341,1069,367"/>
+<area shape="rect" id="node14" href="ParticleShader_8h.html" title="Deklaracija klase ParticleShader. " alt="" coords="684,259,857,285"/>
+<area shape="rect" id="node19" href="RawModel_8h.html" title="Deklaracija klase RawModel. " alt="" coords="2260,505,2407,531"/>
+<area shape="rect" id="node20" href="Camera_8h.html" title="Deklaracija klase Camera. " alt="" coords="1427,109,1554,136"/>
+<area shape="rect" id="node25" href="Texture_8h.html" title="Deklaracija klase Texture. " alt="" coords="2736,505,2869,531"/>
+<area shape="rect" id="node3" href="FpsData_8h.html" title="Deklaracija klase FpsData. " alt="" coords="1688,423,1819,449"/>
+<area shape="rect" id="node21" href="Player_8h.html" title="Deklaracija klase Player. " alt="" coords="1702,184,1821,211"/>
+<area shape="rect" id="node22" href="AnimatedEntity_8h.html" title="Deklaracija klase AnimatedEntity. " alt="" coords="1405,259,1576,285"/>
+<area shape="rect" id="node34" href="Terrain_8h.html" title="Deklaracija klase Terrain. " alt="" coords="1904,259,2029,285"/>
+<area shape="rect" id="node43" href="Animator_8h.html" title="Deklaracija klase Animator. " alt="" coords="2155,259,2312,285"/>
+<area shape="rect" id="node23" href="AnimatedModel_8h.html" title="Deklaracija klase AnimatedModel. " alt="" coords="2406,341,2581,367"/>
+<area shape="rect" id="node24" href="TexturedModel_8h.html" title="Deklaracija klase TexturedModel. " alt="" coords="2491,423,2661,449"/>
+<area shape="rect" id="node26" href="Bone_8h.html" title="Deklaracija klase Bone. " alt="" coords="2352,423,2467,449"/>
+<area shape="rect" id="node28" href="Animation_8h.html" title="Deklaracija klase Animation. " alt="" coords="2787,423,2949,449"/>
+<area shape="rect" id="node29" href="KeyFrame_8h.html" title="Deklaracija klase KeyFrame. " alt="" coords="2995,505,3160,531"/>
+<area shape="rect" id="node30" href="BoneTransform_8h.html" title="Deklaracija klase BoneTransform. " alt="" coords="2921,587,3116,613"/>
+<area shape="rect" id="node35" href="TerrainTexturePack_8h.html" title="Deklaracija klase TerrainTexturePack. " alt="" coords="1971,333,2133,375"/>
+<area shape="rect" id="node37" href="VaoLoader_8h.html" title="Deklaracija klase VaoLoader. " alt="" coords="2040,423,2176,449"/>
+<area shape="rect" id="node36" href="TerrainTexture_8h.html" title="Deklaracija klase TerrainTexture. " alt="" coords="1843,423,2016,449"/>
+<area shape="rect" id="node38" href="SkyboxTextureData_8h.html" title="../texture/SkyboxTexture\lData.h" alt="" coords="1825,497,1991,539"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku: </div>
+<div class="dyncontent">
+<div class="center"><img src="ParticleRenderer_8h__dep__incl.png" border="0" usemap="#_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2particle_2ParticleRenderer_8hdep" alt=""/></div>
+<map name="_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2particle_2ParticleRenderer_8hdep" id="_2home_2dusan_2Documents_2RG146-vitez-reda-zmaja_2include_2particle_2ParticleRenderer_8hdep">
+<area shape="rect" id="node2" href="ParticleHandler_8h.html" title="Deklaracija klase ParticleHandler. " alt="" coords="207,109,425,165"/>
+<area shape="rect" id="node8" href="ParticleRenderer_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/particle/ParticleRenderer.cpp" alt="" coords="449,109,665,165"/>
+<area shape="rect" id="node3" href="WeatherSystem_8h.html" title="Deklaracija klase WeatherSystem. " alt="" coords="85,213,307,269"/>
+<area shape="rect" id="node7" href="ParticleHandler_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/particle/ParticleHandler.cpp" alt="" coords="332,213,540,269"/>
+<area shape="rect" id="node4" href="Engine_8h.html" title="Deklaracija klase Engine i deklaracija callback funkcija. " alt="" coords="5,317,173,373"/>
+<area shape="rect" id="node6" href="WeatherSystem_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/particle/WeatherSystem.cpp" alt="" coords="197,317,411,373"/>
+<area shape="rect" id="node5" href="Engine_8cpp.html" title="/home/dusan/Documents\l/RG146&#45;vitez&#45;reda&#45;zmaja\l/src/core/Engine.cpp" alt="" coords="5,421,173,477"/>
+</map>
+</div>
+</div>
+<p><a href="ParticleRenderer_8h_source.html">Izvorni kod.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Klase, strukture i unije</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1ParticleRenderer.html">particle::ParticleRenderer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klasa ParticleRender je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran.  <a href="classparticle_1_1ParticleRenderer.html#details">Još...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Prostori imena</h2></td></tr>
+<tr class="memitem:namespaceparticle"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceparticle.html">particle</a></td></tr>
+<tr class="memdesc:namespaceparticle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prostor imena particle. Sadrzi sve klase, funkcije i promenljive koje su vezane za sistem cestica. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Makro zamene</h2></td></tr>
+<tr class="memitem:a5abd0b0af1694dc1c2179d7ce73db69d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ParticleRenderer_8h.html#a5abd0b0af1694dc1c2179d7ce73db69d">PARTICLE_FRAGMENT_SHADER</a>&#160;&#160;&#160;&quot;src/shader/ParticleFragmentShader.txt&quot;</td></tr>
+<tr class="separator:a5abd0b0af1694dc1c2179d7ce73db69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354f578a80e99bc6b8d6d3faf231b67c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ParticleRenderer_8h.html#a354f578a80e99bc6b8d6d3faf231b67c">PARTICLE_VERTEX_SHADER</a>&#160;&#160;&#160;&quot;src/shader/ParticleVertexShader.txt&quot;</td></tr>
+<tr class="separator:a354f578a80e99bc6b8d6d3faf231b67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120fb070bddb21f0bd899f50252c4cb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ParticleRenderer_8h.html#a120fb070bddb21f0bd899f50252c4cb5">GL_GLEXT_PROTOTYPES</a></td></tr>
+<tr class="separator:a120fb070bddb21f0bd899f50252c4cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacija makro zamene</h2>
+<a id="a120fb070bddb21f0bd899f50252c4cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120fb070bddb21f0bd899f50252c4cb5">&#9670;&nbsp;</a></span>GL_GLEXT_PROTOTYPES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GL_GLEXT_PROTOTYPES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5abd0b0af1694dc1c2179d7ce73db69d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5abd0b0af1694dc1c2179d7ce73db69d">&#9670;&nbsp;</a></span>PARTICLE_FRAGMENT_SHADER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARTICLE_FRAGMENT_SHADER&#160;&#160;&#160;&quot;src/shader/ParticleFragmentShader.txt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a354f578a80e99bc6b8d6d3faf231b67c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a354f578a80e99bc6b8d6d3faf231b67c">&#9670;&nbsp;</a></span>PARTICLE_VERTEX_SHADER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARTICLE_VERTEX_SHADER&#160;&#160;&#160;&quot;src/shader/ParticleVertexShader.txt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

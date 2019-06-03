@@ -162,6 +162,7 @@ namespace terrain {
             ////////////////////////////////////////////////////////////////////////////
             RawModel *generateTerrain(VaoLoader *vaoLoader,Image image);
     };
+    
 } // terrain
 
 #endif

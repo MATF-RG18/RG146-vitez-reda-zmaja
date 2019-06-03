@@ -1,6 +1,12 @@
 <map id="core::MainRenderer" name="core::MainRenderer">
-<area shape="rect" id="node2" href="$classshader_1_1TerrainShader.html" title="Klasa TerrainShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi..." alt="" coords="21,5,171,32"/>
-<area shape="rect" id="node3" href="$classcore_1_1TerrainRenderer.html" title="Klasa Render je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi priprema za is..." alt="" coords="106,95,254,121"/>
-<area shape="rect" id="node4" href="$classcore_1_1Render.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ..." alt="" coords="371,95,469,121"/>
-<area shape="rect" id="node5" href="$classshader_1_1Shader.html" title="Klasa Shader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi koji s..." alt="" coords="269,5,379,32"/>
+<area shape="rect" id="node2" href="$classshader_1_1AnimatedModelShader.html" title="Klasa AnimatedModelShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder f..." alt="" coords="5,45,205,72"/>
+<area shape="rect" id="node8" href="$classcore_1_1AnimatedModelRenderer.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ..." alt="" coords="341,89,540,116"/>
+<area shape="rect" id="node3" href="$classutility_1_1FpsData.html" title="Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f..." alt="" coords="385,140,496,167"/>
+<area shape="rect" id="node4" href="$classshader_1_1TerrainShader.html" title="Klasa TerrainShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi..." alt="" coords="30,223,181,249"/>
+<area shape="rect" id="node5" href="$classcore_1_1TerrainRenderer.html" title="Klasa TerrainRenderer je zaduzena za iscrtavanje terena na ekran. Tokom pokretanja prvo se vrsi pripr..." alt="" coords="367,253,515,280"/>
+<area shape="rect" id="node6" href="$classcore_1_1Render.html" title="Klasa Render je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za ..." alt="" coords="392,367,489,393"/>
+<area shape="rect" id="node7" href="$classshader_1_1Shader.html" title="Klasa Shader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi koji s..." alt="" coords="50,327,161,353"/>
+<area shape="rect" id="node9" href="$classcore_1_1SkyboxRenderer.html" title="Klasa SkyboxRenderer je zaduzena za iscrtavanje neba na ekran. Tokom pokretanja prvo se vrsi priprema..." alt="" coords="365,417,517,444"/>
+<area shape="rect" id="node10" href="$classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="42,409,169,436"/>
+<area shape="rect" id="node11" href="$classshader_1_1SkyboxShader.html" title="Klasa SkyboxShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi ..." alt="" coords="28,460,183,487"/>
 </map>

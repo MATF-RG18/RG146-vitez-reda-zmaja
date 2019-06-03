@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/include/animation/Animator.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_fa14765899559c72289886039a0d2991.html">animation</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Animator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Animator_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _ANIMATOR_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _ANIMATOR_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Ukljucivanje korsnicki defininisanih biblioteka.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../model/AnimatedModel.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../animation/Animation.h&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../utility/FpsData.h&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Koriscenje prostora imena za jednostavniji i pregledniji kod.</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemodel.html">model</a>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceutility.html">utility</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceanimation.html">animation</a> {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classanimation_1_1Animator.html">   31</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classanimation_1_1Animator.html">Animator</a> {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// Privatne promenljive klase.</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classanimation_1_1Animator.html#a5578ef87b7bf69b4434dcf916c279714">   36</a></span>&#160;    <a class="code" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *<a class="code" href="classanimation_1_1Animator.html#a5578ef87b7bf69b4434dcf916c279714">model</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classanimation_1_1Animator.html#a97342956340bc49d17161b83ce72d6d1">   39</a></span>&#160;    <a class="code" href="classanimation_1_1Animation.html">Animation</a> *<a class="code" href="classanimation_1_1Animator.html#a97342956340bc49d17161b83ce72d6d1">currentAnimation</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classanimation_1_1Animator.html#a39bfb15584fa3389f2314188f92f92d9">   42</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classanimation_1_1Animator.html#a39bfb15584fa3389f2314188f92f92d9">animationTime</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classanimation_1_1Animator.html#a865e52c4c069f203f847fbd98b86c52a">   45</a></span>&#160;    <a class="code" href="classutility_1_1FpsData.html">FpsData</a> *<a class="code" href="classanimation_1_1Animator.html#a865e52c4c069f203f847fbd98b86c52a">fpsData</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">// Javne funkcije klase</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classanimation_1_1Animator.html">Animator</a>(<a class="code" href="classmodel_1_1AnimatedModel.html">AnimatedModel</a> *model, <a class="code" href="classutility_1_1FpsData.html">FpsData</a> *fpsData);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ~<a class="code" href="classanimation_1_1Animator.html">Animator</a>();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> doAnimation(<a class="code" href="classanimation_1_1Animation.html">Animation</a> *<a class="code" href="namespaceanimation.html">animation</a>);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> update();</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">// Privatne funkcije klase</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> increaseAnimationTime();</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    map&lt;string, mat4&gt; calculateCurrentAnimationPose();</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> applyPoseToBones(map&lt;string, mat4&gt; currentPose, <a class="code" href="classmodel_1_1Bone.html">Bone</a> *bone, mat4 parentTransform);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    vector&lt;KeyFrame *&gt; getPreviousAndNextFrames();</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">float</span> calculateProgression(<a class="code" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *previous, <a class="code" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *next);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    map&lt;string, mat4&gt; interpolatePoses(<a class="code" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *previous, <a class="code" href="classanimation_1_1KeyFrame.html">KeyFrame</a> *next, <span class="keywordtype">float</span> progression);</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  };</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;} <span class="comment">// animation</span></div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classanimation_1_1Animator_html_a97342956340bc49d17161b83ce72d6d1"><div class="ttname"><a href="classanimation_1_1Animator.html#a97342956340bc49d17161b83ce72d6d1">animation::Animator::currentAnimation</a></div><div class="ttdeci">Animation * currentAnimation</div><div class="ttdoc">Pokazivac na instancu klase Animation. </div><div class="ttdef"><b>Definition:</b> Animator.h:39</div></div>
+<div class="ttc" id="namespaceanimation_html"><div class="ttname"><a href="namespaceanimation.html">animation</a></div><div class="ttdoc">Prostor imena animation. Sadrzi sve klase, funkcije i promenljive za rad sa animacajima modela...</div><div class="ttdef"><b>Definition:</b> Animation.cpp:9</div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdoc">Prostor imena model. Sadrzi sve klase, funkcije i promenljive koje opisuju model objekta. </div><div class="ttdef"><b>Definition:</b> AnimatedModel.cpp:9</div></div>
+<div class="ttc" id="classanimation_1_1KeyFrame_html"><div class="ttname"><a href="classanimation_1_1KeyFrame.html">animation::KeyFrame</a></div><div class="ttdoc">Klasa KeyFrame sadrzi podatke o animaciji u odredjenom trenutku. Pomocu klase KeyFrame cuvamo mapu im...</div><div class="ttdef"><b>Definition:</b> KeyFrame.h:32</div></div>
+<div class="ttc" id="classanimation_1_1Animation_html"><div class="ttname"><a href="classanimation_1_1Animation.html">animation::Animation</a></div><div class="ttdoc">Klasa Animation odredjuje animaciju modela. Pomocu klase Animation cuvamo podatke o animaciji modela...</div><div class="ttdef"><b>Definition:</b> Animation.h:30</div></div>
+<div class="ttc" id="classanimation_1_1Animator_html"><div class="ttname"><a href="classanimation_1_1Animator.html">animation::Animator</a></div><div class="ttdoc">Klasa Animator kontrolise animaciju modela. Pomocu klase Animator kontrolisemo ponasanje animacije i ...</div><div class="ttdef"><b>Definition:</b> Animator.h:31</div></div>
+<div class="ttc" id="classmodel_1_1Bone_html"><div class="ttname"><a href="classmodel_1_1Bone.html">model::Bone</a></div><div class="ttdoc">Klasa Bone opisuje kost modela. Kost je opisana indeksom, imenom, listom dece, matricom transformacij...</div><div class="ttdef"><b>Definition:</b> Bone.h:32</div></div>
+<div class="ttc" id="classanimation_1_1Animator_html_a39bfb15584fa3389f2314188f92f92d9"><div class="ttname"><a href="classanimation_1_1Animator.html#a39bfb15584fa3389f2314188f92f92d9">animation::Animator::animationTime</a></div><div class="ttdeci">float animationTime</div><div class="ttdoc">Trenutno vreme animacije. </div><div class="ttdef"><b>Definition:</b> Animator.h:42</div></div>
+<div class="ttc" id="classutility_1_1FpsData_html"><div class="ttname"><a href="classutility_1_1FpsData.html">utility::FpsData</a></div><div class="ttdoc">Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f...</div><div class="ttdef"><b>Definition:</b> FpsData.h:26</div></div>
+<div class="ttc" id="classmodel_1_1AnimatedModel_html"><div class="ttname"><a href="classmodel_1_1AnimatedModel.html">model::AnimatedModel</a></div><div class="ttdoc">Klasa AnimatedModel opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instanco...</div><div class="ttdef"><b>Definition:</b> AnimatedModel.h:34</div></div>
+<div class="ttc" id="classanimation_1_1Animator_html_a5578ef87b7bf69b4434dcf916c279714"><div class="ttname"><a href="classanimation_1_1Animator.html#a5578ef87b7bf69b4434dcf916c279714">animation::Animator::model</a></div><div class="ttdeci">AnimatedModel * model</div><div class="ttdoc">Pokazivac na instancu klase AnimatedModel. </div><div class="ttdef"><b>Definition:</b> Animator.h:36</div></div>
+<div class="ttc" id="classanimation_1_1Animator_html_a865e52c4c069f203f847fbd98b86c52a"><div class="ttname"><a href="classanimation_1_1Animator.html#a865e52c4c069f203f847fbd98b86c52a">animation::Animator::fpsData</a></div><div class="ttdeci">FpsData * fpsData</div><div class="ttdoc">Pokazivac na instancu klase FpsData. </div><div class="ttdef"><b>Definition:</b> Animator.h:45</div></div>
+<div class="ttc" id="namespaceutility_html"><div class="ttname"><a href="namespaceutility.html">utility</a></div><div class="ttdoc">Prostor imena utility. Sadrzi sve korisne klase, funkcije i promenljive koje pomazu kreiranju igre...</div><div class="ttdef"><b>Definition:</b> FpsData.cpp:5</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

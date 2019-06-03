@@ -1,8 +1,9 @@
-<map id="/home/dusan/Documents/Projects/RG102&#45;vitez&#45;reda&#45;zmaja/include/terrain/Terrain.h" name="/home/dusan/Documents/Projects/RG102&#45;vitez&#45;reda&#45;zmaja/include/terrain/Terrain.h">
-<area shape="rect" id="node2" href="$RawModel_8h.html" title="Deklaracija klase RawModel. " alt="" coords="5,213,152,240"/>
-<area shape="rect" id="node3" href="$Texture_8h.html" title="Deklaracija klase Texture. " alt="" coords="827,131,995,158"/>
-<area shape="rect" id="node4" href="$TerrainTexturePack_8h.html" title="Deklaracija klase TerrainTexturePack. " alt="" coords="1019,124,1181,165"/>
-<area shape="rect" id="node6" href="$VaoLoader_8h.html" title="Deklaracija klase VaoLoader. " alt="" coords="265,131,401,158"/>
-<area shape="rect" id="node11" href="$Math_8h.html" title="../utility/Math.h" alt="" coords="643,131,752,158"/>
-<area shape="rect" id="node5" href="$TerrainTexture_8h.html" title="Deklaracija klase TerrainTexture. " alt="" coords="1329,213,1503,240"/>
+<map id="/home/dusan/Documents/RG146&#45;vitez&#45;reda&#45;zmaja/include/terrain/Terrain.h" name="/home/dusan/Documents/RG146&#45;vitez&#45;reda&#45;zmaja/include/terrain/Terrain.h">
+<area shape="rect" id="node2" href="$RawModel_8h.html" title="Deklaracija klase RawModel. " alt="" coords="5,206,152,233"/>
+<area shape="rect" id="node6" href="$Texture_8h.html" title="Deklaracija klase Texture. " alt="" coords="1213,117,1347,143"/>
+<area shape="rect" id="node7" href="$TerrainTexturePack_8h.html" title="Deklaracija klase TerrainTexturePack. " alt="" coords="1371,109,1533,151"/>
+<area shape="rect" id="node9" href="$VaoLoader_8h.html" title="Deklaracija klase VaoLoader. " alt="" coords="361,117,497,143"/>
+<area shape="rect" id="node14" href="$Math_8h.html" title="../utility/Math.h" alt="" coords="1029,117,1139,143"/>
+<area shape="rect" id="node8" href="$TerrainTexture_8h.html" title="Deklaracija klase TerrainTexture. " alt="" coords="1589,206,1763,233"/>
+<area shape="rect" id="node10" href="$SkyboxTextureData_8h.html" title="../texture/SkyboxTexture\lData.h" alt="" coords="278,199,445,240"/>
 </map>

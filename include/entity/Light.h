@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// @file Camera.h
+/// @file Light.h
 /// @brief Deklaracija klase Camera i deklaracija callback funkcija.
 /// @author Dusan Pantelic
 /// @date Jun 2018
@@ -9,8 +9,8 @@
 
 // Ukljucivanje biblioteka.
 #include <glm/vec3.hpp>
-#include <glm/mat4x4.hpp> 
-#include <glm/gtc/matrix_transform.hpp> 
+#include <glm/mat4x4.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 
 // Koriscenje prostora imena za jednostavniji i pregledniji kod.
 using namespace glm;

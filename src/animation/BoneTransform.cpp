@@ -1,5 +1,11 @@
 #include "../../include/animation/BoneTransform.h"
 
+// Klasa je implementirana po uzoru na video tutorijal:
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+// i internet stranice i clanke:
+// http://ogldev.atspace.co.uk/www/tutorial38/tutorial38.html
+// https://bib.irb.hr/datoteka/890911.Final_0036473606_56.pdf
+
 namespace animation {
 
   BoneTransform::BoneTransform(vec3 position, quat rotation) {

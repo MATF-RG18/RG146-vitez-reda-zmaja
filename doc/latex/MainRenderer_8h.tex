@@ -10,18 +10,23 @@ Deklaracija klase Render.
 {\ttfamily \#include \char`\"{}../core/\+Terrain\+Renderer.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../shader/\+Terrain\+Shader.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../entity/\+Entity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../entity/\+Animated\+Entity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../shader/\+Animated\+Model\+Shader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../core/\+Animated\+Model\+Renderer.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../core/\+Skybox\+Renderer.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../core/\+Vao\+Loader.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$map$>$}\newline
 {\ttfamily \#include $<$list$>$}\newline
-Graf zavisnosti datoteka za Main\+Renderer.\+h\+:\nopagebreak
+Graf zavisnosti datoteka za Main\+Renderer.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{MainRenderer_8h__incl}
 \end{center}
 \end{figure}
-Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: \nopagebreak
+Ovaj graf pokazuje koje datoteke direktno ili indirektno uključuju ovu datoteku\+: 
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -49,6 +54,10 @@ class \hyperlink{classcore_1_1MainRenderer}{core\+::\+Main\+Renderer}
 \item 
 \#define \hyperlink{MainRenderer_8h_ae0f5765ea8e4bfeea87a86374508e4fb}{T\+E\+R\+R\+A\+I\+N\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}~\char`\"{}src/shader/Terrain\+Fragment\+Shader.\+txt\char`\"{}
 \item 
+\#define \hyperlink{MainRenderer_8h_a87db787248321b128d43efe87ebb7cf7}{A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}~\char`\"{}src/shader/Animated\+Model\+Vertex\+Shader.\+txt\char`\"{}
+\item 
+\#define \hyperlink{MainRenderer_8h_aaab2b61aa94dfce2511f2393937bb7c6}{A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}~\char`\"{}src/shader/Animated\+Model\+Fragment\+Shader.\+txt\char`\"{}
+\item 
 \#define \hyperlink{MainRenderer_8h_a5c71a5e59a53413cd6c270266d63b031}{R}~0.\+6
 \item 
 \#define \hyperlink{MainRenderer_8h_aed9ea78689ecce0b7264c02c7f8a9a54}{G}~0.\+6
@@ -69,6 +78,18 @@ Avgvust 2018
 
 
 \subsection{Dokumentacija makro zamene}
+\mbox{\Hypertarget{MainRenderer_8h_aaab2b61aa94dfce2511f2393937bb7c6}\label{MainRenderer_8h_aaab2b61aa94dfce2511f2393937bb7c6}} 
+\index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE@{A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}}
+\index{A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE@{A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE}{ANIMATED\_MODEL\_FRAGMENT\_FILE}}
+{\footnotesize\ttfamily \#define A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+F\+I\+LE~\char`\"{}src/shader/Animated\+Model\+Fragment\+Shader.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{MainRenderer_8h_a87db787248321b128d43efe87ebb7cf7}\label{MainRenderer_8h_a87db787248321b128d43efe87ebb7cf7}} 
+\index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE@{A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}}
+\index{A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE@{A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}
+\subsubsection{\texorpdfstring{A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE}{ANIMATED\_MODEL\_VERTEX\_FILE}}
+{\footnotesize\ttfamily \#define A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+O\+D\+E\+L\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+LE~\char`\"{}src/shader/Animated\+Model\+Vertex\+Shader.\+txt\char`\"{}}
+
 \mbox{\Hypertarget{MainRenderer_8h_a111da81ae5883147168bbb8366377b10}\label{MainRenderer_8h_a111da81ae5883147168bbb8366377b10}} 
 \index{Main\+Renderer.\+h@{Main\+Renderer.\+h}!B@{B}}
 \index{B@{B}!Main\+Renderer.\+h@{Main\+Renderer.\+h}}

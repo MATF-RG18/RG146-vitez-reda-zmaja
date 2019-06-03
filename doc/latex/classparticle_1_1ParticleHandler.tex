@@ -1,0 +1,197 @@
+\hypertarget{classparticle_1_1ParticleHandler}{}\section{Dokumentacija klase particle\+:\+:Particle\+Handler}
+\label{classparticle_1_1ParticleHandler}\index{particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}}
+
+
+Klasa \hyperlink{classparticle_1_1ParticleHandler}{Particle\+Handler} kontrolise cestice. Lista cestica se azurira i poziva se klasa za renderovanje cestica, cuva se tekstura cestica i otklanjaju se cestice sa zavrsenim zivotnim vekom.  
+
+
+
+
+{\ttfamily \#include $<$Particle\+Handler.\+h$>$}
+
+
+
+Klasni dijagram za particle\+:\+:Particle\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classparticle_1_1ParticleHandler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classparticle_1_1ParticleHandler_a20ee0736aeb1a560bd09e83b754aafc1}{Particle\+Handler} (\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$vao\+Loader)
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classparticle_1_1ParticleHandler_aeaecb7a63b98e839a0b939c17aff28d3}{$\sim$\+Particle\+Handler} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classparticle_1_1ParticleHandler_ac0b409fc65e725cb7fe73534807437a1}{update} ()
+\begin{DoxyCompactList}\small\item\em Funkcija uklanja iz liste cestice sa zavrsenim zivotnim vekom. \end{DoxyCompactList}\item 
+void \hyperlink{classparticle_1_1ParticleHandler_a171b2f5a6865b688563eb7394bf8371b}{render\+Particles} (\hyperlink{classentity_1_1Camera}{Camera} $\ast$camera, \hyperlink{classtexture_1_1Texture}{Texture} $\ast$\hyperlink{classparticle_1_1ParticleHandler_a918d1b47f645fc24cc36b1a61d2c20ef}{texture})
+\begin{DoxyCompactList}\small\item\em Funkcija pokrece metode klase \hyperlink{classparticle_1_1ParticleRenderer}{Particle\+Renderer} za iscrtavanje cestica. \end{DoxyCompactList}\item 
+void \hyperlink{classparticle_1_1ParticleHandler_a098ece1e3f68c2d3bdaef95a0781e6eb}{clean\+Up} ()
+\begin{DoxyCompactList}\small\item\em Funkcija pokrece metode klase \hyperlink{classparticle_1_1ParticleRenderer}{Particle\+Renderer} za ciscenje sejdera. \end{DoxyCompactList}\item 
+void \hyperlink{classparticle_1_1ParticleHandler_a030ab0b73bb572f706fb03c5cfc2fedf}{add\+Particle} (\hyperlink{classparticle_1_1Particle}{Particle} $\ast$particle)
+\begin{DoxyCompactList}\small\item\em Funkcija dodaje cesticu u listu cestica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+list$<$ \hyperlink{classparticle_1_1Particle}{Particle} $\ast$ $>$ \hyperlink{classparticle_1_1ParticleHandler_abf11adf3a1037f33222ef56e6731cc23}{particles}
+\begin{DoxyCompactList}\small\item\em Lista pokazivaca na instance klase \hyperlink{classparticle_1_1Particle}{Particle}. \end{DoxyCompactList}\item 
+\hyperlink{classparticle_1_1ParticleRenderer}{Particle\+Renderer} $\ast$ \hyperlink{classparticle_1_1ParticleHandler_a2127e89ae3f9bd53341cd59c286c2a72}{particle\+Renderer}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase \hyperlink{classparticle_1_1ParticleRenderer}{Particle\+Renderer}. \end{DoxyCompactList}\item 
+\hyperlink{classtexture_1_1Texture}{Texture} $\ast$ \hyperlink{classparticle_1_1ParticleHandler_a918d1b47f645fc24cc36b1a61d2c20ef}{texture}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classparticle_1_1ParticleHandler}{Particle\+Handler} kontrolise cestice. Lista cestica se azurira i poziva se klasa za renderovanje cestica, cuva se tekstura cestica i otklanjaju se cestice sa zavrsenim zivotnim vekom. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classparticle_1_1ParticleHandler_a20ee0736aeb1a560bd09e83b754aafc1}\label{classparticle_1_1ParticleHandler_a20ee0736aeb1a560bd09e83b754aafc1}} 
+\index{particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}!Particle\+Handler@{Particle\+Handler}}
+\index{Particle\+Handler@{Particle\+Handler}!particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}}
+\subsubsection{\texorpdfstring{Particle\+Handler()}{ParticleHandler()}}
+{\footnotesize\ttfamily particle\+::\+Particle\+Handler\+::\+Particle\+Handler (\begin{DoxyParamCaption}\item[{\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$}]{vao\+Loader }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em vao\+Loader} & Pokazivac na instancu klase Vao\+Loader. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classparticle_1_1ParticleHandler_aeaecb7a63b98e839a0b939c17aff28d3}\label{classparticle_1_1ParticleHandler_aeaecb7a63b98e839a0b939c17aff28d3}} 
+\index{particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}!````~Particle\+Handler@{$\sim$\+Particle\+Handler}}
+\index{````~Particle\+Handler@{$\sim$\+Particle\+Handler}!particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle\+Handler()}{~ParticleHandler()}}
+{\footnotesize\ttfamily particle\+::\+Particle\+Handler\+::$\sim$\+Particle\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classparticle_1_1ParticleHandler_a030ab0b73bb572f706fb03c5cfc2fedf}\label{classparticle_1_1ParticleHandler_a030ab0b73bb572f706fb03c5cfc2fedf}} 
+\index{particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}!add\+Particle@{add\+Particle}}
+\index{add\+Particle@{add\+Particle}!particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}}
+\subsubsection{\texorpdfstring{add\+Particle()}{addParticle()}}
+{\footnotesize\ttfamily void particle\+::\+Particle\+Handler\+::add\+Particle (\begin{DoxyParamCaption}\item[{\hyperlink{classparticle_1_1Particle}{Particle} $\ast$}]{particle }\end{DoxyParamCaption})}
+
+
+
+Funkcija dodaje cesticu u listu cestica. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em particle} & Pokazivac na instancu klase \hyperlink{classparticle_1_1Particle}{Particle}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1ParticleHandler_a098ece1e3f68c2d3bdaef95a0781e6eb}\label{classparticle_1_1ParticleHandler_a098ece1e3f68c2d3bdaef95a0781e6eb}} 
+\index{particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void particle\+::\+Particle\+Handler\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija pokrece metode klase \hyperlink{classparticle_1_1ParticleRenderer}{Particle\+Renderer} za ciscenje sejdera. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1ParticleHandler_a171b2f5a6865b688563eb7394bf8371b}\label{classparticle_1_1ParticleHandler_a171b2f5a6865b688563eb7394bf8371b}} 
+\index{particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}!render\+Particles@{render\+Particles}}
+\index{render\+Particles@{render\+Particles}!particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}}
+\subsubsection{\texorpdfstring{render\+Particles()}{renderParticles()}}
+{\footnotesize\ttfamily void particle\+::\+Particle\+Handler\+::render\+Particles (\begin{DoxyParamCaption}\item[{\hyperlink{classentity_1_1Camera}{Camera} $\ast$}]{camera,  }\item[{\hyperlink{classtexture_1_1Texture}{Texture} $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+Funkcija pokrece metode klase \hyperlink{classparticle_1_1ParticleRenderer}{Particle\+Renderer} za iscrtavanje cestica. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em camera} & Pokazivac na instancu klase Camera. \\
+\hline
+{\em texture} & Pokazivac na instancu klase Texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1ParticleHandler_ac0b409fc65e725cb7fe73534807437a1}\label{classparticle_1_1ParticleHandler_ac0b409fc65e725cb7fe73534807437a1}} 
+\index{particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}!update@{update}}
+\index{update@{update}!particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void particle\+::\+Particle\+Handler\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija uklanja iz liste cestice sa zavrsenim zivotnim vekom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classparticle_1_1ParticleHandler_a2127e89ae3f9bd53341cd59c286c2a72}\label{classparticle_1_1ParticleHandler_a2127e89ae3f9bd53341cd59c286c2a72}} 
+\index{particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}!particle\+Renderer@{particle\+Renderer}}
+\index{particle\+Renderer@{particle\+Renderer}!particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}}
+\subsubsection{\texorpdfstring{particle\+Renderer}{particleRenderer}}
+{\footnotesize\ttfamily \hyperlink{classparticle_1_1ParticleRenderer}{Particle\+Renderer}$\ast$ particle\+::\+Particle\+Handler\+::particle\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase \hyperlink{classparticle_1_1ParticleRenderer}{Particle\+Renderer}. 
+
+\mbox{\Hypertarget{classparticle_1_1ParticleHandler_abf11adf3a1037f33222ef56e6731cc23}\label{classparticle_1_1ParticleHandler_abf11adf3a1037f33222ef56e6731cc23}} 
+\index{particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}!particles@{particles}}
+\index{particles@{particles}!particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}}
+\subsubsection{\texorpdfstring{particles}{particles}}
+{\footnotesize\ttfamily list$<$\hyperlink{classparticle_1_1Particle}{Particle} $\ast$$>$ particle\+::\+Particle\+Handler\+::particles\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista pokazivaca na instance klase \hyperlink{classparticle_1_1Particle}{Particle}. 
+
+\mbox{\Hypertarget{classparticle_1_1ParticleHandler_a918d1b47f645fc24cc36b1a61d2c20ef}\label{classparticle_1_1ParticleHandler_a918d1b47f645fc24cc36b1a61d2c20ef}} 
+\index{particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}!texture@{texture}}
+\index{texture@{texture}!particle\+::\+Particle\+Handler@{particle\+::\+Particle\+Handler}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1Texture}{Texture}$\ast$ particle\+::\+Particle\+Handler\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Texture. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/particle/\hyperlink{ParticleHandler_8h}{Particle\+Handler.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/particle/\hyperlink{ParticleHandler_8cpp}{Particle\+Handler.\+cpp}\end{DoxyCompactItemize}

@@ -2,7 +2,7 @@
 \label{classmodel_1_1TexturedModel}\index{model\+::\+Textured\+Model@{model\+::\+Textured\+Model}}
 
 
-Klasa \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase \hyperlink{classmodel_1_1RawModel}{Raw\+Model} i odgovarajucom teksturom objekta pomocu instance klase Model\+Texture.  
+Klasa \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase \hyperlink{classmodel_1_1RawModel}{Raw\+Model} i odgovarajucom teksturom objekta pomocu instance klase Texture.  
 
 
 
@@ -11,42 +11,43 @@ Klasa \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} opisuje model obj
 
 
 
-Klasni dijagram za model\+:\+:Textured\+Model\+:\nopagebreak
+Klasni dijagram za model\+:\+:Textured\+Model\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=306pt]{classmodel_1_1TexturedModel__coll__graph}
+\includegraphics[width=193pt]{classmodel_1_1TexturedModel__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Javni članovi}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmodel_1_1TexturedModel_affbb36dc66a365064576e186a975777a}{Textured\+Model} (\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$model, \hyperlink{classtexture_1_1Texture}{Model\+Texture} $\ast$\hyperlink{classmodel_1_1TexturedModel_aad9aacee1ff02e44bd8ee9daff22f817}{texture})
+\hyperlink{classmodel_1_1TexturedModel_aec5856afd9671aa31aa506f3452a616f}{Textured\+Model} (\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$model, vector$<$ \hyperlink{classtexture_1_1Texture}{Texture} $\ast$$>$ \hyperlink{classmodel_1_1TexturedModel_a890c463573c2240f60f29471fb28b419}{textures})
 \begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se modelu pridruzuju neteksturisani objekat i njegova tekstura. \end{DoxyCompactList}\item 
 \hyperlink{classmodel_1_1TexturedModel_a8a11ba96d5a73a962a2ffcf8c5a53afe}{$\sim$\+Textured\+Model} ()
 \begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
-\hyperlink{classmodel_1_1RawModel}{Raw\+Model} \hyperlink{classmodel_1_1TexturedModel_a8074adea6d7e368690a977b4ad571378}{get\+Raw\+Model} (void)
+\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classmodel_1_1TexturedModel_a9382bc8fb867a7f9ef8b120f0805b4b6}{get\+Raw\+Model} (void)
 \begin{DoxyCompactList}\small\item\em Funkcija vraca osnovni model objekta. \end{DoxyCompactList}\item 
-\hyperlink{classtexture_1_1Texture}{Model\+Texture} $\ast$ \hyperlink{classmodel_1_1TexturedModel_ad2bb5d174a506bd9d1f807e84aba4cdc}{get\+Texture} (void)
-\begin{DoxyCompactList}\small\item\em Funkcija vraca teksturu modela. \end{DoxyCompactList}\end{DoxyCompactItemize}
+vector$<$ \hyperlink{classtexture_1_1Texture}{Texture} $\ast$ $>$ \hyperlink{classmodel_1_1TexturedModel_a09314a66eefacd609fc3bc414b8c5da7}{get\+Textures} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca listu tekstura modela. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Privatni članovi}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classmodel_1_1TexturedModel_ac6157368c7e55a78aa02f9546f5f2dc3}{raw\+Model}
 \begin{DoxyCompactList}\small\item\em Pokazivac na model objekta bez pridruzene strukture. \end{DoxyCompactList}\item 
-\hyperlink{classtexture_1_1Texture}{Model\+Texture} $\ast$ \hyperlink{classmodel_1_1TexturedModel_aad9aacee1ff02e44bd8ee9daff22f817}{texture}
-\begin{DoxyCompactList}\small\item\em Pokazivac na teksturu objekta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+vector$<$ \hyperlink{classtexture_1_1Texture}{Texture} $\ast$ $>$ \hyperlink{classmodel_1_1TexturedModel_a890c463573c2240f60f29471fb28b419}{textures}
+\begin{DoxyCompactList}\small\item\em Lista pokazivaca na teksture delova objekta. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Opširniji opis}
-Klasa \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase \hyperlink{classmodel_1_1RawModel}{Raw\+Model} i odgovarajucom teksturom objekta pomocu instance klase Model\+Texture. 
+Klasa \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase \hyperlink{classmodel_1_1RawModel}{Raw\+Model} i odgovarajucom teksturom objekta pomocu instance klase Texture. 
 
 \subsection{Dokumentacija konstruktora i destruktora}
-\mbox{\Hypertarget{classmodel_1_1TexturedModel_affbb36dc66a365064576e186a975777a}\label{classmodel_1_1TexturedModel_affbb36dc66a365064576e186a975777a}} 
+\mbox{\Hypertarget{classmodel_1_1TexturedModel_aec5856afd9671aa31aa506f3452a616f}\label{classmodel_1_1TexturedModel_aec5856afd9671aa31aa506f3452a616f}} 
 \index{model\+::\+Textured\+Model@{model\+::\+Textured\+Model}!Textured\+Model@{Textured\+Model}}
 \index{Textured\+Model@{Textured\+Model}!model\+::\+Textured\+Model@{model\+::\+Textured\+Model}}
 \subsubsection{\texorpdfstring{Textured\+Model()}{TexturedModel()}}
-{\footnotesize\ttfamily model\+::\+Textured\+Model\+::\+Textured\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$}]{model,  }\item[{\hyperlink{classtexture_1_1Texture}{Model\+Texture} $\ast$}]{texture }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily model\+::\+Textured\+Model\+::\+Textured\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$}]{model,  }\item[{vector$<$ \hyperlink{classtexture_1_1Texture}{Texture} $\ast$$>$}]{textures }\end{DoxyParamCaption})}
 
 
 
@@ -56,7 +57,7 @@ Konstruktor klase. U konstruktoru se modelu pridruzuju neteksturisani objekat i 
 \begin{DoxyParams}{Parametri}
 {\em model} & Pokazivac na model objekta bez pridruzene strukture. \\
 \hline
-{\em texture} & Pokazivac na teksturu objekta. \\
+{\em textures} & Lista pokazivaca na teksture delova objekta. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classmodel_1_1TexturedModel_a8a11ba96d5a73a962a2ffcf8c5a53afe}\label{classmodel_1_1TexturedModel_a8a11ba96d5a73a962a2ffcf8c5a53afe}} 
@@ -77,11 +78,11 @@ Destruktor klase.
 
 
 \subsection{Dokumentacija funkcija članica}
-\mbox{\Hypertarget{classmodel_1_1TexturedModel_a8074adea6d7e368690a977b4ad571378}\label{classmodel_1_1TexturedModel_a8074adea6d7e368690a977b4ad571378}} 
+\mbox{\Hypertarget{classmodel_1_1TexturedModel_a9382bc8fb867a7f9ef8b120f0805b4b6}\label{classmodel_1_1TexturedModel_a9382bc8fb867a7f9ef8b120f0805b4b6}} 
 \index{model\+::\+Textured\+Model@{model\+::\+Textured\+Model}!get\+Raw\+Model@{get\+Raw\+Model}}
 \index{get\+Raw\+Model@{get\+Raw\+Model}!model\+::\+Textured\+Model@{model\+::\+Textured\+Model}}
 \subsubsection{\texorpdfstring{get\+Raw\+Model()}{getRawModel()}}
-{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model} model\+::\+Textured\+Model\+::get\+Raw\+Model (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ model\+::\+Textured\+Model\+::get\+Raw\+Model (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
@@ -95,15 +96,15 @@ Funkcija vraca osnovni model objekta.
 \begin{DoxyReturn}{Vrednost funkcije}
 \hyperlink{classmodel_1_1RawModel}{Raw\+Model} Osnovni model objekta. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmodel_1_1TexturedModel_ad2bb5d174a506bd9d1f807e84aba4cdc}\label{classmodel_1_1TexturedModel_ad2bb5d174a506bd9d1f807e84aba4cdc}} 
-\index{model\+::\+Textured\+Model@{model\+::\+Textured\+Model}!get\+Texture@{get\+Texture}}
-\index{get\+Texture@{get\+Texture}!model\+::\+Textured\+Model@{model\+::\+Textured\+Model}}
-\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}}
-{\footnotesize\ttfamily \hyperlink{classtexture_1_1Texture}{Model\+Texture} $\ast$ model\+::\+Textured\+Model\+::get\+Texture (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classmodel_1_1TexturedModel_a09314a66eefacd609fc3bc414b8c5da7}\label{classmodel_1_1TexturedModel_a09314a66eefacd609fc3bc414b8c5da7}} 
+\index{model\+::\+Textured\+Model@{model\+::\+Textured\+Model}!get\+Textures@{get\+Textures}}
+\index{get\+Textures@{get\+Textures}!model\+::\+Textured\+Model@{model\+::\+Textured\+Model}}
+\subsubsection{\texorpdfstring{get\+Textures()}{getTextures()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classtexture_1_1Texture}{Texture} $\ast$ $>$ model\+::\+Textured\+Model\+::get\+Textures (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
-Funkcija vraca teksturu modela. 
+Funkcija vraca listu tekstura modela. 
 
 
 \begin{DoxyParams}{Parametri}
@@ -111,7 +112,7 @@ Funkcija vraca teksturu modela.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Vrednost funkcije}
-Model\+Texture Tekstura modela. 
+vector$<$\+Texture $\ast$$>$ lista tekstura modela. 
 \end{DoxyReturn}
 
 
@@ -126,15 +127,15 @@ Model\+Texture Tekstura modela.
 
 Pokazivac na model objekta bez pridruzene strukture. 
 
-\mbox{\Hypertarget{classmodel_1_1TexturedModel_aad9aacee1ff02e44bd8ee9daff22f817}\label{classmodel_1_1TexturedModel_aad9aacee1ff02e44bd8ee9daff22f817}} 
-\index{model\+::\+Textured\+Model@{model\+::\+Textured\+Model}!texture@{texture}}
-\index{texture@{texture}!model\+::\+Textured\+Model@{model\+::\+Textured\+Model}}
-\subsubsection{\texorpdfstring{texture}{texture}}
-{\footnotesize\ttfamily \hyperlink{classtexture_1_1Texture}{Model\+Texture}$\ast$ model\+::\+Textured\+Model\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classmodel_1_1TexturedModel_a890c463573c2240f60f29471fb28b419}\label{classmodel_1_1TexturedModel_a890c463573c2240f60f29471fb28b419}} 
+\index{model\+::\+Textured\+Model@{model\+::\+Textured\+Model}!textures@{textures}}
+\index{textures@{textures}!model\+::\+Textured\+Model@{model\+::\+Textured\+Model}}
+\subsubsection{\texorpdfstring{textures}{textures}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classtexture_1_1Texture}{Texture} $\ast$$>$ model\+::\+Textured\+Model\+::textures\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Pokazivac na teksturu objekta. 
+Lista pokazivaca na teksture delova objekta. 
 
 
 

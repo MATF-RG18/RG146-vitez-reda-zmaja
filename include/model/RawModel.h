@@ -15,8 +15,10 @@
 #include <GL/glut.h>
 #include <GL/freeglut.h>
 
+// Ukljucivanje biblioteka
 #include <vector>
 
+// Koriscenje prostora imena za jednostavniji i pregledniji kod.
 using namespace std;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -47,8 +49,8 @@ namespace model {
     /// @brief Konstruktor klase.
     /// U konstruktoru se modelu pridruzuju broj tacaka objekta i identifikator
     /// niza atributa.
-    /// @param vaoID Identifikator niza atributa.
-    /// @param vertexCount Broj tacaka objekta.
+    /// @param meshesVaoID Lista identifikatora niza atributa.
+    /// @param meshesVertexCount Lista broja tacaka objekta.
     ////////////////////////////////////////////////////////////////////////////
     RawModel(vector<GLint> meshesVaoID, vector<GLint> meshesVertexCount);
 
@@ -59,16 +61,16 @@ namespace model {
     ~RawModel();
 
     ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija vraca identifikator niza atributa objekta.
+    /// @brief Funkcija vraca listu identifikatora niza atributa objekta.
     /// @param void
-    /// @return GLint Identifikator niza atributa.
+    /// @return vector<GLint> Lista identifikatora niza atributa.
     ////////////////////////////////////////////////////////////////////////////
     vector<GLint> getMeshesVaoID(void);
 
     ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija vraca broj tacaka objekta.
+    /// @brief Funkcija vraca listu broja tacaka objekta.
     /// @param void
-    /// @return GLint Broj tacaka objekta.
+    /// @return vector<GLint> Lista broja tacaka objekta.
     ////////////////////////////////////////////////////////////////////////////
     vector<GLint> getMeshesVertexCount(void);
 

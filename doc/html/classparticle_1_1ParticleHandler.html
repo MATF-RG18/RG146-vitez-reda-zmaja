@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Dokumentacija klase particle::ParticleHandler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceparticle.html">particle</a></li><li class="navelem"><a class="el" href="classparticle_1_1ParticleHandler.html">ParticleHandler</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Javni članovi</a> &#124;
+<a href="#pri-attribs">Privatni članovi</a> &#124;
+<a href="classparticle_1_1ParticleHandler-members.html">Spisak svih članova</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacija klase particle::ParticleHandler</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="classparticle_1_1ParticleHandler.html" title="Klasa ParticleHandler kontrolise cestice. Lista cestica se azurira i poziva se klasa za renderovanje ...">ParticleHandler</a> kontrolise cestice. Lista cestica se azurira i poziva se klasa za renderovanje cestica, cuva se tekstura cestica i otklanjaju se cestice sa zavrsenim zivotnim vekom.  
+ <a href="classparticle_1_1ParticleHandler.html#details">Još...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ParticleHandler_8h_source.html">ParticleHandler.h</a>&gt;</code></p>
+<div class="dynheader">
+Klasni dijagram za particle::ParticleHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="classparticle_1_1ParticleHandler__coll__graph.png" border="0" usemap="#particle_1_1ParticleHandler_coll__map" alt="Collaboration graph"/></div>
+<map name="particle_1_1ParticleHandler_coll__map" id="particle_1_1ParticleHandler_coll__map">
+<area shape="rect" id="node2" href="classtexture_1_1Texture.html" title="Klasa TexturedModel opisuje teksturu objekta. Model je opisan instancom klase RawModel i odgovarajuco..." alt="" coords="5,95,120,121"/>
+<area shape="rect" id="node3" href="classparticle_1_1ParticleRenderer.html" title="Klasa ParticleRender je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi pripr..." alt="" coords="145,95,314,121"/>
+<area shape="rect" id="node4" href="classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="83,5,210,32"/>
+<area shape="rect" id="node5" href="classshader_1_1ParticleShader.html" title="Klasa ParticleShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlov..." alt="" coords="235,5,389,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Javni članovi</h2></td></tr>
+<tr class="memitem:a20ee0736aeb1a560bd09e83b754aafc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1ParticleHandler.html#a20ee0736aeb1a560bd09e83b754aafc1">ParticleHandler</a> (<a class="el" href="classcore_1_1VaoLoader.html">VaoLoader</a> *vaoLoader)</td></tr>
+<tr class="memdesc:a20ee0736aeb1a560bd09e83b754aafc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klase.  <a href="#a20ee0736aeb1a560bd09e83b754aafc1">Još...</a><br /></td></tr>
+<tr class="separator:a20ee0736aeb1a560bd09e83b754aafc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaecb7a63b98e839a0b939c17aff28d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1ParticleHandler.html#aeaecb7a63b98e839a0b939c17aff28d3">~ParticleHandler</a> ()</td></tr>
+<tr class="memdesc:aeaecb7a63b98e839a0b939c17aff28d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klase.  <a href="#aeaecb7a63b98e839a0b939c17aff28d3">Još...</a><br /></td></tr>
+<tr class="separator:aeaecb7a63b98e839a0b939c17aff28d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b409fc65e725cb7fe73534807437a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1ParticleHandler.html#ac0b409fc65e725cb7fe73534807437a1">update</a> ()</td></tr>
+<tr class="memdesc:ac0b409fc65e725cb7fe73534807437a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija uklanja iz liste cestice sa zavrsenim zivotnim vekom.  <a href="#ac0b409fc65e725cb7fe73534807437a1">Još...</a><br /></td></tr>
+<tr class="separator:ac0b409fc65e725cb7fe73534807437a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171b2f5a6865b688563eb7394bf8371b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1ParticleHandler.html#a171b2f5a6865b688563eb7394bf8371b">renderParticles</a> (<a class="el" href="classentity_1_1Camera.html">Camera</a> *camera, <a class="el" href="classtexture_1_1Texture.html">Texture</a> *<a class="el" href="classparticle_1_1ParticleHandler.html#a918d1b47f645fc24cc36b1a61d2c20ef">texture</a>)</td></tr>
+<tr class="memdesc:a171b2f5a6865b688563eb7394bf8371b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija pokrece metode klase <a class="el" href="classparticle_1_1ParticleRenderer.html" title="Klasa ParticleRender je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi pripr...">ParticleRenderer</a> za iscrtavanje cestica.  <a href="#a171b2f5a6865b688563eb7394bf8371b">Još...</a><br /></td></tr>
+<tr class="separator:a171b2f5a6865b688563eb7394bf8371b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a098ece1e3f68c2d3bdaef95a0781e6eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1ParticleHandler.html#a098ece1e3f68c2d3bdaef95a0781e6eb">cleanUp</a> ()</td></tr>
+<tr class="memdesc:a098ece1e3f68c2d3bdaef95a0781e6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija pokrece metode klase <a class="el" href="classparticle_1_1ParticleRenderer.html" title="Klasa ParticleRender je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi pripr...">ParticleRenderer</a> za ciscenje sejdera.  <a href="#a098ece1e3f68c2d3bdaef95a0781e6eb">Još...</a><br /></td></tr>
+<tr class="separator:a098ece1e3f68c2d3bdaef95a0781e6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030ab0b73bb572f706fb03c5cfc2fedf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1ParticleHandler.html#a030ab0b73bb572f706fb03c5cfc2fedf">addParticle</a> (<a class="el" href="classparticle_1_1Particle.html">Particle</a> *particle)</td></tr>
+<tr class="memdesc:a030ab0b73bb572f706fb03c5cfc2fedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija dodaje cesticu u listu cestica.  <a href="#a030ab0b73bb572f706fb03c5cfc2fedf">Još...</a><br /></td></tr>
+<tr class="separator:a030ab0b73bb572f706fb03c5cfc2fedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:abf11adf3a1037f33222ef56e6731cc23"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="classparticle_1_1Particle.html">Particle</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1ParticleHandler.html#abf11adf3a1037f33222ef56e6731cc23">particles</a></td></tr>
+<tr class="memdesc:abf11adf3a1037f33222ef56e6731cc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista pokazivaca na instance klase <a class="el" href="classparticle_1_1Particle.html" title="Klasa Particle opisuje jednu cesticu. Cestica je opisana pozicijom, brzinom, efektom gravitacije...">Particle</a>.  <a href="#abf11adf3a1037f33222ef56e6731cc23">Još...</a><br /></td></tr>
+<tr class="separator:abf11adf3a1037f33222ef56e6731cc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2127e89ae3f9bd53341cd59c286c2a72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classparticle_1_1ParticleRenderer.html">ParticleRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1ParticleHandler.html#a2127e89ae3f9bd53341cd59c286c2a72">particleRenderer</a></td></tr>
+<tr class="memdesc:a2127e89ae3f9bd53341cd59c286c2a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase <a class="el" href="classparticle_1_1ParticleRenderer.html" title="Klasa ParticleRender je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi pripr...">ParticleRenderer</a>.  <a href="#a2127e89ae3f9bd53341cd59c286c2a72">Još...</a><br /></td></tr>
+<tr class="separator:a2127e89ae3f9bd53341cd59c286c2a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918d1b47f645fc24cc36b1a61d2c20ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtexture_1_1Texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1ParticleHandler.html#a918d1b47f645fc24cc36b1a61d2c20ef">texture</a></td></tr>
+<tr class="memdesc:a918d1b47f645fc24cc36b1a61d2c20ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase Texture.  <a href="#a918d1b47f645fc24cc36b1a61d2c20ef">Još...</a><br /></td></tr>
+<tr class="separator:a918d1b47f645fc24cc36b1a61d2c20ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
+<div class="textblock"><p>Klasa <a class="el" href="classparticle_1_1ParticleHandler.html" title="Klasa ParticleHandler kontrolise cestice. Lista cestica se azurira i poziva se klasa za renderovanje ...">ParticleHandler</a> kontrolise cestice. Lista cestica se azurira i poziva se klasa za renderovanje cestica, cuva se tekstura cestica i otklanjaju se cestice sa zavrsenim zivotnim vekom. </p>
+</div><h2 class="groupheader">Dokumentacija konstruktora i destruktora</h2>
+<a id="a20ee0736aeb1a560bd09e83b754aafc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ee0736aeb1a560bd09e83b754aafc1">&#9670;&nbsp;</a></span>ParticleHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particle::ParticleHandler::ParticleHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcore_1_1VaoLoader.html">VaoLoader</a> *&#160;</td>
+          <td class="paramname"><em>vaoLoader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vaoLoader</td><td>Pokazivac na instancu klase VaoLoader. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeaecb7a63b98e839a0b939c17aff28d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaecb7a63b98e839a0b939c17aff28d3">&#9670;&nbsp;</a></span>~ParticleHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particle::ParticleHandler::~ParticleHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija funkcija članica</h2>
+<a id="a030ab0b73bb572f706fb03c5cfc2fedf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030ab0b73bb572f706fb03c5cfc2fedf">&#9670;&nbsp;</a></span>addParticle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void particle::ParticleHandler::addParticle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classparticle_1_1Particle.html">Particle</a> *&#160;</td>
+          <td class="paramname"><em>particle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija dodaje cesticu u listu cestica. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">particle</td><td>Pokazivac na instancu klase <a class="el" href="classparticle_1_1Particle.html" title="Klasa Particle opisuje jednu cesticu. Cestica je opisana pozicijom, brzinom, efektom gravitacije...">Particle</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a098ece1e3f68c2d3bdaef95a0781e6eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a098ece1e3f68c2d3bdaef95a0781e6eb">&#9670;&nbsp;</a></span>cleanUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void particle::ParticleHandler::cleanUp </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija pokrece metode klase <a class="el" href="classparticle_1_1ParticleRenderer.html" title="Klasa ParticleRender je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi pripr...">ParticleRenderer</a> za ciscenje sejdera. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a171b2f5a6865b688563eb7394bf8371b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a171b2f5a6865b688563eb7394bf8371b">&#9670;&nbsp;</a></span>renderParticles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void particle::ParticleHandler::renderParticles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentity_1_1Camera.html">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classtexture_1_1Texture.html">Texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija pokrece metode klase <a class="el" href="classparticle_1_1ParticleRenderer.html" title="Klasa ParticleRender je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi pripr...">ParticleRenderer</a> za iscrtavanje cestica. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera</td><td>Pokazivac na instancu klase Camera. </td></tr>
+    <tr><td class="paramname">texture</td><td>Pokazivac na instancu klase Texture. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ac0b409fc65e725cb7fe73534807437a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0b409fc65e725cb7fe73534807437a1">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void particle::ParticleHandler::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija uklanja iz liste cestice sa zavrsenim zivotnim vekom. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija atributa</h2>
+<a id="a2127e89ae3f9bd53341cd59c286c2a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2127e89ae3f9bd53341cd59c286c2a72">&#9670;&nbsp;</a></span>particleRenderer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classparticle_1_1ParticleRenderer.html">ParticleRenderer</a>* particle::ParticleHandler::particleRenderer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase <a class="el" href="classparticle_1_1ParticleRenderer.html" title="Klasa ParticleRender je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi pripr...">ParticleRenderer</a>. </p>
+
+</div>
+</div>
+<a id="abf11adf3a1037f33222ef56e6731cc23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf11adf3a1037f33222ef56e6731cc23">&#9670;&nbsp;</a></span>particles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt;<a class="el" href="classparticle_1_1Particle.html">Particle</a> *&gt; particle::ParticleHandler::particles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lista pokazivaca na instance klase <a class="el" href="classparticle_1_1Particle.html" title="Klasa Particle opisuje jednu cesticu. Cestica je opisana pozicijom, brzinom, efektom gravitacije...">Particle</a>. </p>
+
+</div>
+</div>
+<a id="a918d1b47f645fc24cc36b1a61d2c20ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918d1b47f645fc24cc36b1a61d2c20ef">&#9670;&nbsp;</a></span>texture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtexture_1_1Texture.html">Texture</a>* particle::ParticleHandler::texture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase Texture. </p>
+
+</div>
+</div>
+<hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/include/particle/<a class="el" href="ParticleHandler_8h_source.html">ParticleHandler.h</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/src/particle/<a class="el" href="ParticleHandler_8cpp.html">ParticleHandler.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

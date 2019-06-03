@@ -1,0 +1,270 @@
+\hypertarget{classparticle_1_1ParticleRenderer}{}\section{Dokumentacija klase particle\+:\+:Particle\+Renderer}
+\label{classparticle_1_1ParticleRenderer}\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+
+
+Klasa Particle\+Render je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran.  
+
+
+
+
+{\ttfamily \#include $<$Particle\+Renderer.\+h$>$}
+
+
+
+Klasni dijagram za particle\+:\+:Particle\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classparticle_1_1ParticleRenderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classparticle_1_1ParticleRenderer_a2cb5f823b59a1ffe522fdbdaccfd2b89}{Particle\+Renderer} (\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$vao\+Loader)
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classparticle_1_1ParticleRenderer_abefba4a851f58fd2d4c63d4d0a6aae09}{$\sim$\+Particle\+Renderer} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classparticle_1_1ParticleRenderer_a261a071f85666b30884da7fefa13c383}{render} (list$<$ \hyperlink{classparticle_1_1Particle}{Particle} $\ast$$>$ particles, \hyperlink{classentity_1_1Camera}{Camera} $\ast$camera, \hyperlink{classtexture_1_1Texture}{Texture} $\ast$texture)
+\begin{DoxyCompactList}\small\item\em Funkcija iscrtava sve cestice i teksture koje im odgovaraju. \end{DoxyCompactList}\item 
+void \hyperlink{classparticle_1_1ParticleRenderer_a42823bfdbfdad50b7ef4e55286526cef}{clean\+Up} ()
+\begin{DoxyCompactList}\small\item\em Funkcija pokrece cistace sejdera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classparticle_1_1ParticleRenderer_a213703d9e95935b0b10f13363eff9748}{prepare} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vrsi pripreme za iscrtavanje sadrzaja na ekran. \end{DoxyCompactList}\item 
+void \hyperlink{classparticle_1_1ParticleRenderer_ae0a3632a3579890f93aeade2096d6d58}{finish\+Rendering} ()
+\begin{DoxyCompactList}\small\item\em Funkcija otklanja efekte funkcije prepare. \end{DoxyCompactList}\item 
+mat4 \hyperlink{classparticle_1_1ParticleRenderer_ad16ef052cf8dbf03a0bfa6f06066a37f}{create\+Projection\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Funkcija kreira matricu projekcije. \end{DoxyCompactList}\item 
+void \hyperlink{classparticle_1_1ParticleRenderer_ae64e00bf0caa69f822efcda262e4ba89}{update\+Model\+View\+Matrix} (vec3 position, float rotation, float scale\+Factor, mat4 view\+Matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija kreira proizvod matrica transformacije i pogleda. Kreira se matria transformacije pomucu zadatih paramtara ali tako da je 3x3 podmatrica transponovana 3x3 podmatrici matrice modela cime postizemo 3D efekat 2D cestice koja je uvek okrenuta ka nama. Dobijenu matricu transformacije mnozimo sa matricom pogleda. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classparticle_1_1ParticleRenderer_ae161f09b14a97d3a7c77c3231f6ab58b}{F\+OV} = 70
+\begin{DoxyCompactList}\small\item\em Polje vidika. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1ParticleRenderer_a4b6777a4deb2d8506356337a37bc320f}{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE} = 0.\+1
+\begin{DoxyCompactList}\small\item\em Prednji deo vidljivosti. \end{DoxyCompactList}\item 
+float \hyperlink{classparticle_1_1ParticleRenderer_a51d17d19a38ea21e75afc33a612e606d}{F\+A\+R\+\_\+\+P\+L\+A\+NE} = 1000
+\begin{DoxyCompactList}\small\item\em Zadnji deo vidljivosti. \end{DoxyCompactList}\item 
+\hyperlink{classshader_1_1ParticleShader}{Particle\+Shader} $\ast$ \hyperlink{classparticle_1_1ParticleRenderer_a6d60ff9e07886280f476e0bf579ead4e}{particle\+Shader}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Particle\+Shader. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classparticle_1_1ParticleRenderer_a75765f5960127cf6ea74e2c3afaeff13}{raw\+Model}
+\begin{DoxyCompactList}\small\item\em Pokazivac na instancu klase Raw\+Model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa Particle\+Render je zaduzena za iscrtavanje cestica na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_a2cb5f823b59a1ffe522fdbdaccfd2b89}\label{classparticle_1_1ParticleRenderer_a2cb5f823b59a1ffe522fdbdaccfd2b89}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!Particle\+Renderer@{Particle\+Renderer}}
+\index{Particle\+Renderer@{Particle\+Renderer}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{Particle\+Renderer()}{ParticleRenderer()}}
+{\footnotesize\ttfamily particle\+::\+Particle\+Renderer\+::\+Particle\+Renderer (\begin{DoxyParamCaption}\item[{\hyperlink{classcore_1_1VaoLoader}{Vao\+Loader} $\ast$}]{vao\+Loader }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em vao\+Loader} & Pokazivac na instancu klase Vao\+Loader. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_abefba4a851f58fd2d4c63d4d0a6aae09}\label{classparticle_1_1ParticleRenderer_abefba4a851f58fd2d4c63d4d0a6aae09}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!````~Particle\+Renderer@{$\sim$\+Particle\+Renderer}}
+\index{````~Particle\+Renderer@{$\sim$\+Particle\+Renderer}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle\+Renderer()}{~ParticleRenderer()}}
+{\footnotesize\ttfamily particle\+::\+Particle\+Renderer\+::$\sim$\+Particle\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_a42823bfdbfdad50b7ef4e55286526cef}\label{classparticle_1_1ParticleRenderer_a42823bfdbfdad50b7ef4e55286526cef}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void particle\+::\+Particle\+Renderer\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija pokrece cistace sejdera. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_ad16ef052cf8dbf03a0bfa6f06066a37f}\label{classparticle_1_1ParticleRenderer_ad16ef052cf8dbf03a0bfa6f06066a37f}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!create\+Projection\+Matrix@{create\+Projection\+Matrix}}
+\index{create\+Projection\+Matrix@{create\+Projection\+Matrix}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{create\+Projection\+Matrix()}{createProjectionMatrix()}}
+{\footnotesize\ttfamily mat4 particle\+::\+Particle\+Renderer\+::create\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija kreira matricu projekcije. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+mat4 Matrica projekcije. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_ae0a3632a3579890f93aeade2096d6d58}\label{classparticle_1_1ParticleRenderer_ae0a3632a3579890f93aeade2096d6d58}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!finish\+Rendering@{finish\+Rendering}}
+\index{finish\+Rendering@{finish\+Rendering}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{finish\+Rendering()}{finishRendering()}}
+{\footnotesize\ttfamily void particle\+::\+Particle\+Renderer\+::finish\+Rendering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija otklanja efekte funkcije prepare. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_a213703d9e95935b0b10f13363eff9748}\label{classparticle_1_1ParticleRenderer_a213703d9e95935b0b10f13363eff9748}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!prepare@{prepare}}
+\index{prepare@{prepare}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily void particle\+::\+Particle\+Renderer\+::prepare (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija vrsi pripreme za iscrtavanje sadrzaja na ekran. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_a261a071f85666b30884da7fefa13c383}\label{classparticle_1_1ParticleRenderer_a261a071f85666b30884da7fefa13c383}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!render@{render}}
+\index{render@{render}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void particle\+::\+Particle\+Renderer\+::render (\begin{DoxyParamCaption}\item[{list$<$ \hyperlink{classparticle_1_1Particle}{Particle} $\ast$$>$}]{particles,  }\item[{\hyperlink{classentity_1_1Camera}{Camera} $\ast$}]{camera,  }\item[{\hyperlink{classtexture_1_1Texture}{Texture} $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+Funkcija iscrtava sve cestice i teksture koje im odgovaraju. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em particles} & Lista cestica. \\
+\hline
+{\em camera} & Pokazivac na instancu klase Camera. \\
+\hline
+{\em texture} & Pokazivac na instancu klase Texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_ae64e00bf0caa69f822efcda262e4ba89}\label{classparticle_1_1ParticleRenderer_ae64e00bf0caa69f822efcda262e4ba89}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!update\+Model\+View\+Matrix@{update\+Model\+View\+Matrix}}
+\index{update\+Model\+View\+Matrix@{update\+Model\+View\+Matrix}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{update\+Model\+View\+Matrix()}{updateModelViewMatrix()}}
+{\footnotesize\ttfamily void particle\+::\+Particle\+Renderer\+::update\+Model\+View\+Matrix (\begin{DoxyParamCaption}\item[{vec3}]{position,  }\item[{float}]{rotation,  }\item[{float}]{scale\+Factor,  }\item[{mat4}]{view\+Matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija kreira proizvod matrica transformacije i pogleda. Kreira se matria transformacije pomucu zadatih paramtara ali tako da je 3x3 podmatrica transponovana 3x3 podmatrici matrice modela cime postizemo 3D efekat 2D cestice koja je uvek okrenuta ka nama. Dobijenu matricu transformacije mnozimo sa matricom pogleda. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em position} & Pozicija cestice. \\
+\hline
+{\em rotation} & Rotacija cestice. \\
+\hline
+{\em scale\+Factor} & Faktor skaliranja view\+Matrix Matrica pogleda. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_a51d17d19a38ea21e75afc33a612e606d}\label{classparticle_1_1ParticleRenderer_a51d17d19a38ea21e75afc33a612e606d}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!F\+A\+R\+\_\+\+P\+L\+A\+NE@{F\+A\+R\+\_\+\+P\+L\+A\+NE}}
+\index{F\+A\+R\+\_\+\+P\+L\+A\+NE@{F\+A\+R\+\_\+\+P\+L\+A\+NE}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{F\+A\+R\+\_\+\+P\+L\+A\+NE}{FAR\_PLANE}}
+{\footnotesize\ttfamily float particle\+::\+Particle\+Renderer\+::\+F\+A\+R\+\_\+\+P\+L\+A\+NE = 1000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zadnji deo vidljivosti. 
+
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_ae161f09b14a97d3a7c77c3231f6ab58b}\label{classparticle_1_1ParticleRenderer_ae161f09b14a97d3a7c77c3231f6ab58b}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!F\+OV@{F\+OV}}
+\index{F\+OV@{F\+OV}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{F\+OV}{FOV}}
+{\footnotesize\ttfamily float particle\+::\+Particle\+Renderer\+::\+F\+OV = 70\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Polje vidika. 
+
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_a4b6777a4deb2d8506356337a37bc320f}\label{classparticle_1_1ParticleRenderer_a4b6777a4deb2d8506356337a37bc320f}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!N\+E\+A\+R\+\_\+\+P\+L\+A\+NE@{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}}
+\index{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE@{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{N\+E\+A\+R\+\_\+\+P\+L\+A\+NE}{NEAR\_PLANE}}
+{\footnotesize\ttfamily float particle\+::\+Particle\+Renderer\+::\+N\+E\+A\+R\+\_\+\+P\+L\+A\+NE = 0.\+1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prednji deo vidljivosti. 
+
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_a6d60ff9e07886280f476e0bf579ead4e}\label{classparticle_1_1ParticleRenderer_a6d60ff9e07886280f476e0bf579ead4e}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!particle\+Shader@{particle\+Shader}}
+\index{particle\+Shader@{particle\+Shader}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{particle\+Shader}{particleShader}}
+{\footnotesize\ttfamily \hyperlink{classshader_1_1ParticleShader}{Particle\+Shader}$\ast$ particle\+::\+Particle\+Renderer\+::particle\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Particle\+Shader. 
+
+\mbox{\Hypertarget{classparticle_1_1ParticleRenderer_a75765f5960127cf6ea74e2c3afaeff13}\label{classparticle_1_1ParticleRenderer_a75765f5960127cf6ea74e2c3afaeff13}} 
+\index{particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}!raw\+Model@{raw\+Model}}
+\index{raw\+Model@{raw\+Model}!particle\+::\+Particle\+Renderer@{particle\+::\+Particle\+Renderer}}
+\subsubsection{\texorpdfstring{raw\+Model}{rawModel}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model}$\ast$ particle\+::\+Particle\+Renderer\+::raw\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pokazivac na instancu klase Raw\+Model. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/particle/\hyperlink{ParticleRenderer_8h}{Particle\+Renderer.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/particle/\hyperlink{ParticleRenderer_8cpp}{Particle\+Renderer.\+cpp}\end{DoxyCompactItemize}

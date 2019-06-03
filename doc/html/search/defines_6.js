@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['max_5fheight',['MAX_HEIGHT',['../Terrain_8h.html#a9059fa76eb5e8e86f870405d63e72c4c',1,'Terrain.h']]],
-  ['max_5fpixel_5fcolour',['MAX_PIXEL_COLOUR',['../Terrain_8h.html#ac1689bb03dbfff43e32aff331b96dea8',1,'Terrain.h']]]
+  ['hud_5ffragment_5fshader',['HUD_FRAGMENT_SHADER',['../HudRenderer_8h.html#a4ff3812599d1eab5d8bc9010a0ee8ef9',1,'HudRenderer.h']]],
+  ['hud_5fvertex_5fshader',['HUD_VERTEX_SHADER',['../HudRenderer_8h.html#ab5c2102af58ce5dbab17c3722c65bc9f',1,'HudRenderer.h']]]
 ];

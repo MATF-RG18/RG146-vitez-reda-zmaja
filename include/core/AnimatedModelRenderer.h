@@ -32,6 +32,7 @@ using namespace shader;
 using namespace entity;
 using namespace glm;
 
+// Maksimalan broj kostiju.
 #define MAX_BONES 50
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -59,7 +60,7 @@ namespace core {
     /// Zadnji deo vidljivosti.
     float FAR_PLANE = 1000;
 
-    /// Pokazivac na instancu klase Shader.
+    /// Pokazivac na instancu klase AnimatedModelShader.
     AnimatedModelShader *shader;
 
   // Javne funkcije klase
@@ -67,7 +68,7 @@ namespace core {
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Konstruktor klase.
-    /// @param shader Pokazivac na instancu klase Shader.
+    /// @param shader Pokazivac na instancu klase  AnimatedModelShader.
     ////////////////////////////////////////////////////////////////////////////
     AnimatedModelRenderer(AnimatedModelShader *shader);
 
@@ -78,21 +79,21 @@ namespace core {
     ~AnimatedModelRenderer();
 
     ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija iscrtava sve entitete i teksturisane modele koje im odgovaraju.
-    /// @param entities Hes mapa teksturisanih modela i lista entiteta.
+    /// @brief Funkcija iscrtava sve entitete i animirane modele koje im odgovaraju.
+    /// @param entities Hes mapa animiranih modela i lista entiteta.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void render(map<AnimatedModel *, list<AnimatedEntity *>> entities);
 
     ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija ucitava teksture entiteta.
-    /// @param model Pokazivac na instancu klase TexturedModel.
+    /// @brief Funkcija ucitava teksture modela i iscrtava sve njegove delove.
+    /// @param model Pokazivac na instancu klase AnimatedModel.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void drawAnimatedModel(AnimatedModel *model);
 
     ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija otkacinje vezu izmedju podataka texturisanog modela i programa.
+    /// @brief Funkcija otkacinje vezu izmedju podataka animiranog modela i programa.
     /// @param void
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
@@ -100,7 +101,7 @@ namespace core {
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija kreira matricu transformacije za entitet i ucitava je u sejder program.
-    /// @param entity Pokazivac na instancu klase Entity.
+    /// @param entity Pokazivac na instancu klase AnimatedEntity.
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void prepareInstance(AnimatedEntity *entity);

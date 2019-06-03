@@ -8,12 +8,14 @@ Prostor imena core. Sadrzi sve klase, funkcije i promenljive koje su od sustinsk
 \subsection*{Klase, strukture i unije}
 \begin{DoxyCompactItemize}
 \item 
+class \hyperlink{classcore_1_1AnimatedModelRenderer}{Animated\+Model\+Renderer}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1Render}{Render} je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran. \end{DoxyCompactList}\item 
 class \hyperlink{classcore_1_1Engine}{Engine}
 \begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1Engine}{Engine} je jezgro i kontroler programa. Sva bitnija podesavanja i inicijalizacije desavaju se u ovoj klasi. Klasa je zaduzena za inicijalizaciju G\+L\+U\+T-\/a , Open\+G\+L-\/a, i kontrolisanje i kreiranje ostalih korisnicki definisanih klasa i funkcija. \end{DoxyCompactList}\item 
+class \hyperlink{classcore_1_1Loader}{Loader}
+\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1Loader}{Loader} je zaduzena za ucitavanje modela. Klasa sadrzi funkcije za ucitavanje raznih vrsta modela iz sirokog spektra fajlova za cuvanje podataka o modelu. \end{DoxyCompactList}\item 
 class \hyperlink{classcore_1_1MainRenderer}{Main\+Renderer}
 \begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1MainRenderer}{Main\+Renderer} je zaduzena za iscrtavanje sadrzaja na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se iscrtavaju teren igrac i ostali entiteti. \end{DoxyCompactList}\item 
-class \hyperlink{classcore_1_1ObjLoader}{Obj\+Loader}
-\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1ObjLoader}{Obj\+Loader} je zaduzena za ucitavanje obj fajlova. Tokom pokretanja citaju se obj fajlovi koji se zatim obradjuju i podaci se prosledjuju drugim klasama koje ih koriste. \end{DoxyCompactList}\item 
 class \hyperlink{classcore_1_1Render}{Render}
 \begin{DoxyCompactList}\small\item\em Klasa \hyperlink{classcore_1_1Render}{Render} je zaduzena za iscrtavanje entiteta na ekran. Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran. \end{DoxyCompactList}\item 
 class \hyperlink{classcore_1_1SkyboxRenderer}{Skybox\+Renderer}
@@ -25,6 +27,8 @@ class \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader}
 \subsection*{Funkcije}
 \begin{DoxyCompactItemize}
 \item 
+void \hyperlink{namespacecore_aa39dd0a5d67c7531b2adf84acb6bb496}{clean\+Up} ()
+\begin{DoxyCompactList}\small\item\em Funkcija oslobadja memoriju alociranu prilikom koriscenja programa. \end{DoxyCompactList}\item 
 void \hyperlink{namespacecore_a1c3be366234e051e17b4b45f40c18960}{render\+Scene} (void)
 \begin{DoxyCompactList}\small\item\em Callback funkcija. Pokazivac funkcije prosledjuje se funkciji glut\+Display\+Func(). Funkcija koja kontrolise sta ce biti iscrtano na ekranu. \end{DoxyCompactList}\item 
 void \hyperlink{namespacecore_a179fad39a2b3f74cf7a0bffb578fce00}{on\+Keyboard} (unsigned char key, int x, int y)
@@ -46,7 +50,7 @@ void \hyperlink{namespacecore_a590273d60aac2764ebf098f1b9aab3fe}{on\+Special\+Up
 \item 
 \hyperlink{classmodel_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{namespacecore_aa1479d4ed4dadbfe085b26662122b68a}{model}
 \item 
-\hyperlink{classtexture_1_1Texture}{Model\+Texture} $\ast$ \hyperlink{namespacecore_a0738503bf610d37d44b4938dc024bfcc}{texture}
+\hyperlink{classtexture_1_1Texture}{Texture} $\ast$ \hyperlink{namespacecore_ab1e87a88eb2e893aa68d0d791ac9859c}{texture}
 \item 
 \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$ \hyperlink{namespacecore_ad4d5c25548862489d6a237342748ad74}{textured\+Model}
 \item 
@@ -57,8 +61,6 @@ void \hyperlink{namespacecore_a590273d60aac2764ebf098f1b9aab3fe}{on\+Special\+Up
 \hyperlink{classentity_1_1Camera}{Camera} $\ast$ \hyperlink{namespacecore_a9d645c490b142886301256f6cf9c65c2}{camera}
 \item 
 \hyperlink{classentity_1_1Light}{Light} $\ast$ \hyperlink{namespacecore_a2324d96000e7c6d42570a0577e8f070b}{light}
-\item 
-\hyperlink{classcore_1_1ObjLoader}{Obj\+Loader} \hyperlink{namespacecore_abf1a2ebbee224aa2f7a35148ebcac1fb}{obj\+Loader}
 \item 
 \hyperlink{classterrain_1_1Terrain}{Terrain} $\ast$ \hyperlink{namespacecore_ac45da6f80dac9bead5c9310c27897f15}{terrain}
 \item 
@@ -74,11 +76,33 @@ vector$<$ \hyperlink{classhud_1_1HudTexture}{Hud\+Texture} $\ast$ $>$ \hyperlink
 \item 
 \hyperlink{classfont_1_1FontRenderer}{Font\+Renderer} $\ast$ \hyperlink{namespacecore_ac8af6c1a584af6d86930b36660a73486}{font\+Renderer}
 \item 
+\hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model} $\ast$ \hyperlink{namespacecore_a32acc9ced9824face25fb6376f19427c}{animated\+Model}
+\item 
+\hyperlink{classcore_1_1AnimatedModelRenderer}{Animated\+Model\+Renderer} $\ast$ \hyperlink{namespacecore_a8788476f2673b1425b8946203866084c}{animated\+Model\+Renderer}
+\item 
+vector$<$ \hyperlink{classentity_1_1Entity}{Entity} $\ast$ $>$ \hyperlink{namespacecore_a7f37c29928536493e41e65032818b8f3}{trees}
+\item 
+\hyperlink{classcore_1_1Loader}{Loader} $\ast$ \hyperlink{namespacecore_afa1e7446007b3eaf393f3d47487a1782}{loader}
+\item 
 \hyperlink{classfont_1_1Text}{Text} $\ast$ \hyperlink{namespacecore_a7f65917b3299aa904f0516343ec522db}{text}
+\item 
+\hyperlink{classanimation_1_1Animator}{Animator} $\ast$ \hyperlink{namespacecore_af734c64894d0dfcd75e6c6c8ca62d29b}{animator}
+\item 
+\hyperlink{classanimation_1_1Animation}{Animation} $\ast$ \hyperlink{namespacecore_acb97154ea6e035e44613e11f6df6a50b}{animation}
+\item 
+\hyperlink{classparticle_1_1ParticleHandler}{Particle\+Handler} $\ast$ \hyperlink{namespacecore_ad86ad607ae7f1f4cd7f425753e39fb5d}{particle\+Handler}
+\item 
+\hyperlink{classparticle_1_1WeatherSystem}{Weather\+System} $\ast$ \hyperlink{namespacecore_a985cbb636cfce09e29c1e0cc52b1fbde}{weather\+System}
 \item 
 int \hyperlink{namespacecore_a1b1f1651effee4b2dba419d8381a9d60}{screen\+Width}
 \item 
 int \hyperlink{namespacecore_a985c45c5bff737ef922df5a06c814756}{screen\+Height}
+\item 
+\hyperlink{classtexture_1_1Texture}{Texture} $\ast$ \hyperlink{namespacecore_aa7075d07c89f570f428557cfaaefc16b}{snow\+Texture}
+\item 
+\hyperlink{classtexture_1_1Texture}{Texture} $\ast$ \hyperlink{namespacecore_aac1dbd86236077861e658da24c0963ff}{rain\+Texture}
+\item 
+bool \hyperlink{namespacecore_a6a9140ce7a80c31c7ac37e2567ab60fa}{weather} = false
 \item 
 const char $\ast$ \hyperlink{namespacecore_ab274ea2c748b3da9a978f504eab4ee85}{screen\+Title} = \char`\"{}Vitez\+Reda\+Zmaja\char`\"{}
 \end{DoxyCompactItemize}
@@ -88,6 +112,24 @@ const char $\ast$ \hyperlink{namespacecore_ab274ea2c748b3da9a978f504eab4ee85}{sc
 Prostor imena core. Sadrzi sve klase, funkcije i promenljive koje su od sustinskog znacaja za funkcionisanje programa. 
 
 \subsection{Dokumentacija funkcije}
+\mbox{\Hypertarget{namespacecore_aa39dd0a5d67c7531b2adf84acb6bb496}\label{namespacecore_aa39dd0a5d67c7531b2adf84acb6bb496}} 
+\index{core@{core}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!core@{core}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void core\+::clean\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija oslobadja memoriju alociranu prilikom koriscenja programa. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{namespacecore_a179fad39a2b3f74cf7a0bffb578fce00}\label{namespacecore_a179fad39a2b3f74cf7a0bffb578fce00}} 
 \index{core@{core}!on\+Keyboard@{on\+Keyboard}}
 \index{on\+Keyboard@{on\+Keyboard}!core@{core}}
@@ -199,6 +241,30 @@ void
 
 
 \subsection{Dokumentacija promenljive}
+\mbox{\Hypertarget{namespacecore_a32acc9ced9824face25fb6376f19427c}\label{namespacecore_a32acc9ced9824face25fb6376f19427c}} 
+\index{core@{core}!animated\+Model@{animated\+Model}}
+\index{animated\+Model@{animated\+Model}!core@{core}}
+\subsubsection{\texorpdfstring{animated\+Model}{animatedModel}}
+{\footnotesize\ttfamily \hyperlink{classmodel_1_1AnimatedModel}{Animated\+Model}$\ast$ core\+::animated\+Model}
+
+\mbox{\Hypertarget{namespacecore_a8788476f2673b1425b8946203866084c}\label{namespacecore_a8788476f2673b1425b8946203866084c}} 
+\index{core@{core}!animated\+Model\+Renderer@{animated\+Model\+Renderer}}
+\index{animated\+Model\+Renderer@{animated\+Model\+Renderer}!core@{core}}
+\subsubsection{\texorpdfstring{animated\+Model\+Renderer}{animatedModelRenderer}}
+{\footnotesize\ttfamily \hyperlink{classcore_1_1AnimatedModelRenderer}{Animated\+Model\+Renderer}$\ast$ core\+::animated\+Model\+Renderer}
+
+\mbox{\Hypertarget{namespacecore_acb97154ea6e035e44613e11f6df6a50b}\label{namespacecore_acb97154ea6e035e44613e11f6df6a50b}} 
+\index{core@{core}!animation@{animation}}
+\index{animation@{animation}!core@{core}}
+\subsubsection{\texorpdfstring{animation}{animation}}
+{\footnotesize\ttfamily \hyperlink{classanimation_1_1Animation}{Animation}$\ast$ core\+::animation}
+
+\mbox{\Hypertarget{namespacecore_af734c64894d0dfcd75e6c6c8ca62d29b}\label{namespacecore_af734c64894d0dfcd75e6c6c8ca62d29b}} 
+\index{core@{core}!animator@{animator}}
+\index{animator@{animator}!core@{core}}
+\subsubsection{\texorpdfstring{animator}{animator}}
+{\footnotesize\ttfamily \hyperlink{classanimation_1_1Animator}{Animator}$\ast$ core\+::animator}
+
 \mbox{\Hypertarget{namespacecore_a9d645c490b142886301256f6cf9c65c2}\label{namespacecore_a9d645c490b142886301256f6cf9c65c2}} 
 \index{core@{core}!camera@{camera}}
 \index{camera@{camera}!core@{core}}
@@ -247,6 +313,12 @@ void
 \subsubsection{\texorpdfstring{light}{light}}
 {\footnotesize\ttfamily \hyperlink{classentity_1_1Light}{Light}$\ast$ core\+::light}
 
+\mbox{\Hypertarget{namespacecore_afa1e7446007b3eaf393f3d47487a1782}\label{namespacecore_afa1e7446007b3eaf393f3d47487a1782}} 
+\index{core@{core}!loader@{loader}}
+\index{loader@{loader}!core@{core}}
+\subsubsection{\texorpdfstring{loader}{loader}}
+{\footnotesize\ttfamily \hyperlink{classcore_1_1Loader}{Loader}$\ast$ core\+::loader}
+
 \mbox{\Hypertarget{namespacecore_a01adfda2bbace85dc243e5fba0d93b52}\label{namespacecore_a01adfda2bbace85dc243e5fba0d93b52}} 
 \index{core@{core}!main\+Renderer@{main\+Renderer}}
 \index{main\+Renderer@{main\+Renderer}!core@{core}}
@@ -259,17 +331,23 @@ void
 \subsubsection{\texorpdfstring{model}{model}}
 {\footnotesize\ttfamily \hyperlink{classmodel_1_1RawModel}{Raw\+Model}$\ast$ core\+::model}
 
-\mbox{\Hypertarget{namespacecore_abf1a2ebbee224aa2f7a35148ebcac1fb}\label{namespacecore_abf1a2ebbee224aa2f7a35148ebcac1fb}} 
-\index{core@{core}!obj\+Loader@{obj\+Loader}}
-\index{obj\+Loader@{obj\+Loader}!core@{core}}
-\subsubsection{\texorpdfstring{obj\+Loader}{objLoader}}
-{\footnotesize\ttfamily \hyperlink{classcore_1_1ObjLoader}{Obj\+Loader} core\+::obj\+Loader}
+\mbox{\Hypertarget{namespacecore_ad86ad607ae7f1f4cd7f425753e39fb5d}\label{namespacecore_ad86ad607ae7f1f4cd7f425753e39fb5d}} 
+\index{core@{core}!particle\+Handler@{particle\+Handler}}
+\index{particle\+Handler@{particle\+Handler}!core@{core}}
+\subsubsection{\texorpdfstring{particle\+Handler}{particleHandler}}
+{\footnotesize\ttfamily \hyperlink{classparticle_1_1ParticleHandler}{Particle\+Handler}$\ast$ core\+::particle\+Handler}
 
 \mbox{\Hypertarget{namespacecore_a8130d7cf3bb04bc517651bc3855f8c0f}\label{namespacecore_a8130d7cf3bb04bc517651bc3855f8c0f}} 
 \index{core@{core}!player@{player}}
 \index{player@{player}!core@{core}}
 \subsubsection{\texorpdfstring{player}{player}}
 {\footnotesize\ttfamily \hyperlink{classentity_1_1Player}{Player}$\ast$ core\+::player}
+
+\mbox{\Hypertarget{namespacecore_aac1dbd86236077861e658da24c0963ff}\label{namespacecore_aac1dbd86236077861e658da24c0963ff}} 
+\index{core@{core}!rain\+Texture@{rain\+Texture}}
+\index{rain\+Texture@{rain\+Texture}!core@{core}}
+\subsubsection{\texorpdfstring{rain\+Texture}{rainTexture}}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1Texture}{Texture}$\ast$ core\+::rain\+Texture}
 
 \mbox{\Hypertarget{namespacecore_a4f2740ccbefd3bb34c624a8c99d6446d}\label{namespacecore_a4f2740ccbefd3bb34c624a8c99d6446d}} 
 \index{core@{core}!renderer@{renderer}}
@@ -301,6 +379,12 @@ void
 \subsubsection{\texorpdfstring{shader}{shader}}
 {\footnotesize\ttfamily \hyperlink{classshader_1_1Shader}{Shader}$\ast$ core\+::shader}
 
+\mbox{\Hypertarget{namespacecore_aa7075d07c89f570f428557cfaaefc16b}\label{namespacecore_aa7075d07c89f570f428557cfaaefc16b}} 
+\index{core@{core}!snow\+Texture@{snow\+Texture}}
+\index{snow\+Texture@{snow\+Texture}!core@{core}}
+\subsubsection{\texorpdfstring{snow\+Texture}{snowTexture}}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1Texture}{Texture}$\ast$ core\+::snow\+Texture}
+
 \mbox{\Hypertarget{namespacecore_ac45da6f80dac9bead5c9310c27897f15}\label{namespacecore_ac45da6f80dac9bead5c9310c27897f15}} 
 \index{core@{core}!terrain@{terrain}}
 \index{terrain@{terrain}!core@{core}}
@@ -313,11 +397,11 @@ void
 \subsubsection{\texorpdfstring{text}{text}}
 {\footnotesize\ttfamily \hyperlink{classfont_1_1Text}{Text}$\ast$ core\+::text}
 
-\mbox{\Hypertarget{namespacecore_a0738503bf610d37d44b4938dc024bfcc}\label{namespacecore_a0738503bf610d37d44b4938dc024bfcc}} 
+\mbox{\Hypertarget{namespacecore_ab1e87a88eb2e893aa68d0d791ac9859c}\label{namespacecore_ab1e87a88eb2e893aa68d0d791ac9859c}} 
 \index{core@{core}!texture@{texture}}
 \index{texture@{texture}!core@{core}}
 \subsubsection{\texorpdfstring{texture}{texture}}
-{\footnotesize\ttfamily \hyperlink{classtexture_1_1Texture}{Model\+Texture}$\ast$ core\+::texture}
+{\footnotesize\ttfamily \hyperlink{classtexture_1_1Texture}{Texture}$\ast$ core\+::texture}
 
 \mbox{\Hypertarget{namespacecore_ad4d5c25548862489d6a237342748ad74}\label{namespacecore_ad4d5c25548862489d6a237342748ad74}} 
 \index{core@{core}!textured\+Model@{textured\+Model}}
@@ -325,9 +409,27 @@ void
 \subsubsection{\texorpdfstring{textured\+Model}{texturedModel}}
 {\footnotesize\ttfamily \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model}$\ast$ core\+::textured\+Model}
 
+\mbox{\Hypertarget{namespacecore_a7f37c29928536493e41e65032818b8f3}\label{namespacecore_a7f37c29928536493e41e65032818b8f3}} 
+\index{core@{core}!trees@{trees}}
+\index{trees@{trees}!core@{core}}
+\subsubsection{\texorpdfstring{trees}{trees}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classentity_1_1Entity}{Entity} $\ast$$>$ core\+::trees}
+
 \mbox{\Hypertarget{namespacecore_a78dd24784c415d3759a0f71b8f4f9f81}\label{namespacecore_a78dd24784c415d3759a0f71b8f4f9f81}} 
 \index{core@{core}!vao\+Loader@{vao\+Loader}}
 \index{vao\+Loader@{vao\+Loader}!core@{core}}
 \subsubsection{\texorpdfstring{vao\+Loader}{vaoLoader}}
 {\footnotesize\ttfamily \hyperlink{classcore_1_1VaoLoader}{Vao\+Loader}$\ast$ core\+::vao\+Loader}
+
+\mbox{\Hypertarget{namespacecore_a6a9140ce7a80c31c7ac37e2567ab60fa}\label{namespacecore_a6a9140ce7a80c31c7ac37e2567ab60fa}} 
+\index{core@{core}!weather@{weather}}
+\index{weather@{weather}!core@{core}}
+\subsubsection{\texorpdfstring{weather}{weather}}
+{\footnotesize\ttfamily bool core\+::weather = false}
+
+\mbox{\Hypertarget{namespacecore_a985cbb636cfce09e29c1e0cc52b1fbde}\label{namespacecore_a985cbb636cfce09e29c1e0cc52b1fbde}} 
+\index{core@{core}!weather\+System@{weather\+System}}
+\index{weather\+System@{weather\+System}!core@{core}}
+\subsubsection{\texorpdfstring{weather\+System}{weatherSystem}}
+{\footnotesize\ttfamily \hyperlink{classparticle_1_1WeatherSystem}{Weather\+System}$\ast$ core\+::weather\+System}
 

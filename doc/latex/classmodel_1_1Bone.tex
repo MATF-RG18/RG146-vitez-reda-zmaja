@@ -1,0 +1,273 @@
+\hypertarget{classmodel_1_1Bone}{}\section{Dokumentacija klase model\+:\+:Bone}
+\label{classmodel_1_1Bone}\index{model\+::\+Bone@{model\+::\+Bone}}
+
+
+Klasa \hyperlink{classmodel_1_1Bone}{Bone} opisuje kost modela. Kost je opisana indeksom, imenom, listom dece, matricom transformacije animacije i matricom transformacije koordinatnog sistema koske u koordinatni sistem modela.  
+
+
+
+
+{\ttfamily \#include $<$Bone.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1Bone_ac2ed136fad04b08ececc34627053d1f0}{Bone} (int \hyperlink{classmodel_1_1Bone_a7a300f62a3d7ffdde6f31d55cdffa44e}{ID}, string \hyperlink{classmodel_1_1Bone_ad1613b072247f5310db1ad9ec9182956}{name}, mat4 \hyperlink{classmodel_1_1Bone_a4e3fe672d5a018cf9755a344c9f193ab}{inverse\+Bind\+Transform})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se koski dodeljuje indeks, ime i matrica transformacije koordinatnog sistema koske u koordinatni sistem modela. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1Bone_af53ed3cc50856152d44920ff0a9a8504}{$\sim$\+Bone} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classmodel_1_1Bone_a7f5ae2f1ff96a250120c8c4245280fa2}{add\+Child} (\hyperlink{classmodel_1_1Bone}{Bone} $\ast$child)
+\begin{DoxyCompactList}\small\item\em Funkcija dodaje kosku u listu dece. \end{DoxyCompactList}\item 
+int \hyperlink{classmodel_1_1Bone_a4af3fc3d883998c6a01b76f73a228d6d}{get\+ID} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca identifikator koske. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classmodel_1_1Bone}{Bone} $\ast$ $>$ \hyperlink{classmodel_1_1Bone_a00f7c97175801fdf9ecb58e638cee673}{get\+Childrens} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca listu dece koske. \end{DoxyCompactList}\item 
+string \hyperlink{classmodel_1_1Bone_ae8a8cffeae8879f3c2d572c55c8bbdbb}{get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca ime koske. \end{DoxyCompactList}\item 
+mat4 \hyperlink{classmodel_1_1Bone_a2fc96bf7f7ce0e061ae3b4ada72ed9b7}{get\+Animated\+Transform} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca matricu transformacije animacije. \end{DoxyCompactList}\item 
+void \hyperlink{classmodel_1_1Bone_afe6c5180dae41b82ffcaaf8e0fbb756d}{set\+Animated\+Transform} (mat4 \hyperlink{classmodel_1_1Bone_a72f5c45330effbe7a68b7984fcf2250e}{animated\+Transform})
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja matricu transformacije animacije. \end{DoxyCompactList}\item 
+mat4 \hyperlink{classmodel_1_1Bone_a96a871fa5d08586c5ba8720bc6de72e1}{get\+Inverse\+Bind\+Transform} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca matricu transformacije koordinatnog sistema koske. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmodel_1_1Bone_a7a300f62a3d7ffdde6f31d55cdffa44e}{ID}
+\begin{DoxyCompactList}\small\item\em Identifikator koske. \end{DoxyCompactList}\item 
+string \hyperlink{classmodel_1_1Bone_ad1613b072247f5310db1ad9ec9182956}{name}
+\begin{DoxyCompactList}\small\item\em Ime koske. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classmodel_1_1Bone}{Bone} $\ast$ $>$ \hyperlink{classmodel_1_1Bone_a41f8eef1aa80ccb7bb47f6de93316cf7}{childrens}
+\begin{DoxyCompactList}\small\item\em Lista dece koske. \end{DoxyCompactList}\item 
+mat4 \hyperlink{classmodel_1_1Bone_a72f5c45330effbe7a68b7984fcf2250e}{animated\+Transform}
+\begin{DoxyCompactList}\small\item\em Matrica transformacije animacije. \end{DoxyCompactList}\item 
+mat4 \hyperlink{classmodel_1_1Bone_a4e3fe672d5a018cf9755a344c9f193ab}{inverse\+Bind\+Transform}
+\begin{DoxyCompactList}\small\item\em Matrica transformacije koordinatnog sistema koske u sistem modela. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classmodel_1_1Bone}{Bone} opisuje kost modela. Kost je opisana indeksom, imenom, listom dece, matricom transformacije animacije i matricom transformacije koordinatnog sistema koske u koordinatni sistem modela. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classmodel_1_1Bone_ac2ed136fad04b08ececc34627053d1f0}\label{classmodel_1_1Bone_ac2ed136fad04b08ececc34627053d1f0}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!Bone@{Bone}}
+\index{Bone@{Bone}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{Bone()}{Bone()}}
+{\footnotesize\ttfamily model\+::\+Bone\+::\+Bone (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{string}]{name,  }\item[{mat4}]{inverse\+Bind\+Transform }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. U konstruktoru se koski dodeljuje indeks, ime i matrica transformacije koordinatnog sistema koske u koordinatni sistem modela. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em ID} & Identifikator koske. \\
+\hline
+{\em name} & Ime koske. \\
+\hline
+{\em inverse\+Bind\+Transform} & Matrica transformacije koordinatnog sistema koske u sistem modela. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1Bone_af53ed3cc50856152d44920ff0a9a8504}\label{classmodel_1_1Bone_af53ed3cc50856152d44920ff0a9a8504}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!````~Bone@{$\sim$\+Bone}}
+\index{````~Bone@{$\sim$\+Bone}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{$\sim$\+Bone()}{~Bone()}}
+{\footnotesize\ttfamily model\+::\+Bone\+::$\sim$\+Bone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classmodel_1_1Bone_a7f5ae2f1ff96a250120c8c4245280fa2}\label{classmodel_1_1Bone_a7f5ae2f1ff96a250120c8c4245280fa2}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!add\+Child@{add\+Child}}
+\index{add\+Child@{add\+Child}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{add\+Child()}{addChild()}}
+{\footnotesize\ttfamily void model\+::\+Bone\+::add\+Child (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1Bone}{Bone} $\ast$}]{child }\end{DoxyParamCaption})}
+
+
+
+Funkcija dodaje kosku u listu dece. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em \hyperlink{classmodel_1_1Bone}{Bone}} & $\ast$ Pokazivac na instancu klase \hyperlink{classmodel_1_1Bone}{Bone}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1Bone_a2fc96bf7f7ce0e061ae3b4ada72ed9b7}\label{classmodel_1_1Bone_a2fc96bf7f7ce0e061ae3b4ada72ed9b7}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!get\+Animated\+Transform@{get\+Animated\+Transform}}
+\index{get\+Animated\+Transform@{get\+Animated\+Transform}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{get\+Animated\+Transform()}{getAnimatedTransform()}}
+{\footnotesize\ttfamily mat4 model\+::\+Bone\+::get\+Animated\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca matricu transformacije animacije. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+mat4 Matrica transformacije animacije. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1Bone_a00f7c97175801fdf9ecb58e638cee673}\label{classmodel_1_1Bone_a00f7c97175801fdf9ecb58e638cee673}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!get\+Childrens@{get\+Childrens}}
+\index{get\+Childrens@{get\+Childrens}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{get\+Childrens()}{getChildrens()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classmodel_1_1Bone}{Bone} $\ast$ $>$ model\+::\+Bone\+::get\+Childrens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca listu dece koske. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vector$<$\+Bone$\ast$$>$ Lista dece koske. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1Bone_a4af3fc3d883998c6a01b76f73a228d6d}\label{classmodel_1_1Bone_a4af3fc3d883998c6a01b76f73a228d6d}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int model\+::\+Bone\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca identifikator koske. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Identifikator koske. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1Bone_a96a871fa5d08586c5ba8720bc6de72e1}\label{classmodel_1_1Bone_a96a871fa5d08586c5ba8720bc6de72e1}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!get\+Inverse\+Bind\+Transform@{get\+Inverse\+Bind\+Transform}}
+\index{get\+Inverse\+Bind\+Transform@{get\+Inverse\+Bind\+Transform}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{get\+Inverse\+Bind\+Transform()}{getInverseBindTransform()}}
+{\footnotesize\ttfamily mat4 model\+::\+Bone\+::get\+Inverse\+Bind\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca matricu transformacije koordinatnog sistema koske. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+mat4 Matrica transformacije koordinatnog sistema koske. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1Bone_ae8a8cffeae8879f3c2d572c55c8bbdbb}\label{classmodel_1_1Bone_ae8a8cffeae8879f3c2d572c55c8bbdbb}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string model\+::\+Bone\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca ime koske. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+string Ime koske. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodel_1_1Bone_afe6c5180dae41b82ffcaaf8e0fbb756d}\label{classmodel_1_1Bone_afe6c5180dae41b82ffcaaf8e0fbb756d}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!set\+Animated\+Transform@{set\+Animated\+Transform}}
+\index{set\+Animated\+Transform@{set\+Animated\+Transform}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{set\+Animated\+Transform()}{setAnimatedTransform()}}
+{\footnotesize\ttfamily void model\+::\+Bone\+::set\+Animated\+Transform (\begin{DoxyParamCaption}\item[{mat4}]{animated\+Transform }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja matricu transformacije animacije. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em animated\+Transform} & Matrica transformacije animacije. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classmodel_1_1Bone_a72f5c45330effbe7a68b7984fcf2250e}\label{classmodel_1_1Bone_a72f5c45330effbe7a68b7984fcf2250e}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!animated\+Transform@{animated\+Transform}}
+\index{animated\+Transform@{animated\+Transform}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{animated\+Transform}{animatedTransform}}
+{\footnotesize\ttfamily mat4 model\+::\+Bone\+::animated\+Transform\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Matrica transformacije animacije. 
+
+\mbox{\Hypertarget{classmodel_1_1Bone_a41f8eef1aa80ccb7bb47f6de93316cf7}\label{classmodel_1_1Bone_a41f8eef1aa80ccb7bb47f6de93316cf7}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!childrens@{childrens}}
+\index{childrens@{childrens}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{childrens}{childrens}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classmodel_1_1Bone}{Bone}$\ast$$>$ model\+::\+Bone\+::childrens\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista dece koske. 
+
+\mbox{\Hypertarget{classmodel_1_1Bone_a7a300f62a3d7ffdde6f31d55cdffa44e}\label{classmodel_1_1Bone_a7a300f62a3d7ffdde6f31d55cdffa44e}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!ID@{ID}}
+\index{ID@{ID}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily int model\+::\+Bone\+::\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator koske. 
+
+\mbox{\Hypertarget{classmodel_1_1Bone_a4e3fe672d5a018cf9755a344c9f193ab}\label{classmodel_1_1Bone_a4e3fe672d5a018cf9755a344c9f193ab}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!inverse\+Bind\+Transform@{inverse\+Bind\+Transform}}
+\index{inverse\+Bind\+Transform@{inverse\+Bind\+Transform}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{inverse\+Bind\+Transform}{inverseBindTransform}}
+{\footnotesize\ttfamily mat4 model\+::\+Bone\+::inverse\+Bind\+Transform\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Matrica transformacije koordinatnog sistema koske u sistem modela. 
+
+\mbox{\Hypertarget{classmodel_1_1Bone_ad1613b072247f5310db1ad9ec9182956}\label{classmodel_1_1Bone_ad1613b072247f5310db1ad9ec9182956}} 
+\index{model\+::\+Bone@{model\+::\+Bone}!name@{name}}
+\index{name@{name}!model\+::\+Bone@{model\+::\+Bone}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string model\+::\+Bone\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ime koske. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/model/\hyperlink{Bone_8h}{Bone.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/model/\hyperlink{Bone_8cpp}{Bone.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Izvorni kod datoteke /home/dusan/Documents/RG146-vitez-reda-zmaja/include/particle/Particle.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e80574ad75c4623ab83350b3a8fc81c6.html">particle</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Particle.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Particle_8h.html">Dokumentacija.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _PARTICLE_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _PARTICLE_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Ukljucivanje korsnicki defininisanih biblioteka.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../utility/FpsData.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Ukljucivanje biblioteka.</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;glm/vec3.hpp&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Koriscenje prostora imena za jednostavniji i pregledniji kod.</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceglm.html">glm</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceutility.html">utility</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceparticle.html">particle</a> {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classparticle_1_1Particle.html">   33</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classparticle_1_1Particle.html">Particle</a> {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// Privatne promenljive klase.</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classparticle_1_1Particle.html#adbbe15e722e36d8933f228891b6e9d68">   38</a></span>&#160;    vec3 <a class="code" href="classparticle_1_1Particle.html#adbbe15e722e36d8933f228891b6e9d68">position</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classparticle_1_1Particle.html#a24b42fc49ed65250499e0ba059764f0c">   41</a></span>&#160;    vec3 <a class="code" href="classparticle_1_1Particle.html#a24b42fc49ed65250499e0ba059764f0c">speed</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classparticle_1_1Particle.html#ae600a9dd750175cc63e19ddc826e7ce2">   44</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classparticle_1_1Particle.html#ae600a9dd750175cc63e19ddc826e7ce2">gravity</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classparticle_1_1Particle.html#a5489d20fe4168e0fda5b58b3802a9003">   47</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classparticle_1_1Particle.html#a5489d20fe4168e0fda5b58b3802a9003">lifeLength</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classparticle_1_1Particle.html#a995fbbd73908130f6dc08c5a2107c1d8">   50</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classparticle_1_1Particle.html#a995fbbd73908130f6dc08c5a2107c1d8">currentLifeTime</a>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classparticle_1_1Particle.html#a8ca9da0e74a86eced58a66db613a59a5">   53</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classparticle_1_1Particle.html#a8ca9da0e74a86eced58a66db613a59a5">rotation</a>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classparticle_1_1Particle.html#ae33238d14fd210a1d8336e568a456960">   56</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classparticle_1_1Particle.html#ae33238d14fd210a1d8336e568a456960">scale</a>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classparticle_1_1Particle.html#a84e6c4f5fbc007346f27db18dd696045">   59</a></span>&#160;    <a class="code" href="classutility_1_1FpsData.html">FpsData</a> *<a class="code" href="classparticle_1_1Particle.html#a84e6c4f5fbc007346f27db18dd696045">fpsData</a>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// Javne funkcije klase.</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classparticle_1_1Particle.html">Particle</a>(vec3 position, vec3 speed, <span class="keywordtype">float</span> gravity, <span class="keywordtype">float</span> lifeLength, <span class="keywordtype">float</span> rotation, <span class="keywordtype">float</span> scale, <a class="code" href="classutility_1_1FpsData.html">FpsData</a> *fpsData);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    ~<a class="code" href="classparticle_1_1Particle.html">Particle</a>();</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    vec3 getPosition();</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">float</span> getRotation();</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">float</span> getScale();</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> update();</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  };</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;} <span class="comment">// particle</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespaceparticle_html"><div class="ttname"><a href="namespaceparticle.html">particle</a></div><div class="ttdoc">Prostor imena particle. Sadrzi sve klase, funkcije i promenljive koje su vezane za sistem cestica...</div><div class="ttdef"><b>Definition:</b> Particle.cpp:9</div></div>
+<div class="ttc" id="namespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div></div>
+<div class="ttc" id="classparticle_1_1Particle_html_a84e6c4f5fbc007346f27db18dd696045"><div class="ttname"><a href="classparticle_1_1Particle.html#a84e6c4f5fbc007346f27db18dd696045">particle::Particle::fpsData</a></div><div class="ttdeci">FpsData * fpsData</div><div class="ttdoc">Pokazivac na instancu klase FpsData. </div><div class="ttdef"><b>Definition:</b> Particle.h:59</div></div>
+<div class="ttc" id="classparticle_1_1Particle_html_a995fbbd73908130f6dc08c5a2107c1d8"><div class="ttname"><a href="classparticle_1_1Particle.html#a995fbbd73908130f6dc08c5a2107c1d8">particle::Particle::currentLifeTime</a></div><div class="ttdeci">float currentLifeTime</div><div class="ttdoc">Trenutno vreme zivota. </div><div class="ttdef"><b>Definition:</b> Particle.h:50</div></div>
+<div class="ttc" id="classparticle_1_1Particle_html_adbbe15e722e36d8933f228891b6e9d68"><div class="ttname"><a href="classparticle_1_1Particle.html#adbbe15e722e36d8933f228891b6e9d68">particle::Particle::position</a></div><div class="ttdeci">vec3 position</div><div class="ttdoc">Pozicija cestice. </div><div class="ttdef"><b>Definition:</b> Particle.h:38</div></div>
+<div class="ttc" id="classparticle_1_1Particle_html"><div class="ttname"><a href="classparticle_1_1Particle.html">particle::Particle</a></div><div class="ttdoc">Klasa Particle opisuje jednu cesticu. Cestica je opisana pozicijom, brzinom, efektom gravitacije...</div><div class="ttdef"><b>Definition:</b> Particle.h:33</div></div>
+<div class="ttc" id="classutility_1_1FpsData_html"><div class="ttname"><a href="classutility_1_1FpsData.html">utility::FpsData</a></div><div class="ttdoc">Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f...</div><div class="ttdef"><b>Definition:</b> FpsData.h:26</div></div>
+<div class="ttc" id="classparticle_1_1Particle_html_ae33238d14fd210a1d8336e568a456960"><div class="ttname"><a href="classparticle_1_1Particle.html#ae33238d14fd210a1d8336e568a456960">particle::Particle::scale</a></div><div class="ttdeci">float scale</div><div class="ttdoc">Faktor skaliranja cestice. </div><div class="ttdef"><b>Definition:</b> Particle.h:56</div></div>
+<div class="ttc" id="classparticle_1_1Particle_html_a5489d20fe4168e0fda5b58b3802a9003"><div class="ttname"><a href="classparticle_1_1Particle.html#a5489d20fe4168e0fda5b58b3802a9003">particle::Particle::lifeLength</a></div><div class="ttdeci">float lifeLength</div><div class="ttdoc">Duzina zivotnog veka. </div><div class="ttdef"><b>Definition:</b> Particle.h:47</div></div>
+<div class="ttc" id="classparticle_1_1Particle_html_ae600a9dd750175cc63e19ddc826e7ce2"><div class="ttname"><a href="classparticle_1_1Particle.html#ae600a9dd750175cc63e19ddc826e7ce2">particle::Particle::gravity</a></div><div class="ttdeci">float gravity</div><div class="ttdoc">Efekat gravitacije. </div><div class="ttdef"><b>Definition:</b> Particle.h:44</div></div>
+<div class="ttc" id="classparticle_1_1Particle_html_a24b42fc49ed65250499e0ba059764f0c"><div class="ttname"><a href="classparticle_1_1Particle.html#a24b42fc49ed65250499e0ba059764f0c">particle::Particle::speed</a></div><div class="ttdeci">vec3 speed</div><div class="ttdoc">Brzina cestice. </div><div class="ttdef"><b>Definition:</b> Particle.h:41</div></div>
+<div class="ttc" id="namespaceutility_html"><div class="ttname"><a href="namespaceutility.html">utility</a></div><div class="ttdoc">Prostor imena utility. Sadrzi sve korisne klase, funkcije i promenljive koje pomazu kreiranju igre...</div><div class="ttdef"><b>Definition:</b> FpsData.cpp:5</div></div>
+<div class="ttc" id="classparticle_1_1Particle_html_a8ca9da0e74a86eced58a66db613a59a5"><div class="ttname"><a href="classparticle_1_1Particle.html#a8ca9da0e74a86eced58a66db613a59a5">particle::Particle::rotation</a></div><div class="ttdeci">float rotation</div><div class="ttdoc">Rotacija cestice. </div><div class="ttdef"><b>Definition:</b> Particle.h:53</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

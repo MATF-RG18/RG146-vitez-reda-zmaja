@@ -61,21 +61,35 @@ $(function() {
 &#160;
 
 <h3><a id="index_g"></a>- g -</h3><ul>
+<li>generateParticles()
+: <a class="el" href="classparticle_1_1WeatherSystem.html#ac26bba944fcc147b49f12df6d11b53e5">particle::WeatherSystem</a>
+</li>
 <li>generateTerrain()
 : <a class="el" href="classterrain_1_1Terrain.html#aadecc14ee7c1c340c54c6960d489f1da">terrain::Terrain</a>
 </li>
 <li>getAllUniformLocations()
-: <a class="el" href="classshader_1_1FontShader.html#a89c2e19fdbe971db4c7bdc72effd2043">shader::FontShader</a>
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#a41de54497f81f6781a11730041b23051">shader::AnimatedModelShader</a>
+, <a class="el" href="classshader_1_1FontShader.html#a89c2e19fdbe971db4c7bdc72effd2043">shader::FontShader</a>
 , <a class="el" href="classshader_1_1HudShader.html#a881374d89ec7a37d5e73c8694ab42d09">shader::HudShader</a>
+, <a class="el" href="classshader_1_1ParticleShader.html#a3951e093f0d29d60be87d3aad4d79f06">shader::ParticleShader</a>
 , <a class="el" href="classshader_1_1Shader.html#a31d479c8502f9172c8b9393be362f391">shader::Shader</a>
 , <a class="el" href="classshader_1_1SkyboxShader.html#a1add7258c2e59462e6214d904a5a4256">shader::SkyboxShader</a>
 , <a class="el" href="classshader_1_1TerrainShader.html#ad1a4ef8d420ef0a4d7840a12912ddbfe">shader::TerrainShader</a>
+</li>
+<li>getAnimatedTransform()
+: <a class="el" href="classmodel_1_1Bone.html#a2fc96bf7f7ce0e061ae3b4ada72ed9b7">model::Bone</a>
+</li>
+<li>getAnimation()
+: <a class="el" href="classmodel_1_1AnimatedModel.html#ada1c3b1e93e2934ba085dd14e65e364a">model::AnimatedModel</a>
 </li>
 <li>getBackgroundTexture()
 : <a class="el" href="classtexture_1_1TerrainTexturePack.html#afcc4cf5d8e58eb3668cb0bb0e92ac6d9">texture::TerrainTexturePack</a>
 </li>
 <li>getBlendMap()
 : <a class="el" href="classterrain_1_1Terrain.html#ae4d64fa4f81168a02887127491572cef">terrain::Terrain</a>
+</li>
+<li>getBoneTransforms()
+: <a class="el" href="classmodel_1_1AnimatedModel.html#a1769cb021a4128bda636eab48e4c55cc">model::AnimatedModel</a>
 </li>
 <li>getBTexture()
 : <a class="el" href="classtexture_1_1TerrainTexturePack.html#a458ca66ed71f945af5e3878de073bb33">texture::TerrainTexturePack</a>
@@ -85,6 +99,9 @@ $(function() {
 </li>
 <li>getCharData()
 : <a class="el" href="classfont_1_1Font.html#a7b63e5c88b80f597a2a334f44df001f0">font::Font</a>
+</li>
+<li>getChildrens()
+: <a class="el" href="classmodel_1_1Bone.html#a00f7c97175801fdf9ecb58e638cee673">model::Bone</a>
 </li>
 <li>getColor()
 : <a class="el" href="classfont_1_1Text.html#ae947a015d868f5750e28b10010b0cb9d">font::Text</a>
@@ -98,11 +115,14 @@ $(function() {
 <li>getFpsCount()
 : <a class="el" href="classutility_1_1FpsData.html#abd745ff03d01035ff7a5453558469c2c">utility::FpsData</a>
 </li>
+<li>getFrameDeltaTime()
+: <a class="el" href="classutility_1_1FpsData.html#afe3b4f2272afb4efcc628a5947cf5383">utility::FpsData</a>
+</li>
 <li>getGTexture()
 : <a class="el" href="classtexture_1_1TerrainTexturePack.html#aeaf5b66e3cb399312e265eab07bcdf3f">texture::TerrainTexturePack</a>
 </li>
 <li>getHasTransparency()
-: <a class="el" href="classtexture_1_1Texture.html#adc0735b6b9c1df9f2c525f0663306cd3">texture::Texture</a>
+: <a class="el" href="classtexture_1_1Texture.html#af200f2548ab2379026b6b234d53e6e18">texture::Texture</a>
 </li>
 <li>getHeight()
 : <a class="el" href="classterrain_1_1Terrain.html#a0707a64c79d89cfc358670651855cba1">terrain::Terrain</a>
@@ -112,52 +132,94 @@ $(function() {
 : <a class="el" href="classterrain_1_1Terrain.html#afd074b9a18254b81abb89d29406f90e5">terrain::Terrain</a>
 </li>
 <li>getID()
-: <a class="el" href="classtexture_1_1Texture.html#a3eeda8235d9c4cfccccc2ac805eeb864">texture::Texture</a>
+: <a class="el" href="classmodel_1_1Bone.html#a4af3fc3d883998c6a01b76f73a228d6d">model::Bone</a>
+, <a class="el" href="classtexture_1_1Texture.html#ad68f41e90862c73b209743625b64dffa">texture::Texture</a>
+</li>
+<li>getInverseBindTransform()
+: <a class="el" href="classmodel_1_1Bone.html#a96a871fa5d08586c5ba8720bc6de72e1">model::Bone</a>
+</li>
+<li>getKeyFrames()
+: <a class="el" href="classanimation_1_1Animation.html#ae8d6214ee3a10015f12b7aa7c6e5c1b7">animation::Animation</a>
+</li>
+<li>getLength()
+: <a class="el" href="classanimation_1_1Animation.html#a8af39eddf1bec211e7b7252a770a2d4c">animation::Animation</a>
+</li>
+<li>getLocalTransform()
+: <a class="el" href="classanimation_1_1BoneTransform.html#a6a79147d90aecac6c5481927be659ca7">animation::BoneTransform</a>
+</li>
+<li>getMeshesVaoID()
+: <a class="el" href="classmodel_1_1RawModel.html#af13c9200466649ab5900eaeeeeefdbc4">model::RawModel</a>
+</li>
+<li>getMeshesVertexCount()
+: <a class="el" href="classmodel_1_1RawModel.html#aafc5e5b7da34dda1c80cff89a65d08e5">model::RawModel</a>
 </li>
 <li>getModel()
-: <a class="el" href="classentity_1_1Entity.html#abc6481a8bab918cfb1309d3d342ccad1">entity::Entity</a>
+: <a class="el" href="classentity_1_1AnimatedEntity.html#ace7e7879a67cd75dac8cd867e79dd744">entity::AnimatedEntity</a>
+, <a class="el" href="classentity_1_1Entity.html#abc6481a8bab918cfb1309d3d342ccad1">entity::Entity</a>
+, <a class="el" href="classmodel_1_1AnimatedModel.html#aad16bb9c53cb3b9bacb39e50c5ecee33">model::AnimatedModel</a>
 , <a class="el" href="classterrain_1_1Terrain.html#a336c5efe16ff0fd81c8b6b6f00b9ba08">terrain::Terrain</a>
+</li>
+<li>getName()
+: <a class="el" href="classmodel_1_1Bone.html#ae8a8cffeae8879f3c2d572c55c8bbdbb">model::Bone</a>
+</li>
+<li>getNumRootNodes()
+: <a class="el" href="classmodel_1_1AnimatedModel.html#ae26d43c3b5b3a3f623418666f787565f">model::AnimatedModel</a>
 </li>
 <li>getPich()
 : <a class="el" href="classentity_1_1Camera.html#a502da7b4da0782356f7bf75e99e4419c">entity::Camera</a>
 </li>
 <li>getPosition()
-: <a class="el" href="classentity_1_1Camera.html#a2c6b67d27b4012631306c2c2c5a3691c">entity::Camera</a>
+: <a class="el" href="classentity_1_1AnimatedEntity.html#adc612d974f4cb04142edc2a4dbe7c3fa">entity::AnimatedEntity</a>
+, <a class="el" href="classentity_1_1Camera.html#a2c6b67d27b4012631306c2c2c5a3691c">entity::Camera</a>
 , <a class="el" href="classentity_1_1Entity.html#ad255abb1afcceceb6f2efea66086d8bd">entity::Entity</a>
 , <a class="el" href="classentity_1_1Light.html#aca0644bed009e20c672224ed0c92546e">entity::Light</a>
 , <a class="el" href="classfont_1_1Text.html#a6d9c2d80d02c59ce0811190ba0ee5cb8">font::Text</a>
 , <a class="el" href="classhud_1_1HudTexture.html#a67e8c4c74a6131a931f828b00a79b82d">hud::HudTexture</a>
+, <a class="el" href="classparticle_1_1Particle.html#a8dc9962f0f373739437652fbe8c5820d">particle::Particle</a>
+</li>
+<li>getPositions()
+: <a class="el" href="classanimation_1_1KeyFrame.html#a0836ea59aee5e8ba67a683d40798f143">animation::KeyFrame</a>
+</li>
+<li>getPreviousAndNextFrames()
+: <a class="el" href="classanimation_1_1Animator.html#af91ac2386b9606f8fa50d65f33fa0be0">animation::Animator</a>
 </li>
 <li>getRawModel()
-: <a class="el" href="classmodel_1_1TexturedModel.html#a8074adea6d7e368690a977b4ad571378">model::TexturedModel</a>
+: <a class="el" href="classmodel_1_1TexturedModel.html#a9382bc8fb867a7f9ef8b120f0805b4b6">model::TexturedModel</a>
 </li>
 <li>getReflectivity()
-: <a class="el" href="classtexture_1_1Texture.html#a613024c969ec176a1add0c20c3f98969">texture::Texture</a>
+: <a class="el" href="classtexture_1_1Texture.html#a0c2fb82845e340acced35d96a80bbb25">texture::Texture</a>
 </li>
 <li>getRoll()
 : <a class="el" href="classentity_1_1Camera.html#a9d9288cb98d6bf73c2ac749274ae3f03">entity::Camera</a>
 </li>
+<li>getRootNode()
+: <a class="el" href="classmodel_1_1AnimatedModel.html#a1056ac7c71920cd1ff123d372a9dd05d">model::AnimatedModel</a>
+</li>
 <li>getRotation()
-: <a class="el" href="classentity_1_1Entity.html#a58680b88c9179d9cab22e881b320f9f7">entity::Entity</a>
+: <a class="el" href="classentity_1_1AnimatedEntity.html#a6dbb9afaea995f85a112f32efe7f77e8">entity::AnimatedEntity</a>
+, <a class="el" href="classentity_1_1Entity.html#a58680b88c9179d9cab22e881b320f9f7">entity::Entity</a>
 , <a class="el" href="classfont_1_1Text.html#a5e59176805cd037ae0c528b84703961c">font::Text</a>
 , <a class="el" href="classhud_1_1HudTexture.html#aa171b3bf1cb31ed030600beca32ed77c">hud::HudTexture</a>
+, <a class="el" href="classparticle_1_1Particle.html#a0a9002e65ea2db2f9e28935d3e3e9aa5">particle::Particle</a>
 </li>
 <li>getRTexture()
 : <a class="el" href="classtexture_1_1TerrainTexturePack.html#a2e90d77d35768ae2c2c4a640b354fd2e">texture::TerrainTexturePack</a>
 </li>
 <li>getScale()
-: <a class="el" href="classentity_1_1Entity.html#a1923a9ecf9da2ec77d6e3eeadb4bd4d7">entity::Entity</a>
+: <a class="el" href="classentity_1_1AnimatedEntity.html#ab50284046aa25cb7d264f9341cf904a5">entity::AnimatedEntity</a>
+, <a class="el" href="classentity_1_1Entity.html#a1923a9ecf9da2ec77d6e3eeadb4bd4d7">entity::Entity</a>
 , <a class="el" href="classfont_1_1Text.html#af94e22a422e17028fef39e69b46736f3">font::Text</a>
 , <a class="el" href="classhud_1_1HudTexture.html#a3ad68d37457abc9456133e03b0835c40">hud::HudTexture</a>
+, <a class="el" href="classparticle_1_1Particle.html#a1de9470fa01253971c9f6ed0f5849b66">particle::Particle</a>
 </li>
 <li>getShine()
-: <a class="el" href="classtexture_1_1Texture.html#a2336ba8c1ccc1eea9419fb2cd3773888">texture::Texture</a>
+: <a class="el" href="classtexture_1_1Texture.html#a9a7667b3a055b2e0c27c2490d4ab4e7e">texture::Texture</a>
 </li>
 <li>getText()
 : <a class="el" href="classfont_1_1Text.html#ae78670d785e8071d66298c84bcf89330">font::Text</a>
 </li>
 <li>getTexture()
-: <a class="el" href="classmodel_1_1TexturedModel.html#ad2bb5d174a506bd9d1f807e84aba4cdc">model::TexturedModel</a>
+: <a class="el" href="classparticle_1_1WeatherSystem.html#aba0914ccb5a062a4b7d54c17d107c543">particle::WeatherSystem</a>
 </li>
 <li>getTextureID()
 : <a class="el" href="classhud_1_1HudTexture.html#a2ac36167c1f0e18fdc9ea125fb909074">hud::HudTexture</a>
@@ -166,21 +228,23 @@ $(function() {
 <li>getTexturePack()
 : <a class="el" href="classterrain_1_1Terrain.html#a6b6100654d9bb6f5f5ea004cc5bf95f4">terrain::Terrain</a>
 </li>
+<li>getTextures()
+: <a class="el" href="classmodel_1_1TexturedModel.html#a09314a66eefacd609fc3bc414b8c5da7">model::TexturedModel</a>
+</li>
+<li>getTimeStamp()
+: <a class="el" href="classanimation_1_1KeyFrame.html#ae4add751eb799ded63d21388c513402b">animation::KeyFrame</a>
+</li>
 <li>getUniformLocation()
-: <a class="el" href="classshader_1_1FontShader.html#aa1ac58dc94c17fdf26121e8967ef87fd">shader::FontShader</a>
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#a4977309c28777e27a5d3f617336e4010">shader::AnimatedModelShader</a>
+, <a class="el" href="classshader_1_1FontShader.html#aa1ac58dc94c17fdf26121e8967ef87fd">shader::FontShader</a>
 , <a class="el" href="classshader_1_1HudShader.html#af9ed170816ba27a227dd8ce7c6e0aba4">shader::HudShader</a>
+, <a class="el" href="classshader_1_1ParticleShader.html#ade4e67ce9cc3b4d2a7ca068fc8ae885f">shader::ParticleShader</a>
 , <a class="el" href="classshader_1_1Shader.html#a91ddc84588431a520654096a74ca3671">shader::Shader</a>
 , <a class="el" href="classshader_1_1SkyboxShader.html#a4a253cd426b56b9a7cd2e232dfc34ef6">shader::SkyboxShader</a>
 , <a class="el" href="classshader_1_1TerrainShader.html#a69db3dcab0c9d49d9d57ef1121dc7763">shader::TerrainShader</a>
 </li>
 <li>getUseFakeLightning()
-: <a class="el" href="classtexture_1_1Texture.html#adc202fd47232d085312fea26bc17d69e">texture::Texture</a>
-</li>
-<li>getVaoID()
-: <a class="el" href="classmodel_1_1RawModel.html#a8132ec85cbc5f5286534ed6d67ee69ad">model::RawModel</a>
-</li>
-<li>getVertexCount()
-: <a class="el" href="classmodel_1_1RawModel.html#a2216788939e3b42e7de828607d4a911d">model::RawModel</a>
+: <a class="el" href="classtexture_1_1Texture.html#adba4e7c4fa1d9cf6691af081c63bf962">texture::Texture</a>
 </li>
 <li>getWidth()
 : <a class="el" href="classtexture_1_1SkyboxTextureData.html#a216985ffe51ed362c3e29c167767496e">texture::SkyboxTextureData</a>

@@ -67,23 +67,30 @@ namespace core {
             /// Hes mapa koja sadrzi teksturisane modele i liste entiteta.
             map<TexturedModel *, list<Entity *>> modelEntities;
 
+            /// Hes mapa koja sadrzi animirane modele i liste entiteta.
             map<AnimatedModel *, list<AnimatedEntity *>> animatedModelEntities;
 
             /// Lista terena
             list<Terrain *> terrains;
 
+            /// Pokazivac na instancu klase SkyboxRenderer.
             SkyboxRenderer *skyboxRenderer;
 
+            /// Pokazivac na instancu klase AnimatedModelShader.
             AnimatedModelShader *animatedModelShader;
 
+            /// Pokazivac na instancu klase AnimatedModelRenderer.
             AnimatedModelRenderer *animatedModelRenderer;
 
+            /// Pokazivac na instancu klase FpsData.
             FpsData *fpsData;
+
         // Javne funkcije klase.
         public:
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Konstruktor klase.
             /// @param vaoLoader Pokazivac na instancu klase VaoLoader
+            /// @param fpsData Pokazivac na instancu klase FpsData.
             ////////////////////////////////////////////////////////////////////////////
             MainRenderer(VaoLoader * vaoLoader, FpsData *fpsData);
 
@@ -108,7 +115,12 @@ namespace core {
             ////////////////////////////////////////////////////////////////////////////
             void processEntity(Entity *entity);
 
-            void processAnimatedEntity(AnimatedEntity *AnimatedEntity);
+            ////////////////////////////////////////////////////////////////////////////
+            /// @brief Funkcija obradjuje animirane entitete i ubacuje ih u mapu animiranih entiteta.
+            /// @param entity Pokazivac na instancu klase AnimatedEntity
+            /// @return void
+            ////////////////////////////////////////////////////////////////////////////
+            void processAnimatedEntity(AnimatedEntity *entity);
 
             ////////////////////////////////////////////////////////////////////////////
             /// @brief Funkcija obradjuje terene i ubacuje ih u listu terena.

@@ -12,20 +12,20 @@ Klasa \hyperlink{classmodel_1_1RawModel}{Raw\+Model} opisuje model objekta. Mode
 \subsection*{Javni članovi}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmodel_1_1RawModel_ab7054a4703b26233f6a366721ea48353}{Raw\+Model} (int \hyperlink{classmodel_1_1RawModel_a325b2b7e719afce688027efbf92e27b7}{vao\+ID}, int \hyperlink{classmodel_1_1RawModel_a76a976df29d34a1d0f7a7e8f42a4477c}{vertex\+Count})
+\hyperlink{classmodel_1_1RawModel_ab1f77c2fa73575a79b65bae30cec98a6}{Raw\+Model} (vector$<$ G\+Lint $>$ \hyperlink{classmodel_1_1RawModel_a994176411e71716620d422dd56febbac}{meshes\+Vao\+ID}, vector$<$ G\+Lint $>$ \hyperlink{classmodel_1_1RawModel_a9a6ad9eb37bd6453ec115c2195d7f8a2}{meshes\+Vertex\+Count})
 \begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se modelu pridruzuju broj tacaka objekta i identifikator niza atributa. \end{DoxyCompactList}\item 
 \hyperlink{classmodel_1_1RawModel_a44e687484478b0747abe25baa3533b71}{$\sim$\+Raw\+Model} ()
 \begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
-int \hyperlink{classmodel_1_1RawModel_a8132ec85cbc5f5286534ed6d67ee69ad}{get\+Vao\+ID} (void)
-\begin{DoxyCompactList}\small\item\em Funkcija vraca identifikator niza atributa objekta. \end{DoxyCompactList}\item 
-int \hyperlink{classmodel_1_1RawModel_a2216788939e3b42e7de828607d4a911d}{get\+Vertex\+Count} (void)
-\begin{DoxyCompactList}\small\item\em Funkcija vraca broj tacaka objekta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+vector$<$ G\+Lint $>$ \hyperlink{classmodel_1_1RawModel_af13c9200466649ab5900eaeeeeefdbc4}{get\+Meshes\+Vao\+ID} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca listu identifikatora niza atributa objekta. \end{DoxyCompactList}\item 
+vector$<$ G\+Lint $>$ \hyperlink{classmodel_1_1RawModel_aafc5e5b7da34dda1c80cff89a65d08e5}{get\+Meshes\+Vertex\+Count} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca listu broja tacaka objekta. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Privatni članovi}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{classmodel_1_1RawModel_a325b2b7e719afce688027efbf92e27b7}{vao\+ID}
-\begin{DoxyCompactList}\small\item\em Identifikator niza atributa. \end{DoxyCompactList}\item 
-int \hyperlink{classmodel_1_1RawModel_a76a976df29d34a1d0f7a7e8f42a4477c}{vertex\+Count}
+vector$<$ G\+Lint $>$ \hyperlink{classmodel_1_1RawModel_a994176411e71716620d422dd56febbac}{meshes\+Vao\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikatori niza atributa. \end{DoxyCompactList}\item 
+vector$<$ G\+Lint $>$ \hyperlink{classmodel_1_1RawModel_a9a6ad9eb37bd6453ec115c2195d7f8a2}{meshes\+Vertex\+Count}
 \begin{DoxyCompactList}\small\item\em Broj tacaka objekta. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -33,11 +33,11 @@ int \hyperlink{classmodel_1_1RawModel_a76a976df29d34a1d0f7a7e8f42a4477c}{vertex\
 Klasa \hyperlink{classmodel_1_1RawModel}{Raw\+Model} opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa. 
 
 \subsection{Dokumentacija konstruktora i destruktora}
-\mbox{\Hypertarget{classmodel_1_1RawModel_ab7054a4703b26233f6a366721ea48353}\label{classmodel_1_1RawModel_ab7054a4703b26233f6a366721ea48353}} 
+\mbox{\Hypertarget{classmodel_1_1RawModel_ab1f77c2fa73575a79b65bae30cec98a6}\label{classmodel_1_1RawModel_ab1f77c2fa73575a79b65bae30cec98a6}} 
 \index{model\+::\+Raw\+Model@{model\+::\+Raw\+Model}!Raw\+Model@{Raw\+Model}}
 \index{Raw\+Model@{Raw\+Model}!model\+::\+Raw\+Model@{model\+::\+Raw\+Model}}
 \subsubsection{\texorpdfstring{Raw\+Model()}{RawModel()}}
-{\footnotesize\ttfamily model\+::\+Raw\+Model\+::\+Raw\+Model (\begin{DoxyParamCaption}\item[{int}]{vao\+ID,  }\item[{int}]{vertex\+Count }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily model\+::\+Raw\+Model\+::\+Raw\+Model (\begin{DoxyParamCaption}\item[{vector$<$ G\+Lint $>$}]{meshes\+Vao\+ID,  }\item[{vector$<$ G\+Lint $>$}]{meshes\+Vertex\+Count }\end{DoxyParamCaption})}
 
 
 
@@ -45,9 +45,9 @@ Konstruktor klase. U konstruktoru se modelu pridruzuju broj tacaka objekta i ide
 
 
 \begin{DoxyParams}{Parametri}
-{\em vao\+ID} & Identifikator niza atributa. \\
+{\em meshes\+Vao\+ID} & Lista identifikatora niza atributa. \\
 \hline
-{\em vertex\+Count} & Broj tacaka objekta. \\
+{\em meshes\+Vertex\+Count} & Lista broja tacaka objekta. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classmodel_1_1RawModel_a44e687484478b0747abe25baa3533b71}\label{classmodel_1_1RawModel_a44e687484478b0747abe25baa3533b71}} 
@@ -68,15 +68,15 @@ Destruktor klase.
 
 
 \subsection{Dokumentacija funkcija članica}
-\mbox{\Hypertarget{classmodel_1_1RawModel_a8132ec85cbc5f5286534ed6d67ee69ad}\label{classmodel_1_1RawModel_a8132ec85cbc5f5286534ed6d67ee69ad}} 
-\index{model\+::\+Raw\+Model@{model\+::\+Raw\+Model}!get\+Vao\+ID@{get\+Vao\+ID}}
-\index{get\+Vao\+ID@{get\+Vao\+ID}!model\+::\+Raw\+Model@{model\+::\+Raw\+Model}}
-\subsubsection{\texorpdfstring{get\+Vao\+I\+D()}{getVaoID()}}
-{\footnotesize\ttfamily int model\+::\+Raw\+Model\+::get\+Vao\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classmodel_1_1RawModel_af13c9200466649ab5900eaeeeeefdbc4}\label{classmodel_1_1RawModel_af13c9200466649ab5900eaeeeeefdbc4}} 
+\index{model\+::\+Raw\+Model@{model\+::\+Raw\+Model}!get\+Meshes\+Vao\+ID@{get\+Meshes\+Vao\+ID}}
+\index{get\+Meshes\+Vao\+ID@{get\+Meshes\+Vao\+ID}!model\+::\+Raw\+Model@{model\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{get\+Meshes\+Vao\+I\+D()}{getMeshesVaoID()}}
+{\footnotesize\ttfamily vector$<$ G\+Lint $>$ model\+::\+Raw\+Model\+::get\+Meshes\+Vao\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
-Funkcija vraca identifikator niza atributa objekta. 
+Funkcija vraca listu identifikatora niza atributa objekta. 
 
 
 \begin{DoxyParams}{Parametri}
@@ -84,17 +84,17 @@ Funkcija vraca identifikator niza atributa objekta.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Vrednost funkcije}
-int Identifikator niza atributa. 
+vector$<$\+G\+Lint$>$ Lista identifikatora niza atributa. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmodel_1_1RawModel_a2216788939e3b42e7de828607d4a911d}\label{classmodel_1_1RawModel_a2216788939e3b42e7de828607d4a911d}} 
-\index{model\+::\+Raw\+Model@{model\+::\+Raw\+Model}!get\+Vertex\+Count@{get\+Vertex\+Count}}
-\index{get\+Vertex\+Count@{get\+Vertex\+Count}!model\+::\+Raw\+Model@{model\+::\+Raw\+Model}}
-\subsubsection{\texorpdfstring{get\+Vertex\+Count()}{getVertexCount()}}
-{\footnotesize\ttfamily int model\+::\+Raw\+Model\+::get\+Vertex\+Count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classmodel_1_1RawModel_aafc5e5b7da34dda1c80cff89a65d08e5}\label{classmodel_1_1RawModel_aafc5e5b7da34dda1c80cff89a65d08e5}} 
+\index{model\+::\+Raw\+Model@{model\+::\+Raw\+Model}!get\+Meshes\+Vertex\+Count@{get\+Meshes\+Vertex\+Count}}
+\index{get\+Meshes\+Vertex\+Count@{get\+Meshes\+Vertex\+Count}!model\+::\+Raw\+Model@{model\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{get\+Meshes\+Vertex\+Count()}{getMeshesVertexCount()}}
+{\footnotesize\ttfamily vector$<$ G\+Lint $>$ model\+::\+Raw\+Model\+::get\+Meshes\+Vertex\+Count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
-Funkcija vraca broj tacaka objekta. 
+Funkcija vraca listu broja tacaka objekta. 
 
 
 \begin{DoxyParams}{Parametri}
@@ -102,26 +102,26 @@ Funkcija vraca broj tacaka objekta.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Vrednost funkcije}
-int Broj tacaka objekta. 
+vector$<$\+G\+Lint$>$ Lista broja tacaka objekta. 
 \end{DoxyReturn}
 
 
 \subsection{Dokumentacija atributa}
-\mbox{\Hypertarget{classmodel_1_1RawModel_a325b2b7e719afce688027efbf92e27b7}\label{classmodel_1_1RawModel_a325b2b7e719afce688027efbf92e27b7}} 
-\index{model\+::\+Raw\+Model@{model\+::\+Raw\+Model}!vao\+ID@{vao\+ID}}
-\index{vao\+ID@{vao\+ID}!model\+::\+Raw\+Model@{model\+::\+Raw\+Model}}
-\subsubsection{\texorpdfstring{vao\+ID}{vaoID}}
-{\footnotesize\ttfamily int model\+::\+Raw\+Model\+::vao\+ID\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classmodel_1_1RawModel_a994176411e71716620d422dd56febbac}\label{classmodel_1_1RawModel_a994176411e71716620d422dd56febbac}} 
+\index{model\+::\+Raw\+Model@{model\+::\+Raw\+Model}!meshes\+Vao\+ID@{meshes\+Vao\+ID}}
+\index{meshes\+Vao\+ID@{meshes\+Vao\+ID}!model\+::\+Raw\+Model@{model\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{meshes\+Vao\+ID}{meshesVaoID}}
+{\footnotesize\ttfamily vector$<$G\+Lint$>$ model\+::\+Raw\+Model\+::meshes\+Vao\+ID\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Identifikator niza atributa. 
+Identifikatori niza atributa. 
 
-\mbox{\Hypertarget{classmodel_1_1RawModel_a76a976df29d34a1d0f7a7e8f42a4477c}\label{classmodel_1_1RawModel_a76a976df29d34a1d0f7a7e8f42a4477c}} 
-\index{model\+::\+Raw\+Model@{model\+::\+Raw\+Model}!vertex\+Count@{vertex\+Count}}
-\index{vertex\+Count@{vertex\+Count}!model\+::\+Raw\+Model@{model\+::\+Raw\+Model}}
-\subsubsection{\texorpdfstring{vertex\+Count}{vertexCount}}
-{\footnotesize\ttfamily int model\+::\+Raw\+Model\+::vertex\+Count\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classmodel_1_1RawModel_a9a6ad9eb37bd6453ec115c2195d7f8a2}\label{classmodel_1_1RawModel_a9a6ad9eb37bd6453ec115c2195d7f8a2}} 
+\index{model\+::\+Raw\+Model@{model\+::\+Raw\+Model}!meshes\+Vertex\+Count@{meshes\+Vertex\+Count}}
+\index{meshes\+Vertex\+Count@{meshes\+Vertex\+Count}!model\+::\+Raw\+Model@{model\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{meshes\+Vertex\+Count}{meshesVertexCount}}
+{\footnotesize\ttfamily vector$<$G\+Lint$>$ model\+::\+Raw\+Model\+::meshes\+Vertex\+Count\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

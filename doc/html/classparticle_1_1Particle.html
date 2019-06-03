@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vitez reda zmaja: Dokumentacija klase particle::Particle</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vitez reda zmaja
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Napravio Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Traži');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Traži');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceparticle.html">particle</a></li><li class="navelem"><a class="el" href="classparticle_1_1Particle.html">Particle</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Javni članovi</a> &#124;
+<a href="#pri-attribs">Privatni članovi</a> &#124;
+<a href="classparticle_1_1Particle-members.html">Spisak svih članova</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacija klase particle::Particle</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="classparticle_1_1Particle.html" title="Klasa Particle opisuje jednu cesticu. Cestica je opisana pozicijom, brzinom, efektom gravitacije...">Particle</a> opisuje jednu cesticu. Cestica je opisana pozicijom, brzinom, efektom gravitacije, duzinom zivotnog veka, rotacijom i faktorom skaliranja.  
+ <a href="classparticle_1_1Particle.html#details">Još...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Particle_8h_source.html">Particle.h</a>&gt;</code></p>
+<div class="dynheader">
+Klasni dijagram za particle::Particle:</div>
+<div class="dyncontent">
+<div class="center"><img src="classparticle_1_1Particle__coll__graph.png" border="0" usemap="#particle_1_1Particle_coll__map" alt="Collaboration graph"/></div>
+<map name="particle_1_1Particle_coll__map" id="particle_1_1Particle_coll__map">
+<area shape="rect" id="node2" href="classutility_1_1FpsData.html" title="Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f..." alt="" coords="8,5,119,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">Objašnjenje korišćenih simbola</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Javni članovi</h2></td></tr>
+<tr class="memitem:afb9da92466e6c043e69d0d5fb4e9a04f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#afb9da92466e6c043e69d0d5fb4e9a04f">Particle</a> (vec3 <a class="el" href="classparticle_1_1Particle.html#adbbe15e722e36d8933f228891b6e9d68">position</a>, vec3 <a class="el" href="classparticle_1_1Particle.html#a24b42fc49ed65250499e0ba059764f0c">speed</a>, float <a class="el" href="classparticle_1_1Particle.html#ae600a9dd750175cc63e19ddc826e7ce2">gravity</a>, float <a class="el" href="classparticle_1_1Particle.html#a5489d20fe4168e0fda5b58b3802a9003">lifeLength</a>, float <a class="el" href="classparticle_1_1Particle.html#a8ca9da0e74a86eced58a66db613a59a5">rotation</a>, float <a class="el" href="classparticle_1_1Particle.html#ae33238d14fd210a1d8336e568a456960">scale</a>, <a class="el" href="classutility_1_1FpsData.html">FpsData</a> *<a class="el" href="classparticle_1_1Particle.html#a84e6c4f5fbc007346f27db18dd696045">fpsData</a>)</td></tr>
+<tr class="memdesc:afb9da92466e6c043e69d0d5fb4e9a04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klase. U konstruktoru se cestici pridruzuje pozicija, brzi na, efektgravitacije, duzina zivotnog veka, rotacija i faktor skaliranja.  <a href="#afb9da92466e6c043e69d0d5fb4e9a04f">Još...</a><br /></td></tr>
+<tr class="separator:afb9da92466e6c043e69d0d5fb4e9a04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc19695c515e8cffa9f4d9929ca9e61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#a7cc19695c515e8cffa9f4d9929ca9e61">~Particle</a> ()</td></tr>
+<tr class="memdesc:a7cc19695c515e8cffa9f4d9929ca9e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klase.  <a href="#a7cc19695c515e8cffa9f4d9929ca9e61">Još...</a><br /></td></tr>
+<tr class="separator:a7cc19695c515e8cffa9f4d9929ca9e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc9962f0f373739437652fbe8c5820d"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#a8dc9962f0f373739437652fbe8c5820d">getPosition</a> ()</td></tr>
+<tr class="memdesc:a8dc9962f0f373739437652fbe8c5820d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca poziciju cestice.  <a href="#a8dc9962f0f373739437652fbe8c5820d">Još...</a><br /></td></tr>
+<tr class="separator:a8dc9962f0f373739437652fbe8c5820d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a9002e65ea2db2f9e28935d3e3e9aa5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#a0a9002e65ea2db2f9e28935d3e3e9aa5">getRotation</a> ()</td></tr>
+<tr class="memdesc:a0a9002e65ea2db2f9e28935d3e3e9aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca rotaciju cestice.  <a href="#a0a9002e65ea2db2f9e28935d3e3e9aa5">Još...</a><br /></td></tr>
+<tr class="separator:a0a9002e65ea2db2f9e28935d3e3e9aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de9470fa01253971c9f6ed0f5849b66"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#a1de9470fa01253971c9f6ed0f5849b66">getScale</a> ()</td></tr>
+<tr class="memdesc:a1de9470fa01253971c9f6ed0f5849b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija vraca faktor skaliranja cestice.  <a href="#a1de9470fa01253971c9f6ed0f5849b66">Još...</a><br /></td></tr>
+<tr class="separator:a1de9470fa01253971c9f6ed0f5849b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64c03b4dd9a95879c0fee100955a800"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#ae64c03b4dd9a95879c0fee100955a800">update</a> ()</td></tr>
+<tr class="memdesc:ae64c03b4dd9a95879c0fee100955a800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija azurira poziciju cestice i trenutno vreme zivotnog veka.  <a href="#ae64c03b4dd9a95879c0fee100955a800">Još...</a><br /></td></tr>
+<tr class="separator:ae64c03b4dd9a95879c0fee100955a800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Privatni članovi</h2></td></tr>
+<tr class="memitem:adbbe15e722e36d8933f228891b6e9d68"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#adbbe15e722e36d8933f228891b6e9d68">position</a></td></tr>
+<tr class="memdesc:adbbe15e722e36d8933f228891b6e9d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pozicija cestice.  <a href="#adbbe15e722e36d8933f228891b6e9d68">Još...</a><br /></td></tr>
+<tr class="separator:adbbe15e722e36d8933f228891b6e9d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b42fc49ed65250499e0ba059764f0c"><td class="memItemLeft" align="right" valign="top">vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#a24b42fc49ed65250499e0ba059764f0c">speed</a></td></tr>
+<tr class="memdesc:a24b42fc49ed65250499e0ba059764f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brzina cestice.  <a href="#a24b42fc49ed65250499e0ba059764f0c">Još...</a><br /></td></tr>
+<tr class="separator:a24b42fc49ed65250499e0ba059764f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae600a9dd750175cc63e19ddc826e7ce2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#ae600a9dd750175cc63e19ddc826e7ce2">gravity</a></td></tr>
+<tr class="memdesc:ae600a9dd750175cc63e19ddc826e7ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efekat gravitacije.  <a href="#ae600a9dd750175cc63e19ddc826e7ce2">Još...</a><br /></td></tr>
+<tr class="separator:ae600a9dd750175cc63e19ddc826e7ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5489d20fe4168e0fda5b58b3802a9003"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#a5489d20fe4168e0fda5b58b3802a9003">lifeLength</a></td></tr>
+<tr class="memdesc:a5489d20fe4168e0fda5b58b3802a9003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duzina zivotnog veka.  <a href="#a5489d20fe4168e0fda5b58b3802a9003">Još...</a><br /></td></tr>
+<tr class="separator:a5489d20fe4168e0fda5b58b3802a9003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995fbbd73908130f6dc08c5a2107c1d8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#a995fbbd73908130f6dc08c5a2107c1d8">currentLifeTime</a></td></tr>
+<tr class="memdesc:a995fbbd73908130f6dc08c5a2107c1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trenutno vreme zivota.  <a href="#a995fbbd73908130f6dc08c5a2107c1d8">Još...</a><br /></td></tr>
+<tr class="separator:a995fbbd73908130f6dc08c5a2107c1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca9da0e74a86eced58a66db613a59a5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#a8ca9da0e74a86eced58a66db613a59a5">rotation</a></td></tr>
+<tr class="memdesc:a8ca9da0e74a86eced58a66db613a59a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotacija cestice.  <a href="#a8ca9da0e74a86eced58a66db613a59a5">Još...</a><br /></td></tr>
+<tr class="separator:a8ca9da0e74a86eced58a66db613a59a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33238d14fd210a1d8336e568a456960"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#ae33238d14fd210a1d8336e568a456960">scale</a></td></tr>
+<tr class="memdesc:ae33238d14fd210a1d8336e568a456960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Faktor skaliranja cestice.  <a href="#ae33238d14fd210a1d8336e568a456960">Još...</a><br /></td></tr>
+<tr class="separator:ae33238d14fd210a1d8336e568a456960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e6c4f5fbc007346f27db18dd696045"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classutility_1_1FpsData.html">FpsData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparticle_1_1Particle.html#a84e6c4f5fbc007346f27db18dd696045">fpsData</a></td></tr>
+<tr class="memdesc:a84e6c4f5fbc007346f27db18dd696045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazivac na instancu klase FpsData.  <a href="#a84e6c4f5fbc007346f27db18dd696045">Još...</a><br /></td></tr>
+<tr class="separator:a84e6c4f5fbc007346f27db18dd696045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opširniji opis</h2>
+<div class="textblock"><p>Klasa <a class="el" href="classparticle_1_1Particle.html" title="Klasa Particle opisuje jednu cesticu. Cestica je opisana pozicijom, brzinom, efektom gravitacije...">Particle</a> opisuje jednu cesticu. Cestica je opisana pozicijom, brzinom, efektom gravitacije, duzinom zivotnog veka, rotacijom i faktorom skaliranja. </p>
+</div><h2 class="groupheader">Dokumentacija konstruktora i destruktora</h2>
+<a id="afb9da92466e6c043e69d0d5fb4e9a04f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9da92466e6c043e69d0d5fb4e9a04f">&#9670;&nbsp;</a></span>Particle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particle::Particle::Particle </td>
+          <td>(</td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vec3&#160;</td>
+          <td class="paramname"><em>speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gravity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lifeLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classutility_1_1FpsData.html">FpsData</a> *&#160;</td>
+          <td class="paramname"><em>fpsData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klase. U konstruktoru se cestici pridruzuje pozicija, brzi na, efektgravitacije, duzina zivotnog veka, rotacija i faktor skaliranja. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>Pozicija cestice. </td></tr>
+    <tr><td class="paramname">speed</td><td>Brzina cestice. </td></tr>
+    <tr><td class="paramname">gravity</td><td>Efekat gravitacije. </td></tr>
+    <tr><td class="paramname">lifeLength</td><td>Duzina zivotnog veka. </td></tr>
+    <tr><td class="paramname">rotation</td><td>Rotacija cestice. </td></tr>
+    <tr><td class="paramname">scale</td><td>Faktor skaliranja cestice. </td></tr>
+    <tr><td class="paramname">fpsData</td><td>Pokazivac na instancu klase FpsData. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7cc19695c515e8cffa9f4d9929ca9e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc19695c515e8cffa9f4d9929ca9e61">&#9670;&nbsp;</a></span>~Particle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particle::Particle::~Particle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor klase. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija funkcija članica</h2>
+<a id="a8dc9962f0f373739437652fbe8c5820d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dc9962f0f373739437652fbe8c5820d">&#9670;&nbsp;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 particle::Particle::getPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca poziciju cestice. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>vec3 Pozicija cestice. </dd></dl>
+
+</div>
+</div>
+<a id="a0a9002e65ea2db2f9e28935d3e3e9aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a9002e65ea2db2f9e28935d3e3e9aa5">&#9670;&nbsp;</a></span>getRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particle::Particle::getRotation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca rotaciju cestice. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>float Rotacija cestice. </dd></dl>
+
+</div>
+</div>
+<a id="a1de9470fa01253971c9f6ed0f5849b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de9470fa01253971c9f6ed0f5849b66">&#9670;&nbsp;</a></span>getScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particle::Particle::getScale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija vraca faktor skaliranja cestice. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>float Faktor skaliranja cestice. </dd></dl>
+
+</div>
+</div>
+<a id="ae64c03b4dd9a95879c0fee100955a800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64c03b4dd9a95879c0fee100955a800">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool particle::Particle::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija azurira poziciju cestice i trenutno vreme zivotnog veka. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>bool Da li je zivotni vek cestice zavrsen. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacija atributa</h2>
+<a id="a995fbbd73908130f6dc08c5a2107c1d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a995fbbd73908130f6dc08c5a2107c1d8">&#9670;&nbsp;</a></span>currentLifeTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particle::Particle::currentLifeTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Trenutno vreme zivota. </p>
+
+</div>
+</div>
+<a id="a84e6c4f5fbc007346f27db18dd696045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e6c4f5fbc007346f27db18dd696045">&#9670;&nbsp;</a></span>fpsData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classutility_1_1FpsData.html">FpsData</a>* particle::Particle::fpsData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pokazivac na instancu klase FpsData. </p>
+
+</div>
+</div>
+<a id="ae600a9dd750175cc63e19ddc826e7ce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae600a9dd750175cc63e19ddc826e7ce2">&#9670;&nbsp;</a></span>gravity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particle::Particle::gravity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Efekat gravitacije. </p>
+
+</div>
+</div>
+<a id="a5489d20fe4168e0fda5b58b3802a9003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5489d20fe4168e0fda5b58b3802a9003">&#9670;&nbsp;</a></span>lifeLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particle::Particle::lifeLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Duzina zivotnog veka. </p>
+
+</div>
+</div>
+<a id="adbbe15e722e36d8933f228891b6e9d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbbe15e722e36d8933f228891b6e9d68">&#9670;&nbsp;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 particle::Particle::position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pozicija cestice. </p>
+
+</div>
+</div>
+<a id="a8ca9da0e74a86eced58a66db613a59a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ca9da0e74a86eced58a66db613a59a5">&#9670;&nbsp;</a></span>rotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particle::Particle::rotation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotacija cestice. </p>
+
+</div>
+</div>
+<a id="ae33238d14fd210a1d8336e568a456960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33238d14fd210a1d8336e568a456960">&#9670;&nbsp;</a></span>scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particle::Particle::scale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Faktor skaliranja cestice. </p>
+
+</div>
+</div>
+<a id="a24b42fc49ed65250499e0ba059764f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b42fc49ed65250499e0ba059764f0c">&#9670;&nbsp;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec3 particle::Particle::speed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Brzina cestice. </p>
+
+</div>
+</div>
+<hr/>Dokumentacija ove klase je napravljena na osnovu sledećih datoteka:<ul>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/include/particle/<a class="el" href="Particle_8h_source.html">Particle.h</a></li>
+<li>/home/dusan/Documents/RG146-vitez-reda-zmaja/src/particle/<a class="el" href="Particle_8cpp.html">Particle.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Napravio &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,26 +1,88 @@
+////////////////////////////////////////////////////////////////////////////////
+/// @file ParticleHandler.h
+/// @brief Deklaracija klase ParticleHandler.
+/// @author Dusan Pantelic
+/// @date Jun 2019
+////////////////////////////////////////////////////////////////////////////////
+
 #ifndef _PARTICLE_HANDLER_H_
 #define _PARTICLE_HANDLER_H_
 
+// Ukljucivanje korsnicki defininisanih biblioteka.
 #include "../particle/ParticleRenderer.h"
 #include "../texture/Texture.h"
 
+// Koriscenje prostora imena za jednostavniji i pregledniji kod.
 using namespace texture;
 
+////////////////////////////////////////////////////////////////////////////////
+/// @brief Prostor imena particle.
+/// Sadrzi sve klase, funkcije i promenljive koje su vezane za sistem cestica.
+////////////////////////////////////////////////////////////////////////////////
 namespace particle {
 
+  //////////////////////////////////////////////////////////////////////////////
+  /// @brief Klasa ParticleHandler kontrolise cestice.
+  /// Lista cestica se azurira i poziva se klasa za renderovanje cestica, cuva
+  /// se tekstura cestica i otklanjaju se cestice sa zavrsenim zivotnim vekom.
+  //////////////////////////////////////////////////////////////////////////////
   class ParticleHandler {
+
+  // Privatne promenljive klase.
   private:
+    /// Lista pokazivaca na instance klase Particle.
     list<Particle *> particles;
+
+    /// Pokazivac na instancu klase ParticleRenderer.
     ParticleRenderer *particleRenderer;
+
+    /// Pokazivac na instancu klase Texture.
     Texture *texture;
+
+  // Javne funkcije klase.
   public:
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Konstruktor klase.
+    /// @param vaoLoader Pokazivac na instancu klase VaoLoader.
+    ////////////////////////////////////////////////////////////////////////////
     ParticleHandler(VaoLoader *vaoLoader);
+
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Destruktor klase.
+    /// @param void
+    ////////////////////////////////////////////////////////////////////////////
     ~ParticleHandler();
+
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija uklanja iz liste cestice sa zavrsenim zivotnim vekom.
+    /// @param void
+    /// @return void
+    ////////////////////////////////////////////////////////////////////////////
     void update();
+
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija pokrece metode klase ParticleRenderer za iscrtavanje cestica.
+    /// @param camera Pokazivac na instancu klase Camera.
+    /// @param texture Pokazivac na instancu klase Texture.
+    /// @return void
+    ////////////////////////////////////////////////////////////////////////////
     void renderParticles(Camera *camera, Texture *texture);
+
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija pokrece metode klase ParticleRenderer za ciscenje sejdera.
+    /// @param void
+    /// @return void
+    ////////////////////////////////////////////////////////////////////////////
     void cleanUp();
+
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija dodaje cesticu u listu cestica.
+    /// @param particle Pokazivac na instancu klase Particle.
+    /// @return void
+    ////////////////////////////////////////////////////////////////////////////
     void addParticle(Particle *particle);
   };
-}
+
+} // particle
 
 #endif

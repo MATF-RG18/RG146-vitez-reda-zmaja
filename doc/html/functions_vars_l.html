@@ -64,6 +64,13 @@ $(function() {
 <li>lastFrameTime
 : <a class="el" href="classutility_1_1FpsData.html#a0340fb16b83e32835d5e8327b5b322e3">utility::FpsData</a>
 </li>
+<li>length
+: <a class="el" href="classanimation_1_1Animation.html#a2e08946f67829d6907b204f70d94a6ec">animation::Animation</a>
+</li>
+<li>lifeLength
+: <a class="el" href="classparticle_1_1Particle.html#a5489d20fe4168e0fda5b58b3802a9003">particle::Particle</a>
+, <a class="el" href="classparticle_1_1WeatherSystem.html#a0aa06ba52db7729e12657baf726fb116">particle::WeatherSystem</a>
+</li>
 <li>locationBackgroundTexture
 : <a class="el" href="classshader_1_1TerrainShader.html#ab8c3ffdad973abf2b26591aaf4cb64d1">shader::TerrainShader</a>
 </li>
@@ -72,6 +79,9 @@ $(function() {
 </li>
 <li>locationBlendMap
 : <a class="el" href="classshader_1_1TerrainShader.html#a2fce0f97cafe09a59b828c1b777b3f41">shader::TerrainShader</a>
+</li>
+<li>locationBoneTransforms
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#abd8d6ec1ef7db97975d80c8c2a80cd94">shader::AnimatedModelShader</a>
 </li>
 <li>locationBTexture
 : <a class="el" href="classshader_1_1TerrainShader.html#a097eb6e1afc654c99f8c703e3091fe95">shader::TerrainShader</a>
@@ -89,47 +99,60 @@ $(function() {
 : <a class="el" href="classshader_1_1TerrainShader.html#ae08f66a1b8e6fbe615fd24fc1e5fff20">shader::TerrainShader</a>
 </li>
 <li>locationLightColour
-: <a class="el" href="classshader_1_1Shader.html#a3aa71dac965d453a149b74e8282e6863">shader::Shader</a>
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#aa5245f948a0251d25b23756510b71b6b">shader::AnimatedModelShader</a>
+, <a class="el" href="classshader_1_1Shader.html#a3aa71dac965d453a149b74e8282e6863">shader::Shader</a>
 , <a class="el" href="classshader_1_1TerrainShader.html#aaadb97ab6d82972d24e744cf1f2d0bb1">shader::TerrainShader</a>
 </li>
 <li>locationLightPosition
-: <a class="el" href="classshader_1_1Shader.html#a3f2c103127077c7a7a92260f6161055c">shader::Shader</a>
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#a4d4674bc1a859486049637974b171269">shader::AnimatedModelShader</a>
+, <a class="el" href="classshader_1_1Shader.html#a3f2c103127077c7a7a92260f6161055c">shader::Shader</a>
 , <a class="el" href="classshader_1_1TerrainShader.html#a04ee26df93502b6beec604260143f749">shader::TerrainShader</a>
 </li>
+<li>locationModelViewMatrix
+: <a class="el" href="classshader_1_1ParticleShader.html#ae69d7963f488f78569cf5ffb12a484fb">shader::ParticleShader</a>
+</li>
 <li>locationProjectionMatrix
-: <a class="el" href="classshader_1_1Shader.html#aaa8ea0af1d2caf3f44ce08cfe26e1558">shader::Shader</a>
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#a627ba9dc3ff999c20c3b7e055d67d07a">shader::AnimatedModelShader</a>
+, <a class="el" href="classshader_1_1ParticleShader.html#aeb1444ce911084eaf1c1d1288afa133a">shader::ParticleShader</a>
+, <a class="el" href="classshader_1_1Shader.html#aaa8ea0af1d2caf3f44ce08cfe26e1558">shader::Shader</a>
 , <a class="el" href="classshader_1_1SkyboxShader.html#aac607fdddcc532a76dd9e42caa6828d8">shader::SkyboxShader</a>
 , <a class="el" href="classshader_1_1TerrainShader.html#af3f85d8f7301ce71b37fb99fbad6cc22">shader::TerrainShader</a>
 </li>
 <li>locationReflectivity
-: <a class="el" href="classshader_1_1Shader.html#ad31f87938d470ce130a7053da45af551">shader::Shader</a>
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#a84709b6c7a0fbdf5f884b04d98675b4b">shader::AnimatedModelShader</a>
+, <a class="el" href="classshader_1_1Shader.html#ad31f87938d470ce130a7053da45af551">shader::Shader</a>
 , <a class="el" href="classshader_1_1TerrainShader.html#afd0f73e3f6e4f78e98073f2669f71a7d">shader::TerrainShader</a>
 </li>
 <li>locationRTexture
 : <a class="el" href="classshader_1_1TerrainShader.html#acae2f0402eff8bc08c3015e860e2e413">shader::TerrainShader</a>
 </li>
 <li>locationShine
-: <a class="el" href="classshader_1_1Shader.html#a7b1653ae0ccaa625e728ba76940d82f4">shader::Shader</a>
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#aae47bf14174ed52dd1f9222109f577f7">shader::AnimatedModelShader</a>
+, <a class="el" href="classshader_1_1Shader.html#a7b1653ae0ccaa625e728ba76940d82f4">shader::Shader</a>
 , <a class="el" href="classshader_1_1TerrainShader.html#a8d59890fc8cc4309b3983278a105574e">shader::TerrainShader</a>
 </li>
 <li>locationSkyColour
-: <a class="el" href="classshader_1_1Shader.html#af74548a61cd3a07047dcf2d9adb5a9a9">shader::Shader</a>
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#aefe350445a9e350d1dd43c5e4476d2b7">shader::AnimatedModelShader</a>
+, <a class="el" href="classshader_1_1Shader.html#af74548a61cd3a07047dcf2d9adb5a9a9">shader::Shader</a>
 , <a class="el" href="classshader_1_1TerrainShader.html#afaff06ee8890773c6254db93fe3736ff">shader::TerrainShader</a>
 </li>
 <li>locationTextColor
 : <a class="el" href="classshader_1_1FontShader.html#aeb4b26824dcb51dc7ba11f8a3df018e6">shader::FontShader</a>
 </li>
 <li>locationTransformationMatrix
-: <a class="el" href="classshader_1_1FontShader.html#ae865d1cb3d301993b5d1b27956c8b923">shader::FontShader</a>
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#a0cf85738b0897a28a205bcddbbb87c44">shader::AnimatedModelShader</a>
+, <a class="el" href="classshader_1_1FontShader.html#ae865d1cb3d301993b5d1b27956c8b923">shader::FontShader</a>
 , <a class="el" href="classshader_1_1HudShader.html#a12942279494ff23209eeb01af8e861e5">shader::HudShader</a>
 , <a class="el" href="classshader_1_1Shader.html#a7afd377d96d78de28c2acbda73b73e21">shader::Shader</a>
 , <a class="el" href="classshader_1_1TerrainShader.html#a1cc3dc2a1aa0190449aa65c5c97911f3">shader::TerrainShader</a>
 </li>
 <li>locationUseFakeLightning
-: <a class="el" href="classshader_1_1Shader.html#a07f4f399ad468c2c3af89e185d157813">shader::Shader</a>
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#abe7d5a2990e677ed50f949de920d8720">shader::AnimatedModelShader</a>
+, <a class="el" href="classshader_1_1Shader.html#a07f4f399ad468c2c3af89e185d157813">shader::Shader</a>
 </li>
 <li>locationViewMatrix
-: <a class="el" href="classshader_1_1Shader.html#a59d584f36e417f8722b500522d9c41f0">shader::Shader</a>
+: <a class="el" href="classshader_1_1AnimatedModelShader.html#a71f489d448baef3809a10b78c1c52ab5">shader::AnimatedModelShader</a>
+, <a class="el" href="classshader_1_1Shader.html#a59d584f36e417f8722b500522d9c41f0">shader::Shader</a>
 , <a class="el" href="classshader_1_1SkyboxShader.html#a6c31cfe83864808df46064a4f9c29aa7">shader::SkyboxShader</a>
 , <a class="el" href="classshader_1_1TerrainShader.html#a3af96cb61a1d54646951c1cc46d161b5">shader::TerrainShader</a>
 </li>

@@ -1,5 +1,11 @@
 #include "../../include/particle/ParticleRenderer.h"
 
+// Klasa je implementirana po uzoru na video tutorijal:
+// https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+// i internet stranice i clanke:
+// http://www.opengl-tutorial.org/intermediate-tutorials/billboards-particles/particles-instancing/
+// https://learnopengl.com/In-Practice/2D-Game/Particles
+
 namespace particle {
 
   ParticleRenderer::ParticleRenderer(VaoLoader *vaoLoader) {

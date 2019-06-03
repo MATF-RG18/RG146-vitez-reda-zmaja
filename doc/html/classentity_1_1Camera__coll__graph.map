@@ -1,10 +1,13 @@
 <map id="entity::Camera" name="entity::Camera">
-<area shape="rect" id="node2" href="$classentity_1_1Player.html" title="Klasa Player odredjuje igraca koji nadogradjuje entitet. Pomocu klase Player nadogradjujemo klasu Ent..." alt="" coords="823,140,921,167"/>
-<area shape="rect" id="node3" href="$classentity_1_1Entity.html" title="Klasa Entity odredjuje jedan entitet. Pomocu klase Entity odredjujemo entitet tako sto mu pridruzujem..." alt="" coords="632,164,728,191"/>
-<area shape="rect" id="node4" href="$classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo..." alt="" coords="337,195,487,221"/>
-<area shape="rect" id="node5" href="$classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="19,139,146,165"/>
-<area shape="rect" id="node7" href="$classterrain_1_1Terrain.html" title="terrain::Terrain" alt="" coords="627,104,733,131"/>
-<area shape="rect" id="node6" href="$classtexture_1_1Texture.html" title="Klasa TexturedModel opisuje teksturu objekta. Model je opisan instancom klase RawModel i odgovarajuco..." alt="" coords="8,213,157,240"/>
-<area shape="rect" id="node8" href="$classtexture_1_1TerrainTexture.html" title="Klasa TerrainTexture opisuje teksturu terena. " alt="" coords="5,77,160,104"/>
-<area shape="rect" id="node9" href="$classtexture_1_1TerrainTexturePack.html" title="Klasa TerrainTexture opisuje sve teksture terena. " alt="" coords="320,81,504,108"/>
+<area shape="rect" id="node2" href="$classentity_1_1Player.html" title="Klasa Player odredjuje igraca koji nadogradjuje entitet. Pomocu klase Player nadogradjujemo klasu Ent..." alt="" coords="1424,89,1523,116"/>
+<area shape="rect" id="node3" href="$classentity_1_1AnimatedEntity.html" title="Klasa AnimatedEntity odredjuje jedan animirani entitet. Pomocu klase AnimatedEntity odredjujemo entit..." alt="" coords="1171,152,1321,179"/>
+<area shape="rect" id="node4" href="$classmodel_1_1AnimatedModel.html" title="Klasa AnimatedModel opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instanco..." alt="" coords="865,121,1020,148"/>
+<area shape="rect" id="node8" href="$classanimation_1_1Animator.html" title="Klasa Animator kontrolise animaciju modela. Pomocu klase Animator kontrolisemo ponasanje animacije i ..." alt="" coords="1177,73,1315,100"/>
+<area shape="rect" id="node5" href="$classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo..." alt="" coords="627,121,777,148"/>
+<area shape="rect" id="node6" href="$classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="349,139,475,165"/>
+<area shape="rect" id="node10" href="$classterrain_1_1Terrain.html" title="Klasa Terrain zaduzena je za kreiranje terena. Pomocu klase Terrain generisemo teren na osnovu visins..." alt="" coords="649,209,755,236"/>
+<area shape="rect" id="node7" href="$classutility_1_1FpsData.html" title="Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f..." alt="" coords="887,5,998,32"/>
+<area shape="rect" id="node9" href="$classanimation_1_1Animation.html" title="Klasa Animation odredjuje animaciju modela. Pomocu klase Animation cuvamo podatke o animaciji modela..." alt="" coords="871,71,1015,97"/>
+<area shape="rect" id="node11" href="$classtexture_1_1TerrainTexture.html" title="Klasa TerrainTexture opisuje teksturu terena. " alt="" coords="5,249,160,276"/>
+<area shape="rect" id="node12" href="$classtexture_1_1TerrainTexturePack.html" title="Klasa TerrainTexture opisuje sve teksture terena. " alt="" coords="320,279,504,305"/>
 </map>

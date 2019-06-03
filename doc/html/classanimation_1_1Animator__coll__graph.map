@@ -1,0 +1,7 @@
+<map id="animation::Animator" name="animation::Animator">
+<area shape="rect" id="node2" href="$classutility_1_1FpsData.html" title="Klasa FpsData cuva podatke o broju frejmova po sekundi. Pomocu klase FpsData racunamo trenutni broj f..." alt="" coords="5,184,116,211"/>
+<area shape="rect" id="node3" href="$classmodel_1_1AnimatedModel.html" title="Klasa AnimatedModel opisuje model objekta zajedno sa teksturom i animacijom. Model je opisan instanco..." alt="" coords="141,184,295,211"/>
+<area shape="rect" id="node4" href="$classmodel_1_1TexturedModel.html" title="Klasa TexturedModel opisuje model objekta zajedno sa teksturom. Model je opisan instancom klase RawMo..." alt="" coords="143,95,293,121"/>
+<area shape="rect" id="node5" href="$classmodel_1_1RawModel.html" title="Klasa RawModel opisuje model objekta. Model je opisan brojem tacaka i pridruzenom nizu atributa..." alt="" coords="155,5,281,32"/>
+<area shape="rect" id="node6" href="$classanimation_1_1Animation.html" title="Klasa Animation odredjuje animaciju modela. Pomocu klase Animation cuvamo podatke o animaciji modela..." alt="" coords="319,184,463,211"/>
+</map>

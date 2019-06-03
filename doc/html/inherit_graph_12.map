@@ -1,3 +1,4 @@
 <map id="Hijerarhija klasa u obliku grafa" name="Hijerarhija klasa u obliku grafa">
-<area shape="rect" id="node1" href="$classshader_1_1TerrainShader.html" title="Klasa TerrainShader ucitava i izvrsava programe na OpenGL Shading jeziku. Ucitavaju se sejder fajlovi..." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node1" href="$classentity_1_1AnimatedEntity.html" title="Klasa AnimatedEntity odredjuje jedan animirani entitet. Pomocu klase AnimatedEntity odredjujemo entit..." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$classentity_1_1Player.html" title="Klasa Player odredjuje igraca koji nadogradjuje entitet. Pomocu klase Player nadogradjujemo klasu Ent..." alt="" coords="204,5,303,32"/>
 </map>

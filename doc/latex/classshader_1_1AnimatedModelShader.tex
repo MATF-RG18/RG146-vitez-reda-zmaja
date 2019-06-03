@@ -1,0 +1,674 @@
+\hypertarget{classshader_1_1AnimatedModelShader}{}\section{Dokumentacija klase shader\+:\+:Animated\+Model\+Shader}
+\label{classshader_1_1AnimatedModelShader}\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+
+
+Klasa \hyperlink{classshader_1_1AnimatedModelShader}{Animated\+Model\+Shader} ucitava i izvrsava programe na Open\+GL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju.  
+
+
+
+
+{\ttfamily \#include $<$Animated\+Model\+Shader.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classshader_1_1AnimatedModelShader_a4fefb7f1416c2b2cd10b043e13f1497f}{Animated\+Model\+Shader} (const char $\ast$vertex\+Shader\+File, const char $\ast$fragment\+Shader\+File)
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. U konstruktoru se ucitavaju sejder fajlovi i povezuju sa programom. \end{DoxyCompactList}\item 
+\hyperlink{classshader_1_1AnimatedModelShader_a289d4165e5c06f85051af03653d8ae6b}{$\sim$\+Animated\+Model\+Shader} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_a3c47a70e671a3b7a974c16562ba589b7}{bind\+Attribute} (int index, const char $\ast$variable\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje ime sa generickim atributom. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_a447ad01d4385f85b47c2d99b076d9b4f}{bind\+Attributes} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija povezuje sve potrebne atribute. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_adae3f58a0687245d7be0be21c99a1360}{start} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija pokrece sejder program. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_ab50582c18de55c4922fb7d8847836251}{stop} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija zaustavlja sejder program. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_a9b7ce34a85b989b6468eaa1efe1a3928}{clean\+Up} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija zaustavlja sejder program. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_a4977309c28777e27a5d3f617336e4010}{get\+Uniform\+Location} (const char $\ast$uniform\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcija vraca lokaciju uniformne promenljive. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_a41de54497f81f6781a11730041b23051}{get\+All\+Uniform\+Locations} (void)
+\begin{DoxyCompactList}\small\item\em Funkcija postavlja lokacije svih uniformnih promenljivih. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_aee125607dd4ec4add27abc2f73864c03}{load\+Float} (int uniform\+Location, float value)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava broj u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_ab96bff27275920f8f57f27212803032d}{load\+Float\+Vertex} (int uniform\+Location, vec3 vertex)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava vektor koordinata u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_a0ba6b4419f5bfbc3c17077498ebe0451}{load\+Boolean} (int uniform\+Location, bool value)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava istinitosnu vrednost u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_aeda8117c11b10329c9568be62da95049}{load\+Matrix} (int uniform\+Location, mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_ad0cf72a80e1af3c647a9c0e14b834eb0}{load\+Matrix\+Array} (int uniform\+Location, mat4 $\ast$mat\+Array, int size)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava niz matrica u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_a526fd5aa462d017b6a187ae71132bd74}{load\+Transformation\+Matrix} (mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu transformacije u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_af6a7c16d179ba1610968feb9a41a81f9}{load\+Projection\+Matrix} (mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu projekcije u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_a6eaa2eee5a75b0c26216cd9308d060d5}{load\+Bone\+Transforms} (mat4 $\ast$bone\+Transforms, int size)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava niz matrica transformacije u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_a9a91e6dbe9edd8a25492b8b0974d5c92}{load\+View\+Matrix} (\hyperlink{classentity_1_1Camera}{Camera} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava matricu pogleda u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_afd3052de306b1febcde74aa86d166a27}{load\+Light} (\hyperlink{classentity_1_1Light}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava svetlost u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_a4511391e6fb609b5f1207c3b5b7b567f}{load\+Shine\+Variables} (float shine, float reflectivity)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava promenljive u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_a8620f9e60fd34192c2b63a4207589930}{load\+Sky\+Colour} (float r, float g, float b)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava boju neba u uniformnu varijablu. \end{DoxyCompactList}\item 
+void \hyperlink{classshader_1_1AnimatedModelShader_afbf5ce0c44c1d9ab564dd19a6398a088}{load\+Fake\+Lightning} (bool use\+Fake\+Lightning)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava lazno osvetljenje u uniformnu varijablu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_ae6e4523ce0246b3ff0cd0e2ee86cfc7b}{load\+Shader} (const char $\ast$file\+Name, G\+Lenum type)
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava sejder fajlove. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_a3ca1350c79b88746827a4284ec63cabe}{program\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator programa koji izvrsava sejder fajlove. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_aaca0cca7c6f00ba7bc43725ec5338f24}{vertex\+Shader\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator ucitanog sejder fajla. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_a813f2815f75ec8e129c6e8c461acbc74}{fragment\+Shader\+ID}
+\begin{DoxyCompactList}\small\item\em Identifikator ucitanog sejder fajla. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_a0cf85738b0897a28a205bcddbbb87c44}{location\+Transformation\+Matrix}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_a627ba9dc3ff999c20c3b7e055d67d07a}{location\+Projection\+Matrix}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_a71f489d448baef3809a10b78c1c52ab5}{location\+View\+Matrix}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_a4d4674bc1a859486049637974b171269}{location\+Light\+Position}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_aa5245f948a0251d25b23756510b71b6b}{location\+Light\+Colour}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_aae47bf14174ed52dd1f9222109f577f7}{location\+Shine}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_a84709b6c7a0fbdf5f884b04d98675b4b}{location\+Reflectivity}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_aefe350445a9e350d1dd43c5e4476d2b7}{location\+Sky\+Colour}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_abe7d5a2990e677ed50f949de920d8720}{location\+Use\+Fake\+Lightning}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\item 
+int \hyperlink{classshader_1_1AnimatedModelShader_abd8d6ec1ef7db97975d80c8c2a80cd94}{location\+Bone\+Transforms}
+\begin{DoxyCompactList}\small\item\em Lokacija unformne promenljive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classshader_1_1AnimatedModelShader}{Animated\+Model\+Shader} ucitava i izvrsava programe na Open\+GL Shading jeziku. Ucitavaju se sejder fajlovi koji se zatim kompajliraju i po potrebi se izvrsavaju i zaustavljaju. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a4fefb7f1416c2b2cd10b043e13f1497f}\label{classshader_1_1AnimatedModelShader_a4fefb7f1416c2b2cd10b043e13f1497f}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!Animated\+Model\+Shader@{Animated\+Model\+Shader}}
+\index{Animated\+Model\+Shader@{Animated\+Model\+Shader}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{Animated\+Model\+Shader()}{AnimatedModelShader()}}
+{\footnotesize\ttfamily shader\+::\+Animated\+Model\+Shader\+::\+Animated\+Model\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vertex\+Shader\+File,  }\item[{const char $\ast$}]{fragment\+Shader\+File }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. U konstruktoru se ucitavaju sejder fajlovi i povezuju sa programom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em vertex\+Shader\+File} & Ime sejder fajla. \\
+\hline
+{\em fragment\+Shader\+File} & Ime sejder fajla. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a289d4165e5c06f85051af03653d8ae6b}\label{classshader_1_1AnimatedModelShader_a289d4165e5c06f85051af03653d8ae6b}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!````~Animated\+Model\+Shader@{$\sim$\+Animated\+Model\+Shader}}
+\index{````~Animated\+Model\+Shader@{$\sim$\+Animated\+Model\+Shader}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{$\sim$\+Animated\+Model\+Shader()}{~AnimatedModelShader()}}
+{\footnotesize\ttfamily shader\+::\+Animated\+Model\+Shader\+::$\sim$\+Animated\+Model\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a3c47a70e671a3b7a974c16562ba589b7}\label{classshader_1_1AnimatedModelShader_a3c47a70e671a3b7a974c16562ba589b7}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!bind\+Attribute@{bind\+Attribute}}
+\index{bind\+Attribute@{bind\+Attribute}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{bind\+Attribute()}{bindAttribute()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::bind\+Attribute (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{const char $\ast$}]{variable\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje ime sa generickim atributom. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em index} & Identifikator generickog atributa. \\
+\hline
+{\em variable\+Name} & Ime koje pridruzujemo generickom atributu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a447ad01d4385f85b47c2d99b076d9b4f}\label{classshader_1_1AnimatedModelShader_a447ad01d4385f85b47c2d99b076d9b4f}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!bind\+Attributes@{bind\+Attributes}}
+\index{bind\+Attributes@{bind\+Attributes}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{bind\+Attributes()}{bindAttributes()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::bind\+Attributes (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija povezuje sve potrebne atribute. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a9b7ce34a85b989b6468eaa1efe1a3928}\label{classshader_1_1AnimatedModelShader_a9b7ce34a85b989b6468eaa1efe1a3928}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija zaustavlja sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a41de54497f81f6781a11730041b23051}\label{classshader_1_1AnimatedModelShader_a41de54497f81f6781a11730041b23051}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!get\+All\+Uniform\+Locations@{get\+All\+Uniform\+Locations}}
+\index{get\+All\+Uniform\+Locations@{get\+All\+Uniform\+Locations}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{get\+All\+Uniform\+Locations()}{getAllUniformLocations()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::get\+All\+Uniform\+Locations (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija postavlja lokacije svih uniformnih promenljivih. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a4977309c28777e27a5d3f617336e4010}\label{classshader_1_1AnimatedModelShader_a4977309c28777e27a5d3f617336e4010}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!get\+Uniform\+Location@{get\+Uniform\+Location}}
+\index{get\+Uniform\+Location@{get\+Uniform\+Location}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{get\+Uniform\+Location()}{getUniformLocation()}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::get\+Uniform\+Location (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca lokaciju uniformne promenljive. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Name} & Ime uniformne promenljive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Lokacija uniformne promenljive. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a6eaa2eee5a75b0c26216cd9308d060d5}\label{classshader_1_1AnimatedModelShader_a6eaa2eee5a75b0c26216cd9308d060d5}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Bone\+Transforms@{load\+Bone\+Transforms}}
+\index{load\+Bone\+Transforms@{load\+Bone\+Transforms}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Bone\+Transforms()}{loadBoneTransforms()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Bone\+Transforms (\begin{DoxyParamCaption}\item[{mat4 $\ast$}]{bone\+Transforms,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava niz matrica transformacije u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em mat\+Array} & Niz matrica. \\
+\hline
+{\em size} & Broj matrica. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a0ba6b4419f5bfbc3c17077498ebe0451}\label{classshader_1_1AnimatedModelShader_a0ba6b4419f5bfbc3c17077498ebe0451}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Boolean@{load\+Boolean}}
+\index{load\+Boolean@{load\+Boolean}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Boolean()}{loadBoolean()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Boolean (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava istinitosnu vrednost u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em value} & Istinitosna vrednost. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_afbf5ce0c44c1d9ab564dd19a6398a088}\label{classshader_1_1AnimatedModelShader_afbf5ce0c44c1d9ab564dd19a6398a088}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Fake\+Lightning@{load\+Fake\+Lightning}}
+\index{load\+Fake\+Lightning@{load\+Fake\+Lightning}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Fake\+Lightning()}{loadFakeLightning()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Fake\+Lightning (\begin{DoxyParamCaption}\item[{bool}]{use\+Fake\+Lightning }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava lazno osvetljenje u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em use\+Fake\+Lightning} & Istinitosna vrednost za koriscenje laznog osvetljenja. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_aee125607dd4ec4add27abc2f73864c03}\label{classshader_1_1AnimatedModelShader_aee125607dd4ec4add27abc2f73864c03}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Float@{load\+Float}}
+\index{load\+Float@{load\+Float}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Float()}{loadFloat()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Float (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava broj u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em value} & Broj pokretnom zarezu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_ab96bff27275920f8f57f27212803032d}\label{classshader_1_1AnimatedModelShader_ab96bff27275920f8f57f27212803032d}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Float\+Vertex@{load\+Float\+Vertex}}
+\index{load\+Float\+Vertex@{load\+Float\+Vertex}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Float\+Vertex()}{loadFloatVertex()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Float\+Vertex (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{vec3}]{vertex }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava vektor koordinata u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em vertex} & Vektor koordinata. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_afd3052de306b1febcde74aa86d166a27}\label{classshader_1_1AnimatedModelShader_afd3052de306b1febcde74aa86d166a27}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Light@{load\+Light}}
+\index{load\+Light@{load\+Light}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Light()}{loadLight()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Light (\begin{DoxyParamCaption}\item[{\hyperlink{classentity_1_1Light}{Light} $\ast$}]{light }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava svetlost u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em light} & Pokazivac na instancu klase Light. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_aeda8117c11b10329c9568be62da95049}\label{classshader_1_1AnimatedModelShader_aeda8117c11b10329c9568be62da95049}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Matrix@{load\+Matrix}}
+\index{load\+Matrix@{load\+Matrix}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Matrix()}{loadMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Matrix (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em matrix} & Matrica. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_ad0cf72a80e1af3c647a9c0e14b834eb0}\label{classshader_1_1AnimatedModelShader_ad0cf72a80e1af3c647a9c0e14b834eb0}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Matrix\+Array@{load\+Matrix\+Array}}
+\index{load\+Matrix\+Array@{load\+Matrix\+Array}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Matrix\+Array()}{loadMatrixArray()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Matrix\+Array (\begin{DoxyParamCaption}\item[{int}]{uniform\+Location,  }\item[{mat4 $\ast$}]{mat\+Array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava niz matrica u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em uniform\+Location} & Lokacija uniformne promenljive. \\
+\hline
+{\em mat\+Array} & Niz matrica. \\
+\hline
+{\em size} & Broj matrica. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_af6a7c16d179ba1610968feb9a41a81f9}\label{classshader_1_1AnimatedModelShader_af6a7c16d179ba1610968feb9a41a81f9}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Projection\+Matrix@{load\+Projection\+Matrix}}
+\index{load\+Projection\+Matrix@{load\+Projection\+Matrix}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Projection\+Matrix()}{loadProjectionMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu projekcije u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em matrix} & Matrica projekcije. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_ae6e4523ce0246b3ff0cd0e2ee86cfc7b}\label{classshader_1_1AnimatedModelShader_ae6e4523ce0246b3ff0cd0e2ee86cfc7b}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Shader@{load\+Shader}}
+\index{load\+Shader@{load\+Shader}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Shader()}{loadShader()}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::load\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{G\+Lenum}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funkcija ucitava sejder fajlove. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em file\+Name} & Naziv sejder fajla. \\
+\hline
+{\em type} & Vrsta sejdera. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+int Identifikator sejdera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a4511391e6fb609b5f1207c3b5b7b567f}\label{classshader_1_1AnimatedModelShader_a4511391e6fb609b5f1207c3b5b7b567f}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Shine\+Variables@{load\+Shine\+Variables}}
+\index{load\+Shine\+Variables@{load\+Shine\+Variables}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Shine\+Variables()}{loadShineVariables()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Shine\+Variables (\begin{DoxyParamCaption}\item[{float}]{shine,  }\item[{float}]{reflectivity }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava promenljive u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em shine} & Intenzitet sjaja. \\
+\hline
+{\em reflectivity} & Intenzitet odbijanja svetlosti. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a8620f9e60fd34192c2b63a4207589930}\label{classshader_1_1AnimatedModelShader_a8620f9e60fd34192c2b63a4207589930}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Sky\+Colour@{load\+Sky\+Colour}}
+\index{load\+Sky\+Colour@{load\+Sky\+Colour}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Sky\+Colour()}{loadSkyColour()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Sky\+Colour (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava boju neba u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em r} & Kolicina crvene boje. \\
+\hline
+{\em g} & Kolicina zelene boje. \\
+\hline
+{\em b} & Kolicina plave boje. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a526fd5aa462d017b6a187ae71132bd74}\label{classshader_1_1AnimatedModelShader_a526fd5aa462d017b6a187ae71132bd74}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+Transformation\+Matrix@{load\+Transformation\+Matrix}}
+\index{load\+Transformation\+Matrix@{load\+Transformation\+Matrix}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+Transformation\+Matrix()}{loadTransformationMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+Transformation\+Matrix (\begin{DoxyParamCaption}\item[{mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu transformacije u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em matrix} & Matrica transformacije. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a9a91e6dbe9edd8a25492b8b0974d5c92}\label{classshader_1_1AnimatedModelShader_a9a91e6dbe9edd8a25492b8b0974d5c92}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!load\+View\+Matrix@{load\+View\+Matrix}}
+\index{load\+View\+Matrix@{load\+View\+Matrix}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{load\+View\+Matrix()}{loadViewMatrix()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::load\+View\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{classentity_1_1Camera}{Camera} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava matricu pogleda u uniformnu varijablu. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em camera} & Pokazivac na instancu klase Camera. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_adae3f58a0687245d7be0be21c99a1360}\label{classshader_1_1AnimatedModelShader_adae3f58a0687245d7be0be21c99a1360}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!start@{start}}
+\index{start@{start}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::start (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija pokrece sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_ab50582c18de55c4922fb7d8847836251}\label{classshader_1_1AnimatedModelShader_ab50582c18de55c4922fb7d8847836251}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!stop@{stop}}
+\index{stop@{stop}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void shader\+::\+Animated\+Model\+Shader\+::stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija zaustavlja sejder program. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a813f2815f75ec8e129c6e8c461acbc74}\label{classshader_1_1AnimatedModelShader_a813f2815f75ec8e129c6e8c461acbc74}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!fragment\+Shader\+ID@{fragment\+Shader\+ID}}
+\index{fragment\+Shader\+ID@{fragment\+Shader\+ID}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{fragment\+Shader\+ID}{fragmentShaderID}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::fragment\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator ucitanog sejder fajla. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_abd8d6ec1ef7db97975d80c8c2a80cd94}\label{classshader_1_1AnimatedModelShader_abd8d6ec1ef7db97975d80c8c2a80cd94}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!location\+Bone\+Transforms@{location\+Bone\+Transforms}}
+\index{location\+Bone\+Transforms@{location\+Bone\+Transforms}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{location\+Bone\+Transforms}{locationBoneTransforms}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::location\+Bone\+Transforms\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_aa5245f948a0251d25b23756510b71b6b}\label{classshader_1_1AnimatedModelShader_aa5245f948a0251d25b23756510b71b6b}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!location\+Light\+Colour@{location\+Light\+Colour}}
+\index{location\+Light\+Colour@{location\+Light\+Colour}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{location\+Light\+Colour}{locationLightColour}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::location\+Light\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a4d4674bc1a859486049637974b171269}\label{classshader_1_1AnimatedModelShader_a4d4674bc1a859486049637974b171269}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!location\+Light\+Position@{location\+Light\+Position}}
+\index{location\+Light\+Position@{location\+Light\+Position}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{location\+Light\+Position}{locationLightPosition}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::location\+Light\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a627ba9dc3ff999c20c3b7e055d67d07a}\label{classshader_1_1AnimatedModelShader_a627ba9dc3ff999c20c3b7e055d67d07a}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!location\+Projection\+Matrix@{location\+Projection\+Matrix}}
+\index{location\+Projection\+Matrix@{location\+Projection\+Matrix}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{location\+Projection\+Matrix}{locationProjectionMatrix}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::location\+Projection\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a84709b6c7a0fbdf5f884b04d98675b4b}\label{classshader_1_1AnimatedModelShader_a84709b6c7a0fbdf5f884b04d98675b4b}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!location\+Reflectivity@{location\+Reflectivity}}
+\index{location\+Reflectivity@{location\+Reflectivity}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{location\+Reflectivity}{locationReflectivity}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::location\+Reflectivity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_aae47bf14174ed52dd1f9222109f577f7}\label{classshader_1_1AnimatedModelShader_aae47bf14174ed52dd1f9222109f577f7}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!location\+Shine@{location\+Shine}}
+\index{location\+Shine@{location\+Shine}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{location\+Shine}{locationShine}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::location\+Shine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_aefe350445a9e350d1dd43c5e4476d2b7}\label{classshader_1_1AnimatedModelShader_aefe350445a9e350d1dd43c5e4476d2b7}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!location\+Sky\+Colour@{location\+Sky\+Colour}}
+\index{location\+Sky\+Colour@{location\+Sky\+Colour}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{location\+Sky\+Colour}{locationSkyColour}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::location\+Sky\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a0cf85738b0897a28a205bcddbbb87c44}\label{classshader_1_1AnimatedModelShader_a0cf85738b0897a28a205bcddbbb87c44}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!location\+Transformation\+Matrix@{location\+Transformation\+Matrix}}
+\index{location\+Transformation\+Matrix@{location\+Transformation\+Matrix}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{location\+Transformation\+Matrix}{locationTransformationMatrix}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::location\+Transformation\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_abe7d5a2990e677ed50f949de920d8720}\label{classshader_1_1AnimatedModelShader_abe7d5a2990e677ed50f949de920d8720}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!location\+Use\+Fake\+Lightning@{location\+Use\+Fake\+Lightning}}
+\index{location\+Use\+Fake\+Lightning@{location\+Use\+Fake\+Lightning}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{location\+Use\+Fake\+Lightning}{locationUseFakeLightning}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::location\+Use\+Fake\+Lightning\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a71f489d448baef3809a10b78c1c52ab5}\label{classshader_1_1AnimatedModelShader_a71f489d448baef3809a10b78c1c52ab5}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!location\+View\+Matrix@{location\+View\+Matrix}}
+\index{location\+View\+Matrix@{location\+View\+Matrix}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{location\+View\+Matrix}{locationViewMatrix}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::location\+View\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lokacija unformne promenljive. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_a3ca1350c79b88746827a4284ec63cabe}\label{classshader_1_1AnimatedModelShader_a3ca1350c79b88746827a4284ec63cabe}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!program\+ID@{program\+ID}}
+\index{program\+ID@{program\+ID}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{program\+ID}{programID}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::program\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator programa koji izvrsava sejder fajlove. 
+
+\mbox{\Hypertarget{classshader_1_1AnimatedModelShader_aaca0cca7c6f00ba7bc43725ec5338f24}\label{classshader_1_1AnimatedModelShader_aaca0cca7c6f00ba7bc43725ec5338f24}} 
+\index{shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}!vertex\+Shader\+ID@{vertex\+Shader\+ID}}
+\index{vertex\+Shader\+ID@{vertex\+Shader\+ID}!shader\+::\+Animated\+Model\+Shader@{shader\+::\+Animated\+Model\+Shader}}
+\subsubsection{\texorpdfstring{vertex\+Shader\+ID}{vertexShaderID}}
+{\footnotesize\ttfamily int shader\+::\+Animated\+Model\+Shader\+::vertex\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifikator ucitanog sejder fajla. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/shader/\hyperlink{AnimatedModelShader_8h}{Animated\+Model\+Shader.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/shader/\hyperlink{AnimatedModelShader_8cpp}{Animated\+Model\+Shader.\+cpp}\end{DoxyCompactItemize}

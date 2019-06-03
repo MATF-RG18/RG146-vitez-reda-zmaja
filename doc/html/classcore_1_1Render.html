@@ -96,9 +96,9 @@ Javni članovi</h2></td></tr>
 <tr class="memitem:ab36887be4cb2f56e73b10f78e5d04d4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1Render.html#ab36887be4cb2f56e73b10f78e5d04d4a">render</a> (map&lt; <a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *, list&lt; <a class="el" href="classentity_1_1Entity.html">Entity</a> *&gt;&gt; entities)</td></tr>
 <tr class="memdesc:ab36887be4cb2f56e73b10f78e5d04d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija iscrtava sve entitete i teksturisane modele koje im odgovaraju.  <a href="#ab36887be4cb2f56e73b10f78e5d04d4a">Još...</a><br /></td></tr>
 <tr class="separator:ab36887be4cb2f56e73b10f78e5d04d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add7058167c0780784695497286c5e382"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1Render.html#add7058167c0780784695497286c5e382">prepareTexturedModel</a> (<a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *<a class="el" href="namespacecore.html#aa1479d4ed4dadbfe085b26662122b68a">model</a>)</td></tr>
-<tr class="memdesc:add7058167c0780784695497286c5e382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija ucitava teksture entiteta.  <a href="#add7058167c0780784695497286c5e382">Još...</a><br /></td></tr>
-<tr class="separator:add7058167c0780784695497286c5e382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd0d54abe302da59731759a5d456713"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1Render.html#aedd0d54abe302da59731759a5d456713">drawTexturedModel</a> (<a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *<a class="el" href="namespacecore.html#aa1479d4ed4dadbfe085b26662122b68a">model</a>)</td></tr>
+<tr class="memdesc:aedd0d54abe302da59731759a5d456713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija ucitava teksture modela i iscrtava sve njegove delove.  <a href="#aedd0d54abe302da59731759a5d456713">Još...</a><br /></td></tr>
+<tr class="separator:aedd0d54abe302da59731759a5d456713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfa16af79f2e428b94ccbb406e77ef93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1Render.html#adfa16af79f2e428b94ccbb406e77ef93">unbindTexturedModel</a> ()</td></tr>
 <tr class="memdesc:adfa16af79f2e428b94ccbb406e77ef93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija otkacinje vezu izmedju podataka texturisanog modela i programa.  <a href="#adfa16af79f2e428b94ccbb406e77ef93">Još...</a><br /></td></tr>
 <tr class="separator:adfa16af79f2e428b94ccbb406e77ef93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,6 +216,33 @@ Privatni članovi</h2></td></tr>
 
 </div>
 </div>
+<a id="aedd0d54abe302da59731759a5d456713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd0d54abe302da59731759a5d456713">&#9670;&nbsp;</a></span>drawTexturedModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::Render::drawTexturedModel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcija ucitava teksture modela i iscrtava sve njegove delove. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>Pokazivac na instancu klase TexturedModel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
+
+</div>
+</div>
 <a id="aeb298077579c71d8b4407dacbed75302"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb298077579c71d8b4407dacbed75302">&#9670;&nbsp;</a></span>prepareInstance()</h2>
 
@@ -236,33 +263,6 @@ Privatni članovi</h2></td></tr>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
     <tr><td class="paramname">entity</td><td>Pokazivac na instancu klase Entity. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Vrednost funkcije</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="add7058167c0780784695497286c5e382"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add7058167c0780784695497286c5e382">&#9670;&nbsp;</a></span>prepareTexturedModel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void core::Render::prepareTexturedModel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmodel_1_1TexturedModel.html">TexturedModel</a> *&#160;</td>
-          <td class="paramname"><em>model</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Funkcija ucitava teksture entiteta. </p>
-<dl class="params"><dt>Parametri</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">model</td><td>Pokazivac na instancu klase TexturedModel. </td></tr>
   </table>
   </dd>
 </dl>

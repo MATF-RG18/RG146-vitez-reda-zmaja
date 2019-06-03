@@ -1,0 +1,135 @@
+\hypertarget{classanimation_1_1Animation}{}\section{Dokumentacija klase animation\+:\+:Animation}
+\label{classanimation_1_1Animation}\index{animation\+::\+Animation@{animation\+::\+Animation}}
+
+
+Klasa \hyperlink{classanimation_1_1Animation}{Animation} odredjuje animaciju modela. Pomocu klase \hyperlink{classanimation_1_1Animation}{Animation} cuvamo podatke o animaciji modela.  
+
+
+
+
+{\ttfamily \#include $<$Animation.\+h$>$}
+
+\subsection*{Javni članovi}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classanimation_1_1Animation_a82667067e10341fa3843e5a61badec1c}{Animation} (float \hyperlink{classanimation_1_1Animation_a2e08946f67829d6907b204f70d94a6ec}{length}, vector$<$ \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$$>$ \hyperlink{classanimation_1_1Animation_a371ea96eed842fd75e5c36cc757c232d}{key\+Frames})
+\begin{DoxyCompactList}\small\item\em Konstruktor klase. \end{DoxyCompactList}\item 
+\hyperlink{classanimation_1_1Animation_a558c8041047da1b0fbe573a934b270d3}{$\sim$\+Animation} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
+float \hyperlink{classanimation_1_1Animation_a8af39eddf1bec211e7b7252a770a2d4c}{get\+Length} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca vrednost privatne promenljive length. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$ $>$ \hyperlink{classanimation_1_1Animation_ae8d6214ee3a10015f12b7aa7c6e5c1b7}{get\+Key\+Frames} ()
+\begin{DoxyCompactList}\small\item\em Funkcija vraca vrednost privatne promenljive key\+Frames. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privatni članovi}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classanimation_1_1Animation_a2e08946f67829d6907b204f70d94a6ec}{length}
+\begin{DoxyCompactList}\small\item\em Duzina trajanja animacije u sekundama. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$ $>$ \hyperlink{classanimation_1_1Animation_a371ea96eed842fd75e5c36cc757c232d}{key\+Frames}
+\begin{DoxyCompactList}\small\item\em Vektor pokazivaca na instance klase \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opširniji opis}
+Klasa \hyperlink{classanimation_1_1Animation}{Animation} odredjuje animaciju modela. Pomocu klase \hyperlink{classanimation_1_1Animation}{Animation} cuvamo podatke o animaciji modela. 
+
+\subsection{Dokumentacija konstruktora i destruktora}
+\mbox{\Hypertarget{classanimation_1_1Animation_a82667067e10341fa3843e5a61badec1c}\label{classanimation_1_1Animation_a82667067e10341fa3843e5a61badec1c}} 
+\index{animation\+::\+Animation@{animation\+::\+Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!animation\+::\+Animation@{animation\+::\+Animation}}
+\subsubsection{\texorpdfstring{Animation()}{Animation()}}
+{\footnotesize\ttfamily animation\+::\+Animation\+::\+Animation (\begin{DoxyParamCaption}\item[{float}]{length,  }\item[{vector$<$ \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$$>$}]{key\+Frames }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em length} & Duzina trajanja animacije u sekundama. \\
+\hline
+{\em key\+Frames} & Vektor pokazivaca na instance klase \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classanimation_1_1Animation_a558c8041047da1b0fbe573a934b270d3}\label{classanimation_1_1Animation_a558c8041047da1b0fbe573a934b270d3}} 
+\index{animation\+::\+Animation@{animation\+::\+Animation}!````~Animation@{$\sim$\+Animation}}
+\index{````~Animation@{$\sim$\+Animation}!animation\+::\+Animation@{animation\+::\+Animation}}
+\subsubsection{\texorpdfstring{$\sim$\+Animation()}{~Animation()}}
+{\footnotesize\ttfamily animation\+::\+Animation\+::$\sim$\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klase. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacija funkcija članica}
+\mbox{\Hypertarget{classanimation_1_1Animation_ae8d6214ee3a10015f12b7aa7c6e5c1b7}\label{classanimation_1_1Animation_ae8d6214ee3a10015f12b7aa7c6e5c1b7}} 
+\index{animation\+::\+Animation@{animation\+::\+Animation}!get\+Key\+Frames@{get\+Key\+Frames}}
+\index{get\+Key\+Frames@{get\+Key\+Frames}!animation\+::\+Animation@{animation\+::\+Animation}}
+\subsubsection{\texorpdfstring{get\+Key\+Frames()}{getKeyFrames()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$ $>$ animation\+::\+Animation\+::get\+Key\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca vrednost privatne promenljive key\+Frames. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+vector$<$\+Key\+Frame $\ast$$>$ Vektor pokazivaca na instance klase \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanimation_1_1Animation_a8af39eddf1bec211e7b7252a770a2d4c}\label{classanimation_1_1Animation_a8af39eddf1bec211e7b7252a770a2d4c}} 
+\index{animation\+::\+Animation@{animation\+::\+Animation}!get\+Length@{get\+Length}}
+\index{get\+Length@{get\+Length}!animation\+::\+Animation@{animation\+::\+Animation}}
+\subsubsection{\texorpdfstring{get\+Length()}{getLength()}}
+{\footnotesize\ttfamily float animation\+::\+Animation\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcija vraca vrednost privatne promenljive length. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+float Duzina trajanja animacije. 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacija atributa}
+\mbox{\Hypertarget{classanimation_1_1Animation_a371ea96eed842fd75e5c36cc757c232d}\label{classanimation_1_1Animation_a371ea96eed842fd75e5c36cc757c232d}} 
+\index{animation\+::\+Animation@{animation\+::\+Animation}!key\+Frames@{key\+Frames}}
+\index{key\+Frames@{key\+Frames}!animation\+::\+Animation@{animation\+::\+Animation}}
+\subsubsection{\texorpdfstring{key\+Frames}{keyFrames}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classanimation_1_1KeyFrame}{Key\+Frame} $\ast$$>$ animation\+::\+Animation\+::key\+Frames\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vektor pokazivaca na instance klase \hyperlink{classanimation_1_1KeyFrame}{Key\+Frame}. 
+
+\mbox{\Hypertarget{classanimation_1_1Animation_a2e08946f67829d6907b204f70d94a6ec}\label{classanimation_1_1Animation_a2e08946f67829d6907b204f70d94a6ec}} 
+\index{animation\+::\+Animation@{animation\+::\+Animation}!length@{length}}
+\index{length@{length}!animation\+::\+Animation@{animation\+::\+Animation}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily float animation\+::\+Animation\+::length\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Duzina trajanja animacije u sekundama. 
+
+
+
+Dokumentacija ove klase je napravljena na osnovu sledećih datoteka\+:\begin{DoxyCompactItemize}
+\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/include/animation/\hyperlink{Animation_8h}{Animation.\+h}\item 
+/home/dusan/\+Documents/\+R\+G146-\/vitez-\/reda-\/zmaja/src/animation/\hyperlink{Animation_8cpp}{Animation.\+cpp}\end{DoxyCompactItemize}

@@ -2,7 +2,7 @@
 /// @file ParticleRender.h
 /// @brief Deklaracija klase ParticleRender.
 /// @author Dusan Pantelic
-/// @date Decembar 2017
+/// @date Jul 2019
 ////////////////////////////////////////////////////////////////////////////////
 
 #ifndef _PARTICLE_RENDER_H_
@@ -40,14 +40,13 @@ using namespace entity;
 using namespace texture;
 
 ////////////////////////////////////////////////////////////////////////////////
-/// @brief Prostor imena core.
-/// Sadrzi sve klase, funkcije i promenljive koje su od
-/// sustinskog znacaja za funkcionisanje programa.
+/// @brief Prostor imena particle.
+/// Sadrzi sve klase, funkcije i promenljive koje su vezane za sistem cestica.
 ////////////////////////////////////////////////////////////////////////////////
 namespace particle {
 
   //////////////////////////////////////////////////////////////////////////////
-  /// @brief Klasa ParticleRender je zaduzena za iscrtavanje entiteta na ekran.
+  /// @brief Klasa ParticleRender je zaduzena za iscrtavanje cestica na ekran.
   /// Tokom pokretanja prvo se vrsi priprema za iscrtavanje, a zatim se
   /// sadrzaj niza atributa(koordinate, boje, texture ...) iscrtava na ekran
   //////////////////////////////////////////////////////////////////////////////
@@ -64,9 +63,10 @@ namespace particle {
     /// Zadnji deo vidljivosti.
     float FAR_PLANE = 1000;
 
-    /// Pokazivac na instancu klase Shader.
+    /// Pokazivac na instancu klase ParticleShader.
     ParticleShader *particleShader;
 
+    /// Pokazivac na instancu klase RawModel.
     RawModel *rawModel;
 
   // Javne funkcije klase
@@ -74,7 +74,7 @@ namespace particle {
 
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Konstruktor klase.
-    /// @param shader Pokazivac na instancu klase Shader.
+    /// @param vaoLoader Pokazivac na instancu klase VaoLoader.
     ////////////////////////////////////////////////////////////////////////////
     ParticleRenderer(VaoLoader *vaoLoader);
 
@@ -85,18 +85,37 @@ namespace particle {
     ~ParticleRenderer();
 
     ////////////////////////////////////////////////////////////////////////////
-    /// @brief Funkcija iscrtava sve entitete i teksturisane modele koje im odgovaraju.
-    /// @param entities Hes mapa teksturisanih modela i lista entiteta.
+    /// @brief Funkcija iscrtava sve cestice i teksture koje im odgovaraju.
+    /// @param particles Lista cestica.
+    /// @param camera Pokazivac na instancu klase Camera.
+    /// @param texture Pokazivac na instancu klase Texture
     /// @return void
     ////////////////////////////////////////////////////////////////////////////
     void render(list<Particle *> particles, Camera *camera, Texture *texture);
 
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija pokrece cistace sejdera.
+    /// @param void
+    /// @return void
+    ////////////////////////////////////////////////////////////////////////////
     void cleanUp();
+
   // Privatne funkcije klase
   private:
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija vrsi pripreme za iscrtavanje sadrzaja na ekran.
+    /// @param void
+    /// @return void
+    ////////////////////////////////////////////////////////////////////////////
     void prepare();
 
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija otklanja efekte funkcije prepare.
+    /// @param void
+    /// @return void
+    ////////////////////////////////////////////////////////////////////////////
     void finishRendering();
+
     ////////////////////////////////////////////////////////////////////////////
     /// @brief Funkcija kreira matricu projekcije.
     /// @param void
@@ -104,10 +123,21 @@ namespace particle {
     ////////////////////////////////////////////////////////////////////////////
     mat4 createProjectionMatrix();
 
+    ////////////////////////////////////////////////////////////////////////////
+    /// @brief Funkcija kreira proizvod matrica transformacije i pogleda.
+    /// Kreira se matria transformacije pomucu zadatih paramtara ali tako
+    /// da je 3x3 podmatrica transponovana 3x3 podmatrici matrice modela
+    /// cime postizemo 3D efekat 2D cestice koja je uvek okrenuta ka nama.
+    /// Dobijenu matricu transformacije mnozimo sa matricom pogleda.
+    /// @param position Pozicija cestice.
+    /// @param rotation Rotacija cestice.
+    /// @param scaleFactor Faktor skaliranja
+    /// viewMatrix Matrica pogleda.
+    /// @return void
+    ////////////////////////////////////////////////////////////////////////////
     void updateModelViewMatrix(vec3 position, float rotation, float scaleFactor, mat4 viewMatrix);
-
   };
 
-} // core
+} // particle
 
 #endif

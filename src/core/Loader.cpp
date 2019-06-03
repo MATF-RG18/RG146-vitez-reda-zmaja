@@ -1,5 +1,9 @@
 #include "../../include/core/Loader.h"
 
+// Klasa je implementirana po uzoru na internet clanke:
+// http://ogldev.atspace.co.uk/www/tutorial38/tutorial38.html
+// https://bib.irb.hr/datoteka/890911.Final_0036473606_56.pdf
+
 namespace core {
 
   Loader::Loader() {

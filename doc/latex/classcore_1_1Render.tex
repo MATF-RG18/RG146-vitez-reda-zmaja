@@ -27,8 +27,8 @@ Klasni dijagram za core\+:\+:Render\+:\nopagebreak
 \begin{DoxyCompactList}\small\item\em Destruktor klase. \end{DoxyCompactList}\item 
 void \hyperlink{classcore_1_1Render_ab36887be4cb2f56e73b10f78e5d04d4a}{render} (map$<$ \hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$, list$<$ \hyperlink{classentity_1_1Entity}{Entity} $\ast$$>$$>$ entities)
 \begin{DoxyCompactList}\small\item\em Funkcija iscrtava sve entitete i teksturisane modele koje im odgovaraju. \end{DoxyCompactList}\item 
-void \hyperlink{classcore_1_1Render_add7058167c0780784695497286c5e382}{prepare\+Textured\+Model} (\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$\hyperlink{namespacecore_aa1479d4ed4dadbfe085b26662122b68a}{model})
-\begin{DoxyCompactList}\small\item\em Funkcija ucitava teksture entiteta. \end{DoxyCompactList}\item 
+void \hyperlink{classcore_1_1Render_aedd0d54abe302da59731759a5d456713}{draw\+Textured\+Model} (\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$\hyperlink{namespacecore_aa1479d4ed4dadbfe085b26662122b68a}{model})
+\begin{DoxyCompactList}\small\item\em Funkcija ucitava teksture modela i iscrtava sve njegove delove. \end{DoxyCompactList}\item 
 void \hyperlink{classcore_1_1Render_adfa16af79f2e428b94ccbb406e77ef93}{unbind\+Textured\+Model} ()
 \begin{DoxyCompactList}\small\item\em Funkcija otkacinje vezu izmedju podataka texturisanog modela i programa. \end{DoxyCompactList}\item 
 void \hyperlink{classcore_1_1Render_aeb298077579c71d8b4407dacbed75302}{prepare\+Instance} (\hyperlink{classentity_1_1Entity}{Entity} $\ast$\hyperlink{namespacecore_aa710c0ea388433d2d80d1d1c67582eda}{entity})
@@ -106,6 +106,24 @@ Funkcija kreira matricu projekcije.
 \begin{DoxyReturn}{Vrednost funkcije}
 mat4 Matrica projekcije. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classcore_1_1Render_aedd0d54abe302da59731759a5d456713}\label{classcore_1_1Render_aedd0d54abe302da59731759a5d456713}} 
+\index{core\+::\+Render@{core\+::\+Render}!draw\+Textured\+Model@{draw\+Textured\+Model}}
+\index{draw\+Textured\+Model@{draw\+Textured\+Model}!core\+::\+Render@{core\+::\+Render}}
+\subsubsection{\texorpdfstring{draw\+Textured\+Model()}{drawTexturedModel()}}
+{\footnotesize\ttfamily void core\+::\+Render\+::draw\+Textured\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$}]{model }\end{DoxyParamCaption})}
+
+
+
+Funkcija ucitava teksture modela i iscrtava sve njegove delove. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em model} & Pokazivac na instancu klase Textured\+Model. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Vrednost funkcije}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classcore_1_1Render_aeb298077579c71d8b4407dacbed75302}\label{classcore_1_1Render_aeb298077579c71d8b4407dacbed75302}} 
 \index{core\+::\+Render@{core\+::\+Render}!prepare\+Instance@{prepare\+Instance}}
 \index{prepare\+Instance@{prepare\+Instance}!core\+::\+Render@{core\+::\+Render}}
@@ -119,24 +137,6 @@ Funkcija kreira matricu transformacije za entitet i ucitava je u sejder program.
 
 \begin{DoxyParams}{Parametri}
 {\em entity} & Pokazivac na instancu klase Entity. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Vrednost funkcije}
-void 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classcore_1_1Render_add7058167c0780784695497286c5e382}\label{classcore_1_1Render_add7058167c0780784695497286c5e382}} 
-\index{core\+::\+Render@{core\+::\+Render}!prepare\+Textured\+Model@{prepare\+Textured\+Model}}
-\index{prepare\+Textured\+Model@{prepare\+Textured\+Model}!core\+::\+Render@{core\+::\+Render}}
-\subsubsection{\texorpdfstring{prepare\+Textured\+Model()}{prepareTexturedModel()}}
-{\footnotesize\ttfamily void core\+::\+Render\+::prepare\+Textured\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmodel_1_1TexturedModel}{Textured\+Model} $\ast$}]{model }\end{DoxyParamCaption})}
-
-
-
-Funkcija ucitava teksture entiteta. 
-
-
-\begin{DoxyParams}{Parametri}
-{\em model} & Pokazivac na instancu klase Textured\+Model. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Vrednost funkcije}

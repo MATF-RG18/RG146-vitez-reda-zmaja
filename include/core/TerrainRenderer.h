@@ -73,7 +73,7 @@ namespace core {
             void render(list<Terrain *> terrains);
 
             ////////////////////////////////////////////////////////////////////////////
-            /// @brief Funkcija vrsi pripremu terena za ucitavanje.
+            /// @brief Funkcija ucitava teksture terena i iscrtava sve njegove delove..
             /// @param terrain Pokazivac na instancu klase Terrain.
             /// @return void
             ////////////////////////////////////////////////////////////////////////////
