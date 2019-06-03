@@ -117,13 +117,13 @@ cd RG102-vitez-reda-zmaja
     <th colspan="2">Kontrole vremena</th>
 </tr>
 <tr>
-    <td>1</td><td>Bez padavina(podrazumevan mod u igri)</td>
+    <td>:one:</td><td>Bez padavina(podrazumevan mod u igri)</td>
 </tr>
 <tr>
-    <td>2</td><td>Sneg</td>
+    <td>:two:</td><td>Sneg</td>
 </tr>
 <tr>
-    <td>3</td><td>Kisa</td>
+    <td>:three:</td><td>Kisa</td>
 </tr>
 <table>
 
