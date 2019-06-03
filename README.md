@@ -137,10 +137,8 @@ cd RG102-vitez-reda-zmaja
 <table>
 
 ##  :large_blue_circle: Napomena
-> Prilikom kreiranja projekta koriscen je YouTube tutorijal [OpenGL 3D Java Game Tutorial](https://www.youtube.com/watch?v=VS8wlS9hF8E&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP) koji je u velikoj meri pomogao pri razumevanju kreiranja video igara i uticao na izgled i strukturu projekta. Takodje je koriscena i veb stranica  [Learn OpenGL](https://learnopengl.com/).
+> Prilikom kreiranja projekta koriscen je YouTube tutorijal [OpenGL 3D Java Game Tutorial](https://www.youtube.com/watch?v=VS8wlS9hF8E&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP) koji je u velikoj meri pomogao pri razumevanju kreiranja video igara i uticao na izgled i strukturu projekta. Takodje su koriscene i veb stranice poput:  [Learn OpenGL](https://learnopengl.com/), [NeHe] (http://nehe.gamedev.net/), [OGLDEV] (http://ogldev.atspace.co.uk/), kao i ostale stranice koje sadrze informacije o kreiranju video igara, grafike kao i matematike.
 
 > Za pomoc pri upotrebi OpenGL funkcija koriscen je sajt [Khronos](https://www.khronos.org/registry/OpenGL-Refpages/)
-
-> Da bi postojala mogucnost ucitavanja slozenijih .obj fajlova koriscena je biblioteka [tinyobjloader](https://github.com/syoyo/tinyobjloader) koja je preuzeta sa github-a.
 
 > S obzirom na autorov antitalenat za bilo koji vid umetnosti grafika u projektu je preuzimana sa sajtova kao sto je [Sketchfab](https://sketchfab.com/feed) na kojem se mogu naci 3D objekti slobodni za bilo kakvu upotrebu komercijalnu ili ne. Sve grafike u projektu su kombinacije vise zeljenih objekata sa gore navedenog sajta koje su menjane i prilagodjavane za potrebe projekta, sto znaci da objekti nisu samo kopirani vec je bilo potrebno nauciti rad u Blender-u i uopsteno rad sa 3D grafikom i UV teksturisanjem.
